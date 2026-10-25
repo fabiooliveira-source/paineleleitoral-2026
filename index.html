@@ -45,39 +45,38 @@ function pool(){const rates=new Map();function add(key,s,v){const p=rates.get(ke
 // For each municipality: observed votes + uncounted electorate × observed votes/eligible electorate.
 // Unsampled municipalities borrow a rate from the UF, then region, then national sample, disclosed in UI.
 function forecast(units,rates){
- // SOMARPRODUTO: participação estimada em cada município × eleitorado válido esperado.
- // Votos já apurados permanecem fixos; somente o saldo é projetado.
+ // SOMARPRODUTO( percentual de cada área, total estimado de votos válidos da área ).
+ // O denominador é a soma dos votos válidos previstos, NÃO o eleitorado total.
  let a=0,b=0,total=0,counted=0,known=0,imputed=0,localCount=0,missing=0;
  const sources={local:0,uf:0,regiao:0,brasil:0};
+ const areas=[];
  for(const c of units){
-   const electors=Number(c.electors)||0,reported=Math.min(electors,Math.max(0,Number(c.counted)||0));
-   total+=electors;counted+=reported;
-   if(!electors)continue;
-   const s=direct(c),v=values(s),observedElectors=s?Math.min(reported,Math.max(0,Number(s.counted)||0)):0;
-   const observedA=v?v.a:0,observedB=v?v.b:0;
-   let source='local',prior=null;
-   if(s&&v&&observedElectors>0){localCount++;known+=electors}
-   else {source='uf';imputed+=electors}
-   prior=rates.get(c.uf);
-   if(!prior?.n){prior=rates.get(regionOf(c.uf));source='regiao'}
-   if(!prior?.n){prior=rates.get('BR');source='brasil'}
-   let localShare=(observedA+observedB)>0?observedA/(observedA+observedB):null;
-   let priorShare=prior?.a+prior?.b>0?prior.a/(prior.a+prior.b):null;
-   if(localShare===null&&priorShare===null){missing++;continue}
-   // Shrinkage: municípios com poucos votos observados não dominam a estimativa.
-   const validObserved=observedA+observedB;
-   const strength=Math.max(1000,electors*.12);
-   const w=validObserved/(validObserved+strength);
-   const shareA=localShare===null?priorShare:priorShare===null?localShare:w*localShare+(1-w)*priorShare;
-   // Comparecimento e votos válidos projetados pela taxa observada da UF/região.
-   const turnoutValid=prior?.n>0?Math.min(1,Math.max(0,(prior.a+prior.b)/prior.n)):validObserved/Math.max(1,observedElectors);
-   const remaining=Math.max(0,electors-observedElectors);
-   const expectedValid=remaining*turnoutValid;
-   a+=observedA+expectedValid*shareA;
-   b+=observedB+expectedValid*(1-shareA);
-   sources[source]++;
+  const electors=Math.max(0,Number(c.electors)||0),reported=Math.min(electors,Math.max(0,Number(c.counted)||0));
+  total+=electors;counted+=reported;if(!electors)continue;
+  const s=direct(c),v=values(s),observedElectors=s?Math.min(reported,Math.max(0,Number(s.counted)||0)):0;
+  const observedA=v?v.a:0,observedB=v?v.b:0,observedValid=observedA+observedB;
+  let source='local',prior=rates.get(c.uf);
+  if(!prior?.n){prior=rates.get(regionOf(c.uf));source='regiao'}
+  if(!prior?.n){prior=rates.get('BR');source='brasil'}
+  if(s&&v&&observedElectors>0){localCount++;known+=electors}else{imputed+=electors;if(source==='local')source='uf'}
+  const priorValid=(prior?.a||0)+(prior?.b||0);
+  const priorShare=priorValid>0?prior.a/priorValid:null;
+  const localShare=observedValid>0?observedA/observedValid:null;
+  if(priorShare===null&&localShare===null){missing++;continue}
+  const strength=Math.max(1000,electors*.12);
+  const weight=observedValid/(observedValid+strength);
+  const shareA=localShare===null?priorShare:priorShare===null?localShare:weight*localShare+(1-weight)*priorShare;
+  const validRate=prior?.n>0?Math.min(1,Math.max(0,priorValid/prior.n)):observedValid/Math.max(1,observedElectors);
+  const validRemaining=Math.max(0,electors-observedElectors)*validRate;
+  const validTotal=observedValid+validRemaining;
+  const estimatedA=observedA+validRemaining*shareA,estimatedB=observedB+validRemaining*(1-shareA);
+  areas.push({uf:c.uf,code:c.code,validTotal,shareA:validTotal?estimatedA/validTotal:0,shareB:validTotal?estimatedB/validTotal:0});
+  sources[source]++;
  }
- return {a,b,total,counted,known,imputed,localCount,missing,sources,ready:units.length>0&&missing===0&&a+b>0};
+ // Equivalente a SOMARPRODUTO(% candidato por área; votos válidos totais por área).
+ a=areas.reduce((sum,x)=>sum+x.shareA*x.validTotal,0);
+ b=areas.reduce((sum,x)=>sum+x.shareB*x.validTotal,0);
+ return {a,b,total,counted,known,imputed,localCount,missing,sources,validTotal:a+b,ready:units.length>0&&missing===0&&a+b>0};
 }
 function localUnits(){const scope=$('scope').value,reg=$('region').value,uf=$('filterUF').value,city=$('filterCity').value;return [...metadata.values()].filter(c=>scope==='MUN'?c.uf===uf&&c.code===city:scope==='UF'?c.uf===uf:scope==='REG'&&reg?REGIONS[reg].includes(c.uf):true)}
 function updateFilterView(){const level=$('scope').value,uf=$('filterUF').value,reg=$('region').value,city=$('filterCity').value,units=localUnits(),rates=pool(),f=forecast(units,rates);let title=level==='BR'?'Brasil e exterior':level==='REG'?(reg||'Todas as regiões'):level==='UF'?(uf||'Selecione um estado'):(metadata.get(uf+':'+city)?.name||'Selecione um município');$('scopeName').textContent=title;let s=level==='BR'?national:level==='UF'?states[uf]:level==='MUN'?direct(metadata.get(uf+':'+city)||{}):null;let v=values(s);if(level==='REG'){const ss=(reg?REGIONS[reg]:AREAS).map(u=>states[u]).filter(Boolean),vv=ss.map(values);if(vv.every(Boolean)&&ss.length===(reg?REGIONS[reg].length:AREAS.length)){v={a:vv.reduce((n,x)=>n+x.a,0),b:vv.reduce((n,x)=>n+x.b,0)}}else v=null}const t=(v?.a||0)+(v?.b||0);$('scopeOfficial').textContent=t?`${pct(v.a/t)} × ${pct(v.b/t)}`:'—';$('scopeVotes').textContent=v?`${pair.map((p,i)=>p.name+': '+fmt(i?v.b:v.a)).join(' • ')} votos oficiais`:'Dados locais ainda não carregados';$('scopeCoverage').textContent='Eleitorado com apuração: '+fmt(f.counted)+' / '+fmt(f.total)+' ('+pct(f.total?f.counted/f.total:NaN)+')';$('scopeProjection').textContent=f.ready?`${pct(f.a/(f.a+f.b))} × ${pct(f.b/(f.a+f.b))}`:'—';$('scopeMargin').textContent=f.ready?`Estimativa: ${fmt(f.a)} × ${fmt(f.b)} votos • ${pct(f.total?f.imputed/f.total:NaN)} do eleitorado com taxa emprestada`:'Sem amostra suficiente para esta consulta';}
