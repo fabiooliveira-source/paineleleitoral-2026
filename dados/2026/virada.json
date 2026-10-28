@@ -1,0 +1,368 @@
+{
+  "regioes": {
+    "Norte": {
+      "lula_1t": 4550602,
+      "flavio_1t": 5009437,
+      "validos_1t": 10191910,
+      "comparecimento_1t": 10554993,
+      "brancos_1t": 109407,
+      "nulos_1t": 253676,
+      "abstencoes_1t": 2546182,
+      "lula_2t": 5024626,
+      "flavio_2t": 5023547,
+      "validos_2t": 10048173,
+      "comparecimento_2t": 10317110,
+      "brancos_2t": 81757,
+      "nulos_2t": 187180,
+      "abstencoes_2t": 2783746
+    },
+    "Total": {
+      "lula_1t": 53879538,
+      "flavio_1t": 56104503,
+      "validos_1t": 119300788,
+      "comparecimento_1t": 125275835,
+      "brancos_1t": 2300798,
+      "nulos_1t": 3674249,
+      "abstencoes_1t": 33469244,
+      "lula_2t": 64256232,
+      "flavio_2t": 59826041,
+      "validos_2t": 124082273,
+      "comparecimento_2t": 128236074,
+      "brancos_2t": 1430496,
+      "nulos_2t": 2723305,
+      "abstencoes_2t": 30509005
+    },
+    "Nordeste": {
+      "lula_1t": 21494584,
+      "flavio_1t": 10398973,
+      "validos_1t": 33704652,
+      "comparecimento_1t": 35508871,
+      "brancos_1t": 586406,
+      "nulos_1t": 1217813,
+      "abstencoes_1t": 8002366,
+      "lula_2t": 24450432,
+      "flavio_2t": 10796736,
+      "validos_2t": 35247168,
+      "comparecimento_2t": 36335632,
+      "brancos_2t": 328857,
+      "nulos_2t": 759607,
+      "abstencoes_2t": 7175226
+    },
+    "Centro-Oeste": {
+      "lula_1t": 2963043,
+      "flavio_1t": 5133436,
+      "validos_1t": 9084197,
+      "comparecimento_1t": 9396336,
+      "brancos_1t": 113031,
+      "nulos_1t": 199108,
+      "abstencoes_1t": 2604805,
+      "lula_2t": 3733919,
+      "flavio_2t": 5603867,
+      "validos_2t": 9337786,
+      "comparecimento_2t": 9595354,
+      "brancos_2t": 95989,
+      "nulos_2t": 161579,
+      "abstencoes_2t": 2406342
+    },
+    "Sudeste": {
+      "lula_1t": 19237398,
+      "flavio_1t": 24899609,
+      "validos_1t": 48479961,
+      "comparecimento_1t": 51281350,
+      "brancos_1t": 1146293,
+      "nulos_1t": 1655096,
+      "abstencoes_1t": 15063212,
+      "lula_2t": 24037731,
+      "flavio_2t": 26844501,
+      "validos_2t": 50882232,
+      "comparecimento_2t": 52895255,
+      "brancos_2t": 698509,
+      "nulos_2t": 1314514,
+      "abstencoes_2t": 13449521
+    },
+    "Sul": {
+      "lula_1t": 5476524,
+      "flavio_1t": 10519148,
+      "validos_1t": 17509186,
+      "comparecimento_1t": 18192519,
+      "brancos_1t": 339845,
+      "nulos_1t": 343488,
+      "abstencoes_1t": 4678334,
+      "lula_2t": 6809370,
+      "flavio_2t": 11385893,
+      "validos_2t": 18195263,
+      "comparecimento_2t": 18711280,
+      "brancos_2t": 220709,
+      "nulos_2t": 295308,
+      "abstencoes_2t": 4159353
+    },
+    "Exterior": {
+      "lula_1t": 157387,
+      "flavio_1t": 143900,
+      "validos_1t": 330882,
+      "comparecimento_1t": 341766,
+      "brancos_1t": 5816,
+      "nulos_1t": 5068,
+      "abstencoes_1t": 574345,
+      "lula_2t": 200154,
+      "flavio_2t": 171497,
+      "validos_2t": 371651,
+      "comparecimento_2t": 381443,
+      "brancos_2t": 4675,
+      "nulos_2t": 5117,
+      "abstencoes_2t": 534817
+    }
+  },
+  "candidatos_1t": [
+    {
+      "numero": "22",
+      "nome": "FLAVIO NANTES BOLSONARO",
+      "votos": 56104503
+    },
+    {
+      "numero": "13",
+      "nome": "LUIZ INÁCIO LULA DA SILVA",
+      "votos": 53879538
+    },
+    {
+      "numero": "70",
+      "nome": "AUGUSTO JORGE CURY",
+      "votos": 3448569
+    },
+    {
+      "numero": "14",
+      "nome": "RENAN ANTONIO FERREIRA DOS SANTOS",
+      "votos": 2675887
+    },
+    {
+      "numero": "55",
+      "nome": "RONALDO RAMOS CAIADO",
+      "votos": 2605148
+    },
+    {
+      "numero": "30",
+      "nome": "ROMEU ZEMA NETO",
+      "votos": 326488
+    },
+    {
+      "numero": "80",
+      "nome": "SAMARA MARTINS DA SILVA FEITOSA",
+      "votos": 122911
+    },
+    {
+      "numero": "16",
+      "nome": "HERTZ DA CONCEICAO DIAS",
+      "votos": 43103
+    },
+    {
+      "numero": "27",
+      "nome": "CLARIANA ZACARKIM BARAO",
+      "votos": 40043
+    },
+    {
+      "numero": "21",
+      "nome": "EDMILSON SILVA COSTA",
+      "votos": 22693
+    },
+    {
+      "numero": "35",
+      "nome": "WILSON GRASSI JUNIOR",
+      "votos": 16881
+    },
+    {
+      "numero": "29",
+      "nome": "RUI COSTA PIMENTA",
+      "votos": 15024
+    }
+  ],
+  "contabilidade": {
+    "outros_1t": 9316747,
+    "ganho_lula": 10376694,
+    "ganho_flavio": 3721538,
+    "aumento_validos": 4781485,
+    "mudanca_saldo": 6655156,
+    "crescimento_lula_acima_outros": 1059947
+  },
+  "municipios_maior_mudanca_saldo": [
+    {
+      "uf": "SP",
+      "codigo_municipio_tse": "71072",
+      "municipio": "SÃO PAULO",
+      "lula_1t": 3052349,
+      "flavio_1t": 2760747,
+      "lula_2t": 3864354,
+      "flavio_2t": 3097923,
+      "dif_lula": 812005,
+      "dif_flavio": 337176,
+      "mudanca_saldo": 474829
+    },
+    {
+      "uf": "RJ",
+      "codigo_municipio_tse": "60011",
+      "municipio": "RIO DE JANEIRO",
+      "lula_1t": 1524517,
+      "flavio_1t": 1662354,
+      "lula_2t": 1898391,
+      "flavio_2t": 1785198,
+      "dif_lula": 373874,
+      "dif_flavio": 122844,
+      "mudanca_saldo": 251030
+    },
+    {
+      "uf": "BA",
+      "codigo_municipio_tse": "38490",
+      "municipio": "SALVADOR",
+      "lula_1t": 944358,
+      "flavio_1t": 391188,
+      "lula_2t": 1154072,
+      "flavio_2t": 421752,
+      "dif_lula": 209714,
+      "dif_flavio": 30564,
+      "mudanca_saldo": 179150
+    },
+    {
+      "uf": "CE",
+      "codigo_municipio_tse": "13897",
+      "municipio": "FORTALEZA",
+      "lula_1t": 797002,
+      "flavio_1t": 586251,
+      "lula_2t": 932282,
+      "flavio_2t": 619634,
+      "dif_lula": 135280,
+      "dif_flavio": 33383,
+      "mudanca_saldo": 101897
+    },
+    {
+      "uf": "DF",
+      "codigo_municipio_tse": "97012",
+      "municipio": "BRASÍLIA",
+      "lula_1t": 675627,
+      "flavio_1t": 909616,
+      "lula_2t": 825224,
+      "flavio_2t": 979542,
+      "dif_lula": 149597,
+      "dif_flavio": 69926,
+      "mudanca_saldo": 79671
+    },
+    {
+      "uf": "MG",
+      "codigo_municipio_tse": "41238",
+      "municipio": "BELO HORIZONTE",
+      "lula_1t": 592037,
+      "flavio_1t": 690960,
+      "lula_2t": 741128,
+      "flavio_2t": 765311,
+      "dif_lula": 149091,
+      "dif_flavio": 74351,
+      "mudanca_saldo": 74740
+    },
+    {
+      "uf": "PE",
+      "codigo_municipio_tse": "25313",
+      "municipio": "RECIFE",
+      "lula_1t": 543548,
+      "flavio_1t": 377268,
+      "lula_2t": 633369,
+      "flavio_2t": 400342,
+      "dif_lula": 89821,
+      "dif_flavio": 23074,
+      "mudanca_saldo": 66747
+    },
+    {
+      "uf": "AM",
+      "codigo_municipio_tse": "02550",
+      "municipio": "MANAUS",
+      "lula_1t": 439027,
+      "flavio_1t": 641864,
+      "lula_2t": 520418,
+      "flavio_2t": 657892,
+      "dif_lula": 81391,
+      "dif_flavio": 16028,
+      "mudanca_saldo": 65363
+    },
+    {
+      "uf": "PA",
+      "codigo_municipio_tse": "04278",
+      "municipio": "BELÉM",
+      "lula_1t": 396570,
+      "flavio_1t": 361377,
+      "lula_2t": 468891,
+      "flavio_2t": 383457,
+      "dif_lula": 72321,
+      "dif_flavio": 22080,
+      "mudanca_saldo": 50241
+    },
+    {
+      "uf": "SP",
+      "codigo_municipio_tse": "64777",
+      "municipio": "GUARULHOS",
+      "lula_1t": 286898,
+      "flavio_1t": 351178,
+      "lula_2t": 364761,
+      "flavio_2t": 380962,
+      "dif_lula": 77863,
+      "dif_flavio": 29784,
+      "mudanca_saldo": 48079
+    },
+    {
+      "uf": "RS",
+      "codigo_municipio_tse": "88013",
+      "municipio": "PORTO ALEGRE",
+      "lula_1t": 377252,
+      "flavio_1t": 325139,
+      "lula_2t": 456019,
+      "flavio_2t": 360690,
+      "dif_lula": 78767,
+      "dif_flavio": 35551,
+      "mudanca_saldo": 43216
+    },
+    {
+      "uf": "MA",
+      "codigo_municipio_tse": "09210",
+      "municipio": "SÃO LUÍS",
+      "lula_1t": 337598,
+      "flavio_1t": 229253,
+      "lula_2t": 385821,
+      "flavio_2t": 235947,
+      "dif_lula": 48223,
+      "dif_flavio": 6694,
+      "mudanca_saldo": 41529
+    },
+    {
+      "uf": "RJ",
+      "codigo_municipio_tse": "58335",
+      "municipio": "DUQUE DE CAXIAS",
+      "lula_1t": 183125,
+      "flavio_1t": 274289,
+      "lula_2t": 227830,
+      "flavio_2t": 280880,
+      "dif_lula": 44705,
+      "dif_flavio": 6591,
+      "mudanca_saldo": 38114
+    },
+    {
+      "uf": "RJ",
+      "codigo_municipio_tse": "58971",
+      "municipio": "SÃO GONÇALO",
+      "lula_1t": 190984,
+      "flavio_1t": 247529,
+      "lula_2t": 236201,
+      "flavio_2t": 255685,
+      "dif_lula": 45217,
+      "dif_flavio": 8156,
+      "mudanca_saldo": 37061
+    },
+    {
+      "uf": "AL",
+      "codigo_municipio_tse": "27855",
+      "municipio": "MACEIÓ",
+      "lula_1t": 203850,
+      "flavio_1t": 259789,
+      "lula_2t": 250761,
+      "flavio_2t": 271791,
+      "dif_lula": 46911,
+      "dif_flavio": 12002,
+      "mudanca_saldo": 34909
+    }
+  ]
+}
