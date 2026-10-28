@@ -34,3 +34,7 @@ Conexão direta no navegador: 59 respostas TSE válidas, 28/28 abrangências e 5
 Testes: esquema real do TSE, rejeição de outra eleição, candidatos por número estável (sem inversão por liderança local), exemplo ponderado 2.800/3.200 votos, convergência a 100%, taxa emprestada identificada, ausência de amostras, layout em 1440/768/390/320px e controles. Simulador com dez parâmetros, 27 UFs, mapa offline, limites extremos não negativos e conservação de comparecimento = votos dos candidatos + brancos + nulos.
 
 Documentação: https://www.tse.jus.br/eleicoes/informacoes-tecnicas-sobre-a-divulgacao-de-resultados
+
+## Comparação oficial dos turnos — 28/10/2026
+
+comparativo.html utiliza a base oficial TSE conferida em dados/2026: 5.757 localidades (5.571 brasileiras e 186 no exterior), 499.248 seções. Filtros por região, UF, município, perda de votos, maior comparecimento e zeros. Seções são carregadas por UF sob demanda em JSON gzip (DecompressionStream em navegadores modernos). Valores ausentes permanecem indisponíveis. A base é uma cópia datada, sem atualização automática. Votos de Lula e Flávio e comparecimento reconciliados entre municípios e seções; 85 registros seção/turno segregados. Ver dados/2026/LEIA-ME.md, validacao.json e downloads.json para critérios, datas, URLs e SHA-256. Simulador e monitor ao vivo mantêm seus respectivos modos.

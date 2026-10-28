@@ -1,0 +1,470 @@
+[
+  {
+    "nome": "Votação nominal por município e zona",
+    "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/votacao_candidato_munzona/votacao_candidato_munzona_2026.zip",
+    "status": 200,
+    "headers": {
+      "Accept-Ranges": "bytes",
+      "Access-Control-Allow-Origin": "*",
+      "Content-Type": "application/zip",
+      "Access-Control-Allow-Headers": "*",
+      "Access-Control-Allow-Methods": "POST, GET, OPTIONS, DELETE",
+      "Last-Modified": "Wed, 28 Oct 2026 16:13:27 GMT",
+      "ETag": "\"1c063c53-65ee8d7da1678\"",
+      "Content-Length": "470170707",
+      "Cache-Control": "max-age=36362",
+      "Date": "Wed, 28 Oct 2026 18:08:59 GMT",
+      "Connection": "close",
+      "Alt-Svc": "h3=\":443\"; ma=93600"
+    },
+    "bytes": 470170707,
+    "sha256": "faaa2fd0b199c018a7f6148c62cbe9fcc65a551e6fd68e27b8a4bf0d815fa3b6",
+    "zip_valido": true,
+    "membros": [
+      {
+        "nome": "votacao_candidato_munzona_2026_AP.csv",
+        "bytes": 2335246
+      },
+      {
+        "nome": "votacao_candidato_munzona_2026_AM.csv",
+        "bytes": 14615001
+      },
+      {
+        "nome": "votacao_candidato_munzona_2026_AC.csv",
+        "bytes": 3544228
+      },
+      {
+        "nome": "votacao_candidato_munzona_2026_BA.csv",
+        "bytes": 238540942
+      },
+      {
+        "nome": "votacao_candidato_munzona_2026_AL.csv",
+        "bytes": 12306104
+      },
+      {
+        "nome": "votacao_candidato_munzona_2026_BR.csv",
+        "bytes": 40138768
+      },
+      {
+        "nome": "votacao_candidato_munzona_2026_CE.csv",
+        "bytes": 61627024
+      },
+      {
+        "nome": "votacao_candidato_munzona_2026_DF.csv",
+        "bytes": 5440499
+      },
+      {
+        "nome": "votacao_candidato_munzona_2026_ES.csv",
+        "bytes": 21756200
+      },
+      {
+        "nome": "votacao_candidato_munzona_2026_GO.csv",
+        "bytes": 99795453
+      },
+      {
+        "nome": "votacao_candidato_munzona_2026_MA.csv",
+        "bytes": 59306874
+      },
+      {
+        "nome": "votacao_candidato_munzona_2026_MG.csv",
+        "bytes": 716817680
+      },
+      {
+        "nome": "votacao_candidato_munzona_2026_MT.csv",
+        "bytes": 27940085
+      },
+      {
+        "nome": "votacao_candidato_munzona_2026_MS.csv",
+        "bytes": 15987476
+      },
+      {
+        "nome": "votacao_candidato_munzona_2026_PA.csv",
+        "bytes": 49519105
+      },
+      {
+        "nome": "votacao_candidato_munzona_2026_BRASIL.csv",
+        "bytes": 3194807802
+      },
+      {
+        "nome": "votacao_candidato_munzona_2026_PB.csv",
+        "bytes": 40770338
+      },
+      {
+        "nome": "votacao_candidato_munzona_2026_PE.csv",
+        "bytes": 84692763
+      },
+      {
+        "nome": "votacao_candidato_munzona_2026_PI.csv",
+        "bytes": 35779876
+      },
+      {
+        "nome": "votacao_candidato_munzona_2026_PR.csv",
+        "bytes": 200829225
+      },
+      {
+        "nome": "votacao_candidato_munzona_2026_RJ.csv",
+        "bytes": 168119737
+      },
+      {
+        "nome": "votacao_candidato_munzona_2026_RN.csv",
+        "bytes": 23141139
+      },
+      {
+        "nome": "votacao_candidato_munzona_2026_RO.csv",
+        "bytes": 10253845
+      },
+      {
+        "nome": "votacao_candidato_munzona_2026_RR.csv",
+        "bytes": 2585576
+      },
+      {
+        "nome": "votacao_candidato_munzona_2026_RS.csv",
+        "bytes": 245603330
+      },
+      {
+        "nome": "votacao_candidato_munzona_2026_SC.csv",
+        "bytes": 96312205
+      },
+      {
+        "nome": "votacao_candidato_munzona_2026_SE.csv",
+        "bytes": 12540521
+      },
+      {
+        "nome": "votacao_candidato_munzona_2026_SP.csv",
+        "bytes": 884146513
+      },
+      {
+        "nome": "votacao_candidato_munzona_2026_TO.csv",
+        "bytes": 20386187
+      },
+      {
+        "nome": "leiame.pdf",
+        "bytes": 125558
+      }
+    ]
+  },
+  {
+    "nome": "Detalhe da apuração por município e zona",
+    "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/detalhe_votacao_munzona/detalhe_votacao_munzona_2026.zip",
+    "status": 200,
+    "headers": {
+      "Last-Modified": "Wed, 28 Oct 2026 08:48:17 GMT",
+      "ETag": "\"3023af-65ee29fd2e639\"",
+      "Accept-Ranges": "bytes",
+      "Content-Length": "3154863",
+      "Access-Control-Allow-Origin": "*",
+      "Content-Type": "application/zip",
+      "Access-Control-Allow-Headers": "*",
+      "Access-Control-Allow-Methods": "POST, GET, OPTIONS, DELETE",
+      "Cache-Control": "max-age=18825",
+      "Date": "Wed, 28 Oct 2026 18:08:59 GMT",
+      "Connection": "close",
+      "Alt-Svc": "h3=\":443\"; ma=93600"
+    },
+    "bytes": 3154863,
+    "sha256": "52b9926a71851a6371a2be2ce30543868c04ae4ad933b09bacc297010d944393",
+    "zip_valido": true,
+    "membros": [
+      {
+        "nome": "detalhe_votacao_munzona_2026_AL.csv",
+        "bytes": 124389
+      },
+      {
+        "nome": "detalhe_votacao_munzona_2026_AC.csv",
+        "bytes": 33750
+      },
+      {
+        "nome": "detalhe_votacao_munzona_2026_BRASIL.csv",
+        "bytes": 10726690
+      },
+      {
+        "nome": "detalhe_votacao_munzona_2026_AP.csv",
+        "bytes": 21477
+      },
+      {
+        "nome": "detalhe_votacao_munzona_2026_AM.csv",
+        "bytes": 107474
+      },
+      {
+        "nome": "detalhe_votacao_munzona_2026_TO.csv",
+        "bytes": 200544
+      },
+      {
+        "nome": "detalhe_votacao_munzona_2026_BA.csv",
+        "bytes": 517343
+      },
+      {
+        "nome": "detalhe_votacao_munzona_2026_CE.csv",
+        "bytes": 236306
+      },
+      {
+        "nome": "detalhe_votacao_munzona_2026_DF.csv",
+        "bytes": 30174
+      },
+      {
+        "nome": "detalhe_votacao_munzona_2026_ES.csv",
+        "bytes": 126929
+      },
+      {
+        "nome": "detalhe_votacao_munzona_2026_MA.csv",
+        "bytes": 262257
+      },
+      {
+        "nome": "detalhe_votacao_munzona_2026_GO.csv",
+        "bytes": 294651
+      },
+      {
+        "nome": "detalhe_votacao_munzona_2026_MG.csv",
+        "bytes": 1051335
+      },
+      {
+        "nome": "detalhe_votacao_munzona_2026_MS.csv",
+        "bytes": 106077
+      },
+      {
+        "nome": "detalhe_votacao_munzona_2026_MT.csv",
+        "bytes": 171816
+      },
+      {
+        "nome": "detalhe_votacao_munzona_2026_PA.csv",
+        "bytes": 185913
+      },
+      {
+        "nome": "detalhe_votacao_munzona_2026_BR.csv",
+        "bytes": 3470048
+      },
+      {
+        "nome": "detalhe_votacao_munzona_2026_PB.csv",
+        "bytes": 263050
+      },
+      {
+        "nome": "detalhe_votacao_munzona_2026_RN.csv",
+        "bytes": 255522
+      },
+      {
+        "nome": "detalhe_votacao_munzona_2026_PE.csv",
+        "bytes": 246331
+      },
+      {
+        "nome": "detalhe_votacao_munzona_2026_PI.csv",
+        "bytes": 263709
+      },
+      {
+        "nome": "detalhe_votacao_munzona_2026_PR.csv",
+        "bytes": 483177
+      },
+      {
+        "nome": "detalhe_votacao_munzona_2026_RJ.csv",
+        "bytes": 225963
+      },
+      {
+        "nome": "detalhe_votacao_munzona_2026_RO.csv",
+        "bytes": 66198
+      },
+      {
+        "nome": "detalhe_votacao_munzona_2026_SP.csv",
+        "bytes": 911408
+      },
+      {
+        "nome": "detalhe_votacao_munzona_2026_RR.csv",
+        "bytes": 19141
+      },
+      {
+        "nome": "detalhe_votacao_munzona_2026_RS.csv",
+        "bytes": 616921
+      },
+      {
+        "nome": "detalhe_votacao_munzona_2026_SC.csv",
+        "bytes": 369062
+      },
+      {
+        "nome": "detalhe_votacao_munzona_2026_SE.csv",
+        "bytes": 90970
+      },
+      {
+        "nome": "leiame.pdf",
+        "bytes": 134884
+      }
+    ]
+  },
+  {
+    "nome": "Detalhe da apuração por seção eleitoral",
+    "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/detalhe_votacao_secao/detalhe_votacao_secao_2026.zip",
+    "status": 200,
+    "headers": {
+      "Accept-Ranges": "bytes",
+      "Access-Control-Allow-Origin": "*",
+      "Content-Type": "application/zip",
+      "Access-Control-Allow-Headers": "*",
+      "Access-Control-Allow-Methods": "POST, GET, OPTIONS, DELETE",
+      "Last-Modified": "Mon, 26 Oct 2026 15:35:35 GMT",
+      "ETag": "\"df80409-65ec014ca87c2\"",
+      "Content-Length": "234357769",
+      "Cache-Control": "max-age=20827",
+      "Date": "Wed, 28 Oct 2026 18:08:59 GMT",
+      "Connection": "close",
+      "Alt-Svc": "h3=\":443\"; ma=93600"
+    },
+    "bytes": 234357769,
+    "sha256": "8ef9ce3a85cde260471faf7a83a9b4f5ccf3993fdda942aacaa658574344789c",
+    "zip_valido": true,
+    "membros": [
+      {
+        "nome": "detalhe_votacao_secao_2026_AP.csv",
+        "bytes": 2754850
+      },
+      {
+        "nome": "detalhe_votacao_secao_2026_BR.csv",
+        "bytes": 351831261
+      },
+      {
+        "nome": "detalhe_votacao_secao_2026_BA.csv",
+        "bytes": 52881167
+      },
+      {
+        "nome": "detalhe_votacao_secao_2026_AL.csv",
+        "bytes": 10385170
+      },
+      {
+        "nome": "detalhe_votacao_secao_2026_BRASIL.csv",
+        "bytes": 1090620422
+      },
+      {
+        "nome": "detalhe_votacao_secao_2026_AC.csv",
+        "bytes": 4006541
+      },
+      {
+        "nome": "detalhe_votacao_secao_2026_AM.csv",
+        "bytes": 14439302
+      },
+      {
+        "nome": "detalhe_votacao_secao_2026_CE.csv",
+        "bytes": 33410571
+      },
+      {
+        "nome": "detalhe_votacao_secao_2026_DF.csv",
+        "bytes": 12645533
+      },
+      {
+        "nome": "detalhe_votacao_secao_2026_ES.csv",
+        "bytes": 17623155
+      },
+      {
+        "nome": "detalhe_votacao_secao_2026_GO.csv",
+        "bytes": 23384412
+      },
+      {
+        "nome": "detalhe_votacao_secao_2026_MA.csv",
+        "bytes": 25886693
+      },
+      {
+        "nome": "detalhe_votacao_secao_2026_MG.csv",
+        "bytes": 76572304
+      },
+      {
+        "nome": "detalhe_votacao_secao_2026_MS.csv",
+        "bytes": 10404618
+      },
+      {
+        "nome": "detalhe_votacao_secao_2026_MT.csv",
+        "bytes": 12267191
+      },
+      {
+        "nome": "detalhe_votacao_secao_2026_PA.csv",
+        "bytes": 29059600
+      },
+      {
+        "nome": "detalhe_votacao_secao_2026_PB.csv",
+        "bytes": 15765923
+      },
+      {
+        "nome": "detalhe_votacao_secao_2026_PE.csv",
+        "bytes": 31258483
+      },
+      {
+        "nome": "detalhe_votacao_secao_2026_PI.csv",
+        "bytes": 14659964
+      },
+      {
+        "nome": "detalhe_votacao_secao_2026_PR.csv",
+        "bytes": 39790087
+      },
+      {
+        "nome": "detalhe_votacao_secao_2026_RJ.csv",
+        "bytes": 55799205
+      },
+      {
+        "nome": "detalhe_votacao_secao_2026_RN.csv",
+        "bytes": 15232294
+      },
+      {
+        "nome": "detalhe_votacao_secao_2026_RO.csv",
+        "bytes": 6868211
+      },
+      {
+        "nome": "detalhe_votacao_secao_2026_RR.csv",
+        "bytes": 2237063
+      },
+      {
+        "nome": "detalhe_votacao_secao_2026_SE.csv",
+        "bytes": 8642037
+      },
+      {
+        "nome": "detalhe_votacao_secao_2026_RS.csv",
+        "bytes": 40619554
+      },
+      {
+        "nome": "detalhe_votacao_secao_2026_SC.csv",
+        "bytes": 25920597
+      },
+      {
+        "nome": "detalhe_votacao_secao_2026_SP.csv",
+        "bytes": 148259861
+      },
+      {
+        "nome": "detalhe_votacao_secao_2026_TO.csv",
+        "bytes": 8031137
+      },
+      {
+        "nome": "detalhe_votacao_secao_2026_ZZ.csv",
+        "bytes": 606
+      },
+      {
+        "nome": "leiame.pdf",
+        "bytes": 123650
+      }
+    ]
+  },
+  {
+    "nome": "Presidente - Votação por seção eleitoral - 2026",
+    "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/votacao_secao/votacao_secao_2026_BR.zip",
+    "status": 200,
+    "headers": {
+      "Accept-Ranges": "bytes",
+      "Access-Control-Allow-Origin": "*",
+      "Content-Type": "application/zip",
+      "Access-Control-Allow-Headers": "*",
+      "Access-Control-Allow-Methods": "POST, GET, OPTIONS, DELETE",
+      "Last-Modified": "Mon, 26 Oct 2026 17:42:32 GMT",
+      "ETag": "\"e6af70f-65ec1dac721b7\"",
+      "Content-Length": "241891087",
+      "Cache-Control": "max-age=20813",
+      "Date": "Wed, 28 Oct 2026 18:08:59 GMT",
+      "Connection": "close",
+      "Alt-Svc": "h3=\":443\"; ma=93600"
+    },
+    "bytes": 241891087,
+    "sha256": "c928321f63f2d095706fca73d4607c048d2ada23bda6876455d6911aaf1bc9c1",
+    "zip_valido": true,
+    "membros": [
+      {
+        "nome": "votacao_secao_2026_BR.csv",
+        "bytes": 1578545088
+      },
+      {
+        "nome": "leiame.pdf",
+        "bytes": 192420
+      }
+    ]
+  }
+]

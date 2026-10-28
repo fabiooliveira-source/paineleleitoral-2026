@@ -1,0 +1,22 @@
+[
+  {
+    "arquivo": "detalhe_votacao_munzona_2026.zip",
+    "primeiro_membro_corrompido": null,
+    "crc_ok": true
+  },
+  {
+    "arquivo": "detalhe_votacao_secao_2026.zip",
+    "primeiro_membro_corrompido": null,
+    "crc_ok": true
+  },
+  {
+    "arquivo": "votacao_candidato_munzona_2026.zip",
+    "primeiro_membro_corrompido": null,
+    "crc_ok": true
+  },
+  {
+    "arquivo": "votacao_secao_2026_BR.zip",
+    "primeiro_membro_corrompido": null,
+    "crc_ok": true
+  }
+]

@@ -1,0 +1,146 @@
+﻿uf;codigo_municipio_tse;municipio;zona;secao;lula_1t;flavio_1t;aptos_1t;comparecimento_1t;abstencoes_1t;nominais_1t;brancos_1t;nulos_1t;instalada_1t;anulada_1t;local_votacao_1t;situacao_dados_1t;lula_2t;flavio_2t;aptos_2t;comparecimento_2t;abstencoes_2t;nominais_2t;brancos_2t;nulos_2t;instalada_2t;anulada_2t;local_votacao_2t;situacao_dados_2t;dif_lula;dif_flavio;dif_comparecimento;transicao_zero_lula;transicao_zero_flavio;mesmo_local_votacao
+AC;01074;CRUZEIRO DO SUL;4;457;151;0;208;155;53;151;0;4;Sim;Não;2291;conferido;137;0;208;151;57;137;0;14;Sim;Não;2291;conferido;-14;0;-4;positivo_para_positivo;zero_para_zero;True
+AC;01104;JORDÃO;5;125;138;4;199;147;52;144;0;3;Sim;Não;1074;conferido;123;0;197;128;69;123;0;5;Sim;Não;1074;conferido;-15;-4;-19;positivo_para_positivo;positivo_para_zero;True
+AC;01104;JORDÃO;5;65;127;1;199;131;68;129;0;2;Sim;Não;1074;conferido;126;0;199;133;66;126;0;7;Sim;Não;1074;conferido;-1;-1;2;positivo_para_positivo;positivo_para_zero;True
+AM;02054;ATALAIA DO NORTE;42;25;208;0;268;212;56;210;0;2;Sim;Não;1104;conferido;207;3;267;211;56;210;0;1;Sim;Não;1104;conferido;-1;3;-1;positivo_para_positivo;zero_para_positivo;True
+AM;02054;ATALAIA DO NORTE;42;26;283;1;362;295;67;290;0;5;Sim;Não;1120;conferido;302;0;362;309;53;302;0;7;Sim;Não;1120;conferido;19;-1;14;positivo_para_positivo;positivo_para_zero;True
+AM;02054;ATALAIA DO NORTE;42;28;126;1;185;134;51;133;1;0;Sim;Não;1147;conferido;136;0;185;137;48;136;0;1;Sim;Não;1147;conferido;10;-1;3;positivo_para_positivo;positivo_para_zero;True
+AM;02054;ATALAIA DO NORTE;42;29;274;4;441;289;152;284;0;5;Sim;Não;1112;conferido;325;0;441;335;106;325;1;9;Sim;Não;1112;conferido;51;-4;46;positivo_para_positivo;positivo_para_zero;True
+AM;02054;ATALAIA DO NORTE;42;30;132;3;178;136;42;136;0;0;Sim;Não;1155;conferido;142;0;178;144;34;142;1;1;Sim;Não;1155;conferido;10;-3;8;positivo_para_positivo;positivo_para_zero;True
+AM;02054;ATALAIA DO NORTE;42;37;105;0;157;107;50;106;0;1;Sim;Não;1171;conferido;122;0;157;128;29;122;0;6;Sim;Não;1171;conferido;17;0;21;positivo_para_positivo;zero_para_zero;True
+AM;02119;BARREIRINHA;26;62;257;0;310;270;40;265;1;4;Sim;Não;1414;conferido;261;0;310;272;38;261;1;10;Sim;Não;1414;conferido;4;0;2;positivo_para_positivo;zero_para_zero;True
+AM;02135;BENJAMIN CONSTANT;20;117;237;1;251;242;9;239;0;3;Sim;Não;1341;conferido;231;0;251;243;8;231;0;12;Sim;Não;1341;conferido;-6;-1;1;positivo_para_positivo;positivo_para_zero;True
+AM;02135;BENJAMIN CONSTANT;20;89;242;0;262;246;16;242;0;4;Sim;Não;1244;conferido;238;0;262;246;16;238;0;8;Sim;Não;1244;conferido;-4;0;0;positivo_para_positivo;zero_para_zero;True
+AM;02216;CARAUARI;21;96;112;1;129;114;15;113;0;1;Sim;Não;1414;conferido;113;0;129;113;16;113;0;0;Sim;Não;1414;conferido;1;-1;-1;positivo_para_positivo;positivo_para_zero;True
+AM;02372;SANTA ISABEL DO RIO NEGRO;30;22;213;0;369;223;146;221;0;2;Sim;Não;1139;conferido;236;0;369;250;119;236;0;14;Sim;Não;1139;conferido;23;0;27;positivo_para_positivo;zero_para_zero;True
+AM;02372;SANTA ISABEL DO RIO NEGRO;30;26;195;0;368;211;157;203;0;8;Sim;Não;1139;conferido;229;0;368;245;123;229;0;16;Sim;Não;1139;conferido;34;0;34;positivo_para_positivo;zero_para_zero;True
+AM;02372;SANTA ISABEL DO RIO NEGRO;30;30;51;1;167;56;111;54;0;2;Sim;Não;1139;conferido;72;0;167;76;91;72;0;4;Sim;Não;1139;conferido;21;-1;20;positivo_para_positivo;positivo_para_zero;True
+AM;02437;ITAPIRANGA;24;67;38;0;64;39;25;39;0;0;Sim;Não;1171;conferido;28;4;64;34;30;32;0;2;Sim;Não;1171;conferido;-10;4;-5;positivo_para_positivo;zero_para_positivo;True
+AM;02453;JAPURÁ;48;12;221;0;261;224;37;223;0;1;Sim;Não;1074;conferido;224;0;261;232;29;224;0;8;Sim;Não;1074;conferido;3;0;8;positivo_para_positivo;zero_para_zero;True
+AM;02470;JURUÁ;50;19;129;3;223;162;61;142;1;19;Sim;Não;1180;conferido;149;0;223;168;55;149;2;17;Sim;Não;1180;conferido;20;-3;6;positivo_para_positivo;positivo_para_zero;True
+AM;02615;MAUÉS;5;176;310;16;382;331;51;329;0;2;Sim;Não;1406;conferido;333;0;382;337;45;333;0;4;Sim;Não;1406;conferido;23;-16;6;positivo_para_positivo;positivo_para_zero;True
+AM;02615;MAUÉS;5;179;126;1;144;127;17;127;0;0;Sim;Não;1406;conferido;123;0;144;124;20;123;0;1;Sim;Não;1406;conferido;-3;-1;-3;positivo_para_positivo;positivo_para_zero;True
+AM;02631;NHAMUNDÁ;43;47;259;0;292;262;30;261;1;0;Sim;Não;1430;conferido;271;1;292;274;18;272;0;2;Sim;Não;1430;conferido;12;1;12;positivo_para_positivo;zero_para_positivo;True
+AM;02690;PARINTINS;4;130;246;3;318;254;64;250;2;2;Sim;Não;1600;conferido;220;0;320;225;95;220;0;5;Sim;Não;1600;conferido;-26;-3;-29;positivo_para_positivo;positivo_para_zero;True
+AM;02690;PARINTINS;4;280;98;0;102;98;4;98;0;0;Sim;Não;2054;conferido;88;0;102;89;13;88;0;1;Sim;Não;2054;conferido;-10;0;-9;positivo_para_positivo;zero_para_zero;True
+AM;02739;SANTO ANTÔNIO DO IÇÁ;47;10;318;0;364;321;43;319;0;2;Sim;Não;1040;conferido;330;1;364;333;31;331;0;2;Sim;Não;1040;conferido;12;1;12;positivo_para_positivo;zero_para_positivo;True
+AM;02739;SANTO ANTÔNIO DO IÇÁ;47;63;284;0;319;290;29;289;0;1;Sim;Não;1139;conferido;289;2;319;296;23;291;0;5;Sim;Não;1139;conferido;5;2;6;positivo_para_positivo;zero_para_positivo;True
+AM;02739;SANTO ANTÔNIO DO IÇÁ;47;87;308;2;362;313;49;312;0;1;Sim;Não;1180;conferido;315;0;362;316;46;315;0;1;Sim;Não;1180;conferido;7;-2;3;positivo_para_positivo;positivo_para_zero;True
+AM;02739;SANTO ANTÔNIO DO IÇÁ;47;9;319;4;362;326;36;324;0;2;Sim;Não;1040;conferido;329;0;362;330;32;329;0;1;Sim;Não;1040;conferido;10;-4;4;positivo_para_positivo;positivo_para_zero;True
+AM;02755;SÃO PAULO DE OLIVENÇA;22;114;231;0;293;238;55;238;0;0;Sim;Não;1228;conferido;244;0;293;251;42;244;1;6;Sim;Não;1228;conferido;13;0;13;positivo_para_positivo;zero_para_zero;True
+AM;02755;SÃO PAULO DE OLIVENÇA;22;71;295;1;322;301;21;298;0;3;Sim;Não;1171;conferido;298;0;322;305;17;298;0;7;Sim;Não;1171;conferido;3;-1;4;positivo_para_positivo;positivo_para_zero;True
+AM;02836;SÃO GABRIEL DA CACHOEIRA;19;1;171;1;215;172;43;172;0;0;Sim;Não;1090;conferido;167;0;215;172;43;167;1;4;Sim;Não;1090;conferido;-4;-1;0;positivo_para_positivo;positivo_para_zero;True
+AM;02836;SÃO GABRIEL DA CACHOEIRA;19;120;129;0;144;130;14;130;0;0;Sim;Não;1708;conferido;126;0;144;127;17;126;0;1;Sim;Não;1708;conferido;-3;0;-3;positivo_para_positivo;zero_para_zero;True
+AM;02836;SÃO GABRIEL DA CACHOEIRA;19;59;150;0;202;150;52;150;0;0;Sim;Não;1503;conferido;140;1;202;143;59;141;0;2;Sim;Não;1503;conferido;-10;1;-7;positivo_para_positivo;zero_para_positivo;True
+AM;02836;SÃO GABRIEL DA CACHOEIRA;19;65;223;0;306;224;82;224;0;0;Sim;Não;1546;conferido;224;0;306;231;75;224;0;7;Sim;Não;1546;conferido;1;0;7;positivo_para_positivo;zero_para_zero;True
+AM;02836;SÃO GABRIEL DA CACHOEIRA;19;87;223;0;271;224;47;223;1;0;Sim;Não;1600;conferido;222;0;271;223;48;222;0;1;Sim;Não;1600;conferido;-1;0;-1;positivo_para_positivo;zero_para_zero;True
+AM;02836;SÃO GABRIEL DA CACHOEIRA;19;92;233;0;303;234;69;234;0;0;Sim;Não;1546;conferido;215;0;303;219;84;215;0;4;Sim;Não;1546;conferido;-18;0;-15;positivo_para_positivo;zero_para_zero;True
+AM;02879;URUCURITUBA;3;252;112;4;147;118;29;117;0;1;Sim;Não;1112;conferido;101;0;147;103;44;101;0;2;Sim;Não;1112;conferido;-11;-4;-15;positivo_para_positivo;positivo_para_zero;True
+AM;98477;TABATINGA;36;61;351;3;400;359;41;358;0;1;Sim;Não;1201;conferido;354;0;400;365;35;354;0;11;Sim;Não;1201;conferido;3;-3;6;positivo_para_positivo;positivo_para_zero;True
+AM;98477;TABATINGA;36;96;340;0;388;346;42;342;0;4;Sim;Não;1260;conferido;338;0;388;347;41;338;0;9;Sim;Não;1260;conferido;-2;0;1;positivo_para_positivo;zero_para_zero;True
+AP;06076;MAZAGÃO;5;33;43;0;67;49;18;47;0;2;Sim;Não;1147;conferido;38;1;67;39;28;39;0;0;Sim;Não;1147;conferido;-5;1;-10;positivo_para_positivo;zero_para_positivo;True
+AP;06076;MAZAGÃO;5;75;81;0;90;81;9;81;0;0;Sim;Não;1309;conferido;75;1;90;76;14;76;0;0;Sim;Não;1309;conferido;-6;1;-5;positivo_para_positivo;zero_para_positivo;True
+BA;33090;ÉRICO CARDOSO;111;250;43;0;88;45;43;44;0;1;Sim;Não;1228;conferido;44;0;88;44;44;44;0;0;Sim;Não;1228;conferido;1;0;-1;positivo_para_positivo;zero_para_zero;True
+BA;33596;BARRA DO MENDES;176;151;63;0;82;67;15;64;0;3;Sim;Não;1422;conferido;69;0;82;71;11;69;0;2;Sim;Não;1422;conferido;6;0;4;positivo_para_positivo;zero_para_zero;True
+BA;33596;BARRA DO MENDES;176;50;59;0;95;69;26;67;0;2;Sim;Não;1295;conferido;63;4;95;69;26;67;0;2;Sim;Não;1295;conferido;4;4;0;positivo_para_positivo;zero_para_positivo;True
+BA;34134;CAMAÇARI;171;409;10;0;24;10;14;10;0;0;Sim;Não;1589;conferido;11;1;24;12;12;12;0;0;Sim;Não;1589;conferido;1;1;2;positivo_para_positivo;zero_para_positivo;True
+BA;35378;IAÇU;193;116;35;0;52;40;12;36;1;3;Sim;Não;1210;conferido;40;0;52;44;8;40;2;2;Sim;Não;1210;conferido;5;0;4;positivo_para_positivo;zero_para_zero;True
+BA;39039;SENTO SÉ;96;119;64;0;72;71;1;65;1;5;Sim;Não;1643;conferido;62;0;72;68;4;62;0;6;Sim;Não;1643;conferido;-2;0;-3;positivo_para_positivo;zero_para_zero;True
+CE;13196;AQUIRAZ;66;334;28;2;35;34;1;31;3;0;Sim;Não;2151;conferido;32;0;35;33;2;32;0;1;Sim;Não;2151;conferido;4;-2;-1;positivo_para_positivo;positivo_para_zero;True
+CE;15210;PORANGA;40;208;54;0;59;54;5;54;0;0;Sim;Não;1368;conferido;54;0;59;54;5;54;0;0;Sim;Não;1368;conferido;0;0;0;positivo_para_positivo;zero_para_zero;True
+CE;15652;TAMBORIL;61;102;92;0;111;93;18;92;0;1;Sim;Não;1767;conferido;92;1;111;93;18;93;0;0;Sim;Não;1767;conferido;0;1;0;positivo_para_positivo;zero_para_positivo;True
+ES;56111;ARACRUZ;20;232;33;0;56;33;23;33;0;0;Sim;Não;1627;conferido;41;0;56;41;15;41;0;0;Sim;Não;1627;conferido;8;0;8;positivo_para_positivo;zero_para_zero;True
+MA;07005;ÁGUA DOCE DO MARANHÃO;12;145;170;4;230;186;44;177;1;8;Sim;Não;1210;conferido;189;0;230;193;37;189;0;4;Sim;Não;1210;conferido;19;-4;7;positivo_para_positivo;positivo_para_zero;True
+MA;07030;ALCÂNTARA;52;85;77;0;95;82;13;77;1;4;Sim;Não;1554;conferido;79;0;95;82;13;79;0;3;Sim;Não;1554;conferido;2;0;0;positivo_para_positivo;zero_para_zero;True
+MA;07030;ALCÂNTARA;52;86;44;1;49;45;4;45;0;0;Sim;Não;1562;conferido;44;0;50;44;6;44;0;0;Sim;Não;1562;conferido;0;-1;-1;positivo_para_positivo;positivo_para_zero;True
+MA;07331;BARREIRINHAS;56;254;99;0;109;101;8;100;0;1;Sim;Não;2259;conferido;95;0;109;99;10;95;1;3;Sim;Não;2259;conferido;-4;0;-2;positivo_para_positivo;zero_para_zero;True
+MA;07595;CEDRAL;30;85;91;0;124;95;29;93;0;2;Sim;Não;1201;conferido;93;1;124;96;28;94;0;2;Sim;Não;1201;conferido;2;1;1;positivo_para_positivo;zero_para_positivo;True
+MA;07714;CURURUPU;14;195;50;0;56;52;4;51;0;1;Sim;Não;1686;conferido;54;0;56;54;2;54;0;0;Sim;Não;1686;conferido;4;0;2;positivo_para_positivo;zero_para_zero;True
+MA;07927;MARANHÃOZINHO;101;78;182;0;236;185;51;183;0;2;Sim;Não;1104;conferido;176;0;236;181;55;176;0;5;Sim;Não;1104;conferido;-6;0;-4;positivo_para_positivo;zero_para_zero;True
+MA;07935;GRAJAÚ;15;405;95;0;114;106;8;95;0;11;Sim;Não;2100;conferido;102;0;114;105;9;102;0;3;Sim;Não;2100;conferido;7;0;-1;positivo_para_positivo;zero_para_zero;True
+MA;07994;ICATU;31;51;141;0;163;144;19;143;0;1;Sim;Não;1279;conferido;130;1;163;132;31;131;0;1;Sim;Não;1279;conferido;-11;1;-12;positivo_para_positivo;zero_para_positivo;True
+MA;08397;MONTES ALTOS;103;28;281;0;318;283;35;281;0;2;Sim;Não;1090;conferido;292;3;318;297;21;295;0;2;Sim;Não;1090;conferido;11;3;14;positivo_para_positivo;zero_para_positivo;True
+MA;08397;MONTES ALTOS;103;80;287;2;317;291;26;289;0;2;Sim;Não;1090;conferido;298;0;317;298;19;298;0;0;Sim;Não;1090;conferido;11;-2;7;positivo_para_positivo;positivo_para_zero;True
+MA;08524;SERRANO DO MARANHÃO;107;87;82;3;98;85;13;85;0;0;Sim;Não;1120;conferido;83;0;97;84;13;83;0;1;Sim;Não;1120;conferido;1;-3;-1;positivo_para_positivo;positivo_para_zero;True
+MA;08524;SERRANO DO MARANHÃO;107;89;74;1;98;79;19;76;1;2;Sim;Não;1147;conferido;74;0;98;75;23;74;0;1;Sim;Não;1147;conferido;0;-1;-4;positivo_para_positivo;positivo_para_zero;True
+MA;08559;PARNARAMA;36;128;81;0;108;84;24;82;0;2;Sim;Não;1368;conferido;85;1;108;89;19;86;0;3;Sim;Não;1368;conferido;4;1;5;positivo_para_positivo;zero_para_positivo;True
+MA;08850;PRIMEIRA CRUZ;32;193;49;1;66;53;13;51;0;2;Sim;Não;1147;conferido;42;0;66;43;23;42;0;1;Sim;Não;1147;conferido;-7;-1;-10;positivo_para_positivo;positivo_para_zero;True
+MA;08850;PRIMEIRA CRUZ;32;90;46;1;54;52;2;49;0;3;Sim;Não;1384;conferido;42;0;54;47;7;42;2;3;Sim;Não;1384;conferido;-4;-1;-5;positivo_para_positivo;positivo_para_zero;True
+MA;08958;SANTA HELENA;83;170;52;0;65;52;13;52;0;0;Sim;Não;1538;conferido;54;0;65;54;11;54;0;0;Sim;Não;1538;conferido;2;0;2;positivo_para_positivo;zero_para_zero;True
+MA;08958;SANTA HELENA;83;179;51;0;68;53;15;51;0;2;Sim;Não;1562;conferido;55;0;68;56;12;55;0;1;Sim;Não;1562;conferido;4;0;3;positivo_para_positivo;zero_para_zero;True
+MA;09075;SÃO BENTO;38;167;94;2;125;98;27;96;1;1;Sim;Não;1368;conferido;96;0;125;97;28;96;0;1;Sim;Não;1368;conferido;2;-2;-1;positivo_para_positivo;positivo_para_zero;True
+MA;09415;TURIAÇU;39;162;171;1;219;181;38;176;1;4;Sim;Não;2089;conferido;157;0;219;158;61;157;0;1;Sim;Não;2089;conferido;-14;-1;-23;positivo_para_positivo;positivo_para_zero;True
+MA;09415;TURIAÇU;39;195;68;1;87;72;15;69;0;3;Sim;Não;2224;conferido;73;0;87;74;13;73;0;1;Sim;Não;2224;conferido;5;-1;2;positivo_para_positivo;positivo_para_zero;True
+MA;09415;TURIAÇU;39;206;86;5;134;98;36;91;1;6;Sim;Não;2267;conferido;91;0;134;92;42;91;1;0;Sim;Não;2267;conferido;5;-5;-6;positivo_para_positivo;positivo_para_zero;True
+MA;09415;TURIAÇU;39;58;166;2;216;171;45;169;0;2;Sim;Não;1309;conferido;164;0;216;166;50;164;0;2;Sim;Não;1309;conferido;-2;-2;-5;positivo_para_positivo;positivo_para_zero;True
+MA;09490;VIANA;20;258;97;1;113;100;13;98;1;1;Sim;Não;1945;conferido;100;0;113;101;12;100;0;1;Sim;Não;1945;conferido;3;-1;1;positivo_para_positivo;positivo_para_zero;True
+MA;09555;BOM JARDIM;78;283;178;0;215;181;34;179;1;1;Sim;Não;2992;conferido;198;1;215;203;12;199;3;1;Sim;Não;2992;conferido;20;1;22;positivo_para_positivo;zero_para_positivo;True
+MG;41009;LUISLÂNDIA;50;224;74;0;104;75;29;74;0;1;Sim;Não;1139;conferido;69;0;104;71;33;69;0;2;Sim;Não;1139;conferido;-5;0;-4;positivo_para_positivo;zero_para_zero;True
+MG;46418;ITACARAMBI;148;376;106;0;125;109;16;109;0;0;Sim;Não;1210;conferido;110;1;125;111;14;111;0;0;Sim;Não;1210;conferido;4;1;2;positivo_para_positivo;zero_para_positivo;True
+MG;46876;ITURAMA;142;144;0;19;22;20;2;20;0;0;Sim;Não;1295;conferido;1;17;21;18;3;18;0;0;Sim;Não;1295;conferido;1;-2;-2;zero_para_positivo;positivo_para_positivo;True
+MG;50431;PORTEIRINHA;226;219;26;0;36;26;10;26;0;0;Sim;Não;1686;conferido;27;1;36;28;8;28;0;0;Sim;Não;1686;conferido;1;1;2;positivo_para_positivo;zero_para_positivo;True
+MG;51390;SALINAS;244;256;41;0;71;47;24;41;3;3;Sim;Não;1562;conferido;47;0;71;49;22;47;1;1;Sim;Não;1562;conferido;6;0;2;positivo_para_positivo;zero_para_zero;True
+MG;52477;SÃO JOÃO DA PONTE;255;146;62;0;83;66;17;64;1;1;Sim;Não;1325;conferido;65;2;83;68;15;67;0;1;Sim;Não;1325;conferido;3;2;2;positivo_para_positivo;zero_para_positivo;True
+MS;91715;ARAL MOREIRA;19;313;52;0;63;53;10;52;0;1;Sim;Não;1171;conferido;56;0;63;56;7;56;0;0;Sim;Não;1171;conferido;4;0;3;positivo_para_positivo;zero_para_zero;True
+MT;90280;CONFRESA;28;200;296;0;315;297;18;297;0;0;Sim;Não;1120;conferido;309;0;315;309;6;309;0;0;Sim;Não;1120;conferido;13;0;12;positivo_para_positivo;zero_para_zero;True
+MT;90352;BARRA DO GARÇAS;9;531;109;3;154;123;31;116;1;6;Sim;Não;1511;conferido;119;0;154;123;31;119;0;4;Sim;Não;1511;conferido;10;-3;0;positivo_para_positivo;positivo_para_zero;True
+MT;98817;PEIXOTO DE AZEVEDO;33;255;156;0;231;159;72;159;0;0;Sim;Não;1139;conferido;179;0;231;181;50;179;0;2;Sim;Não;1139;conferido;23;0;22;positivo_para_positivo;zero_para_zero;True
+MT;98850;PORTO ALEGRE DO NORTE;28;191;61;0;65;61;4;61;0;0;Sim;Não;1090;conferido;61;0;65;61;4;61;0;0;Sim;Não;1090;conferido;0;0;0;positivo_para_positivo;zero_para_zero;True
+MT;99058;GUARANTÃ DO NORTE;44;284;144;3;171;150;21;150;0;0;Sim;Não;1171;conferido;145;0;168;145;23;145;0;0;Sim;Não;1171;conferido;1;-3;-5;positivo_para_positivo;positivo_para_zero;True
+PA;04073;ALENQUER;21;234;65;2;77;68;9;68;0;0;Sim;Não;2216;conferido;60;0;77;60;17;60;0;0;Sim;Não;2216;conferido;-5;-2;-8;positivo_para_positivo;positivo_para_zero;True
+PA;04090;ALMEIRIM;55;128;156;0;192;162;30;156;0;6;Sim;Não;1600;conferido;156;0;192;157;35;156;0;1;Sim;Não;1600;conferido;0;0;-5;positivo_para_positivo;zero_para_zero;True
+PA;04111;ALTAMIRA;18;516;54;0;87;54;33;54;0;0;Sim;Não;3018;conferido;52;0;87;53;34;52;0;1;Sim;Não;3018;conferido;-2;0;-1;positivo_para_positivo;zero_para_zero;True
+PA;04111;ALTAMIRA;18;519;21;0;54;21;33;21;0;0;Sim;Não;3000;conferido;35;0;54;35;19;35;0;0;Sim;Não;3000;conferido;14;0;14;positivo_para_positivo;zero_para_zero;True
+PA;04197;AVEIRO;34;660;102;0;117;103;14;102;0;1;Sim;Não;1481;conferido;106;0;117;106;11;106;0;0;Sim;Não;1481;conferido;4;0;3;positivo_para_positivo;zero_para_zero;True
+PA;04200;JACAREACANGA;102;44;0;49;99;50;49;49;0;1;Sim;Não;1244;conferido;0;50;99;50;49;50;0;0;Sim;Não;1244;conferido;0;1;0;zero_para_zero;positivo_para_positivo;True
+PA;04421;NOVO REPARTIMENTO;101;152;18;0;23;18;5;18;0;0;Sim;Não;1546;conferido;18;0;23;18;5;18;0;0;Sim;Não;1546;conferido;0;0;0;positivo_para_positivo;zero_para_zero;True
+PA;04421;NOVO REPARTIMENTO;101;163;260;0;323;263;60;260;0;3;Sim;Não;1538;conferido;308;1;323;310;13;309;0;1;Sim;Não;1538;conferido;48;1;47;positivo_para_positivo;zero_para_positivo;True
+PA;04421;NOVO REPARTIMENTO;101;164;59;0;76;68;8;61;0;7;Sim;Não;1562;conferido;63;1;76;64;12;64;0;0;Sim;Não;1562;conferido;4;1;-4;positivo_para_positivo;zero_para_positivo;True
+PA;04499;CHAVES;17;41;0;52;82;54;28;53;1;0;Sim;Não;1252;conferido;0;48;82;49;33;48;1;0;Sim;Não;1252;conferido;0;-4;-5;zero_para_zero;positivo_para_positivo;True
+PA;04774;JURUTI;105;92;30;0;45;32;13;30;1;1;Sim;Não;1481;conferido;31;2;45;33;12;33;0;0;Sim;Não;1481;conferido;1;2;1;positivo_para_positivo;zero_para_positivo;True
+PA;04936;MOJU;37;120;48;3;55;53;2;51;0;2;Sim;Não;1503;conferido;41;0;55;41;14;41;0;0;Sim;Não;1503;conferido;-7;-3;-12;positivo_para_positivo;positivo_para_zero;True
+PA;05053;ORIXIMINÁ;38;243;37;1;46;38;8;38;0;0;Sim;Não;2046;conferido;35;0;46;36;10;35;0;1;Sim;Não;2046;conferido;-2;-1;-2;positivo_para_positivo;positivo_para_zero;True
+PA;05053;ORIXIMINÁ;38;259;142;2;173;147;26;144;0;3;Sim;Não;2070;conferido;133;0;173;133;40;133;0;0;Sim;Não;2070;conferido;-9;-2;-14;positivo_para_positivo;positivo_para_zero;True
+PA;05053;ORIXIMINÁ;38;260;144;0;165;146;19;144;0;2;Sim;Não;2097;conferido;152;0;165;152;13;152;0;0;Sim;Não;2097;conferido;8;0;6;positivo_para_positivo;zero_para_zero;True
+PA;05096;PARAGOMINAS;42;214;46;1;66;52;14;48;0;4;Sim;Não;1503;conferido;54;0;66;55;11;54;1;0;Sim;Não;1503;conferido;8;-1;3;positivo_para_positivo;positivo_para_zero;True
+PA;05452;SÃO FÉLIX DO XINGU;53;217;130;1;203;132;71;131;0;1;Sim;Não;1341;conferido;145;0;203;145;58;145;0;0;Sim;Não;1341;conferido;15;-1;13;positivo_para_positivo;positivo_para_zero;True
+PA;05452;SÃO FÉLIX DO XINGU;53;218;214;1;318;221;97;216;0;5;Sim;Não;1350;conferido;273;0;318;273;45;273;0;0;Sim;Não;1350;conferido;59;-1;52;positivo_para_positivo;positivo_para_zero;True
+PA;05517;SÃO MIGUEL DO GUAMÁ;11;580;111;0;127;118;9;116;0;2;Sim;Não;1821;conferido;115;4;127;121;6;119;0;2;Sim;Não;1821;conferido;4;4;3;positivo_para_positivo;zero_para_positivo;True
+PA;05657;VISEU;14;126;100;0;120;105;15;102;0;3;Sim;Não;1775;conferido;104;1;120;106;14;105;0;1;Sim;Não;1775;conferido;4;1;1;positivo_para_positivo;zero_para_positivo;True
+PA;05657;VISEU;14;236;68;0;77;72;5;68;0;4;Sim;Não;2151;conferido;64;0;77;68;9;64;0;4;Sim;Não;2151;conferido;-4;0;-4;positivo_para_positivo;zero_para_zero;True
+PA;05835;PARAUAPEBAS;106;330;126;2;325;128;197;128;0;0;Sim;Não;1210;conferido;212;0;325;212;113;212;0;0;Sim;Não;1210;conferido;86;-2;84;positivo_para_positivo;positivo_para_zero;True
+PA;05835;PARAUAPEBAS;106;365;141;0;289;145;144;141;0;4;Sim;Não;1210;conferido;197;0;289;198;91;197;0;1;Sim;Não;1210;conferido;56;0;53;positivo_para_positivo;zero_para_zero;True
+PB;22071;SAPÉ;4;290;11;1;21;13;8;12;0;1;Sim;Não;1597;conferido;10;0;21;10;11;10;0;0;Sim;Não;1597;conferido;-1;-1;-3;positivo_para_positivo;positivo_para_zero;True
+PE;24139;FLORESTA;72;119;217;1;254;227;27;221;0;6;Sim;Não;1287;conferido;227;0;254;230;24;227;1;2;Sim;Não;1287;conferido;10;-1;3;positivo_para_positivo;positivo_para_zero;True
+PI;12033;SÃO JOSÉ DO PIAUÍ;64;73;103;0;125;110;15;104;3;3;Sim;Não;1155;conferido;100;1;125;104;21;101;1;2;Sim;Não;1155;conferido;-3;1;-6;positivo_para_positivo;zero_para_positivo;True
+PI;12190;TERESINA;97;168;13;0;27;14;13;14;0;0;Sim;Não;1350;conferido;16;0;27;16;11;16;0;0;Sim;Não;1350;conferido;3;0;2;positivo_para_positivo;zero_para_zero;True
+PR;75329;ESPIGÃO ALTO DO IGUAÇU;163;152;114;0;158;126;32;124;1;1;Sim;Não;1180;conferido;126;2;158;131;27;128;0;3;Sim;Não;1180;conferido;12;2;5;positivo_para_positivo;zero_para_positivo;True
+PR;77275;ORTIGUEIRA;167;96;299;1;377;313;64;303;1;9;Sim;Não;1562;conferido;314;0;377;317;60;314;1;2;Sim;Não;1562;conferido;15;-1;4;positivo_para_positivo;positivo_para_zero;True
+PR;79278;TOLEDO;75;329;0;74;85;77;8;76;1;0;Sim;Não;1678;conferido;2;79;85;81;4;81;0;0;Sim;Não;1678;conferido;2;5;4;zero_para_positivo;positivo_para_positivo;True
+RO;00035;PORTO VELHO;6;516;100;0;115;104;11;102;0;2;Sim;Não;1767;conferido;104;0;115;106;9;104;0;2;Sim;Não;1767;conferido;4;0;2;positivo_para_positivo;zero_para_zero;True
+RR;03000;CAROEBE;4;141;66;2;80;68;12;68;0;0;Sim;Não;1163;conferido;44;0;80;44;36;44;0;0;Sim;Não;1163;conferido;-22;-2;-24;positivo_para_positivo;positivo_para_zero;True
+RR;03107;UIRAMUTÃ;7;102;192;0;206;192;14;192;0;0;Sim;Não;1120;conferido;190;1;206;194;12;191;0;3;Sim;Não;1120;conferido;-2;1;2;positivo_para_positivo;zero_para_positivo;True
+RR;03107;UIRAMUTÃ;7;104;145;1;168;148;20;146;0;2;Sim;Não;1198;conferido;138;0;168;139;29;138;0;1;Sim;Não;1198;conferido;-7;-1;-9;positivo_para_positivo;positivo_para_zero;True
+RR;03107;UIRAMUTÃ;7;108;131;1;146;133;13;132;1;0;Sim;Não;1139;conferido;126;0;146;128;18;126;0;2;Sim;Não;1139;conferido;-5;-1;-5;positivo_para_positivo;positivo_para_zero;True
+RR;03107;UIRAMUTÃ;7;113;186;3;212;191;21;189;0;2;Sim;Não;1244;conferido;190;0;212;192;20;190;0;2;Sim;Não;1244;conferido;4;-3;1;positivo_para_positivo;positivo_para_zero;True
+RR;03107;UIRAMUTÃ;7;124;51;0;52;52;0;51;0;1;Sim;Não;1279;conferido;48;0;52;48;4;48;0;0;Sim;Não;1279;conferido;-3;0;-4;positivo_para_positivo;zero_para_zero;True
+RR;03107;UIRAMUTÃ;7;61;185;0;212;185;27;185;0;0;Sim;Não;1120;conferido;189;0;212;189;23;189;0;0;Sim;Não;1120;conferido;4;0;4;positivo_para_positivo;zero_para_zero;True
+RR;03107;UIRAMUTÃ;7;62;215;1;245;222;23;216;0;6;Sim;Não;1139;conferido;216;0;245;217;28;216;0;1;Sim;Não;1139;conferido;1;-1;-5;positivo_para_positivo;positivo_para_zero;True
+RR;03107;UIRAMUTÃ;7;63;259;2;304;264;40;262;0;2;Sim;Não;1147;conferido;256;0;304;256;48;256;0;0;Sim;Não;1147;conferido;-3;-2;-8;positivo_para_positivo;positivo_para_zero;True
+RS;85839;CÂNDIDO GODÓI;166;81;0;81;93;84;9;81;3;0;Sim;Não;1228;conferido;0;82;93;85;8;82;3;0;Sim;Não;1228;conferido;0;1;1;zero_para_zero;positivo_para_positivo;True
+RS;87084;MONTE BELO DO SUL;8;12;0;111;133;117;16;114;2;1;Sim;Não;1031;conferido;2;116;133;119;14;118;1;0;Sim;Não;1031;conferido;2;5;2;zero_para_positivo;positivo_para_positivo;True
+RS;89028;ARROIO DO PADRE;34;433;0;108;125;115;10;113;2;0;Sim;Não;1040;conferido;0;116;125;118;7;116;2;0;Sim;Não;1040;conferido;0;8;3;zero_para_zero;positivo_para_positivo;True
+RS;89630;VIAMÃO;59;590;36;1;46;37;9;37;0;0;Sim;Não;2194;conferido;39;0;45;39;6;39;0;0;Sim;Não;2194;conferido;3;-1;2;positivo_para_positivo;positivo_para_zero;True
+RS;89630;VIAMÃO;59;591;65;0;70;65;5;65;0;0;Sim;Não;2208;conferido;65;0;70;66;4;65;0;1;Sim;Não;2208;conferido;0;0;1;positivo_para_positivo;zero_para_zero;True
+SP;65471;ITAPETININGA;52;386;0;13;23;15;8;14;1;0;Sim;Não;2151;conferido;3;9;23;13;10;12;1;0;Sim;Não;2151;conferido;3;-4;-2;zero_para_positivo;positivo_para_positivo;True
+SP;70750;SÃO BERNARDO DO CAMPO;283;538;21;0;29;24;5;24;0;0;Sim;Não;1554;conferido;20;1;29;21;8;21;0;0;Sim;Não;1554;conferido;-1;1;-3;positivo_para_positivo;zero_para_positivo;True
+TO;93653;FORMOSO DO ARAGUAIA;15;72;126;0;159;132;27;127;1;4;Sim;Não;1236;conferido;129;2;159;142;17;131;0;11;Sim;Não;1236;conferido;3;2;10;positivo_para_positivo;zero_para_positivo;True
+TO;95214;PARANÃ;18;87;37;0;43;39;4;37;0;2;Sim;Não;1252;conferido;33;0;43;35;8;33;0;2;Sim;Não;1252;conferido;-4;0;-4;positivo_para_positivo;zero_para_zero;True
+TO;95338;GOIATINS;32;60;106;0;130;112;18;107;2;3;Sim;Não;1171;conferido;108;0;130;122;8;108;0;14;Sim;Não;1171;conferido;2;0;10;positivo_para_positivo;zero_para_zero;True
+TO;95338;GOIATINS;32;61;172;1;196;175;21;174;0;1;Sim;Não;1180;conferido;162;0;196;180;16;162;1;17;Sim;Não;1180;conferido;-10;-1;5;positivo_para_positivo;positivo_para_zero;True
+TO;95338;GOIATINS;32;84;174;1;196;181;15;175;1;5;Sim;Não;1180;conferido;174;0;196;182;14;174;0;8;Sim;Não;1180;conferido;0;-1;1;positivo_para_positivo;positivo_para_zero;True
+TO;96199;TOCANTÍNIA;5;55;190;1;219;196;23;191;0;5;Sim;Não;1031;conferido;196;0;219;201;18;196;1;4;Sim;Não;1031;conferido;6;-1;5;positivo_para_positivo;positivo_para_zero;True
+TO;96210;TOCANTINÓPOLIS;9;184;59;0;62;60;2;60;0;0;Sim;Não;1406;conferido;59;0;62;62;0;59;1;2;Sim;Não;1406;conferido;0;0;2;positivo_para_positivo;zero_para_zero;True
+TO;96210;TOCANTINÓPOLIS;9;192;159;0;175;165;10;159;2;4;Sim;Não;1252;conferido;155;0;175;174;1;155;4;15;Sim;Não;1252;conferido;-4;0;9;positivo_para_positivo;zero_para_zero;True
+ZZ;30333;PORTO PRÍNCIPE;1;353;5;0;33;5;28;5;0;0;Sim;Não;1015;conferido;6;2;33;8;25;8;0;0;Sim;Não;1015;conferido;1;2;3;positivo_para_positivo;zero_para_positivo;True
+ZZ;30686;TRÍPOLI;1;443;2;0;30;2;28;2;0;0;Sim;Não;1015;conferido;;;30;0;30;0;0;0;Sim;Não;1015;sem_votacao;;;-2;nao_comparavel;nao_comparavel;True

@@ -1,0 +1,418 @@
+{
+  "verificado_em": "2026-10-28",
+  "fontes": {
+    "detalhe_votacao_munzona_2026": {
+      "membro": "detalhe_votacao_munzona_2026_BR.csv",
+      "colunas": [
+        "DT_GERACAO",
+        "HH_GERACAO",
+        "ANO_ELEICAO",
+        "CD_TIPO_ELEICAO",
+        "NM_TIPO_ELEICAO",
+        "NR_TURNO",
+        "CD_ELEICAO",
+        "DS_ELEICAO",
+        "DT_ELEICAO",
+        "TP_ABRANGENCIA",
+        "SG_UF",
+        "SG_UE",
+        "NM_UE",
+        "CD_MUNICIPIO",
+        "NM_MUNICIPIO",
+        "NR_ZONA",
+        "CD_CARGO",
+        "DS_CARGO",
+        "QT_APTOS",
+        "QT_SECOES_PRINCIPAIS",
+        "QT_SECOES_AGREGADAS",
+        "QT_SECOES_NAO_INSTALADAS",
+        "QT_TOTAL_SECOES",
+        "QT_COMPARECIMENTO",
+        "QT_ELEITORES_SECOES_NAO_INSTALADAS",
+        "QT_ABSTENCOES",
+        "ST_VOTO_EM_TRANSITO",
+        "QT_VOTOS",
+        "QT_VOTOS_CONCORRENTES",
+        "QT_TOTAL_VOTOS_VALIDOS",
+        "QT_VOTOS_NOMINAIS_VALIDOS",
+        "QT_TOTAL_VOTOS_LEG_VALIDOS",
+        "QT_VOTOS_LEG_VALIDOS",
+        "QT_VOTOS_NOM_CONVR_LEG_VALIDOS",
+        "QT_TOTAL_VOTOS_ANULADOS",
+        "QT_VOTOS_NOMINAIS_ANULADOS",
+        "QT_VOTOS_LEGENDA_ANULADOS",
+        "QT_TOTAL_VOTOS_ANUL_SUBJUD",
+        "QT_VOTOS_NOMINAIS_ANUL_SUBJUD",
+        "QT_VOTOS_LEGENDA_ANUL_SUBJUD",
+        "QT_VOTOS_BRANCOS",
+        "QT_TOTAL_VOTOS_NULOS",
+        "QT_VOTOS_NULOS",
+        "QT_VOTOS_NULOS_TECNICOS",
+        "QT_VOTOS_ANULADOS_APU_SEP",
+        "HH_ULTIMA_TOTALIZACAO",
+        "DT_ULTIMA_TOTALIZACAO"
+      ],
+      "linhas": 12584,
+      "turnos": {
+        "1": 6292,
+        "2": 6292
+      },
+      "geracoes": [
+        "28/10/2026 05:32:36"
+      ]
+    },
+    "votacao_candidato_munzona_2026": {
+      "membro": "votacao_candidato_munzona_2026_BR.csv",
+      "colunas": [
+        "DT_GERACAO",
+        "HH_GERACAO",
+        "ANO_ELEICAO",
+        "CD_TIPO_ELEICAO",
+        "NM_TIPO_ELEICAO",
+        "NR_TURNO",
+        "CD_ELEICAO",
+        "DS_ELEICAO",
+        "DT_ELEICAO",
+        "TP_ABRANGENCIA",
+        "SG_UF",
+        "SG_UE",
+        "NM_UE",
+        "CD_MUNICIPIO",
+        "NM_MUNICIPIO",
+        "NR_ZONA",
+        "CD_CARGO",
+        "DS_CARGO",
+        "SQ_CANDIDATO",
+        "NR_CANDIDATO",
+        "NM_CANDIDATO",
+        "NM_URNA_CANDIDATO",
+        "NM_SOCIAL_CANDIDATO",
+        "CD_SITUACAO_CANDIDATURA",
+        "DS_SITUACAO_CANDIDATURA",
+        "CD_DETALHE_SITUACAO_CAND",
+        "DS_DETALHE_SITUACAO_CAND",
+        "CD_SITUACAO_JULGAMENTO",
+        "DS_SITUACAO_JULGAMENTO",
+        "CD_SITUACAO_CASSACAO",
+        "DS_SITUACAO_CASSACAO",
+        "CD_SITUACAO_DCONST_DIPLOMA",
+        "DS_SITUACAO_DCONST_DIPLOMA",
+        "TP_AGREMIACAO",
+        "NR_PARTIDO",
+        "SG_PARTIDO",
+        "NM_PARTIDO",
+        "NR_FEDERACAO",
+        "NM_FEDERACAO",
+        "SG_FEDERACAO",
+        "DS_COMPOSICAO_FEDERACAO",
+        "SQ_COLIGACAO",
+        "NM_COLIGACAO",
+        "DS_COMPOSICAO_COLIGACAO",
+        "ST_VOTO_EM_TRANSITO",
+        "QT_VOTOS_NOMINAIS",
+        "NM_TIPO_DESTINACAO_VOTOS",
+        "QT_VOTOS_NOMINAIS_VALIDOS",
+        "CD_SIT_TOT_TURNO",
+        "DS_SIT_TOT_TURNO"
+      ],
+      "linhas": 88088,
+      "turnos": {
+        "1": 75504,
+        "2": 12584
+      },
+      "geracoes": [
+        "28/10/2026 12:32:58"
+      ]
+    },
+    "detalhe_votacao_secao_2026": {
+      "membro": "detalhe_votacao_secao_2026_BR.csv",
+      "colunas": [
+        "DT_GERACAO",
+        "HH_GERACAO",
+        "ANO_ELEICAO",
+        "CD_TIPO_ELEICAO",
+        "NM_TIPO_ELEICAO",
+        "NR_TURNO",
+        "CD_ELEICAO",
+        "DS_ELEICAO",
+        "DT_ELEICAO",
+        "TP_ABRANGENCIA",
+        "SG_UF",
+        "SG_UE",
+        "NM_UE",
+        "CD_MUNICIPIO",
+        "NM_MUNICIPIO",
+        "NR_ZONA",
+        "NR_SECAO",
+        "CD_CARGO",
+        "DS_CARGO",
+        "QT_APTOS",
+        "QT_COMPARECIMENTO",
+        "QT_ABSTENCOES",
+        "QT_VOTOS_NOMINAIS",
+        "QT_VOTOS_BRANCOS",
+        "QT_VOTOS_NULOS",
+        "QT_VOTOS_LEGENDA",
+        "QT_VOTOS_ANULADOS_APU_SEP",
+        "NR_LOCAL_VOTACAO",
+        "NM_LOCAL_VOTACAO",
+        "DS_LOCAL_VOTACAO_ENDERECO",
+        "DT_RECEBIMENTO_BU_HOR_TSE",
+        "DT_PRIM_TOT_PARCIAL_HOR_TSE",
+        "DS_ORIGEM_VOTO",
+        "ST_SECAO_INSTALADA",
+        "ST_SECAO_ANULADA",
+        "CD_MODELO_URNA",
+        "DS_MODELO_URNA"
+      ],
+      "linhas": 998496,
+      "turnos": {
+        "1": 499248,
+        "2": 499248
+      },
+      "geracoes": [
+        "26/10/2026 09:49:06"
+      ]
+    },
+    "votacao_secao_2026_BR": {
+      "membro": "votacao_secao_2026_BR.csv",
+      "colunas": [
+        "DT_GERACAO",
+        "HH_GERACAO",
+        "ANO_ELEICAO",
+        "CD_TIPO_ELEICAO",
+        "NM_TIPO_ELEICAO",
+        "NR_TURNO",
+        "CD_ELEICAO",
+        "DS_ELEICAO",
+        "DT_ELEICAO",
+        "TP_ABRANGENCIA",
+        "SG_UF",
+        "SG_UE",
+        "NM_UE",
+        "CD_MUNICIPIO",
+        "NM_MUNICIPIO",
+        "NR_ZONA",
+        "NR_SECAO",
+        "CD_CARGO",
+        "DS_CARGO",
+        "NR_VOTAVEL",
+        "NM_VOTAVEL",
+        "QT_VOTOS",
+        "NR_LOCAL_VOTACAO",
+        "SQ_CANDIDATO",
+        "NM_LOCAL_VOTACAO",
+        "DS_LOCAL_VOTACAO_ENDERECO"
+      ],
+      "linhas": 5731614,
+      "turnos": {
+        "1": 3800511,
+        "2": 1931103
+      },
+      "geracoes": [
+        "26/10/2026 12:07:25"
+      ]
+    }
+  },
+  "problemas": {
+    "duplicatas_detalhe_munzona": 0,
+    "duplicatas_candidatos_munzona": 0,
+    "duplicatas_detalhe_secao": 0,
+    "duplicatas_votos_alvos_secao": 0
+  },
+  "candidatos": {
+    "lula": {
+      "numero": "13",
+      "nome": "LUIZ INÁCIO LULA DA SILVA",
+      "sequencial": "280002542548"
+    },
+    "flavio": {
+      "numero": "22",
+      "nome": "FLAVIO NANTES BOLSONARO",
+      "sequencial": "280002551544"
+    }
+  },
+  "status_secoes": {
+    "('Sim', 'Não')": 998414,
+    "('Não', 'Não')": 82
+  },
+  "nomes_votaveis": {
+    "55": "RONALDO RAMOS CAIADO",
+    "14": "RENAN ANTONIO FERREIRA DOS SANTOS",
+    "16": "HERTZ DA CONCEICAO DIAS",
+    "96": "VOTO NULO",
+    "13": "LUIZ INÁCIO LULA DA SILVA",
+    "70": "AUGUSTO JORGE CURY",
+    "95": "VOTO BRANCO",
+    "21": "EDMILSON SILVA COSTA",
+    "35": "WILSON GRASSI JUNIOR",
+    "30": "ROMEU ZEMA NETO",
+    "27": "CLARIANA ZACARKIM BARAO",
+    "22": "FLAVIO NANTES BOLSONARO",
+    "80": "SAMARA MARTINS DA SILVA FEITOSA",
+    "28": "LEONARDO ALVES DE ARAUJO",
+    "29": "RUI COSTA PIMENTA"
+  },
+  "resumo_zeros": {
+    "situacao_conferido": 998411,
+    "lula_positivo_para_positivo": 499197,
+    "flavio_positivo_para_positivo": 499069,
+    "flavio_zero_para_zero": 50,
+    "flavio_zero_1t": 81,
+    "flavio_zero_2t": 106,
+    "flavio_positivo_para_zero": 56,
+    "flavio_zero_para_positivo": 30,
+    "lula_zero_para_positivo": 4,
+    "lula_zero_1t": 8,
+    "lula_zero_para_zero": 4,
+    "lula_zero_2t": 4,
+    "situacao_nao_instalada_ou_anulada": 82,
+    "lula_nao_comparavel": 43,
+    "flavio_nao_comparavel": 43,
+    "situacao_sem_votacao": 3
+  },
+  "secoes_distintas": 499248,
+  "unidades_municipais": 5757,
+  "unidades_exterior": 186,
+  "divergencias_municipio_secoes": 0,
+  "totais_municipais_por_turno": {
+    "1": {
+      "aptos": 158745502,
+      "comparecimento": 125275835,
+      "abstencoes": 33469244,
+      "validos": 119300788,
+      "brancos": 2300798,
+      "nulos": 3674249,
+      "lula": 53879538,
+      "lula_validos": 53879538,
+      "flavio": 56104503,
+      "flavio_validos": 56104503
+    },
+    "2": {
+      "aptos": 158745502,
+      "comparecimento": 128236074,
+      "abstencoes": 30509005,
+      "validos": 124082273,
+      "brancos": 1430496,
+      "nulos": 2723305,
+      "flavio": 59826041,
+      "flavio_validos": 59826041,
+      "lula": 64256232,
+      "lula_validos": 64256232
+    }
+  },
+  "secoes_por_uf_turno": {
+    "AC": {
+      "1": 2270,
+      "2": 2270
+    },
+    "AL": {
+      "1": 7101,
+      "2": 7101
+    },
+    "AM": {
+      "1": 8157,
+      "2": 8157
+    },
+    "AP": {
+      "1": 1914,
+      "2": 1914
+    },
+    "BA": {
+      "1": 35476,
+      "2": 35476
+    },
+    "CE": {
+      "1": 23765,
+      "2": 23765
+    },
+    "DF": {
+      "1": 6969,
+      "2": 6969
+    },
+    "ES": {
+      "1": 9844,
+      "2": 9844
+    },
+    "GO": {
+      "1": 15686,
+      "2": 15686
+    },
+    "MA": {
+      "1": 18093,
+      "2": 18093
+    },
+    "MG": {
+      "1": 52062,
+      "2": 52062
+    },
+    "MS": {
+      "1": 7106,
+      "2": 7106
+    },
+    "MT": {
+      "1": 8287,
+      "2": 8287
+    },
+    "PA": {
+      "1": 20827,
+      "2": 20827
+    },
+    "PB": {
+      "1": 10712,
+      "2": 10712
+    },
+    "PE": {
+      "1": 21418,
+      "2": 21418
+    },
+    "PI": {
+      "1": 10225,
+      "2": 10225
+    },
+    "PR": {
+      "1": 27142,
+      "2": 27142
+    },
+    "RJ": {
+      "1": 37675,
+      "2": 37675
+    },
+    "RN": {
+      "1": 8115,
+      "2": 8115
+    },
+    "RO": {
+      "1": 4698,
+      "2": 4698
+    },
+    "RR": {
+      "1": 1519,
+      "2": 1519
+    },
+    "RS": {
+      "1": 27547,
+      "2": 27547
+    },
+    "SC": {
+      "1": 17326,
+      "2": 17326
+    },
+    "SE": {
+      "1": 5923,
+      "2": 5923
+    },
+    "SP": {
+      "1": 103656,
+      "2": 103656
+    },
+    "TO": {
+      "1": 4384,
+      "2": 4384
+    },
+    "ZZ": {
+      "1": 1351,
+      "2": 1351
+    }
+  }
+}
