@@ -1,6 +1,11 @@
-import csv,json,collections,heapq,pathlib
-base=pathlib.Path('../referenced-chatgpt-conversation-this-is-an/outputs/tse_2026')
-out=pathlib.Path('work/painel/dados/2026')
+import csv,json,collections,heapq,pathlib,argparse
+parser=argparse.ArgumentParser(description='Analisar CSVs comparativos conferidos do TSE')
+parser.add_argument('--base',required=True,help='Pasta com comparacao_municipios.csv e comparacao_secoes.csv')
+parser.add_argument('--saida',required=True,help='Pasta de destino da análise JSON')
+args=parser.parse_args()
+base=pathlib.Path(args.base)
+out=pathlib.Path(args.saida)
+out.mkdir(parents=True,exist_ok=True)
 def rows(name):
  with (base/name).open(encoding='utf-8-sig',newline='') as f:
   for r in csv.DictReader(f,delimiter=';'):
