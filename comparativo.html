@@ -106,4 +106,4 @@ $('atipo').onchange=renderAtypical;
 $('atRows').onclick=e=>{const b=e.target.closest('[data-city]');if(b)openMunicipal(b.dataset.city);};
 fetchJSON('dados/2026/secoes_atipicas.json').then(j=>{atypicalData=j;renderAtypical();}).catch(e=>{$('atStatus').textContent='Falha ao carregar: '+e.message;});
 $('refresh').onclick=load;$('regionFilter').onchange=render;load();
-</script><script src="tooltips.js"></script><script src="comentarios.js"></script><script src="consulta-urna.js"></script></body></html>
+</script><script src="tooltips.js?v=single-1"></script><script src="comentarios.js"></script><script src="consulta-urna.js"></script></body></html>
