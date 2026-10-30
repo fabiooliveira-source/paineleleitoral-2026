@@ -1,0 +1,20 @@
+{
+  "2018": {
+    "first_a": 31342051,
+    "first_b": 49277010,
+    "valid_first": 107050749,
+    "other_first_pct": 24.69080155618528,
+    "first_finalists_a_share_pct": 38.87672544337871,
+    "second_a_share_pct": 44.869768719969414,
+    "aggregate_change_a_share_pp": 5.99304327659071
+  },
+  "2022": {
+    "first_a": 57259504,
+    "first_b": 51072345,
+    "valid_first": 118229719,
+    "other_first_pct": 8.371727585684273,
+    "first_finalists_a_share_pct": 52.855650972965485,
+    "second_a_share_pct": 50.90240511717216,
+    "aggregate_change_a_share_pp": -1.9532458557933285
+  }
+}
