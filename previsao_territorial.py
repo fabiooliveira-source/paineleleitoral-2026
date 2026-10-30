@@ -18,8 +18,9 @@ def wilson(k,n):
 
 def run(pickle,out,draws=2000,targets=None):
  if draws<1:raise ValueError('draws deve ser positivo')
- d=pd.read_pickle(pickle).sort_values('time',kind='stable').reset_index(drop=True)
+ d=pd.read_pickle(pickle)
  if d.empty:raise ValueError('Amostra de seções vazia')
+ d=d.sort_values('time',kind='stable').reset_index(drop=True)
  for t in ['1t','2t']:
   for c in ['lula','flavio']:
    missing=d[c+'_'+t].isna()
@@ -35,14 +36,14 @@ def run(pickle,out,draws=2000,targets=None):
  l1=np.bincount(ui,weights=d.lula_1t,minlength=U);f1=np.bincount(ui,weights=d.flavio_1t,minlength=U)
  q0=np.divide(l1,l1+f1,out=np.full(U,.5),where=l1+f1>0)
  r0=np.clip((l1+f1)/stateapt,.01,.99)
- times=d.time.to_numpy();targets=[]
+ times=d.time.to_numpy();ticks_to_run=[]
  for pct in (range(1,101) if targets is None else targets):
   if not isinstance(pct,int) or not 1<=pct<=100:raise ValueError('Percentual fora de 1..100')
   index=min(len(d)-1,int(np.ceil(len(d)*pct/100))-1);cutoff=times[index]
   # Nenhuma ordem artificial dentro de um horário simultâneo.
-  end=np.searchsorted(times,cutoff,side='right');targets.append((pct,end,cutoff))
+  end=np.searchsorted(times,cutoff,side='right');ticks_to_run.append((pct,end,cutoff))
  result={'method':'Pós-estratificação municipal/estadual; beta de tamanho efetivo por seções; referência estadual compartilhada','source':'Votos finais atribuídos a DT_PRIM_TOT_PARCIAL_HOR_TSE','warning':'Backtest retrospectivo com versões finais. Probabilidades nominais condicionais, não certeza calibrada nem previsão histórica validada. Primeiro turno fornece priors; ausência de seleção geográfica não aleatória não é garantida.','draws':draws,'seed':20261028,'assumptions':['Representatividade das seções já apuradas dentro de cada estrato.','Tamanho efetivo de Kish com pesos votos/eleitorado; não corrige seleção não aleatória.','Beta fracionária como modelo de trabalho. Dependência UF compartilhada no modelo municipal.','Referência municipal via estado é empírica, com reutilização de dados e sem inferência bayesiana hierárquica integral.','Priors estaduais de 2,20,100 pseudo-seções e referência municipal de 20 pseudo-seções: sensibilidade arbitrária explícita, não aprendida de pesquisa.','Precisão histórica não validada; intervalos de projeção não são frequências empiricamente calibradas.'],'ticks':[]}
- for pct,end,cutoff in targets:
+ for pct,end,cutoff in ticks_to_run:
   m=mi[:end];u=ui[:end];a=apt[:end];v=L[:end]+F[:end];l=L[:end]
   observedL=float(l.sum());observedF=float(F[:end].sum())
   ma=np.bincount(m,weights=a,minlength=M);mv=np.bincount(m,weights=v,minlength=M);ml=np.bincount(m,weights=l,minlength=M)
