@@ -1,0 +1,485 @@
+{
+  "scope": "secoes com aptos iguais e ambos turnos conferidos",
+  "total": {
+    "sections_valid": 443483,
+    "attended_then_abstained_min": 595969,
+    "attended_then_abstained_max": 26779801,
+    "abstained_then_attended_min": 3212095,
+    "abstained_then_attended_max": 29395927,
+    "net_change_abstention": -2616126,
+    "sections_turnout_changed": 426898,
+    "electorate_changed": 55722,
+    "unverified": 43
+  },
+  "by_uf": {
+    "AC": {
+      "sections_valid": 1925,
+      "attended_then_abstained_min": 28928,
+      "attended_then_abstained_max": 135711,
+      "abstained_then_attended_min": 374,
+      "abstained_then_attended_max": 107157,
+      "net_change_abstention": 28554,
+      "sections_turnout_changed": 1893,
+      "electorate_changed": 345
+    },
+    "AL": {
+      "sections_valid": 6361,
+      "attended_then_abstained_min": 21036,
+      "attended_then_abstained_max": 440815,
+      "abstained_then_attended_min": 31825,
+      "abstained_then_attended_max": 451604,
+      "net_change_abstention": -10789,
+      "sections_turnout_changed": 6077,
+      "electorate_changed": 740
+    },
+    "AM": {
+      "sections_valid": 6932,
+      "attended_then_abstained_min": 50020,
+      "attended_then_abstained_max": 513258,
+      "abstained_then_attended_min": 12126,
+      "abstained_then_attended_max": 475364,
+      "net_change_abstention": 37894,
+      "sections_turnout_changed": 6642,
+      "electorate_changed": 1225
+    },
+    "AP": {
+      "sections_valid": 1709,
+      "attended_then_abstained_min": 42836,
+      "attended_then_abstained_max": 132406,
+      "abstained_then_attended_min": 11,
+      "abstained_then_attended_max": 89581,
+      "net_change_abstention": 42825,
+      "sections_turnout_changed": 1702,
+      "electorate_changed": 205
+    },
+    "BA": {
+      "sections_valid": 31586,
+      "attended_then_abstained_min": 11923,
+      "attended_then_abstained_max": 1669797,
+      "abstained_then_attended_min": 339949,
+      "abstained_then_attended_max": 1997823,
+      "net_change_abstention": -328026,
+      "sections_turnout_changed": 30656,
+      "electorate_changed": 3890
+    },
+    "CE": {
+      "sections_valid": 21646,
+      "attended_then_abstained_min": 22791,
+      "attended_then_abstained_max": 880649,
+      "abstained_then_attended_min": 126993,
+      "abstained_then_attended_max": 984851,
+      "net_change_abstention": -104202,
+      "sections_turnout_changed": 20617,
+      "electorate_changed": 2119
+    },
+    "DF": {
+      "sections_valid": 4934,
+      "attended_then_abstained_min": 2322,
+      "attended_then_abstained_max": 279715,
+      "abstained_then_attended_min": 29601,
+      "abstained_then_attended_max": 306994,
+      "net_change_abstention": -27279,
+      "sections_turnout_changed": 4721,
+      "electorate_changed": 2035
+    },
+    "ES": {
+      "sections_valid": 8892,
+      "attended_then_abstained_min": 4085,
+      "attended_then_abstained_max": 525479,
+      "abstained_then_attended_min": 55767,
+      "abstained_then_attended_max": 577161,
+      "net_change_abstention": -51682,
+      "sections_turnout_changed": 8496,
+      "electorate_changed": 952
+    },
+    "GO": {
+      "sections_valid": 14107,
+      "attended_then_abstained_min": 14374,
+      "attended_then_abstained_max": 931700,
+      "abstained_then_attended_min": 83408,
+      "abstained_then_attended_max": 1000734,
+      "net_change_abstention": -69034,
+      "sections_turnout_changed": 13491,
+      "electorate_changed": 1579
+    },
+    "MA": {
+      "sections_valid": 16919,
+      "attended_then_abstained_min": 69833,
+      "attended_then_abstained_max": 982610,
+      "abstained_then_attended_min": 40998,
+      "abstained_then_attended_max": 953775,
+      "net_change_abstention": 28835,
+      "sections_turnout_changed": 16011,
+      "electorate_changed": 1174
+    },
+    "MG": {
+      "sections_valid": 46276,
+      "attended_then_abstained_min": 18375,
+      "attended_then_abstained_max": 2949042,
+      "abstained_then_attended_min": 379996,
+      "abstained_then_attended_max": 3310663,
+      "net_change_abstention": -361621,
+      "sections_turnout_changed": 44685,
+      "electorate_changed": 5786
+    },
+    "MS": {
+      "sections_valid": 6455,
+      "attended_then_abstained_min": 4222,
+      "attended_then_abstained_max": 392821,
+      "abstained_then_attended_min": 53487,
+      "abstained_then_attended_max": 442086,
+      "net_change_abstention": -49265,
+      "sections_turnout_changed": 6222,
+      "electorate_changed": 651
+    },
+    "MT": {
+      "sections_valid": 7412,
+      "attended_then_abstained_min": 10568,
+      "attended_then_abstained_max": 495837,
+      "abstained_then_attended_min": 40450,
+      "abstained_then_attended_max": 525719,
+      "net_change_abstention": -29882,
+      "sections_turnout_changed": 7042,
+      "electorate_changed": 875
+    },
+    "PA": {
+      "electorate_changed": 1488,
+      "sections_valid": 19339,
+      "attended_then_abstained_min": 109811,
+      "attended_then_abstained_max": 1179997,
+      "abstained_then_attended_min": 34797,
+      "abstained_then_attended_max": 1104983,
+      "net_change_abstention": 75014,
+      "sections_turnout_changed": 18355
+    },
+    "PB": {
+      "sections_valid": 9547,
+      "attended_then_abstained_min": 7268,
+      "attended_then_abstained_max": 447265,
+      "abstained_then_attended_min": 61177,
+      "abstained_then_attended_max": 501174,
+      "net_change_abstention": -53909,
+      "sections_turnout_changed": 9100,
+      "electorate_changed": 1165
+    },
+    "PE": {
+      "sections_valid": 19425,
+      "attended_then_abstained_min": 4857,
+      "attended_then_abstained_max": 993698,
+      "abstained_then_attended_min": 202463,
+      "abstained_then_attended_max": 1191304,
+      "net_change_abstention": -197606,
+      "sections_turnout_changed": 18976,
+      "electorate_changed": 1993
+    },
+    "PI": {
+      "sections_valid": 9376,
+      "attended_then_abstained_min": 26473,
+      "attended_then_abstained_max": 424172,
+      "abstained_then_attended_min": 26025,
+      "abstained_then_attended_max": 423724,
+      "net_change_abstention": 448,
+      "sections_turnout_changed": 8742,
+      "electorate_changed": 849
+    },
+    "PR": {
+      "sections_valid": 24123,
+      "attended_then_abstained_min": 8157,
+      "attended_then_abstained_max": 1376139,
+      "abstained_then_attended_min": 204593,
+      "abstained_then_attended_max": 1572575,
+      "net_change_abstention": -196436,
+      "sections_turnout_changed": 23394,
+      "electorate_changed": 3019
+    },
+    "RJ": {
+      "sections_valid": 32706,
+      "attended_then_abstained_min": 44079,
+      "attended_then_abstained_max": 2395585,
+      "abstained_then_attended_min": 226648,
+      "abstained_then_attended_max": 2578154,
+      "net_change_abstention": -182569,
+      "sections_turnout_changed": 31281,
+      "electorate_changed": 4969
+    },
+    "RN": {
+      "sections_valid": 6531,
+      "attended_then_abstained_min": 5908,
+      "attended_then_abstained_max": 343942,
+      "abstained_then_attended_min": 55604,
+      "abstained_then_attended_max": 393638,
+      "net_change_abstention": -49696,
+      "sections_turnout_changed": 6340,
+      "electorate_changed": 1584
+    },
+    "RO": {
+      "sections_valid": 4315,
+      "attended_then_abstained_min": 11151,
+      "attended_then_abstained_max": 255291,
+      "abstained_then_attended_min": 8733,
+      "abstained_then_attended_max": 252873,
+      "net_change_abstention": 2418,
+      "sections_turnout_changed": 3986,
+      "electorate_changed": 383
+    },
+    "RR": {
+      "sections_valid": 1348,
+      "attended_then_abstained_min": 22208,
+      "attended_then_abstained_max": 82638,
+      "abstained_then_attended_min": 146,
+      "abstained_then_attended_max": 60576,
+      "net_change_abstention": 22062,
+      "sections_turnout_changed": 1328,
+      "electorate_changed": 171
+    },
+    "RS": {
+      "sections_valid": 24578,
+      "attended_then_abstained_min": 7614,
+      "attended_then_abstained_max": 1444866,
+      "abstained_then_attended_min": 174571,
+      "abstained_then_attended_max": 1611823,
+      "net_change_abstention": -166957,
+      "sections_turnout_changed": 23603,
+      "electorate_changed": 2969
+    },
+    "SC": {
+      "sections_valid": 15297,
+      "attended_then_abstained_min": 5364,
+      "attended_then_abstained_max": 849054,
+      "abstained_then_attended_min": 106513,
+      "abstained_then_attended_max": 950203,
+      "net_change_abstention": -101149,
+      "sections_turnout_changed": 14663,
+      "electorate_changed": 2029
+    },
+    "SE": {
+      "sections_valid": 4709,
+      "attended_then_abstained_min": 4208,
+      "attended_then_abstained_max": 217411,
+      "abstained_then_attended_min": 27007,
+      "abstained_then_attended_max": 240210,
+      "net_change_abstention": -22799,
+      "electorate_changed": 1214,
+      "sections_turnout_changed": 4467
+    },
+    "SP": {
+      "sections_valid": 92021,
+      "attended_then_abstained_min": 21334,
+      "attended_then_abstained_max": 5996642,
+      "abstained_then_attended_min": 854430,
+      "abstained_then_attended_max": 6829738,
+      "net_change_abstention": -833096,
+      "sections_turnout_changed": 89669,
+      "electorate_changed": 11635
+    },
+    "TO": {
+      "sections_valid": 4022,
+      "attended_then_abstained_min": 15732,
+      "attended_then_abstained_max": 208048,
+      "abstained_then_attended_min": 5796,
+      "abstained_then_attended_max": 198112,
+      "net_change_abstention": 9936,
+      "sections_turnout_changed": 3763,
+      "electorate_changed": 362
+    },
+    "ZZ": {
+      "sections_valid": 992,
+      "attended_then_abstained_min": 492,
+      "attended_then_abstained_max": 235213,
+      "abstained_then_attended_min": 28607,
+      "abstained_then_attended_max": 263328,
+      "net_change_abstention": -28115,
+      "sections_turnout_changed": 976,
+      "electorate_changed": 316,
+      "unverified": 43
+    }
+  },
+  "examples": [
+    {
+      "uf": "AC",
+      "municipio": "01007",
+      "zona": "9",
+      "secao": "1",
+      "comparecimento_1t": 241,
+      "comparecimento_2t": 232,
+      "voto_para_abstencao_min": 9,
+      "voto_para_abstencao_max": 76,
+      "abstencao_para_voto_min": 0,
+      "abstencao_para_voto_max": 67
+    },
+    {
+      "uf": "AC",
+      "municipio": "01007",
+      "zona": "9",
+      "secao": "10",
+      "comparecimento_1t": 167,
+      "comparecimento_2t": 140,
+      "voto_para_abstencao_min": 27,
+      "voto_para_abstencao_max": 62,
+      "abstencao_para_voto_min": 0,
+      "abstencao_para_voto_max": 35
+    },
+    {
+      "uf": "AC",
+      "municipio": "01007",
+      "zona": "9",
+      "secao": "120",
+      "comparecimento_1t": 274,
+      "comparecimento_2t": 258,
+      "voto_para_abstencao_min": 16,
+      "voto_para_abstencao_max": 72,
+      "abstencao_para_voto_min": 0,
+      "abstencao_para_voto_max": 56
+    },
+    {
+      "uf": "AC",
+      "municipio": "01007",
+      "zona": "9",
+      "secao": "136",
+      "comparecimento_1t": 143,
+      "comparecimento_2t": 127,
+      "voto_para_abstencao_min": 16,
+      "voto_para_abstencao_max": 71,
+      "abstencao_para_voto_min": 0,
+      "abstencao_para_voto_max": 55
+    },
+    {
+      "uf": "AC",
+      "municipio": "01007",
+      "zona": "9",
+      "secao": "137",
+      "comparecimento_1t": 255,
+      "comparecimento_2t": 236,
+      "voto_para_abstencao_min": 19,
+      "voto_para_abstencao_max": 86,
+      "abstencao_para_voto_min": 0,
+      "abstencao_para_voto_max": 67
+    },
+    {
+      "uf": "AC",
+      "municipio": "01007",
+      "zona": "9",
+      "secao": "163",
+      "comparecimento_1t": 156,
+      "comparecimento_2t": 148,
+      "voto_para_abstencao_min": 8,
+      "voto_para_abstencao_max": 63,
+      "abstencao_para_voto_min": 0,
+      "abstencao_para_voto_max": 55
+    },
+    {
+      "uf": "AC",
+      "municipio": "01007",
+      "zona": "9",
+      "secao": "186",
+      "comparecimento_1t": 254,
+      "comparecimento_2t": 226,
+      "voto_para_abstencao_min": 28,
+      "voto_para_abstencao_max": 104,
+      "abstencao_para_voto_min": 0,
+      "abstencao_para_voto_max": 76
+    },
+    {
+      "uf": "AC",
+      "municipio": "01007",
+      "zona": "9",
+      "secao": "2",
+      "comparecimento_1t": 240,
+      "comparecimento_2t": 232,
+      "voto_para_abstencao_min": 8,
+      "voto_para_abstencao_max": 76,
+      "abstencao_para_voto_min": 0,
+      "abstencao_para_voto_max": 68
+    },
+    {
+      "uf": "AC",
+      "municipio": "01007",
+      "zona": "9",
+      "secao": "200",
+      "comparecimento_1t": 187,
+      "comparecimento_2t": 178,
+      "voto_para_abstencao_min": 9,
+      "voto_para_abstencao_max": 52,
+      "abstencao_para_voto_min": 0,
+      "abstencao_para_voto_max": 43
+    },
+    {
+      "uf": "AC",
+      "municipio": "01007",
+      "zona": "9",
+      "secao": "201",
+      "comparecimento_1t": 136,
+      "comparecimento_2t": 126,
+      "voto_para_abstencao_min": 10,
+      "voto_para_abstencao_max": 55,
+      "abstencao_para_voto_min": 0,
+      "abstencao_para_voto_max": 45
+    },
+    {
+      "uf": "AC",
+      "municipio": "01007",
+      "zona": "9",
+      "secao": "202",
+      "comparecimento_1t": 227,
+      "comparecimento_2t": 213,
+      "voto_para_abstencao_min": 14,
+      "voto_para_abstencao_max": 95,
+      "abstencao_para_voto_min": 0,
+      "abstencao_para_voto_max": 81
+    },
+    {
+      "uf": "AC",
+      "municipio": "01007",
+      "zona": "9",
+      "secao": "208",
+      "comparecimento_1t": 241,
+      "comparecimento_2t": 230,
+      "voto_para_abstencao_min": 11,
+      "voto_para_abstencao_max": 75,
+      "abstencao_para_voto_min": 0,
+      "abstencao_para_voto_max": 64
+    },
+    {
+      "uf": "AC",
+      "municipio": "01007",
+      "zona": "9",
+      "secao": "212",
+      "comparecimento_1t": 252,
+      "comparecimento_2t": 243,
+      "voto_para_abstencao_min": 9,
+      "voto_para_abstencao_max": 69,
+      "abstencao_para_voto_min": 0,
+      "abstencao_para_voto_max": 60
+    },
+    {
+      "uf": "AC",
+      "municipio": "01007",
+      "zona": "9",
+      "secao": "237",
+      "comparecimento_1t": 232,
+      "comparecimento_2t": 222,
+      "voto_para_abstencao_min": 10,
+      "voto_para_abstencao_max": 88,
+      "abstencao_para_voto_min": 0,
+      "abstencao_para_voto_max": 78
+    },
+    {
+      "uf": "AC",
+      "municipio": "01007",
+      "zona": "9",
+      "secao": "242",
+      "comparecimento_1t": 180,
+      "comparecimento_2t": 161,
+      "voto_para_abstencao_min": 19,
+      "voto_para_abstencao_max": 82,
+      "abstencao_para_voto_min": 0,
+      "abstencao_para_voto_max": 63
+    }
+  ],
+  "method": "Limites de Fréchet exatos para tabela binária comparecimento/abstenção. Cada seção pode ter fluxos simultâneos nos dois sentidos.",
+  "caveats": [
+    "Intervalos identificados não são probabilidades nem migração individual comprovada.",
+    "Aptos iguais não assegura mesmos indivíduos.",
+    "Seções com mudança de aptos foram excluídas."
+  ]
+}
