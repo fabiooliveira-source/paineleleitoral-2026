@@ -1,3 +1,13 @@
+# Atualização: v3 reprovada no teste externo de 2018
+
+A v3 foi desenvolvida em 2022, congelada e testada em 2018 sem reajustes. Falhou em três dos quatro critérios externos; não foi promovida. A v2 e a main foram preservadas.
+
+Leia o [relatório completo do desenvolvimento e teste externo](RELATORIO_V3_2022_2018.md), com código, hashes, diagnóstico do viés, sete cenários e limitações dos replays reconstruídos. Certificação integral continua não concedida.
+
+---
+
+## Histórico da investigação
+
 # Atualização: bloqueio contornado para reconstrução territorial
 
 Foi executado um backtest territorial reconstruído de 2022. A curva resultante coincide exatamente com os 5.286 registros nacionais oficiais em votos dos dois candidatos, brancos, nulos e seções.
