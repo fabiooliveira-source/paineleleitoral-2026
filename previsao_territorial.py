@@ -16,8 +16,10 @@ def wilson(k,n):
  p=k/n;z=1.959964;den=1+z*z/n;c=(p+z*z/(2*n))/den;h=z*np.sqrt(p*(1-p)/n+z*z/(4*n*n))/den
  return [float(max(0,c-h)),float(min(1,c+h))]
 
-def run(pickle,out,draws=2000):
+def run(pickle,out,draws=2000,targets=None):
+ if draws<1:raise ValueError('draws deve ser positivo')
  d=pd.read_pickle(pickle).sort_values('time',kind='stable').reset_index(drop=True)
+ if d.empty:raise ValueError('Amostra de seções vazia')
  for t in ['1t','2t']:
   for c in ['lula','flavio']:
    missing=d[c+'_'+t].isna()
@@ -34,7 +36,8 @@ def run(pickle,out,draws=2000):
  q0=np.divide(l1,l1+f1,out=np.full(U,.5),where=l1+f1>0)
  r0=np.clip((l1+f1)/stateapt,.01,.99)
  times=d.time.to_numpy();targets=[]
- for pct in range(1,101):
+ for pct in (range(1,101) if targets is None else targets):
+  if not isinstance(pct,int) or not 1<=pct<=100:raise ValueError('Percentual fora de 1..100')
   index=min(len(d)-1,int(np.ceil(len(d)*pct/100))-1);cutoff=times[index]
   # Nenhuma ordem artificial dentro de um horário simultâneo.
   end=np.searchsorted(times,cutoff,side='right');targets.append((pct,end,cutoff))
@@ -71,7 +74,7 @@ def run(pickle,out,draws=2000):
     scenarios.append({'prior_pseudo_sections':strength,'p_lula':k/draws,'p_flavio':int((pf>pl).sum())/draws,'p_tie':int((pf==pl).sum())/draws,'mc_wilson95_lula':wilson(k,draws),'share_lula_median':float(np.median(share)),'share_lula_interval95':np.quantile(share,[.025,.975]).tolist(),'projected_lula_median':int(np.median(pl)),'projected_flavio_median':int(np.median(pf))})
    tick['models'][mode]={'scenarios':scenarios,'sensitivity_p_lula':[min(x['p_lula'] for x in scenarios),max(x['p_lula'] for x in scenarios)],'lower_mc_robust_lula':min(x['mc_wilson95_lula'][0] for x in scenarios)}
   result['ticks'].append(tick)
-  Path(out).write_text(json.dumps(result,ensure_ascii=False),encoding='utf-8')
+  Path(out).parent.mkdir(parents=True,exist_ok=True);Path(out).write_text(json.dumps(result,ensure_ascii=False),encoding='utf-8')
   print(pct,tick['time'],{k:v['sensitivity_p_lula'] for k,v in tick['models'].items()},flush=True)
  for mode in ['estadual','municipal']:
   hit=next((t for t in result['ticks'] if t['models'][mode]['lower_mc_robust_lula']>=.99),None)
@@ -80,4 +83,4 @@ def run(pickle,out,draws=2000):
  print('Marcos99',result.get('estadual_first_99'),result.get('municipal_first_99'),flush=True)
 
 if __name__=='__main__':
- p=argparse.ArgumentParser();p.add_argument('--sections',default='work/secoes-temporais.pkl');p.add_argument('--out',default='outputs/previsao_territorial.json');p.add_argument('--draws',type=int,default=2000);a=p.parse_args();run(a.sections,a.out,a.draws)
+ p=argparse.ArgumentParser();p.add_argument('--sections',default='work/secoes-temporais.pkl');p.add_argument('--out',default='outputs/previsao_territorial.json');p.add_argument('--draws',type=int,default=2000);p.add_argument('--targets',type=int,nargs='+');a=p.parse_args();run(a.sections,a.out,a.draws,a.targets)
