@@ -2,5 +2,6 @@
   "fonte_tte": "https://cdn.tse.jus.br/estatistica/sead/odsele/transf_temporaria_secao/transf_temporaria_secao_2026.zip",
   "estado": "INCOMPLETO",
   "secoes_base": 499248,
-  "erro": "<HTTPError 404: 'Not Found'>"
+  "tte_zip_sha256": "b4137117dded4bdb60f572e9743c876d341b64304d1a698f1772d9bf9eeb5277",
+  "erro": "ValueError(\"Campo ambiguo ('MUNICIPIO', 'ORIGEM'): ['CD_MUNICIPIO_ORIGEM', 'NM_MUNICIPIO_ORIGEM']\")"
 }
