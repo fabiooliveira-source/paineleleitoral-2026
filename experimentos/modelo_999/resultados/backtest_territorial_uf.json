@@ -1,0 +1,228 @@
+{
+  "status": "AUDITORIA_SINCRONISMO_TERRITORIAL",
+  "final_target_13_pct": 51.7851828842626,
+  "note": "Esta etapa NÃO é um modelo de correção territorial. Testa causalidade temporal e sincronismo dos dados UF antes de estimar votos faltantes.",
+  "thresholds": [
+    {
+      "threshold_pct": 5,
+      "timestamp": "2026-10-25T19:29:41-03:00",
+      "national_observed_13_pct": 51.15771339484237,
+      "absolute_error_pp": 0.6274694894202355,
+      "states_available": 28,
+      "states_total": 28,
+      "state_snapshot_total_minus_national": -198972,
+      "state_snapshots_synchronous": false,
+      "state_snapshot_max_age_seconds": 8981.0
+    },
+    {
+      "threshold_pct": 10,
+      "timestamp": "2026-10-25T19:39:35-03:00",
+      "national_observed_13_pct": 50.45627230668665,
+      "absolute_error_pp": 1.3289105775759538,
+      "states_available": 28,
+      "states_total": 28,
+      "state_snapshot_total_minus_national": -263727,
+      "state_snapshots_synchronous": false,
+      "state_snapshot_max_age_seconds": 209.0
+    },
+    {
+      "threshold_pct": 15,
+      "timestamp": "2026-10-25T19:48:11-03:00",
+      "national_observed_13_pct": 49.9173342200436,
+      "absolute_error_pp": 1.8678486642190038,
+      "states_available": 28,
+      "states_total": 28,
+      "state_snapshot_total_minus_national": -184045,
+      "state_snapshots_synchronous": false,
+      "state_snapshot_max_age_seconds": 105.0
+    },
+    {
+      "threshold_pct": 20,
+      "timestamp": "2026-10-25T19:57:37-03:00",
+      "national_observed_13_pct": 49.590905609223576,
+      "absolute_error_pp": 2.1942772750390276,
+      "states_available": 28,
+      "states_total": 28,
+      "state_snapshot_total_minus_national": -487337,
+      "state_snapshots_synchronous": false,
+      "state_snapshot_max_age_seconds": 253.0
+    },
+    {
+      "threshold_pct": 25,
+      "timestamp": "2026-10-25T20:04:12-03:00",
+      "national_observed_13_pct": 49.4899577062554,
+      "absolute_error_pp": 2.2952251780072004,
+      "states_available": 28,
+      "states_total": 28,
+      "state_snapshot_total_minus_national": -145760,
+      "state_snapshots_synchronous": false,
+      "state_snapshot_max_age_seconds": 107.0
+    },
+    {
+      "threshold_pct": 30,
+      "timestamp": "2026-10-25T20:08:53-03:00",
+      "national_observed_13_pct": 49.5341166513857,
+      "absolute_error_pp": 2.2510662328769016,
+      "states_available": 28,
+      "states_total": 28,
+      "state_snapshot_total_minus_national": -906850,
+      "state_snapshots_synchronous": false,
+      "state_snapshot_max_age_seconds": 388.0
+    },
+    {
+      "threshold_pct": 35,
+      "timestamp": "2026-10-25T20:13:24-03:00",
+      "national_observed_13_pct": 49.7038589973757,
+      "absolute_error_pp": 2.0813238868869064,
+      "states_available": 28,
+      "states_total": 28,
+      "state_snapshot_total_minus_national": -1002376,
+      "state_snapshots_synchronous": false,
+      "state_snapshot_max_age_seconds": 76.0
+    },
+    {
+      "threshold_pct": 40,
+      "timestamp": "2026-10-25T20:18:24-03:00",
+      "national_observed_13_pct": 49.79693329462228,
+      "absolute_error_pp": 1.9882495896403256,
+      "states_available": 28,
+      "states_total": 28,
+      "state_snapshot_total_minus_national": -665071,
+      "state_snapshots_synchronous": false,
+      "state_snapshot_max_age_seconds": 98.0
+    },
+    {
+      "threshold_pct": 45,
+      "timestamp": "2026-10-25T20:23:40-03:00",
+      "national_observed_13_pct": 49.94977146306083,
+      "absolute_error_pp": 1.8354114212017762,
+      "states_available": 28,
+      "states_total": 28,
+      "state_snapshot_total_minus_national": -294636,
+      "state_snapshots_synchronous": false,
+      "state_snapshot_max_age_seconds": 73.0
+    },
+    {
+      "threshold_pct": 50,
+      "timestamp": "2026-10-25T20:27:25-03:00",
+      "national_observed_13_pct": 50.13953212678242,
+      "absolute_error_pp": 1.6456507574801833,
+      "states_available": 28,
+      "states_total": 28,
+      "state_snapshot_total_minus_national": -882901,
+      "state_snapshots_synchronous": false,
+      "state_snapshot_max_age_seconds": 217.0
+    },
+    {
+      "threshold_pct": 55,
+      "timestamp": "2026-10-25T20:31:56-03:00",
+      "national_observed_13_pct": 50.37440773595483,
+      "absolute_error_pp": 1.4107751483077706,
+      "states_available": 28,
+      "states_total": 28,
+      "state_snapshot_total_minus_national": -969828,
+      "state_snapshots_synchronous": false,
+      "state_snapshot_max_age_seconds": 147.0
+    },
+    {
+      "threshold_pct": 60,
+      "timestamp": "2026-10-25T20:36:27-03:00",
+      "national_observed_13_pct": 50.54594101137042,
+      "absolute_error_pp": 1.2392418728921868,
+      "states_available": 28,
+      "states_total": 28,
+      "state_snapshot_total_minus_national": -1083740,
+      "state_snapshots_synchronous": false,
+      "state_snapshot_max_age_seconds": 175.0
+    },
+    {
+      "threshold_pct": 65,
+      "timestamp": "2026-10-25T20:40:28-03:00",
+      "national_observed_13_pct": 50.750550991993705,
+      "absolute_error_pp": 1.034631892268898,
+      "states_available": 28,
+      "states_total": 28,
+      "state_snapshot_total_minus_national": -944599,
+      "state_snapshots_synchronous": false,
+      "state_snapshot_max_age_seconds": 198.0
+    },
+    {
+      "threshold_pct": 70,
+      "timestamp": "2026-10-25T20:44:58-03:00",
+      "national_observed_13_pct": 50.92419277430319,
+      "absolute_error_pp": 0.8609901099594168,
+      "states_available": 28,
+      "states_total": 28,
+      "state_snapshot_total_minus_national": -1004678,
+      "state_snapshots_synchronous": false,
+      "state_snapshot_max_age_seconds": 165.0
+    },
+    {
+      "threshold_pct": 75,
+      "timestamp": "2026-10-25T20:49:16-03:00",
+      "national_observed_13_pct": 51.089620043534445,
+      "absolute_error_pp": 0.695562840728158,
+      "states_available": 28,
+      "states_total": 28,
+      "state_snapshot_total_minus_national": -75890,
+      "state_snapshots_synchronous": false,
+      "state_snapshot_max_age_seconds": 166.0
+    },
+    {
+      "threshold_pct": 80,
+      "timestamp": "2026-10-25T20:53:30-03:00",
+      "national_observed_13_pct": 51.271725425852004,
+      "absolute_error_pp": 0.5134574584105991,
+      "states_available": 28,
+      "states_total": 28,
+      "state_snapshot_total_minus_national": -448769,
+      "state_snapshots_synchronous": false,
+      "state_snapshot_max_age_seconds": 117.0
+    },
+    {
+      "threshold_pct": 85,
+      "timestamp": "2026-10-25T20:58:00-03:00",
+      "national_observed_13_pct": 51.431165940337486,
+      "absolute_error_pp": 0.3540169439251173,
+      "states_available": 28,
+      "states_total": 28,
+      "state_snapshot_total_minus_national": -750535,
+      "state_snapshots_synchronous": false,
+      "state_snapshot_max_age_seconds": 310.0
+    },
+    {
+      "threshold_pct": 90,
+      "timestamp": "2026-10-25T21:02:31-03:00",
+      "national_observed_13_pct": 51.57989570730491,
+      "absolute_error_pp": 0.20528717695769672,
+      "states_available": 28,
+      "states_total": 28,
+      "state_snapshot_total_minus_national": -1239369,
+      "state_snapshots_synchronous": false,
+      "state_snapshot_max_age_seconds": 581.0
+    },
+    {
+      "threshold_pct": 95,
+      "timestamp": "2026-10-25T21:07:32-03:00",
+      "national_observed_13_pct": 51.720762054660085,
+      "absolute_error_pp": 0.06442082960251838,
+      "states_available": 28,
+      "states_total": 28,
+      "state_snapshot_total_minus_national": -564685,
+      "state_snapshots_synchronous": false,
+      "state_snapshot_max_age_seconds": 882.0
+    },
+    {
+      "threshold_pct": 100,
+      "timestamp": "2026-10-25T23:22:59-03:00",
+      "national_observed_13_pct": 51.7851828842626,
+      "absolute_error_pp": 0.0,
+      "states_available": 28,
+      "states_total": 28,
+      "state_snapshot_total_minus_national": -302,
+      "state_snapshots_synchronous": false,
+      "state_snapshot_max_age_seconds": 8063.0
+    }
+  ],
+  "all_state_snapshots_synchronous": false
+}
