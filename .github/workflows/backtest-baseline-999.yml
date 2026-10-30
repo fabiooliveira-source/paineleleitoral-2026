@@ -5,6 +5,7 @@ on:
     paths:
       - '.github/workflows/backtest-baseline-999.yml'
       - 'experimentos/modelo_999/backtest_baseline_nacional.py'
+      - 'experimentos/modelo_999/auditar_sincronismo_uf.py'
   workflow_dispatch:
 permissions:
   contents: write
@@ -15,11 +16,13 @@ jobs:
       - uses: actions/checkout@v4
       - name: Backtest temporal nacional
         run: python3 experimentos/modelo_999/backtest_baseline_nacional.py
+      - name: Auditar sincronismo temporal por UF
+        run: python3 experimentos/modelo_999/auditar_sincronismo_uf.py
       - name: Publicar resultados como artefato independente do push
         uses: actions/upload-artifact@v4
         with:
           name: backtest-baseline-nacional
-          path: experimentos/modelo_999/resultados/backtest_baseline_nacional.json
+          path: experimentos/modelo_999/resultados/*.json
           if-no-files-found: error
       - name: Registrar resultados na branch experimental (tentativa tolerante a falha de rede)
         continue-on-error: true
@@ -27,7 +30,7 @@ jobs:
         run: |
           git config user.name github-actions
           git config user.email github-actions@users.noreply.github.com
-          git add experimentos/modelo_999/resultados/backtest_baseline_nacional.json
+          git add experimentos/modelo_999/resultados/*.json
           if ! git diff --cached --quiet; then
             git commit -m "Registrar resultados do baseline nacional"
             for attempt in 1 2 3; do
