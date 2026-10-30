@@ -1,0 +1,30 @@
+{
+  "manifest_sha256": "c039089dce0747c86c054f67931739a7809d91685dde9bd58e106684a75e5073",
+  "files_verified": 36,
+  "presidential_files": 29,
+  "rows": {
+    "observacoes_nacional_uf.csv": 4892,
+    "observacoes_municipais.csv": 47139
+  },
+  "issues": [],
+  "national_final": [
+    499248,
+    158745502,
+    128236074,
+    1430496,
+    2723305,
+    64256232,
+    59826041
+  ],
+  "uf_sum_minus_national": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "repo_reference": "bff6ef51cb40a73d1874872e9db9769fe6cb23e9",
+  "temporal_precision_seconds": 1
+}

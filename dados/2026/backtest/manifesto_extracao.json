@@ -1,0 +1,215 @@
+{
+  "zip_sha256": "c82339f481ecec3901b7d7ced46295bca675cca98562e4d4f1f50b97fc1f144e",
+  "files": [
+    {
+      "path": "dados/2026/backtest/json/acervo_2026_2/validacao.json",
+      "size": 560,
+      "sha256": "fd8c5cb9348d7c40a0bd725aa15802a8232bd90f37f2bcc760ac7a793f3609df"
+    },
+    {
+      "path": "dados/2026/backtest/csv/acervo_2026_2/observacoes_municipais.csv",
+      "size": 3543220,
+      "sha256": "c8e334fb0842e058595e4d6fa8a450a598282672de5d9414115574857d65008b"
+    },
+    {
+      "path": "dados/2026/backtest/json/acervo_2026_2/alvos_finais.json",
+      "size": 1747774,
+      "sha256": "6051ac89f8ca916f070034a934cb8e4ba0bb42388e6ffeaea46f4435ede906ad"
+    },
+    {
+      "path": "dados/2026/backtest/json/acervo_2026_2/integridade.json",
+      "size": 8468,
+      "sha256": "a1304a4e2105bff44263ce899c33bb458ac18c7ad22c5f9f73aec13acc5d5a38"
+    },
+    {
+      "path": "dados/2026/backtest/csv/acervo_2026_2/observacoes_nacional_uf.csv",
+      "size": 390165,
+      "sha256": "872d0340c00d710495e6e1c4ba076d98b2dae75af1b12e7a70f004efe5a18b0a"
+    },
+    {
+      "path": "dados/2026/backtest/json/acervo_2026_2/manifest.json",
+      "size": 3240,
+      "sha256": "c039089dce0747c86c054f67931739a7809d91685dde9bd58e106684a75e5073"
+    },
+    {
+      "path": "dados/2026/backtest/json/acervo_2026_2/raw/1_AL.json",
+      "size": 55559,
+      "sha256": "a58e441797459ce27b8097105be47b3ebb623547c76e91635a71956b0c15a524"
+    },
+    {
+      "path": "dados/2026/backtest/json/acervo_2026_2/raw/1_MT.json",
+      "size": 81181,
+      "sha256": "1f3446fea2ee114cdeaec3cdd3c3376076ede7dc530c7a944dc37cce96e210b5"
+    },
+    {
+      "path": "dados/2026/backtest/json/acervo_2026_2/raw/3_RN.json",
+      "size": 82826,
+      "sha256": "0be5b924a3ccf2c14fe1020baa10ed3ae08ba111759708ed65932affda654603"
+    },
+    {
+      "path": "dados/2026/backtest/json/acervo_2026_2/raw/1_MS.json",
+      "size": 46800,
+      "sha256": "58be859bed0a4b1eefa50341bfaae2d44c3e33835abecf48fa89899949cf62a9"
+    },
+    {
+      "path": "dados/2026/backtest/json/acervo_2026_2/raw/1_AC.json",
+      "size": 16508,
+      "sha256": "d5a0d258ddb05960d4e8e0ce48ef351985a2860311e5d9c3b63d808d2d75ed70"
+    },
+    {
+      "path": "dados/2026/backtest/json/acervo_2026_2/raw/1_PE.json",
+      "size": 117957,
+      "sha256": "4ec60edd01238fdc1cf41c9f03b476c8cfbf9d81199545f87cb51fc810cac492"
+    },
+    {
+      "path": "dados/2026/backtest/json/acervo_2026_2/raw/1_ZZ.json",
+      "size": 48284,
+      "sha256": "532435de47f4c726495ef6655277e38eb969f84b513bc7277137392ce7f62db3"
+    },
+    {
+      "path": "dados/2026/backtest/json/acervo_2026_2/raw/1_CE.json",
+      "size": 118108,
+      "sha256": "f4e8c1114fb285944a5bc34f95bd0d62af124942dfde78a8df77ca55da6ecc29"
+    },
+    {
+      "path": "dados/2026/backtest/json/acervo_2026_2/raw/1_DF.json",
+      "size": 5182,
+      "sha256": "b1d0f777a6a202004ed83c618bc1e616e435aa5ac1fa8eaed54299696077936c"
+    },
+    {
+      "path": "dados/2026/backtest/json/acervo_2026_2/raw/1_PB.json",
+      "size": 123447,
+      "sha256": "326cee8e52225075a35dd3c6742c188fb6b9382ad782b40e916c72e5755f882f"
+    },
+    {
+      "path": "dados/2026/backtest/json/acervo_2026_2/raw/1_SE.json",
+      "size": 33565,
+      "sha256": "b19f4981a8fbdb521258db80cdb468b2d700486d9a142e6306322b09a4fe7757"
+    },
+    {
+      "path": "dados/2026/backtest/json/acervo_2026_2/raw/1_MA.json",
+      "size": 157347,
+      "sha256": "9c0e017d0269f645055fa006b725a9000195484155c6503ecdcf02d4f0dbac16"
+    },
+    {
+      "path": "dados/2026/backtest/json/acervo_2026_2/raw/3_ES.json",
+      "size": 55487,
+      "sha256": "924c9188127258484899364fa4de7c01a988bc2b1f250ddfec86408c7c16290f"
+    },
+    {
+      "path": "dados/2026/backtest/json/acervo_2026_2/raw/1_ES.json",
+      "size": 55844,
+      "sha256": "e592e7665fbe99f91e8c87d1f9755ab8fad0b22cea82820df6682cf295aa2fa1"
+    },
+    {
+      "path": "dados/2026/backtest/json/acervo_2026_2/raw/1_MG.json",
+      "size": 364344,
+      "sha256": "2c59fd2b0bc143cdf9e81194a725b0adcdf02c62e6d9031100ba665dee9f9154"
+    },
+    {
+      "path": "dados/2026/backtest/json/acervo_2026_2/raw/1_GO.json",
+      "size": 109074,
+      "sha256": "36661baad5397e39e62a149554ea8b8dbc104eece54d9f8dc55fd96f56a32049"
+    },
+    {
+      "path": "dados/2026/backtest/json/acervo_2026_2/raw/1_PI.json",
+      "size": 107597,
+      "sha256": "e5ddd8716c6ece3d9270f078a3f11c9a90df497d59e67a52f265bc0cf051585b"
+    },
+    {
+      "path": "dados/2026/backtest/json/acervo_2026_2/raw/3_TO.json",
+      "size": 61985,
+      "sha256": "5fd2fb55850fb0cc5f9fb95e36a8d87cec827310b7f611d36f8f76a04497478b"
+    },
+    {
+      "path": "dados/2026/backtest/json/acervo_2026_2/raw/1_PA.json",
+      "size": 155916,
+      "sha256": "cb4dc836a2d8901c963e9b2769841fed65e03388ec4668f29e14e2329146a1e0"
+    },
+    {
+      "path": "dados/2026/backtest/json/acervo_2026_2/raw/1_SC.json",
+      "size": 171367,
+      "sha256": "3caa53c23ffd088118c8408f84bd6bed01054cac8a3747f041b1a52d2857645a"
+    },
+    {
+      "path": "dados/2026/backtest/json/acervo_2026_2/raw/3_AC.json",
+      "size": 16450,
+      "sha256": "7b8e6ad14d32ef684acdb74563fdb84b5e726a8337de17a12c7bb4c9442925bd"
+    },
+    {
+      "path": "dados/2026/backtest/json/acervo_2026_2/raw/1.json",
+      "size": 482414,
+      "sha256": "87406365a5d8f32f96c212321f3b1cdcd0ce5cf1d3aac64b2f24c81e39f7e661"
+    },
+    {
+      "path": "dados/2026/backtest/json/acervo_2026_2/raw/1_TO.json",
+      "size": 62737,
+      "sha256": "47b3c9c44c2f6e6cd36794edd8a43a62da7774b4fc188b9f9347027a849b7c29"
+    },
+    {
+      "path": "dados/2026/backtest/json/acervo_2026_2/raw/3_AM.json",
+      "size": 52731,
+      "sha256": "69157dd40e50bdf2957a219b2f11e634e89a38f4aaa1351faf8f806aba3bfefd"
+    },
+    {
+      "path": "dados/2026/backtest/json/acervo_2026_2/raw/1_AP.json",
+      "size": 13074,
+      "sha256": "bb68d5361eab677eb46aee215c2db44d8e26d07ee89c1970bd8b471ecf798abe"
+    },
+    {
+      "path": "dados/2026/backtest/json/acervo_2026_2/raw/1_SP.json",
+      "size": 303804,
+      "sha256": "301b196168e08d7e460cc5cefd485b27e22da300a7d77e742775f3b639d908f0"
+    },
+    {
+      "path": "dados/2026/backtest/json/acervo_2026_2/raw/1_RN.json",
+      "size": 82033,
+      "sha256": "2734ea0f44d98b55e62ce5c0c2ce9863c1e06d3af984e59e125f5c4b258b981a"
+    },
+    {
+      "path": "dados/2026/backtest/json/acervo_2026_2/raw/1_RR.json",
+      "size": 10731,
+      "sha256": "01d1b2ee26eda6d1121a06949ddf6857aee82e9150fe774b624b6dc07bdc328f"
+    },
+    {
+      "path": "dados/2026/backtest/json/acervo_2026_2/raw/1_RS.json",
+      "size": 281730,
+      "sha256": "ccbe8a6bbd0f0419ba74feb00a6f925195eb1ed5de4f1e059171697cee29a982"
+    },
+    {
+      "path": "dados/2026/backtest/json/acervo_2026_2/raw/3.json",
+      "size": 50021,
+      "sha256": "f6661baaa3ee6265a03309fd2688add38a7051441106d5c1b1c33bdde6ba89d5"
+    },
+    {
+      "path": "dados/2026/backtest/json/acervo_2026_2/raw/1_AM.json",
+      "size": 53958,
+      "sha256": "3994887861011a65b63a3b57be392474a74841c96bacc1d6d7002017442a9f71"
+    },
+    {
+      "path": "dados/2026/backtest/json/acervo_2026_2/raw/1_RJ.json",
+      "size": 66525,
+      "sha256": "9d2429bdd3395071a38a45c31c1af4fcc6d303af98b7ade04fa00772b9e8fbf1"
+    },
+    {
+      "path": "dados/2026/backtest/json/acervo_2026_2/raw/3_DF.json",
+      "size": 5095,
+      "sha256": "0e7f641b7e0bf6d925819316597409405aef2e3a8523460ea87e8182100ea822"
+    },
+    {
+      "path": "dados/2026/backtest/json/acervo_2026_2/raw/1_PR.json",
+      "size": 243376,
+      "sha256": "79dd39d850667156d86e2d781142508cad8e85dffba91a3ce4f00f3fb182b5b8"
+    },
+    {
+      "path": "dados/2026/backtest/json/acervo_2026_2/raw/1_BA.json",
+      "size": 223745,
+      "sha256": "64a1ef6785cd3fce1db599e3e2c084976d27a1b8ca8427dc2bd01fd98d56a60b"
+    },
+    {
+      "path": "dados/2026/backtest/json/acervo_2026_2/raw/1_RO.json",
+      "size": 26990,
+      "sha256": "c84c3fdc407958b9ec8637ecc2c8d06ad964ce23560b312aca0410f2a7d269d8"
+    }
+  ]
+}
