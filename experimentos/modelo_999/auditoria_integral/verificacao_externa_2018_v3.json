@@ -1,0 +1,14 @@
+{
+  "reference_points_recomputed_per_model": 19,
+  "models_recomputed": [
+    "v2",
+    "v3"
+  ],
+  "max_difference_pp": {
+    "v2": 1.4210854715202004e-14,
+    "v3": 7.105427357601002e-15
+  },
+  "future_injection_tests_passed": 38,
+  "scenario_model_metrics_checked": 21,
+  "scope": "Aritmetica e filtros das entradas reconstruidas; nao autentica horarios publicos nem equivale a revisao humana independente."
+}
