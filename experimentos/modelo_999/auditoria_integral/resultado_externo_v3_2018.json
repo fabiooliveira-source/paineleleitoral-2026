@@ -1,0 +1,4225 @@
+{
+  "status": "TESTE_EXTERNO_2018_RECONSTRUIDO_CONCLUIDO",
+  "predictor_v3_freeze_commit": "8fd1d1705e9d843fbf6a8209432d0fa6bcdf9ae4",
+  "parameters_changed_after_2018": false,
+  "primary_candidate": "FERNANDO HADDAD 13",
+  "other_candidate": "JAIR BOLSONARO 17",
+  "target_a_pct": 44.869768719969414,
+  "denominator_sections_first_round": 454490,
+  "national_reconstructed_timestamps_in_window": 1559,
+  "criteria": {
+    "lower_reference_mae": false,
+    "reference_max_not_worse": false,
+    "reference_abs_bias_not_worse": false,
+    "worst_stress_max_not_worse": true
+  },
+  "all_criteria_passed": false,
+  "decision": "NAO_PROMOVER_V3_CRITERIOS_EXTERNOS_FALHARAM",
+  "worst_stress_max_pp": {
+    "v2": 6.765213434746614,
+    "v3": 6.378595723863379
+  },
+  "scenarios": {
+    "referencia": {
+      "v2": {
+        "mae_pp": 1.3285665667255393,
+        "max_abs_error_pp": 3.6996154637011225,
+        "bias_pp": -1.3285665667255393,
+        "winner_correct_checkpoints": 19,
+        "first_sampled_stable_correct_winner_pct": 5,
+        "checkpoints": [
+          {
+            "threshold_pct": 5,
+            "timestamp": "2018-10-28T17:25:34-03:00",
+            "forecast_a_pct": 41.17015325626829,
+            "error_pp": -3.6996154637011225,
+            "winner_correct": true,
+            "swing_pp": 2.8241228636267874,
+            "fresh_territories": 18,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 10,
+            "timestamp": "2018-10-28T17:31:11-03:00",
+            "forecast_a_pct": 42.984323949317,
+            "error_pp": -1.8854447706524113,
+            "winner_correct": true,
+            "swing_pp": 4.837440417508114,
+            "fresh_territories": 21,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 15,
+            "timestamp": "2018-10-28T17:38:06-03:00",
+            "forecast_a_pct": 42.29704043267628,
+            "error_pp": -2.5727282872931356,
+            "winner_correct": true,
+            "swing_pp": 3.916296527613002,
+            "fresh_territories": 19,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 20,
+            "timestamp": "2018-10-28T17:42:42-03:00",
+            "forecast_a_pct": 43.06303718416448,
+            "error_pp": -1.8067315358049396,
+            "winner_correct": true,
+            "swing_pp": 4.790816240483218,
+            "fresh_territories": 20,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 25,
+            "timestamp": "2018-10-28T17:46:09-03:00",
+            "forecast_a_pct": 42.9839771516262,
+            "error_pp": -1.8857915683432203,
+            "winner_correct": true,
+            "swing_pp": 4.731874354346458,
+            "fresh_territories": 22,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 30,
+            "timestamp": "2018-10-28T17:51:02-03:00",
+            "forecast_a_pct": 42.8992342235,
+            "error_pp": -1.9705344964694116,
+            "winner_correct": true,
+            "swing_pp": 4.512574927827719,
+            "fresh_territories": 19,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 35,
+            "timestamp": "2018-10-28T17:55:55-03:00",
+            "forecast_a_pct": 43.083108751322534,
+            "error_pp": -1.786659968646881,
+            "winner_correct": true,
+            "swing_pp": 4.303229296238439,
+            "fresh_territories": 20,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 40,
+            "timestamp": "2018-10-28T18:00:53-03:00",
+            "forecast_a_pct": 43.5952371797749,
+            "error_pp": -1.2745315401945179,
+            "winner_correct": true,
+            "swing_pp": 5.383544174938882,
+            "fresh_territories": 16,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 45,
+            "timestamp": "2018-10-28T18:04:24-03:00",
+            "forecast_a_pct": 43.788027226700684,
+            "error_pp": -1.0817414932687286,
+            "winner_correct": true,
+            "swing_pp": 5.641155628366849,
+            "fresh_territories": 20,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 50,
+            "timestamp": "2018-10-28T18:09:44-03:00",
+            "forecast_a_pct": 43.99294534962526,
+            "error_pp": -0.8768233703441597,
+            "winner_correct": true,
+            "swing_pp": 5.776114570659969,
+            "fresh_territories": 23,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 55,
+            "timestamp": "2018-10-28T18:15:11-03:00",
+            "forecast_a_pct": 43.67439692776982,
+            "error_pp": -1.1953717921995954,
+            "winner_correct": true,
+            "swing_pp": 4.802233598599294,
+            "fresh_territories": 22,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 60,
+            "timestamp": "2018-10-28T18:18:14-03:00",
+            "forecast_a_pct": 44.066868488547605,
+            "error_pp": -0.8029002314218103,
+            "winner_correct": true,
+            "swing_pp": 5.610746081623477,
+            "fresh_territories": 25,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 65,
+            "timestamp": "2018-10-28T18:23:49-03:00",
+            "forecast_a_pct": 44.209525750911496,
+            "error_pp": -0.6602429690579226,
+            "winner_correct": true,
+            "swing_pp": 5.787098882343647,
+            "fresh_territories": 25,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 70,
+            "timestamp": "2018-10-28T18:30:50-03:00",
+            "forecast_a_pct": 44.49640977395926,
+            "error_pp": -0.3733589460101605,
+            "winner_correct": true,
+            "swing_pp": 7.130608934667601,
+            "fresh_territories": 20,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 75,
+            "timestamp": "2018-10-28T18:33:24-03:00",
+            "forecast_a_pct": 44.0323044879196,
+            "error_pp": -0.8374642320498116,
+            "winner_correct": true,
+            "swing_pp": 5.686838487080134,
+            "fresh_territories": 26,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 80,
+            "timestamp": "2018-10-28T18:40:56-03:00",
+            "forecast_a_pct": 44.043117621326125,
+            "error_pp": -0.826651098643294,
+            "winner_correct": true,
+            "swing_pp": 5.154060571562359,
+            "fresh_territories": 20,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 85,
+            "timestamp": "2018-10-28T18:50:49-03:00",
+            "forecast_a_pct": 44.19779097329539,
+            "error_pp": -0.671977746674024,
+            "winner_correct": true,
+            "swing_pp": 5.471125341932802,
+            "fresh_territories": 14,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 90,
+            "timestamp": "2018-10-28T19:01:31-03:00",
+            "forecast_a_pct": 44.30895840266532,
+            "error_pp": -0.5608103173040946,
+            "winner_correct": true,
+            "swing_pp": 3.8577470043148328,
+            "fresh_territories": 19,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 95,
+            "timestamp": "2018-10-28T19:20:05-03:00",
+            "forecast_a_pct": 44.39638378026341,
+            "error_pp": -0.47338493970600637,
+            "winner_correct": true,
+            "swing_pp": 5.353484790335607,
+            "fresh_territories": 19,
+            "mode": "territorial"
+          }
+        ]
+      },
+      "v3": {
+        "mae_pp": 3.1171232098506536,
+        "max_abs_error_pp": 5.708850658822817,
+        "bias_pp": -3.1171232098506536,
+        "winner_correct_checkpoints": 19,
+        "first_sampled_stable_correct_winner_pct": 5,
+        "checkpoints": [
+          {
+            "threshold_pct": 5,
+            "timestamp": "2018-10-28T17:25:34-03:00",
+            "forecast_a_pct": 39.160918061146596,
+            "error_pp": -5.708850658822817,
+            "winner_correct": true,
+            "swing_pp": 0.7060307159066969,
+            "fresh_territories": 18,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 10,
+            "timestamp": "2018-10-28T17:31:11-03:00",
+            "forecast_a_pct": 39.72124692390976,
+            "error_pp": -5.148521796059658,
+            "winner_correct": true,
+            "swing_pp": 1.2093601043770286,
+            "fresh_territories": 21,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 15,
+            "timestamp": "2018-10-28T17:38:06-03:00",
+            "forecast_a_pct": 39.80423699554818,
+            "error_pp": -5.065531724421235,
+            "winner_correct": true,
+            "swing_pp": 0.9790741319032505,
+            "fresh_territories": 19,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 20,
+            "timestamp": "2018-10-28T17:42:42-03:00",
+            "forecast_a_pct": 40.191077299492385,
+            "error_pp": -4.6786914204770325,
+            "winner_correct": true,
+            "swing_pp": 1.1977040601208044,
+            "fresh_territories": 20,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 25,
+            "timestamp": "2018-10-28T17:46:09-03:00",
+            "forecast_a_pct": 40.32235639139627,
+            "error_pp": -4.547412328573147,
+            "winner_correct": true,
+            "swing_pp": 1.1829685885866146,
+            "fresh_territories": 22,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 30,
+            "timestamp": "2018-10-28T17:51:02-03:00",
+            "forecast_a_pct": 40.530415359361136,
+            "error_pp": -4.339353360608278,
+            "winner_correct": true,
+            "swing_pp": 1.1281437319569299,
+            "fresh_territories": 19,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 35,
+            "timestamp": "2018-10-28T17:55:55-03:00",
+            "forecast_a_pct": 40.98824921818709,
+            "error_pp": -3.8815195017823214,
+            "winner_correct": true,
+            "swing_pp": 1.0758073240596098,
+            "fresh_territories": 20,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 40,
+            "timestamp": "2018-10-28T18:00:53-03:00",
+            "forecast_a_pct": 41.173264176273385,
+            "error_pp": -3.696504543696033,
+            "winner_correct": true,
+            "swing_pp": 1.3458860437347204,
+            "fresh_territories": 16,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 45,
+            "timestamp": "2018-10-28T18:04:24-03:00",
+            "forecast_a_pct": 41.463866515352585,
+            "error_pp": -3.4059022046168286,
+            "winner_correct": true,
+            "swing_pp": 1.4102889070917122,
+            "fresh_territories": 20,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 50,
+            "timestamp": "2018-10-28T18:09:44-03:00",
+            "forecast_a_pct": 41.85103678147736,
+            "error_pp": -3.018731938492053,
+            "winner_correct": true,
+            "swing_pp": 1.4440286426649922,
+            "fresh_territories": 23,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 55,
+            "timestamp": "2018-10-28T18:15:11-03:00",
+            "forecast_a_pct": 42.05564406293448,
+            "error_pp": -2.814124657034933,
+            "winner_correct": true,
+            "swing_pp": 1.2005583996498235,
+            "fresh_territories": 22,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 60,
+            "timestamp": "2018-10-28T18:18:14-03:00",
+            "forecast_a_pct": 42.38583901402648,
+            "error_pp": -2.4839297059429386,
+            "winner_correct": true,
+            "swing_pp": 1.4026865204058692,
+            "fresh_territories": 25,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 65,
+            "timestamp": "2018-10-28T18:23:49-03:00",
+            "forecast_a_pct": 42.69816202048887,
+            "error_pp": -2.171606699480544,
+            "winner_correct": true,
+            "swing_pp": 1.4467747205859118,
+            "fresh_territories": 25,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 70,
+            "timestamp": "2018-10-28T18:30:50-03:00",
+            "forecast_a_pct": 42.90398974195322,
+            "error_pp": -1.9657789780161972,
+            "winner_correct": true,
+            "swing_pp": 1.7826522336669002,
+            "fresh_territories": 20,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 75,
+            "timestamp": "2018-10-28T18:33:24-03:00",
+            "forecast_a_pct": 42.96744401249528,
+            "error_pp": -1.90232470747414,
+            "winner_correct": true,
+            "swing_pp": 1.4217096217700336,
+            "fresh_territories": 26,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 80,
+            "timestamp": "2018-10-28T18:40:56-03:00",
+            "forecast_a_pct": 43.27293433732,
+            "error_pp": -1.5968343826494147,
+            "winner_correct": true,
+            "swing_pp": 1.2885151428905897,
+            "fresh_territories": 20,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 85,
+            "timestamp": "2018-10-28T18:50:49-03:00",
+            "forecast_a_pct": 43.5912591456352,
+            "error_pp": -1.278509574334219,
+            "winner_correct": true,
+            "swing_pp": 1.3677813354832005,
+            "fresh_territories": 14,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 90,
+            "timestamp": "2018-10-28T19:01:31-03:00",
+            "forecast_a_pct": 44.0199711445394,
+            "error_pp": -0.8497975754300224,
+            "winner_correct": true,
+            "swing_pp": 0.9644367510787082,
+            "fresh_territories": 19,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 95,
+            "timestamp": "2018-10-28T19:20:05-03:00",
+            "forecast_a_pct": 44.19835349071881,
+            "error_pp": -0.6714152292506048,
+            "winner_correct": true,
+            "swing_pp": 1.3383711975839017,
+            "fresh_territories": 19,
+            "mode": "territorial"
+          }
+        ]
+      },
+      "baseline": {
+        "mae_pp": 1.5819453006799649,
+        "max_abs_error_pp": 4.988950941589765,
+        "bias_pp": -1.5819453006799649,
+        "winner_correct_checkpoints": 19,
+        "first_sampled_stable_correct_winner_pct": 5,
+        "checkpoints": [
+          {
+            "threshold_pct": 5,
+            "timestamp": "2018-10-28T17:25:34-03:00",
+            "forecast_a_pct": 39.88081777837965,
+            "error_pp": -4.988950941589765,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 10,
+            "timestamp": "2018-10-28T17:31:11-03:00",
+            "forecast_a_pct": 40.57949477712993,
+            "error_pp": -4.290273942839484,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 15,
+            "timestamp": "2018-10-28T17:38:06-03:00",
+            "forecast_a_pct": 42.09993284763858,
+            "error_pp": -2.769835872330839,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 20,
+            "timestamp": "2018-10-28T17:42:42-03:00",
+            "forecast_a_pct": 42.49090327127847,
+            "error_pp": -2.3788654486909477,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 25,
+            "timestamp": "2018-10-28T17:46:09-03:00",
+            "forecast_a_pct": 42.49267558289384,
+            "error_pp": -2.377093137075581,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 30,
+            "timestamp": "2018-10-28T17:51:02-03:00",
+            "forecast_a_pct": 42.831069454985446,
+            "error_pp": -2.038699264983973,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 35,
+            "timestamp": "2018-10-28T17:55:55-03:00",
+            "forecast_a_pct": 43.75637715925952,
+            "error_pp": -1.113391560709892,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 40,
+            "timestamp": "2018-10-28T18:00:53-03:00",
+            "forecast_a_pct": 43.28914656890414,
+            "error_pp": -1.5806221510652807,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 45,
+            "timestamp": "2018-10-28T18:04:24-03:00",
+            "forecast_a_pct": 43.460116692899334,
+            "error_pp": -1.4096520270700796,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 50,
+            "timestamp": "2018-10-28T18:09:44-03:00",
+            "forecast_a_pct": 43.79827862300044,
+            "error_pp": -1.0714900969689745,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 55,
+            "timestamp": "2018-10-28T18:15:11-03:00",
+            "forecast_a_pct": 44.04687890062919,
+            "error_pp": -0.8228898193402279,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 60,
+            "timestamp": "2018-10-28T18:18:14-03:00",
+            "forecast_a_pct": 44.09363559165522,
+            "error_pp": -0.7761331283141937,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 65,
+            "timestamp": "2018-10-28T18:23:49-03:00",
+            "forecast_a_pct": 44.213021045125636,
+            "error_pp": -0.6567476748437828,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 70,
+            "timestamp": "2018-10-28T18:30:50-03:00",
+            "forecast_a_pct": 44.05115407671982,
+            "error_pp": -0.8186146432495989,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 75,
+            "timestamp": "2018-10-28T18:33:24-03:00",
+            "forecast_a_pct": 44.00887339985211,
+            "error_pp": -0.8608953201172997,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 80,
+            "timestamp": "2018-10-28T18:40:56-03:00",
+            "forecast_a_pct": 44.16085171766826,
+            "error_pp": -0.7089170023011571,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 85,
+            "timestamp": "2018-10-28T18:50:49-03:00",
+            "forecast_a_pct": 44.25169684480146,
+            "error_pp": -0.6180718751679581,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 90,
+            "timestamp": "2018-10-28T19:01:31-03:00",
+            "forecast_a_pct": 44.534807335235755,
+            "error_pp": -0.3349613847336619,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 95,
+            "timestamp": "2018-10-28T19:20:05-03:00",
+            "forecast_a_pct": 44.42891329844278,
+            "error_pp": -0.4408554215266369,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          }
+        ]
+      }
+    },
+    "atraso_5min": {
+      "v2": {
+        "mae_pp": 3.3607374974237327,
+        "max_abs_error_pp": 6.765213434746614,
+        "bias_pp": -3.1926455833863705,
+        "winner_correct_checkpoints": 19,
+        "first_sampled_stable_correct_winner_pct": 5,
+        "checkpoints": [
+          {
+            "threshold_pct": 5,
+            "timestamp": "2018-10-28T17:25:34-03:00",
+            "forecast_a_pct": 46.46664190332436,
+            "error_pp": 1.596873183354941,
+            "winner_correct": true,
+            "swing_pp": 8.407566275854395,
+            "fresh_territories": 1,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 10,
+            "timestamp": "2018-10-28T17:31:11-03:00",
+            "forecast_a_pct": 38.63355458210734,
+            "error_pp": -6.236214137862079,
+            "winner_correct": true,
+            "swing_pp": 0.0,
+            "fresh_territories": 0,
+            "mode": "degraded_no_fresh_territory"
+          },
+          {
+            "threshold_pct": 15,
+            "timestamp": "2018-10-28T17:38:06-03:00",
+            "forecast_a_pct": 38.973302516505484,
+            "error_pp": -5.896466203463935,
+            "winner_correct": true,
+            "swing_pp": 0.0,
+            "fresh_territories": 0,
+            "mode": "degraded_no_fresh_territory"
+          },
+          {
+            "threshold_pct": 20,
+            "timestamp": "2018-10-28T17:42:42-03:00",
+            "forecast_a_pct": 39.233757337935025,
+            "error_pp": -5.63601138203439,
+            "winner_correct": true,
+            "swing_pp": 0.0,
+            "fresh_territories": 0,
+            "mode": "degraded_no_fresh_territory"
+          },
+          {
+            "threshold_pct": 25,
+            "timestamp": "2018-10-28T17:46:09-03:00",
+            "forecast_a_pct": 38.1045552852228,
+            "error_pp": -6.765213434746614,
+            "winner_correct": true,
+            "swing_pp": -1.7741646178464632,
+            "fresh_territories": 1,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 30,
+            "timestamp": "2018-10-28T17:51:02-03:00",
+            "forecast_a_pct": 39.74080907131484,
+            "error_pp": -5.128959648654574,
+            "winner_correct": true,
+            "swing_pp": 0.0,
+            "fresh_territories": 0,
+            "mode": "degraded_no_fresh_territory"
+          },
+          {
+            "threshold_pct": 35,
+            "timestamp": "2018-10-28T17:55:55-03:00",
+            "forecast_a_pct": 38.84891121709411,
+            "error_pp": -6.020857502875304,
+            "winner_correct": true,
+            "swing_pp": -2.220139903633689,
+            "fresh_territories": 1,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 40,
+            "timestamp": "2018-10-28T18:00:53-03:00",
+            "forecast_a_pct": 40.36593984177288,
+            "error_pp": -4.503828878196536,
+            "winner_correct": true,
+            "swing_pp": 0.0,
+            "fresh_territories": 0,
+            "mode": "degraded_no_fresh_territory"
+          },
+          {
+            "threshold_pct": 45,
+            "timestamp": "2018-10-28T18:04:24-03:00",
+            "forecast_a_pct": 44.13515899227515,
+            "error_pp": -0.7346097276942631,
+            "winner_correct": true,
+            "swing_pp": 6.273069001523646,
+            "fresh_territories": 1,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 50,
+            "timestamp": "2018-10-28T18:09:44-03:00",
+            "forecast_a_pct": 41.1370672587614,
+            "error_pp": -3.7327014612080154,
+            "winner_correct": true,
+            "swing_pp": 0.0,
+            "fresh_territories": 0,
+            "mode": "degraded_no_fresh_territory"
+          },
+          {
+            "threshold_pct": 55,
+            "timestamp": "2018-10-28T18:15:11-03:00",
+            "forecast_a_pct": 41.51605977465604,
+            "error_pp": -3.3537089453133717,
+            "winner_correct": true,
+            "swing_pp": 0.0,
+            "fresh_territories": 0,
+            "mode": "degraded_no_fresh_territory"
+          },
+          {
+            "threshold_pct": 60,
+            "timestamp": "2018-10-28T18:18:14-03:00",
+            "forecast_a_pct": 41.825495855852765,
+            "error_pp": -3.0442728641166483,
+            "winner_correct": true,
+            "swing_pp": 0.0,
+            "fresh_territories": 0,
+            "mode": "degraded_no_fresh_territory"
+          },
+          {
+            "threshold_pct": 65,
+            "timestamp": "2018-10-28T18:23:49-03:00",
+            "forecast_a_pct": 42.194374110348,
+            "error_pp": -2.6753946096214176,
+            "winner_correct": true,
+            "swing_pp": 0.0,
+            "fresh_territories": 0,
+            "mode": "degraded_no_fresh_territory"
+          },
+          {
+            "threshold_pct": 70,
+            "timestamp": "2018-10-28T18:30:50-03:00",
+            "forecast_a_pct": 42.37318306461787,
+            "error_pp": -2.4965856553515464,
+            "winner_correct": true,
+            "swing_pp": 0.0,
+            "fresh_territories": 0,
+            "mode": "degraded_no_fresh_territory"
+          },
+          {
+            "threshold_pct": 75,
+            "timestamp": "2018-10-28T18:33:24-03:00",
+            "forecast_a_pct": 42.61249052068717,
+            "error_pp": -2.257278199282248,
+            "winner_correct": true,
+            "swing_pp": 0.0,
+            "fresh_territories": 0,
+            "mode": "degraded_no_fresh_territory"
+          },
+          {
+            "threshold_pct": 80,
+            "timestamp": "2018-10-28T18:40:56-03:00",
+            "forecast_a_pct": 44.2589709401528,
+            "error_pp": -0.6107977798166186,
+            "winner_correct": true,
+            "swing_pp": 6.237427124928685,
+            "fresh_territories": 1,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 85,
+            "timestamp": "2018-10-28T18:50:49-03:00",
+            "forecast_a_pct": 43.389081869748466,
+            "error_pp": -1.4806868502209525,
+            "winner_correct": true,
+            "swing_pp": 0.0,
+            "fresh_territories": 0,
+            "mode": "degraded_no_fresh_territory"
+          },
+          {
+            "threshold_pct": 90,
+            "timestamp": "2018-10-28T19:01:31-03:00",
+            "forecast_a_pct": 43.92364205849742,
+            "error_pp": -0.9461266614719965,
+            "winner_correct": true,
+            "swing_pp": 0.0,
+            "fresh_territories": 0,
+            "mode": "degraded_no_fresh_territory"
+          },
+          {
+            "threshold_pct": 95,
+            "timestamp": "2018-10-28T19:20:05-03:00",
+            "forecast_a_pct": 44.13234339420395,
+            "error_pp": -0.7374253257654673,
+            "winner_correct": true,
+            "swing_pp": 0.0,
+            "fresh_territories": 0,
+            "mode": "degraded_no_fresh_territory"
+          }
+        ]
+      },
+      "v3": {
+        "mae_pp": 3.583142964015861,
+        "max_abs_error_pp": 6.236214137862079,
+        "bias_pp": -3.583142964015861,
+        "winner_correct_checkpoints": 19,
+        "first_sampled_stable_correct_winner_pct": 5,
+        "checkpoints": [
+          {
+            "threshold_pct": 5,
+            "timestamp": "2018-10-28T17:25:34-03:00",
+            "forecast_a_pct": 40.48504022291062,
+            "error_pp": -4.3847284970587985,
+            "winner_correct": true,
+            "swing_pp": 2.1018915689635986,
+            "fresh_territories": 1,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 10,
+            "timestamp": "2018-10-28T17:31:11-03:00",
+            "forecast_a_pct": 38.63355458210734,
+            "error_pp": -6.236214137862079,
+            "winner_correct": true,
+            "swing_pp": 0.0,
+            "fresh_territories": 0,
+            "mode": "degraded_no_fresh_territory"
+          },
+          {
+            "threshold_pct": 15,
+            "timestamp": "2018-10-28T17:38:06-03:00",
+            "forecast_a_pct": 38.973302516505484,
+            "error_pp": -5.896466203463935,
+            "winner_correct": true,
+            "swing_pp": 0.0,
+            "fresh_territories": 0,
+            "mode": "degraded_no_fresh_territory"
+          },
+          {
+            "threshold_pct": 20,
+            "timestamp": "2018-10-28T17:42:42-03:00",
+            "forecast_a_pct": 39.233757337935025,
+            "error_pp": -5.63601138203439,
+            "winner_correct": true,
+            "swing_pp": 0.0,
+            "fresh_territories": 0,
+            "mode": "degraded_no_fresh_territory"
+          },
+          {
+            "threshold_pct": 25,
+            "timestamp": "2018-10-28T17:46:09-03:00",
+            "forecast_a_pct": 39.10250092479542,
+            "error_pp": -5.767267795173997,
+            "winner_correct": true,
+            "swing_pp": -0.4435411544616158,
+            "fresh_territories": 1,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 30,
+            "timestamp": "2018-10-28T17:51:02-03:00",
+            "forecast_a_pct": 39.74080907131484,
+            "error_pp": -5.128959648654574,
+            "winner_correct": true,
+            "swing_pp": 0.0,
+            "fresh_territories": 0,
+            "mode": "degraded_no_fresh_territory"
+          },
+          {
+            "threshold_pct": 35,
+            "timestamp": "2018-10-28T17:55:55-03:00",
+            "forecast_a_pct": 39.929699834629986,
+            "error_pp": -4.940068885339427,
+            "winner_correct": true,
+            "swing_pp": -0.5550349759084222,
+            "fresh_territories": 1,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 40,
+            "timestamp": "2018-10-28T18:00:53-03:00",
+            "forecast_a_pct": 40.36593984177288,
+            "error_pp": -4.503828878196536,
+            "winner_correct": true,
+            "swing_pp": 0.0,
+            "fresh_territories": 0,
+            "mode": "degraded_no_fresh_territory"
+          },
+          {
+            "threshold_pct": 45,
+            "timestamp": "2018-10-28T18:04:24-03:00",
+            "forecast_a_pct": 41.5506494567462,
+            "error_pp": -3.3191192632232136,
+            "winner_correct": true,
+            "swing_pp": 1.5682672503809114,
+            "fresh_territories": 1,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 50,
+            "timestamp": "2018-10-28T18:09:44-03:00",
+            "forecast_a_pct": 41.1370672587614,
+            "error_pp": -3.7327014612080154,
+            "winner_correct": true,
+            "swing_pp": 0.0,
+            "fresh_territories": 0,
+            "mode": "degraded_no_fresh_territory"
+          },
+          {
+            "threshold_pct": 55,
+            "timestamp": "2018-10-28T18:15:11-03:00",
+            "forecast_a_pct": 41.51605977465604,
+            "error_pp": -3.3537089453133717,
+            "winner_correct": true,
+            "swing_pp": 0.0,
+            "fresh_territories": 0,
+            "mode": "degraded_no_fresh_territory"
+          },
+          {
+            "threshold_pct": 60,
+            "timestamp": "2018-10-28T18:18:14-03:00",
+            "forecast_a_pct": 41.825495855852765,
+            "error_pp": -3.0442728641166483,
+            "winner_correct": true,
+            "swing_pp": 0.0,
+            "fresh_territories": 0,
+            "mode": "degraded_no_fresh_territory"
+          },
+          {
+            "threshold_pct": 65,
+            "timestamp": "2018-10-28T18:23:49-03:00",
+            "forecast_a_pct": 42.194374110348,
+            "error_pp": -2.6753946096214176,
+            "winner_correct": true,
+            "swing_pp": 0.0,
+            "fresh_territories": 0,
+            "mode": "degraded_no_fresh_territory"
+          },
+          {
+            "threshold_pct": 70,
+            "timestamp": "2018-10-28T18:30:50-03:00",
+            "forecast_a_pct": 42.37318306461787,
+            "error_pp": -2.4965856553515464,
+            "winner_correct": true,
+            "swing_pp": 0.0,
+            "fresh_territories": 0,
+            "mode": "degraded_no_fresh_territory"
+          },
+          {
+            "threshold_pct": 75,
+            "timestamp": "2018-10-28T18:33:24-03:00",
+            "forecast_a_pct": 42.61249052068717,
+            "error_pp": -2.257278199282248,
+            "winner_correct": true,
+            "swing_pp": 0.0,
+            "fresh_territories": 0,
+            "mode": "degraded_no_fresh_territory"
+          },
+          {
+            "threshold_pct": 80,
+            "timestamp": "2018-10-28T18:40:56-03:00",
+            "forecast_a_pct": 43.326897667026664,
+            "error_pp": -1.5428710529427514,
+            "winner_correct": true,
+            "swing_pp": 1.5593567812321711,
+            "fresh_territories": 1,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 85,
+            "timestamp": "2018-10-28T18:50:49-03:00",
+            "forecast_a_pct": 43.389081869748466,
+            "error_pp": -1.4806868502209525,
+            "winner_correct": true,
+            "swing_pp": 0.0,
+            "fresh_territories": 0,
+            "mode": "degraded_no_fresh_territory"
+          },
+          {
+            "threshold_pct": 90,
+            "timestamp": "2018-10-28T19:01:31-03:00",
+            "forecast_a_pct": 43.92364205849742,
+            "error_pp": -0.9461266614719965,
+            "winner_correct": true,
+            "swing_pp": 0.0,
+            "fresh_territories": 0,
+            "mode": "degraded_no_fresh_territory"
+          },
+          {
+            "threshold_pct": 95,
+            "timestamp": "2018-10-28T19:20:05-03:00",
+            "forecast_a_pct": 44.13234339420395,
+            "error_pp": -0.7374253257654673,
+            "winner_correct": true,
+            "swing_pp": 0.0,
+            "fresh_territories": 0,
+            "mode": "degraded_no_fresh_territory"
+          }
+        ]
+      },
+      "baseline": {
+        "mae_pp": 1.5819453006799649,
+        "max_abs_error_pp": 4.988950941589765,
+        "bias_pp": -1.5819453006799649,
+        "winner_correct_checkpoints": 19,
+        "first_sampled_stable_correct_winner_pct": 5,
+        "checkpoints": [
+          {
+            "threshold_pct": 5,
+            "timestamp": "2018-10-28T17:25:34-03:00",
+            "forecast_a_pct": 39.88081777837965,
+            "error_pp": -4.988950941589765,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 10,
+            "timestamp": "2018-10-28T17:31:11-03:00",
+            "forecast_a_pct": 40.57949477712993,
+            "error_pp": -4.290273942839484,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 15,
+            "timestamp": "2018-10-28T17:38:06-03:00",
+            "forecast_a_pct": 42.09993284763858,
+            "error_pp": -2.769835872330839,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 20,
+            "timestamp": "2018-10-28T17:42:42-03:00",
+            "forecast_a_pct": 42.49090327127847,
+            "error_pp": -2.3788654486909477,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 25,
+            "timestamp": "2018-10-28T17:46:09-03:00",
+            "forecast_a_pct": 42.49267558289384,
+            "error_pp": -2.377093137075581,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 30,
+            "timestamp": "2018-10-28T17:51:02-03:00",
+            "forecast_a_pct": 42.831069454985446,
+            "error_pp": -2.038699264983973,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 35,
+            "timestamp": "2018-10-28T17:55:55-03:00",
+            "forecast_a_pct": 43.75637715925952,
+            "error_pp": -1.113391560709892,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 40,
+            "timestamp": "2018-10-28T18:00:53-03:00",
+            "forecast_a_pct": 43.28914656890414,
+            "error_pp": -1.5806221510652807,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 45,
+            "timestamp": "2018-10-28T18:04:24-03:00",
+            "forecast_a_pct": 43.460116692899334,
+            "error_pp": -1.4096520270700796,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 50,
+            "timestamp": "2018-10-28T18:09:44-03:00",
+            "forecast_a_pct": 43.79827862300044,
+            "error_pp": -1.0714900969689745,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 55,
+            "timestamp": "2018-10-28T18:15:11-03:00",
+            "forecast_a_pct": 44.04687890062919,
+            "error_pp": -0.8228898193402279,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 60,
+            "timestamp": "2018-10-28T18:18:14-03:00",
+            "forecast_a_pct": 44.09363559165522,
+            "error_pp": -0.7761331283141937,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 65,
+            "timestamp": "2018-10-28T18:23:49-03:00",
+            "forecast_a_pct": 44.213021045125636,
+            "error_pp": -0.6567476748437828,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 70,
+            "timestamp": "2018-10-28T18:30:50-03:00",
+            "forecast_a_pct": 44.05115407671982,
+            "error_pp": -0.8186146432495989,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 75,
+            "timestamp": "2018-10-28T18:33:24-03:00",
+            "forecast_a_pct": 44.00887339985211,
+            "error_pp": -0.8608953201172997,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 80,
+            "timestamp": "2018-10-28T18:40:56-03:00",
+            "forecast_a_pct": 44.16085171766826,
+            "error_pp": -0.7089170023011571,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 85,
+            "timestamp": "2018-10-28T18:50:49-03:00",
+            "forecast_a_pct": 44.25169684480146,
+            "error_pp": -0.6180718751679581,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 90,
+            "timestamp": "2018-10-28T19:01:31-03:00",
+            "forecast_a_pct": 44.534807335235755,
+            "error_pp": -0.3349613847336619,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 95,
+            "timestamp": "2018-10-28T19:20:05-03:00",
+            "forecast_a_pct": 44.42891329844278,
+            "error_pp": -0.4408554215266369,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          }
+        ]
+      }
+    },
+    "atraso_15min": {
+      "v2": {
+        "mae_pp": 3.713308757559025,
+        "max_abs_error_pp": 6.378595723863379,
+        "bias_pp": -3.713308757559025,
+        "winner_correct_checkpoints": 19,
+        "first_sampled_stable_correct_winner_pct": 5,
+        "checkpoints": [
+          {
+            "threshold_pct": 5,
+            "timestamp": "2018-10-28T17:25:34-03:00",
+            "forecast_a_pct": 38.49117299610604,
+            "error_pp": -6.378595723863379,
+            "winner_correct": true,
+            "swing_pp": 0.0,
+            "fresh_territories": 0,
+            "mode": "degraded_no_fresh_territory"
+          },
+          {
+            "threshold_pct": 10,
+            "timestamp": "2018-10-28T17:31:11-03:00",
+            "forecast_a_pct": 38.63355458210734,
+            "error_pp": -6.236214137862079,
+            "winner_correct": true,
+            "swing_pp": 0.0,
+            "fresh_territories": 0,
+            "mode": "degraded_no_fresh_territory"
+          },
+          {
+            "threshold_pct": 15,
+            "timestamp": "2018-10-28T17:38:06-03:00",
+            "forecast_a_pct": 38.973302516505484,
+            "error_pp": -5.896466203463935,
+            "winner_correct": true,
+            "swing_pp": 0.0,
+            "fresh_territories": 0,
+            "mode": "degraded_no_fresh_territory"
+          },
+          {
+            "threshold_pct": 20,
+            "timestamp": "2018-10-28T17:42:42-03:00",
+            "forecast_a_pct": 39.233757337935025,
+            "error_pp": -5.63601138203439,
+            "winner_correct": true,
+            "swing_pp": 0.0,
+            "fresh_territories": 0,
+            "mode": "degraded_no_fresh_territory"
+          },
+          {
+            "threshold_pct": 25,
+            "timestamp": "2018-10-28T17:46:09-03:00",
+            "forecast_a_pct": 39.435149471319626,
+            "error_pp": -5.434619248649791,
+            "winner_correct": true,
+            "swing_pp": 0.0,
+            "fresh_territories": 0,
+            "mode": "degraded_no_fresh_territory"
+          },
+          {
+            "threshold_pct": 30,
+            "timestamp": "2018-10-28T17:51:02-03:00",
+            "forecast_a_pct": 39.74080907131484,
+            "error_pp": -5.128959648654574,
+            "winner_correct": true,
+            "swing_pp": 0.0,
+            "fresh_territories": 0,
+            "mode": "degraded_no_fresh_territory"
+          },
+          {
+            "threshold_pct": 35,
+            "timestamp": "2018-10-28T17:55:55-03:00",
+            "forecast_a_pct": 40.289962707141946,
+            "error_pp": -4.57980601282747,
+            "winner_correct": true,
+            "swing_pp": 0.0,
+            "fresh_territories": 0,
+            "mode": "degraded_no_fresh_territory"
+          },
+          {
+            "threshold_pct": 40,
+            "timestamp": "2018-10-28T18:00:53-03:00",
+            "forecast_a_pct": 40.36593984177288,
+            "error_pp": -4.503828878196536,
+            "winner_correct": true,
+            "swing_pp": 0.0,
+            "fresh_territories": 0,
+            "mode": "degraded_no_fresh_territory"
+          },
+          {
+            "threshold_pct": 45,
+            "timestamp": "2018-10-28T18:04:24-03:00",
+            "forecast_a_pct": 40.68914627823656,
+            "error_pp": -4.1806224417328615,
+            "winner_correct": true,
+            "swing_pp": 0.0,
+            "fresh_territories": 0,
+            "mode": "degraded_no_fresh_territory"
+          },
+          {
+            "threshold_pct": 50,
+            "timestamp": "2018-10-28T18:09:44-03:00",
+            "forecast_a_pct": 41.1370672587614,
+            "error_pp": -3.7327014612080154,
+            "winner_correct": true,
+            "swing_pp": 0.0,
+            "fresh_territories": 0,
+            "mode": "degraded_no_fresh_territory"
+          },
+          {
+            "threshold_pct": 55,
+            "timestamp": "2018-10-28T18:15:11-03:00",
+            "forecast_a_pct": 41.51605977465604,
+            "error_pp": -3.3537089453133717,
+            "winner_correct": true,
+            "swing_pp": 0.0,
+            "fresh_territories": 0,
+            "mode": "degraded_no_fresh_territory"
+          },
+          {
+            "threshold_pct": 60,
+            "timestamp": "2018-10-28T18:18:14-03:00",
+            "forecast_a_pct": 41.825495855852765,
+            "error_pp": -3.0442728641166483,
+            "winner_correct": true,
+            "swing_pp": 0.0,
+            "fresh_territories": 0,
+            "mode": "degraded_no_fresh_territory"
+          },
+          {
+            "threshold_pct": 65,
+            "timestamp": "2018-10-28T18:23:49-03:00",
+            "forecast_a_pct": 42.194374110348,
+            "error_pp": -2.6753946096214176,
+            "winner_correct": true,
+            "swing_pp": 0.0,
+            "fresh_territories": 0,
+            "mode": "degraded_no_fresh_territory"
+          },
+          {
+            "threshold_pct": 70,
+            "timestamp": "2018-10-28T18:30:50-03:00",
+            "forecast_a_pct": 42.37318306461787,
+            "error_pp": -2.4965856553515464,
+            "winner_correct": true,
+            "swing_pp": 0.0,
+            "fresh_territories": 0,
+            "mode": "degraded_no_fresh_territory"
+          },
+          {
+            "threshold_pct": 75,
+            "timestamp": "2018-10-28T18:33:24-03:00",
+            "forecast_a_pct": 42.61249052068717,
+            "error_pp": -2.257278199282248,
+            "winner_correct": true,
+            "swing_pp": 0.0,
+            "fresh_territories": 0,
+            "mode": "degraded_no_fresh_territory"
+          },
+          {
+            "threshold_pct": 80,
+            "timestamp": "2018-10-28T18:40:56-03:00",
+            "forecast_a_pct": 43.016206575984626,
+            "error_pp": -1.8535621439847938,
+            "winner_correct": true,
+            "swing_pp": 0.0,
+            "fresh_territories": 0,
+            "mode": "degraded_no_fresh_territory"
+          },
+          {
+            "threshold_pct": 85,
+            "timestamp": "2018-10-28T18:50:49-03:00",
+            "forecast_a_pct": 43.389081869748466,
+            "error_pp": -1.4806868502209525,
+            "winner_correct": true,
+            "swing_pp": 0.0,
+            "fresh_territories": 0,
+            "mode": "degraded_no_fresh_territory"
+          },
+          {
+            "threshold_pct": 90,
+            "timestamp": "2018-10-28T19:01:31-03:00",
+            "forecast_a_pct": 43.92364205849742,
+            "error_pp": -0.9461266614719965,
+            "winner_correct": true,
+            "swing_pp": 0.0,
+            "fresh_territories": 0,
+            "mode": "degraded_no_fresh_territory"
+          },
+          {
+            "threshold_pct": 95,
+            "timestamp": "2018-10-28T19:20:05-03:00",
+            "forecast_a_pct": 44.13234339420395,
+            "error_pp": -0.7374253257654673,
+            "winner_correct": true,
+            "swing_pp": 0.0,
+            "fresh_territories": 0,
+            "mode": "degraded_no_fresh_territory"
+          }
+        ]
+      },
+      "v3": {
+        "mae_pp": 3.713308757559025,
+        "max_abs_error_pp": 6.378595723863379,
+        "bias_pp": -3.713308757559025,
+        "winner_correct_checkpoints": 19,
+        "first_sampled_stable_correct_winner_pct": 5,
+        "checkpoints": [
+          {
+            "threshold_pct": 5,
+            "timestamp": "2018-10-28T17:25:34-03:00",
+            "forecast_a_pct": 38.49117299610604,
+            "error_pp": -6.378595723863379,
+            "winner_correct": true,
+            "swing_pp": 0.0,
+            "fresh_territories": 0,
+            "mode": "degraded_no_fresh_territory"
+          },
+          {
+            "threshold_pct": 10,
+            "timestamp": "2018-10-28T17:31:11-03:00",
+            "forecast_a_pct": 38.63355458210734,
+            "error_pp": -6.236214137862079,
+            "winner_correct": true,
+            "swing_pp": 0.0,
+            "fresh_territories": 0,
+            "mode": "degraded_no_fresh_territory"
+          },
+          {
+            "threshold_pct": 15,
+            "timestamp": "2018-10-28T17:38:06-03:00",
+            "forecast_a_pct": 38.973302516505484,
+            "error_pp": -5.896466203463935,
+            "winner_correct": true,
+            "swing_pp": 0.0,
+            "fresh_territories": 0,
+            "mode": "degraded_no_fresh_territory"
+          },
+          {
+            "threshold_pct": 20,
+            "timestamp": "2018-10-28T17:42:42-03:00",
+            "forecast_a_pct": 39.233757337935025,
+            "error_pp": -5.63601138203439,
+            "winner_correct": true,
+            "swing_pp": 0.0,
+            "fresh_territories": 0,
+            "mode": "degraded_no_fresh_territory"
+          },
+          {
+            "threshold_pct": 25,
+            "timestamp": "2018-10-28T17:46:09-03:00",
+            "forecast_a_pct": 39.435149471319626,
+            "error_pp": -5.434619248649791,
+            "winner_correct": true,
+            "swing_pp": 0.0,
+            "fresh_territories": 0,
+            "mode": "degraded_no_fresh_territory"
+          },
+          {
+            "threshold_pct": 30,
+            "timestamp": "2018-10-28T17:51:02-03:00",
+            "forecast_a_pct": 39.74080907131484,
+            "error_pp": -5.128959648654574,
+            "winner_correct": true,
+            "swing_pp": 0.0,
+            "fresh_territories": 0,
+            "mode": "degraded_no_fresh_territory"
+          },
+          {
+            "threshold_pct": 35,
+            "timestamp": "2018-10-28T17:55:55-03:00",
+            "forecast_a_pct": 40.289962707141946,
+            "error_pp": -4.57980601282747,
+            "winner_correct": true,
+            "swing_pp": 0.0,
+            "fresh_territories": 0,
+            "mode": "degraded_no_fresh_territory"
+          },
+          {
+            "threshold_pct": 40,
+            "timestamp": "2018-10-28T18:00:53-03:00",
+            "forecast_a_pct": 40.36593984177288,
+            "error_pp": -4.503828878196536,
+            "winner_correct": true,
+            "swing_pp": 0.0,
+            "fresh_territories": 0,
+            "mode": "degraded_no_fresh_territory"
+          },
+          {
+            "threshold_pct": 45,
+            "timestamp": "2018-10-28T18:04:24-03:00",
+            "forecast_a_pct": 40.68914627823656,
+            "error_pp": -4.1806224417328615,
+            "winner_correct": true,
+            "swing_pp": 0.0,
+            "fresh_territories": 0,
+            "mode": "degraded_no_fresh_territory"
+          },
+          {
+            "threshold_pct": 50,
+            "timestamp": "2018-10-28T18:09:44-03:00",
+            "forecast_a_pct": 41.1370672587614,
+            "error_pp": -3.7327014612080154,
+            "winner_correct": true,
+            "swing_pp": 0.0,
+            "fresh_territories": 0,
+            "mode": "degraded_no_fresh_territory"
+          },
+          {
+            "threshold_pct": 55,
+            "timestamp": "2018-10-28T18:15:11-03:00",
+            "forecast_a_pct": 41.51605977465604,
+            "error_pp": -3.3537089453133717,
+            "winner_correct": true,
+            "swing_pp": 0.0,
+            "fresh_territories": 0,
+            "mode": "degraded_no_fresh_territory"
+          },
+          {
+            "threshold_pct": 60,
+            "timestamp": "2018-10-28T18:18:14-03:00",
+            "forecast_a_pct": 41.825495855852765,
+            "error_pp": -3.0442728641166483,
+            "winner_correct": true,
+            "swing_pp": 0.0,
+            "fresh_territories": 0,
+            "mode": "degraded_no_fresh_territory"
+          },
+          {
+            "threshold_pct": 65,
+            "timestamp": "2018-10-28T18:23:49-03:00",
+            "forecast_a_pct": 42.194374110348,
+            "error_pp": -2.6753946096214176,
+            "winner_correct": true,
+            "swing_pp": 0.0,
+            "fresh_territories": 0,
+            "mode": "degraded_no_fresh_territory"
+          },
+          {
+            "threshold_pct": 70,
+            "timestamp": "2018-10-28T18:30:50-03:00",
+            "forecast_a_pct": 42.37318306461787,
+            "error_pp": -2.4965856553515464,
+            "winner_correct": true,
+            "swing_pp": 0.0,
+            "fresh_territories": 0,
+            "mode": "degraded_no_fresh_territory"
+          },
+          {
+            "threshold_pct": 75,
+            "timestamp": "2018-10-28T18:33:24-03:00",
+            "forecast_a_pct": 42.61249052068717,
+            "error_pp": -2.257278199282248,
+            "winner_correct": true,
+            "swing_pp": 0.0,
+            "fresh_territories": 0,
+            "mode": "degraded_no_fresh_territory"
+          },
+          {
+            "threshold_pct": 80,
+            "timestamp": "2018-10-28T18:40:56-03:00",
+            "forecast_a_pct": 43.016206575984626,
+            "error_pp": -1.8535621439847938,
+            "winner_correct": true,
+            "swing_pp": 0.0,
+            "fresh_territories": 0,
+            "mode": "degraded_no_fresh_territory"
+          },
+          {
+            "threshold_pct": 85,
+            "timestamp": "2018-10-28T18:50:49-03:00",
+            "forecast_a_pct": 43.389081869748466,
+            "error_pp": -1.4806868502209525,
+            "winner_correct": true,
+            "swing_pp": 0.0,
+            "fresh_territories": 0,
+            "mode": "degraded_no_fresh_territory"
+          },
+          {
+            "threshold_pct": 90,
+            "timestamp": "2018-10-28T19:01:31-03:00",
+            "forecast_a_pct": 43.92364205849742,
+            "error_pp": -0.9461266614719965,
+            "winner_correct": true,
+            "swing_pp": 0.0,
+            "fresh_territories": 0,
+            "mode": "degraded_no_fresh_territory"
+          },
+          {
+            "threshold_pct": 95,
+            "timestamp": "2018-10-28T19:20:05-03:00",
+            "forecast_a_pct": 44.13234339420395,
+            "error_pp": -0.7374253257654673,
+            "winner_correct": true,
+            "swing_pp": 0.0,
+            "fresh_territories": 0,
+            "mode": "degraded_no_fresh_territory"
+          }
+        ]
+      },
+      "baseline": {
+        "mae_pp": 1.5819453006799649,
+        "max_abs_error_pp": 4.988950941589765,
+        "bias_pp": -1.5819453006799649,
+        "winner_correct_checkpoints": 19,
+        "first_sampled_stable_correct_winner_pct": 5,
+        "checkpoints": [
+          {
+            "threshold_pct": 5,
+            "timestamp": "2018-10-28T17:25:34-03:00",
+            "forecast_a_pct": 39.88081777837965,
+            "error_pp": -4.988950941589765,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 10,
+            "timestamp": "2018-10-28T17:31:11-03:00",
+            "forecast_a_pct": 40.57949477712993,
+            "error_pp": -4.290273942839484,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 15,
+            "timestamp": "2018-10-28T17:38:06-03:00",
+            "forecast_a_pct": 42.09993284763858,
+            "error_pp": -2.769835872330839,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 20,
+            "timestamp": "2018-10-28T17:42:42-03:00",
+            "forecast_a_pct": 42.49090327127847,
+            "error_pp": -2.3788654486909477,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 25,
+            "timestamp": "2018-10-28T17:46:09-03:00",
+            "forecast_a_pct": 42.49267558289384,
+            "error_pp": -2.377093137075581,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 30,
+            "timestamp": "2018-10-28T17:51:02-03:00",
+            "forecast_a_pct": 42.831069454985446,
+            "error_pp": -2.038699264983973,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 35,
+            "timestamp": "2018-10-28T17:55:55-03:00",
+            "forecast_a_pct": 43.75637715925952,
+            "error_pp": -1.113391560709892,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 40,
+            "timestamp": "2018-10-28T18:00:53-03:00",
+            "forecast_a_pct": 43.28914656890414,
+            "error_pp": -1.5806221510652807,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 45,
+            "timestamp": "2018-10-28T18:04:24-03:00",
+            "forecast_a_pct": 43.460116692899334,
+            "error_pp": -1.4096520270700796,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 50,
+            "timestamp": "2018-10-28T18:09:44-03:00",
+            "forecast_a_pct": 43.79827862300044,
+            "error_pp": -1.0714900969689745,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 55,
+            "timestamp": "2018-10-28T18:15:11-03:00",
+            "forecast_a_pct": 44.04687890062919,
+            "error_pp": -0.8228898193402279,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 60,
+            "timestamp": "2018-10-28T18:18:14-03:00",
+            "forecast_a_pct": 44.09363559165522,
+            "error_pp": -0.7761331283141937,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 65,
+            "timestamp": "2018-10-28T18:23:49-03:00",
+            "forecast_a_pct": 44.213021045125636,
+            "error_pp": -0.6567476748437828,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 70,
+            "timestamp": "2018-10-28T18:30:50-03:00",
+            "forecast_a_pct": 44.05115407671982,
+            "error_pp": -0.8186146432495989,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 75,
+            "timestamp": "2018-10-28T18:33:24-03:00",
+            "forecast_a_pct": 44.00887339985211,
+            "error_pp": -0.8608953201172997,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 80,
+            "timestamp": "2018-10-28T18:40:56-03:00",
+            "forecast_a_pct": 44.16085171766826,
+            "error_pp": -0.7089170023011571,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 85,
+            "timestamp": "2018-10-28T18:50:49-03:00",
+            "forecast_a_pct": 44.25169684480146,
+            "error_pp": -0.6180718751679581,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 90,
+            "timestamp": "2018-10-28T19:01:31-03:00",
+            "forecast_a_pct": 44.534807335235755,
+            "error_pp": -0.3349613847336619,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 95,
+            "timestamp": "2018-10-28T19:20:05-03:00",
+            "forecast_a_pct": 44.42891329844278,
+            "error_pp": -0.4408554215266369,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          }
+        ]
+      }
+    },
+    "atraso_30min": {
+      "v2": {
+        "mae_pp": 3.713308757559025,
+        "max_abs_error_pp": 6.378595723863379,
+        "bias_pp": -3.713308757559025,
+        "winner_correct_checkpoints": 19,
+        "first_sampled_stable_correct_winner_pct": 5,
+        "checkpoints": [
+          {
+            "threshold_pct": 5,
+            "timestamp": "2018-10-28T17:25:34-03:00",
+            "forecast_a_pct": 38.49117299610604,
+            "error_pp": -6.378595723863379,
+            "winner_correct": true,
+            "swing_pp": 0.0,
+            "fresh_territories": 0,
+            "mode": "degraded_no_fresh_territory"
+          },
+          {
+            "threshold_pct": 10,
+            "timestamp": "2018-10-28T17:31:11-03:00",
+            "forecast_a_pct": 38.63355458210734,
+            "error_pp": -6.236214137862079,
+            "winner_correct": true,
+            "swing_pp": 0.0,
+            "fresh_territories": 0,
+            "mode": "degraded_no_fresh_territory"
+          },
+          {
+            "threshold_pct": 15,
+            "timestamp": "2018-10-28T17:38:06-03:00",
+            "forecast_a_pct": 38.973302516505484,
+            "error_pp": -5.896466203463935,
+            "winner_correct": true,
+            "swing_pp": 0.0,
+            "fresh_territories": 0,
+            "mode": "degraded_no_fresh_territory"
+          },
+          {
+            "threshold_pct": 20,
+            "timestamp": "2018-10-28T17:42:42-03:00",
+            "forecast_a_pct": 39.233757337935025,
+            "error_pp": -5.63601138203439,
+            "winner_correct": true,
+            "swing_pp": 0.0,
+            "fresh_territories": 0,
+            "mode": "degraded_no_fresh_territory"
+          },
+          {
+            "threshold_pct": 25,
+            "timestamp": "2018-10-28T17:46:09-03:00",
+            "forecast_a_pct": 39.435149471319626,
+            "error_pp": -5.434619248649791,
+            "winner_correct": true,
+            "swing_pp": 0.0,
+            "fresh_territories": 0,
+            "mode": "degraded_no_fresh_territory"
+          },
+          {
+            "threshold_pct": 30,
+            "timestamp": "2018-10-28T17:51:02-03:00",
+            "forecast_a_pct": 39.74080907131484,
+            "error_pp": -5.128959648654574,
+            "winner_correct": true,
+            "swing_pp": 0.0,
+            "fresh_territories": 0,
+            "mode": "degraded_no_fresh_territory"
+          },
+          {
+            "threshold_pct": 35,
+            "timestamp": "2018-10-28T17:55:55-03:00",
+            "forecast_a_pct": 40.289962707141946,
+            "error_pp": -4.57980601282747,
+            "winner_correct": true,
+            "swing_pp": 0.0,
+            "fresh_territories": 0,
+            "mode": "degraded_no_fresh_territory"
+          },
+          {
+            "threshold_pct": 40,
+            "timestamp": "2018-10-28T18:00:53-03:00",
+            "forecast_a_pct": 40.36593984177288,
+            "error_pp": -4.503828878196536,
+            "winner_correct": true,
+            "swing_pp": 0.0,
+            "fresh_territories": 0,
+            "mode": "degraded_no_fresh_territory"
+          },
+          {
+            "threshold_pct": 45,
+            "timestamp": "2018-10-28T18:04:24-03:00",
+            "forecast_a_pct": 40.68914627823656,
+            "error_pp": -4.1806224417328615,
+            "winner_correct": true,
+            "swing_pp": 0.0,
+            "fresh_territories": 0,
+            "mode": "degraded_no_fresh_territory"
+          },
+          {
+            "threshold_pct": 50,
+            "timestamp": "2018-10-28T18:09:44-03:00",
+            "forecast_a_pct": 41.1370672587614,
+            "error_pp": -3.7327014612080154,
+            "winner_correct": true,
+            "swing_pp": 0.0,
+            "fresh_territories": 0,
+            "mode": "degraded_no_fresh_territory"
+          },
+          {
+            "threshold_pct": 55,
+            "timestamp": "2018-10-28T18:15:11-03:00",
+            "forecast_a_pct": 41.51605977465604,
+            "error_pp": -3.3537089453133717,
+            "winner_correct": true,
+            "swing_pp": 0.0,
+            "fresh_territories": 0,
+            "mode": "degraded_no_fresh_territory"
+          },
+          {
+            "threshold_pct": 60,
+            "timestamp": "2018-10-28T18:18:14-03:00",
+            "forecast_a_pct": 41.825495855852765,
+            "error_pp": -3.0442728641166483,
+            "winner_correct": true,
+            "swing_pp": 0.0,
+            "fresh_territories": 0,
+            "mode": "degraded_no_fresh_territory"
+          },
+          {
+            "threshold_pct": 65,
+            "timestamp": "2018-10-28T18:23:49-03:00",
+            "forecast_a_pct": 42.194374110348,
+            "error_pp": -2.6753946096214176,
+            "winner_correct": true,
+            "swing_pp": 0.0,
+            "fresh_territories": 0,
+            "mode": "degraded_no_fresh_territory"
+          },
+          {
+            "threshold_pct": 70,
+            "timestamp": "2018-10-28T18:30:50-03:00",
+            "forecast_a_pct": 42.37318306461787,
+            "error_pp": -2.4965856553515464,
+            "winner_correct": true,
+            "swing_pp": 0.0,
+            "fresh_territories": 0,
+            "mode": "degraded_no_fresh_territory"
+          },
+          {
+            "threshold_pct": 75,
+            "timestamp": "2018-10-28T18:33:24-03:00",
+            "forecast_a_pct": 42.61249052068717,
+            "error_pp": -2.257278199282248,
+            "winner_correct": true,
+            "swing_pp": 0.0,
+            "fresh_territories": 0,
+            "mode": "degraded_no_fresh_territory"
+          },
+          {
+            "threshold_pct": 80,
+            "timestamp": "2018-10-28T18:40:56-03:00",
+            "forecast_a_pct": 43.016206575984626,
+            "error_pp": -1.8535621439847938,
+            "winner_correct": true,
+            "swing_pp": 0.0,
+            "fresh_territories": 0,
+            "mode": "degraded_no_fresh_territory"
+          },
+          {
+            "threshold_pct": 85,
+            "timestamp": "2018-10-28T18:50:49-03:00",
+            "forecast_a_pct": 43.389081869748466,
+            "error_pp": -1.4806868502209525,
+            "winner_correct": true,
+            "swing_pp": 0.0,
+            "fresh_territories": 0,
+            "mode": "degraded_no_fresh_territory"
+          },
+          {
+            "threshold_pct": 90,
+            "timestamp": "2018-10-28T19:01:31-03:00",
+            "forecast_a_pct": 43.92364205849742,
+            "error_pp": -0.9461266614719965,
+            "winner_correct": true,
+            "swing_pp": 0.0,
+            "fresh_territories": 0,
+            "mode": "degraded_no_fresh_territory"
+          },
+          {
+            "threshold_pct": 95,
+            "timestamp": "2018-10-28T19:20:05-03:00",
+            "forecast_a_pct": 44.13234339420395,
+            "error_pp": -0.7374253257654673,
+            "winner_correct": true,
+            "swing_pp": 0.0,
+            "fresh_territories": 0,
+            "mode": "degraded_no_fresh_territory"
+          }
+        ]
+      },
+      "v3": {
+        "mae_pp": 3.713308757559025,
+        "max_abs_error_pp": 6.378595723863379,
+        "bias_pp": -3.713308757559025,
+        "winner_correct_checkpoints": 19,
+        "first_sampled_stable_correct_winner_pct": 5,
+        "checkpoints": [
+          {
+            "threshold_pct": 5,
+            "timestamp": "2018-10-28T17:25:34-03:00",
+            "forecast_a_pct": 38.49117299610604,
+            "error_pp": -6.378595723863379,
+            "winner_correct": true,
+            "swing_pp": 0.0,
+            "fresh_territories": 0,
+            "mode": "degraded_no_fresh_territory"
+          },
+          {
+            "threshold_pct": 10,
+            "timestamp": "2018-10-28T17:31:11-03:00",
+            "forecast_a_pct": 38.63355458210734,
+            "error_pp": -6.236214137862079,
+            "winner_correct": true,
+            "swing_pp": 0.0,
+            "fresh_territories": 0,
+            "mode": "degraded_no_fresh_territory"
+          },
+          {
+            "threshold_pct": 15,
+            "timestamp": "2018-10-28T17:38:06-03:00",
+            "forecast_a_pct": 38.973302516505484,
+            "error_pp": -5.896466203463935,
+            "winner_correct": true,
+            "swing_pp": 0.0,
+            "fresh_territories": 0,
+            "mode": "degraded_no_fresh_territory"
+          },
+          {
+            "threshold_pct": 20,
+            "timestamp": "2018-10-28T17:42:42-03:00",
+            "forecast_a_pct": 39.233757337935025,
+            "error_pp": -5.63601138203439,
+            "winner_correct": true,
+            "swing_pp": 0.0,
+            "fresh_territories": 0,
+            "mode": "degraded_no_fresh_territory"
+          },
+          {
+            "threshold_pct": 25,
+            "timestamp": "2018-10-28T17:46:09-03:00",
+            "forecast_a_pct": 39.435149471319626,
+            "error_pp": -5.434619248649791,
+            "winner_correct": true,
+            "swing_pp": 0.0,
+            "fresh_territories": 0,
+            "mode": "degraded_no_fresh_territory"
+          },
+          {
+            "threshold_pct": 30,
+            "timestamp": "2018-10-28T17:51:02-03:00",
+            "forecast_a_pct": 39.74080907131484,
+            "error_pp": -5.128959648654574,
+            "winner_correct": true,
+            "swing_pp": 0.0,
+            "fresh_territories": 0,
+            "mode": "degraded_no_fresh_territory"
+          },
+          {
+            "threshold_pct": 35,
+            "timestamp": "2018-10-28T17:55:55-03:00",
+            "forecast_a_pct": 40.289962707141946,
+            "error_pp": -4.57980601282747,
+            "winner_correct": true,
+            "swing_pp": 0.0,
+            "fresh_territories": 0,
+            "mode": "degraded_no_fresh_territory"
+          },
+          {
+            "threshold_pct": 40,
+            "timestamp": "2018-10-28T18:00:53-03:00",
+            "forecast_a_pct": 40.36593984177288,
+            "error_pp": -4.503828878196536,
+            "winner_correct": true,
+            "swing_pp": 0.0,
+            "fresh_territories": 0,
+            "mode": "degraded_no_fresh_territory"
+          },
+          {
+            "threshold_pct": 45,
+            "timestamp": "2018-10-28T18:04:24-03:00",
+            "forecast_a_pct": 40.68914627823656,
+            "error_pp": -4.1806224417328615,
+            "winner_correct": true,
+            "swing_pp": 0.0,
+            "fresh_territories": 0,
+            "mode": "degraded_no_fresh_territory"
+          },
+          {
+            "threshold_pct": 50,
+            "timestamp": "2018-10-28T18:09:44-03:00",
+            "forecast_a_pct": 41.1370672587614,
+            "error_pp": -3.7327014612080154,
+            "winner_correct": true,
+            "swing_pp": 0.0,
+            "fresh_territories": 0,
+            "mode": "degraded_no_fresh_territory"
+          },
+          {
+            "threshold_pct": 55,
+            "timestamp": "2018-10-28T18:15:11-03:00",
+            "forecast_a_pct": 41.51605977465604,
+            "error_pp": -3.3537089453133717,
+            "winner_correct": true,
+            "swing_pp": 0.0,
+            "fresh_territories": 0,
+            "mode": "degraded_no_fresh_territory"
+          },
+          {
+            "threshold_pct": 60,
+            "timestamp": "2018-10-28T18:18:14-03:00",
+            "forecast_a_pct": 41.825495855852765,
+            "error_pp": -3.0442728641166483,
+            "winner_correct": true,
+            "swing_pp": 0.0,
+            "fresh_territories": 0,
+            "mode": "degraded_no_fresh_territory"
+          },
+          {
+            "threshold_pct": 65,
+            "timestamp": "2018-10-28T18:23:49-03:00",
+            "forecast_a_pct": 42.194374110348,
+            "error_pp": -2.6753946096214176,
+            "winner_correct": true,
+            "swing_pp": 0.0,
+            "fresh_territories": 0,
+            "mode": "degraded_no_fresh_territory"
+          },
+          {
+            "threshold_pct": 70,
+            "timestamp": "2018-10-28T18:30:50-03:00",
+            "forecast_a_pct": 42.37318306461787,
+            "error_pp": -2.4965856553515464,
+            "winner_correct": true,
+            "swing_pp": 0.0,
+            "fresh_territories": 0,
+            "mode": "degraded_no_fresh_territory"
+          },
+          {
+            "threshold_pct": 75,
+            "timestamp": "2018-10-28T18:33:24-03:00",
+            "forecast_a_pct": 42.61249052068717,
+            "error_pp": -2.257278199282248,
+            "winner_correct": true,
+            "swing_pp": 0.0,
+            "fresh_territories": 0,
+            "mode": "degraded_no_fresh_territory"
+          },
+          {
+            "threshold_pct": 80,
+            "timestamp": "2018-10-28T18:40:56-03:00",
+            "forecast_a_pct": 43.016206575984626,
+            "error_pp": -1.8535621439847938,
+            "winner_correct": true,
+            "swing_pp": 0.0,
+            "fresh_territories": 0,
+            "mode": "degraded_no_fresh_territory"
+          },
+          {
+            "threshold_pct": 85,
+            "timestamp": "2018-10-28T18:50:49-03:00",
+            "forecast_a_pct": 43.389081869748466,
+            "error_pp": -1.4806868502209525,
+            "winner_correct": true,
+            "swing_pp": 0.0,
+            "fresh_territories": 0,
+            "mode": "degraded_no_fresh_territory"
+          },
+          {
+            "threshold_pct": 90,
+            "timestamp": "2018-10-28T19:01:31-03:00",
+            "forecast_a_pct": 43.92364205849742,
+            "error_pp": -0.9461266614719965,
+            "winner_correct": true,
+            "swing_pp": 0.0,
+            "fresh_territories": 0,
+            "mode": "degraded_no_fresh_territory"
+          },
+          {
+            "threshold_pct": 95,
+            "timestamp": "2018-10-28T19:20:05-03:00",
+            "forecast_a_pct": 44.13234339420395,
+            "error_pp": -0.7374253257654673,
+            "winner_correct": true,
+            "swing_pp": 0.0,
+            "fresh_territories": 0,
+            "mode": "degraded_no_fresh_territory"
+          }
+        ]
+      },
+      "baseline": {
+        "mae_pp": 1.5819453006799649,
+        "max_abs_error_pp": 4.988950941589765,
+        "bias_pp": -1.5819453006799649,
+        "winner_correct_checkpoints": 19,
+        "first_sampled_stable_correct_winner_pct": 5,
+        "checkpoints": [
+          {
+            "threshold_pct": 5,
+            "timestamp": "2018-10-28T17:25:34-03:00",
+            "forecast_a_pct": 39.88081777837965,
+            "error_pp": -4.988950941589765,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 10,
+            "timestamp": "2018-10-28T17:31:11-03:00",
+            "forecast_a_pct": 40.57949477712993,
+            "error_pp": -4.290273942839484,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 15,
+            "timestamp": "2018-10-28T17:38:06-03:00",
+            "forecast_a_pct": 42.09993284763858,
+            "error_pp": -2.769835872330839,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 20,
+            "timestamp": "2018-10-28T17:42:42-03:00",
+            "forecast_a_pct": 42.49090327127847,
+            "error_pp": -2.3788654486909477,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 25,
+            "timestamp": "2018-10-28T17:46:09-03:00",
+            "forecast_a_pct": 42.49267558289384,
+            "error_pp": -2.377093137075581,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 30,
+            "timestamp": "2018-10-28T17:51:02-03:00",
+            "forecast_a_pct": 42.831069454985446,
+            "error_pp": -2.038699264983973,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 35,
+            "timestamp": "2018-10-28T17:55:55-03:00",
+            "forecast_a_pct": 43.75637715925952,
+            "error_pp": -1.113391560709892,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 40,
+            "timestamp": "2018-10-28T18:00:53-03:00",
+            "forecast_a_pct": 43.28914656890414,
+            "error_pp": -1.5806221510652807,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 45,
+            "timestamp": "2018-10-28T18:04:24-03:00",
+            "forecast_a_pct": 43.460116692899334,
+            "error_pp": -1.4096520270700796,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 50,
+            "timestamp": "2018-10-28T18:09:44-03:00",
+            "forecast_a_pct": 43.79827862300044,
+            "error_pp": -1.0714900969689745,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 55,
+            "timestamp": "2018-10-28T18:15:11-03:00",
+            "forecast_a_pct": 44.04687890062919,
+            "error_pp": -0.8228898193402279,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 60,
+            "timestamp": "2018-10-28T18:18:14-03:00",
+            "forecast_a_pct": 44.09363559165522,
+            "error_pp": -0.7761331283141937,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 65,
+            "timestamp": "2018-10-28T18:23:49-03:00",
+            "forecast_a_pct": 44.213021045125636,
+            "error_pp": -0.6567476748437828,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 70,
+            "timestamp": "2018-10-28T18:30:50-03:00",
+            "forecast_a_pct": 44.05115407671982,
+            "error_pp": -0.8186146432495989,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 75,
+            "timestamp": "2018-10-28T18:33:24-03:00",
+            "forecast_a_pct": 44.00887339985211,
+            "error_pp": -0.8608953201172997,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 80,
+            "timestamp": "2018-10-28T18:40:56-03:00",
+            "forecast_a_pct": 44.16085171766826,
+            "error_pp": -0.7089170023011571,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 85,
+            "timestamp": "2018-10-28T18:50:49-03:00",
+            "forecast_a_pct": 44.25169684480146,
+            "error_pp": -0.6180718751679581,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 90,
+            "timestamp": "2018-10-28T19:01:31-03:00",
+            "forecast_a_pct": 44.534807335235755,
+            "error_pp": -0.3349613847336619,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 95,
+            "timestamp": "2018-10-28T19:20:05-03:00",
+            "forecast_a_pct": 44.42891329844278,
+            "error_pp": -0.4408554215266369,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          }
+        ]
+      }
+    },
+    "sem_SP": {
+      "v2": {
+        "mae_pp": 1.4462343568620861,
+        "max_abs_error_pp": 3.73075877426321,
+        "bias_pp": -1.4462343568620861,
+        "winner_correct_checkpoints": 19,
+        "first_sampled_stable_correct_winner_pct": 5,
+        "checkpoints": [
+          {
+            "threshold_pct": 5,
+            "timestamp": "2018-10-28T17:25:34-03:00",
+            "forecast_a_pct": 41.139009945706206,
+            "error_pp": -3.73075877426321,
+            "winner_correct": true,
+            "swing_pp": 2.791292261357964,
+            "fresh_territories": 17,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 10,
+            "timestamp": "2018-10-28T17:31:11-03:00",
+            "forecast_a_pct": 42.979806906261956,
+            "error_pp": -1.889961813707458,
+            "winner_correct": true,
+            "swing_pp": 4.832418104257774,
+            "fresh_territories": 20,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 15,
+            "timestamp": "2018-10-28T17:38:06-03:00",
+            "forecast_a_pct": 41.97750454806106,
+            "error_pp": -2.892264171908354,
+            "winner_correct": true,
+            "swing_pp": 3.5397935340171562,
+            "fresh_territories": 18,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 20,
+            "timestamp": "2018-10-28T17:42:42-03:00",
+            "forecast_a_pct": 43.04018833642515,
+            "error_pp": -1.8295803835442603,
+            "winner_correct": true,
+            "swing_pp": 4.762230021867304,
+            "fresh_territories": 19,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 25,
+            "timestamp": "2018-10-28T17:46:09-03:00",
+            "forecast_a_pct": 42.93536107304732,
+            "error_pp": -1.9344076469220983,
+            "winner_correct": true,
+            "swing_pp": 4.667051489964266,
+            "fresh_territories": 21,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 30,
+            "timestamp": "2018-10-28T17:51:02-03:00",
+            "forecast_a_pct": 42.68318309634084,
+            "error_pp": -2.1865856236285786,
+            "winner_correct": true,
+            "swing_pp": 4.20389359058821,
+            "fresh_territories": 18,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 35,
+            "timestamp": "2018-10-28T17:55:55-03:00",
+            "forecast_a_pct": 43.083108751322534,
+            "error_pp": -1.786659968646881,
+            "winner_correct": true,
+            "swing_pp": 4.303229296238439,
+            "fresh_territories": 20,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 40,
+            "timestamp": "2018-10-28T18:00:53-03:00",
+            "forecast_a_pct": 43.49227605659766,
+            "error_pp": -1.3774926633717544,
+            "winner_correct": true,
+            "swing_pp": 5.211898241811857,
+            "fresh_territories": 15,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 45,
+            "timestamp": "2018-10-28T18:04:24-03:00",
+            "forecast_a_pct": 43.60355723919291,
+            "error_pp": -1.266211480776508,
+            "winner_correct": true,
+            "swing_pp": 5.305349275815609,
+            "fresh_territories": 19,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 50,
+            "timestamp": "2018-10-28T18:09:44-03:00",
+            "forecast_a_pct": 43.80097862864824,
+            "error_pp": -1.0687900913211812,
+            "winner_correct": true,
+            "swing_pp": 5.387855079589829,
+            "fresh_territories": 22,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 55,
+            "timestamp": "2018-10-28T18:15:11-03:00",
+            "forecast_a_pct": 43.67439692776982,
+            "error_pp": -1.1953717921995954,
+            "winner_correct": true,
+            "swing_pp": 4.802233598599294,
+            "fresh_territories": 22,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 60,
+            "timestamp": "2018-10-28T18:18:14-03:00",
+            "forecast_a_pct": 43.86666965008058,
+            "error_pp": -1.0030990698888353,
+            "winner_correct": true,
+            "swing_pp": 5.109595656170175,
+            "fresh_territories": 24,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 65,
+            "timestamp": "2018-10-28T18:23:49-03:00",
+            "forecast_a_pct": 44.02425445618591,
+            "error_pp": -0.8455142637835089,
+            "winner_correct": true,
+            "swing_pp": 5.2550380284334075,
+            "fresh_territories": 24,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 70,
+            "timestamp": "2018-10-28T18:30:50-03:00",
+            "forecast_a_pct": 44.43738283507813,
+            "error_pp": -0.43238588489128427,
+            "winner_correct": true,
+            "swing_pp": 6.932373854108342,
+            "fresh_territories": 19,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 75,
+            "timestamp": "2018-10-28T18:33:24-03:00",
+            "forecast_a_pct": 43.90677213221525,
+            "error_pp": -0.9629965877541613,
+            "winner_correct": true,
+            "swing_pp": 5.184038649729021,
+            "fresh_territories": 25,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 80,
+            "timestamp": "2018-10-28T18:40:56-03:00",
+            "forecast_a_pct": 43.821423846696554,
+            "error_pp": -1.0483448732728606,
+            "winner_correct": true,
+            "swing_pp": 4.041380804446691,
+            "fresh_territories": 19,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 85,
+            "timestamp": "2018-10-28T18:50:49-03:00",
+            "forecast_a_pct": 43.954342938733014,
+            "error_pp": -0.9154257812364008,
+            "winner_correct": true,
+            "swing_pp": 3.824136696082042,
+            "fresh_territories": 13,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 90,
+            "timestamp": "2018-10-28T19:01:31-03:00",
+            "forecast_a_pct": 44.30895840266532,
+            "error_pp": -0.5608103173040946,
+            "winner_correct": true,
+            "swing_pp": 3.8577470043148328,
+            "fresh_territories": 19,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 95,
+            "timestamp": "2018-10-28T19:20:05-03:00",
+            "forecast_a_pct": 44.3179771280108,
+            "error_pp": -0.5517915919586114,
+            "winner_correct": true,
+            "swing_pp": 3.7637703282422503,
+            "fresh_territories": 18,
+            "mode": "territorial"
+          }
+        ]
+      },
+      "v3": {
+        "mae_pp": 3.14654015738479,
+        "max_abs_error_pp": 5.7166364864633445,
+        "bias_pp": -3.14654015738479,
+        "winner_correct_checkpoints": 19,
+        "first_sampled_stable_correct_winner_pct": 5,
+        "checkpoints": [
+          {
+            "threshold_pct": 5,
+            "timestamp": "2018-10-28T17:25:34-03:00",
+            "forecast_a_pct": 39.15313223350607,
+            "error_pp": -5.7166364864633445,
+            "winner_correct": true,
+            "swing_pp": 0.697823065339491,
+            "fresh_territories": 17,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 10,
+            "timestamp": "2018-10-28T17:31:11-03:00",
+            "forecast_a_pct": 39.72011766314599,
+            "error_pp": -5.149651056823423,
+            "winner_correct": true,
+            "swing_pp": 1.2081045260644434,
+            "fresh_territories": 20,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 15,
+            "timestamp": "2018-10-28T17:38:06-03:00",
+            "forecast_a_pct": 39.724353024394375,
+            "error_pp": -5.145415695575039,
+            "winner_correct": true,
+            "swing_pp": 0.8849483835042891,
+            "fresh_territories": 18,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 20,
+            "timestamp": "2018-10-28T17:42:42-03:00",
+            "forecast_a_pct": 40.18536508755757,
+            "error_pp": -4.684403632411849,
+            "winner_correct": true,
+            "swing_pp": 1.190557505466826,
+            "fresh_territories": 19,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 25,
+            "timestamp": "2018-10-28T17:46:09-03:00",
+            "forecast_a_pct": 40.310202371751544,
+            "error_pp": -4.559566348217869,
+            "winner_correct": true,
+            "swing_pp": 1.1667628724910666,
+            "fresh_territories": 21,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 30,
+            "timestamp": "2018-10-28T17:51:02-03:00",
+            "forecast_a_pct": 40.476402577571335,
+            "error_pp": -4.393366142398081,
+            "winner_correct": true,
+            "swing_pp": 1.0509733976470526,
+            "fresh_territories": 18,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 35,
+            "timestamp": "2018-10-28T17:55:55-03:00",
+            "forecast_a_pct": 40.98824921818709,
+            "error_pp": -3.8815195017823214,
+            "winner_correct": true,
+            "swing_pp": 1.0758073240596098,
+            "fresh_territories": 20,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 40,
+            "timestamp": "2018-10-28T18:00:53-03:00",
+            "forecast_a_pct": 41.147523895479075,
+            "error_pp": -3.7222448244903394,
+            "winner_correct": true,
+            "swing_pp": 1.3029745604529643,
+            "fresh_territories": 15,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 45,
+            "timestamp": "2018-10-28T18:04:24-03:00",
+            "forecast_a_pct": 41.41774901847564,
+            "error_pp": -3.452019701493775,
+            "winner_correct": true,
+            "swing_pp": 1.3263373189539023,
+            "fresh_territories": 19,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 50,
+            "timestamp": "2018-10-28T18:09:44-03:00",
+            "forecast_a_pct": 41.80304510123311,
+            "error_pp": -3.0667236187363054,
+            "winner_correct": true,
+            "swing_pp": 1.3469637698974573,
+            "fresh_territories": 22,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 55,
+            "timestamp": "2018-10-28T18:15:11-03:00",
+            "forecast_a_pct": 42.05564406293448,
+            "error_pp": -2.814124657034933,
+            "winner_correct": true,
+            "swing_pp": 1.2005583996498235,
+            "fresh_territories": 22,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 60,
+            "timestamp": "2018-10-28T18:18:14-03:00",
+            "forecast_a_pct": 42.33578930440972,
+            "error_pp": -2.533979415559695,
+            "winner_correct": true,
+            "swing_pp": 1.2773989140425437,
+            "fresh_territories": 24,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 65,
+            "timestamp": "2018-10-28T18:23:49-03:00",
+            "forecast_a_pct": 42.651844196807474,
+            "error_pp": -2.2179245231619404,
+            "winner_correct": true,
+            "swing_pp": 1.3137595071083519,
+            "fresh_territories": 24,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 70,
+            "timestamp": "2018-10-28T18:30:50-03:00",
+            "forecast_a_pct": 42.88923300723294,
+            "error_pp": -1.9805357127364809,
+            "winner_correct": true,
+            "swing_pp": 1.7330934635270856,
+            "fresh_territories": 19,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 75,
+            "timestamp": "2018-10-28T18:33:24-03:00",
+            "forecast_a_pct": 42.936060923569194,
+            "error_pp": -1.9337077964002247,
+            "winner_correct": true,
+            "swing_pp": 1.2960096624322552,
+            "fresh_territories": 25,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 80,
+            "timestamp": "2018-10-28T18:40:56-03:00",
+            "forecast_a_pct": 43.217510893662606,
+            "error_pp": -1.6522578263068077,
+            "winner_correct": true,
+            "swing_pp": 1.0103452011116727,
+            "fresh_territories": 19,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 85,
+            "timestamp": "2018-10-28T18:50:49-03:00",
+            "forecast_a_pct": 43.5303971369946,
+            "error_pp": -1.3393715829748132,
+            "winner_correct": true,
+            "swing_pp": 0.9560341740205105,
+            "fresh_territories": 13,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 90,
+            "timestamp": "2018-10-28T19:01:31-03:00",
+            "forecast_a_pct": 44.0199711445394,
+            "error_pp": -0.8497975754300224,
+            "winner_correct": true,
+            "swing_pp": 0.9644367510787082,
+            "fresh_territories": 19,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 95,
+            "timestamp": "2018-10-28T19:20:05-03:00",
+            "forecast_a_pct": 44.17875182765567,
+            "error_pp": -0.6910168923137505,
+            "winner_correct": true,
+            "swing_pp": 0.9409425820605626,
+            "fresh_territories": 18,
+            "mode": "territorial"
+          }
+        ]
+      },
+      "baseline": {
+        "mae_pp": 1.5819453006799649,
+        "max_abs_error_pp": 4.988950941589765,
+        "bias_pp": -1.5819453006799649,
+        "winner_correct_checkpoints": 19,
+        "first_sampled_stable_correct_winner_pct": 5,
+        "checkpoints": [
+          {
+            "threshold_pct": 5,
+            "timestamp": "2018-10-28T17:25:34-03:00",
+            "forecast_a_pct": 39.88081777837965,
+            "error_pp": -4.988950941589765,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 10,
+            "timestamp": "2018-10-28T17:31:11-03:00",
+            "forecast_a_pct": 40.57949477712993,
+            "error_pp": -4.290273942839484,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 15,
+            "timestamp": "2018-10-28T17:38:06-03:00",
+            "forecast_a_pct": 42.09993284763858,
+            "error_pp": -2.769835872330839,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 20,
+            "timestamp": "2018-10-28T17:42:42-03:00",
+            "forecast_a_pct": 42.49090327127847,
+            "error_pp": -2.3788654486909477,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 25,
+            "timestamp": "2018-10-28T17:46:09-03:00",
+            "forecast_a_pct": 42.49267558289384,
+            "error_pp": -2.377093137075581,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 30,
+            "timestamp": "2018-10-28T17:51:02-03:00",
+            "forecast_a_pct": 42.831069454985446,
+            "error_pp": -2.038699264983973,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 35,
+            "timestamp": "2018-10-28T17:55:55-03:00",
+            "forecast_a_pct": 43.75637715925952,
+            "error_pp": -1.113391560709892,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 40,
+            "timestamp": "2018-10-28T18:00:53-03:00",
+            "forecast_a_pct": 43.28914656890414,
+            "error_pp": -1.5806221510652807,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 45,
+            "timestamp": "2018-10-28T18:04:24-03:00",
+            "forecast_a_pct": 43.460116692899334,
+            "error_pp": -1.4096520270700796,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 50,
+            "timestamp": "2018-10-28T18:09:44-03:00",
+            "forecast_a_pct": 43.79827862300044,
+            "error_pp": -1.0714900969689745,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 55,
+            "timestamp": "2018-10-28T18:15:11-03:00",
+            "forecast_a_pct": 44.04687890062919,
+            "error_pp": -0.8228898193402279,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 60,
+            "timestamp": "2018-10-28T18:18:14-03:00",
+            "forecast_a_pct": 44.09363559165522,
+            "error_pp": -0.7761331283141937,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 65,
+            "timestamp": "2018-10-28T18:23:49-03:00",
+            "forecast_a_pct": 44.213021045125636,
+            "error_pp": -0.6567476748437828,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 70,
+            "timestamp": "2018-10-28T18:30:50-03:00",
+            "forecast_a_pct": 44.05115407671982,
+            "error_pp": -0.8186146432495989,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 75,
+            "timestamp": "2018-10-28T18:33:24-03:00",
+            "forecast_a_pct": 44.00887339985211,
+            "error_pp": -0.8608953201172997,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 80,
+            "timestamp": "2018-10-28T18:40:56-03:00",
+            "forecast_a_pct": 44.16085171766826,
+            "error_pp": -0.7089170023011571,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 85,
+            "timestamp": "2018-10-28T18:50:49-03:00",
+            "forecast_a_pct": 44.25169684480146,
+            "error_pp": -0.6180718751679581,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 90,
+            "timestamp": "2018-10-28T19:01:31-03:00",
+            "forecast_a_pct": 44.534807335235755,
+            "error_pp": -0.3349613847336619,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 95,
+            "timestamp": "2018-10-28T19:20:05-03:00",
+            "forecast_a_pct": 44.42891329844278,
+            "error_pp": -0.4408554215266369,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          }
+        ]
+      }
+    },
+    "sem_SP_MG_RJ": {
+      "v2": {
+        "mae_pp": 1.561004293963154,
+        "max_abs_error_pp": 3.6199961978006456,
+        "bias_pp": -1.561004293963154,
+        "winner_correct_checkpoints": 19,
+        "first_sampled_stable_correct_winner_pct": 5,
+        "checkpoints": [
+          {
+            "threshold_pct": 5,
+            "timestamp": "2018-10-28T17:25:34-03:00",
+            "forecast_a_pct": 41.24977252216877,
+            "error_pp": -3.6199961978006456,
+            "winner_correct": true,
+            "swing_pp": 2.9080557662160365,
+            "fresh_territories": 15,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 10,
+            "timestamp": "2018-10-28T17:31:11-03:00",
+            "forecast_a_pct": 43.23536200711418,
+            "error_pp": -1.6344067128552298,
+            "winner_correct": true,
+            "swing_pp": 5.116559245610843,
+            "fresh_territories": 18,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 15,
+            "timestamp": "2018-10-28T17:38:06-03:00",
+            "forecast_a_pct": 41.838338809591626,
+            "error_pp": -3.031429910377792,
+            "winner_correct": true,
+            "swing_pp": 3.375817218171387,
+            "fresh_territories": 16,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 20,
+            "timestamp": "2018-10-28T17:42:42-03:00",
+            "forecast_a_pct": 42.86896431930409,
+            "error_pp": -2.0008044006653236,
+            "winner_correct": true,
+            "swing_pp": 4.5480114651347385,
+            "fresh_territories": 18,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 25,
+            "timestamp": "2018-10-28T17:46:09-03:00",
+            "forecast_a_pct": 42.73285326373782,
+            "error_pp": -2.1369154562315917,
+            "winner_correct": true,
+            "swing_pp": 4.397035136467022,
+            "fresh_territories": 19,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 30,
+            "timestamp": "2018-10-28T17:51:02-03:00",
+            "forecast_a_pct": 42.743733727777965,
+            "error_pp": -2.12603499219145,
+            "winner_correct": true,
+            "swing_pp": 4.29040482581513,
+            "fresh_territories": 17,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 35,
+            "timestamp": "2018-10-28T17:55:55-03:00",
+            "forecast_a_pct": 42.94581262963892,
+            "error_pp": -1.923956090330492,
+            "winner_correct": true,
+            "swing_pp": 4.09170555786472,
+            "fresh_territories": 18,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 40,
+            "timestamp": "2018-10-28T18:00:53-03:00",
+            "forecast_a_pct": 43.289524135002885,
+            "error_pp": -1.5802445849665336,
+            "winner_correct": true,
+            "swing_pp": 4.873891606865517,
+            "fresh_territories": 13,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 45,
+            "timestamp": "2018-10-28T18:04:24-03:00",
+            "forecast_a_pct": 43.2189246523491,
+            "error_pp": -1.6508440676203107,
+            "winner_correct": true,
+            "swing_pp": 4.605169979414237,
+            "fresh_territories": 17,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 50,
+            "timestamp": "2018-10-28T18:09:44-03:00",
+            "forecast_a_pct": 43.44525293638684,
+            "error_pp": -1.4245157835825806,
+            "winner_correct": true,
+            "swing_pp": 4.668387270091113,
+            "fresh_territories": 20,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 55,
+            "timestamp": "2018-10-28T18:15:11-03:00",
+            "forecast_a_pct": 43.75017663139413,
+            "error_pp": -1.119592088575283,
+            "winner_correct": true,
+            "swing_pp": 4.970841101978259,
+            "fresh_territories": 21,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 60,
+            "timestamp": "2018-10-28T18:18:14-03:00",
+            "forecast_a_pct": 43.62881890890038,
+            "error_pp": -1.2409498110690365,
+            "winner_correct": true,
+            "swing_pp": 4.514192600640069,
+            "fresh_territories": 22,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 65,
+            "timestamp": "2018-10-28T18:23:49-03:00",
+            "forecast_a_pct": 43.796184832030406,
+            "error_pp": -1.0735838879390114,
+            "winner_correct": true,
+            "swing_pp": 4.600069220886124,
+            "fresh_territories": 22,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 70,
+            "timestamp": "2018-10-28T18:30:50-03:00",
+            "forecast_a_pct": 44.1892950407971,
+            "error_pp": -0.6804736791723165,
+            "winner_correct": true,
+            "swing_pp": 6.099199970839408,
+            "fresh_territories": 18,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 75,
+            "timestamp": "2018-10-28T18:33:24-03:00",
+            "forecast_a_pct": 43.65001215731926,
+            "error_pp": -1.2197565626501539,
+            "winner_correct": true,
+            "swing_pp": 4.155627505115159,
+            "fresh_territories": 23,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 80,
+            "timestamp": "2018-10-28T18:40:56-03:00",
+            "forecast_a_pct": 43.79923726115127,
+            "error_pp": -1.070531458818147,
+            "winner_correct": true,
+            "swing_pp": 3.9300264604698736,
+            "fresh_territories": 18,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 85,
+            "timestamp": "2018-10-28T18:50:49-03:00",
+            "forecast_a_pct": 43.90001547182162,
+            "error_pp": -0.9697532481477977,
+            "winner_correct": true,
+            "swing_pp": 3.4565973921736965,
+            "fresh_territories": 12,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 90,
+            "timestamp": "2018-10-28T19:01:31-03:00",
+            "forecast_a_pct": 44.2851825493148,
+            "error_pp": -0.5845861706546218,
+            "winner_correct": true,
+            "swing_pp": 3.619705643167513,
+            "fresh_territories": 18,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 95,
+            "timestamp": "2018-10-28T19:20:05-03:00",
+            "forecast_a_pct": 44.2990622383178,
+            "error_pp": -0.5707064816516116,
+            "winner_correct": true,
+            "swing_pp": 3.3802662143695033,
+            "fresh_territories": 17,
+            "mode": "territorial"
+          }
+        ]
+      },
+      "v3": {
+        "mae_pp": 3.1752326416600583,
+        "max_abs_error_pp": 5.688945842347703,
+        "bias_pp": -3.1752326416600583,
+        "winner_correct_checkpoints": 19,
+        "first_sampled_stable_correct_winner_pct": 5,
+        "checkpoints": [
+          {
+            "threshold_pct": 5,
+            "timestamp": "2018-10-28T17:25:34-03:00",
+            "forecast_a_pct": 39.180822877621715,
+            "error_pp": -5.688945842347703,
+            "winner_correct": true,
+            "swing_pp": 0.7270139415540091,
+            "fresh_territories": 15,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 10,
+            "timestamp": "2018-10-28T17:31:11-03:00",
+            "forecast_a_pct": 39.78400643835905,
+            "error_pp": -5.085762281610368,
+            "winner_correct": true,
+            "swing_pp": 1.2791398114027108,
+            "fresh_territories": 18,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 15,
+            "timestamp": "2018-10-28T17:38:06-03:00",
+            "forecast_a_pct": 39.689561589777014,
+            "error_pp": -5.180207130192405,
+            "winner_correct": true,
+            "swing_pp": 0.8439543045428467,
+            "fresh_territories": 16,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 20,
+            "timestamp": "2018-10-28T17:42:42-03:00",
+            "forecast_a_pct": 40.1425590832773,
+            "error_pp": -4.72720963669212,
+            "winner_correct": true,
+            "swing_pp": 1.1370028662836846,
+            "fresh_territories": 18,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 25,
+            "timestamp": "2018-10-28T17:46:09-03:00",
+            "forecast_a_pct": 40.25957541942417,
+            "error_pp": -4.61019330054524,
+            "winner_correct": true,
+            "swing_pp": 1.0992587841167556,
+            "fresh_territories": 19,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 30,
+            "timestamp": "2018-10-28T17:51:02-03:00",
+            "forecast_a_pct": 40.49154023543062,
+            "error_pp": -4.378228484538793,
+            "winner_correct": true,
+            "swing_pp": 1.0726012064537824,
+            "fresh_territories": 17,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 35,
+            "timestamp": "2018-10-28T17:55:55-03:00",
+            "forecast_a_pct": 40.953925187766195,
+            "error_pp": -3.9158435322032226,
+            "winner_correct": true,
+            "swing_pp": 1.02292638946618,
+            "fresh_territories": 18,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 40,
+            "timestamp": "2018-10-28T18:00:53-03:00",
+            "forecast_a_pct": 41.096835915080376,
+            "error_pp": -3.77293280488904,
+            "winner_correct": true,
+            "swing_pp": 1.2184729017163793,
+            "fresh_territories": 13,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 45,
+            "timestamp": "2018-10-28T18:04:24-03:00",
+            "forecast_a_pct": 41.32159087176469,
+            "error_pp": -3.5481778482047255,
+            "winner_correct": true,
+            "swing_pp": 1.1512924948535592,
+            "fresh_territories": 17,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 50,
+            "timestamp": "2018-10-28T18:09:44-03:00",
+            "forecast_a_pct": 41.714113678167756,
+            "error_pp": -3.1556550418016585,
+            "winner_correct": true,
+            "swing_pp": 1.1670968175227783,
+            "fresh_territories": 20,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 55,
+            "timestamp": "2018-10-28T18:15:11-03:00",
+            "forecast_a_pct": 42.07458898884057,
+            "error_pp": -2.7951797311288495,
+            "winner_correct": true,
+            "swing_pp": 1.2427102754945647,
+            "fresh_territories": 21,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 60,
+            "timestamp": "2018-10-28T18:18:14-03:00",
+            "forecast_a_pct": 42.27632661911467,
+            "error_pp": -2.593442100854748,
+            "winner_correct": true,
+            "swing_pp": 1.1285481501600172,
+            "fresh_territories": 22,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 65,
+            "timestamp": "2018-10-28T18:23:49-03:00",
+            "forecast_a_pct": 42.5948267907686,
+            "error_pp": -2.2749419292008186,
+            "winner_correct": true,
+            "swing_pp": 1.150017305221531,
+            "fresh_territories": 22,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 70,
+            "timestamp": "2018-10-28T18:30:50-03:00",
+            "forecast_a_pct": 42.82721105866268,
+            "error_pp": -2.0425576613067378,
+            "winner_correct": true,
+            "swing_pp": 1.524799992709852,
+            "fresh_territories": 18,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 75,
+            "timestamp": "2018-10-28T18:33:24-03:00",
+            "forecast_a_pct": 42.87187092984519,
+            "error_pp": -1.9978977901242256,
+            "winner_correct": true,
+            "swing_pp": 1.0389068762787899,
+            "fresh_territories": 23,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 80,
+            "timestamp": "2018-10-28T18:40:56-03:00",
+            "forecast_a_pct": 43.211964247276285,
+            "error_pp": -1.6578044726931307,
+            "winner_correct": true,
+            "swing_pp": 0.9825066151174684,
+            "fresh_territories": 18,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 85,
+            "timestamp": "2018-10-28T18:50:49-03:00",
+            "forecast_a_pct": 43.516815270266754,
+            "error_pp": -1.3529534497026652,
+            "winner_correct": true,
+            "swing_pp": 0.8641493480434241,
+            "fresh_territories": 12,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 90,
+            "timestamp": "2018-10-28T19:01:31-03:00",
+            "forecast_a_pct": 44.01402718120176,
+            "error_pp": -0.8557415387676515,
+            "winner_correct": true,
+            "swing_pp": 0.9049264107918783,
+            "fresh_territories": 18,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 95,
+            "timestamp": "2018-10-28T19:20:05-03:00",
+            "forecast_a_pct": 44.174023105232415,
+            "error_pp": -0.6957456147370034,
+            "winner_correct": true,
+            "swing_pp": 0.8450665535923758,
+            "fresh_territories": 17,
+            "mode": "territorial"
+          }
+        ]
+      },
+      "baseline": {
+        "mae_pp": 1.5819453006799649,
+        "max_abs_error_pp": 4.988950941589765,
+        "bias_pp": -1.5819453006799649,
+        "winner_correct_checkpoints": 19,
+        "first_sampled_stable_correct_winner_pct": 5,
+        "checkpoints": [
+          {
+            "threshold_pct": 5,
+            "timestamp": "2018-10-28T17:25:34-03:00",
+            "forecast_a_pct": 39.88081777837965,
+            "error_pp": -4.988950941589765,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 10,
+            "timestamp": "2018-10-28T17:31:11-03:00",
+            "forecast_a_pct": 40.57949477712993,
+            "error_pp": -4.290273942839484,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 15,
+            "timestamp": "2018-10-28T17:38:06-03:00",
+            "forecast_a_pct": 42.09993284763858,
+            "error_pp": -2.769835872330839,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 20,
+            "timestamp": "2018-10-28T17:42:42-03:00",
+            "forecast_a_pct": 42.49090327127847,
+            "error_pp": -2.3788654486909477,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 25,
+            "timestamp": "2018-10-28T17:46:09-03:00",
+            "forecast_a_pct": 42.49267558289384,
+            "error_pp": -2.377093137075581,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 30,
+            "timestamp": "2018-10-28T17:51:02-03:00",
+            "forecast_a_pct": 42.831069454985446,
+            "error_pp": -2.038699264983973,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 35,
+            "timestamp": "2018-10-28T17:55:55-03:00",
+            "forecast_a_pct": 43.75637715925952,
+            "error_pp": -1.113391560709892,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 40,
+            "timestamp": "2018-10-28T18:00:53-03:00",
+            "forecast_a_pct": 43.28914656890414,
+            "error_pp": -1.5806221510652807,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 45,
+            "timestamp": "2018-10-28T18:04:24-03:00",
+            "forecast_a_pct": 43.460116692899334,
+            "error_pp": -1.4096520270700796,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 50,
+            "timestamp": "2018-10-28T18:09:44-03:00",
+            "forecast_a_pct": 43.79827862300044,
+            "error_pp": -1.0714900969689745,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 55,
+            "timestamp": "2018-10-28T18:15:11-03:00",
+            "forecast_a_pct": 44.04687890062919,
+            "error_pp": -0.8228898193402279,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 60,
+            "timestamp": "2018-10-28T18:18:14-03:00",
+            "forecast_a_pct": 44.09363559165522,
+            "error_pp": -0.7761331283141937,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 65,
+            "timestamp": "2018-10-28T18:23:49-03:00",
+            "forecast_a_pct": 44.213021045125636,
+            "error_pp": -0.6567476748437828,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 70,
+            "timestamp": "2018-10-28T18:30:50-03:00",
+            "forecast_a_pct": 44.05115407671982,
+            "error_pp": -0.8186146432495989,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 75,
+            "timestamp": "2018-10-28T18:33:24-03:00",
+            "forecast_a_pct": 44.00887339985211,
+            "error_pp": -0.8608953201172997,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 80,
+            "timestamp": "2018-10-28T18:40:56-03:00",
+            "forecast_a_pct": 44.16085171766826,
+            "error_pp": -0.7089170023011571,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 85,
+            "timestamp": "2018-10-28T18:50:49-03:00",
+            "forecast_a_pct": 44.25169684480146,
+            "error_pp": -0.6180718751679581,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 90,
+            "timestamp": "2018-10-28T19:01:31-03:00",
+            "forecast_a_pct": 44.534807335235755,
+            "error_pp": -0.3349613847336619,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 95,
+            "timestamp": "2018-10-28T19:20:05-03:00",
+            "forecast_a_pct": 44.42891329844278,
+            "error_pp": -0.4408554215266369,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          }
+        ]
+      }
+    },
+    "sem_Nordeste": {
+      "v2": {
+        "mae_pp": 1.0711763756629105,
+        "max_abs_error_pp": 3.751578945123246,
+        "bias_pp": -1.0711763756629105,
+        "winner_correct_checkpoints": 19,
+        "first_sampled_stable_correct_winner_pct": 5,
+        "checkpoints": [
+          {
+            "threshold_pct": 5,
+            "timestamp": "2018-10-28T17:25:34-03:00",
+            "forecast_a_pct": 41.11818977484617,
+            "error_pp": -3.751578945123246,
+            "winner_correct": true,
+            "swing_pp": 2.7693440889787877,
+            "fresh_territories": 9,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 10,
+            "timestamp": "2018-10-28T17:31:11-03:00",
+            "forecast_a_pct": 43.31919600206694,
+            "error_pp": -1.5505727179024764,
+            "winner_correct": true,
+            "swing_pp": 5.209770795412137,
+            "fresh_territories": 12,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 15,
+            "timestamp": "2018-10-28T17:38:06-03:00",
+            "forecast_a_pct": 42.24782446110006,
+            "error_pp": -2.6219442588693576,
+            "winner_correct": true,
+            "swing_pp": 3.858306293891701,
+            "fresh_territories": 10,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 20,
+            "timestamp": "2018-10-28T17:42:42-03:00",
+            "forecast_a_pct": 43.40734674711896,
+            "error_pp": -1.4624219728504584,
+            "winner_correct": true,
+            "swing_pp": 5.221582314574215,
+            "fresh_territories": 12,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 25,
+            "timestamp": "2018-10-28T17:46:09-03:00",
+            "forecast_a_pct": 43.44308175881375,
+            "error_pp": -1.4266869611556654,
+            "winner_correct": true,
+            "swing_pp": 5.344027299604548,
+            "fresh_territories": 13,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 30,
+            "timestamp": "2018-10-28T17:51:02-03:00",
+            "forecast_a_pct": 43.219984099883504,
+            "error_pp": -1.6497846200859145,
+            "winner_correct": true,
+            "swing_pp": 4.97084377401855,
+            "fresh_territories": 11,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 35,
+            "timestamp": "2018-10-28T17:55:55-03:00",
+            "forecast_a_pct": 43.58485787096121,
+            "error_pp": -1.2849108490082084,
+            "winner_correct": true,
+            "swing_pp": 5.076243480544862,
+            "fresh_territories": 11,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 40,
+            "timestamp": "2018-10-28T18:00:53-03:00",
+            "forecast_a_pct": 44.29008886028187,
+            "error_pp": -0.579679859687543,
+            "winner_correct": true,
+            "swing_pp": 6.541927663823263,
+            "fresh_territories": 9,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 45,
+            "timestamp": "2018-10-28T18:04:24-03:00",
+            "forecast_a_pct": 44.11936237307032,
+            "error_pp": -0.7504063468991018,
+            "winner_correct": true,
+            "swing_pp": 6.244313076782263,
+            "fresh_territories": 12,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 50,
+            "timestamp": "2018-10-28T18:09:44-03:00",
+            "forecast_a_pct": 44.38341472359752,
+            "error_pp": -0.4863539963718966,
+            "winner_correct": true,
+            "swing_pp": 6.565852706756477,
+            "fresh_territories": 14,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 55,
+            "timestamp": "2018-10-28T18:15:11-03:00",
+            "forecast_a_pct": 43.85000597869182,
+            "error_pp": -1.0197627412775967,
+            "winner_correct": true,
+            "swing_pp": 5.192958320795336,
+            "fresh_territories": 14,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 60,
+            "timestamp": "2018-10-28T18:18:14-03:00",
+            "forecast_a_pct": 44.41432339633467,
+            "error_pp": -0.45544532363474555,
+            "winner_correct": true,
+            "swing_pp": 6.480517236125009,
+            "fresh_territories": 16,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 65,
+            "timestamp": "2018-10-28T18:23:49-03:00",
+            "forecast_a_pct": 44.5279205108291,
+            "error_pp": -0.34184820914031633,
+            "winner_correct": true,
+            "swing_pp": 6.701462805223411,
+            "fresh_territories": 16,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 70,
+            "timestamp": "2018-10-28T18:30:50-03:00",
+            "forecast_a_pct": 44.64721699762294,
+            "error_pp": -0.2225517223464757,
+            "winner_correct": true,
+            "swing_pp": 7.637077382778923,
+            "fresh_territories": 13,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 75,
+            "timestamp": "2018-10-28T18:33:24-03:00",
+            "forecast_a_pct": 44.25496542470657,
+            "error_pp": -0.6148032952628446,
+            "winner_correct": true,
+            "swing_pp": 6.578671370903387,
+            "fresh_territories": 17,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 80,
+            "timestamp": "2018-10-28T18:40:56-03:00",
+            "forecast_a_pct": 44.19634993392262,
+            "error_pp": -0.6734187860467977,
+            "winner_correct": true,
+            "swing_pp": 5.923132658405353,
+            "fresh_territories": 13,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 85,
+            "timestamp": "2018-10-28T18:50:49-03:00",
+            "forecast_a_pct": 44.38026028617785,
+            "error_pp": -0.4895084337915634,
+            "winner_correct": true,
+            "swing_pp": 6.70557723255424,
+            "fresh_territories": 10,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 90,
+            "timestamp": "2018-10-28T19:01:31-03:00",
+            "forecast_a_pct": 44.31936252291659,
+            "error_pp": -0.5504061970528273,
+            "winner_correct": true,
+            "swing_pp": 3.961911969905701,
+            "fresh_territories": 10,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 95,
+            "timestamp": "2018-10-28T19:20:05-03:00",
+            "forecast_a_pct": 44.44950281888115,
+            "error_pp": -0.42026590108826256,
+            "winner_correct": true,
+            "swing_pp": 6.430486568591315,
+            "fresh_territories": 13,
+            "mode": "territorial"
+          }
+        ]
+      },
+      "v3": {
+        "mae_pp": 3.052775662084997,
+        "max_abs_error_pp": 5.72184152917835,
+        "bias_pp": -3.052775662084997,
+        "winner_correct_checkpoints": 19,
+        "first_sampled_stable_correct_winner_pct": 5,
+        "checkpoints": [
+          {
+            "threshold_pct": 5,
+            "timestamp": "2018-10-28T17:25:34-03:00",
+            "forecast_a_pct": 39.147927190791066,
+            "error_pp": -5.72184152917835,
+            "winner_correct": true,
+            "swing_pp": 0.6923360222446969,
+            "fresh_territories": 9,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 10,
+            "timestamp": "2018-10-28T17:31:11-03:00",
+            "forecast_a_pct": 39.80496493709724,
+            "error_pp": -5.064803782872174,
+            "winner_correct": true,
+            "swing_pp": 1.3024426988530342,
+            "fresh_territories": 12,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 15,
+            "timestamp": "2018-10-28T17:38:06-03:00",
+            "forecast_a_pct": 39.791933002654126,
+            "error_pp": -5.077835717315294,
+            "winner_correct": true,
+            "swing_pp": 0.9645765734729252,
+            "fresh_territories": 10,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 20,
+            "timestamp": "2018-10-28T17:42:42-03:00",
+            "forecast_a_pct": 40.27715469023101,
+            "error_pp": -4.592614029738407,
+            "winner_correct": true,
+            "swing_pp": 1.3053955786435538,
+            "fresh_territories": 12,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 25,
+            "timestamp": "2018-10-28T17:46:09-03:00",
+            "forecast_a_pct": 40.43713254319316,
+            "error_pp": -4.432636176776262,
+            "winner_correct": true,
+            "swing_pp": 1.336006824901137,
+            "fresh_territories": 13,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 30,
+            "timestamp": "2018-10-28T17:51:02-03:00",
+            "forecast_a_pct": 40.61060282845701,
+            "error_pp": -4.259165891512406,
+            "winner_correct": true,
+            "swing_pp": 1.2427109435046375,
+            "fresh_territories": 11,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 35,
+            "timestamp": "2018-10-28T17:55:55-03:00",
+            "forecast_a_pct": 41.11368649809676,
+            "error_pp": -3.756082221872653,
+            "winner_correct": true,
+            "swing_pp": 1.2690608701362156,
+            "fresh_territories": 11,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 40,
+            "timestamp": "2018-10-28T18:00:53-03:00",
+            "forecast_a_pct": 41.34697709640013,
+            "error_pp": -3.522791623569288,
+            "winner_correct": true,
+            "swing_pp": 1.6354819159558158,
+            "fresh_territories": 9,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 45,
+            "timestamp": "2018-10-28T18:04:24-03:00",
+            "forecast_a_pct": 41.546700301944995,
+            "error_pp": -3.323068418024422,
+            "winner_correct": true,
+            "swing_pp": 1.5610782691955658,
+            "fresh_territories": 12,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 50,
+            "timestamp": "2018-10-28T18:09:44-03:00",
+            "forecast_a_pct": 41.94865412497043,
+            "error_pp": -2.921114594998986,
+            "winner_correct": true,
+            "swing_pp": 1.6414631766891192,
+            "fresh_territories": 14,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 55,
+            "timestamp": "2018-10-28T18:15:11-03:00",
+            "forecast_a_pct": 42.09954632566499,
+            "error_pp": -2.7702223943044277,
+            "winner_correct": true,
+            "swing_pp": 1.298239580198834,
+            "fresh_territories": 14,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 60,
+            "timestamp": "2018-10-28T18:18:14-03:00",
+            "forecast_a_pct": 42.47270274097325,
+            "error_pp": -2.3970659789961712,
+            "winner_correct": true,
+            "swing_pp": 1.6201293090312523,
+            "fresh_territories": 16,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 65,
+            "timestamp": "2018-10-28T18:23:49-03:00",
+            "forecast_a_pct": 42.77776071046827,
+            "error_pp": -2.092008009501145,
+            "winner_correct": true,
+            "swing_pp": 1.6753657013058527,
+            "fresh_territories": 16,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 70,
+            "timestamp": "2018-10-28T18:30:50-03:00",
+            "forecast_a_pct": 42.94169154786914,
+            "error_pp": -1.9280771721002787,
+            "winner_correct": true,
+            "swing_pp": 1.9092693456947307,
+            "fresh_territories": 13,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 75,
+            "timestamp": "2018-10-28T18:33:24-03:00",
+            "forecast_a_pct": 43.023109246692016,
+            "error_pp": -1.846659473277401,
+            "winner_correct": true,
+            "swing_pp": 1.6446678427258468,
+            "fresh_territories": 17,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 80,
+            "timestamp": "2018-10-28T18:40:56-03:00",
+            "forecast_a_pct": 43.31124241546912,
+            "error_pp": -1.5585263045002962,
+            "winner_correct": true,
+            "swing_pp": 1.4807831646013383,
+            "fresh_territories": 13,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 85,
+            "timestamp": "2018-10-28T18:50:49-03:00",
+            "forecast_a_pct": 43.63687647385581,
+            "error_pp": -1.2328922461136094,
+            "winner_correct": true,
+            "swing_pp": 1.67639430813856,
+            "fresh_territories": 10,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 90,
+            "timestamp": "2018-10-28T19:01:31-03:00",
+            "forecast_a_pct": 44.02257217460221,
+            "error_pp": -0.847196545367207,
+            "winner_correct": true,
+            "swing_pp": 0.9904779924764252,
+            "fresh_territories": 10,
+            "mode": "territorial"
+          },
+          {
+            "threshold_pct": 95,
+            "timestamp": "2018-10-28T19:20:05-03:00",
+            "forecast_a_pct": 44.211633250373254,
+            "error_pp": -0.6581354695961661,
+            "winner_correct": true,
+            "swing_pp": 1.6076216421478287,
+            "fresh_territories": 13,
+            "mode": "territorial"
+          }
+        ]
+      },
+      "baseline": {
+        "mae_pp": 1.5819453006799649,
+        "max_abs_error_pp": 4.988950941589765,
+        "bias_pp": -1.5819453006799649,
+        "winner_correct_checkpoints": 19,
+        "first_sampled_stable_correct_winner_pct": 5,
+        "checkpoints": [
+          {
+            "threshold_pct": 5,
+            "timestamp": "2018-10-28T17:25:34-03:00",
+            "forecast_a_pct": 39.88081777837965,
+            "error_pp": -4.988950941589765,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 10,
+            "timestamp": "2018-10-28T17:31:11-03:00",
+            "forecast_a_pct": 40.57949477712993,
+            "error_pp": -4.290273942839484,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 15,
+            "timestamp": "2018-10-28T17:38:06-03:00",
+            "forecast_a_pct": 42.09993284763858,
+            "error_pp": -2.769835872330839,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 20,
+            "timestamp": "2018-10-28T17:42:42-03:00",
+            "forecast_a_pct": 42.49090327127847,
+            "error_pp": -2.3788654486909477,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 25,
+            "timestamp": "2018-10-28T17:46:09-03:00",
+            "forecast_a_pct": 42.49267558289384,
+            "error_pp": -2.377093137075581,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 30,
+            "timestamp": "2018-10-28T17:51:02-03:00",
+            "forecast_a_pct": 42.831069454985446,
+            "error_pp": -2.038699264983973,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 35,
+            "timestamp": "2018-10-28T17:55:55-03:00",
+            "forecast_a_pct": 43.75637715925952,
+            "error_pp": -1.113391560709892,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 40,
+            "timestamp": "2018-10-28T18:00:53-03:00",
+            "forecast_a_pct": 43.28914656890414,
+            "error_pp": -1.5806221510652807,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 45,
+            "timestamp": "2018-10-28T18:04:24-03:00",
+            "forecast_a_pct": 43.460116692899334,
+            "error_pp": -1.4096520270700796,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 50,
+            "timestamp": "2018-10-28T18:09:44-03:00",
+            "forecast_a_pct": 43.79827862300044,
+            "error_pp": -1.0714900969689745,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 55,
+            "timestamp": "2018-10-28T18:15:11-03:00",
+            "forecast_a_pct": 44.04687890062919,
+            "error_pp": -0.8228898193402279,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 60,
+            "timestamp": "2018-10-28T18:18:14-03:00",
+            "forecast_a_pct": 44.09363559165522,
+            "error_pp": -0.7761331283141937,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 65,
+            "timestamp": "2018-10-28T18:23:49-03:00",
+            "forecast_a_pct": 44.213021045125636,
+            "error_pp": -0.6567476748437828,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 70,
+            "timestamp": "2018-10-28T18:30:50-03:00",
+            "forecast_a_pct": 44.05115407671982,
+            "error_pp": -0.8186146432495989,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 75,
+            "timestamp": "2018-10-28T18:33:24-03:00",
+            "forecast_a_pct": 44.00887339985211,
+            "error_pp": -0.8608953201172997,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 80,
+            "timestamp": "2018-10-28T18:40:56-03:00",
+            "forecast_a_pct": 44.16085171766826,
+            "error_pp": -0.7089170023011571,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 85,
+            "timestamp": "2018-10-28T18:50:49-03:00",
+            "forecast_a_pct": 44.25169684480146,
+            "error_pp": -0.6180718751679581,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 90,
+            "timestamp": "2018-10-28T19:01:31-03:00",
+            "forecast_a_pct": 44.534807335235755,
+            "error_pp": -0.3349613847336619,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          },
+          {
+            "threshold_pct": 95,
+            "timestamp": "2018-10-28T19:20:05-03:00",
+            "forecast_a_pct": 44.42891329844278,
+            "error_pp": -0.4408554215266369,
+            "winner_correct": true,
+            "swing_pp": 0,
+            "fresh_territories": 0,
+            "mode": "baseline"
+          }
+        ]
+      }
+    }
+  },
+  "limitations": [
+    "Reconstrucao por votos finais, primeira totalizacao e disponibilidade simultanea assumida; nao parciais publicas originais.",
+    "Nao foi obtido historico nacional oficial2018 para confronto integral da curva como feito2022.",
+    "Referencia UF1T retrospectiva; versao contemporanea nao autenticada.",
+    "Denominador e cadastro do primeiro turno, recuperado retrospectivamente; disponibilidade previa assumida.",
+    "Eventos tardios mantidos fora da janela e incluidos apenas no alvo final de avaliacao.",
+    "Uma eleicao externa e checkpoints correlacionados nao calibram probabilidades nem certificam operacionalmente."
+  ]
+}
