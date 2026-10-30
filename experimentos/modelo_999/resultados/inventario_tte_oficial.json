@@ -1,0 +1,21 @@
+{
+  "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/perfil_comparecimento_abstencao_eleitor_tte/perfil_comparecimento_abstencao_eleitor_tte_2026.zip",
+  "status": "ZIP_VALIDADO_INVENTARIADO",
+  "files": [
+    {
+      "name": "perfil_comparecimento_abstencao_eleitor_tte_2026.csv",
+      "bytes": 94326434,
+      "header": "\"DT_GERACAO\";\"HH_GERACAO\";\"ANO_ELEICAO\";\"NR_TURNO\";\"SG_UF_ORIGEM\";\"CD_MUNICIPIO_ORIGEM\";\"NM_MUNICIPIO_ORIGEM\";\"NR_ZONA_ORIGEM\";\"SG_UF_DESTINO\";\"CD_MUNICIPIO_DESTINO\";\"NM_MUNICIPIO_DESTINO\";\"NR_ZONA_DESTINO\";\"CD_GENERO\";\"DS_GENERO\";\"CD_ESTADO_CIVIL\";\"DS_ESTADO_CIVIL\";\"CD_FAIXA_ETARIA\";\"DS_FAIXA_ETARIA\";\"CD_GRAU_INSTRUCAO\";\"DS_GRAU_INSTRUCAO\";\"CD_TIPO_TRANSFERENCIA\";\"DS_TIPO_TRANSFERENCIA\";\"QT_APTOS_EM_TTE\";\"QT_COMPARECIMENTO_TTE\";\"QT_ABSTENCAO_TTE\"",
+      "sample_rows": [
+        "\"13/10/2026\";\"16:40:45\";2026;1;\"AM\";\"02550\";\"MANAUS\";58;\"PR\";\"75353\";\"CURITIBA\";3;4;\"FEMININO\";1;\"SOLTEIRO\";2124;\"21 a 24 anos\";6;\"ENSINO M�DIO COMPLETO\";1;\"Voto em tr�nsito\";1;1;0",
+        "\"13/10/2026\";\"16:40:45\";2026;1;\"PR\";\"75078\";\"CIDADE GA�CHA\";127;\"PR\";\"75833\";\"GUARAPUAVA\";44;2;\"MASCULINO\";1;\"SOLTEIRO\";1900;\"19 anos\";5;\"ENSINO M�DIO INCOMPLETO\";1;\"Voto em tr�nsito\";1;1;0"
+      ]
+    },
+    {
+      "name": "leiame.pdf",
+      "bytes": 124235
+    }
+  ],
+  "sha256": "818aa548c3935ee511c00b7351ffd0faf33439f4eb396fbe7da842ff9312ed65",
+  "bytes": 10647875
+}
