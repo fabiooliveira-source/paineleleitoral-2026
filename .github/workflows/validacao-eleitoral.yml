@@ -119,6 +119,18 @@ jobs:
           name: divergencias-28out-vs-29out
           path: resultados_comparacao/
           retention-days: 90
+      - name: Comparar indicadores municipais de 28 e 29 outubro
+        if: matrix.arquivo == 'detalhe_votacao_munzona_2026.zip'
+        env:
+          ZIP_NAME: ${{ matrix.arquivo }}
+        run: python comparar_indicadores_municipais_2026.py "originais_tse/$ZIP_NAME"
+      - name: Preservar divergencias de indicadores municipais
+        if: matrix.arquivo == 'detalhe_votacao_munzona_2026.zip'
+        uses: actions/upload-artifact@v4
+        with:
+          name: diferencas-indicadores-municipais
+          path: resultados_metricas/
+          retention-days: 90
       - name: Arquivar ZIP verificado no GitHub Actions
         uses: actions/upload-artifact@v4
         with:
