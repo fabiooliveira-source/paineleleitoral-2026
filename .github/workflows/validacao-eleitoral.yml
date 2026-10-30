@@ -95,6 +95,18 @@ jobs:
           name: totais-presidenciais-2026
           path: resultados_agregados/
           retention-days: 90
+      - name: Auditar votos por municipio e zona
+        if: matrix.arquivo == 'votacao_candidato_munzona_2026.zip'
+        env:
+          ZIP_NAME: ${{ matrix.arquivo }}
+        run: python comparar_munzona_tse_2026.py "originais_tse/$ZIP_NAME"
+      - name: Preservar auditoria municipal e zonal
+        if: matrix.arquivo == 'votacao_candidato_munzona_2026.zip'
+        uses: actions/upload-artifact@v4
+        with:
+          name: auditoria-munzona-2026
+          path: resultados_agregados/comparacao_munzona_2026.json
+          retention-days: 90
       - name: Arquivar ZIP verificado no GitHub Actions
         uses: actions/upload-artifact@v4
         with:
