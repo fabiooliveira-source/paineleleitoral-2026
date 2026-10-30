@@ -1,0 +1,83 @@
+{
+  "schema_version": 2,
+  "model_id": "audit-v2-causal",
+  "frozen_at_utc": "2026-10-30T23:26:49.757056+00:00",
+  "source_parent_commit": "e18be95e5dafbcd93bfbdbecfe1a8f9116b21161",
+  "derived_from": {
+    "path": "experimentos/modelo_999/backtest_primeiro_turno_uf.py",
+    "commit": "e18be95e5dafbcd93bfbdbecfe1a8f9116b21161",
+    "sha256": "a2b1ee31784e7710d62aa7a7ebce5915747ce8accd15accefac7b52ddcc3b0b8"
+  },
+  "files": [
+    {
+      "path": "experimentos/modelo_999/auditoria_integral/preditor_causal_v2.py",
+      "sha256": "97ae308bb8356a32d902c10190708e39f067f1f3e3a5dcdc8737097d73a345a6"
+    },
+    {
+      "path": "experimentos/modelo_999/auditoria_integral/test_preditor_causal_v2.py",
+      "sha256": "c29b3d8c8bc81ab38f81baee9f0ba6f8625a3b330ad440afd6d4dc489c659354"
+    }
+  ],
+  "parameters": {
+    "max_age_seconds": 300,
+    "age_decay_seconds": 600
+  },
+  "changes": [
+    "Formula extraida para funcao sem alvo final ou snapshot final.",
+    "Cobertura exige total de secoes explicito da entrada contemporanea.",
+    "Filtro por geracao e disponibilidade; rejeicao de dados inconsistentes."
+  ],
+  "prior_manifest_status": "NAO_VERIFICAVEL_NESTA_ARVORE_HASH_SEM_ARQUIVO_CORRESPONDENTE",
+  "external_territorial_tests_started": false,
+  "known_external_information": [
+    "Resultados gerais de 2022 sao publicos.",
+    "Baseline nacional 2022 ja executado antes deste congelamento."
+  ],
+  "blinding": "Nao e holdout totalmente cego. Nenhum ajuste de parametros por desempenho externo foi realizado nesta versao.",
+  "data_freeze_status": "PENDENTE_HISTORICO_TEMPORAL_UF_E_REFERENCIA_1T_COM_PROVENIENCIA",
+  "change_policy": "Qualquer alteracao do codigo, parametros ou metodo exige nova versao e novo congelamento; nunca substituir este manifesto.",
+  "evaluation_plan": {
+    "thresholds_pct": [
+      5,
+      10,
+      15,
+      20,
+      25,
+      30,
+      35,
+      40,
+      45,
+      50,
+      55,
+      60,
+      65,
+      70,
+      75,
+      80,
+      85,
+      90,
+      95
+    ],
+    "checkpoint_selection": "primeiro registro contemporaneo com cobertura >= marco",
+    "primary": "MAE pareado menor que baseline observado nos 19 marcos",
+    "guardrails": [
+      "Publicar erro maximo, vies e resultados por marco, mesmo se desfavoraveis.",
+      "Sem dados posteriores na previsao; alvo usado exclusivamente no avaliador.",
+      "Nao certificar modelo territorial com somente BR.",
+      "Sem probabilidade de acerto sem calibracao em eleicoes independentes.",
+      "Nao substituir historico temporal real por ordem simulada ou votos finais retrodatados."
+    ],
+    "stress": [
+      "atrasos_5_15_30_min",
+      "sem_SP",
+      "sem_SP_MG_RJ",
+      "sem_Nordeste"
+    ],
+    "coverage": "numerador e denominador contemporaneos; verificar revisoes",
+    "criteria_not_defined": "Limiares operacionais absolutos de erro e cobertura probabilistica nao foram definidos; nao declarar certificacao integral."
+  },
+  "verification": {
+    "tests_passed": 10,
+    "command": "python -m unittest discover -s experimentos/modelo_999/auditoria_integral -p test_preditor_causal_v2.py -v"
+  }
+}
