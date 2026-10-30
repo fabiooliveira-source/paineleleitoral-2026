@@ -1,0 +1,68 @@
+{
+  "model_id": "audit-v3-swing-shrinkage",
+  "frozen_at_utc": "2026-10-30T23:45:39.171292+00:00",
+  "development_election": 2022,
+  "external_election": 2018,
+  "external_predictive_test_started": false,
+  "development_protocol_commit": "cb7a150896c1971d2b32dc2c5fe4987a497e5161",
+  "base_v2_commit": "419593081c7178a9b4e293cb0b13befe1808fe1a",
+  "parameters": {
+    "max_age_seconds": 300,
+    "age_decay_seconds": 600,
+    "swing_shrinkage": 0.25
+  },
+  "files": [
+    {
+      "path": "experimentos/modelo_999/auditoria_integral/preditor_causal_v3.py",
+      "sha256": "30e942e8d992017deed95f5fbd60988b70c5f0332c055463fc8e9a40ad0ae91d"
+    },
+    {
+      "path": "experimentos/modelo_999/auditoria_integral/test_preditor_causal_v3.py",
+      "sha256": "fda62e04179139aee88ba5cb4508707d782381a80a5d47ec98fbadcb58528d9c"
+    },
+    {
+      "path": "experimentos/modelo_999/auditoria_integral/desenvolver_v3_2022.py",
+      "sha256": "67e3ee47fd599f53668143f171ab0626594e7d1e06767eaa57b7914d1b6a29e3"
+    }
+  ],
+  "development_result_sha256": "20a5ffeb2a94138ffbb796e5e45db333f99ea499fb8cd751b9332c099377f526",
+  "selection": "Grade [0,.25,.5,.75,1], MAE minimo sob guardrails predefinidos usando exclusivamente 2022.",
+  "tests_passed": 12,
+  "change_policy": "Nao ajustar apos observar 2018; publicar falha e nao promover se criterios externos falharem.",
+  "2018_data_policy": {
+    "ordering": "DT_PRIM_TOT_PARCIAL_HOR_TSE, sem deslocamento de horarios",
+    "evaluation_period": "2018-10-28 e 2018-10-29, horario Brasilia; preservar e contabilizar registros posteriores separadamente",
+    "checkpoints_pct": [
+      5,
+      10,
+      15,
+      20,
+      25,
+      30,
+      35,
+      40,
+      45,
+      50,
+      55,
+      60,
+      65,
+      70,
+      75,
+      80,
+      85,
+      90,
+      95
+    ],
+    "denominator_if_no_official_BR_history": "Numero de secoes presidenciais do primeiro turno, referencia historica anterior; declarar origem retrospectiva e versao contemporanea nao autenticada.",
+    "target": "Total final13/(13+17) em todos os registros oficiais, somente no avaliador",
+    "simultaneous_availability": "Hipotese de simulacao; horario de totalizacao nao prova divulgacao publica.",
+    "no_official_curve_policy": "Se nao houver historico BR oficial, nao afirmar correspondencia integral da curva; reconciliar fontes e totais e limitar conclusao ao replay reconstruido."
+  },
+  "promote_only_if": [
+    "MAE referencia2018 < v2",
+    "maximo referencia2018 <= v2",
+    "vies absoluto referencia2018 <= v2",
+    "pior maximo7cenarios2018 <= v2"
+  ],
+  "certification": "Mesmo passando, reconstrucao de uma eleicao externa nao certifica probabilidade ou cadeia operacional."
+}
