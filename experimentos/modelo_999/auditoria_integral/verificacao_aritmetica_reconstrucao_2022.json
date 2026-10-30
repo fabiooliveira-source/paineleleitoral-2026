@@ -1,0 +1,7 @@
+{
+  "checked_points": 19,
+  "checked_scenarios": 7,
+  "max_forecast_difference_pp": 1.4210854715202004e-14,
+  "future_records_in_reference_inputs": 0,
+  "method": "Calculo separado com math.fsum, sem chamar predict; conferencia de metricas em sete cenarios. Nao autentica disponibilidade publica e nao constitui revisao humana independente."
+}
