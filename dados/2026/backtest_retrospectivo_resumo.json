@@ -1,0 +1,684 @@
+{
+  "source": "dados/2026/previsao-territorial.json",
+  "classification": "RETROSPECTIVO_NAO_CERTIFICADO",
+  "reason": "Votos finais atribuídos a horário de primeira totalização; não são snapshots contemporâneos",
+  "final": {
+    "lula": 64256232,
+    "flavio": 59826041,
+    "share_lula": 0.517851828842626
+  },
+  "rows": [
+    {
+      "pct": 1,
+      "sections_share": 0.010065137967503125,
+      "time": "2026-10-25 19:04:21",
+      "models": {
+        "estadual": {
+          "scenarios": [
+            {
+              "prior": 2,
+              "share": 0.5218633094602899,
+              "abs_error_pp": 0.4,
+              "prob_lula": 0.6595
+            },
+            {
+              "prior": 20,
+              "share": 0.5115774381843308,
+              "abs_error_pp": 0.63,
+              "prob_lula": 0.6855
+            },
+            {
+              "prior": 100,
+              "share": 0.5024931412719467,
+              "abs_error_pp": 1.54,
+              "prob_lula": 0.5765
+            }
+          ],
+          "error_pp_min": 0.4011480617663876,
+          "error_pp_max": 1.5358687570679375
+        },
+        "municipal": {
+          "scenarios": [
+            {
+              "prior": 2,
+              "share": 0.5205144060499893,
+              "abs_error_pp": 0.27,
+              "prob_lula": 0.648
+            },
+            {
+              "prior": 20,
+              "share": 0.51063861347981,
+              "abs_error_pp": 0.72,
+              "prob_lula": 0.6745
+            },
+            {
+              "prior": 100,
+              "share": 0.5028264583433686,
+              "abs_error_pp": 1.5,
+              "prob_lula": 0.589
+            }
+          ],
+          "error_pp_min": 0.26625772073632925,
+          "error_pp_max": 1.502537049925745
+        }
+      }
+    },
+    {
+      "pct": 5,
+      "sections_share": 0.05000921385764189,
+      "time": "2026-10-25 19:28:40",
+      "models": {
+        "estadual": {
+          "scenarios": [
+            {
+              "prior": 2,
+              "share": 0.5158573100858372,
+              "abs_error_pp": 0.2,
+              "prob_lula": 0.876
+            },
+            {
+              "prior": 20,
+              "share": 0.5129120541154566,
+              "abs_error_pp": 0.49,
+              "prob_lula": 0.877
+            },
+            {
+              "prior": 100,
+              "share": 0.5093727764222886,
+              "abs_error_pp": 0.85,
+              "prob_lula": 0.876
+            }
+          ],
+          "error_pp_min": 0.1994518756788799,
+          "error_pp_max": 0.8479052420337418
+        },
+        "municipal": {
+          "scenarios": [
+            {
+              "prior": 2,
+              "share": 0.5136520291848949,
+              "abs_error_pp": 0.42,
+              "prob_lula": 0.8185
+            },
+            {
+              "prior": 20,
+              "share": 0.5107397916466079,
+              "abs_error_pp": 0.71,
+              "prob_lula": 0.795
+            },
+            {
+              "prior": 100,
+              "share": 0.5081579704942418,
+              "abs_error_pp": 0.97,
+              "prob_lula": 0.78
+            }
+          ],
+          "error_pp_min": 0.4199799657731096,
+          "error_pp_max": 0.969385834838421
+        }
+      }
+    },
+    {
+      "pct": 10,
+      "sections_share": 0.1000404608531231,
+      "time": "2026-10-25 19:38:14",
+      "models": {
+        "estadual": {
+          "scenarios": [
+            {
+              "prior": 2,
+              "share": 0.49542936624200795,
+              "abs_error_pp": 2.24,
+              "prob_lula": 0.266
+            },
+            {
+              "prior": 20,
+              "share": 0.49601506891015157,
+              "abs_error_pp": 2.18,
+              "prob_lula": 0.2675
+            },
+            {
+              "prior": 100,
+              "share": 0.4976544889037861,
+              "abs_error_pp": 2.02,
+              "prob_lula": 0.3435
+            }
+          ],
+          "error_pp_min": 2.0197339938839933,
+          "error_pp_max": 2.2422462600618087
+        },
+        "municipal": {
+          "scenarios": [
+            {
+              "prior": 2,
+              "share": 0.4976796476402866,
+              "abs_error_pp": 2.02,
+              "prob_lula": 0.3845
+            },
+            {
+              "prior": 20,
+              "share": 0.4983591343244196,
+              "abs_error_pp": 1.95,
+              "prob_lula": 0.4125
+            },
+            {
+              "prior": 100,
+              "share": 0.49949308856992847,
+              "abs_error_pp": 1.84,
+              "prob_lula": 0.4715
+            }
+          ],
+          "error_pp_min": 1.8358740272697571,
+          "error_pp_max": 2.0172181202339434
+        }
+      }
+    },
+    {
+      "pct": 20,
+      "sections_share": 0.2000588885684069,
+      "time": "2026-10-25 19:56:55",
+      "models": {
+        "estadual": {
+          "scenarios": [
+            {
+              "prior": 2,
+              "share": 0.4956122201158666,
+              "abs_error_pp": 2.22,
+              "prob_lula": 0.1165
+            },
+            {
+              "prior": 20,
+              "share": 0.49560107651655366,
+              "abs_error_pp": 2.23,
+              "prob_lula": 0.1075
+            },
+            {
+              "prior": 100,
+              "share": 0.4952623166275065,
+              "abs_error_pp": 2.26,
+              "prob_lula": 0.0835
+            }
+          ],
+          "error_pp_min": 2.223960872675945,
+          "error_pp_max": 2.258951221511951
+        },
+        "municipal": {
+          "scenarios": [
+            {
+              "prior": 2,
+              "share": 0.5022022257088075,
+              "abs_error_pp": 1.56,
+              "prob_lula": 0.7155
+            },
+            {
+              "prior": 20,
+              "share": 0.5023290994366041,
+              "abs_error_pp": 1.55,
+              "prob_lula": 0.708
+            },
+            {
+              "prior": 100,
+              "share": 0.5021310724576691,
+              "abs_error_pp": 1.57,
+              "prob_lula": 0.691
+            }
+          ],
+          "error_pp_min": 1.5522729406021951,
+          "error_pp_max": 1.5720756384956958
+        }
+      }
+    },
+    {
+      "pct": 30,
+      "sections_share": 0.30017946992276384,
+      "time": "2026-10-25 20:08:03",
+      "models": {
+        "estadual": {
+          "scenarios": [
+            {
+              "prior": 2,
+              "share": 0.5009125925906273,
+              "abs_error_pp": 1.69,
+              "prob_lula": 0.659
+            },
+            {
+              "prior": 20,
+              "share": 0.5007689203124879,
+              "abs_error_pp": 1.71,
+              "prob_lula": 0.635
+            },
+            {
+              "prior": 100,
+              "share": 0.5003548561072414,
+              "abs_error_pp": 1.75,
+              "prob_lula": 0.565
+            }
+          ],
+          "error_pp_min": 1.693923625199878,
+          "error_pp_max": 1.7496972735384642
+        },
+        "municipal": {
+          "scenarios": [
+            {
+              "prior": 2,
+              "share": 0.5081226855592917,
+              "abs_error_pp": 0.97,
+              "prob_lula": 0.9975
+            },
+            {
+              "prior": 20,
+              "share": 0.5080448416421288,
+              "abs_error_pp": 0.98,
+              "prob_lula": 0.9975
+            },
+            {
+              "prior": 100,
+              "share": 0.5076916715200093,
+              "abs_error_pp": 1.02,
+              "prob_lula": 0.999
+            }
+          ],
+          "error_pp_min": 0.9729143283334296,
+          "error_pp_max": 1.016015732261677
+        }
+      }
+    },
+    {
+      "pct": 40,
+      "sections_share": 0.40000560843508637,
+      "time": "2026-10-25 20:17:42",
+      "models": {
+        "estadual": {
+          "scenarios": [
+            {
+              "prior": 2,
+              "share": 0.5043458177920614,
+              "abs_error_pp": 1.35,
+              "prob_lula": 0.9995
+            },
+            {
+              "prior": 20,
+              "share": 0.5042865648274808,
+              "abs_error_pp": 1.36,
+              "prob_lula": 0.999
+            },
+            {
+              "prior": 100,
+              "share": 0.5040565724756267,
+              "abs_error_pp": 1.38,
+              "prob_lula": 0.999
+            }
+          ],
+          "error_pp_min": 1.3506011050564593,
+          "error_pp_max": 1.3795256366999298
+        },
+        "municipal": {
+          "scenarios": [
+            {
+              "prior": 2,
+              "share": 0.512345046551034,
+              "abs_error_pp": 0.55,
+              "prob_lula": 1
+            },
+            {
+              "prior": 20,
+              "share": 0.5122805823131269,
+              "abs_error_pp": 0.56,
+              "prob_lula": 1
+            },
+            {
+              "prior": 100,
+              "share": 0.5121054886590777,
+              "abs_error_pp": 0.57,
+              "prob_lula": 1
+            }
+          ],
+          "error_pp_min": 0.5506782291592072,
+          "error_pp_max": 0.574634018354836
+        }
+      }
+    },
+    {
+      "pct": 50,
+      "sections_share": 0.5000701054385797,
+      "time": "2026-10-25 20:26:48",
+      "models": {
+        "estadual": {
+          "scenarios": [
+            {
+              "prior": 2,
+              "share": 0.5073478672563156,
+              "abs_error_pp": 1.05,
+              "prob_lula": 1
+            },
+            {
+              "prior": 20,
+              "share": 0.5073122470740534,
+              "abs_error_pp": 1.05,
+              "prob_lula": 1
+            },
+            {
+              "prior": 100,
+              "share": 0.5071666732515501,
+              "abs_error_pp": 1.07,
+              "prob_lula": 1
+            }
+          ],
+          "error_pp_min": 1.0503961586310395,
+          "error_pp_max": 1.0685155591075968
+        },
+        "municipal": {
+          "scenarios": [
+            {
+              "prior": 2,
+              "share": 0.5147498237204251,
+              "abs_error_pp": 0.31,
+              "prob_lula": 1
+            },
+            {
+              "prior": 20,
+              "share": 0.5147192220897858,
+              "abs_error_pp": 0.31,
+              "prob_lula": 1
+            },
+            {
+              "prior": 100,
+              "share": 0.5146592417904347,
+              "abs_error_pp": 0.32,
+              "prob_lula": 1
+            }
+          ],
+          "error_pp_min": 0.3102005122200935,
+          "error_pp_max": 0.3192587052191387
+        }
+      }
+    },
+    {
+      "pct": 60,
+      "sections_share": 0.6001346024420728,
+      "time": "2026-10-25 20:35:15",
+      "models": {
+        "estadual": {
+          "scenarios": [
+            {
+              "prior": 2,
+              "share": 0.5089690532763942,
+              "abs_error_pp": 0.89,
+              "prob_lula": 1
+            },
+            {
+              "prior": 20,
+              "share": 0.5089505403303816,
+              "abs_error_pp": 0.89,
+              "prob_lula": 1
+            },
+            {
+              "prior": 100,
+              "share": 0.5088713281542847,
+              "abs_error_pp": 0.9,
+              "prob_lula": 1
+            }
+          ],
+          "error_pp_min": 0.8882775566231849,
+          "error_pp_max": 0.8980500688341331
+        },
+        "municipal": {
+          "scenarios": [
+            {
+              "prior": 2,
+              "share": 0.516343530913066,
+              "abs_error_pp": 0.15,
+              "prob_lula": 1
+            },
+            {
+              "prior": 20,
+              "share": 0.5163119662865685,
+              "abs_error_pp": 0.15,
+              "prob_lula": 1
+            },
+            {
+              "prior": 100,
+              "share": 0.5162871247254954,
+              "abs_error_pp": 0.16,
+              "prob_lula": 1
+            }
+          ],
+          "error_pp_min": 0.15082979295600873,
+          "error_pp_max": 0.15647041171306109
+        }
+      }
+    },
+    {
+      "pct": 70,
+      "sections_share": 0.7000648976059994,
+      "time": "2026-10-25 20:43:58",
+      "models": {
+        "estadual": {
+          "scenarios": [
+            {
+              "prior": 2,
+              "share": 0.5115764566948797,
+              "abs_error_pp": 0.63,
+              "prob_lula": 1
+            },
+            {
+              "prior": 20,
+              "share": 0.5115626153943961,
+              "abs_error_pp": 0.63,
+              "prob_lula": 1
+            },
+            {
+              "prior": 100,
+              "share": 0.5115045002132381,
+              "abs_error_pp": 0.63,
+              "prob_lula": 1
+            }
+          ],
+          "error_pp_min": 0.6275372147746316,
+          "error_pp_max": 0.6347328629387916
+        },
+        "municipal": {
+          "scenarios": [
+            {
+              "prior": 2,
+              "share": 0.517653826112966,
+              "abs_error_pp": 0.02,
+              "prob_lula": 1
+            },
+            {
+              "prior": 20,
+              "share": 0.5176480625652298,
+              "abs_error_pp": 0.02,
+              "prob_lula": 1
+            },
+            {
+              "prior": 100,
+              "share": 0.5176265879470034,
+              "abs_error_pp": 0.02,
+              "prob_lula": 1
+            }
+          ],
+          "error_pp_min": 0.019800272966008503,
+          "error_pp_max": 0.022524089562259153
+        }
+      }
+    },
+    {
+      "pct": 80,
+      "sections_share": 0.8000192289202961,
+      "time": "2026-10-25 20:52:42",
+      "models": {
+        "estadual": {
+          "scenarios": [
+            {
+              "prior": 2,
+              "share": 0.5142471047046675,
+              "abs_error_pp": 0.36,
+              "prob_lula": 1
+            },
+            {
+              "prior": 20,
+              "share": 0.5142383042146863,
+              "abs_error_pp": 0.36,
+              "prob_lula": 1
+            },
+            {
+              "prior": 100,
+              "share": 0.5141957797227847,
+              "abs_error_pp": 0.37,
+              "prob_lula": 1
+            }
+          ],
+          "error_pp_min": 0.3604724137958537,
+          "error_pp_max": 0.3656049119841298
+        },
+        "municipal": {
+          "scenarios": [
+            {
+              "prior": 2,
+              "share": 0.5183123597631681,
+              "abs_error_pp": 0.05,
+              "prob_lula": 1
+            },
+            {
+              "prior": 20,
+              "share": 0.5182932015345677,
+              "abs_error_pp": 0.04,
+              "prob_lula": 1
+            },
+            {
+              "prior": 100,
+              "share": 0.5182812384987301,
+              "abs_error_pp": 0.04,
+              "prob_lula": 1
+            }
+          ],
+          "error_pp_min": 0.04294096561040517,
+          "error_pp_max": 0.046053092054210154
+        }
+      }
+    },
+    {
+      "pct": 90,
+      "sections_share": 0.9000276415729257,
+      "time": "2026-10-25 21:01:47",
+      "models": {
+        "estadual": {
+          "scenarios": [
+            {
+              "prior": 2,
+              "share": 0.5157440309910841,
+              "abs_error_pp": 0.21,
+              "prob_lula": 1
+            },
+            {
+              "prior": 20,
+              "share": 0.5157400447038343,
+              "abs_error_pp": 0.21,
+              "prob_lula": 1
+            },
+            {
+              "prior": 100,
+              "share": 0.5157231894116414,
+              "abs_error_pp": 0.21,
+              "prob_lula": 1
+            }
+          ],
+          "error_pp_min": 0.2107797851541915,
+          "error_pp_max": 0.21286394309846246
+        },
+        "municipal": {
+          "scenarios": [
+            {
+              "prior": 2,
+              "share": 0.5181201884884943,
+              "abs_error_pp": 0.03,
+              "prob_lula": 1
+            },
+            {
+              "prior": 20,
+              "share": 0.5181188394821711,
+              "abs_error_pp": 0.03,
+              "prob_lula": 1
+            },
+            {
+              "prior": 100,
+              "share": 0.5181119889430765,
+              "abs_error_pp": 0.03,
+              "prob_lula": 1
+            }
+          ],
+          "error_pp_min": 0.026016010045049054,
+          "error_pp_max": 0.026835964586824357
+        }
+      }
+    },
+    {
+      "pct": 100,
+      "sections_share": 1,
+      "time": "2026-10-25 23:21:51",
+      "models": {
+        "estadual": {
+          "scenarios": [
+            {
+              "prior": 2,
+              "share": 0.517851828842626,
+              "abs_error_pp": 0,
+              "prob_lula": 1
+            },
+            {
+              "prior": 20,
+              "share": 0.517851828842626,
+              "abs_error_pp": 0,
+              "prob_lula": 1
+            },
+            {
+              "prior": 100,
+              "share": 0.517851828842626,
+              "abs_error_pp": 0,
+              "prob_lula": 1
+            }
+          ],
+          "error_pp_min": 0,
+          "error_pp_max": 0
+        },
+        "municipal": {
+          "scenarios": [
+            {
+              "prior": 2,
+              "share": 0.517851828842626,
+              "abs_error_pp": 0,
+              "prob_lula": 1
+            },
+            {
+              "prior": 20,
+              "share": 0.517851828842626,
+              "abs_error_pp": 0,
+              "prob_lula": 1
+            },
+            {
+              "prior": 100,
+              "share": 0.517851828842626,
+              "abs_error_pp": 0,
+              "prob_lula": 1
+            }
+          ],
+          "error_pp_min": 0,
+          "error_pp_max": 0
+        }
+      }
+    }
+  ],
+  "first_99": {
+    "estadual": {
+      "target": 39,
+      "time": "2026-10-25 20:16:37",
+      "sections_share": 0.3900406210941256
+    },
+    "municipal": {
+      "target": 27,
+      "time": "2026-10-25 20:04:54",
+      "sections_share": 0.2700341313335256
+    }
+  }
+}
