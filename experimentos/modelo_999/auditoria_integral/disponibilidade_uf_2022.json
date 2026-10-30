@@ -1,0 +1,330 @@
+{
+  "checked_at_utc": "2026-10-30T23:27:12.201191+00:00",
+  "documentation": "https://www.tse.jus.br/eleicoes/eleicoes-2022/arquivos/interessados",
+  "catalog": "https://dadosabertos.tse.jus.br/dataset/resultados-2022",
+  "probes": [
+    {
+      "name": "catalogo_resultados_2022.json",
+      "url": "https://dadosabertos.tse.jus.br/api/3/action/package_show?id=resultados-2022",
+      "status": 200,
+      "bytes": 31469,
+      "sha256": "bf140406e8b14f02145739cbf11194edf297f2de705cb60124ad0170885ae3f0",
+      "retrieved_at_utc": "2026-10-30T23:26:25.404457+00:00",
+      "keys": [
+        "help",
+        "success",
+        "result"
+      ]
+    },
+    {
+      "name": "br-c0001-e000545-t.json",
+      "url": "https://resultados.tse.jus.br/oficial/ele2022/545/dados/br/br-c0001-e000545-t.json",
+      "status": 404
+    },
+    {
+      "name": "ac-c0001-e000545-t.json",
+      "url": "https://resultados.tse.jus.br/oficial/ele2022/545/dados/ac/ac-c0001-e000545-t.json",
+      "status": 404
+    },
+    {
+      "name": "al-c0001-e000545-t.json",
+      "url": "https://resultados.tse.jus.br/oficial/ele2022/545/dados/al/al-c0001-e000545-t.json",
+      "status": 404
+    },
+    {
+      "name": "ap-c0001-e000545-t.json",
+      "url": "https://resultados.tse.jus.br/oficial/ele2022/545/dados/ap/ap-c0001-e000545-t.json",
+      "status": 404
+    },
+    {
+      "name": "am-c0001-e000545-t.json",
+      "url": "https://resultados.tse.jus.br/oficial/ele2022/545/dados/am/am-c0001-e000545-t.json",
+      "status": 404
+    },
+    {
+      "name": "ba-c0001-e000545-t.json",
+      "url": "https://resultados.tse.jus.br/oficial/ele2022/545/dados/ba/ba-c0001-e000545-t.json",
+      "status": 404
+    },
+    {
+      "name": "ce-c0001-e000545-t.json",
+      "url": "https://resultados.tse.jus.br/oficial/ele2022/545/dados/ce/ce-c0001-e000545-t.json",
+      "status": 404
+    },
+    {
+      "name": "df-c0001-e000545-t.json",
+      "url": "https://resultados.tse.jus.br/oficial/ele2022/545/dados/df/df-c0001-e000545-t.json",
+      "status": 404
+    },
+    {
+      "name": "es-c0001-e000545-t.json",
+      "url": "https://resultados.tse.jus.br/oficial/ele2022/545/dados/es/es-c0001-e000545-t.json",
+      "status": 404
+    },
+    {
+      "name": "go-c0001-e000545-t.json",
+      "url": "https://resultados.tse.jus.br/oficial/ele2022/545/dados/go/go-c0001-e000545-t.json",
+      "status": 404
+    },
+    {
+      "name": "ma-c0001-e000545-t.json",
+      "url": "https://resultados.tse.jus.br/oficial/ele2022/545/dados/ma/ma-c0001-e000545-t.json",
+      "status": 404
+    },
+    {
+      "name": "mt-c0001-e000545-t.json",
+      "url": "https://resultados.tse.jus.br/oficial/ele2022/545/dados/mt/mt-c0001-e000545-t.json",
+      "status": 404
+    },
+    {
+      "name": "ms-c0001-e000545-t.json",
+      "url": "https://resultados.tse.jus.br/oficial/ele2022/545/dados/ms/ms-c0001-e000545-t.json",
+      "status": 404
+    },
+    {
+      "name": "mg-c0001-e000545-t.json",
+      "url": "https://resultados.tse.jus.br/oficial/ele2022/545/dados/mg/mg-c0001-e000545-t.json",
+      "status": 404
+    },
+    {
+      "name": "pa-c0001-e000545-t.json",
+      "url": "https://resultados.tse.jus.br/oficial/ele2022/545/dados/pa/pa-c0001-e000545-t.json",
+      "status": 404
+    },
+    {
+      "name": "pb-c0001-e000545-t.json",
+      "url": "https://resultados.tse.jus.br/oficial/ele2022/545/dados/pb/pb-c0001-e000545-t.json",
+      "status": 404
+    },
+    {
+      "name": "pr-c0001-e000545-t.json",
+      "url": "https://resultados.tse.jus.br/oficial/ele2022/545/dados/pr/pr-c0001-e000545-t.json",
+      "status": 404
+    },
+    {
+      "name": "pe-c0001-e000545-t.json",
+      "url": "https://resultados.tse.jus.br/oficial/ele2022/545/dados/pe/pe-c0001-e000545-t.json",
+      "status": 404
+    },
+    {
+      "name": "pi-c0001-e000545-t.json",
+      "url": "https://resultados.tse.jus.br/oficial/ele2022/545/dados/pi/pi-c0001-e000545-t.json",
+      "status": 404
+    },
+    {
+      "name": "rj-c0001-e000545-t.json",
+      "url": "https://resultados.tse.jus.br/oficial/ele2022/545/dados/rj/rj-c0001-e000545-t.json",
+      "status": 404
+    },
+    {
+      "name": "rn-c0001-e000545-t.json",
+      "url": "https://resultados.tse.jus.br/oficial/ele2022/545/dados/rn/rn-c0001-e000545-t.json",
+      "status": 404
+    },
+    {
+      "name": "rs-c0001-e000545-t.json",
+      "url": "https://resultados.tse.jus.br/oficial/ele2022/545/dados/rs/rs-c0001-e000545-t.json",
+      "status": 404
+    },
+    {
+      "name": "ro-c0001-e000545-t.json",
+      "url": "https://resultados.tse.jus.br/oficial/ele2022/545/dados/ro/ro-c0001-e000545-t.json",
+      "status": 404
+    },
+    {
+      "name": "rr-c0001-e000545-t.json",
+      "url": "https://resultados.tse.jus.br/oficial/ele2022/545/dados/rr/rr-c0001-e000545-t.json",
+      "status": 404
+    },
+    {
+      "name": "sc-c0001-e000545-t.json",
+      "url": "https://resultados.tse.jus.br/oficial/ele2022/545/dados/sc/sc-c0001-e000545-t.json",
+      "status": 404
+    },
+    {
+      "name": "sp-c0001-e000545-t.json",
+      "url": "https://resultados.tse.jus.br/oficial/ele2022/545/dados/sp/sp-c0001-e000545-t.json",
+      "status": 404
+    },
+    {
+      "name": "se-c0001-e000545-t.json",
+      "url": "https://resultados.tse.jus.br/oficial/ele2022/545/dados/se/se-c0001-e000545-t.json",
+      "status": 404
+    },
+    {
+      "name": "to-c0001-e000545-t.json",
+      "url": "https://resultados.tse.jus.br/oficial/ele2022/545/dados/to/to-c0001-e000545-t.json",
+      "status": 404
+    },
+    {
+      "name": "zz-c0001-e000545-t.json",
+      "url": "https://resultados.tse.jus.br/oficial/ele2022/545/dados/zz/zz-c0001-e000545-t.json",
+      "status": 404
+    },
+    {
+      "name": "br-e000545-i.json",
+      "url": "https://resultados.tse.jus.br/oficial/ele2022/545/config/br/br-e000545-i.json",
+      "status": 404
+    },
+    {
+      "name": "sp-e000545-i.json",
+      "url": "https://resultados.tse.jus.br/oficial/ele2022/545/config/sp/sp-e000545-i.json",
+      "status": 404
+    },
+    {
+      "name": "ba-e000545-i.json",
+      "url": "https://resultados.tse.jus.br/oficial/ele2022/545/config/ba/ba-e000545-i.json",
+      "status": 404
+    }
+  ],
+  "conclusion": "HISTORICO_TEMPORAL_UF_NAO_OBTIDO_NAS_FONTES_CONSULTADAS",
+  "catalog_resources": [
+    {
+      "name": "BR - Histórico totalização Presidente 1º Turno - 2022",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2022/Historico_Totalizacao_Presidente_BR_1T_2022.zip"
+    },
+    {
+      "name": "BR - Histórico totalização Presidente 2º Turno - 2022",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2022/Historico_Totalizacao_Presidente_BR_2T_2022.zip"
+    },
+    {
+      "name": "Votação nominal por município e zona",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/votacao_candidato_munzona/votacao_candidato_munzona_2022.zip"
+    },
+    {
+      "name": "Votação em partido por município e zona ",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/votacao_partido_munzona/votacao_partido_munzona_2022.zip"
+    },
+    {
+      "name": "Detalhe da apuração por município e zona",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/detalhe_votacao_munzona/detalhe_votacao_munzona_2022.zip"
+    },
+    {
+      "name": "Detalhe da apuração por seção eleitoral",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/detalhe_votacao_secao/detalhe_votacao_secao_2022.zip"
+    },
+    {
+      "name": "Presidente - Votação por seção eleitoral - 2022",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/votacao_secao/votacao_secao_2022_BR.zip"
+    },
+    {
+      "name": "AC - Votação por seção eleitoral - 2022",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/votacao_secao/votacao_secao_2022_AC.zip"
+    },
+    {
+      "name": "AL - Votação por seção eleitoral - 2022",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/votacao_secao/votacao_secao_2022_AL.zip"
+    },
+    {
+      "name": "AM - Votação por seção eleitoral - 2022",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/votacao_secao/votacao_secao_2022_AM.zip"
+    },
+    {
+      "name": "AP - Votação por seção eleitoral - 2022",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/votacao_secao/votacao_secao_2022_AP.zip"
+    },
+    {
+      "name": "BA - Votação por seção eleitoral - 2022",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/votacao_secao/votacao_secao_2022_BA.zip"
+    },
+    {
+      "name": "CE - Votação por seção eleitoral - 2022",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/votacao_secao/votacao_secao_2022_CE.zip"
+    },
+    {
+      "name": "DF - Votação por seção eleitoral - 2022",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/votacao_secao/votacao_secao_2022_DF.zip"
+    },
+    {
+      "name": "ES - Votação por seção eleitoral - 2022",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/votacao_secao/votacao_secao_2022_ES.zip"
+    },
+    {
+      "name": "GO - Votação por seção eleitoral - 2022",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/votacao_secao/votacao_secao_2022_GO.zip"
+    },
+    {
+      "name": "MA - Votação por seção eleitoral - 2022",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/votacao_secao/votacao_secao_2022_MA.zip"
+    },
+    {
+      "name": "MG - Votação por seção eleitoral - 2022",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/votacao_secao/votacao_secao_2022_MG.zip"
+    },
+    {
+      "name": "MS - Votação por seção eleitoral - 2022",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/votacao_secao/votacao_secao_2022_MS.zip"
+    },
+    {
+      "name": "MT - Votação por seção eleitoral - 2022",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/votacao_secao/votacao_secao_2022_MT.zip"
+    },
+    {
+      "name": "PA - Votação por seção eleitoral - 2022",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/votacao_secao/votacao_secao_2022_PA.zip"
+    },
+    {
+      "name": "PB - Votação por seção eleitoral - 2022",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/votacao_secao/votacao_secao_2022_PB.zip"
+    },
+    {
+      "name": "PE - Votação por seção eleitoral - 2022",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/votacao_secao/votacao_secao_2022_PE.zip"
+    },
+    {
+      "name": "PI - Votação por seção eleitoral - 2022",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/votacao_secao/votacao_secao_2022_PI.zip"
+    },
+    {
+      "name": "PR - Votação por seção eleitoral - 2022",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/votacao_secao/votacao_secao_2022_PR.zip"
+    },
+    {
+      "name": "RJ - Votação por seção eleitoral - 2022",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/votacao_secao/votacao_secao_2022_RJ.zip"
+    },
+    {
+      "name": "RN - Votação por seção eleitoral - 2022",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/votacao_secao/votacao_secao_2022_RN.zip"
+    },
+    {
+      "name": "RO - Votação por seção eleitoral - 2022",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/votacao_secao/votacao_secao_2022_RO.zip"
+    },
+    {
+      "name": "RR - Votação por seção eleitoral - 2022",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/votacao_secao/votacao_secao_2022_RR.zip"
+    },
+    {
+      "name": "RS - Votação por seção eleitoral - 2022",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/votacao_secao/votacao_secao_2022_RS.zip"
+    },
+    {
+      "name": "SC - Votação por seção eleitoral - 2022",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/votacao_secao/votacao_secao_2022_SC.zip"
+    },
+    {
+      "name": "SE - Votação por seção eleitoral - 2022",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/votacao_secao/votacao_secao_2022_SE.zip"
+    },
+    {
+      "name": "SP - Votação por seção eleitoral - 2022",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/votacao_secao/votacao_secao_2022_SP.zip"
+    },
+    {
+      "name": "TO - Votação por seção eleitoral - 2022",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/votacao_secao/votacao_secao_2022_TO.zip"
+    }
+  ],
+  "historical_resources": [
+    {
+      "name": "BR - Histórico totalização Presidente 1º Turno - 2022",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2022/Historico_Totalizacao_Presidente_BR_1T_2022.zip"
+    },
+    {
+      "name": "BR - Histórico totalização Presidente 2º Turno - 2022",
+      "url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2022/Historico_Totalizacao_Presidente_BR_2T_2022.zip"
+    }
+  ],
+  "limits": "32 URLs de evolucao ou indice retornaram 404; catalogo CKAN consultado oferece somente BR no historico. Nao prova inexistencia em outros acervos."
+}
