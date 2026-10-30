@@ -1,0 +1,70 @@
+{
+  "status": "TRIAGEM_DOCUMENTAL_SEM_VINCULO_INDIVIDUAL",
+  "fontes": [
+    {
+      "tipo": "TSE - voto em transito 2026",
+      "url": "https://www.tse.jus.br/eleicoes/eleicoes-2026-content/voto-em-transito-perguntas-e-respostas"
+    },
+    {
+      "tipo": "TSE - resolucao 23.751/2026 art. 30",
+      "url": "https://www.tse.jus.br/legislacao/compilada/res/2026/resolucao-no-23-751-de-26-de-fevereiro-de-2026"
+    },
+    {
+      "tipo": "TSE - habilitacoes 2 turno",
+      "url": "https://www.tse.jus.br/comunicacao/noticias/2026/Outubro/faltam-9-dias-mais-de-314-mil-pessoas-solicitaram-voto-em-transito-para-o-2o-turno-das-eleicoes"
+    }
+  ],
+  "habilitacoes_voto_em_transito_2t": {
+    "total_2t": 314519,
+    "SP": 52206,
+    "BA": 30841,
+    "MG": 29593,
+    "RJ": 24736
+  },
+  "dados_repositorio": {
+    "aumento_bruto_aptos_secoes": 37346,
+    "reducao_bruta_aptos_secoes": 37346,
+    "saldo_liquido_aptos_uf": {
+      "SP": 699,
+      "DF": 675,
+      "PA": -334,
+      "MG": -228,
+      "RS": -227,
+      "PE": -223,
+      "GO": -205,
+      "ZZ": 149,
+      "BA": 139,
+      "ES": -135,
+      "RJ": -122,
+      "PB": -97,
+      "AP": -78,
+      "MT": 78,
+      "MA": -66,
+      "PI": -63,
+      "AM": 50,
+      "AL": -45,
+      "RN": 42,
+      "SE": -42,
+      "SC": 36,
+      "RO": 33,
+      "PR": -29,
+      "AC": -27,
+      "CE": -24,
+      "RR": 19,
+      "TO": 18,
+      "MS": 7
+    },
+    "soma_positiva_saldos_uf": 1945
+  },
+  "comparacao": {
+    "habilitacoes_2t_dividido_aumento_bruto_secoes": 8.421758689016226,
+    "observacao": "Habilitações do TSE são grandeza distinta da variação de aptos entre turnos. Não há correspondência 1:1 nem base para subtração."
+  },
+  "veredito": "INDETERMINADO",
+  "pendencias": [
+    "Obter seções oficiais com modalidade de transferência temporária por turno e identificadores de zona/seção.",
+    "Obter quantitativos oficiais de habilitados por turno e seção para correspondência territorial.",
+    "Conferir se os 55.722 registros decorrem de mudanças reais de aptos ou transformação de dados na construção do repositório.",
+    "Não inferir voto em trânsito apenas por saldo positivo/negativo ou por mudança do local de votação."
+  ]
+}
