@@ -1,0 +1,236 @@
+{
+  "status": "BACKTEST_BASELINE_EXECUTADO",
+  "model": "participacao_nos_votos_ja_apurados",
+  "caveat": "Não é o modelo territorial avançado. Resultado final é usado SOMENTE como alvo de avaliação e denominador de cobertura; nunca como atributo preditivo.",
+  "rows_source": 4892,
+  "scopes": {
+    "BR": 359,
+    "AC": 125,
+    "AL": 161,
+    "AP": 120,
+    "AM": 167,
+    "BA": 205,
+    "CE": 214,
+    "DF": 145,
+    "ES": 151,
+    "ZZ": 76,
+    "GO": 190,
+    "MA": 228,
+    "MT": 182,
+    "MS": 145,
+    "MG": 186,
+    "PR": 171,
+    "PB": 182,
+    "PA": 213,
+    "PE": 209,
+    "PI": 176,
+    "RJ": 140,
+    "RN": 150,
+    "RS": 157,
+    "RO": 139,
+    "RR": 112,
+    "SC": 177,
+    "SE": 115,
+    "SP": 173,
+    "TO": 124
+  },
+  "national_snapshots": 359,
+  "first_timestamp": "2026-10-25T17:00:00-03:00",
+  "last_timestamp": "2026-10-25T23:22:59-03:00",
+  "final_13_pct": 51.7851828842626,
+  "final_22_pct": 48.2148171157374,
+  "monotonicity_violations": [],
+  "monotonicity_violations_count": 0,
+  "thresholds": [
+    {
+      "threshold_pct": 5,
+      "timestamp": "2026-10-25T19:29:41-03:00",
+      "coverage_sections_pct": 5.018948498541807,
+      "observed_valid_votes": 6291108,
+      "predicted_13_pct": 51.15771339484237,
+      "absolute_error_pp": 0.6274694894202355,
+      "winner_correct": true
+    },
+    {
+      "threshold_pct": 10,
+      "timestamp": "2026-10-25T19:39:35-03:00",
+      "coverage_sections_pct": 10.400041662660641,
+      "observed_valid_votes": 13017117,
+      "predicted_13_pct": 50.45627230668665,
+      "absolute_error_pp": 1.3289105775759538,
+      "winner_correct": true
+    },
+    {
+      "threshold_pct": 15,
+      "timestamp": "2026-10-25T19:48:11-03:00",
+      "coverage_sections_pct": 15.056244591866166,
+      "observed_valid_votes": 18778024,
+      "predicted_13_pct": 49.9173342200436,
+      "absolute_error_pp": 1.8678486642190038,
+      "winner_correct": false
+    },
+    {
+      "threshold_pct": 20,
+      "timestamp": "2026-10-25T19:57:37-03:00",
+      "coverage_sections_pct": 20.05175784379707,
+      "observed_valid_votes": 24857344,
+      "predicted_13_pct": 49.590905609223576,
+      "absolute_error_pp": 2.1942772750390276,
+      "winner_correct": false
+    },
+    {
+      "threshold_pct": 25,
+      "timestamp": "2026-10-25T20:04:12-03:00",
+      "coverage_sections_pct": 25.19048649168349,
+      "observed_valid_votes": 31115949,
+      "predicted_13_pct": 49.4899577062554,
+      "absolute_error_pp": 2.2952251780072004,
+      "winner_correct": false
+    },
+    {
+      "threshold_pct": 30,
+      "timestamp": "2026-10-25T20:08:53-03:00",
+      "coverage_sections_pct": 30.24528891452745,
+      "observed_valid_votes": 37300217,
+      "predicted_13_pct": 49.5341166513857,
+      "absolute_error_pp": 2.2510662328769016,
+      "winner_correct": false
+    },
+    {
+      "threshold_pct": 35,
+      "timestamp": "2026-10-25T20:13:24-03:00",
+      "coverage_sections_pct": 35.084567189052336,
+      "observed_valid_votes": 43232784,
+      "predicted_13_pct": 49.7038589973757,
+      "absolute_error_pp": 2.0813238868869064,
+      "winner_correct": false
+    },
+    {
+      "threshold_pct": 40,
+      "timestamp": "2026-10-25T20:18:24-03:00",
+      "coverage_sections_pct": 40.233310899592986,
+      "observed_valid_votes": 49594787,
+      "predicted_13_pct": 49.79693329462228,
+      "absolute_error_pp": 1.9882495896403256,
+      "winner_correct": false
+    },
+    {
+      "threshold_pct": 45,
+      "timestamp": "2026-10-25T20:23:40-03:00",
+      "coverage_sections_pct": 45.39667660160882,
+      "observed_valid_votes": 55959225,
+      "predicted_13_pct": 49.94977146306083,
+      "absolute_error_pp": 1.8354114212017762,
+      "winner_correct": false
+    },
+    {
+      "threshold_pct": 50,
+      "timestamp": "2026-10-25T20:27:25-03:00",
+      "coverage_sections_pct": 50.124186776912474,
+      "observed_valid_votes": 61814438,
+      "predicted_13_pct": 50.13953212678242,
+      "absolute_error_pp": 1.6456507574801833,
+      "winner_correct": true
+    },
+    {
+      "threshold_pct": 55,
+      "timestamp": "2026-10-25T20:31:56-03:00",
+      "coverage_sections_pct": 55.55695766432715,
+      "observed_valid_votes": 68511672,
+      "predicted_13_pct": 50.37440773595483,
+      "absolute_error_pp": 1.4107751483077706,
+      "winner_correct": true
+    },
+    {
+      "threshold_pct": 60,
+      "timestamp": "2026-10-25T20:36:27-03:00",
+      "coverage_sections_pct": 60.850519180847996,
+      "observed_valid_votes": 75102711,
+      "predicted_13_pct": 50.54594101137042,
+      "absolute_error_pp": 1.2392418728921868,
+      "winner_correct": true
+    },
+    {
+      "threshold_pct": 65,
+      "timestamp": "2026-10-25T20:40:28-03:00",
+      "coverage_sections_pct": 65.37151876422139,
+      "observed_valid_votes": 80723496,
+      "predicted_13_pct": 50.750550991993705,
+      "absolute_error_pp": 1.034631892268898,
+      "winner_correct": true
+    },
+    {
+      "threshold_pct": 70,
+      "timestamp": "2026-10-25T20:44:58-03:00",
+      "coverage_sections_pct": 70.550908566484,
+      "observed_valid_votes": 87137340,
+      "predicted_13_pct": 50.92419277430319,
+      "absolute_error_pp": 0.8609901099594168,
+      "winner_correct": true
+    },
+    {
+      "threshold_pct": 75,
+      "timestamp": "2026-10-25T20:49:16-03:00",
+      "coverage_sections_pct": 75.23555427362754,
+      "observed_valid_votes": 92942490,
+      "predicted_13_pct": 51.089620043534445,
+      "absolute_error_pp": 0.695562840728158,
+      "winner_correct": true
+    },
+    {
+      "threshold_pct": 80,
+      "timestamp": "2026-10-25T20:53:30-03:00",
+      "coverage_sections_pct": 80.01714578726404,
+      "observed_valid_votes": 98896623,
+      "predicted_13_pct": 51.271725425852004,
+      "absolute_error_pp": 0.5134574584105991,
+      "winner_correct": true
+    },
+    {
+      "threshold_pct": 85,
+      "timestamp": "2026-10-25T20:58:00-03:00",
+      "coverage_sections_pct": 85.24320578149536,
+      "observed_valid_votes": 105382888,
+      "predicted_13_pct": 51.431165940337486,
+      "absolute_error_pp": 0.3540169439251173,
+      "winner_correct": true
+    },
+    {
+      "threshold_pct": 90,
+      "timestamp": "2026-10-25T21:02:31-03:00",
+      "coverage_sections_pct": 90.35188924141909,
+      "observed_valid_votes": 111720001,
+      "predicted_13_pct": 51.57989570730491,
+      "absolute_error_pp": 0.20528717695769672,
+      "winner_correct": true
+    },
+    {
+      "threshold_pct": 95,
+      "timestamp": "2026-10-25T21:07:32-03:00",
+      "coverage_sections_pct": 95.32677146428227,
+      "observed_valid_votes": 118017886,
+      "predicted_13_pct": 51.720762054660085,
+      "absolute_error_pp": 0.06442082960251838,
+      "winner_correct": true
+    },
+    {
+      "threshold_pct": 100,
+      "timestamp": "2026-10-25T23:22:59-03:00",
+      "coverage_sections_pct": 100.0,
+      "observed_valid_votes": 124082273,
+      "predicted_13_pct": 51.7851828842626,
+      "absolute_error_pp": 0.0,
+      "winner_correct": true
+    }
+  ],
+  "mae_pp_5_to_95": 1.2891482813368356,
+  "thresholds_error_le_0_1_pp": 1,
+  "thresholds_evaluated": 19,
+  "limitations": [
+    "O CSV pode conter snapshots não uniformes ou revisões.",
+    "O número de seções finais é conhecido apenas para definir marcos retrospectivos.",
+    "Uma única eleição não demonstra taxa de acerto de 99,9%.",
+    "Sem ordem de entrada por seção, não é possível validar ponderação territorial por seção.",
+    "O erro do baseline não certifica o modelo territorial."
+  ]
+}
