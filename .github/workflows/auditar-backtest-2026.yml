@@ -1,0 +1,22 @@
+name: Auditoria independente do acervo 2026
+on:
+  push:
+    paths:
+      - '.github/workflows/auditar-backtest-2026.yml'
+      - 'scripts/auditar_backtest_2026.py'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Verificar hashes e consistencia
+        run: python3 scripts/auditar_backtest_2026.py
+      - name: Publicar resultado
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@users.noreply.github.com
+          git add dados/2026/backtest/auditoria_independente.json
+          git diff --cached --quiet || (git commit -m "Registrar auditoria independente do acervo" && git push)
