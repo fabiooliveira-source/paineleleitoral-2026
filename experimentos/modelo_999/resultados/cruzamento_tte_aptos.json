@@ -1,7 +1,1017 @@
 {
   "fonte_tte": "https://cdn.tse.jus.br/estatistica/sead/odsele/transf_temporaria_secao/transf_temporaria_secao_2026.zip",
-  "estado": "INCOMPLETO",
+  "estado": "CONCLUIDO",
   "secoes_base": 499248,
   "tte_zip_sha256": "b4137117dded4bdb60f572e9743c876d341b64304d1a698f1772d9bf9eeb5277",
-  "erro": "ValueError(\"Campo ambiguo ('MUNICIPIO', 'ORIGEM'): ['CD_MUNICIPIO_ORIGEM', 'NM_MUNICIPIO_ORIGEM']\")"
+  "registros_tte": 1154903,
+  "secoes_uniao": 506287,
+  "correspondencias_exatas": 504211,
+  "divergencias": 2076,
+  "secoes_aptos_divergentes": 55722,
+  "secoes_tte_divergentes": 55973,
+  "intersecao_secoes_divergentes": 54876,
+  "aptos_divergentes_sem_tte": 846,
+  "tte_divergente_sem_aptos": 1097,
+  "exemplos_divergentes": [
+    {
+      "chave": [
+        "AC",
+        "1031",
+        "3",
+        "124"
+      ],
+      "delta_aptos": 0,
+      "delta_tte": -2
+    },
+    {
+      "chave": [
+        "AC",
+        "1031",
+        "3",
+        "140"
+      ],
+      "delta_aptos": 0,
+      "delta_tte": -2
+    },
+    {
+      "chave": [
+        "AC",
+        "1031",
+        "3",
+        "95"
+      ],
+      "delta_aptos": -2,
+      "delta_tte": 0
+    },
+    {
+      "chave": [
+        "AC",
+        "1031",
+        "3",
+        "96"
+      ],
+      "delta_aptos": -2,
+      "delta_tte": 0
+    },
+    {
+      "chave": [
+        "AC",
+        "1040",
+        "4",
+        "160"
+      ],
+      "delta_aptos": -1,
+      "delta_tte": 0
+    },
+    {
+      "chave": [
+        "AC",
+        "1040",
+        "4",
+        "289"
+      ],
+      "delta_aptos": 0,
+      "delta_tte": -1
+    },
+    {
+      "chave": [
+        "AC",
+        "1074",
+        "4",
+        "229"
+      ],
+      "delta_aptos": -1,
+      "delta_tte": 0
+    },
+    {
+      "chave": [
+        "AC",
+        "1074",
+        "4",
+        "270"
+      ],
+      "delta_aptos": 0,
+      "delta_tte": -1
+    },
+    {
+      "chave": [
+        "AC",
+        "1074",
+        "4",
+        "451"
+      ],
+      "delta_aptos": -1,
+      "delta_tte": 0
+    },
+    {
+      "chave": [
+        "AC",
+        "1074",
+        "4",
+        "497"
+      ],
+      "delta_aptos": 0,
+      "delta_tte": -1
+    },
+    {
+      "chave": [
+        "AC",
+        "1082",
+        "4",
+        "292"
+      ],
+      "delta_aptos": -1,
+      "delta_tte": 0
+    },
+    {
+      "chave": [
+        "AC",
+        "1082",
+        "4",
+        "495"
+      ],
+      "delta_aptos": 0,
+      "delta_tte": -1
+    },
+    {
+      "chave": [
+        "AC",
+        "1392",
+        "1",
+        "164"
+      ],
+      "delta_aptos": 2,
+      "delta_tte": 1
+    },
+    {
+      "chave": [
+        "AC",
+        "1392",
+        "1",
+        "188"
+      ],
+      "delta_aptos": 0,
+      "delta_tte": 1
+    },
+    {
+      "chave": [
+        "AC",
+        "1392",
+        "1",
+        "326"
+      ],
+      "delta_aptos": -1,
+      "delta_tte": 0
+    },
+    {
+      "chave": [
+        "AC",
+        "1392",
+        "1",
+        "349"
+      ],
+      "delta_aptos": 0,
+      "delta_tte": -1
+    },
+    {
+      "chave": [
+        "AC",
+        "1392",
+        "1",
+        "719"
+      ],
+      "delta_aptos": 2,
+      "delta_tte": 1
+    },
+    {
+      "chave": [
+        "AC",
+        "1392",
+        "1",
+        "721"
+      ],
+      "delta_aptos": 0,
+      "delta_tte": 1
+    },
+    {
+      "chave": [
+        "AC",
+        "1392",
+        "9",
+        "156"
+      ],
+      "delta_aptos": 0,
+      "delta_tte": -1
+    },
+    {
+      "chave": [
+        "AC",
+        "1392",
+        "9",
+        "59"
+      ],
+      "delta_aptos": -1,
+      "delta_tte": 0
+    },
+    {
+      "chave": [
+        "AC",
+        "1473",
+        "5",
+        "102"
+      ],
+      "delta_aptos": 0,
+      "delta_tte": -2
+    },
+    {
+      "chave": [
+        "AC",
+        "1473",
+        "5",
+        "140"
+      ],
+      "delta_aptos": 0,
+      "delta_tte": 1
+    },
+    {
+      "chave": [
+        "AC",
+        "1473",
+        "5",
+        "147"
+      ],
+      "delta_aptos": 0,
+      "delta_tte": -2
+    },
+    {
+      "chave": [
+        "AC",
+        "1473",
+        "5",
+        "33"
+      ],
+      "delta_aptos": 0,
+      "delta_tte": 1
+    },
+    {
+      "chave": [
+        "AC",
+        "1473",
+        "5",
+        "53"
+      ],
+      "delta_aptos": 2,
+      "delta_tte": 1
+    },
+    {
+      "chave": [
+        "AC",
+        "1473",
+        "5",
+        "73"
+      ],
+      "delta_aptos": -2,
+      "delta_tte": 0
+    },
+    {
+      "chave": [
+        "AC",
+        "1473",
+        "5",
+        "74"
+      ],
+      "delta_aptos": -2,
+      "delta_tte": 0
+    },
+    {
+      "chave": [
+        "AC",
+        "1473",
+        "5",
+        "97"
+      ],
+      "delta_aptos": 3,
+      "delta_tte": 2
+    },
+    {
+      "chave": [
+        "AC",
+        "1511",
+        "8",
+        "173"
+      ],
+      "delta_aptos": -1,
+      "delta_tte": 0
+    },
+    {
+      "chave": [
+        "AC",
+        "1511",
+        "8",
+        "252"
+      ],
+      "delta_aptos": 0,
+      "delta_tte": -1
+    },
+    {
+      "chave": [
+        "AC",
+        "1538",
+        "8",
+        "187"
+      ],
+      "delta_aptos": 0,
+      "delta_tte": 1
+    },
+    {
+      "chave": [
+        "AC",
+        "1538",
+        "8",
+        "49"
+      ],
+      "delta_aptos": 1,
+      "delta_tte": 0
+    },
+    {
+      "chave": [
+        "AL",
+        "27855",
+        "1",
+        "13"
+      ],
+      "delta_aptos": -1,
+      "delta_tte": 0
+    },
+    {
+      "chave": [
+        "AL",
+        "27855",
+        "1",
+        "14"
+      ],
+      "delta_aptos": 0,
+      "delta_tte": -1
+    },
+    {
+      "chave": [
+        "AL",
+        "27855",
+        "1",
+        "186"
+      ],
+      "delta_aptos": 0,
+      "delta_tte": -1
+    },
+    {
+      "chave": [
+        "AL",
+        "27855",
+        "1",
+        "187"
+      ],
+      "delta_aptos": 0,
+      "delta_tte": 1
+    },
+    {
+      "chave": [
+        "AL",
+        "27855",
+        "1",
+        "197"
+      ],
+      "delta_aptos": 1,
+      "delta_tte": 0
+    },
+    {
+      "chave": [
+        "AL",
+        "27855",
+        "1",
+        "198"
+      ],
+      "delta_aptos": 0,
+      "delta_tte": 1
+    },
+    {
+      "chave": [
+        "AL",
+        "27855",
+        "1",
+        "362"
+      ],
+      "delta_aptos": 1,
+      "delta_tte": 0
+    },
+    {
+      "chave": [
+        "AL",
+        "27855",
+        "1",
+        "376"
+      ],
+      "delta_aptos": 0,
+      "delta_tte": 1
+    },
+    {
+      "chave": [
+        "AL",
+        "27855",
+        "1",
+        "404"
+      ],
+      "delta_aptos": 0,
+      "delta_tte": -1
+    },
+    {
+      "chave": [
+        "AL",
+        "27855",
+        "1",
+        "414"
+      ],
+      "delta_aptos": 0,
+      "delta_tte": 1
+    },
+    {
+      "chave": [
+        "AL",
+        "27855",
+        "1",
+        "533"
+      ],
+      "delta_aptos": 46,
+      "delta_tte": 23
+    },
+    {
+      "chave": [
+        "AL",
+        "27855",
+        "1",
+        "542"
+      ],
+      "delta_aptos": 0,
+      "delta_tte": 23
+    },
+    {
+      "chave": [
+        "AL",
+        "28533",
+        "15",
+        "104"
+      ],
+      "delta_aptos": 2,
+      "delta_tte": 0
+    },
+    {
+      "chave": [
+        "AL",
+        "28533",
+        "15",
+        "122"
+      ],
+      "delta_aptos": 0,
+      "delta_tte": 2
+    },
+    {
+      "chave": [
+        "AM",
+        "2054",
+        "42",
+        "23"
+      ],
+      "delta_aptos": 0,
+      "delta_tte": 1
+    },
+    {
+      "chave": [
+        "AM",
+        "2054",
+        "42",
+        "25"
+      ],
+      "delta_aptos": -1,
+      "delta_tte": 0
+    },
+    {
+      "chave": [
+        "AM",
+        "2054",
+        "42",
+        "39"
+      ],
+      "delta_aptos": 0,
+      "delta_tte": -1
+    },
+    {
+      "chave": [
+        "AM",
+        "2054",
+        "42",
+        "6"
+      ],
+      "delta_aptos": 1,
+      "delta_tte": 0
+    },
+    {
+      "chave": [
+        "AM",
+        "2259",
+        "8",
+        "114"
+      ],
+      "delta_aptos": 0,
+      "delta_tte": 1
+    },
+    {
+      "chave": [
+        "AM",
+        "2259",
+        "8",
+        "133"
+      ],
+      "delta_aptos": 1,
+      "delta_tte": 0
+    },
+    {
+      "chave": [
+        "AM",
+        "2259",
+        "8",
+        "139"
+      ],
+      "delta_aptos": 0,
+      "delta_tte": 1
+    },
+    {
+      "chave": [
+        "AM",
+        "2259",
+        "8",
+        "24"
+      ],
+      "delta_aptos": 2,
+      "delta_tte": 1
+    },
+    {
+      "chave": [
+        "AM",
+        "2259",
+        "8",
+        "80"
+      ],
+      "delta_aptos": 2,
+      "delta_tte": 1
+    },
+    {
+      "chave": [
+        "AM",
+        "2259",
+        "8",
+        "81"
+      ],
+      "delta_aptos": 0,
+      "delta_tte": 1
+    },
+    {
+      "chave": [
+        "AM",
+        "2330",
+        "10",
+        "37"
+      ],
+      "delta_aptos": 1,
+      "delta_tte": 0
+    },
+    {
+      "chave": [
+        "AM",
+        "2330",
+        "10",
+        "41"
+      ],
+      "delta_aptos": 0,
+      "delta_tte": 1
+    },
+    {
+      "chave": [
+        "AM",
+        "2470",
+        "50",
+        "25"
+      ],
+      "delta_aptos": 0,
+      "delta_tte": -1
+    },
+    {
+      "chave": [
+        "AM",
+        "2470",
+        "50",
+        "32"
+      ],
+      "delta_aptos": -1,
+      "delta_tte": 0
+    },
+    {
+      "chave": [
+        "AM",
+        "2550",
+        "1",
+        "975"
+      ],
+      "delta_aptos": 4,
+      "delta_tte": 0
+    },
+    {
+      "chave": [
+        "AM",
+        "2550",
+        "1",
+        "976"
+      ],
+      "delta_aptos": 0,
+      "delta_tte": 4
+    },
+    {
+      "chave": [
+        "AM",
+        "2550",
+        "2",
+        "806"
+      ],
+      "delta_aptos": -3,
+      "delta_tte": -1
+    },
+    {
+      "chave": [
+        "AM",
+        "2550",
+        "2",
+        "807"
+      ],
+      "delta_aptos": 1,
+      "delta_tte": 0
+    },
+    {
+      "chave": [
+        "AM",
+        "2550",
+        "2",
+        "811"
+      ],
+      "delta_aptos": 0,
+      "delta_tte": -2
+    },
+    {
+      "chave": [
+        "AM",
+        "2550",
+        "2",
+        "812"
+      ],
+      "delta_aptos": 0,
+      "delta_tte": 1
+    },
+    {
+      "chave": [
+        "AM",
+        "2550",
+        "31",
+        "484"
+      ],
+      "delta_aptos": 1,
+      "delta_tte": 0
+    },
+    {
+      "chave": [
+        "AM",
+        "2550",
+        "31",
+        "735"
+      ],
+      "delta_aptos": 0,
+      "delta_tte": 1
+    },
+    {
+      "chave": [
+        "AM",
+        "2550",
+        "37",
+        "649"
+      ],
+      "delta_aptos": -2,
+      "delta_tte": -1
+    },
+    {
+      "chave": [
+        "AM",
+        "2550",
+        "37",
+        "731"
+      ],
+      "delta_aptos": 0,
+      "delta_tte": -1
+    },
+    {
+      "chave": [
+        "AM",
+        "2550",
+        "59",
+        "787"
+      ],
+      "delta_aptos": 1,
+      "delta_tte": 0
+    },
+    {
+      "chave": [
+        "AM",
+        "2550",
+        "59",
+        "801"
+      ],
+      "delta_aptos": 0,
+      "delta_tte": 1
+    },
+    {
+      "chave": [
+        "AM",
+        "2550",
+        "63",
+        "828"
+      ],
+      "delta_aptos": -3,
+      "delta_tte": 0
+    },
+    {
+      "chave": [
+        "AM",
+        "2550",
+        "63",
+        "829"
+      ],
+      "delta_aptos": -2,
+      "delta_tte": 0
+    },
+    {
+      "chave": [
+        "AM",
+        "2550",
+        "63",
+        "835"
+      ],
+      "delta_aptos": 0,
+      "delta_tte": -2
+    },
+    {
+      "chave": [
+        "AM",
+        "2550",
+        "63",
+        "838"
+      ],
+      "delta_aptos": 0,
+      "delta_tte": -3
+    },
+    {
+      "chave": [
+        "AM",
+        "2577",
+        "16",
+        "19"
+      ],
+      "delta_aptos": 1,
+      "delta_tte": 0
+    },
+    {
+      "chave": [
+        "AM",
+        "2577",
+        "16",
+        "20"
+      ],
+      "delta_aptos": 0,
+      "delta_tte": 1
+    },
+    {
+      "chave": [
+        "AM",
+        "2615",
+        "5",
+        "115"
+      ],
+      "delta_aptos": 1,
+      "delta_tte": 0
+    },
+    {
+      "chave": [
+        "AM",
+        "2615",
+        "5",
+        "28"
+      ],
+      "delta_aptos": 1,
+      "delta_tte": 0
+    },
+    {
+      "chave": [
+        "AM",
+        "2615",
+        "5",
+        "29"
+      ],
+      "delta_aptos": 1,
+      "delta_tte": 0
+    },
+    {
+      "chave": [
+        "AM",
+        "2615",
+        "5",
+        "45"
+      ],
+      "delta_aptos": 0,
+      "delta_tte": 1
+    },
+    {
+      "chave": [
+        "AM",
+        "2615",
+        "5",
+        "68"
+      ],
+      "delta_aptos": 0,
+      "delta_tte": 1
+    },
+    {
+      "chave": [
+        "AM",
+        "2615",
+        "5",
+        "81"
+      ],
+      "delta_aptos": 0,
+      "delta_tte": 1
+    },
+    {
+      "chave": [
+        "AM",
+        "2631",
+        "43",
+        "39"
+      ],
+      "delta_aptos": 1,
+      "delta_tte": 0
+    },
+    {
+      "chave": [
+        "AM",
+        "2631",
+        "43",
+        "59"
+      ],
+      "delta_aptos": 0,
+      "delta_tte": 1
+    },
+    {
+      "chave": [
+        "AM",
+        "2690",
+        "4",
+        "10"
+      ],
+      "delta_aptos": -1,
+      "delta_tte": 0
+    },
+    {
+      "chave": [
+        "AM",
+        "2690",
+        "4",
+        "11"
+      ],
+      "delta_aptos": 0,
+      "delta_tte": -1
+    },
+    {
+      "chave": [
+        "AM",
+        "2690",
+        "4",
+        "130"
+      ],
+      "delta_aptos": 2,
+      "delta_tte": 1
+    },
+    {
+      "chave": [
+        "AM",
+        "2690",
+        "4",
+        "132"
+      ],
+      "delta_aptos": 0,
+      "delta_tte": 1
+    },
+    {
+      "chave": [
+        "AM",
+        "2690",
+        "4",
+        "36"
+      ],
+      "delta_aptos": 1,
+      "delta_tte": 0
+    },
+    {
+      "chave": [
+        "AM",
+        "2690",
+        "4",
+        "37"
+      ],
+      "delta_aptos": 0,
+      "delta_tte": 1
+    },
+    {
+      "chave": [
+        "AM",
+        "2879",
+        "3",
+        "321"
+      ],
+      "delta_aptos": 1,
+      "delta_tte": 0
+    },
+    {
+      "chave": [
+        "AM",
+        "2879",
+        "3",
+        "325"
+      ],
+      "delta_aptos": 0,
+      "delta_tte": 1
+    },
+    {
+      "chave": [
+        "AM",
+        "98418",
+        "51",
+        "65"
+      ],
+      "delta_aptos": 1,
+      "delta_tte": 0
+    },
+    {
+      "chave": [
+        "AM",
+        "98418",
+        "51",
+        "67"
+      ],
+      "delta_aptos": 0,
+      "delta_tte": 1
+    },
+    {
+      "chave": [
+        "AM",
+        "98434",
+        "68",
+        "703"
+      ],
+      "delta_aptos": -1,
+      "delta_tte": 0
+    },
+    {
+      "chave": [
+        "AM",
+        "98434",
+        "68",
+        "704"
+      ],
+      "delta_aptos": 0,
+      "delta_tte": 1
+    },
+    {
+      "chave": [
+        "AM",
+        "98434",
+        "68",
+        "710"
+      ],
+      "delta_aptos": 0,
+      "delta_tte": -1
+    },
+    {
+      "chave": [
+        "AM",
+        "98434",
+        "68",
+        "711"
+      ],
+      "delta_aptos": 1,
+      "delta_tte": 0
+    }
+  ]
 }
