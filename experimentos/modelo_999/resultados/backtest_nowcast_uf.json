@@ -1,0 +1,237 @@
+{
+  "status": "NOWCAST_UF_EXPERIMENTAL_NAO_CERTIFICADO",
+  "description": "Tendência de UF em snapshots disponíveis até t, corrigindo baseline nacional com shrinkage fixo.",
+  "target_final_13_pct": 51.7851828842626,
+  "thresholds": [
+    {
+      "threshold_pct": 5,
+      "timestamp": "2026-10-25T19:29:41-03:00",
+      "coverage_pct": 5.018948498541807,
+      "baseline_13_pct": 51.157713394842375,
+      "nowcast_13_pct": 51.077498800619146,
+      "baseline_error_pp": 0.6274694894202293,
+      "nowcast_error_pp": 0.7076840836434561,
+      "fresh_state_trends": 26,
+      "stale_states_with_trend": 1
+    },
+    {
+      "threshold_pct": 10,
+      "timestamp": "2026-10-25T19:39:35-03:00",
+      "coverage_pct": 10.400041662660641,
+      "baseline_13_pct": 50.45627230668664,
+      "nowcast_13_pct": 50.447214787096115,
+      "baseline_error_pp": 1.328910577575959,
+      "nowcast_error_pp": 1.3379680971664865,
+      "fresh_state_trends": 28,
+      "stale_states_with_trend": 0
+    },
+    {
+      "threshold_pct": 15,
+      "timestamp": "2026-10-25T19:48:11-03:00",
+      "coverage_pct": 15.056244591866166,
+      "baseline_13_pct": 49.9173342200436,
+      "nowcast_13_pct": 49.92046519068021,
+      "baseline_error_pp": 1.8678486642190018,
+      "nowcast_error_pp": 1.8647176935823906,
+      "fresh_state_trends": 28,
+      "stale_states_with_trend": 0
+    },
+    {
+      "threshold_pct": 20,
+      "timestamp": "2026-10-25T19:57:37-03:00",
+      "coverage_pct": 20.05175784379707,
+      "baseline_13_pct": 49.590905609223576,
+      "nowcast_13_pct": 49.579732863968104,
+      "baseline_error_pp": 2.1942772750390303,
+      "nowcast_error_pp": 2.205450020294503,
+      "fresh_state_trends": 28,
+      "stale_states_with_trend": 0
+    },
+    {
+      "threshold_pct": 25,
+      "timestamp": "2026-10-25T20:04:12-03:00",
+      "coverage_pct": 25.19048649168349,
+      "baseline_13_pct": 49.4899577062554,
+      "nowcast_13_pct": 49.48115645387581,
+      "baseline_error_pp": 2.295225178007204,
+      "nowcast_error_pp": 2.3040264303867906,
+      "fresh_state_trends": 28,
+      "stale_states_with_trend": 0
+    },
+    {
+      "threshold_pct": 30,
+      "timestamp": "2026-10-25T20:08:53-03:00",
+      "coverage_pct": 30.24528891452745,
+      "baseline_13_pct": 49.5341166513857,
+      "nowcast_13_pct": 49.52535465432799,
+      "baseline_error_pp": 2.2510662328769024,
+      "nowcast_error_pp": 2.259828229934613,
+      "fresh_state_trends": 27,
+      "stale_states_with_trend": 1
+    },
+    {
+      "threshold_pct": 35,
+      "timestamp": "2026-10-25T20:13:24-03:00",
+      "coverage_pct": 35.084567189052336,
+      "baseline_13_pct": 49.7038589973757,
+      "nowcast_13_pct": 49.746555137730205,
+      "baseline_error_pp": 2.08132388688691,
+      "nowcast_error_pp": 2.038627746532401,
+      "fresh_state_trends": 28,
+      "stale_states_with_trend": 0
+    },
+    {
+      "threshold_pct": 40,
+      "timestamp": "2026-10-25T20:18:24-03:00",
+      "coverage_pct": 40.233310899592986,
+      "baseline_13_pct": 49.79693329462228,
+      "nowcast_13_pct": 49.808395547505455,
+      "baseline_error_pp": 1.9882495896403285,
+      "nowcast_error_pp": 1.9767873367571465,
+      "fresh_state_trends": 28,
+      "stale_states_with_trend": 0
+    },
+    {
+      "threshold_pct": 45,
+      "timestamp": "2026-10-25T20:23:40-03:00",
+      "coverage_pct": 45.39667660160882,
+      "baseline_13_pct": 49.94977146306083,
+      "nowcast_13_pct": 49.940389107308555,
+      "baseline_error_pp": 1.835411421201777,
+      "nowcast_error_pp": 1.8447937769540512,
+      "fresh_state_trends": 28,
+      "stale_states_with_trend": 0
+    },
+    {
+      "threshold_pct": 50,
+      "timestamp": "2026-10-25T20:27:25-03:00",
+      "coverage_pct": 50.124186776912474,
+      "baseline_13_pct": 50.13953212678241,
+      "nowcast_13_pct": 50.138304127166535,
+      "baseline_error_pp": 1.6456507574801882,
+      "nowcast_error_pp": 1.6468787570960708,
+      "fresh_state_trends": 28,
+      "stale_states_with_trend": 0
+    },
+    {
+      "threshold_pct": 55,
+      "timestamp": "2026-10-25T20:31:56-03:00",
+      "coverage_pct": 55.55695766432715,
+      "baseline_13_pct": 50.37440773595483,
+      "nowcast_13_pct": 50.38636807489184,
+      "baseline_error_pp": 1.4107751483077746,
+      "nowcast_error_pp": 1.398814809370763,
+      "fresh_state_trends": 28,
+      "stale_states_with_trend": 0
+    },
+    {
+      "threshold_pct": 60,
+      "timestamp": "2026-10-25T20:36:27-03:00",
+      "coverage_pct": 60.850519180847996,
+      "baseline_13_pct": 50.54594101137041,
+      "nowcast_13_pct": 50.54215800123352,
+      "baseline_error_pp": 1.239241872892194,
+      "nowcast_error_pp": 1.2430248830290869,
+      "fresh_state_trends": 28,
+      "stale_states_with_trend": 0
+    },
+    {
+      "threshold_pct": 65,
+      "timestamp": "2026-10-25T20:40:28-03:00",
+      "coverage_pct": 65.37151876422139,
+      "baseline_13_pct": 50.750550991993705,
+      "nowcast_13_pct": 50.76568944242761,
+      "baseline_error_pp": 1.0346318922689002,
+      "nowcast_error_pp": 1.0194934418349955,
+      "fresh_state_trends": 28,
+      "stale_states_with_trend": 0
+    },
+    {
+      "threshold_pct": 70,
+      "timestamp": "2026-10-25T20:44:58-03:00",
+      "coverage_pct": 70.550908566484,
+      "baseline_13_pct": 50.92419277430319,
+      "nowcast_13_pct": 50.932963420749886,
+      "baseline_error_pp": 0.8609901099594142,
+      "nowcast_error_pp": 0.8522194635127156,
+      "fresh_state_trends": 28,
+      "stale_states_with_trend": 0
+    },
+    {
+      "threshold_pct": 75,
+      "timestamp": "2026-10-25T20:49:16-03:00",
+      "coverage_pct": 75.23555427362754,
+      "baseline_13_pct": 51.089620043534445,
+      "nowcast_13_pct": 51.09519840014223,
+      "baseline_error_pp": 0.6955628407281589,
+      "nowcast_error_pp": 0.6899844841203762,
+      "fresh_state_trends": 28,
+      "stale_states_with_trend": 0
+    },
+    {
+      "threshold_pct": 80,
+      "timestamp": "2026-10-25T20:53:30-03:00",
+      "coverage_pct": 80.01714578726404,
+      "baseline_13_pct": 51.271725425852,
+      "nowcast_13_pct": 51.29231649344289,
+      "baseline_error_pp": 0.5134574584106044,
+      "nowcast_error_pp": 0.49286639081971284,
+      "fresh_state_trends": 28,
+      "stale_states_with_trend": 0
+    },
+    {
+      "threshold_pct": 85,
+      "timestamp": "2026-10-25T20:58:00-03:00",
+      "coverage_pct": 85.24320578149536,
+      "baseline_13_pct": 51.431165940337486,
+      "nowcast_13_pct": 51.43867355294765,
+      "baseline_error_pp": 0.3540169439251173,
+      "nowcast_error_pp": 0.3465093313149592,
+      "fresh_state_trends": 27,
+      "stale_states_with_trend": 1
+    },
+    {
+      "threshold_pct": 90,
+      "timestamp": "2026-10-25T21:02:31-03:00",
+      "coverage_pct": 90.35188924141909,
+      "baseline_13_pct": 51.579895707304914,
+      "nowcast_13_pct": 51.580009662862615,
+      "baseline_error_pp": 0.2052871769576914,
+      "nowcast_error_pp": 0.20517322139999017,
+      "fresh_state_trends": 25,
+      "stale_states_with_trend": 3
+    },
+    {
+      "threshold_pct": 95,
+      "timestamp": "2026-10-25T21:07:32-03:00",
+      "coverage_pct": 95.32677146428227,
+      "baseline_13_pct": 51.720762054660085,
+      "nowcast_13_pct": 51.72359241968149,
+      "baseline_error_pp": 0.06442082960251838,
+      "nowcast_error_pp": 0.061590464581118276,
+      "fresh_state_trends": 24,
+      "stale_states_with_trend": 4
+    },
+    {
+      "threshold_pct": 100,
+      "timestamp": "2026-10-25T23:22:59-03:00",
+      "coverage_pct": 100.0,
+      "baseline_13_pct": 51.7851828842626,
+      "nowcast_13_pct": 51.7851828842626,
+      "baseline_error_pp": 0.0,
+      "nowcast_error_pp": 0.0,
+      "fresh_state_trends": 0,
+      "stale_states_with_trend": 28
+    }
+  ],
+  "baseline_mae_pp": 1.2891482813368371,
+  "nowcast_mae_pp": 1.289286245385875,
+  "nowcast_better_thresholds": 11,
+  "thresholds_evaluated": 19,
+  "limitations": [
+    "Sem dados históricos de 1o turno por UF, não estima composição do eleitorado ainda não apurado.",
+    "Uma única eleição não permite calibrar a probabilidade de 99,9%.",
+    "Comparação em 2026 é retrospectiva; não foi feito treino externo nem validação cruzada.",
+    "Defasagem de UF tratada por limite de 300 s e ponderação por idade; não garante ausência de viés territorial."
+  ]
+}
