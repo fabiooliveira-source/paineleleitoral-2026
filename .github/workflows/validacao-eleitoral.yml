@@ -18,6 +18,14 @@ jobs:
         run: python -m compileall -q validar_modelo.py inferencia_eleitoral.py previsao_territorial.py
       - name: Verificar limite de certificacao da previsao
         run: python gate_certificacao_previsao.py
+      - name: Inventariar snapshots historicos disponiveis
+        run: python inventariar_snapshots_2026.py
+      - name: Preservar inventario de snapshots
+        uses: actions/upload-artifact@v4
+        with:
+          name: inventario-snapshots-2026
+          path: inventario_snapshots_2026.json
+          retention-days: 90
       - name: Testes automatizados
         run: python -m unittest discover -p "test_*.py" -v
   arquivar:
