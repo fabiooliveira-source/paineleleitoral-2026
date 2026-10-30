@@ -1,0 +1,56 @@
+{
+  "model": "audit-v4-paired-ratio",
+  "frozen_at_utc": "2026-10-30T23:57:39.301827+00:00",
+  "protocol_commit": "5e316a9737518429a09b31f4a6fb7ee3a8ef83cd",
+  "external_predictive_test_started": false,
+  "development_elections": [
+    2018,
+    2022
+  ],
+  "external_test": "Sao Paulo municipio71072, segundo turno2020, cargo11, candidatos50/45, estratos zonas",
+  "fitted_parameters": {},
+  "files": [
+    {
+      "path": "experimentos/modelo_999/auditoria_integral/preditor_causal_v4.py",
+      "sha256": "8bc095931517c5971a4e957851b4b8bcdf62352c10435df7a3ab1dd0f25bd1cf"
+    },
+    {
+      "path": "experimentos/modelo_999/auditoria_integral/test_preditor_causal_v4.py",
+      "sha256": "96621f152193cc5e4e1abf3bac159fcffe71d48019850b39b1f8ebf6d86c42d5"
+    }
+  ],
+  "tests_passed": 15,
+  "prediction_requirements": [
+    "Mesmo conjunto de secoes pareado entre turnos",
+    "Ledger completo, simultaneo e conciliado com o nacional/municipal",
+    "Referencia primeiro turno disponivel antes do instante",
+    "Eleitorado total e contado conciliados, com R verdadeiro limite de votos restantes"
+  ],
+  "test_checkpoints_pct": [
+    5,
+    10,
+    15,
+    20,
+    25,
+    30,
+    35,
+    40,
+    45,
+    50,
+    55,
+    60,
+    65,
+    70,
+    75,
+    80,
+    85,
+    90,
+    95
+  ],
+  "external_window": "2020-11-29 e 2020-11-30 horarioBrasilia; manter tardios separados e nunca antecipar horarios",
+  "target_policy": "Votos finais dos dois finalistas apenas no avaliador",
+  "missing_data_policy": "Se secao sem referencia ou sem horario tiver votos, bloquear teste preditivo. Nao inventar pareamento nem horario.",
+  "bounds_policy": "Deterministicos condicionais, nao probabilidades. Chamada exige ausencia de revisao futura das contagens e R verdadeiro.",
+  "data_authenticity_policy": "Reconstrucao retrospectiva nao comprova data de publicacao; nao conceder certificacao integral com essa lacuna.",
+  "failure_policy": "Sem retuning apos resultados2020; publicar resultado, ainda que desfavoravel."
+}
