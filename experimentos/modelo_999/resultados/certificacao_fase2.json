@@ -1,0 +1,35 @@
+{
+  "estado": "CERTIFICACAO_INTEGRAL_NAO_CONCEDIDA",
+  "criterios": {
+    "reprodutibilidade_backtest_2026": true,
+    "melhoria_mae_retrospectiva": true,
+    "robustez_sete_cenarios": true,
+    "ausencia_uso_alvo_futuro": null,
+    "validacao_fora_amostra_eleicoes_independentes": false,
+    "incerteza_calibrada_por_eleicoes_independentes": false,
+    "integridade_criptografica_cadeia_origem": null,
+    "revisao_independente_replicada": false
+  },
+  "n_criterios_atendidos": 3,
+  "n_criterios": 8,
+  "evidencias": {
+    "baseline_mae_pp": 1.2891482813368371,
+    "modelo_mae_pp": 0.827100388060978,
+    "reducao_erro_pct": 35.841330277128314,
+    "pior_stress": "sem_SP_MG_RJ",
+    "pior_stress_mae_pp": 1.1759194326021332
+  },
+  "proximas_acoes": [
+    "Obter snapshots temporais oficiais de eleicoes anteriores comparaveis, com proveniencia e hashes.",
+    "Congelar hiperparametros antes da validacao externa.",
+    "Reexecutar backtest cronologico sem usar informacao posterior ao instante de previsao.",
+    "Avaliar cobertura e calibracao de intervalos de confianca em multiplas eleicoes.",
+    "Auditoria independente de codigo, fonte, autenticidade e reproducao."
+  ],
+  "fontes_institucionais": [
+    "https://dadosabertos.tse.jus.br/dataset/resultados-2026",
+    "https://dadosabertos.tse.jus.br/dataset/resultados-2022",
+    "https://www.tse.jus.br/eleicoes/eleicoes-2026-content/arquivos/divulgacao-de-resultados"
+  ],
+  "nota": "O teste de estresse perturba apenas disponibilidade de UFs; nao simula ordem alternativa real de totalizacao nacional."
+}
