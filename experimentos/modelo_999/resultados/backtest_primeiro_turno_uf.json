@@ -1,0 +1,241 @@
+{
+  "status": "BACKTEST_HISTORICO_UF_EXPERIMENTAL",
+  "first_round_territories": 28,
+  "first_round_valid_votes": 119300788,
+  "first_round_two_candidate_share_13_pct": 48.98850552326951,
+  "final_13_pct": 51.7851828842626,
+  "baseline_mae_pp": 1.2891482813368371,
+  "historical_mae_pp": 0.827100388060978,
+  "improved_checkpoints": 16,
+  "evaluated_checkpoints": 19,
+  "checkpoints": [
+    {
+      "threshold_pct": 5,
+      "timestamp": "2026-10-25T19:29:41-03:00",
+      "coverage_pct": 5.018948498541807,
+      "baseline_error_pp": 0.6274694894202293,
+      "forecast_error_pp": 0.8885763411999981,
+      "forecast_13_pct": 52.673759225462604,
+      "baseline_13_pct": 51.157713394842375,
+      "swing_pp": 3.9775314521914233,
+      "fresh_territories": 26
+    },
+    {
+      "threshold_pct": 10,
+      "timestamp": "2026-10-25T19:39:35-03:00",
+      "coverage_pct": 10.400041662660641,
+      "baseline_error_pp": 1.328910577575959,
+      "forecast_error_pp": 0.09379094504415875,
+      "forecast_13_pct": 51.69139193921845,
+      "baseline_13_pct": 50.45627230668664,
+      "swing_pp": 3.058416655396082,
+      "fresh_territories": 28
+    },
+    {
+      "threshold_pct": 15,
+      "timestamp": "2026-10-25T19:48:11-03:00",
+      "coverage_pct": 15.056244591866166,
+      "baseline_error_pp": 1.8678486642190018,
+      "forecast_error_pp": 0.6591090190634752,
+      "forecast_13_pct": 51.12607386519913,
+      "baseline_13_pct": 49.9173342200436,
+      "swing_pp": 2.563984429254902,
+      "fresh_territories": 28
+    },
+    {
+      "threshold_pct": 20,
+      "timestamp": "2026-10-25T19:57:37-03:00",
+      "coverage_pct": 20.051757843797073,
+      "baseline_error_pp": 2.1942772750390303,
+      "forecast_error_pp": 0.9988786228835811,
+      "forecast_13_pct": 50.78630426137902,
+      "baseline_13_pct": 49.590905609223576,
+      "swing_pp": 2.309783263661984,
+      "fresh_territories": 28
+    },
+    {
+      "threshold_pct": 25,
+      "timestamp": "2026-10-25T20:04:12-03:00",
+      "coverage_pct": 25.190486491683494,
+      "baseline_error_pp": 2.295225178007204,
+      "forecast_error_pp": 1.1571178024806117,
+      "forecast_13_pct": 50.62806508178199,
+      "baseline_13_pct": 49.4899577062554,
+      "swing_pp": 2.2349601126426255,
+      "fresh_territories": 28
+    },
+    {
+      "threshold_pct": 30,
+      "timestamp": "2026-10-25T20:08:53-03:00",
+      "coverage_pct": 30.245288914527453,
+      "baseline_error_pp": 2.2510662328769024,
+      "forecast_error_pp": 1.2623239691274324,
+      "forecast_13_pct": 50.522858915135174,
+      "baseline_13_pct": 49.5341166513857,
+      "swing_pp": 2.1752345205653363,
+      "fresh_territories": 27
+    },
+    {
+      "threshold_pct": 35,
+      "timestamp": "2026-10-25T20:13:24-03:00",
+      "coverage_pct": 35.084567189052336,
+      "baseline_error_pp": 2.08132388688691,
+      "forecast_error_pp": 1.2355532979325123,
+      "forecast_13_pct": 50.54962958633009,
+      "baseline_13_pct": 49.7038589973757,
+      "swing_pp": 2.2304015853989374,
+      "fresh_territories": 28
+    },
+    {
+      "threshold_pct": 40,
+      "timestamp": "2026-10-25T20:18:24-03:00",
+      "coverage_pct": 40.233310899592986,
+      "baseline_error_pp": 1.9882495896403285,
+      "forecast_error_pp": 1.2633111624000382,
+      "forecast_13_pct": 50.52187172186257,
+      "baseline_13_pct": 49.79693329462228,
+      "swing_pp": 2.2335425453564457,
+      "fresh_territories": 28
+    },
+    {
+      "threshold_pct": 45,
+      "timestamp": "2026-10-25T20:23:40-03:00",
+      "coverage_pct": 45.39667660160882,
+      "baseline_error_pp": 1.835411421201777,
+      "forecast_error_pp": 1.2647093222430406,
+      "forecast_13_pct": 50.52047356201956,
+      "baseline_13_pct": 49.94977146306083,
+      "swing_pp": 2.2186117595239403,
+      "fresh_territories": 28
+    },
+    {
+      "threshold_pct": 50,
+      "timestamp": "2026-10-25T20:27:25-03:00",
+      "coverage_pct": 50.124186776912474,
+      "baseline_error_pp": 1.6456507574801882,
+      "forecast_error_pp": 1.2320935632749719,
+      "forecast_13_pct": 50.55308932098763,
+      "baseline_13_pct": 50.13953212678241,
+      "swing_pp": 2.1923679387184016,
+      "fresh_territories": 28
+    },
+    {
+      "threshold_pct": 55,
+      "timestamp": "2026-10-25T20:31:56-03:00",
+      "coverage_pct": 55.55695766432714,
+      "baseline_error_pp": 1.4107751483077746,
+      "forecast_error_pp": 1.1232471512512388,
+      "forecast_13_pct": 50.66193573301136,
+      "baseline_13_pct": 50.37440773595483,
+      "swing_pp": 2.245028114217552,
+      "fresh_territories": 28
+    },
+    {
+      "threshold_pct": 60,
+      "timestamp": "2026-10-25T20:36:27-03:00",
+      "coverage_pct": 60.850519180847996,
+      "baseline_error_pp": 1.239241872892194,
+      "forecast_error_pp": 1.046647538041412,
+      "forecast_13_pct": 50.73853534622119,
+      "baseline_13_pct": 50.54594101137041,
+      "swing_pp": 2.261549062846378,
+      "fresh_territories": 28
+    },
+    {
+      "threshold_pct": 65,
+      "timestamp": "2026-10-25T20:40:28-03:00",
+      "coverage_pct": 65.37151876422139,
+      "baseline_error_pp": 1.0346318922689002,
+      "forecast_error_pp": 0.910175741327135,
+      "forecast_13_pct": 50.875007142935466,
+      "baseline_13_pct": 50.750550991993705,
+      "swing_pp": 2.33361697924058,
+      "fresh_territories": 28
+    },
+    {
+      "threshold_pct": 70,
+      "timestamp": "2026-10-25T20:44:58-03:00",
+      "coverage_pct": 70.550908566484,
+      "baseline_error_pp": 0.8609901099594142,
+      "forecast_error_pp": 0.792530091316912,
+      "forecast_13_pct": 50.99265279294569,
+      "baseline_13_pct": 50.92419277430319,
+      "swing_pp": 2.3803237842031653,
+      "fresh_territories": 28
+    },
+    {
+      "threshold_pct": 75,
+      "timestamp": "2026-10-25T20:49:16-03:00",
+      "coverage_pct": 75.23555427362754,
+      "baseline_error_pp": 0.6955628407281589,
+      "forecast_error_pp": 0.6528846092869078,
+      "forecast_13_pct": 51.132298274975696,
+      "baseline_13_pct": 51.089620043534445,
+      "swing_pp": 2.4856187302567987,
+      "fresh_territories": 28
+    },
+    {
+      "threshold_pct": 80,
+      "timestamp": "2026-10-25T20:53:30-03:00",
+      "coverage_pct": 80.01714578726404,
+      "baseline_error_pp": 0.5134574584106044,
+      "forecast_error_pp": 0.4978910263822356,
+      "forecast_13_pct": 51.28729185788037,
+      "baseline_13_pct": 51.271725425852,
+      "swing_pp": 2.573286342927657,
+      "fresh_territories": 28
+    },
+    {
+      "threshold_pct": 85,
+      "timestamp": "2026-10-25T20:58:00-03:00",
+      "coverage_pct": 85.24320578149536,
+      "baseline_error_pp": 0.3540169439251173,
+      "forecast_error_pp": 0.35159450283226423,
+      "forecast_13_pct": 51.43358838143034,
+      "baseline_13_pct": 51.431165940337486,
+      "swing_pp": 2.671243683267065,
+      "fresh_territories": 27
+    },
+    {
+      "threshold_pct": 90,
+      "timestamp": "2026-10-25T21:02:31-03:00",
+      "coverage_pct": 90.35188924141909,
+      "baseline_error_pp": 0.2052871769576914,
+      "forecast_error_pp": 0.21339503304792506,
+      "forecast_13_pct": 51.57178785121468,
+      "baseline_13_pct": 51.579895707304914,
+      "swing_pp": 2.7195219960117214,
+      "fresh_territories": 25
+    },
+    {
+      "threshold_pct": 95,
+      "timestamp": "2026-10-25T21:07:32-03:00",
+      "coverage_pct": 95.32677146428227,
+      "baseline_error_pp": 0.06442082960251838,
+      "forecast_error_pp": 0.07107763402273148,
+      "forecast_13_pct": 51.714105250239875,
+      "baseline_13_pct": 51.720762054660085,
+      "swing_pp": 2.8019785154001315,
+      "fresh_territories": 24
+    },
+    {
+      "threshold_pct": 100,
+      "timestamp": "2026-10-25T23:22:59-03:00",
+      "coverage_pct": 100.0,
+      "baseline_error_pp": 0.0,
+      "forecast_error_pp": 0.0,
+      "forecast_13_pct": 51.7851828842626,
+      "baseline_13_pct": 51.7851828842626,
+      "swing_pp": 0.0,
+      "fresh_territories": 0
+    }
+  ],
+  "method": "Ponderação UF pelos votos válidos do primeiro turno; swing entre participação observada de cada UF e voto dos dois candidatos no primeiro turno; correção por cobertura nacional de seções.",
+  "limitations": [
+    "A cobertura nacional de seções não equivale à cobertura de votos em cada UF.",
+    "O swing por UF pode sofrer viés de ordem de apuração interna.",
+    "O peso do primeiro turno não prevê mudança de comparecimento.",
+    "Nenhum dado do segundo turno final é usado para projetar; ele é usado apenas na avaliação retrospectiva.",
+    "A base histórica municipal agrega primeiro e segundo turno; o código lê exclusivamente colunas sufixadas _1t."
+  ]
+}
