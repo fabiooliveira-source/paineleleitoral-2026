@@ -4,7 +4,7 @@ Formato por linha: captured_at, source_url, source_sha256, sections_counted,
 sections_total, lula, flavio. Evidência precisa ser obtida externamente e
 auditada; este script valida formato/consistência, não autenticidade da fonte.
 """
-import argparse,datetime as dt,hashlib,json
+import argparse,datetime as dt,json
 from pathlib import Path
 
 FIELDS=('captured_at','source_url','source_sha256','sections_counted','sections_total','lula','flavio')
@@ -31,6 +31,7 @@ def validate(path):
  if not records:raise ValueError('Nenhum snapshot')
  for (a,x),(b,y) in zip(records,records[1:]):
   if b<=a:raise ValueError('Capturas fora de ordem temporal')
+  if y['sections_total']!=x['sections_total']:raise ValueError('Total de seções mudou durante a série')
   if y['sections_counted']<x['sections_counted']:raise ValueError('Seções contabilizadas diminuíram')
   if y['lula']<x['lula'] or y['flavio']<x['flavio']:raise ValueError('Votos acumulados diminuíram')
  return {'snapshots':len(records),'first':records[0][0].isoformat(),'last':records[-1][0].isoformat(),'min_coverage':records[0][1]['sections_counted']/records[0][1]['sections_total'],'max_coverage':records[-1][1]['sections_counted']/records[-1][1]['sections_total'],'format_valid':True,'source_authenticity_verified':False,'historical_forecast_certified':False}
