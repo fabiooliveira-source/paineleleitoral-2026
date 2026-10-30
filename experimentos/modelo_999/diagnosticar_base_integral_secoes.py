@@ -14,4 +14,4 @@ for name in ["secoes-AC.json.gz","candidatos-secao-AC.json"]:
    return str(x)[:120]
   out[name]=shape(obj)
  except Exception as e:out[name]={"error":str(e)}
-dst=p/"backtest"/"schema_secoes_diagnostico.json";dst.write_text(json.dumps(out,ensure_ascii=False,indent=2));print(json.dumps(out,ensure_ascii=False))
+dst=pathlib.Path("experimentos/modelo_999/resultados/schema_secoes_diagnostico.json");dst.parent.mkdir(parents=True,exist_ok=True);dst.write_text(json.dumps(out,ensure_ascii=False,indent=2));print(json.dumps(out,ensure_ascii=False))
