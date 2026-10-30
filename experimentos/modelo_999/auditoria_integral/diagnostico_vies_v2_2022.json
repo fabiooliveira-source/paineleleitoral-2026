@@ -1,0 +1,182 @@
+{
+  "year": 2022,
+  "method": "Com os mesmos pesos e idade da v2: swing bruto = swing contra 1T das secoes ja observadas + diferenca entre preferencia 1T da amostra observada e preferencia 1T da UF inteira.",
+  "paired_vote_reference_missing_sections": 0,
+  "checkpoints": [
+    {
+      "threshold_pct": 5,
+      "raw_swing_pp": -2.6699610093851396,
+      "matched_section_swing_pp": -1.525801283376772,
+      "composition_effect_pp": -1.1441597260083674,
+      "decomposition_residual_pp": 0.0,
+      "predictor_swing_difference_pp": 0.0,
+      "territories_usable": 28
+    },
+    {
+      "threshold_pct": 10,
+      "raw_swing_pp": -2.613868513091426,
+      "matched_section_swing_pp": -1.6670682991566397,
+      "composition_effect_pp": -0.9468002139347864,
+      "decomposition_residual_pp": 1.734723475976807e-16,
+      "predictor_swing_difference_pp": 0.0,
+      "territories_usable": 28
+    },
+    {
+      "threshold_pct": 15,
+      "raw_swing_pp": -2.499229725996735,
+      "matched_section_swing_pp": -1.7004049112703363,
+      "composition_effect_pp": -0.7988248147263985,
+      "decomposition_residual_pp": 0.0,
+      "predictor_swing_difference_pp": 0.0,
+      "territories_usable": 28
+    },
+    {
+      "threshold_pct": 20,
+      "raw_swing_pp": -2.570329798711971,
+      "matched_section_swing_pp": -1.7321391880732566,
+      "composition_effect_pp": -0.8381906106387152,
+      "decomposition_residual_pp": 8.673617379884035e-16,
+      "predictor_swing_difference_pp": 0.0,
+      "territories_usable": 28
+    },
+    {
+      "threshold_pct": 25,
+      "raw_swing_pp": -2.557649588650372,
+      "matched_section_swing_pp": -1.7281074395636298,
+      "composition_effect_pp": -0.8295421490867424,
+      "decomposition_residual_pp": 3.469446951953614e-16,
+      "predictor_swing_difference_pp": 0.0,
+      "territories_usable": 28
+    },
+    {
+      "threshold_pct": 30,
+      "raw_swing_pp": -2.648510951535949,
+      "matched_section_swing_pp": -1.739058818107218,
+      "composition_effect_pp": -0.9094521334287302,
+      "decomposition_residual_pp": -8.673617379884035e-16,
+      "predictor_swing_difference_pp": 0.0,
+      "territories_usable": 28
+    },
+    {
+      "threshold_pct": 35,
+      "raw_swing_pp": -2.665767641069261,
+      "matched_section_swing_pp": -1.7233175721053169,
+      "composition_effect_pp": -0.942450068963945,
+      "decomposition_residual_pp": 8.673617379884035e-16,
+      "predictor_swing_difference_pp": 0.0,
+      "territories_usable": 28
+    },
+    {
+      "threshold_pct": 40,
+      "raw_swing_pp": -2.6601124642021823,
+      "matched_section_swing_pp": -1.7592896411469365,
+      "composition_effect_pp": -0.9008228230552463,
+      "decomposition_residual_pp": 3.469446951953614e-16,
+      "predictor_swing_difference_pp": 0.0,
+      "territories_usable": 28
+    },
+    {
+      "threshold_pct": 45,
+      "raw_swing_pp": -2.6192857204947093,
+      "matched_section_swing_pp": -1.721190745135644,
+      "composition_effect_pp": -0.8980949753590663,
+      "decomposition_residual_pp": 1.0408340855860843e-15,
+      "predictor_swing_difference_pp": 0.0,
+      "territories_usable": 28
+    },
+    {
+      "threshold_pct": 50,
+      "raw_swing_pp": -2.5764880859810138,
+      "matched_section_swing_pp": -1.731367041371714,
+      "composition_effect_pp": -0.8451210446093,
+      "decomposition_residual_pp": 3.469446951953614e-16,
+      "predictor_swing_difference_pp": 0.0,
+      "territories_usable": 28
+    },
+    {
+      "threshold_pct": 55,
+      "raw_swing_pp": -2.5211937491949357,
+      "matched_section_swing_pp": -1.7257648452017789,
+      "composition_effect_pp": -0.7954289039931571,
+      "decomposition_residual_pp": 3.469446951953614e-16,
+      "predictor_swing_difference_pp": 0.0,
+      "territories_usable": 28
+    },
+    {
+      "threshold_pct": 60,
+      "raw_swing_pp": -2.470166794105022,
+      "matched_section_swing_pp": -1.7277511232981533,
+      "composition_effect_pp": -0.7424156708068692,
+      "decomposition_residual_pp": 3.469446951953614e-16,
+      "predictor_swing_difference_pp": 0.0,
+      "territories_usable": 28
+    },
+    {
+      "threshold_pct": 65,
+      "raw_swing_pp": -2.4179195954395185,
+      "matched_section_swing_pp": -1.7310086591100675,
+      "composition_effect_pp": -0.6869109363294504,
+      "decomposition_residual_pp": -6.071532165918825e-16,
+      "predictor_swing_difference_pp": 0.0,
+      "territories_usable": 28
+    },
+    {
+      "threshold_pct": 70,
+      "raw_swing_pp": -2.361673364048008,
+      "matched_section_swing_pp": -1.7268195324094637,
+      "composition_effect_pp": -0.6348538316385446,
+      "decomposition_residual_pp": 3.469446951953614e-16,
+      "predictor_swing_difference_pp": 0.0,
+      "territories_usable": 28
+    },
+    {
+      "threshold_pct": 75,
+      "raw_swing_pp": -2.2667297265605355,
+      "matched_section_swing_pp": -1.7298555254589836,
+      "composition_effect_pp": -0.5368742011015522,
+      "decomposition_residual_pp": 8.673617379884035e-17,
+      "predictor_swing_difference_pp": 0.0,
+      "territories_usable": 28
+    },
+    {
+      "threshold_pct": 80,
+      "raw_swing_pp": -2.157118624563761,
+      "matched_section_swing_pp": -1.7321495214404397,
+      "composition_effect_pp": -0.4249691031233212,
+      "decomposition_residual_pp": 1.734723475976807e-16,
+      "predictor_swing_difference_pp": 0.0,
+      "territories_usable": 28
+    },
+    {
+      "threshold_pct": 85,
+      "raw_swing_pp": -2.080396425533967,
+      "matched_section_swing_pp": -1.7435064893984515,
+      "composition_effect_pp": -0.336889936135515,
+      "decomposition_residual_pp": -5.637851296924623e-16,
+      "predictor_swing_difference_pp": 0.0,
+      "territories_usable": 28
+    },
+    {
+      "threshold_pct": 90,
+      "raw_swing_pp": -2.0159340326382864,
+      "matched_section_swing_pp": -1.7544148966591808,
+      "composition_effect_pp": -0.2615191359791056,
+      "decomposition_residual_pp": 1.734723475976807e-16,
+      "predictor_swing_difference_pp": 0.0,
+      "territories_usable": 25
+    },
+    {
+      "threshold_pct": 95,
+      "raw_swing_pp": -1.9094555689442603,
+      "matched_section_swing_pp": -1.7585500586718612,
+      "composition_effect_pp": -0.15090551027239918,
+      "decomposition_residual_pp": 6.505213034913027e-17,
+      "predictor_swing_difference_pp": 0.0,
+      "territories_usable": 25
+    }
+  ],
+  "mean_composition_effect_pp": -0.7170645152205901,
+  "composition_effect_negative_checkpoints": 19,
+  "max_decomposition_residual_pp": 1.0408340855860843e-15,
+  "interpretation": "Composicao intra-UF contamina o swing agregado. A decomposicao nao prova causalidade individual de voto, nem torna o swing pareado uma estimativa sem vies para secoes restantes."
+}
