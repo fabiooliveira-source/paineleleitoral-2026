@@ -1,0 +1,22 @@
+name: Importar pesquisas TSE 2026
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  download:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - name: Download e validação
+        run: python3 dados/2026/baixar_pesquisas_tse_2026.py
+      - name: Publicar arquivos como artefatos (não incluir ZIPs no Git)
+        uses: actions/upload-artifact@v4
+        with:
+          name: pesquisas-tse-2026
+          path: |
+            dados/2026/pesquisas_originais/*.zip
+            dados/2026/pesquisas_originais/manifesto_download.json
+          retention-days: 30
+          if-no-files-found: error
