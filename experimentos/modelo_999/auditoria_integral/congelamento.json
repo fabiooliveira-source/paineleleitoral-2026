@@ -1,0 +1,13 @@
+{
+  "frozen_at_utc": "2026-10-30T22:11:05.261227+00:00",
+  "base_commit": "4d321c90d425a4f8808e69bf6ff05c895cd338c5",
+  "predictor_sha256": "422c6020e9ef66aaab090c5fbbd1cf99aa0cbc9ee999f96865fe40a462beda07",
+  "parameters": {
+    "max_age_seconds": 300,
+    "age_decay_seconds": 600
+  },
+  "external_tests_started": false,
+  "policy": "Sem ajuste por resultados externos; qualquer alteracao invalida este congelamento. 2026 ja conhecido e desenvolvimento. 2022 nao e holdout totalmente cego pois sua historia e publica.",
+  "coverage_policy": "Entrada contemporanea explicita. Nao extrair total de secoes do ultimo snapshot.",
+  "external_scope": "Se apenas BR disponivel, executar modo degradado sem UF e nao certificar modelo territorial completo."
+}
