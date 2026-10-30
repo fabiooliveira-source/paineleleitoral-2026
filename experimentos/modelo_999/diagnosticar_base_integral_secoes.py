@@ -13,5 +13,9 @@ for name in ["secoes-AC.json.gz","candidatos-secao-AC.json"]:
    if isinstance(x,list):return {"type":"list","length":len(x),"first":shape(x[0]) if x else None}
    return str(x)[:120]
   out[name]=shape(obj)
+  if isinstance(obj,dict):
+   for k,v in obj.items():
+    if k in ("colunas","numeros","nomes"):out[name][k]=v
+    elif k=="linhas":out[name]["sample_rows"]=v[:2] if isinstance(v,list) else str(v)[:1000]
  except Exception as e:out[name]={"error":str(e)}
 dst=pathlib.Path("experimentos/modelo_999/resultados/schema_secoes_diagnostico.json");dst.parent.mkdir(parents=True,exist_ok=True);dst.write_text(json.dumps(out,ensure_ascii=False,indent=2));print(json.dumps(out,ensure_ascii=False))
