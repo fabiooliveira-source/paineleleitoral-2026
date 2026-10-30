@@ -1,0 +1,11 @@
+{
+  "current_first_round_detail": {
+    "QT_VOTOS_NOMINAIS": 107050749,
+    "QT_VOTOS_ANULADOS_APU_SEP": 746
+  },
+  "current_first_round_vote_table_nominal_sum": 107050749,
+  "nominal_match_between_current_sources": true,
+  "2018_news_original_first_round_valid": 107050673,
+  "difference_current_nominals_vs_news_original_valid": 76,
+  "note": "Conceitos e versoes nao necessariamente iguais. Diferenca registrada, sem modificar referencias depois do teste. A versao 1T disponivel antes do 2T nao esta autenticada."
+}
