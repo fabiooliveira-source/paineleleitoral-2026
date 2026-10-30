@@ -10,7 +10,7 @@ class SnapshotValidationTests(unittest.TestCase):
  def check(self,rows):
   with tempfile.TemporaryDirectory() as d:
    p=Path(d)/'snapshots.jsonl'
-   p.write_text('\\n'.join(json.dumps(x) for x in rows),encoding='utf-8')
+   p.write_text('\n'.join(json.dumps(x) for x in rows),encoding='utf-8')
    return validate(p)
  def test_valid_sequence_not_certified(self):
   r=self.check([record(),record('2026-10-25T20:05:00-03:00',10,100,1100,900)])
