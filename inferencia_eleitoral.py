@@ -74,10 +74,10 @@ def load_existing(path,candidate_dir):
         cand='cand_'+numero
         if cand in candidates:
             confer=canonical(d[KEY+[col]]).merge(candidates[KEY+[cand]],on=KEY,how='left',validate='one_to_one')
-            if confer[cand].isna().any():
-                raise ValueError('Pacote nominal incompleto para candidato '+numero)
+            # Listas nominais esparsas omitem candidatos com zero votos.
+            # Uma seção ausente do pacote completo é detectada no join posterior.
             a=pd.to_numeric(confer[col],errors='raise')
-            b=pd.to_numeric(confer[cand],errors='raise')
+            b=pd.to_numeric(confer[cand],errors='raise').fillna(0)
             if not a.eq(b).all():
                 raise ValueError('Votos do candidato '+numero+' divergem entre bases: impedir dupla contagem')
             candidates=candidates.drop(columns=[cand])
