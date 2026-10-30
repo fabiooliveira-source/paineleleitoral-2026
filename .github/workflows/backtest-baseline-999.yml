@@ -18,6 +18,7 @@ on:
       - 'experimentos/modelo_999/reconciliar_hierarquia_secoes.py'
       - 'experimentos/modelo_999/diagnosticar_base_integral_secoes.py'
       - 'experimentos/modelo_999/auditar_integracao_candidatos.py'
+      - 'experimentos/modelo_999/diagnosticar_perdas_finalistas.py'
   workflow_dispatch:
 permissions:
   contents: write
@@ -54,6 +55,8 @@ jobs:
         run: python3 experimentos/modelo_999/diagnosticar_base_integral_secoes.py
       - name: Auditar integracao nacional de candidatos por secao
         run: python3 experimentos/modelo_999/auditar_integracao_candidatos.py
+      - name: Diagnosticar perdas dos finalistas por urna
+        run: python3 experimentos/modelo_999/diagnosticar_perdas_finalistas.py
       - name: Publicar resultados como artefato independente do push
         uses: actions/upload-artifact@v4
         with:
