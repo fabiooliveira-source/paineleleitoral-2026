@@ -1,0 +1,194 @@
+{
+  "status": "BACKTEST_RESTANTES_UF_EXPERIMENTAL",
+  "baseline_mae_pp": 1.2891482813368371,
+  "remaining_uf_mae_pp": 0.608655291836122,
+  "improved_checkpoints": 15,
+  "checkpoints": [
+    {
+      "threshold_pct": 5,
+      "coverage_pct": 5.018948498541807,
+      "baseline_error_pp": 0.6274694894202293,
+      "forecast_error_pp": 0.9670342277648625,
+      "prediction_13_pct": 52.752217112027466,
+      "remaining_fraction": 0.9473546390386056,
+      "swing_pp": 3.9775314521914233
+    },
+    {
+      "threshold_pct": 10,
+      "coverage_pct": 10.400041662660641,
+      "baseline_error_pp": 1.328910577575959,
+      "forecast_error_pp": 0.06064442876941856,
+      "prediction_13_pct": 51.845827313032025,
+      "remaining_fraction": 0.8911289273410259,
+      "swing_pp": 3.058416655396082
+    },
+    {
+      "threshold_pct": 15,
+      "coverage_pct": 15.056244591866166,
+      "baseline_error_pp": 1.8678486642190018,
+      "forecast_error_pp": 0.45584985416444734,
+      "prediction_13_pct": 51.329333030098155,
+      "remaining_fraction": 0.8428417772488329,
+      "swing_pp": 2.563984429254902
+    },
+    {
+      "threshold_pct": 20,
+      "coverage_pct": 20.051757843797073,
+      "baseline_error_pp": 2.1942772750390303,
+      "forecast_error_pp": 0.7032830059548134,
+      "prediction_13_pct": 51.08189987830779,
+      "remaining_fraction": 0.7924890801988929,
+      "swing_pp": 2.309783263661984
+    },
+    {
+      "threshold_pct": 25,
+      "coverage_pct": 25.190486491683494,
+      "baseline_error_pp": 2.295225178007204,
+      "forecast_error_pp": 0.781145075218137,
+      "prediction_13_pct": 51.00403780904447,
+      "remaining_fraction": 0.7394989681911946,
+      "swing_pp": 2.2349601126426255
+    },
+    {
+      "threshold_pct": 30,
+      "coverage_pct": 30.245288914527453,
+      "baseline_error_pp": 2.2510662328769024,
+      "forecast_error_pp": 0.8224652139709243,
+      "prediction_13_pct": 50.96271767029168,
+      "remaining_fraction": 0.6897017725279653,
+      "swing_pp": 2.1752345205653363
+    },
+    {
+      "threshold_pct": 35,
+      "coverage_pct": 35.084567189052336,
+      "baseline_error_pp": 2.08132388688691,
+      "forecast_error_pp": 0.7831508845405621,
+      "prediction_13_pct": 51.00203199972204,
+      "remaining_fraction": 0.6406346885440187,
+      "swing_pp": 2.2304015853989374
+    },
+    {
+      "threshold_pct": 40,
+      "coverage_pct": 40.233310899592986,
+      "baseline_error_pp": 1.9882495896403285,
+      "forecast_error_pp": 0.782446259075964,
+      "prediction_13_pct": 51.00273662518664,
+      "remaining_fraction": 0.5865924904518043,
+      "swing_pp": 2.2335425453564457
+    },
+    {
+      "threshold_pct": 45,
+      "coverage_pct": 45.39667660160882,
+      "baseline_error_pp": 1.835411421201777,
+      "forecast_error_pp": 0.7724011955238308,
+      "prediction_13_pct": 51.01278168873877,
+      "remaining_fraction": 0.5320956009152993,
+      "swing_pp": 2.2186117595239403
+    },
+    {
+      "threshold_pct": 50,
+      "coverage_pct": 50.124186776912474,
+      "baseline_error_pp": 1.6456507574801882,
+      "forecast_error_pp": 0.7914563013164178,
+      "prediction_13_pct": 50.99372658294619,
+      "remaining_fraction": 0.4856669942957068,
+      "swing_pp": 2.1923679387184016
+    },
+    {
+      "threshold_pct": 55,
+      "coverage_pct": 55.55695766432714,
+      "baseline_error_pp": 1.4107751483077746,
+      "forecast_error_pp": 0.7669131524214223,
+      "prediction_13_pct": 51.01826973184118,
+      "remaining_fraction": 0.43038943924726175,
+      "swing_pp": 2.245028114217552
+    },
+    {
+      "threshold_pct": 60,
+      "coverage_pct": 60.850519180847996,
+      "baseline_error_pp": 1.239241872892194,
+      "forecast_error_pp": 0.729744739287197,
+      "prediction_13_pct": 51.055438144975405,
+      "remaining_fraction": 0.37635318792009004,
+      "swing_pp": 2.261549062846378
+    },
+    {
+      "threshold_pct": 65,
+      "coverage_pct": 65.37151876422139,
+      "baseline_error_pp": 1.0346318922689002,
+      "forecast_error_pp": 0.6652585042191683,
+      "prediction_13_pct": 51.119924380043436,
+      "remaining_fraction": 0.32924538063730113,
+      "swing_pp": 2.33361697924058
+    },
+    {
+      "threshold_pct": 70,
+      "coverage_pct": 70.550908566484,
+      "baseline_error_pp": 0.8609901099594142,
+      "forecast_error_pp": 0.6474232095597166,
+      "prediction_13_pct": 51.137759674702885,
+      "remaining_fraction": 0.2767222775533751,
+      "swing_pp": 2.3803237842031653
+    },
+    {
+      "threshold_pct": 75,
+      "coverage_pct": 75.23555427362754,
+      "baseline_error_pp": 0.6955628407281589,
+      "forecast_error_pp": 0.5442143341573669,
+      "prediction_13_pct": 51.24096855010524,
+      "remaining_fraction": 0.22294898410491676,
+      "swing_pp": 2.4856187302567987
+    },
+    {
+      "threshold_pct": 80,
+      "coverage_pct": 80.01714578726404,
+      "baseline_error_pp": 0.5134574584106044,
+      "forecast_error_pp": 0.450408151491144,
+      "prediction_13_pct": 51.33477473277146,
+      "remaining_fraction": 0.17610810017444695,
+      "swing_pp": 2.573286342927657
+    },
+    {
+      "threshold_pct": 85,
+      "coverage_pct": 85.24320578149536,
+      "baseline_error_pp": 0.3540169439251173,
+      "forecast_error_pp": 0.35751961115662034,
+      "prediction_13_pct": 51.427663273105985,
+      "remaining_fraction": 0.12531489523094294,
+      "swing_pp": 2.671243683267065
+    },
+    {
+      "threshold_pct": 90,
+      "coverage_pct": 90.35188924141909,
+      "baseline_error_pp": 0.2052871769576914,
+      "forecast_error_pp": 0.2909680265551051,
+      "prediction_13_pct": 51.4942148577075,
+      "remaining_fraction": 0.07878281913481529,
+      "swing_pp": 2.7195219960117214
+    },
+    {
+      "threshold_pct": 95,
+      "coverage_pct": 95.32677146428227,
+      "baseline_error_pp": 0.06442082960251838,
+      "forecast_error_pp": 0.19212436973919944,
+      "prediction_13_pct": 51.593058514523406,
+      "remaining_fraction": 0.02788240850046973,
+      "swing_pp": 2.8019785154001315
+    },
+    {
+      "threshold_pct": 100,
+      "coverage_pct": 100.0,
+      "baseline_error_pp": 0.0,
+      "forecast_error_pp": 0.026508057182039746,
+      "prediction_13_pct": 51.75867482708056,
+      "remaining_fraction": 0.007658311913757548,
+      "swing_pp": 0
+    }
+  ],
+  "caveats": [
+    "Pesos são votos válidos de 1T, não eleitorado de 2T.",
+    "UF assíncronas podem gerar soma de votos contados incompatível com BR.",
+    "Total esperado de votos é hipótese histórica e não estimativa calibrada.",
+    "Comparação em um pleito não certifica precisão futura."
+  ]
+}
