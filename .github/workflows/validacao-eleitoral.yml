@@ -107,6 +107,18 @@ jobs:
           name: auditoria-munzona-2026
           path: resultados_agregados/comparacao_munzona_2026.json
           retention-days: 90
+      - name: Comparar municipios entre publicacoes 28 e 29 de outubro
+        if: matrix.arquivo == 'votacao_candidato_munzona_2026.zip'
+        env:
+          ZIP_NAME: ${{ matrix.arquivo }}
+        run: python comparar_publicacoes_municipais_2026.py "originais_tse/$ZIP_NAME"
+      - name: Arquivar diferencas municipais entre versoes
+        if: matrix.arquivo == 'votacao_candidato_munzona_2026.zip'
+        uses: actions/upload-artifact@v4
+        with:
+          name: divergencias-28out-vs-29out
+          path: resultados_comparacao/
+          retention-days: 90
       - name: Arquivar ZIP verificado no GitHub Actions
         uses: actions/upload-artifact@v4
         with:
