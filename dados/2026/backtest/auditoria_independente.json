@@ -1,0 +1,67 @@
+{
+  "status": "PASSOU_AUDITORIA_DE_INTEGRIDADE",
+  "files_verified": 36,
+  "extracted_files_verified": 42,
+  "csv": {
+    "observacoes_nacional_uf.csv": {
+      "rows": 4892,
+      "columns": [
+        "timestamp",
+        "scope",
+        "uf",
+        "municipio_tse",
+        "secoes_contabilizadas",
+        "eleitores_secoes_contabilizadas",
+        "comparecimento",
+        "brancos",
+        "nulos",
+        "votos_13",
+        "votos_22"
+      ],
+      "empty_cells": {
+        "uf": 359,
+        "municipio_tse": 4892
+      }
+    },
+    "observacoes_municipais.csv": {
+      "rows": 47139,
+      "columns": [
+        "timestamp",
+        "scope",
+        "uf",
+        "municipio_tse",
+        "secoes_contabilizadas",
+        "eleitores_secoes_contabilizadas",
+        "comparecimento",
+        "brancos",
+        "nulos",
+        "votos_13",
+        "votos_22"
+      ],
+      "empty_cells": {}
+    }
+  },
+  "national_final": [
+    499248,
+    158745502,
+    128236074,
+    1430496,
+    2723305,
+    64256232,
+    59826041
+  ],
+  "uf_sum_minus_national": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "limits": [
+    "Hashes confirmam consistencia com manifesto do acervo, nao autenticidade independente do TSE.",
+    "Backtest preditivo temporal ainda nao executado.",
+    "Necessario avaliar vazamento temporal, granularidade, cobertura e erros de previsao."
+  ]
+}
