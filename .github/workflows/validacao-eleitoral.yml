@@ -26,6 +26,14 @@ jobs:
           name: inventario-snapshots-2026
           path: inventario_snapshots_2026.json
           retention-days: 90
+      - name: Decodificar pacote historico compactado
+        run: python inspecionar_pacote_historico.py
+      - name: Arquivar inspecao do pacote historico
+        uses: actions/upload-artifact@v4
+        with:
+          name: inspecao-pacote-historico
+          path: inspecao_pacote_historico.json
+          retention-days: 90
       - name: Testes automatizados
         run: python -m unittest discover -p "test_*.py" -v
   arquivar:
