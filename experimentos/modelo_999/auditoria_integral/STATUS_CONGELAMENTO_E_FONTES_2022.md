@@ -1,3 +1,13 @@
+# Atualização: bloqueio contornado para reconstrução territorial
+
+Foi executado um backtest territorial reconstruído de 2022. A curva resultante coincide exatamente com os 5.286 registros nacionais oficiais em votos dos dois candidatos, brancos, nulos e seções.
+
+Leia o [relatório atualizado](STATUS_RECONSTRUCAO_TERRITORIAL_2022.md), que detalha os sete cenários e as limitações. A base é uma reconstrução por primeira totalização, não captura dos snapshots estaduais originais. Certificação integral continua não concedida.
+
+---
+
+## Registro anterior da investigação (preservado)
+
 # Preditor identificado e busca temporal UF — 2022
 
 ## Resultado
