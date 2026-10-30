@@ -18,7 +18,7 @@ def validar(previsoes, observados):
         if df['id'].isna().any() or df['id'].duplicated().any():
             raise ValueError(f'{name}: IDs nulos ou repetidos')
     d=previsoes.merge(observados,on='id',validate='one_to_one',indicator=True)
-    if not d['_merge'].eq('both').all() or len(d)!=len(observados):
+    if not d['_merge'].eq('both').all() or len(d)!=len(observados) or len(d)!=len(previsoes):
         raise ValueError('Previsões e observados não possuem correspondência completa')
     for c in ['probabilidade','estimativa','resultado','valor_final']:
         d[c]=pd.to_numeric(d[c],errors='raise')
