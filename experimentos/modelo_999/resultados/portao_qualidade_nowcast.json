@@ -1,0 +1,22 @@
+{
+  "estado": "AVALIADO",
+  "aprovado_para_substituir_baseline": false,
+  "n_snapshots": 19,
+  "mae_baseline_pp": 1.2891482813368371,
+  "mae_nowcast_pp": 1.289286245385875,
+  "degradacao_mae_pp": 0.00013796404903798631,
+  "snapshots_melhores": 11,
+  "snapshots_piores": 8,
+  "maior_degradacao_pp": 0.08021459422322685,
+  "maior_melhoria_pp": 0.04269614035450875,
+  "primeiros_25_pct": {
+    "mae_baseline_pp": 1.662746236852285,
+    "mae_nowcast_pp": 1.6839692650147253
+  },
+  "criterio": "MAE estritamente inferior ao baseline nos 19 thresholds 5..95, parametros predefinidos",
+  "ressalvas": [
+    "Uma eleicao apenas; thresholds correlacionados, nao amostra independente.",
+    "Sem probabilidades calibradas e sem validacao fora da amostra.",
+    "Alvo final utilizado apenas na avaliacao retrospectiva."
+  ]
+}
