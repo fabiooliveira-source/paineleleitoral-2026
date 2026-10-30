@@ -1,0 +1,186 @@
+[
+  {
+    "name": "Historico_Totalizacao_Presidente_BR_1T_2022.zip",
+    "source_url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2022/Historico_Totalizacao_Presidente_BR_1T_2022.zip",
+    "bytes": 1625754,
+    "sha256": "55961aa1ecc87d0fd9c02730864f1b69a9f2eb3456327542dfc507217cd74a05",
+    "zip_crc_ok": true,
+    "members": [
+      {
+        "name": "Historico_Totalizacao_Presidente_BR_1T_2022.csv",
+        "bytes": 13804548
+      },
+      {
+        "name": "leiame.pdf",
+        "bytes": 407908
+      }
+    ],
+    "checked_at_utc": "2026-10-30T23:34:05.133194+00:00"
+  },
+  {
+    "name": "detalhe_votacao_secao_2022.zip",
+    "source_url": "https://cdn.tse.jus.br/estatistica/sead/odsele/detalhe_votacao_secao/detalhe_votacao_secao_2022.zip",
+    "bytes": 243822213,
+    "sha256": "ad22c50b9e6d9dfb096a2170680a190f1734895ba89d8977b95fd63ca02c03da",
+    "zip_crc_ok": true,
+    "members": [
+      {
+        "name": "detalhe_votacao_secao_2022_MT.csv",
+        "bytes": 11254880
+      },
+      {
+        "name": "detalhe_votacao_secao_2022_AC.csv",
+        "bytes": 3001759
+      },
+      {
+        "name": "detalhe_votacao_secao_2022_BRASIL.csv",
+        "bytes": 1102460791
+      },
+      {
+        "name": "detalhe_votacao_secao_2022_MS.csv",
+        "bytes": 12579622
+      },
+      {
+        "name": "detalhe_votacao_secao_2022_AP.csv",
+        "bytes": 2476701
+      },
+      {
+        "name": "detalhe_votacao_secao_2022_AL.csv",
+        "bytes": 12017919
+      },
+      {
+        "name": "detalhe_votacao_secao_2022_AM.csv",
+        "bytes": 13146667
+      },
+      {
+        "name": "detalhe_votacao_secao_2022_ES.csv",
+        "bytes": 16439407
+      },
+      {
+        "name": "detalhe_votacao_secao_2022_DF.csv",
+        "bytes": 9725118
+      },
+      {
+        "name": "detalhe_votacao_secao_2022_CE.csv",
+        "bytes": 31948827
+      },
+      {
+        "name": "detalhe_votacao_secao_2022_MA.csv",
+        "bytes": 23339259
+      },
+      {
+        "name": "detalhe_votacao_secao_2022_GO.csv",
+        "bytes": 21140660
+      },
+      {
+        "name": "detalhe_votacao_secao_2022_BA.csv",
+        "bytes": 63454123
+      },
+      {
+        "name": "detalhe_votacao_secao_2022_MG.csv",
+        "bytes": 73243035
+      },
+      {
+        "name": "detalhe_votacao_secao_2022_BR.csv",
+        "bytes": 330747068
+      },
+      {
+        "name": "detalhe_votacao_secao_2022_SC.csv",
+        "bytes": 30341216
+      },
+      {
+        "name": "detalhe_votacao_secao_2022_PA.csv",
+        "bytes": 25291253
+      },
+      {
+        "name": "detalhe_votacao_secao_2022_PB.csv",
+        "bytes": 17531649
+      },
+      {
+        "name": "detalhe_votacao_secao_2022_PI.csv",
+        "bytes": 12809586
+      },
+      {
+        "name": "detalhe_votacao_secao_2022_RO.csv",
+        "bytes": 7609388
+      },
+      {
+        "name": "detalhe_votacao_secao_2022_RN.csv",
+        "bytes": 11508926
+      },
+      {
+        "name": "detalhe_votacao_secao_2022_PR.csv",
+        "bytes": 37590964
+      },
+      {
+        "name": "detalhe_votacao_secao_2022_SE.csv",
+        "bytes": 9918368
+      },
+      {
+        "name": "detalhe_votacao_secao_2022_PE.csv",
+        "bytes": 37322511
+      },
+      {
+        "name": "detalhe_votacao_secao_2022_RJ.csv",
+        "bytes": 50148282
+      },
+      {
+        "name": "detalhe_votacao_secao_2022_RR.csv",
+        "bytes": 2353624
+      },
+      {
+        "name": "detalhe_votacao_secao_2022_TO.csv",
+        "bytes": 5762670
+      },
+      {
+        "name": "detalhe_votacao_secao_2022_SP.csv",
+        "bytes": 179888807
+      },
+      {
+        "name": "detalhe_votacao_secao_2022_RS.csv",
+        "bytes": 49884864
+      },
+      {
+        "name": "leiame.pdf",
+        "bytes": 123650
+      }
+    ],
+    "checked_at_utc": "2026-10-30T23:34:10.869088+00:00"
+  },
+  {
+    "name": "votacao_secao_2022_BR.zip",
+    "source_url": "https://cdn.tse.jus.br/estatistica/sead/odsele/votacao_secao/votacao_secao_2022_BR.zip",
+    "bytes": 271292455,
+    "sha256": "9353993de5cf03778aef44e01d4925e7ee105f5262491d344a2f0dbc956b0139",
+    "zip_crc_ok": true,
+    "members": [
+      {
+        "name": "votacao_secao_2022_BR.csv",
+        "bytes": 1591148802
+      },
+      {
+        "name": "leiame.pdf",
+        "bytes": 192420
+      }
+    ],
+    "checked_at_utc": "2026-10-30T23:34:10.402805+00:00"
+  },
+  {
+    "name": "Historico_Totalizacao_Presidente_BR_2T_2022.zip",
+    "source_url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2022/Historico_Totalizacao_Presidente_BR_2T_2022.zip",
+    "bytes": 825276,
+    "sha256": "1f12128fbcfacab755e0e83d9c0a350ed99ae68ea3d024aaa7bc58fe0c1dda3c",
+    "zip_crc_ok": true,
+    "members": [
+      {
+        "name": "Historico_Totalizacao_Presidente_BR_2T_2022.csv",
+        "bytes": 3700882
+      },
+      {
+        "name": "leiame.pdf",
+        "bytes": 396139
+      }
+    ],
+    "checked_at_utc": "2026-10-30T23:34:05.148989+00:00"
+  }
+]
