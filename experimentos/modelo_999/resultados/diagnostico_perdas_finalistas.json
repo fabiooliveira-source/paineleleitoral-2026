@@ -1,0 +1,1527 @@
+{
+  "status": "DIAGNOSTICO_LIMITES_PERDAS",
+  "scope": "Seções com aptos idênticos, ambos turnos conferidos",
+  "total": {
+    "lula": {
+      "sections_with_net_loss": 8962,
+      "net_losses_in_those_sections": 54623,
+      "flavio_min": 24,
+      "flavio_max": 431271,
+      "branco_min": 0,
+      "branco_max": 9873,
+      "nulo_min": 0,
+      "nulo_max": 31304,
+      "abstencao_min": 2265,
+      "abstencao_max": 549693
+    },
+    "flavio": {
+      "sections_with_net_loss": 75490,
+      "net_losses_in_those_sections": 350910,
+      "lula_min": 20,
+      "lula_max": 5657849,
+      "branco_min": 0,
+      "branco_max": 166939,
+      "nulo_min": 0,
+      "nulo_max": 359080,
+      "abstencao_min": 665,
+      "abstencao_max": 4094837
+    }
+  },
+  "by_uf": {
+    "AC": {
+      "lula": {
+        "sections_with_net_loss": 504,
+        "net_losses_in_those_sections": 3638,
+        "flavio_min": 0,
+        "flavio_max": 28388,
+        "branco_min": 0,
+        "branco_max": 766,
+        "nulo_min": 0,
+        "nulo_max": 3879,
+        "abstencao_min": 48,
+        "abstencao_max": 29544
+      },
+      "flavio": {
+        "sections_with_net_loss": 1331,
+        "net_losses_in_those_sections": 15828,
+        "lula_min": 0,
+        "lula_max": 78687,
+        "branco_min": 0,
+        "branco_max": 2667,
+        "nulo_min": 0,
+        "nulo_max": 10069,
+        "abstencao_min": 300,
+        "abstencao_max": 96761
+      }
+    },
+    "AL": {
+      "lula": {
+        "sections_with_net_loss": 87,
+        "net_losses_in_those_sections": 673,
+        "flavio_min": 0,
+        "flavio_max": 6876,
+        "branco_min": 0,
+        "branco_max": 122,
+        "nulo_min": 0,
+        "nulo_max": 327,
+        "abstencao_min": 0,
+        "abstencao_max": 7286
+      },
+      "flavio": {
+        "sections_with_net_loss": 2797,
+        "net_losses_in_those_sections": 14704,
+        "lula_min": 3,
+        "lula_max": 246913,
+        "branco_min": 0,
+        "branco_max": 6070,
+        "nulo_min": 0,
+        "nulo_max": 13819,
+        "abstencao_min": 0,
+        "abstencao_max": 180867
+      }
+    },
+    "AM": {
+      "lula": {
+        "sections_with_net_loss": 1200,
+        "net_losses_in_those_sections": 10135,
+        "flavio_min": 0,
+        "flavio_max": 65950,
+        "branco_min": 0,
+        "branco_max": 1223,
+        "nulo_min": 0,
+        "nulo_max": 7010,
+        "abstencao_min": 543,
+        "abstencao_max": 103304
+      },
+      "flavio": {
+        "sections_with_net_loss": 3519,
+        "net_losses_in_those_sections": 23896,
+        "lula_min": 5,
+        "lula_max": 318693,
+        "branco_min": 0,
+        "branco_max": 6354,
+        "nulo_min": 0,
+        "nulo_max": 21989,
+        "abstencao_min": 0,
+        "abstencao_max": 240465
+      }
+    },
+    "AP": {
+      "lula": {
+        "sections_with_net_loss": 479,
+        "net_losses_in_those_sections": 5798,
+        "flavio_min": 0,
+        "flavio_max": 31158,
+        "branco_min": 0,
+        "branco_max": 477,
+        "nulo_min": 0,
+        "nulo_max": 785,
+        "abstencao_min": 339,
+        "abstencao_max": 41146
+      },
+      "flavio": {
+        "sections_with_net_loss": 1301,
+        "net_losses_in_those_sections": 14565,
+        "lula_min": 0,
+        "lula_max": 126137,
+        "branco_min": 0,
+        "branco_max": 2092,
+        "nulo_min": 0,
+        "nulo_max": 3190,
+        "abstencao_min": 0,
+        "abstencao_max": 96102
+      }
+    },
+    "BA": {
+      "lula": {
+        "sections_with_net_loss": 502,
+        "net_losses_in_those_sections": 1871,
+        "flavio_min": 0,
+        "flavio_max": 21625,
+        "branco_min": 0,
+        "branco_max": 690,
+        "nulo_min": 0,
+        "nulo_max": 2069,
+        "abstencao_min": 27,
+        "abstencao_max": 24575
+      },
+      "flavio": {
+        "sections_with_net_loss": 5648,
+        "net_losses_in_those_sections": 18182,
+        "lula_min": 2,
+        "lula_max": 331797,
+        "branco_min": 0,
+        "branco_max": 13730,
+        "nulo_min": 0,
+        "nulo_max": 34574,
+        "abstencao_min": 0,
+        "abstencao_max": 253724
+      }
+    },
+    "CE": {
+      "lula": {
+        "sections_with_net_loss": 314,
+        "net_losses_in_those_sections": 1208,
+        "flavio_min": 0,
+        "flavio_max": 12244,
+        "branco_min": 0,
+        "branco_max": 421,
+        "nulo_min": 0,
+        "nulo_max": 866,
+        "abstencao_min": 6,
+        "abstencao_max": 12920
+      },
+      "flavio": {
+        "sections_with_net_loss": 6496,
+        "net_losses_in_those_sections": 26007,
+        "lula_min": 0,
+        "lula_max": 427613,
+        "branco_min": 0,
+        "branco_max": 14745,
+        "nulo_min": 0,
+        "nulo_max": 28070,
+        "abstencao_min": 0,
+        "abstencao_max": 251769
+      }
+    },
+    "DF": {
+      "lula": {
+        "sections_with_net_loss": 1,
+        "net_losses_in_those_sections": 1,
+        "flavio_min": 0,
+        "flavio_max": 9,
+        "branco_min": 0,
+        "branco_max": 0,
+        "nulo_min": 0,
+        "nulo_max": 2,
+        "abstencao_min": 0,
+        "abstencao_max": 12
+      },
+      "flavio": {
+        "sections_with_net_loss": 250,
+        "net_losses_in_those_sections": 826,
+        "lula_min": 0,
+        "lula_max": 27757,
+        "branco_min": 0,
+        "branco_max": 912,
+        "nulo_min": 0,
+        "nulo_max": 1561,
+        "abstencao_min": 0,
+        "abstencao_max": 15479
+      }
+    },
+    "ES": {
+      "lula": {
+        "sections_with_net_loss": 84,
+        "net_losses_in_those_sections": 221,
+        "flavio_min": 0,
+        "flavio_max": 5204,
+        "branco_min": 0,
+        "branco_max": 221,
+        "nulo_min": 0,
+        "nulo_max": 647,
+        "abstencao_min": 0,
+        "abstencao_max": 4094
+      },
+      "flavio": {
+        "sections_with_net_loss": 1288,
+        "net_losses_in_those_sections": 4499,
+        "lula_min": 0,
+        "lula_max": 114843,
+        "branco_min": 0,
+        "branco_max": 4453,
+        "nulo_min": 0,
+        "nulo_max": 11256,
+        "abstencao_min": 0,
+        "abstencao_max": 75731
+      }
+    },
+    "GO": {
+      "lula": {
+        "sections_with_net_loss": 19,
+        "net_losses_in_those_sections": 76,
+        "flavio_min": 0,
+        "flavio_max": 1069,
+        "branco_min": 0,
+        "branco_max": 26,
+        "nulo_min": 0,
+        "nulo_max": 57,
+        "abstencao_min": 0,
+        "abstencao_max": 1103
+      },
+      "flavio": {
+        "sections_with_net_loss": 176,
+        "net_losses_in_those_sections": 619,
+        "lula_min": 0,
+        "lula_max": 14893,
+        "branco_min": 0,
+        "branco_max": 396,
+        "nulo_min": 0,
+        "nulo_max": 579,
+        "abstencao_min": 0,
+        "abstencao_max": 12852
+      }
+    },
+    "MA": {
+      "lula": {
+        "sections_with_net_loss": 1340,
+        "net_losses_in_those_sections": 8826,
+        "flavio_min": 0,
+        "flavio_max": 46102,
+        "branco_min": 0,
+        "branco_max": 1196,
+        "nulo_min": 0,
+        "nulo_max": 2976,
+        "abstencao_min": 786,
+        "abstencao_max": 85280
+      },
+      "flavio": {
+        "sections_with_net_loss": 8759,
+        "net_losses_in_those_sections": 39707,
+        "lula_min": 1,
+        "lula_max": 517109,
+        "branco_min": 0,
+        "branco_max": 13082,
+        "nulo_min": 0,
+        "nulo_max": 26650,
+        "abstencao_min": 0,
+        "abstencao_max": 404742
+      }
+    },
+    "MG": {
+      "lula": {
+        "sections_with_net_loss": 158,
+        "net_losses_in_those_sections": 472,
+        "flavio_min": 0,
+        "flavio_max": 6935,
+        "branco_min": 0,
+        "branco_max": 227,
+        "nulo_min": 0,
+        "nulo_max": 509,
+        "abstencao_min": 3,
+        "abstencao_max": 8072
+      },
+      "flavio": {
+        "sections_with_net_loss": 3833,
+        "net_losses_in_those_sections": 12349,
+        "lula_min": 3,
+        "lula_max": 312891,
+        "branco_min": 0,
+        "branco_max": 11010,
+        "nulo_min": 0,
+        "nulo_max": 18715,
+        "abstencao_min": 0,
+        "abstencao_max": 219726
+      }
+    },
+    "MS": {
+      "lula": {
+        "sections_with_net_loss": 60,
+        "net_losses_in_those_sections": 170,
+        "flavio_min": 0,
+        "flavio_max": 3077,
+        "branco_min": 0,
+        "branco_max": 64,
+        "nulo_min": 0,
+        "nulo_max": 90,
+        "abstencao_min": 0,
+        "abstencao_max": 3158
+      },
+      "flavio": {
+        "sections_with_net_loss": 736,
+        "net_losses_in_those_sections": 2903,
+        "lula_min": 0,
+        "lula_max": 57336,
+        "branco_min": 0,
+        "branco_max": 1217,
+        "nulo_min": 0,
+        "nulo_max": 1814,
+        "abstencao_min": 0,
+        "abstencao_max": 46078
+      }
+    },
+    "MT": {
+      "lula": {
+        "sections_with_net_loss": 135,
+        "net_losses_in_those_sections": 521,
+        "flavio_min": 0,
+        "flavio_max": 7632,
+        "branco_min": 0,
+        "branco_max": 138,
+        "nulo_min": 0,
+        "nulo_max": 272,
+        "abstencao_min": 0,
+        "abstencao_max": 7079
+      },
+      "flavio": {
+        "sections_with_net_loss": 1321,
+        "net_losses_in_those_sections": 5621,
+        "lula_min": 0,
+        "lula_max": 104135,
+        "branco_min": 0,
+        "branco_max": 2277,
+        "nulo_min": 0,
+        "nulo_max": 3630,
+        "abstencao_min": 3,
+        "abstencao_max": 87309
+      }
+    },
+    "PA": {
+      "lula": {
+        "sections_with_net_loss": 2106,
+        "net_losses_in_those_sections": 12864,
+        "flavio_min": 0,
+        "flavio_max": 105277,
+        "branco_min": 0,
+        "branco_max": 1768,
+        "nulo_min": 0,
+        "nulo_max": 4265,
+        "abstencao_min": 281,
+        "abstencao_max": 127779
+      },
+      "flavio": {
+        "sections_with_net_loss": 7419,
+        "net_losses_in_those_sections": 38842,
+        "lula_min": 2,
+        "lula_max": 559543,
+        "branco_min": 0,
+        "branco_max": 10365,
+        "nulo_min": 0,
+        "nulo_max": 18636,
+        "abstencao_min": 22,
+        "abstencao_max": 433465
+      }
+    },
+    "PB": {
+      "lula": {
+        "sections_with_net_loss": 29,
+        "net_losses_in_those_sections": 79,
+        "flavio_min": 0,
+        "flavio_max": 1040,
+        "branco_min": 0,
+        "branco_max": 38,
+        "nulo_min": 0,
+        "nulo_max": 83,
+        "abstencao_min": 5,
+        "abstencao_max": 1809
+      },
+      "flavio": {
+        "sections_with_net_loss": 2490,
+        "net_losses_in_those_sections": 9109,
+        "lula_min": 0,
+        "lula_max": 166939,
+        "branco_min": 0,
+        "branco_max": 5626,
+        "nulo_min": 0,
+        "nulo_max": 12601,
+        "abstencao_min": 0,
+        "abstencao_max": 110684
+      }
+    },
+    "PE": {
+      "lula": {
+        "sections_with_net_loss": 28,
+        "net_losses_in_those_sections": 174,
+        "flavio_min": 0,
+        "flavio_max": 1076,
+        "branco_min": 0,
+        "branco_max": 38,
+        "nulo_min": 0,
+        "nulo_max": 98,
+        "abstencao_min": 12,
+        "abstencao_max": 2061
+      },
+      "flavio": {
+        "sections_with_net_loss": 3766,
+        "net_losses_in_those_sections": 12082,
+        "lula_min": 1,
+        "lula_max": 254513,
+        "branco_min": 0,
+        "branco_max": 9052,
+        "nulo_min": 0,
+        "nulo_max": 19647,
+        "abstencao_min": 0,
+        "abstencao_max": 166127
+      }
+    },
+    "PI": {
+      "lula": {
+        "sections_with_net_loss": 674,
+        "net_losses_in_those_sections": 3222,
+        "flavio_min": 24,
+        "flavio_max": 22824,
+        "branco_min": 0,
+        "branco_max": 668,
+        "nulo_min": 0,
+        "nulo_max": 2066,
+        "abstencao_min": 15,
+        "abstencao_max": 33519
+      },
+      "flavio": {
+        "sections_with_net_loss": 3687,
+        "net_losses_in_those_sections": 13794,
+        "lula_min": 0,
+        "lula_max": 177196,
+        "branco_min": 0,
+        "branco_max": 5523,
+        "nulo_min": 0,
+        "nulo_max": 14863,
+        "abstencao_min": 0,
+        "abstencao_max": 138286
+      }
+    },
+    "PR": {
+      "lula": {
+        "sections_with_net_loss": 108,
+        "net_losses_in_those_sections": 535,
+        "flavio_min": 0,
+        "flavio_max": 5874,
+        "branco_min": 0,
+        "branco_max": 214,
+        "nulo_min": 0,
+        "nulo_max": 289,
+        "abstencao_min": 74,
+        "abstencao_max": 4907
+      },
+      "flavio": {
+        "sections_with_net_loss": 829,
+        "net_losses_in_those_sections": 2713,
+        "lula_min": 0,
+        "lula_max": 72325,
+        "branco_min": 0,
+        "branco_max": 2025,
+        "nulo_min": 0,
+        "nulo_max": 2627,
+        "abstencao_min": 67,
+        "abstencao_max": 46543
+      }
+    },
+    "RJ": {
+      "lula": {
+        "sections_with_net_loss": 50,
+        "net_losses_in_those_sections": 292,
+        "flavio_min": 0,
+        "flavio_max": 3385,
+        "branco_min": 0,
+        "branco_max": 88,
+        "nulo_min": 0,
+        "nulo_max": 158,
+        "abstencao_min": 18,
+        "abstencao_max": 3068
+      },
+      "flavio": {
+        "sections_with_net_loss": 7290,
+        "net_losses_in_those_sections": 36866,
+        "lula_min": 0,
+        "lula_max": 752100,
+        "branco_min": 0,
+        "branco_max": 22659,
+        "nulo_min": 0,
+        "nulo_max": 42333,
+        "abstencao_min": 33,
+        "abstencao_max": 505689
+      }
+    },
+    "RN": {
+      "lula": {
+        "sections_with_net_loss": 45,
+        "net_losses_in_those_sections": 138,
+        "flavio_min": 0,
+        "flavio_max": 2678,
+        "branco_min": 0,
+        "branco_max": 81,
+        "nulo_min": 0,
+        "nulo_max": 280,
+        "abstencao_min": 0,
+        "abstencao_max": 2483
+      },
+      "flavio": {
+        "sections_with_net_loss": 2359,
+        "net_losses_in_those_sections": 10814,
+        "lula_min": 0,
+        "lula_max": 185400,
+        "branco_min": 0,
+        "branco_max": 5460,
+        "nulo_min": 0,
+        "nulo_max": 17979,
+        "abstencao_min": 0,
+        "abstencao_max": 118935
+      }
+    },
+    "RO": {
+      "lula": {
+        "sections_with_net_loss": 148,
+        "net_losses_in_those_sections": 370,
+        "flavio_min": 0,
+        "flavio_max": 6874,
+        "branco_min": 0,
+        "branco_max": 182,
+        "nulo_min": 0,
+        "nulo_max": 280,
+        "abstencao_min": 6,
+        "abstencao_max": 6467
+      },
+      "flavio": {
+        "sections_with_net_loss": 816,
+        "net_losses_in_those_sections": 3483,
+        "lula_min": 0,
+        "lula_max": 51817,
+        "branco_min": 0,
+        "branco_max": 1402,
+        "nulo_min": 0,
+        "nulo_max": 1887,
+        "abstencao_min": 0,
+        "abstencao_max": 51872
+      }
+    },
+    "RR": {
+      "lula": {
+        "sections_with_net_loss": 218,
+        "net_losses_in_those_sections": 1089,
+        "flavio_min": 0,
+        "flavio_max": 9413,
+        "branco_min": 0,
+        "branco_max": 163,
+        "nulo_min": 0,
+        "nulo_max": 300,
+        "abstencao_min": 48,
+        "abstencao_max": 9548
+      },
+      "flavio": {
+        "sections_with_net_loss": 967,
+        "net_losses_in_those_sections": 12687,
+        "lula_min": 0,
+        "lula_max": 46508,
+        "branco_min": 0,
+        "branco_max": 1194,
+        "nulo_min": 0,
+        "nulo_max": 1839,
+        "abstencao_min": 239,
+        "abstencao_max": 61947
+      }
+    },
+    "RS": {
+      "lula": {
+        "sections_with_net_loss": 116,
+        "net_losses_in_those_sections": 226,
+        "flavio_min": 0,
+        "flavio_max": 4256,
+        "branco_min": 0,
+        "branco_max": 230,
+        "nulo_min": 0,
+        "nulo_max": 188,
+        "abstencao_min": 0,
+        "abstencao_max": 3165
+      },
+      "flavio": {
+        "sections_with_net_loss": 1059,
+        "net_losses_in_those_sections": 3129,
+        "lula_min": 0,
+        "lula_max": 89268,
+        "branco_min": 0,
+        "branco_max": 3270,
+        "nulo_min": 0,
+        "nulo_max": 3382,
+        "abstencao_min": 0,
+        "abstencao_max": 62860
+      }
+    },
+    "SC": {
+      "lula": {
+        "sections_with_net_loss": 57,
+        "net_losses_in_those_sections": 128,
+        "flavio_min": 0,
+        "flavio_max": 2090,
+        "branco_min": 0,
+        "branco_max": 92,
+        "nulo_min": 0,
+        "nulo_max": 133,
+        "abstencao_min": 1,
+        "abstencao_max": 1676
+      },
+      "flavio": {
+        "sections_with_net_loss": 505,
+        "net_losses_in_those_sections": 1634,
+        "lula_min": 0,
+        "lula_max": 41270,
+        "branco_min": 0,
+        "branco_max": 1341,
+        "nulo_min": 0,
+        "nulo_max": 1691,
+        "abstencao_min": 0,
+        "abstencao_max": 27134
+      }
+    },
+    "SE": {
+      "lula": {
+        "sections_with_net_loss": 13,
+        "net_losses_in_those_sections": 42,
+        "flavio_min": 0,
+        "flavio_max": 497,
+        "branco_min": 0,
+        "branco_max": 12,
+        "nulo_min": 0,
+        "nulo_max": 50,
+        "abstencao_min": 0,
+        "abstencao_max": 583
+      },
+      "flavio": {
+        "sections_with_net_loss": 1340,
+        "net_losses_in_those_sections": 4699,
+        "lula_min": 0,
+        "lula_max": 86717,
+        "branco_min": 0,
+        "branco_max": 2793,
+        "nulo_min": 0,
+        "nulo_max": 6545,
+        "abstencao_min": 0,
+        "abstencao_max": 57505
+      }
+    },
+    "SP": {
+      "lula": {
+        "sections_with_net_loss": 59,
+        "net_losses_in_those_sections": 178,
+        "flavio_min": 0,
+        "flavio_max": 2050,
+        "branco_min": 0,
+        "branco_max": 76,
+        "nulo_min": 0,
+        "nulo_max": 98,
+        "abstencao_min": 3,
+        "abstencao_max": 2151
+      },
+      "flavio": {
+        "sections_with_net_loss": 3410,
+        "net_losses_in_those_sections": 10711,
+        "lula_min": 3,
+        "lula_max": 326845,
+        "branco_min": 0,
+        "branco_max": 13608,
+        "nulo_min": 0,
+        "nulo_max": 21704,
+        "abstencao_min": 0,
+        "abstencao_max": 222227
+      }
+    },
+    "TO": {
+      "lula": {
+        "sections_with_net_loss": 413,
+        "net_losses_in_those_sections": 1539,
+        "flavio_min": 0,
+        "flavio_max": 27022,
+        "branco_min": 0,
+        "branco_max": 607,
+        "nulo_min": 0,
+        "nulo_max": 3476,
+        "abstencao_min": 7,
+        "abstencao_max": 21447
+      },
+      "flavio": {
+        "sections_with_net_loss": 2076,
+        "net_losses_in_those_sections": 10577,
+        "lula_min": 0,
+        "lula_max": 167789,
+        "branco_min": 0,
+        "branco_max": 3589,
+        "nulo_min": 0,
+        "nulo_max": 17386,
+        "abstencao_min": 0,
+        "abstencao_max": 108805
+      }
+    },
+    "ZZ": {
+      "lula": {
+        "sections_with_net_loss": 15,
+        "net_losses_in_those_sections": 137,
+        "flavio_min": 0,
+        "flavio_max": 646,
+        "branco_min": 0,
+        "branco_max": 45,
+        "nulo_min": 0,
+        "nulo_max": 51,
+        "abstencao_min": 43,
+        "abstencao_max": 1457
+      },
+      "flavio": {
+        "sections_with_net_loss": 22,
+        "net_losses_in_those_sections": 64,
+        "lula_min": 0,
+        "lula_max": 815,
+        "branco_min": 0,
+        "branco_max": 27,
+        "nulo_min": 0,
+        "nulo_max": 44,
+        "abstencao_min": 1,
+        "abstencao_max": 1153
+      }
+    }
+  },
+  "examples": {
+    "lula": [
+      {
+        "uf": "AC",
+        "municipio_tse": "01007",
+        "zona": "9",
+        "secao": "136",
+        "net_loss": 4,
+        "destinations": {
+          "flavio": {
+            "min": 0,
+            "max": 41
+          },
+          "branco": {
+            "min": 0,
+            "max": 2
+          },
+          "nulo": {
+            "min": 0,
+            "max": 10
+          },
+          "abstencao": {
+            "min": 0,
+            "max": 41
+          }
+        }
+      },
+      {
+        "uf": "AC",
+        "municipio_tse": "01007",
+        "zona": "9",
+        "secao": "137",
+        "net_loss": 2,
+        "destinations": {
+          "flavio": {
+            "min": 0,
+            "max": 73
+          },
+          "branco": {
+            "min": 0,
+            "max": 2
+          },
+          "nulo": {
+            "min": 0,
+            "max": 14
+          },
+          "abstencao": {
+            "min": 0,
+            "max": 73
+          }
+        }
+      },
+      {
+        "uf": "AC",
+        "municipio_tse": "01007",
+        "zona": "9",
+        "secao": "200",
+        "net_loss": 2,
+        "destinations": {
+          "flavio": {
+            "min": 0,
+            "max": 76
+          },
+          "branco": {
+            "min": 0,
+            "max": 2
+          },
+          "nulo": {
+            "min": 0,
+            "max": 4
+          },
+          "abstencao": {
+            "min": 0,
+            "max": 52
+          }
+        }
+      },
+      {
+        "uf": "AC",
+        "municipio_tse": "01007",
+        "zona": "9",
+        "secao": "202",
+        "net_loss": 4,
+        "destinations": {
+          "flavio": {
+            "min": 0,
+            "max": 67
+          },
+          "branco": {
+            "min": 0,
+            "max": 0
+          },
+          "nulo": {
+            "min": 0,
+            "max": 12
+          },
+          "abstencao": {
+            "min": 0,
+            "max": 67
+          }
+        }
+      },
+      {
+        "uf": "AC",
+        "municipio_tse": "01007",
+        "zona": "9",
+        "secao": "237",
+        "net_loss": 5,
+        "destinations": {
+          "flavio": {
+            "min": 0,
+            "max": 71
+          },
+          "branco": {
+            "min": 0,
+            "max": 2
+          },
+          "nulo": {
+            "min": 0,
+            "max": 11
+          },
+          "abstencao": {
+            "min": 0,
+            "max": 71
+          }
+        }
+      },
+      {
+        "uf": "AC",
+        "municipio_tse": "01007",
+        "zona": "9",
+        "secao": "242",
+        "net_loss": 6,
+        "destinations": {
+          "flavio": {
+            "min": 0,
+            "max": 49
+          },
+          "branco": {
+            "min": 0,
+            "max": 4
+          },
+          "nulo": {
+            "min": 0,
+            "max": 2
+          },
+          "abstencao": {
+            "min": 0,
+            "max": 49
+          }
+        }
+      },
+      {
+        "uf": "AC",
+        "municipio_tse": "01007",
+        "zona": "9",
+        "secao": "252",
+        "net_loss": 1,
+        "destinations": {
+          "flavio": {
+            "min": 0,
+            "max": 71
+          },
+          "branco": {
+            "min": 0,
+            "max": 3
+          },
+          "nulo": {
+            "min": 0,
+            "max": 8
+          },
+          "abstencao": {
+            "min": 0,
+            "max": 68
+          }
+        }
+      },
+      {
+        "uf": "AC",
+        "municipio_tse": "01007",
+        "zona": "9",
+        "secao": "310",
+        "net_loss": 8,
+        "destinations": {
+          "flavio": {
+            "min": 0,
+            "max": 67
+          },
+          "branco": {
+            "min": 0,
+            "max": 0
+          },
+          "nulo": {
+            "min": 0,
+            "max": 7
+          },
+          "abstencao": {
+            "min": 0,
+            "max": 67
+          }
+        }
+      },
+      {
+        "uf": "AC",
+        "municipio_tse": "01007",
+        "zona": "9",
+        "secao": "411",
+        "net_loss": 4,
+        "destinations": {
+          "flavio": {
+            "min": 0,
+            "max": 50
+          },
+          "branco": {
+            "min": 0,
+            "max": 3
+          },
+          "nulo": {
+            "min": 0,
+            "max": 2
+          },
+          "abstencao": {
+            "min": 0,
+            "max": 50
+          }
+        }
+      },
+      {
+        "uf": "AC",
+        "municipio_tse": "01007",
+        "zona": "9",
+        "secao": "439",
+        "net_loss": 5,
+        "destinations": {
+          "flavio": {
+            "min": 0,
+            "max": 41
+          },
+          "branco": {
+            "min": 0,
+            "max": 0
+          },
+          "nulo": {
+            "min": 0,
+            "max": 7
+          },
+          "abstencao": {
+            "min": 0,
+            "max": 41
+          }
+        }
+      },
+      {
+        "uf": "AC",
+        "municipio_tse": "01007",
+        "zona": "9",
+        "secao": "440",
+        "net_loss": 4,
+        "destinations": {
+          "flavio": {
+            "min": 0,
+            "max": 37
+          },
+          "branco": {
+            "min": 0,
+            "max": 2
+          },
+          "nulo": {
+            "min": 0,
+            "max": 7
+          },
+          "abstencao": {
+            "min": 0,
+            "max": 37
+          }
+        }
+      },
+      {
+        "uf": "AC",
+        "municipio_tse": "01007",
+        "zona": "9",
+        "secao": "442",
+        "net_loss": 3,
+        "destinations": {
+          "flavio": {
+            "min": 0,
+            "max": 39
+          },
+          "branco": {
+            "min": 0,
+            "max": 1
+          },
+          "nulo": {
+            "min": 0,
+            "max": 5
+          },
+          "abstencao": {
+            "min": 0,
+            "max": 39
+          }
+        }
+      },
+      {
+        "uf": "AC",
+        "municipio_tse": "01007",
+        "zona": "9",
+        "secao": "479",
+        "net_loss": 5,
+        "destinations": {
+          "flavio": {
+            "min": 0,
+            "max": 60
+          },
+          "branco": {
+            "min": 0,
+            "max": 3
+          },
+          "nulo": {
+            "min": 0,
+            "max": 10
+          },
+          "abstencao": {
+            "min": 0,
+            "max": 60
+          }
+        }
+      },
+      {
+        "uf": "AC",
+        "municipio_tse": "01007",
+        "zona": "9",
+        "secao": "9",
+        "net_loss": 4,
+        "destinations": {
+          "flavio": {
+            "min": 0,
+            "max": 44
+          },
+          "branco": {
+            "min": 0,
+            "max": 1
+          },
+          "nulo": {
+            "min": 0,
+            "max": 7
+          },
+          "abstencao": {
+            "min": 0,
+            "max": 44
+          }
+        }
+      },
+      {
+        "uf": "AC",
+        "municipio_tse": "01015",
+        "zona": "2",
+        "secao": "101",
+        "net_loss": 5,
+        "destinations": {
+          "flavio": {
+            "min": 0,
+            "max": 10
+          },
+          "branco": {
+            "min": 0,
+            "max": 1
+          },
+          "nulo": {
+            "min": 0,
+            "max": 1
+          },
+          "abstencao": {
+            "min": 0,
+            "max": 10
+          }
+        }
+      }
+    ],
+    "flavio": [
+      {
+        "uf": "AC",
+        "municipio_tse": "01007",
+        "zona": "9",
+        "secao": "10",
+        "net_loss": 18,
+        "destinations": {
+          "lula": {
+            "min": 0,
+            "max": 42
+          },
+          "branco": {
+            "min": 0,
+            "max": 1
+          },
+          "nulo": {
+            "min": 0,
+            "max": 6
+          },
+          "abstencao": {
+            "min": 0,
+            "max": 62
+          }
+        }
+      },
+      {
+        "uf": "AC",
+        "municipio_tse": "01007",
+        "zona": "9",
+        "secao": "120",
+        "net_loss": 10,
+        "destinations": {
+          "lula": {
+            "min": 0,
+            "max": 83
+          },
+          "branco": {
+            "min": 0,
+            "max": 4
+          },
+          "nulo": {
+            "min": 0,
+            "max": 5
+          },
+          "abstencao": {
+            "min": 0,
+            "max": 72
+          }
+        }
+      },
+      {
+        "uf": "AC",
+        "municipio_tse": "01007",
+        "zona": "9",
+        "secao": "136",
+        "net_loss": 10,
+        "destinations": {
+          "lula": {
+            "min": 0,
+            "max": 37
+          },
+          "branco": {
+            "min": 0,
+            "max": 2
+          },
+          "nulo": {
+            "min": 0,
+            "max": 10
+          },
+          "abstencao": {
+            "min": 0,
+            "max": 71
+          }
+        }
+      },
+      {
+        "uf": "AC",
+        "municipio_tse": "01007",
+        "zona": "9",
+        "secao": "137",
+        "net_loss": 11,
+        "destinations": {
+          "lula": {
+            "min": 0,
+            "max": 71
+          },
+          "branco": {
+            "min": 0,
+            "max": 2
+          },
+          "nulo": {
+            "min": 0,
+            "max": 14
+          },
+          "abstencao": {
+            "min": 0,
+            "max": 86
+          }
+        }
+      },
+      {
+        "uf": "AC",
+        "municipio_tse": "01007",
+        "zona": "9",
+        "secao": "163",
+        "net_loss": 9,
+        "destinations": {
+          "lula": {
+            "min": 0,
+            "max": 15
+          },
+          "branco": {
+            "min": 0,
+            "max": 1
+          },
+          "nulo": {
+            "min": 0,
+            "max": 5
+          },
+          "abstencao": {
+            "min": 0,
+            "max": 63
+          }
+        }
+      },
+      {
+        "uf": "AC",
+        "municipio_tse": "01007",
+        "zona": "9",
+        "secao": "186",
+        "net_loss": 15,
+        "destinations": {
+          "lula": {
+            "min": 0,
+            "max": 73
+          },
+          "branco": {
+            "min": 0,
+            "max": 1
+          },
+          "nulo": {
+            "min": 0,
+            "max": 9
+          },
+          "abstencao": {
+            "min": 0,
+            "max": 104
+          }
+        }
+      },
+      {
+        "uf": "AC",
+        "municipio_tse": "01007",
+        "zona": "9",
+        "secao": "201",
+        "net_loss": 16,
+        "destinations": {
+          "lula": {
+            "min": 0,
+            "max": 23
+          },
+          "branco": {
+            "min": 0,
+            "max": 0
+          },
+          "nulo": {
+            "min": 0,
+            "max": 8
+          },
+          "abstencao": {
+            "min": 0,
+            "max": 55
+          }
+        }
+      },
+      {
+        "uf": "AC",
+        "municipio_tse": "01007",
+        "zona": "9",
+        "secao": "208",
+        "net_loss": 10,
+        "destinations": {
+          "lula": {
+            "min": 0,
+            "max": 81
+          },
+          "branco": {
+            "min": 0,
+            "max": 1
+          },
+          "nulo": {
+            "min": 0,
+            "max": 13
+          },
+          "abstencao": {
+            "min": 0,
+            "max": 75
+          }
+        }
+      },
+      {
+        "uf": "AC",
+        "municipio_tse": "01007",
+        "zona": "9",
+        "secao": "212",
+        "net_loss": 5,
+        "destinations": {
+          "lula": {
+            "min": 0,
+            "max": 83
+          },
+          "branco": {
+            "min": 0,
+            "max": 5
+          },
+          "nulo": {
+            "min": 0,
+            "max": 9
+          },
+          "abstencao": {
+            "min": 0,
+            "max": 69
+          }
+        }
+      },
+      {
+        "uf": "AC",
+        "municipio_tse": "01007",
+        "zona": "9",
+        "secao": "237",
+        "net_loss": 4,
+        "destinations": {
+          "lula": {
+            "min": 0,
+            "max": 66
+          },
+          "branco": {
+            "min": 0,
+            "max": 2
+          },
+          "nulo": {
+            "min": 0,
+            "max": 11
+          },
+          "abstencao": {
+            "min": 0,
+            "max": 88
+          }
+        }
+      },
+      {
+        "uf": "AC",
+        "municipio_tse": "01007",
+        "zona": "9",
+        "secao": "242",
+        "net_loss": 5,
+        "destinations": {
+          "lula": {
+            "min": 0,
+            "max": 43
+          },
+          "branco": {
+            "min": 0,
+            "max": 4
+          },
+          "nulo": {
+            "min": 0,
+            "max": 2
+          },
+          "abstencao": {
+            "min": 0,
+            "max": 82
+          }
+        }
+      },
+      {
+        "uf": "AC",
+        "municipio_tse": "01007",
+        "zona": "9",
+        "secao": "252",
+        "net_loss": 8,
+        "destinations": {
+          "lula": {
+            "min": 0,
+            "max": 70
+          },
+          "branco": {
+            "min": 0,
+            "max": 3
+          },
+          "nulo": {
+            "min": 0,
+            "max": 8
+          },
+          "abstencao": {
+            "min": 0,
+            "max": 68
+          }
+        }
+      },
+      {
+        "uf": "AC",
+        "municipio_tse": "01007",
+        "zona": "9",
+        "secao": "3",
+        "net_loss": 4,
+        "destinations": {
+          "lula": {
+            "min": 0,
+            "max": 81
+          },
+          "branco": {
+            "min": 0,
+            "max": 1
+          },
+          "nulo": {
+            "min": 0,
+            "max": 13
+          },
+          "abstencao": {
+            "min": 0,
+            "max": 62
+          }
+        }
+      },
+      {
+        "uf": "AC",
+        "municipio_tse": "01007",
+        "zona": "9",
+        "secao": "304",
+        "net_loss": 23,
+        "destinations": {
+          "lula": {
+            "min": 0,
+            "max": 54
+          },
+          "branco": {
+            "min": 0,
+            "max": 1
+          },
+          "nulo": {
+            "min": 0,
+            "max": 13
+          },
+          "abstencao": {
+            "min": 0,
+            "max": 91
+          }
+        }
+      },
+      {
+        "uf": "AC",
+        "municipio_tse": "01007",
+        "zona": "9",
+        "secao": "305",
+        "net_loss": 15,
+        "destinations": {
+          "lula": {
+            "min": 0,
+            "max": 56
+          },
+          "branco": {
+            "min": 0,
+            "max": 4
+          },
+          "nulo": {
+            "min": 0,
+            "max": 11
+          },
+          "abstencao": {
+            "min": 0,
+            "max": 88
+          }
+        }
+      }
+    ]
+  },
+  "excluded": {
+    "different_electorate": 55722,
+    "not_verified": 43
+  },
+  "warnings": [
+    "Perda líquida não equivale a fluxo individual: retenções e entradas podem coexistir.",
+    "Limites por destino são marginais; seus máximos não podem ser somados.",
+    "Mesmo eleitorado numérico não prova identidade dos eleitores.",
+    "Sem dados individuais, não é possível determinar quem mudou de voto.",
+    "Seções com alteração de aptos foram excluídas desta análise."
+  ]
+}
