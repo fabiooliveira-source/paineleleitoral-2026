@@ -37,6 +37,36 @@ class ProjectionStress(unittest.TestCase):
    self.assertEqual(a['observed_lula'],b['observed_lula'])
    self.assertEqual(a['observed_flavio'],b['observed_flavio'])
    self.assertEqual(a['remaining_electorate'],b['remaining_electorate'])
+ def test_geographic_concentration(self):
+  d=sections(40)
+  # All early reporting comes from BA; SP arrives later.
+  d.loc[d.uf=='BA','time']=pd.Timestamp('2026-10-25T17:00:00Z')
+  d.loc[d.uf=='SP','time']=pd.Timestamp('2026-10-25T19:00:00Z')
+  r=self.execute(d,[5,50,100],32)
+  self.assertEqual(r['ticks'][0]['state_coverage'],1)
+  self.assertEqual(r['ticks'][-1]['state_coverage'],2)
+  self.assertEqual(r['ticks'][-1]['remaining_electorate'],0)
+  self.assertIn('não é garantida',r['warning'])
+ def test_prior_sensitivity_reported(self):
+  r=self.execute(sections(),[5,50],32)
+  for t in r['ticks']:
+   for model in t['models'].values():
+    self.assertEqual([x['prior_pseudo_sections'] for x in model['scenarios']],[2,20,100])
+    self.assertEqual(model['sensitivity_p_lula'],[min(x['p_lula'] for x in model['scenarios']),max(x['p_lula'] for x in model['scenarios'])])
+ def test_monte_carlo_draws_and_seed(self):
+  d=sections()
+  a=self.execute(d,[5,100],16)
+  b=self.execute(d,[5,100],64)
+  self.assertEqual(a['draws'],16)
+  self.assertEqual(b['draws'],64)
+  self.assertEqual(a['ticks'][-1]['observed_lula'],b['ticks'][-1]['observed_lula'])
+  self.assertEqual(a['ticks'][-1]['observed_flavio'],b['ticks'][-1]['observed_flavio'])
+  self.assertEqual(a['ticks'][-1]['remaining_electorate'],0)
+ def test_repeated_run_deterministic(self):
+  d=sections()
+  a=self.execute(d,[1,5,50,100],32)
+  b=self.execute(d,[1,5,50,100],32)
+  self.assertEqual(a['ticks'],b['ticks'])
  def test_empty_rejected(self):
   with self.assertRaisesRegex(ValueError,'vazia'):self.execute(sections(0))
  def test_invalid_draws_rejected(self):
