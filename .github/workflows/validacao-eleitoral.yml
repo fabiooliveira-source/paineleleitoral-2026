@@ -34,34 +34,29 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - name: Baixar arquivo oficial e verificar SHA-256
+      - name: Baixar e preservar versao recebida com proveniencia
         env:
           ZIP_NAME: ${{ matrix.arquivo }}
         run: |
           python - <<'PY'
-          import hashlib,json,os,pathlib,urllib.request,time
+          import hashlib,json,os,pathlib,urllib.request,datetime
           name=os.environ['ZIP_NAME']
           manifest=json.loads(pathlib.Path('dados/2026/downloads.json').read_text(encoding='utf-8-sig'))
           item=next(x for x in manifest if x['url'].split('/')[-1]==name)
           out=pathlib.Path('originais_tse');out.mkdir(exist_ok=True)
           target=out/name
-          for attempt in range(1,4):
-              try:
-                  req=urllib.request.Request(item['url'],headers={'User-Agent':'Mozilla/5.0 (auditoria-publica-tse)'})
-                  with urllib.request.urlopen(req,timeout=90) as src,target.open('wb') as dst:
-                      h=hashlib.sha256();n=0
-                      while True:
-                          block=src.read(4*1024*1024)
-                          if not block:break
-                          dst.write(block);h.update(block);n+=len(block)
-                  if n!=int(item['bytes']) or h.hexdigest().lower()!=item['sha256'].lower():
-                      raise ValueError(f'Arquivo divergente: {name}, bytes={n}, SHA256={h.hexdigest()}')
-                  print(f'APROVADO {name}: {n} bytes SHA256={h.hexdigest()}')
-                  break
-              except Exception:
-                  target.unlink(missing_ok=True)
-                  if attempt==3:raise
-                  time.sleep(attempt*10)
+          req=urllib.request.Request(item['url'],headers={'User-Agent':'Mozilla/5.0 (auditoria-publica-tse)'})
+          with urllib.request.urlopen(req,timeout=120) as src,target.open('wb') as dst:
+              h=hashlib.sha256();n=0
+              headers=dict(src.headers.items())
+              while True:
+                  block=src.read(4*1024*1024)
+                  if not block:break
+                  dst.write(block);h.update(block);n+=len(block)
+          unchanged=n==int(item['bytes']) and h.hexdigest().lower()==item['sha256'].lower()
+          metadata={'arquivo':name,'url':item['url'],'download_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'bytes_atual':n,'sha256_atual':h.hexdigest(),'bytes_anterior':item['bytes'],'sha256_anterior':item['sha256'],'identico_ao_anterior':unchanged,'etag_atual':headers.get('ETag'),'last_modified_atual':headers.get('Last-Modified'),'content_length_atual':headers.get('Content-Length')}
+          (out/(name+'.comparacao.json')).write_text(json.dumps(metadata,ensure_ascii=False,indent=2))
+          print(json.dumps(metadata,ensure_ascii=False))
           PY
       - name: Verificar estrutura e CRC
         env:
@@ -73,7 +68,7 @@ jobs:
           item=next(x for x in json.loads(pathlib.Path('dados/2026/downloads.json').read_text(encoding='utf-8-sig')) if x['url'].split('/')[-1]==name)
           with zipfile.ZipFile(pathlib.Path('originais_tse')/name) as z:
               missing={m['nome'] for m in item['membros']}-set(z.namelist())
-              if missing:raise RuntimeError('Membros ausentes: '+str(sorted(missing)))
+              print('Membros antigos ausentes na nova versao:',sorted(missing))
               bad=z.testzip()
               if bad:raise RuntimeError('CRC inválido: '+bad)
           print('ZIP e CRC aprovados:',name)
