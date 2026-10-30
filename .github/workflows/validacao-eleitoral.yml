@@ -73,6 +73,16 @@ jobs:
               if bad:raise RuntimeError('CRC inválido: '+bad)
           print('ZIP e CRC aprovados:',name)
           PY
+      - name: Inspecionar esquema de dados TSE
+        env:
+          ZIP_NAME: ${{ matrix.arquivo }}
+        run: python inspecionar_tse_2026.py "originais_tse/$ZIP_NAME"
+      - name: Arquivar esquema para processamento
+        uses: actions/upload-artifact@v4
+        with:
+          name: esquema-${{ matrix.arquivo }}
+          path: resultados_inspecao/
+          retention-days: 90
       - name: Arquivar ZIP verificado no GitHub Actions
         uses: actions/upload-artifact@v4
         with:
