@@ -67,6 +67,23 @@ def load_existing(path,candidate_dir):
     if not pieces: raise ValueError('Pacotes de candidatos por seção ausentes')
     candidates=pd.concat(pieces,ignore_index=True)
     if candidates.duplicated(KEY).any():raise ValueError('Candidato/seção duplicado')
+    # Lula (13) e Flávio (22) já integram X por suas colunas próprias.
+    # A contagem nominal destes candidatos nos pacotes deve coincidir com
+    # o primeiro turno; nunca acrescentá-los novamente às origens.
+    for numero,col in [('13','lula_1t'),('22','flavio_1t')]:
+        cand='cand_'+numero
+        if cand in candidates:
+            confer=canonical(d[KEY+[col]]).merge(candidates[KEY+[cand]],on=KEY,how='left',validate='one_to_one')
+            if confer[cand].isna().any():
+                raise ValueError('Pacote nominal incompleto para candidato '+numero)
+            a=pd.to_numeric(confer[col],errors='raise')
+            b=pd.to_numeric(confer[cand],errors='raise')
+            if not a.eq(b).all():
+                raise ValueError('Votos do candidato '+numero+' divergem entre bases: impedir dupla contagem')
+            candidates=candidates.drop(columns=[cand])
+    # Excluir explicitamente candidatos principais do vetor de origens.
+    if any(c in candidates.columns for c in ('cand_13','cand_22')):
+        raise AssertionError('Dupla contagem de candidatos finalistas')
     d=d.merge(candidates,on=KEY,how='left',validate='one_to_one',indicator='candidates_merge')
     cols=sorted(c for c in d if c.startswith('cand_'))
     # Zero só é aceito quando a seção foi encontrada no pacote nominal.
