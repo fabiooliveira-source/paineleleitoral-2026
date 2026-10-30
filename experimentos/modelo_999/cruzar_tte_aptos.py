@@ -6,6 +6,7 @@ import csv,gzip,json,pathlib,collections,urllib.request,zipfile,io,hashlib
 ROOT=pathlib.Path("dados/2026")
 OUT=pathlib.Path("experimentos/modelo_999/resultados");OUT.mkdir(parents=True,exist_ok=True)
 URL="https://cdn.tse.jus.br/estatistica/sead/odsele/transf_temporaria_secao/transf_temporaria_secao_2026.zip"
+RESOURCE_ID="4162f440-1037-4b36-9529-9544120604fa"
 def norm(x):return str(x).strip().lstrip("0") or "0"
 def key(uf,municipio,zona,secao):return (str(uf).upper(),norm(municipio),norm(zona),norm(secao))
 def load_aptos():
@@ -21,7 +22,12 @@ def load_aptos():
    if a is not None and b is not None:result[k]=int(b)-int(a)
  return result
 def download():
- req=urllib.request.Request(URL,headers={"User-Agent":"Mozilla/5.0"})
+ meta_url="https://dadosabertos.tse.jus.br/api/3/action/resource_show?id="+RESOURCE_ID
+ with urllib.request.urlopen(urllib.request.Request(meta_url,headers={"User-Agent":"Mozilla/5.0"}),timeout=60) as r:meta=json.load(r)
+ if not meta.get("success"):raise ValueError("CKAN sem sucesso")
+ download_url=meta["result"]["url"]
+ print("URL oficial CKAN:",download_url)
+ req=urllib.request.Request(download_url,headers={"User-Agent":"Mozilla/5.0"})
  with urllib.request.urlopen(req,timeout=120) as r:data=r.read()
  with zipfile.ZipFile(io.BytesIO(data)) as z:
   assert z.testzip() is None
@@ -50,7 +56,7 @@ def parse_tte(data):
    if len(hits)!=1:raise ValueError("Campo ambiguo "+str(fragments)+": "+str(hits))
    return r[hits[0]]
   turn=int(field("TURNO"))
-  qt=int(field("QT","ELEITOR")) if any("QT_ELEITOR" in c for c in cols) else 1
+  qt=int(field("QT","ELEITOR"))
   for suffix,sign in (("ORIGEM",-1),("DESTINO",1)):
    uf=field("UF",suffix)
    mun=field("MUNICIPIO",suffix)
