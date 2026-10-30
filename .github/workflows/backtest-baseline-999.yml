@@ -1,0 +1,23 @@
+name: Backtest baseline nacional isolado
+on:
+  push:
+    branches: [experimento/modelo-territorial-999]
+    paths:
+      - '.github/workflows/backtest-baseline-999.yml'
+      - 'experimentos/modelo_999/backtest_baseline_nacional.py'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  baseline:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Backtest temporal nacional
+        run: python3 experimentos/modelo_999/backtest_baseline_nacional.py
+      - name: Registrar resultados apenas na branch experimental
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@users.noreply.github.com
+          git add experimentos/modelo_999/resultados/backtest_baseline_nacional.json
+          git diff --cached --quiet || (git commit -m "Registrar resultados do baseline nacional" && git push)
