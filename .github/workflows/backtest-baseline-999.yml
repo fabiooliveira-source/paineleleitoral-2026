@@ -8,6 +8,7 @@ on:
       - 'experimentos/modelo_999/auditar_sincronismo_uf.py'
       - 'experimentos/modelo_999/auditar_staleness_uf.py'
       - 'experimentos/modelo_999/backtest_nowcast_uf.py'
+      - 'experimentos/modelo_999/diagnosticar_primeiro_turno.py'
   workflow_dispatch:
 permissions:
   contents: write
@@ -24,6 +25,8 @@ jobs:
         run: python3 experimentos/modelo_999/auditar_staleness_uf.py
       - name: Executar nowcast territorial por UF
         run: python3 experimentos/modelo_999/backtest_nowcast_uf.py
+      - name: Inspecionar variaveis do primeiro turno
+        run: python3 experimentos/modelo_999/diagnosticar_primeiro_turno.py
       - name: Publicar resultados como artefato independente do push
         uses: actions/upload-artifact@v4
         with:
