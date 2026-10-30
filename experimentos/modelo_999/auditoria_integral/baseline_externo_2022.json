@@ -1,0 +1,146 @@
+{
+  "status": "BASELINE_NACIONAL_2022_EXECUTADO_MODELO_TERRITORIAL_NAO_TESTADO",
+  "source_url": "https://cdn.tse.jus.br/estatistica/sead/eleicoes/eleicoes2022/Historico_Totalizacao_Presidente_BR_2T_2022.zip",
+  "zip_sha256": "1f12128fbcfacab755e0e83d9c0a350ed99ae68ea3d024aaa7bc58fe0c1dda3c",
+  "csv_sha256": "00013c958f13b2cf1a842c4398ca7cb52cf5ef46d26ce91f99c1a0ad8d0f663d",
+  "zip_crc_ok": true,
+  "rows": 5286,
+  "first_timestamp": "30/10/2022 17:00:51",
+  "last_timestamp": "31/10/2022 00:18:04",
+  "scopes": [
+    "BR"
+  ],
+  "revisions": {
+    "LULA_QT_VOTOS_TOT_ACUMULADO": 0,
+    "JAIR_BOLSONARO_QT_VOTOS_TOT_ACUMULADO": 0,
+    "QT_SECOES_TOT_ACUMULADO": 0
+  },
+  "final_lula_pct": 50.90240511717216,
+  "mae_pp": 1.4975301436535073,
+  "max_abs_error_pp": 4.1874835473893555,
+  "bias_pp": -1.4975301436535073,
+  "checkpoints": [
+    {
+      "threshold_pct": 5,
+      "timestamp": "30/10/2022 17:25:47",
+      "prediction_lula_pct": 46.7149215697828,
+      "error_pp": -4.1874835473893555
+    },
+    {
+      "threshold_pct": 10,
+      "timestamp": "30/10/2022 17:33:41",
+      "prediction_lula_pct": 47.99061081998592,
+      "error_pp": -2.9117942971862405
+    },
+    {
+      "threshold_pct": 15,
+      "timestamp": "30/10/2022 17:41:50",
+      "prediction_lula_pct": 48.385804839581596,
+      "error_pp": -2.5166002775905625
+    },
+    {
+      "threshold_pct": 20,
+      "timestamp": "30/10/2022 17:49:00",
+      "prediction_lula_pct": 48.45390740792644,
+      "error_pp": -2.4484977092457214
+    },
+    {
+      "threshold_pct": 25,
+      "timestamp": "30/10/2022 17:55:43",
+      "prediction_lula_pct": 48.74233408045688,
+      "error_pp": -2.16007103671528
+    },
+    {
+      "threshold_pct": 30,
+      "timestamp": "30/10/2022 18:02:24",
+      "prediction_lula_pct": 48.94445582645756,
+      "error_pp": -1.9579492907145948
+    },
+    {
+      "threshold_pct": 35,
+      "timestamp": "30/10/2022 18:09:33",
+      "prediction_lula_pct": 49.168747944299554,
+      "error_pp": -1.7336571728726042
+    },
+    {
+      "threshold_pct": 40,
+      "timestamp": "30/10/2022 18:15:59",
+      "prediction_lula_pct": 49.36085188420486,
+      "error_pp": -1.5415532329672956
+    },
+    {
+      "threshold_pct": 45,
+      "timestamp": "30/10/2022 18:21:43",
+      "prediction_lula_pct": 49.50023356484555,
+      "error_pp": -1.4021715523266067
+    },
+    {
+      "threshold_pct": 50,
+      "timestamp": "30/10/2022 18:26:53",
+      "prediction_lula_pct": 49.69146360734597,
+      "error_pp": -1.2109415098261849
+    },
+    {
+      "threshold_pct": 55,
+      "timestamp": "30/10/2022 18:31:29",
+      "prediction_lula_pct": 49.789959441990305,
+      "error_pp": -1.1124456751818528
+    },
+    {
+      "threshold_pct": 60,
+      "timestamp": "30/10/2022 18:36:47",
+      "prediction_lula_pct": 49.86754567007328,
+      "error_pp": -1.0348594470988814
+    },
+    {
+      "threshold_pct": 65,
+      "timestamp": "30/10/2022 18:41:23",
+      "prediction_lula_pct": 49.96238082997761,
+      "error_pp": -0.9400242871945466
+    },
+    {
+      "threshold_pct": 70,
+      "timestamp": "30/10/2022 18:46:46",
+      "prediction_lula_pct": 50.04568750613198,
+      "error_pp": -0.8567176110401746
+    },
+    {
+      "threshold_pct": 75,
+      "timestamp": "30/10/2022 18:51:36",
+      "prediction_lula_pct": 50.169236597415036,
+      "error_pp": -0.7331685197571218
+    },
+    {
+      "threshold_pct": 80,
+      "timestamp": "30/10/2022 18:56:49",
+      "prediction_lula_pct": 50.291203516379106,
+      "error_pp": -0.6112016007930521
+    },
+    {
+      "threshold_pct": 85,
+      "timestamp": "30/10/2022 19:02:13",
+      "prediction_lula_pct": 50.420289003069676,
+      "error_pp": -0.4821161141024817
+    },
+    {
+      "threshold_pct": 90,
+      "timestamp": "30/10/2022 19:09:26",
+      "prediction_lula_pct": 50.533432215068615,
+      "error_pp": -0.3689729021035433
+    },
+    {
+      "threshold_pct": 95,
+      "timestamp": "30/10/2022 19:23:45",
+      "prediction_lula_pct": 50.65955817186162,
+      "error_pp": -0.2428469453105393
+    }
+  ],
+  "limitations": [
+    "Baseline observado nacional; nao valida o modelo territorial congelado.",
+    "Referencia final usada somente na avaliacao de erro.",
+    "Cobertura usa QT_SECOES_TOTAL da propria linha contemporanea.",
+    "Hash local assegura identidade dos bytes baixados, nao autenticidade criptografica assinada pelo TSE.",
+    "Checkpoints correlacionados de uma unica eleicao; sem calibracao probabilistica.",
+    "Script congelado audit-v1 ainda precisa ser identificado e ter hash confrontado."
+  ]
+}
