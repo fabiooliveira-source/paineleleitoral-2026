@@ -1,0 +1,320 @@
+{
+  "status": "LIMITES_ECOLOGICOS_SUBCONJUNTO_ZERO",
+  "subset": "Apenas seções em secoes_com_zero.csv, não universo completo de urnas.",
+  "total_rows": 145,
+  "valid_sections": 136,
+  "excluded": {
+    "eleitorado_diferente": 8,
+    "situacao_nao_conferida": 1
+  },
+  "aggregate_bounds": {
+    "outros_para_lula_min": 0,
+    "outros_para_lula_max": 190,
+    "outros_para_flavio_min": 0,
+    "outros_para_flavio_max": 40,
+    "lula_para_flavio_min": 0,
+    "lula_para_flavio_max": 46,
+    "flavio_para_lula_min": 0,
+    "flavio_para_lula_max": 110,
+    "secoes_validas": 136,
+    "eleitorado": 22472,
+    "votos_outros_1t": 197
+  },
+  "examples": [
+    {
+      "uf": "AC",
+      "municipio_tse": "01074",
+      "zona": "4",
+      "secao": "457",
+      "limites": {
+        "outros_para_lula": {
+          "min": 0,
+          "max": 0
+        },
+        "outros_para_flavio": {
+          "min": 0,
+          "max": 0
+        },
+        "lula_para_flavio": {
+          "min": 0,
+          "max": 0
+        },
+        "flavio_para_lula": {
+          "min": 0,
+          "max": 0
+        }
+      }
+    },
+    {
+      "uf": "AC",
+      "municipio_tse": "01104",
+      "zona": "5",
+      "secao": "65",
+      "limites": {
+        "outros_para_lula": {
+          "min": 0,
+          "max": 1
+        },
+        "outros_para_flavio": {
+          "min": 0,
+          "max": 0
+        },
+        "lula_para_flavio": {
+          "min": 0,
+          "max": 0
+        },
+        "flavio_para_lula": {
+          "min": 0,
+          "max": 1
+        }
+      }
+    },
+    {
+      "uf": "AM",
+      "municipio_tse": "02054",
+      "zona": "42",
+      "secao": "26",
+      "limites": {
+        "outros_para_lula": {
+          "min": 0,
+          "max": 6
+        },
+        "outros_para_flavio": {
+          "min": 0,
+          "max": 0
+        },
+        "lula_para_flavio": {
+          "min": 0,
+          "max": 0
+        },
+        "flavio_para_lula": {
+          "min": 0,
+          "max": 1
+        }
+      }
+    },
+    {
+      "uf": "AM",
+      "municipio_tse": "02054",
+      "zona": "42",
+      "secao": "28",
+      "limites": {
+        "outros_para_lula": {
+          "min": 0,
+          "max": 6
+        },
+        "outros_para_flavio": {
+          "min": 0,
+          "max": 0
+        },
+        "lula_para_flavio": {
+          "min": 0,
+          "max": 0
+        },
+        "flavio_para_lula": {
+          "min": 0,
+          "max": 1
+        }
+      }
+    },
+    {
+      "uf": "AM",
+      "municipio_tse": "02054",
+      "zona": "42",
+      "secao": "29",
+      "limites": {
+        "outros_para_lula": {
+          "min": 0,
+          "max": 6
+        },
+        "outros_para_flavio": {
+          "min": 0,
+          "max": 0
+        },
+        "lula_para_flavio": {
+          "min": 0,
+          "max": 0
+        },
+        "flavio_para_lula": {
+          "min": 0,
+          "max": 4
+        }
+      }
+    },
+    {
+      "uf": "AM",
+      "municipio_tse": "02054",
+      "zona": "42",
+      "secao": "30",
+      "limites": {
+        "outros_para_lula": {
+          "min": 0,
+          "max": 1
+        },
+        "outros_para_flavio": {
+          "min": 0,
+          "max": 0
+        },
+        "lula_para_flavio": {
+          "min": 0,
+          "max": 0
+        },
+        "flavio_para_lula": {
+          "min": 0,
+          "max": 3
+        }
+      }
+    },
+    {
+      "uf": "AM",
+      "municipio_tse": "02054",
+      "zona": "42",
+      "secao": "37",
+      "limites": {
+        "outros_para_lula": {
+          "min": 0,
+          "max": 1
+        },
+        "outros_para_flavio": {
+          "min": 0,
+          "max": 0
+        },
+        "lula_para_flavio": {
+          "min": 0,
+          "max": 0
+        },
+        "flavio_para_lula": {
+          "min": 0,
+          "max": 0
+        }
+      }
+    },
+    {
+      "uf": "AM",
+      "municipio_tse": "02119",
+      "zona": "26",
+      "secao": "62",
+      "limites": {
+        "outros_para_lula": {
+          "min": 0,
+          "max": 8
+        },
+        "outros_para_flavio": {
+          "min": 0,
+          "max": 0
+        },
+        "lula_para_flavio": {
+          "min": 0,
+          "max": 0
+        },
+        "flavio_para_lula": {
+          "min": 0,
+          "max": 0
+        }
+      }
+    },
+    {
+      "uf": "AM",
+      "municipio_tse": "02135",
+      "zona": "20",
+      "secao": "117",
+      "limites": {
+        "outros_para_lula": {
+          "min": 0,
+          "max": 1
+        },
+        "outros_para_flavio": {
+          "min": 0,
+          "max": 0
+        },
+        "lula_para_flavio": {
+          "min": 0,
+          "max": 0
+        },
+        "flavio_para_lula": {
+          "min": 0,
+          "max": 1
+        }
+      }
+    },
+    {
+      "uf": "AM",
+      "municipio_tse": "02135",
+      "zona": "20",
+      "secao": "89",
+      "limites": {
+        "outros_para_lula": {
+          "min": 0,
+          "max": 0
+        },
+        "outros_para_flavio": {
+          "min": 0,
+          "max": 0
+        },
+        "lula_para_flavio": {
+          "min": 0,
+          "max": 0
+        },
+        "flavio_para_lula": {
+          "min": 0,
+          "max": 0
+        }
+      }
+    },
+    {
+      "uf": "AM",
+      "municipio_tse": "02216",
+      "zona": "21",
+      "secao": "96",
+      "limites": {
+        "outros_para_lula": {
+          "min": 0,
+          "max": 0
+        },
+        "outros_para_flavio": {
+          "min": 0,
+          "max": 0
+        },
+        "lula_para_flavio": {
+          "min": 0,
+          "max": 0
+        },
+        "flavio_para_lula": {
+          "min": 0,
+          "max": 1
+        }
+      }
+    },
+    {
+      "uf": "AM",
+      "municipio_tse": "02372",
+      "zona": "30",
+      "secao": "22",
+      "limites": {
+        "outros_para_lula": {
+          "min": 0,
+          "max": 8
+        },
+        "outros_para_flavio": {
+          "min": 0,
+          "max": 0
+        },
+        "lula_para_flavio": {
+          "min": 0,
+          "max": 0
+        },
+        "flavio_para_lula": {
+          "min": 0,
+          "max": 0
+        }
+      }
+    }
+  ],
+  "interpretation": "Limites de identificação parcial por seção, NÃO transferências observadas. A soma de limites é válida para o subconjunto de seções.",
+  "caveats": [
+    "Mudanças de eleitorado excluídas, evitando supor mesmo conjunto de pessoas.",
+    "Mesmo com aptos iguais, eleitores podem mudar; os limites são condicionais à estabilidade do universo de votantes elegíveis.",
+    "Não há vínculo individual entre votos do primeiro e segundo turno devido ao sigilo do voto.",
+    "Para análise nacional urna a urna, é necessário obter o comparacao_secoes.csv integral, ausente no repositório atual."
+  ]
+}
