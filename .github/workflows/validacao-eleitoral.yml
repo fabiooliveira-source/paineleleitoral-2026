@@ -18,3 +18,71 @@ jobs:
         run: python -m compileall -q validar_modelo.py inferencia_eleitoral.py previsao_territorial.py
       - name: Testes automatizados
         run: python -m unittest discover -p "test_*.py" -v
+  arquivar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    strategy:
+      fail-fast: false
+      matrix:
+        arquivo:
+          - votacao_candidato_munzona_2026.zip
+          - detalhe_votacao_munzona_2026.zip
+          - detalhe_votacao_secao_2026.zip
+          - votacao_secao_2026_BR.zip
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Baixar arquivo oficial e verificar SHA-256
+        env:
+          ZIP_NAME: ${{ matrix.arquivo }}
+        run: |
+          python - <<'PY'
+          import hashlib,json,os,pathlib,urllib.request,time
+          name=os.environ['ZIP_NAME']
+          manifest=json.loads(pathlib.Path('dados/2026/downloads.json').read_text(encoding='utf-8-sig'))
+          item=next(x for x in manifest if x['url'].split('/')[-1]==name)
+          out=pathlib.Path('originais_tse');out.mkdir(exist_ok=True)
+          target=out/name
+          for attempt in range(1,4):
+              try:
+                  req=urllib.request.Request(item['url'],headers={'User-Agent':'Mozilla/5.0 (auditoria-publica-tse)'})
+                  with urllib.request.urlopen(req,timeout=90) as src,target.open('wb') as dst:
+                      h=hashlib.sha256();n=0
+                      while True:
+                          block=src.read(4*1024*1024)
+                          if not block:break
+                          dst.write(block);h.update(block);n+=len(block)
+                  if n!=int(item['bytes']) or h.hexdigest().lower()!=item['sha256'].lower():
+                      raise ValueError(f'Arquivo divergente: {name}, bytes={n}, SHA256={h.hexdigest()}')
+                  print(f'APROVADO {name}: {n} bytes SHA256={h.hexdigest()}')
+                  break
+              except Exception:
+                  target.unlink(missing_ok=True)
+                  if attempt==3:raise
+                  time.sleep(attempt*10)
+          PY
+      - name: Verificar estrutura e CRC
+        env:
+          ZIP_NAME: ${{ matrix.arquivo }}
+        run: |
+          python - <<'PY'
+          import os,json,pathlib,zipfile
+          name=os.environ['ZIP_NAME']
+          item=next(x for x in json.loads(pathlib.Path('dados/2026/downloads.json').read_text(encoding='utf-8-sig')) if x['url'].split('/')[-1]==name)
+          with zipfile.ZipFile(pathlib.Path('originais_tse')/name) as z:
+              missing={m['nome'] for m in item['membros']}-set(z.namelist())
+              if missing:raise RuntimeError('Membros ausentes: '+str(sorted(missing)))
+              bad=z.testzip()
+              if bad:raise RuntimeError('CRC inválido: '+bad)
+          print('ZIP e CRC aprovados:',name)
+          PY
+      - name: Arquivar ZIP verificado no GitHub Actions
+        uses: actions/upload-artifact@v4
+        with:
+          name: tse-2026-${{ matrix.arquivo }}
+          path: originais_tse/${{ matrix.arquivo }}
+          if-no-files-found: error
+          retention-days: 90
+          compression-level: 0
