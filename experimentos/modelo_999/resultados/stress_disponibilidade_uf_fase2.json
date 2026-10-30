@@ -1,0 +1,875 @@
+{
+  "status": "STRESS_EXECUTADO",
+  "cenarios": {
+    "referencia": {
+      "mae_pp": 0.827100388060978,
+      "baseline_mae_pp": 1.2891482813368371,
+      "mae_5_25_pp": 0.7594945461343672,
+      "melhores_que_baseline": 16,
+      "media_ufs_frescas": 27.42105263157895,
+      "checkpoints": {
+        "5": {
+          "error_pp": 0.8885763411999981,
+          "baseline_error_pp": 0.6274694894202293,
+          "fresh_ufs": 26,
+          "timestamp": "2026-10-25T19:29:41-03:00"
+        },
+        "10": {
+          "error_pp": 0.09379094504414764,
+          "baseline_error_pp": 1.328910577575959,
+          "fresh_ufs": 28,
+          "timestamp": "2026-10-25T19:39:35-03:00"
+        },
+        "15": {
+          "error_pp": 0.6591090190634863,
+          "baseline_error_pp": 1.8678486642190018,
+          "fresh_ufs": 28,
+          "timestamp": "2026-10-25T19:48:11-03:00"
+        },
+        "20": {
+          "error_pp": 0.9988786228835811,
+          "baseline_error_pp": 2.1942772750390303,
+          "fresh_ufs": 28,
+          "timestamp": "2026-10-25T19:57:37-03:00"
+        },
+        "25": {
+          "error_pp": 1.1571178024806228,
+          "baseline_error_pp": 2.295225178007204,
+          "fresh_ufs": 28,
+          "timestamp": "2026-10-25T20:04:12-03:00"
+        },
+        "30": {
+          "error_pp": 1.2623239691274324,
+          "baseline_error_pp": 2.2510662328769024,
+          "fresh_ufs": 27,
+          "timestamp": "2026-10-25T20:08:53-03:00"
+        },
+        "35": {
+          "error_pp": 1.2355532979325123,
+          "baseline_error_pp": 2.08132388688691,
+          "fresh_ufs": 28,
+          "timestamp": "2026-10-25T20:13:24-03:00"
+        },
+        "40": {
+          "error_pp": 1.2633111624000493,
+          "baseline_error_pp": 1.9882495896403285,
+          "fresh_ufs": 28,
+          "timestamp": "2026-10-25T20:18:24-03:00"
+        },
+        "45": {
+          "error_pp": 1.2647093222430406,
+          "baseline_error_pp": 1.835411421201777,
+          "fresh_ufs": 28,
+          "timestamp": "2026-10-25T20:23:40-03:00"
+        },
+        "50": {
+          "error_pp": 1.2320935632749608,
+          "baseline_error_pp": 1.6456507574801882,
+          "fresh_ufs": 28,
+          "timestamp": "2026-10-25T20:27:25-03:00"
+        },
+        "55": {
+          "error_pp": 1.1232471512512388,
+          "baseline_error_pp": 1.4107751483077746,
+          "fresh_ufs": 28,
+          "timestamp": "2026-10-25T20:31:56-03:00"
+        },
+        "60": {
+          "error_pp": 1.046647538041412,
+          "baseline_error_pp": 1.239241872892194,
+          "fresh_ufs": 28,
+          "timestamp": "2026-10-25T20:36:27-03:00"
+        },
+        "65": {
+          "error_pp": 0.910175741327135,
+          "baseline_error_pp": 1.0346318922689002,
+          "fresh_ufs": 28,
+          "timestamp": "2026-10-25T20:40:28-03:00"
+        },
+        "70": {
+          "error_pp": 0.792530091316912,
+          "baseline_error_pp": 0.8609901099594142,
+          "fresh_ufs": 28,
+          "timestamp": "2026-10-25T20:44:58-03:00"
+        },
+        "75": {
+          "error_pp": 0.6528846092868967,
+          "baseline_error_pp": 0.6955628407281589,
+          "fresh_ufs": 28,
+          "timestamp": "2026-10-25T20:49:16-03:00"
+        },
+        "80": {
+          "error_pp": 0.4978910263822356,
+          "baseline_error_pp": 0.5134574584106044,
+          "fresh_ufs": 28,
+          "timestamp": "2026-10-25T20:53:30-03:00"
+        },
+        "85": {
+          "error_pp": 0.35159450283226423,
+          "baseline_error_pp": 0.3540169439251173,
+          "fresh_ufs": 27,
+          "timestamp": "2026-10-25T20:58:00-03:00"
+        },
+        "90": {
+          "error_pp": 0.21339503304792506,
+          "baseline_error_pp": 0.2052871769576914,
+          "fresh_ufs": 25,
+          "timestamp": "2026-10-25T21:02:31-03:00"
+        },
+        "95": {
+          "error_pp": 0.07107763402273148,
+          "baseline_error_pp": 0.06442082960251838,
+          "fresh_ufs": 24,
+          "timestamp": "2026-10-25T21:07:32-03:00"
+        }
+      }
+    },
+    "atraso_5min": {
+      "mae_pp": 0.8501214018653418,
+      "baseline_mae_pp": 1.2891482813368371,
+      "mae_5_25_pp": 0.8213353566167969,
+      "melhores_que_baseline": 14,
+      "media_ufs_frescas": 27.473684210526315,
+      "checkpoints": {
+        "5": {
+          "error_pp": 1.262485787237111,
+          "baseline_error_pp": 0.6274694894202293,
+          "fresh_ufs": 26,
+          "timestamp": "2026-10-25T19:29:41-03:00"
+        },
+        "10": {
+          "error_pp": 0.3203873992650541,
+          "baseline_error_pp": 1.328910577575959,
+          "fresh_ufs": 27,
+          "timestamp": "2026-10-25T19:39:35-03:00"
+        },
+        "15": {
+          "error_pp": 0.525034778501432,
+          "baseline_error_pp": 1.8678486642190018,
+          "fresh_ufs": 27,
+          "timestamp": "2026-10-25T19:48:11-03:00"
+        },
+        "20": {
+          "error_pp": 0.8625510190738539,
+          "baseline_error_pp": 2.1942772750390303,
+          "fresh_ufs": 27,
+          "timestamp": "2026-10-25T19:57:37-03:00"
+        },
+        "25": {
+          "error_pp": 1.1362177990065336,
+          "baseline_error_pp": 2.295225178007204,
+          "fresh_ufs": 27,
+          "timestamp": "2026-10-25T20:04:12-03:00"
+        },
+        "30": {
+          "error_pp": 1.2125425474941887,
+          "baseline_error_pp": 2.2510662328769024,
+          "fresh_ufs": 28,
+          "timestamp": "2026-10-25T20:08:53-03:00"
+        },
+        "35": {
+          "error_pp": 1.2595547905427606,
+          "baseline_error_pp": 2.08132388688691,
+          "fresh_ufs": 27,
+          "timestamp": "2026-10-25T20:13:24-03:00"
+        },
+        "40": {
+          "error_pp": 1.265188410172613,
+          "baseline_error_pp": 1.9882495896403285,
+          "fresh_ufs": 28,
+          "timestamp": "2026-10-25T20:18:24-03:00"
+        },
+        "45": {
+          "error_pp": 1.259842743822992,
+          "baseline_error_pp": 1.835411421201777,
+          "fresh_ufs": 28,
+          "timestamp": "2026-10-25T20:23:40-03:00"
+        },
+        "50": {
+          "error_pp": 1.2254111577834848,
+          "baseline_error_pp": 1.6456507574801882,
+          "fresh_ufs": 28,
+          "timestamp": "2026-10-25T20:27:25-03:00"
+        },
+        "55": {
+          "error_pp": 1.1443264344200954,
+          "baseline_error_pp": 1.4107751483077746,
+          "fresh_ufs": 28,
+          "timestamp": "2026-10-25T20:31:56-03:00"
+        },
+        "60": {
+          "error_pp": 1.0597608144353399,
+          "baseline_error_pp": 1.239241872892194,
+          "fresh_ufs": 28,
+          "timestamp": "2026-10-25T20:36:27-03:00"
+        },
+        "65": {
+          "error_pp": 0.9410638682464612,
+          "baseline_error_pp": 1.0346318922689002,
+          "fresh_ufs": 28,
+          "timestamp": "2026-10-25T20:40:28-03:00"
+        },
+        "70": {
+          "error_pp": 0.8138750948132434,
+          "baseline_error_pp": 0.8609901099594142,
+          "fresh_ufs": 28,
+          "timestamp": "2026-10-25T20:44:58-03:00"
+        },
+        "75": {
+          "error_pp": 0.6780813202589386,
+          "baseline_error_pp": 0.6955628407281589,
+          "fresh_ufs": 28,
+          "timestamp": "2026-10-25T20:49:16-03:00"
+        },
+        "80": {
+          "error_pp": 0.5197011515747363,
+          "baseline_error_pp": 0.5134574584106044,
+          "fresh_ufs": 28,
+          "timestamp": "2026-10-25T20:53:30-03:00"
+        },
+        "85": {
+          "error_pp": 0.3721768906633005,
+          "baseline_error_pp": 0.3540169439251173,
+          "fresh_ufs": 28,
+          "timestamp": "2026-10-25T20:58:00-03:00"
+        },
+        "90": {
+          "error_pp": 0.21919263545350232,
+          "baseline_error_pp": 0.2052871769576914,
+          "fresh_ufs": 28,
+          "timestamp": "2026-10-25T21:02:31-03:00"
+        },
+        "95": {
+          "error_pp": 0.07491199267585236,
+          "baseline_error_pp": 0.06442082960251838,
+          "fresh_ufs": 25,
+          "timestamp": "2026-10-25T21:07:32-03:00"
+        }
+      }
+    },
+    "atraso_15min": {
+      "mae_pp": 0.8809443544454402,
+      "baseline_mae_pp": 1.2891482813368371,
+      "mae_5_25_pp": 0.9505072418361404,
+      "melhores_que_baseline": 13,
+      "media_ufs_frescas": 27.42105263157895,
+      "checkpoints": {
+        "5": {
+          "error_pp": 1.7739711869862673,
+          "baseline_error_pp": 0.6274694894202293,
+          "fresh_ufs": 23,
+          "timestamp": "2026-10-25T19:29:41-03:00"
+        },
+        "10": {
+          "error_pp": 1.080337696322331,
+          "baseline_error_pp": 1.328910577575959,
+          "fresh_ufs": 26,
+          "timestamp": "2026-10-25T19:39:35-03:00"
+        },
+        "15": {
+          "error_pp": 0.3039471513141878,
+          "baseline_error_pp": 1.8678486642190018,
+          "fresh_ufs": 27,
+          "timestamp": "2026-10-25T19:48:11-03:00"
+        },
+        "20": {
+          "error_pp": 0.6342768204508409,
+          "baseline_error_pp": 2.1942772750390303,
+          "fresh_ufs": 27,
+          "timestamp": "2026-10-25T19:57:37-03:00"
+        },
+        "25": {
+          "error_pp": 0.9600033541070752,
+          "baseline_error_pp": 2.295225178007204,
+          "fresh_ufs": 28,
+          "timestamp": "2026-10-25T20:04:12-03:00"
+        },
+        "30": {
+          "error_pp": 1.0755831151386785,
+          "baseline_error_pp": 2.2510662328769024,
+          "fresh_ufs": 28,
+          "timestamp": "2026-10-25T20:08:53-03:00"
+        },
+        "35": {
+          "error_pp": 1.196368863121322,
+          "baseline_error_pp": 2.08132388688691,
+          "fresh_ufs": 28,
+          "timestamp": "2026-10-25T20:13:24-03:00"
+        },
+        "40": {
+          "error_pp": 1.2259318007713849,
+          "baseline_error_pp": 1.9882495896403285,
+          "fresh_ufs": 28,
+          "timestamp": "2026-10-25T20:18:24-03:00"
+        },
+        "45": {
+          "error_pp": 1.2748659880495672,
+          "baseline_error_pp": 1.835411421201777,
+          "fresh_ufs": 27,
+          "timestamp": "2026-10-25T20:23:40-03:00"
+        },
+        "50": {
+          "error_pp": 1.236053226137035,
+          "baseline_error_pp": 1.6456507574801882,
+          "fresh_ufs": 27,
+          "timestamp": "2026-10-25T20:27:25-03:00"
+        },
+        "55": {
+          "error_pp": 1.1197273226179028,
+          "baseline_error_pp": 1.4107751483077746,
+          "fresh_ufs": 28,
+          "timestamp": "2026-10-25T20:31:56-03:00"
+        },
+        "60": {
+          "error_pp": 1.0661226560880532,
+          "baseline_error_pp": 1.239241872892194,
+          "fresh_ufs": 28,
+          "timestamp": "2026-10-25T20:36:27-03:00"
+        },
+        "65": {
+          "error_pp": 0.9554088709087027,
+          "baseline_error_pp": 1.0346318922689002,
+          "fresh_ufs": 28,
+          "timestamp": "2026-10-25T20:40:28-03:00"
+        },
+        "70": {
+          "error_pp": 0.8389272060286168,
+          "baseline_error_pp": 0.8609901099594142,
+          "fresh_ufs": 28,
+          "timestamp": "2026-10-25T20:44:58-03:00"
+        },
+        "75": {
+          "error_pp": 0.7169736793336656,
+          "baseline_error_pp": 0.6955628407281589,
+          "fresh_ufs": 28,
+          "timestamp": "2026-10-25T20:49:16-03:00"
+        },
+        "80": {
+          "error_pp": 0.5557822457057715,
+          "baseline_error_pp": 0.5134574584106044,
+          "fresh_ufs": 28,
+          "timestamp": "2026-10-25T20:53:30-03:00"
+        },
+        "85": {
+          "error_pp": 0.397155320954401,
+          "baseline_error_pp": 0.3540169439251173,
+          "fresh_ufs": 28,
+          "timestamp": "2026-10-25T20:58:00-03:00"
+        },
+        "90": {
+          "error_pp": 0.24236952421982094,
+          "baseline_error_pp": 0.2052871769576914,
+          "fresh_ufs": 28,
+          "timestamp": "2026-10-25T21:02:31-03:00"
+        },
+        "95": {
+          "error_pp": 0.08413670620773805,
+          "baseline_error_pp": 0.06442082960251838,
+          "fresh_ufs": 28,
+          "timestamp": "2026-10-25T21:07:32-03:00"
+        }
+      }
+    },
+    "atraso_30min": {
+      "mae_pp": 0.9272640270123879,
+      "baseline_mae_pp": 1.2891482813368371,
+      "mae_5_25_pp": 1.3420278473457659,
+      "melhores_que_baseline": 12,
+      "media_ufs_frescas": 25.894736842105264,
+      "checkpoints": {
+        "5": {
+          "error_pp": 2.88932485589265,
+          "baseline_error_pp": 0.6274694894202293,
+          "fresh_ufs": 0,
+          "timestamp": "2026-10-25T19:29:41-03:00"
+        },
+        "10": {
+          "error_pp": 2.129538419363841,
+          "baseline_error_pp": 1.328910577575959,
+          "fresh_ufs": 24,
+          "timestamp": "2026-10-25T19:39:35-03:00"
+        },
+        "15": {
+          "error_pp": 1.0130860455112245,
+          "baseline_error_pp": 1.8678486642190018,
+          "fresh_ufs": 25,
+          "timestamp": "2026-10-25T19:48:11-03:00"
+        },
+        "20": {
+          "error_pp": 0.510048610912428,
+          "baseline_error_pp": 2.1942772750390303,
+          "fresh_ufs": 26,
+          "timestamp": "2026-10-25T19:57:37-03:00"
+        },
+        "25": {
+          "error_pp": 0.16814130504868574,
+          "baseline_error_pp": 2.295225178007204,
+          "fresh_ufs": 27,
+          "timestamp": "2026-10-25T20:04:12-03:00"
+        },
+        "30": {
+          "error_pp": 0.664370958657512,
+          "baseline_error_pp": 2.2510662328769024,
+          "fresh_ufs": 28,
+          "timestamp": "2026-10-25T20:08:53-03:00"
+        },
+        "35": {
+          "error_pp": 0.868963990309013,
+          "baseline_error_pp": 2.08132388688691,
+          "fresh_ufs": 28,
+          "timestamp": "2026-10-25T20:13:24-03:00"
+        },
+        "40": {
+          "error_pp": 1.0648471284176453,
+          "baseline_error_pp": 1.9882495896403285,
+          "fresh_ufs": 28,
+          "timestamp": "2026-10-25T20:18:24-03:00"
+        },
+        "45": {
+          "error_pp": 1.1289006892111986,
+          "baseline_error_pp": 1.835411421201777,
+          "fresh_ufs": 28,
+          "timestamp": "2026-10-25T20:23:40-03:00"
+        },
+        "50": {
+          "error_pp": 1.1830904684813626,
+          "baseline_error_pp": 1.6456507574801882,
+          "fresh_ufs": 28,
+          "timestamp": "2026-10-25T20:27:25-03:00"
+        },
+        "55": {
+          "error_pp": 1.1249032491909783,
+          "baseline_error_pp": 1.4107751483077746,
+          "fresh_ufs": 27,
+          "timestamp": "2026-10-25T20:31:56-03:00"
+        },
+        "60": {
+          "error_pp": 1.0495544011595803,
+          "baseline_error_pp": 1.239241872892194,
+          "fresh_ufs": 28,
+          "timestamp": "2026-10-25T20:36:27-03:00"
+        },
+        "65": {
+          "error_pp": 0.9385547046660947,
+          "baseline_error_pp": 1.0346318922689002,
+          "fresh_ufs": 27,
+          "timestamp": "2026-10-25T20:40:28-03:00"
+        },
+        "70": {
+          "error_pp": 0.8373965838495145,
+          "baseline_error_pp": 0.8609901099594142,
+          "fresh_ufs": 28,
+          "timestamp": "2026-10-25T20:44:58-03:00"
+        },
+        "75": {
+          "error_pp": 0.7087161476522441,
+          "baseline_error_pp": 0.6955628407281589,
+          "fresh_ufs": 28,
+          "timestamp": "2026-10-25T20:49:16-03:00"
+        },
+        "80": {
+          "error_pp": 0.5687434054392093,
+          "baseline_error_pp": 0.5134574584106044,
+          "fresh_ufs": 28,
+          "timestamp": "2026-10-25T20:53:30-03:00"
+        },
+        "85": {
+          "error_pp": 0.41532022477915875,
+          "baseline_error_pp": 0.3540169439251173,
+          "fresh_ufs": 28,
+          "timestamp": "2026-10-25T20:58:00-03:00"
+        },
+        "90": {
+          "error_pp": 0.2591244302432849,
+          "baseline_error_pp": 0.2052871769576914,
+          "fresh_ufs": 28,
+          "timestamp": "2026-10-25T21:02:31-03:00"
+        },
+        "95": {
+          "error_pp": 0.0953908944497428,
+          "baseline_error_pp": 0.06442082960251838,
+          "fresh_ufs": 28,
+          "timestamp": "2026-10-25T21:07:32-03:00"
+        }
+      }
+    },
+    "sem_SP": {
+      "mae_pp": 0.9488479122284782,
+      "baseline_mae_pp": 1.2891482813368371,
+      "mae_5_25_pp": 0.8803233422383672,
+      "melhores_que_baseline": 12,
+      "media_ufs_frescas": 26.42105263157895,
+      "checkpoints": {
+        "5": {
+          "error_pp": 0.12584877607664247,
+          "baseline_error_pp": 0.6274694894202293,
+          "fresh_ufs": 25,
+          "timestamp": "2026-10-25T19:29:41-03:00"
+        },
+        "10": {
+          "error_pp": 0.6074308138973805,
+          "baseline_error_pp": 1.328910577575959,
+          "fresh_ufs": 27,
+          "timestamp": "2026-10-25T19:39:35-03:00"
+        },
+        "15": {
+          "error_pp": 1.0238396335045752,
+          "baseline_error_pp": 1.8678486642190018,
+          "fresh_ufs": 27,
+          "timestamp": "2026-10-25T19:48:11-03:00"
+        },
+        "20": {
+          "error_pp": 1.2731293731523818,
+          "baseline_error_pp": 2.1942772750390303,
+          "fresh_ufs": 27,
+          "timestamp": "2026-10-25T19:57:37-03:00"
+        },
+        "25": {
+          "error_pp": 1.3713681145608558,
+          "baseline_error_pp": 2.295225178007204,
+          "fresh_ufs": 27,
+          "timestamp": "2026-10-25T20:04:12-03:00"
+        },
+        "30": {
+          "error_pp": 1.442653155230067,
+          "baseline_error_pp": 2.2510662328769024,
+          "fresh_ufs": 26,
+          "timestamp": "2026-10-25T20:08:53-03:00"
+        },
+        "35": {
+          "error_pp": 1.413585475687018,
+          "baseline_error_pp": 2.08132388688691,
+          "fresh_ufs": 27,
+          "timestamp": "2026-10-25T20:13:24-03:00"
+        },
+        "40": {
+          "error_pp": 1.4279459186967824,
+          "baseline_error_pp": 1.9882495896403285,
+          "fresh_ufs": 27,
+          "timestamp": "2026-10-25T20:18:24-03:00"
+        },
+        "45": {
+          "error_pp": 1.4148392469962578,
+          "baseline_error_pp": 1.835411421201777,
+          "fresh_ufs": 27,
+          "timestamp": "2026-10-25T20:23:40-03:00"
+        },
+        "50": {
+          "error_pp": 1.3670507578270708,
+          "baseline_error_pp": 1.6456507574801882,
+          "fresh_ufs": 27,
+          "timestamp": "2026-10-25T20:27:25-03:00"
+        },
+        "55": {
+          "error_pp": 1.255765840230405,
+          "baseline_error_pp": 1.4107751483077746,
+          "fresh_ufs": 27,
+          "timestamp": "2026-10-25T20:31:56-03:00"
+        },
+        "60": {
+          "error_pp": 1.1699943636373722,
+          "baseline_error_pp": 1.239241872892194,
+          "fresh_ufs": 27,
+          "timestamp": "2026-10-25T20:36:27-03:00"
+        },
+        "65": {
+          "error_pp": 1.0358289726192793,
+          "baseline_error_pp": 1.0346318922689002,
+          "fresh_ufs": 27,
+          "timestamp": "2026-10-25T20:40:28-03:00"
+        },
+        "70": {
+          "error_pp": 0.9092872841142574,
+          "baseline_error_pp": 0.8609901099594142,
+          "fresh_ufs": 27,
+          "timestamp": "2026-10-25T20:44:58-03:00"
+        },
+        "75": {
+          "error_pp": 0.7699950288117763,
+          "baseline_error_pp": 0.6955628407281589,
+          "fresh_ufs": 27,
+          "timestamp": "2026-10-25T20:49:16-03:00"
+        },
+        "80": {
+          "error_pp": 0.6014830168263763,
+          "baseline_error_pp": 0.5134574584106044,
+          "fresh_ufs": 27,
+          "timestamp": "2026-10-25T20:53:30-03:00"
+        },
+        "85": {
+          "error_pp": 0.43929297141508394,
+          "baseline_error_pp": 0.3540169439251173,
+          "fresh_ufs": 26,
+          "timestamp": "2026-10-25T20:58:00-03:00"
+        },
+        "90": {
+          "error_pp": 0.27473695252995256,
+          "baseline_error_pp": 0.2052871769576914,
+          "fresh_ufs": 24,
+          "timestamp": "2026-10-25T21:02:31-03:00"
+        },
+        "95": {
+          "error_pp": 0.10403463652755018,
+          "baseline_error_pp": 0.06442082960251838,
+          "fresh_ufs": 23,
+          "timestamp": "2026-10-25T21:07:32-03:00"
+        }
+      }
+    },
+    "sem_SP_MG_RJ": {
+      "mae_pp": 1.1759194326021332,
+      "baseline_mae_pp": 1.2891482813368371,
+      "mae_5_25_pp": 1.256594749382678,
+      "melhores_que_baseline": 10,
+      "media_ufs_frescas": 24.42105263157895,
+      "checkpoints": {
+        "5": {
+          "error_pp": 0.46216759250216066,
+          "baseline_error_pp": 0.6274694894202293,
+          "fresh_ufs": 23,
+          "timestamp": "2026-10-25T19:29:41-03:00"
+        },
+        "10": {
+          "error_pp": 1.05885197602823,
+          "baseline_error_pp": 1.328910577575959,
+          "fresh_ufs": 25,
+          "timestamp": "2026-10-25T19:39:35-03:00"
+        },
+        "15": {
+          "error_pp": 1.4185436077348679,
+          "baseline_error_pp": 1.8678486642190018,
+          "fresh_ufs": 25,
+          "timestamp": "2026-10-25T19:48:11-03:00"
+        },
+        "20": {
+          "error_pp": 1.6351826426263094,
+          "baseline_error_pp": 2.1942772750390303,
+          "fresh_ufs": 25,
+          "timestamp": "2026-10-25T19:57:37-03:00"
+        },
+        "25": {
+          "error_pp": 1.7082279280218216,
+          "baseline_error_pp": 2.295225178007204,
+          "fresh_ufs": 25,
+          "timestamp": "2026-10-25T20:04:12-03:00"
+        },
+        "30": {
+          "error_pp": 1.7561587639353116,
+          "baseline_error_pp": 2.2510662328769024,
+          "fresh_ufs": 24,
+          "timestamp": "2026-10-25T20:08:53-03:00"
+        },
+        "35": {
+          "error_pp": 1.7096459824710197,
+          "baseline_error_pp": 2.08132388688691,
+          "fresh_ufs": 25,
+          "timestamp": "2026-10-25T20:13:24-03:00"
+        },
+        "40": {
+          "error_pp": 1.6956369463248078,
+          "baseline_error_pp": 1.9882495896403285,
+          "fresh_ufs": 25,
+          "timestamp": "2026-10-25T20:18:24-03:00"
+        },
+        "45": {
+          "error_pp": 1.6601704814070306,
+          "baseline_error_pp": 1.835411421201777,
+          "fresh_ufs": 25,
+          "timestamp": "2026-10-25T20:23:40-03:00"
+        },
+        "50": {
+          "error_pp": 1.5905228227966917,
+          "baseline_error_pp": 1.6456507574801882,
+          "fresh_ufs": 25,
+          "timestamp": "2026-10-25T20:27:25-03:00"
+        },
+        "55": {
+          "error_pp": 1.458774253123496,
+          "baseline_error_pp": 1.4107751483077746,
+          "fresh_ufs": 25,
+          "timestamp": "2026-10-25T20:31:56-03:00"
+        },
+        "60": {
+          "error_pp": 1.351362573517223,
+          "baseline_error_pp": 1.239241872892194,
+          "fresh_ufs": 25,
+          "timestamp": "2026-10-25T20:36:27-03:00"
+        },
+        "65": {
+          "error_pp": 1.201752405789025,
+          "baseline_error_pp": 1.0346318922689002,
+          "fresh_ufs": 25,
+          "timestamp": "2026-10-25T20:40:28-03:00"
+        },
+        "70": {
+          "error_pp": 1.0512152792772511,
+          "baseline_error_pp": 0.8609901099594142,
+          "fresh_ufs": 25,
+          "timestamp": "2026-10-25T20:44:58-03:00"
+        },
+        "75": {
+          "error_pp": 0.8952685484537204,
+          "baseline_error_pp": 0.6955628407281589,
+          "fresh_ufs": 25,
+          "timestamp": "2026-10-25T20:49:16-03:00"
+        },
+        "80": {
+          "error_pp": 0.7086027551423957,
+          "baseline_error_pp": 0.5134574584106044,
+          "fresh_ufs": 25,
+          "timestamp": "2026-10-25T20:53:30-03:00"
+        },
+        "85": {
+          "error_pp": 0.5196636950808298,
+          "baseline_error_pp": 0.3540169439251173,
+          "fresh_ufs": 24,
+          "timestamp": "2026-10-25T20:58:00-03:00"
+        },
+        "90": {
+          "error_pp": 0.3291085222385304,
+          "baseline_error_pp": 0.2052871769576914,
+          "fresh_ufs": 22,
+          "timestamp": "2026-10-25T21:02:31-03:00"
+        },
+        "95": {
+          "error_pp": 0.13161244296980845,
+          "baseline_error_pp": 0.06442082960251838,
+          "fresh_ufs": 21,
+          "timestamp": "2026-10-25T21:07:32-03:00"
+        }
+      }
+    },
+    "sem_Nordeste": {
+      "mae_pp": 1.0611451148524593,
+      "baseline_mae_pp": 1.2891482813368371,
+      "mae_5_25_pp": 1.075365158154724,
+      "melhores_que_baseline": 11,
+      "media_ufs_frescas": 18.473684210526315,
+      "checkpoints": {
+        "5": {
+          "error_pp": 0.20971304317105588,
+          "baseline_error_pp": 0.6274694894202293,
+          "fresh_ufs": 18,
+          "timestamp": "2026-10-25T19:29:41-03:00"
+        },
+        "10": {
+          "error_pp": 0.8413313651328358,
+          "baseline_error_pp": 1.328910577575959,
+          "fresh_ufs": 19,
+          "timestamp": "2026-10-25T19:39:35-03:00"
+        },
+        "15": {
+          "error_pp": 1.2356818310608864,
+          "baseline_error_pp": 1.8678486642190018,
+          "fresh_ufs": 19,
+          "timestamp": "2026-10-25T19:48:11-03:00"
+        },
+        "20": {
+          "error_pp": 1.4958902477824387,
+          "baseline_error_pp": 2.1942772750390303,
+          "fresh_ufs": 19,
+          "timestamp": "2026-10-25T19:57:37-03:00"
+        },
+        "25": {
+          "error_pp": 1.5942093036264038,
+          "baseline_error_pp": 2.295225178007204,
+          "fresh_ufs": 19,
+          "timestamp": "2026-10-25T20:04:12-03:00"
+        },
+        "30": {
+          "error_pp": 1.6481240983562295,
+          "baseline_error_pp": 2.2510662328769024,
+          "fresh_ufs": 18,
+          "timestamp": "2026-10-25T20:08:53-03:00"
+        },
+        "35": {
+          "error_pp": 1.601428436320318,
+          "baseline_error_pp": 2.08132388688691,
+          "fresh_ufs": 19,
+          "timestamp": "2026-10-25T20:13:24-03:00"
+        },
+        "40": {
+          "error_pp": 1.6063459933466917,
+          "baseline_error_pp": 1.9882495896403285,
+          "fresh_ufs": 19,
+          "timestamp": "2026-10-25T20:18:24-03:00"
+        },
+        "45": {
+          "error_pp": 1.5673815862016438,
+          "baseline_error_pp": 1.835411421201777,
+          "fresh_ufs": 19,
+          "timestamp": "2026-10-25T20:23:40-03:00"
+        },
+        "50": {
+          "error_pp": 1.5037034342569533,
+          "baseline_error_pp": 1.6456507574801882,
+          "fresh_ufs": 19,
+          "timestamp": "2026-10-25T20:27:25-03:00"
+        },
+        "55": {
+          "error_pp": 1.36749533828614,
+          "baseline_error_pp": 1.4107751483077746,
+          "fresh_ufs": 19,
+          "timestamp": "2026-10-25T20:31:56-03:00"
+        },
+        "60": {
+          "error_pp": 1.2568438721666353,
+          "baseline_error_pp": 1.239241872892194,
+          "fresh_ufs": 19,
+          "timestamp": "2026-10-25T20:36:27-03:00"
+        },
+        "65": {
+          "error_pp": 1.0974842759353343,
+          "baseline_error_pp": 1.0346318922689002,
+          "fresh_ufs": 19,
+          "timestamp": "2026-10-25T20:40:28-03:00"
+        },
+        "70": {
+          "error_pp": 0.9527261979971446,
+          "baseline_error_pp": 0.8609901099594142,
+          "fresh_ufs": 19,
+          "timestamp": "2026-10-25T20:44:58-03:00"
+        },
+        "75": {
+          "error_pp": 0.7869017478818852,
+          "baseline_error_pp": 0.6955628407281589,
+          "fresh_ufs": 19,
+          "timestamp": "2026-10-25T20:49:16-03:00"
+        },
+        "80": {
+          "error_pp": 0.605395334582004,
+          "baseline_error_pp": 0.5134574584106044,
+          "fresh_ufs": 19,
+          "timestamp": "2026-10-25T20:53:30-03:00"
+        },
+        "85": {
+          "error_pp": 0.4304278804554196,
+          "baseline_error_pp": 0.3540169439251173,
+          "fresh_ufs": 18,
+          "timestamp": "2026-10-25T20:58:00-03:00"
+        },
+        "90": {
+          "error_pp": 0.264962764215948,
+          "baseline_error_pp": 0.2052871769576914,
+          "fresh_ufs": 16,
+          "timestamp": "2026-10-25T21:02:31-03:00"
+        },
+        "95": {
+          "error_pp": 0.09571043142075908,
+          "baseline_error_pp": 0.06442082960251838,
+          "fresh_ufs": 15,
+          "timestamp": "2026-10-25T21:07:32-03:00"
+        }
+      }
+    }
+  },
+  "referencia_mae_pp": 0.827100388060978,
+  "todos_cenarios_superam_baseline": true,
+  "pior_cenario": "sem_SP_MG_RJ",
+  "limitacoes": [
+    "Cenarios artificiais predefinidos sobre uma unica eleicao.",
+    "Atraso reduz disponibilidade dos snapshots UF, nao modifica votos nacionais ja observados.",
+    "Exclusao de UF usa share historico sem swing, mas mantem votos nacionais ja apurados.",
+    "Nao e validacao independente em outra eleicao nem certificacao de probabilidade."
+  ]
+}
