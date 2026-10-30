@@ -59,7 +59,7 @@ def parse_tte(data):
   qt=int(field("QT","ELEITOR"))
   for suffix,sign in (("ORIGEM",-1),("DESTINO",1)):
    uf=field("UF",suffix)
-   mun=field("MUNICIPIO",suffix)
+   mun=field("CD_MUNICIPIO",suffix)
    zona=field("ZONA",suffix)
    sec=field("SECAO",suffix)
    totals[(key(uf,mun,zona,sec),turn)]+=sign*qt
