@@ -1,0 +1,182 @@
+[
+  {
+    "name": "detalhe_votacao_secao_2018.zip",
+    "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/detalhe_votacao_secao/detalhe_votacao_secao_2018.zip",
+    "sha256": "de35b08db427ee0c3089d88317e6166ea5dea33630f5b1dabdccf3304de48f70",
+    "bytes": 256133172,
+    "zip_crc_ok": true,
+    "members": [
+      {
+        "name": "detalhe_votacao_secao_2018_BA.csv",
+        "bytes": 45363275
+      },
+      {
+        "name": "detalhe_votacao_secao_2018_CE.csv",
+        "bytes": 29540558
+      },
+      {
+        "name": "detalhe_votacao_secao_2018_AC.csv",
+        "bytes": 2670619
+      },
+      {
+        "name": "detalhe_votacao_secao_2018_BR.csv",
+        "bytes": 313345987
+      },
+      {
+        "name": "detalhe_votacao_secao_2018_AP.csv",
+        "bytes": 2852377
+      },
+      {
+        "name": "detalhe_votacao_secao_2018_GO.csv",
+        "bytes": 19934330
+      },
+      {
+        "name": "detalhe_votacao_secao_2018_DF.csv",
+        "bytes": 11889893
+      },
+      {
+        "name": "detalhe_votacao_secao_2018_ES.csv",
+        "bytes": 12245031
+      },
+      {
+        "name": "detalhe_votacao_secao_2018_AL.csv",
+        "bytes": 9143470
+      },
+      {
+        "name": "detalhe_votacao_secao_2018_AM.csv",
+        "bytes": 11986420
+      },
+      {
+        "name": "detalhe_votacao_secao_2018_MA.csv",
+        "bytes": 22167180
+      },
+      {
+        "name": "detalhe_votacao_secao_2018_MG.csv",
+        "bytes": 86734180
+      },
+      {
+        "name": "detalhe_votacao_secao_2018_MS.csv",
+        "bytes": 11682149
+      },
+      {
+        "name": "detalhe_votacao_secao_2018_MT.csv",
+        "bytes": 12895000
+      },
+      {
+        "name": "detalhe_votacao_secao_2018_PB.csv",
+        "bytes": 14307294
+      },
+      {
+        "name": "detalhe_votacao_secao_2018_PA.csv",
+        "bytes": 29431713
+      },
+      {
+        "name": "detalhe_votacao_secao_2018_PE.csv",
+        "bytes": 28374424
+      },
+      {
+        "name": "detalhe_votacao_secao_2018_PR.csv",
+        "bytes": 37630661
+      },
+      {
+        "name": "detalhe_votacao_secao_2018_PI.csv",
+        "bytes": 12521235
+      },
+      {
+        "name": "detalhe_votacao_secao_2018_RJ.csv",
+        "bytes": 61283228
+      },
+      {
+        "name": "detalhe_votacao_secao_2018_RN.csv",
+        "bytes": 13616177
+      },
+      {
+        "name": "detalhe_votacao_secao_2018_RO.csv",
+        "bytes": 7464573
+      },
+      {
+        "name": "detalhe_votacao_secao_2018_RR.csv",
+        "bytes": 2042092
+      },
+      {
+        "name": "detalhe_votacao_secao_2018_RS.csv",
+        "bytes": 49216569
+      },
+      {
+        "name": "detalhe_votacao_secao_2018_SC.csv",
+        "bytes": 28647779
+      },
+      {
+        "name": "detalhe_votacao_secao_2018_SE.csv",
+        "bytes": 9112523
+      },
+      {
+        "name": "detalhe_votacao_secao_2018_TO.csv",
+        "bytes": 5488999
+      },
+      {
+        "name": "detalhe_votacao_secao_2018_SP.csv",
+        "bytes": 168553295
+      },
+      {
+        "name": "detalhe_votacao_secao_2018_ZZ.csv",
+        "bytes": 606
+      },
+      {
+        "name": "detalhe_votacao_secao_2018_BRASIL.csv",
+        "bytes": 1060124669
+      }
+    ],
+    "headers": {
+      "accept-ranges": "bytes",
+      "access-control-allow-origin": "*,*",
+      "content-type": "application/zip",
+      "access-control-allow-headers": "*",
+      "access-control-allow-methods": "POST, GET, OPTIONS, DELETE",
+      "last-modified": "Thu, 09 Apr 2026 16:48:22 GMT",
+      "etag": "\"f444834-64f09c8d4cf8f\"",
+      "content-length": "256133172",
+      "cache-control": "max-age=43200",
+      "date": "Fri, 30 Oct 2026 23:45:12 GMT",
+      "alt-svc": "h3=\":443\"; ma=93600",
+      "x-envoy-upstream-service-time": "252",
+      "server": "envoy",
+      "connection": "close"
+    },
+    "retrieved_at_utc": "2026-10-30T23:45:29.523983+00:00"
+  },
+  {
+    "name": "votacao_secao_2018_BR.zip",
+    "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/votacao_secao/votacao_secao_2018_BR.zip",
+    "sha256": "dde2250058a7efa3b7ee336520556905456cb75d7debf99ea4badfc4d598a48c",
+    "bytes": 250985147,
+    "zip_crc_ok": true,
+    "members": [
+      {
+        "name": "votacao_secao_2018_BR.csv",
+        "bytes": 1826351316
+      },
+      {
+        "name": "leiame.pdf",
+        "bytes": 192420
+      }
+    ],
+    "headers": {
+      "accept-ranges": "bytes",
+      "access-control-allow-origin": "*,*",
+      "content-type": "application/zip",
+      "access-control-allow-headers": "*",
+      "access-control-allow-methods": "POST, GET, OPTIONS, DELETE",
+      "last-modified": "Fri, 15 Aug 2025 14:15:53 GMT",
+      "etag": "\"ef5babb-63c68071041ac\"",
+      "content-length": "250985147",
+      "cache-control": "max-age=43200",
+      "date": "Fri, 30 Oct 2026 23:45:13 GMT",
+      "alt-svc": "h3=\":443\"; ma=93600",
+      "x-envoy-upstream-service-time": "737",
+      "server": "envoy",
+      "connection": "close"
+    },
+    "retrieved_at_utc": "2026-10-30T23:45:25.196463+00:00"
+  }
+]
