@@ -1,0 +1,172 @@
+{
+  "status": "VALIDACAO_RETROSPECTIVA_PAREADA",
+  "snapshots": 19,
+  "baseline_mae_pp": 1.2891482813368371,
+  "tendencia_territorial_mae_pp": 1.289286245385875,
+  "historico_primeiro_turno_mae_pp": 0.827100388060978,
+  "melhoria_absoluta_pp": 0.46204789327585905,
+  "melhoria_relativa_pct": 35.841330277128314,
+  "snapshots_historico_melhor": 16,
+  "periodos": {
+    "inicio_5_25": {
+      "n": 5,
+      "baseline_mae_pp": 1.662746236852285,
+      "historico_mae_pp": 0.759494546134365,
+      "melhoria_mae_pp": 0.9032516907179199
+    },
+    "meio_30_65": {
+      "n": 8,
+      "baseline_mae_pp": 1.685793850194372,
+      "historico_mae_pp": 1.1672577181997226,
+      "melhoria_mae_pp": 0.5185361319946492
+    },
+    "final_70_95": {
+      "n": 6,
+      "baseline_mae_pp": 0.44895589326391744,
+      "historico_mae_pp": 0.42989548281482937,
+      "melhoria_mae_pp": 0.019060410449088055
+    }
+  },
+  "checkpoints": [
+    {
+      "threshold_pct": 5,
+      "baseline_error_pp": 0.6274694894202293,
+      "territorial_trend_error_pp": 0.7076840836434561,
+      "first_round_weighted_error_pp": 0.8885763411999981,
+      "improvement_pp": -0.2611068517797688
+    },
+    {
+      "threshold_pct": 10,
+      "baseline_error_pp": 1.328910577575959,
+      "territorial_trend_error_pp": 1.3379680971664865,
+      "first_round_weighted_error_pp": 0.09379094504415875,
+      "improvement_pp": 1.2351196325318003
+    },
+    {
+      "threshold_pct": 15,
+      "baseline_error_pp": 1.8678486642190018,
+      "territorial_trend_error_pp": 1.8647176935823906,
+      "first_round_weighted_error_pp": 0.6591090190634752,
+      "improvement_pp": 1.2087396451555266
+    },
+    {
+      "threshold_pct": 20,
+      "baseline_error_pp": 2.1942772750390303,
+      "territorial_trend_error_pp": 2.205450020294503,
+      "first_round_weighted_error_pp": 0.9988786228835811,
+      "improvement_pp": 1.1953986521554492
+    },
+    {
+      "threshold_pct": 25,
+      "baseline_error_pp": 2.295225178007204,
+      "territorial_trend_error_pp": 2.3040264303867906,
+      "first_round_weighted_error_pp": 1.1571178024806117,
+      "improvement_pp": 1.1381073755265922
+    },
+    {
+      "threshold_pct": 30,
+      "baseline_error_pp": 2.2510662328769024,
+      "territorial_trend_error_pp": 2.259828229934613,
+      "first_round_weighted_error_pp": 1.2623239691274324,
+      "improvement_pp": 0.98874226374947
+    },
+    {
+      "threshold_pct": 35,
+      "baseline_error_pp": 2.08132388688691,
+      "territorial_trend_error_pp": 2.038627746532401,
+      "first_round_weighted_error_pp": 1.2355532979325123,
+      "improvement_pp": 0.8457705889543976
+    },
+    {
+      "threshold_pct": 40,
+      "baseline_error_pp": 1.9882495896403285,
+      "territorial_trend_error_pp": 1.9767873367571465,
+      "first_round_weighted_error_pp": 1.2633111624000382,
+      "improvement_pp": 0.7249384272402903
+    },
+    {
+      "threshold_pct": 45,
+      "baseline_error_pp": 1.835411421201777,
+      "territorial_trend_error_pp": 1.8447937769540512,
+      "first_round_weighted_error_pp": 1.2647093222430406,
+      "improvement_pp": 0.5707020989587364
+    },
+    {
+      "threshold_pct": 50,
+      "baseline_error_pp": 1.6456507574801882,
+      "territorial_trend_error_pp": 1.6468787570960708,
+      "first_round_weighted_error_pp": 1.2320935632749719,
+      "improvement_pp": 0.4135571942052163
+    },
+    {
+      "threshold_pct": 55,
+      "baseline_error_pp": 1.4107751483077746,
+      "territorial_trend_error_pp": 1.398814809370763,
+      "first_round_weighted_error_pp": 1.1232471512512388,
+      "improvement_pp": 0.28752799705653587
+    },
+    {
+      "threshold_pct": 60,
+      "baseline_error_pp": 1.239241872892194,
+      "territorial_trend_error_pp": 1.2430248830290869,
+      "first_round_weighted_error_pp": 1.046647538041412,
+      "improvement_pp": 0.19259433485078192
+    },
+    {
+      "threshold_pct": 65,
+      "baseline_error_pp": 1.0346318922689002,
+      "territorial_trend_error_pp": 1.0194934418349955,
+      "first_round_weighted_error_pp": 0.910175741327135,
+      "improvement_pp": 0.12445615094176521
+    },
+    {
+      "threshold_pct": 70,
+      "baseline_error_pp": 0.8609901099594142,
+      "territorial_trend_error_pp": 0.8522194635127156,
+      "first_round_weighted_error_pp": 0.792530091316912,
+      "improvement_pp": 0.06846001864250217
+    },
+    {
+      "threshold_pct": 75,
+      "baseline_error_pp": 0.6955628407281589,
+      "territorial_trend_error_pp": 0.6899844841203762,
+      "first_round_weighted_error_pp": 0.6528846092869078,
+      "improvement_pp": 0.04267823144125105
+    },
+    {
+      "threshold_pct": 80,
+      "baseline_error_pp": 0.5134574584106044,
+      "territorial_trend_error_pp": 0.49286639081971284,
+      "first_round_weighted_error_pp": 0.4978910263822356,
+      "improvement_pp": 0.015566432028368826
+    },
+    {
+      "threshold_pct": 85,
+      "baseline_error_pp": 0.3540169439251173,
+      "territorial_trend_error_pp": 0.3465093313149592,
+      "first_round_weighted_error_pp": 0.35159450283226423,
+      "improvement_pp": 0.002422441092853056
+    },
+    {
+      "threshold_pct": 90,
+      "baseline_error_pp": 0.2052871769576914,
+      "territorial_trend_error_pp": 0.20517322139999017,
+      "first_round_weighted_error_pp": 0.21339503304792506,
+      "improvement_pp": -0.008107856090233678
+    },
+    {
+      "threshold_pct": 95,
+      "baseline_error_pp": 0.06442082960251838,
+      "territorial_trend_error_pp": 0.061590464581118276,
+      "first_round_weighted_error_pp": 0.07107763402273148,
+      "improvement_pp": -0.006656804420213103
+    }
+  ],
+  "status_certificacao": "NAO_CERTIFICADO",
+  "limitacoes": [
+    "O primeiro turno de 2026 e informacao anterior ao segundo, mas nao valida independencia de selecao de modelo.",
+    "Os 19 checkpoints de uma unica eleicao sao temporalmente dependentes.",
+    "Nao houve validacao em outras eleicoes nem teste de sensibilidade ao drift regional.",
+    "Nao converter desempenho retrospectivo em probabilidade de acerto."
+  ]
+}
