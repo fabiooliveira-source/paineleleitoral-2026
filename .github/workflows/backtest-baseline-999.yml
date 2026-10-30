@@ -22,6 +22,7 @@ on:
       - 'experimentos/modelo_999/fluxos_comparecimento_abstencao.py'
       - 'experimentos/modelo_999/investigar_aptos_divergentes.py'
       - 'experimentos/modelo_999/auditar_redistribuicao_aptos.py'
+      - 'experimentos/modelo_999/triagem_voto_em_transito.py'
   workflow_dispatch:
 permissions:
   contents: write
@@ -66,6 +67,8 @@ jobs:
         run: python3 experimentos/modelo_999/investigar_aptos_divergentes.py
       - name: Auditar compensacao territorial dos eleitores aptos
         run: python3 experimentos/modelo_999/auditar_redistribuicao_aptos.py
+      - name: Triagem documental TSE de voto em transito
+        run: python3 experimentos/modelo_999/triagem_voto_em_transito.py
       - name: Publicar resultados como artefato independente do push
         uses: actions/upload-artifact@v4
         with:
