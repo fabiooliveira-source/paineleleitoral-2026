@@ -1,0 +1,820 @@
+{
+  "summary": {
+    "zona": {
+      "groups": 4783,
+      "net": 0,
+      "positive": 11339,
+      "negative": 11339,
+      "balanced_groups": 501,
+      "unbalanced_groups": 4282,
+      "gross_unmatched": 22678,
+      "top_unbalanced": [
+        {
+          "key": [
+            "DF",
+            "97012",
+            "14"
+          ],
+          "delta": 420
+        },
+        {
+          "key": [
+            "SP",
+            "71072",
+            "2"
+          ],
+          "delta": 303
+        },
+        {
+          "key": [
+            "PE",
+            "25313",
+            "5"
+          ],
+          "delta": -215
+        },
+        {
+          "key": [
+            "PA",
+            "04278",
+            "76"
+          ],
+          "delta": -160
+        },
+        {
+          "key": [
+            "PE",
+            "24910",
+            "117"
+          ],
+          "delta": -158
+        },
+        {
+          "key": [
+            "SP",
+            "71072",
+            "1"
+          ],
+          "delta": 156
+        },
+        {
+          "key": [
+            "DF",
+            "97012",
+            "1"
+          ],
+          "delta": 155
+        },
+        {
+          "key": [
+            "BA",
+            "38075",
+            "121"
+          ],
+          "delta": -132
+        },
+        {
+          "key": [
+            "SP",
+            "71072",
+            "3"
+          ],
+          "delta": 132
+        },
+        {
+          "key": [
+            "MG",
+            "45535",
+            "118"
+          ],
+          "delta": -118
+        },
+        {
+          "key": [
+            "MA",
+            "09210",
+            "2"
+          ],
+          "delta": -110
+        },
+        {
+          "key": [
+            "AL",
+            "27855",
+            "2"
+          ],
+          "delta": -109
+        },
+        {
+          "key": [
+            "MG",
+            "41238",
+            "34"
+          ],
+          "delta": -107
+        },
+        {
+          "key": [
+            "GO",
+            "93734",
+            "133"
+          ],
+          "delta": -101
+        },
+        {
+          "key": [
+            "MA",
+            "09210",
+            "89"
+          ],
+          "delta": -95
+        },
+        {
+          "key": [
+            "PB",
+            "20516",
+            "76"
+          ],
+          "delta": -82
+        },
+        {
+          "key": [
+            "MG",
+            "47333",
+            "152"
+          ],
+          "delta": -74
+        },
+        {
+          "key": [
+            "SC",
+            "80470",
+            "3"
+          ],
+          "delta": 74
+        },
+        {
+          "key": [
+            "RN",
+            "17612",
+            "3"
+          ],
+          "delta": 70
+        },
+        {
+          "key": [
+            "AL",
+            "27855",
+            "1"
+          ],
+          "delta": 69
+        },
+        {
+          "key": [
+            "AP",
+            "06050",
+            "10"
+          ],
+          "delta": -68
+        },
+        {
+          "key": [
+            "SP",
+            "63118",
+            "206"
+          ],
+          "delta": -68
+        },
+        {
+          "key": [
+            "SC",
+            "80390",
+            "103"
+          ],
+          "delta": -67
+        },
+        {
+          "key": [
+            "SP",
+            "70971",
+            "125"
+          ],
+          "delta": -67
+        },
+        {
+          "key": [
+            "PA",
+            "04278",
+            "1"
+          ],
+          "delta": -66
+        },
+        {
+          "key": [
+            "BA",
+            "38075",
+            "122"
+          ],
+          "delta": 64
+        },
+        {
+          "key": [
+            "SC",
+            "80810",
+            "94"
+          ],
+          "delta": -64
+        },
+        {
+          "key": [
+            "PA",
+            "04278",
+            "96"
+          ],
+          "delta": -61
+        },
+        {
+          "key": [
+            "RS",
+            "87912",
+            "34"
+          ],
+          "delta": -58
+        },
+        {
+          "key": [
+            "MS",
+            "90514",
+            "36"
+          ],
+          "delta": -56
+        }
+      ]
+    },
+    "municipio": {
+      "groups": 4251,
+      "net": 0,
+      "positive": 9524,
+      "negative": 9524,
+      "balanced_groups": 472,
+      "unbalanced_groups": 3779,
+      "gross_unmatched": 19048,
+      "top_unbalanced": [
+        {
+          "key": [
+            "SP",
+            "71072"
+          ],
+          "delta": 845
+        },
+        {
+          "key": [
+            "DF",
+            "97012"
+          ],
+          "delta": 675
+        },
+        {
+          "key": [
+            "PA",
+            "04278"
+          ],
+          "delta": -412
+        },
+        {
+          "key": [
+            "RS",
+            "88013"
+          ],
+          "delta": -245
+        },
+        {
+          "key": [
+            "GO",
+            "93734"
+          ],
+          "delta": -224
+        },
+        {
+          "key": [
+            "MG",
+            "41238"
+          ],
+          "delta": -208
+        },
+        {
+          "key": [
+            "AM",
+            "02550"
+          ],
+          "delta": -190
+        },
+        {
+          "key": [
+            "RJ",
+            "60011"
+          ],
+          "delta": -189
+        },
+        {
+          "key": [
+            "MA",
+            "09210"
+          ],
+          "delta": -180
+        },
+        {
+          "key": [
+            "PE",
+            "24910"
+          ],
+          "delta": -177
+        },
+        {
+          "key": [
+            "PE",
+            "25313"
+          ],
+          "delta": -160
+        },
+        {
+          "key": [
+            "PR",
+            "75353"
+          ],
+          "delta": -127
+        },
+        {
+          "key": [
+            "MG",
+            "45535"
+          ],
+          "delta": -125
+        },
+        {
+          "key": [
+            "CE",
+            "13897"
+          ],
+          "delta": -121
+        },
+        {
+          "key": [
+            "SC",
+            "80470"
+          ],
+          "delta": 110
+        },
+        {
+          "key": [
+            "SP",
+            "70971"
+          ],
+          "delta": -108
+        },
+        {
+          "key": [
+            "RJ",
+            "58130"
+          ],
+          "delta": -98
+        },
+        {
+          "key": [
+            "RS",
+            "85995"
+          ],
+          "delta": 95
+        },
+        {
+          "key": [
+            "PB",
+            "20516"
+          ],
+          "delta": -87
+        },
+        {
+          "key": [
+            "RS",
+            "87858"
+          ],
+          "delta": -85
+        },
+        {
+          "key": [
+            "PR",
+            "75639"
+          ],
+          "delta": -83
+        },
+        {
+          "key": [
+            "AP",
+            "06050"
+          ],
+          "delta": -77
+        },
+        {
+          "key": [
+            "RJ",
+            "58653"
+          ],
+          "delta": -75
+        },
+        {
+          "key": [
+            "SC",
+            "80810"
+          ],
+          "delta": -74
+        },
+        {
+          "key": [
+            "BA",
+            "38075"
+          ],
+          "delta": -68
+        },
+        {
+          "key": [
+            "SP",
+            "63118"
+          ],
+          "delta": -68
+        },
+        {
+          "key": [
+            "SP",
+            "69698"
+          ],
+          "delta": -67
+        },
+        {
+          "key": [
+            "ES",
+            "57053"
+          ],
+          "delta": -63
+        },
+        {
+          "key": [
+            "MG",
+            "47333"
+          ],
+          "delta": -63
+        },
+        {
+          "key": [
+            "RS",
+            "88412"
+          ],
+          "delta": -60
+        }
+      ]
+    },
+    "uf": {
+      "groups": 28,
+      "net": 0,
+      "positive": 1945,
+      "negative": 1945,
+      "balanced_groups": 0,
+      "unbalanced_groups": 28,
+      "gross_unmatched": 3890,
+      "top_unbalanced": [
+        {
+          "key": "SP",
+          "delta": 699
+        },
+        {
+          "key": "DF",
+          "delta": 675
+        },
+        {
+          "key": "PA",
+          "delta": -334
+        },
+        {
+          "key": "MG",
+          "delta": -228
+        },
+        {
+          "key": "RS",
+          "delta": -227
+        },
+        {
+          "key": "PE",
+          "delta": -223
+        },
+        {
+          "key": "GO",
+          "delta": -205
+        },
+        {
+          "key": "ZZ",
+          "delta": 149
+        },
+        {
+          "key": "BA",
+          "delta": 139
+        },
+        {
+          "key": "ES",
+          "delta": -135
+        },
+        {
+          "key": "RJ",
+          "delta": -122
+        },
+        {
+          "key": "PB",
+          "delta": -97
+        },
+        {
+          "key": "AP",
+          "delta": -78
+        },
+        {
+          "key": "MT",
+          "delta": 78
+        },
+        {
+          "key": "MA",
+          "delta": -66
+        },
+        {
+          "key": "PI",
+          "delta": -63
+        },
+        {
+          "key": "AM",
+          "delta": 50
+        },
+        {
+          "key": "AL",
+          "delta": -45
+        },
+        {
+          "key": "RN",
+          "delta": 42
+        },
+        {
+          "key": "SE",
+          "delta": -42
+        },
+        {
+          "key": "SC",
+          "delta": 36
+        },
+        {
+          "key": "RO",
+          "delta": 33
+        },
+        {
+          "key": "PR",
+          "delta": -29
+        },
+        {
+          "key": "AC",
+          "delta": -27
+        },
+        {
+          "key": "CE",
+          "delta": -24
+        },
+        {
+          "key": "RR",
+          "delta": 19
+        },
+        {
+          "key": "TO",
+          "delta": 18
+        },
+        {
+          "key": "MS",
+          "delta": 7
+        }
+      ]
+    }
+  },
+  "counts": {
+    "sections_changed": 55722,
+    "local_changed": 48
+  },
+  "local_change_samples": [
+    {
+      "uf": "AM",
+      "municipio": "02119",
+      "zona": "26",
+      "secao": "13",
+      "delta": 1
+    },
+    {
+      "uf": "AM",
+      "municipio": "02550",
+      "zona": "58",
+      "secao": "749",
+      "delta": 1
+    },
+    {
+      "uf": "AM",
+      "municipio": "02550",
+      "zona": "58",
+      "secao": "827",
+      "delta": 1
+    },
+    {
+      "uf": "AM",
+      "municipio": "02550",
+      "zona": "58",
+      "secao": "882",
+      "delta": 1
+    },
+    {
+      "uf": "CE",
+      "municipio": "15296",
+      "zona": "11",
+      "secao": "236",
+      "delta": 1
+    },
+    {
+      "uf": "MG",
+      "municipio": "40894",
+      "zona": "320",
+      "secao": "31",
+      "delta": 2
+    },
+    {
+      "uf": "MG",
+      "municipio": "47252",
+      "zona": "151",
+      "secao": "88",
+      "delta": -1
+    },
+    {
+      "uf": "MG",
+      "municipio": "53970",
+      "zona": "275",
+      "secao": "329",
+      "delta": 1
+    },
+    {
+      "uf": "MG",
+      "municipio": "54038",
+      "zona": "279",
+      "secao": "110",
+      "delta": 1
+    },
+    {
+      "uf": "MG",
+      "municipio": "54038",
+      "zona": "279",
+      "secao": "113",
+      "delta": -1
+    },
+    {
+      "uf": "MG",
+      "municipio": "54038",
+      "zona": "279",
+      "secao": "116",
+      "delta": -2
+    },
+    {
+      "uf": "MG",
+      "municipio": "54038",
+      "zona": "279",
+      "secao": "560",
+      "delta": 3
+    },
+    {
+      "uf": "MG",
+      "municipio": "54038",
+      "zona": "279",
+      "secao": "611",
+      "delta": 1
+    },
+    {
+      "uf": "MT",
+      "municipio": "90670",
+      "zona": "1",
+      "secao": "1011",
+      "delta": -1
+    },
+    {
+      "uf": "MT",
+      "municipio": "90670",
+      "zona": "1",
+      "secao": "1013",
+      "delta": -1
+    },
+    {
+      "uf": "PA",
+      "municipio": "04081",
+      "zona": "74",
+      "secao": "20",
+      "delta": -1
+    },
+    {
+      "uf": "PA",
+      "municipio": "04081",
+      "zona": "74",
+      "secao": "21",
+      "delta": -1
+    },
+    {
+      "uf": "PA",
+      "municipio": "04138",
+      "zona": "90",
+      "secao": "1",
+      "delta": 1
+    },
+    {
+      "uf": "PA",
+      "municipio": "04138",
+      "zona": "90",
+      "secao": "4",
+      "delta": 1
+    },
+    {
+      "uf": "PA",
+      "municipio": "04472",
+      "zona": "50",
+      "secao": "345",
+      "delta": 1
+    },
+    {
+      "uf": "PA",
+      "municipio": "04472",
+      "zona": "50",
+      "secao": "348",
+      "delta": -1
+    },
+    {
+      "uf": "PI",
+      "municipio": "10235",
+      "zona": "6",
+      "secao": "157",
+      "delta": 1
+    },
+    {
+      "uf": "PI",
+      "municipio": "10375",
+      "zona": "15",
+      "secao": "148",
+      "delta": 1
+    },
+    {
+      "uf": "PI",
+      "municipio": "10898",
+      "zona": "46",
+      "secao": "37",
+      "delta": -1
+    },
+    {
+      "uf": "PI",
+      "municipio": "10898",
+      "zona": "46",
+      "secao": "61",
+      "delta": -1
+    },
+    {
+      "uf": "PR",
+      "municipio": "74497",
+      "zona": "131",
+      "secao": "117",
+      "delta": -1
+    },
+    {
+      "uf": "PR",
+      "municipio": "74497",
+      "zona": "131",
+      "secao": "131",
+      "delta": -1
+    },
+    {
+      "uf": "PR",
+      "municipio": "74497",
+      "zona": "131",
+      "secao": "5",
+      "delta": -1
+    },
+    {
+      "uf": "PR",
+      "municipio": "74497",
+      "zona": "131",
+      "secao": "6",
+      "delta": -1
+    },
+    {
+      "uf": "PR",
+      "municipio": "74497",
+      "zona": "131",
+      "secao": "74",
+      "delta": -1
+    }
+  ],
+  "interpretation": [
+    "Compensação na mesma zona é compatível com redistribuição local, mas não identifica causa.",
+    "Compensação apenas entre municípios/UFs é compatível com trânsito ou outros processos, sem prova.",
+    "Para confirmar voto em trânsito são necessários registros oficiais de seções especiais e habilitações."
+  ]
+}
