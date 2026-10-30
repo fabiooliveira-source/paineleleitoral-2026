@@ -1,0 +1,6 @@
+{
+  "fonte_tte": "https://cdn.tse.jus.br/estatistica/sead/odsele/transf_temporaria_secao/transf_temporaria_secao_2026.zip",
+  "estado": "INCOMPLETO",
+  "secoes_base": 499248,
+  "erro": "<HTTPError 404: 'Not Found'>"
+}
