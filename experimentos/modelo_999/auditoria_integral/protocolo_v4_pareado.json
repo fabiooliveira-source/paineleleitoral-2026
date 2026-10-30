@@ -1,0 +1,38 @@
+{
+  "model_id": "audit-v4-paired-ratio",
+  "development_years": [
+    2018,
+    2022
+  ],
+  "external_test": {
+    "year": 2020,
+    "municipality_tse": "71072",
+    "name": "Sao Paulo",
+    "candidate_a": 50,
+    "candidate_b": 45,
+    "cargo": 11,
+    "strata": "zonas eleitorais"
+  },
+  "principle": "Estimar crescimento de cada finalista usando seu primeiro turno SOMENTE nas mesmas secoes ja observadas; projetar primeiro turno das secoes ainda nao observadas. Sem coeficiente de swing ajustado.",
+  "forecast": "observado2A + soma_UF(restante1A * observado2A_pareado/observado1A_pareado), analogamente B. Razao global para estrato sem denominador. Se denominador global insuficiente ou ledger incompleto/dessicronizado, abster estimativa.",
+  "data_contract": "Exige referencia do primeiro turno pareada por secao e ledger completo sincronizado; nao e substituto direto de um feed apenas UF sem pareamento.",
+  "deterministic_bounds": "Com A/B atuais e R eleitores restantes conhecidos: [A/(A+B+R),(A+R)/(A+B+R)]. Chamada de vencedor somente quando todo intervalo estritamente de um lado de50%. Hipoteses: contagens sem revisao e R e limite superior verdadeiro.",
+  "no_probability_claim": "Intervalo e deterministico condicionado aos dados; nao e intervalo de confianca nem probabilidade calibrada.",
+  "predefined_external_criteria": [
+    "MAE v4 referencia menor que baseline observado",
+    "maximo absoluto v4 nao superior ao baseline observado",
+    "nenhum alvo fora dos limites deterministas sob as hipoteses verificaveis",
+    "nenhuma chamada matematica errada",
+    "abstencao de estimativa em ledger incompleto, atraso ou inconsistencia"
+  ],
+  "stresses": [
+    "retirar SP/maior estrato equivalente quando aplicavel",
+    "retirar um estrato municipal",
+    "ledger nacional versus soma territorial divergente",
+    "ordem de recebimento permutada",
+    "informacao futura injetada",
+    "revisao e denominador invalido"
+  ],
+  "holdout_policy": "Congelar codigo e parametros antes da avaliacao preditiva2020; nao reajustar depois de observar resultados. 2018/2022 sao desenvolvimento, nunca externosintocados novamente.",
+  "certification_scope": "Separar qualificacao de software e dados de certificacao estatistica/operacional; gates incompletos nao podem ser renomeados como aprovados."
+}
