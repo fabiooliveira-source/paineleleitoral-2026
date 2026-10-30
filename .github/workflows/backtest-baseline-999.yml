@@ -16,6 +16,7 @@ on:
       - 'experimentos/modelo_999/testar_transferencias_secoes.py'
       - 'experimentos/modelo_999/matriz_transferencias_categorias.py'
       - 'experimentos/modelo_999/reconciliar_hierarquia_secoes.py'
+      - 'experimentos/modelo_999/diagnosticar_base_integral_secoes.py'
   workflow_dispatch:
 permissions:
   contents: write
@@ -48,6 +49,8 @@ jobs:
         run: python3 experimentos/modelo_999/matriz_transferencias_categorias.py
       - name: Reconciliar hierarquia secao municipio UF nacional
         run: python3 experimentos/modelo_999/reconciliar_hierarquia_secoes.py
+      - name: Diagnosticar bases integrais de secoes e candidatos
+        run: python3 experimentos/modelo_999/diagnosticar_base_integral_secoes.py
       - name: Publicar resultados como artefato independente do push
         uses: actions/upload-artifact@v4
         with:
