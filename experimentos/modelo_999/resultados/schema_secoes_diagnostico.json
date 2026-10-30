@@ -1,0 +1,24 @@
+{
+  "secoes-AC.json.gz": {
+    "type": "dict",
+    "keys": [
+      "colunas",
+      "linhas"
+    ],
+    "first": {
+      "type": "list",
+      "length": 29,
+      "first": "codigo_municipio_tse"
+    }
+  },
+  "candidatos-secao-AC.json": {
+    "type": "dict",
+    "keys": [
+      "fonte",
+      "numeros",
+      "nomes",
+      "linhas"
+    ],
+    "first": "https://dadosabertos.tse.jus.br/dataset/resultados-2026"
+  }
+}
