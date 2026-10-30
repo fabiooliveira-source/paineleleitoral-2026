@@ -1,0 +1,179 @@
+{
+  "status": "MATRIZ_LIMITES_CATEGORIAS_CONCLUIDA",
+  "sections_source": 145,
+  "sections_eligible": 136,
+  "excluded": {
+    "aptos_diferentes": 8,
+    "dados_nao_conferidos": 1
+  },
+  "first_round_categories": [
+    "lula_1t",
+    "flavio_1t",
+    "demais_candidatos_1t",
+    "brancos_1t",
+    "nulos_1t",
+    "abstencoes_1t"
+  ],
+  "second_round_categories": [
+    "lula_2t",
+    "flavio_2t",
+    "brancos_2t",
+    "nulos_2t",
+    "abstencoes_2t"
+  ],
+  "matrix": {
+    "lula_1t": {
+      "lula_2t": {
+        "min": 13093,
+        "max": 16863
+      },
+      "flavio_2t": {
+        "min": 0,
+        "max": 46
+      },
+      "brancos_2t": {
+        "min": 0,
+        "max": 28
+      },
+      "nulos_2t": {
+        "min": 0,
+        "max": 375
+      },
+      "abstencoes_2t": {
+        "min": 151,
+        "max": 3585
+      }
+    },
+    "flavio_1t": {
+      "lula_2t": {
+        "min": 0,
+        "max": 110
+      },
+      "flavio_2t": {
+        "min": 349,
+        "max": 480
+      },
+      "brancos_2t": {
+        "min": 0,
+        "max": 20
+      },
+      "nulos_2t": {
+        "min": 0,
+        "max": 55
+      },
+      "abstencoes_2t": {
+        "min": 3,
+        "max": 228
+      }
+    },
+    "demais_candidatos_1t": {
+      "lula_2t": {
+        "min": 0,
+        "max": 190
+      },
+      "flavio_2t": {
+        "min": 0,
+        "max": 40
+      },
+      "brancos_2t": {
+        "min": 0,
+        "max": 22
+      },
+      "nulos_2t": {
+        "min": 0,
+        "max": 133
+      },
+      "abstencoes_2t": {
+        "min": 0,
+        "max": 196
+      }
+    },
+    "brancos_1t": {
+      "lula_2t": {
+        "min": 0,
+        "max": 40
+      },
+      "flavio_2t": {
+        "min": 0,
+        "max": 17
+      },
+      "brancos_2t": {
+        "min": 0,
+        "max": 18
+      },
+      "nulos_2t": {
+        "min": 0,
+        "max": 29
+      },
+      "abstencoes_2t": {
+        "min": 0,
+        "max": 44
+      }
+    },
+    "nulos_1t": {
+      "lula_2t": {
+        "min": 0,
+        "max": 278
+      },
+      "flavio_2t": {
+        "min": 0,
+        "max": 25
+      },
+      "brancos_2t": {
+        "min": 0,
+        "max": 23
+      },
+      "nulos_2t": {
+        "min": 0,
+        "max": 171
+      },
+      "abstencoes_2t": {
+        "min": 0,
+        "max": 273
+      }
+    },
+    "abstencoes_1t": {
+      "lula_2t": {
+        "min": 515,
+        "max": 4054
+      },
+      "flavio_2t": {
+        "min": 3,
+        "max": 174
+      },
+      "brancos_2t": {
+        "min": 0,
+        "max": 36
+      },
+      "nulos_2t": {
+        "min": 0,
+        "max": 361
+      },
+      "abstencoes_2t": {
+        "min": 57,
+        "max": 3485
+      }
+    }
+  },
+  "margins": {
+    "lula_1t": 17120,
+    "flavio_1t": 591,
+    "demais_candidatos_1t": 197,
+    "brancos_1t": 46,
+    "nulos_1t": 279,
+    "abstencoes_1t": 4239,
+    "lula_2t": 17742,
+    "flavio_2t": 546,
+    "brancos_2t": 36,
+    "nulos_2t": 375,
+    "abstencoes_2t": 3773
+  },
+  "method": "Limites de Fréchet para cada célula, agregados por seção.",
+  "warnings": [
+    "Mínimos e máximos de células diferentes não são simultaneamente realizáveis.",
+    "Demais candidatos estão agrupados: o arquivo de seções com zero não discrimina cada candidato do 1T.",
+    "Mesmo número de aptos não garante que sejam os mesmos eleitores nos dois turnos.",
+    "O sigilo do voto impede identificar transferências individuais.",
+    "Resultado representa somente o subconjunto de seções com zero, não o país inteiro."
+  ]
+}
