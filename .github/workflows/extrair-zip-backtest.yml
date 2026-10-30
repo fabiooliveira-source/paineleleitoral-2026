@@ -1,0 +1,40 @@
+name: Extrair ZIP backtest
+on:
+  workflow_dispatch:
+  push:
+    paths:
+      - .github/workflows/extrair-zip-backtest.yml
+permissions:
+  contents: write
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Extract and validate
+        run: |
+          python3 - <<'PY'
+          import pathlib,zipfile,hashlib,json,shutil
+          src=pathlib.Path('dados/2026/acervo_2026_2_backtest.zip')
+          out=pathlib.Path('dados/2026/backtest')
+          out.mkdir(parents=True,exist_ok=True)
+          records=[]
+          with zipfile.ZipFile(src) as z:
+            assert z.testzip() is None
+            for item in z.infolist():
+              p=pathlib.PurePosixPath(item.filename)
+              if item.is_dir() or p.is_absolute() or '..' in p.parts: continue
+              ext=p.suffix.lower()
+              if ext not in ('.json','.csv','.sha256','.txt'): continue
+              dest=out/('json' if ext=='.json' else 'csv' if ext=='.csv' else 'manifestos')/str(p)
+              dest.parent.mkdir(parents=True,exist_ok=True)
+              with z.open(item) as f,open(dest,'wb') as g: shutil.copyfileobj(f,g)
+              records.append({'path':str(dest),'size':item.file_size,'sha256':hashlib.sha256(dest.read_bytes()).hexdigest()})
+          (out/'manifesto_extracao.json').write_text(json.dumps({'zip_sha256':hashlib.sha256(src.read_bytes()).hexdigest(),'files':records},indent=2))
+          PY
+      - name: Commit extracted files
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@users.noreply.github.com
+          git add dados/2026/backtest
+          git diff --cached --quiet || (git commit -m "Extrair dados backtest 2026" && git push)
