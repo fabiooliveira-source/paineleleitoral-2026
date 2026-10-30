@@ -1,0 +1,48 @@
+{
+  "version": "reconstrucao2022-v1",
+  "predictor_commit": "419593081c7178a9b4e293cb0b13befe1808fe1a",
+  "predictor_path": "experimentos/modelo_999/auditoria_integral/preditor_causal_v2.py",
+  "model_parameters_unchanged": true,
+  "scope": "Teste retrospectivo condicionado à reconstrução por primeira totalização; não captura de divulgação pública.",
+  "ordering": "DT_PRIM_TOT_PARCIAL_HOR_TSE; sem deslocar horários para ajustar curva.",
+  "features": "Votos finais por seção inseridos na primeira totalização, sob hipótese explícita de ausência de revisões intermediárias; disponibilização simultânea à totalização é hipótese de cenário, não fato observado.",
+  "first_round": "Agregação por UF de votos presidenciais do primeiro turno; versão exata disponível antes do segundo turno não foi autenticada. Não classificar como holdout operacional causal.",
+  "checkpoints_pct": [
+    5,
+    10,
+    15,
+    20,
+    25,
+    30,
+    35,
+    40,
+    45,
+    50,
+    55,
+    60,
+    65,
+    70,
+    75,
+    80,
+    85,
+    90,
+    95
+  ],
+  "evaluation": "Primeiro snapshot oficial BR que alcança cada marco; cobertura e denominador da linha oficial contemporânea. Alvo final só no avaliador.",
+  "integrity_gate": "Comparar todos os snapshots BR oficiais em votos 13/22/brancos/nulos/seções. Publicar divergências integrais ou máximas; não corrigir reconstrução usando alvo.",
+  "stress": "Atraso 5/15/30 min, ausência SP, ausência SP/MG/RJ, ausência Nordeste; apenas disponibilidade das entradas UF. Não chamar de nova ordem nacional.",
+  "metrics": [
+    "MAE",
+    "erro_maximo",
+    "vies",
+    "melhores_marcos",
+    "resultados_por_marco"
+  ],
+  "prohibited_claims": [
+    "Certificação integral por esta reconstrução",
+    "Probabilidade de acerto derivada de checkpoints correlacionados",
+    "Horário de primeira totalização como prova de divulgação pública",
+    "Correspondência nacional exata como prova de correspondência UF exata"
+  ],
+  "status_before_predictive_run": "Não executado; parâmetros já congelados; baseline nacional 2022 anteriormente conhecido."
+}
