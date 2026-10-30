@@ -1,0 +1,1454 @@
+{
+  "status": "TESTE_TERRITORIAL_RECONSTRUIDO_CONDICIONAL_EXECUTADO_NAO_CERTIFICADO",
+  "predictor_commit": "419593081c7178a9b4e293cb0b13befe1808fe1a",
+  "predictor_sha256": "97ae308bb8356a32d902c10190708e39f067f1f3e3a5dcdc8737097d73a345a6",
+  "protocol_commit": "43d355d5b22a869ecd5e02b9487784ebd45e7030",
+  "history_territories": 28,
+  "first_round_national_totals_match": true,
+  "first_round_reference_availability_assumption": "2022-10-04T10:27:34-03:00",
+  "national_curve_comparison": {
+    "official_snapshots": 5286,
+    "fields": [
+      "LULA_QT_VOTOS_TOT_ACUMULADO",
+      "JAIR_BOLSONARO_QT_VOTOS_TOT_ACUMULADO",
+      "BRANCO_QT_VOTOS_TOT_ACUMULADO",
+      "NULO_QT_VOTOS_TOT_ACUMULADO",
+      "QT_SECOES_TOT_ACUMULADO"
+    ],
+    "exact_counts": {
+      "LULA_QT_VOTOS_TOT_ACUMULADO": 5286,
+      "JAIR_BOLSONARO_QT_VOTOS_TOT_ACUMULADO": 5286,
+      "BRANCO_QT_VOTOS_TOT_ACUMULADO": 5286,
+      "NULO_QT_VOTOS_TOT_ACUMULADO": 5286,
+      "QT_SECOES_TOT_ACUMULADO": 5286
+    },
+    "max_abs_difference": {
+      "LULA_QT_VOTOS_TOT_ACUMULADO": 0,
+      "JAIR_BOLSONARO_QT_VOTOS_TOT_ACUMULADO": 0,
+      "BRANCO_QT_VOTOS_TOT_ACUMULADO": 0,
+      "NULO_QT_VOTOS_TOT_ACUMULADO": 0,
+      "QT_SECOES_TOT_ACUMULADO": 0
+    },
+    "all_fields_exact": true,
+    "discrepancy_sample": [],
+    "last_official": {
+      "LULA_QT_VOTOS_TOT_ACUMULADO": "60345999",
+      "JAIR_BOLSONARO_QT_VOTOS_TOT_ACUMULADO": "58206354",
+      "BRANCO_QT_VOTOS_TOT_ACUMULADO": "1769678",
+      "NULO_QT_VOTOS_TOT_ACUMULADO": "3930765",
+      "QT_SECOES_TOT_ACUMULADO": "472075"
+    },
+    "last_reconstructed": {
+      "LULA_QT_VOTOS_TOT_ACUMULADO": 60345999,
+      "JAIR_BOLSONARO_QT_VOTOS_TOT_ACUMULADO": 58206354,
+      "BRANCO_QT_VOTOS_TOT_ACUMULADO": 1769678,
+      "NULO_QT_VOTOS_TOT_ACUMULADO": 3930765,
+      "QT_SECOES_TOT_ACUMULADO": 472075
+    }
+  },
+  "final_lula_pct": 50.90240511717216,
+  "scenarios": {
+    "referencia": {
+      "mae_pp": 0.8725766321406367,
+      "max_abs_error_pp": 1.1875159779561106,
+      "bias_pp": -0.8725766321406367,
+      "baseline_mae_pp": 1.4975301436535053,
+      "improved_checkpoints": 19,
+      "checkpoints": [
+        {
+          "threshold_pct": 5,
+          "timestamp": "2022-10-30T17:25:47-03:00",
+          "forecast_a_pct": 49.85835197908607,
+          "baseline_a_pct": 46.7149215697828,
+          "error_pp": -1.0440531380860818,
+          "baseline_error_pp": -4.187483547389354,
+          "fresh_territories": 28,
+          "mode": "territorial"
+        },
+        {
+          "threshold_pct": 10,
+          "timestamp": "2022-10-30T17:33:41-03:00",
+          "forecast_a_pct": 49.870342500579895,
+          "baseline_a_pct": 47.99061081998592,
+          "error_pp": -1.0320626165922608,
+          "baseline_error_pp": -2.911794297186238,
+          "fresh_territories": 28,
+          "mode": "territorial"
+        },
+        {
+          "threshold_pct": 15,
+          "timestamp": "2022-10-30T17:41:50-03:00",
+          "forecast_a_pct": 49.92287216688317,
+          "baseline_a_pct": 48.385804839581596,
+          "error_pp": -0.9795329502889916,
+          "baseline_error_pp": -2.516600277590564,
+          "fresh_territories": 28,
+          "mode": "territorial"
+        },
+        {
+          "threshold_pct": 20,
+          "timestamp": "2022-10-30T17:49:00-03:00",
+          "forecast_a_pct": 49.7893052286137,
+          "baseline_a_pct": 48.45390740792644,
+          "error_pp": -1.1130998885584553,
+          "baseline_error_pp": -2.448497709245717,
+          "fresh_territories": 28,
+          "mode": "territorial"
+        },
+        {
+          "threshold_pct": 25,
+          "timestamp": "2022-10-30T17:55:43-03:00",
+          "forecast_a_pct": 49.78760728320123,
+          "baseline_a_pct": 48.74233408045688,
+          "error_pp": -1.1147978339709208,
+          "baseline_error_pp": -2.1600710367152773,
+          "fresh_territories": 28,
+          "mode": "territorial"
+        },
+        {
+          "threshold_pct": 30,
+          "timestamp": "2022-10-30T18:02:24-03:00",
+          "forecast_a_pct": 49.71488913921605,
+          "baseline_a_pct": 48.94445582645756,
+          "error_pp": -1.1875159779561106,
+          "baseline_error_pp": -1.9579492907145946,
+          "fresh_territories": 28,
+          "mode": "territorial"
+        },
+        {
+          "threshold_pct": 35,
+          "timestamp": "2022-10-30T18:09:33-03:00",
+          "forecast_a_pct": 49.72711417035261,
+          "baseline_a_pct": 49.168747944299554,
+          "error_pp": -1.1752909468195516,
+          "baseline_error_pp": -1.7336571728726047,
+          "fresh_territories": 28,
+          "mode": "territorial"
+        },
+        {
+          "threshold_pct": 40,
+          "timestamp": "2022-10-30T18:15:59-03:00",
+          "forecast_a_pct": 49.76446044091541,
+          "baseline_a_pct": 49.36085188420486,
+          "error_pp": -1.137944676256747,
+          "baseline_error_pp": -1.541553232967291,
+          "fresh_territories": 28,
+          "mode": "territorial"
+        },
+        {
+          "threshold_pct": 45,
+          "timestamp": "2022-10-30T18:21:43-03:00",
+          "forecast_a_pct": 49.81597362481275,
+          "baseline_a_pct": 49.50023356484555,
+          "error_pp": -1.0864314923594076,
+          "baseline_error_pp": -1.4021715523266032,
+          "fresh_territories": 28,
+          "mode": "territorial"
+        },
+        {
+          "threshold_pct": 50,
+          "timestamp": "2022-10-30T18:26:53-03:00",
+          "forecast_a_pct": 49.904229712285435,
+          "baseline_a_pct": 49.69146360734597,
+          "error_pp": -0.9981754048867197,
+          "baseline_error_pp": -1.2109415098261855,
+          "fresh_territories": 28,
+          "mode": "territorial"
+        },
+        {
+          "threshold_pct": 55,
+          "timestamp": "2022-10-30T18:31:29-03:00",
+          "forecast_a_pct": 49.962117695885574,
+          "baseline_a_pct": 49.789959441990305,
+          "error_pp": -0.9402874212865786,
+          "baseline_error_pp": -1.1124456751818501,
+          "fresh_territories": 28,
+          "mode": "territorial"
+        },
+        {
+          "threshold_pct": 60,
+          "timestamp": "2022-10-30T18:36:47-03:00",
+          "forecast_a_pct": 50.00962373043345,
+          "baseline_a_pct": 49.86754567007328,
+          "error_pp": -0.8927813867387058,
+          "baseline_error_pp": -1.0348594470988792,
+          "fresh_territories": 28,
+          "mode": "territorial"
+        },
+        {
+          "threshold_pct": 65,
+          "timestamp": "2022-10-30T18:41:23-03:00",
+          "forecast_a_pct": 50.07178731241733,
+          "baseline_a_pct": 49.96238082997762,
+          "error_pp": -0.8306178047548296,
+          "baseline_error_pp": -0.9400242871945408,
+          "fresh_territories": 28,
+          "mode": "territorial"
+        },
+        {
+          "threshold_pct": 70,
+          "timestamp": "2022-10-30T18:46:46-03:00",
+          "forecast_a_pct": 50.13128551208752,
+          "baseline_a_pct": 50.04568750613198,
+          "error_pp": -0.7711196050846358,
+          "baseline_error_pp": -0.8567176110401697,
+          "fresh_territories": 28,
+          "mode": "territorial"
+        },
+        {
+          "threshold_pct": 75,
+          "timestamp": "2022-10-30T18:51:36-03:00",
+          "forecast_a_pct": 50.23367120672236,
+          "baseline_a_pct": 50.169236597415036,
+          "error_pp": -0.6687339104497925,
+          "baseline_error_pp": -0.7331685197571214,
+          "fresh_territories": 28,
+          "mode": "territorial"
+        },
+        {
+          "threshold_pct": 80,
+          "timestamp": "2022-10-30T18:56:49-03:00",
+          "forecast_a_pct": 50.340238547573136,
+          "baseline_a_pct": 50.2912035163791,
+          "error_pp": -0.5621665695990208,
+          "baseline_error_pp": -0.6112016007930543,
+          "fresh_territories": 28,
+          "mode": "territorial"
+        },
+        {
+          "threshold_pct": 85,
+          "timestamp": "2022-10-30T19:02:13-03:00",
+          "forecast_a_pct": 50.44920696654663,
+          "baseline_a_pct": 50.420289003069676,
+          "error_pp": -0.45319815062552227,
+          "baseline_error_pp": -0.4821161141024821,
+          "fresh_territories": 28,
+          "mode": "territorial"
+        },
+        {
+          "threshold_pct": 90,
+          "timestamp": "2022-10-30T19:09:26-03:00",
+          "forecast_a_pct": 50.54786952778516,
+          "baseline_a_pct": 50.53343221506862,
+          "error_pp": -0.35453558938699503,
+          "baseline_error_pp": -0.36897290210353706,
+          "fresh_territories": 25,
+          "mode": "territorial"
+        },
+        {
+          "threshold_pct": 95,
+          "timestamp": "2022-10-30T19:23:45-03:00",
+          "forecast_a_pct": 50.665794470201384,
+          "baseline_a_pct": 50.65955817186162,
+          "error_pp": -0.2366106469707696,
+          "baseline_error_pp": -0.24284694531053752,
+          "fresh_territories": 25,
+          "mode": "territorial"
+        }
+      ]
+    },
+    "atraso_5min": {
+      "mae_pp": 0.8649248635012828,
+      "max_abs_error_pp": 3.4557755342323917,
+      "bias_pp": -0.6063250021999879,
+      "baseline_mae_pp": 1.4975301436535053,
+      "improved_checkpoints": 15,
+      "checkpoints": [
+        {
+          "threshold_pct": 5,
+          "timestamp": "2022-10-30T17:25:47-03:00",
+          "forecast_a_pct": 47.446629582939764,
+          "baseline_a_pct": 46.7149215697828,
+          "error_pp": -3.4557755342323917,
+          "baseline_error_pp": -4.187483547389354,
+          "fresh_territories": 5,
+          "mode": "territorial"
+        },
+        {
+          "threshold_pct": 10,
+          "timestamp": "2022-10-30T17:33:41-03:00",
+          "forecast_a_pct": 52.22202406915635,
+          "baseline_a_pct": 47.99061081998592,
+          "error_pp": 1.3196189519841917,
+          "baseline_error_pp": -2.911794297186238,
+          "fresh_territories": 0,
+          "mode": "degraded_no_fresh_territory"
+        },
+        {
+          "threshold_pct": 15,
+          "timestamp": "2022-10-30T17:41:50-03:00",
+          "forecast_a_pct": 50.44734104372534,
+          "baseline_a_pct": 48.385804839581596,
+          "error_pp": -0.4550640734468203,
+          "baseline_error_pp": -2.516600277590564,
+          "fresh_territories": 3,
+          "mode": "territorial"
+        },
+        {
+          "threshold_pct": 20,
+          "timestamp": "2022-10-30T17:49:00-03:00",
+          "forecast_a_pct": 49.685396619079164,
+          "baseline_a_pct": 48.45390740792644,
+          "error_pp": -1.2170084980929918,
+          "baseline_error_pp": -2.448497709245717,
+          "fresh_territories": 1,
+          "mode": "territorial"
+        },
+        {
+          "threshold_pct": 25,
+          "timestamp": "2022-10-30T17:55:43-03:00",
+          "forecast_a_pct": 50.63520669796454,
+          "baseline_a_pct": 48.74233408045688,
+          "error_pp": -0.2671984192076149,
+          "baseline_error_pp": -2.1600710367152773,
+          "fresh_territories": 2,
+          "mode": "territorial"
+        },
+        {
+          "threshold_pct": 30,
+          "timestamp": "2022-10-30T18:02:24-03:00",
+          "forecast_a_pct": 51.56851859919966,
+          "baseline_a_pct": 48.94445582645756,
+          "error_pp": 0.6661134820275083,
+          "baseline_error_pp": -1.9579492907145946,
+          "fresh_territories": 0,
+          "mode": "degraded_no_fresh_territory"
+        },
+        {
+          "threshold_pct": 35,
+          "timestamp": "2022-10-30T18:09:33-03:00",
+          "forecast_a_pct": 48.37189055631128,
+          "baseline_a_pct": 49.168747944299554,
+          "error_pp": -2.530514560860875,
+          "baseline_error_pp": -1.7336571728726047,
+          "fresh_territories": 3,
+          "mode": "territorial"
+        },
+        {
+          "threshold_pct": 40,
+          "timestamp": "2022-10-30T18:15:59-03:00",
+          "forecast_a_pct": 49.20201001831971,
+          "baseline_a_pct": 49.36085188420486,
+          "error_pp": -1.7003950988524419,
+          "baseline_error_pp": -1.541553232967291,
+          "fresh_territories": 1,
+          "mode": "territorial"
+        },
+        {
+          "threshold_pct": 45,
+          "timestamp": "2022-10-30T18:21:43-03:00",
+          "forecast_a_pct": 51.25610776550802,
+          "baseline_a_pct": 49.50023356484555,
+          "error_pp": 0.35370264833586296,
+          "baseline_error_pp": -1.4021715523266032,
+          "fresh_territories": 0,
+          "mode": "degraded_no_fresh_territory"
+        },
+        {
+          "threshold_pct": 50,
+          "timestamp": "2022-10-30T18:26:53-03:00",
+          "forecast_a_pct": 49.4310480496195,
+          "baseline_a_pct": 49.69146360734597,
+          "error_pp": -1.4713570675526588,
+          "baseline_error_pp": -1.2109415098261855,
+          "fresh_territories": 1,
+          "mode": "territorial"
+        },
+        {
+          "threshold_pct": 55,
+          "timestamp": "2022-10-30T18:31:29-03:00",
+          "forecast_a_pct": 50.16453238763453,
+          "baseline_a_pct": 49.789959441990305,
+          "error_pp": -0.7378727295376253,
+          "baseline_error_pp": -1.1124456751818501,
+          "fresh_territories": 1,
+          "mode": "territorial"
+        },
+        {
+          "threshold_pct": 60,
+          "timestamp": "2022-10-30T18:36:47-03:00",
+          "forecast_a_pct": 51.00641811377389,
+          "baseline_a_pct": 49.86754567007328,
+          "error_pp": 0.10401299660173224,
+          "baseline_error_pp": -1.0348594470988792,
+          "fresh_territories": 1,
+          "mode": "territorial"
+        },
+        {
+          "threshold_pct": 65,
+          "timestamp": "2022-10-30T18:41:23-03:00",
+          "forecast_a_pct": 50.915655720585164,
+          "baseline_a_pct": 49.96238082997762,
+          "error_pp": 0.013250603413006434,
+          "baseline_error_pp": -0.9400242871945408,
+          "fresh_territories": 0,
+          "mode": "degraded_no_fresh_territory"
+        },
+        {
+          "threshold_pct": 70,
+          "timestamp": "2022-10-30T18:46:46-03:00",
+          "forecast_a_pct": 50.18296155512887,
+          "baseline_a_pct": 50.04568750613198,
+          "error_pp": -0.7194435620432871,
+          "baseline_error_pp": -0.8567176110401697,
+          "fresh_territories": 2,
+          "mode": "territorial"
+        },
+        {
+          "threshold_pct": 75,
+          "timestamp": "2022-10-30T18:51:36-03:00",
+          "forecast_a_pct": 50.800186781702,
+          "baseline_a_pct": 50.169236597415036,
+          "error_pp": -0.10221833547015002,
+          "baseline_error_pp": -0.7331685197571214,
+          "fresh_territories": 0,
+          "mode": "degraded_no_fresh_territory"
+        },
+        {
+          "threshold_pct": 80,
+          "timestamp": "2022-10-30T18:56:49-03:00",
+          "forecast_a_pct": 50.423748136943324,
+          "baseline_a_pct": 50.2912035163791,
+          "error_pp": -0.47865698022883096,
+          "baseline_error_pp": -0.6112016007930543,
+          "fresh_territories": 1,
+          "mode": "territorial"
+        },
+        {
+          "threshold_pct": 85,
+          "timestamp": "2022-10-30T19:02:13-03:00",
+          "forecast_a_pct": 50.35520530446068,
+          "baseline_a_pct": 50.420289003069676,
+          "error_pp": -0.5471998127114741,
+          "baseline_error_pp": -0.4821161141024821,
+          "fresh_territories": 1,
+          "mode": "territorial"
+        },
+        {
+          "threshold_pct": 90,
+          "timestamp": "2022-10-30T19:09:26-03:00",
+          "forecast_a_pct": 50.749405281079305,
+          "baseline_a_pct": 50.53343221506862,
+          "error_pp": -0.15299983609284862,
+          "baseline_error_pp": -0.36897290210353706,
+          "fresh_territories": 0,
+          "mode": "degraded_no_fresh_territory"
+        },
+        {
+          "threshold_pct": 95,
+          "timestamp": "2022-10-30T19:23:45-03:00",
+          "forecast_a_pct": 50.76123590134009,
+          "baseline_a_pct": 50.65955817186162,
+          "error_pp": -0.14116921583205988,
+          "baseline_error_pp": -0.24284694531053752,
+          "fresh_territories": 0,
+          "mode": "degraded_no_fresh_territory"
+        }
+      ]
+    },
+    "atraso_15min": {
+      "mae_pp": 0.4768932452648813,
+      "max_abs_error_pp": 1.49239143948513,
+      "bias_pp": 0.399568229062009,
+      "baseline_mae_pp": 1.4975301436535053,
+      "improved_checkpoints": 19,
+      "checkpoints": [
+        {
+          "threshold_pct": 5,
+          "timestamp": "2022-10-30T17:25:47-03:00",
+          "forecast_a_pct": 52.39479655665728,
+          "baseline_a_pct": 46.7149215697828,
+          "error_pp": 1.49239143948513,
+          "baseline_error_pp": -4.187483547389354,
+          "fresh_territories": 0,
+          "mode": "degraded_no_fresh_territory"
+        },
+        {
+          "threshold_pct": 10,
+          "timestamp": "2022-10-30T17:33:41-03:00",
+          "forecast_a_pct": 52.22202406915635,
+          "baseline_a_pct": 47.99061081998592,
+          "error_pp": 1.3196189519841917,
+          "baseline_error_pp": -2.911794297186238,
+          "fresh_territories": 0,
+          "mode": "degraded_no_fresh_territory"
+        },
+        {
+          "threshold_pct": 15,
+          "timestamp": "2022-10-30T17:41:50-03:00",
+          "forecast_a_pct": 52.046710520362296,
+          "baseline_a_pct": 48.385804839581596,
+          "error_pp": 1.1443054031901378,
+          "baseline_error_pp": -2.516600277590564,
+          "fresh_territories": 0,
+          "mode": "degraded_no_fresh_territory"
+        },
+        {
+          "threshold_pct": 20,
+          "timestamp": "2022-10-30T17:49:00-03:00",
+          "forecast_a_pct": 51.845204269412406,
+          "baseline_a_pct": 48.45390740792644,
+          "error_pp": 0.9427991522402479,
+          "baseline_error_pp": -2.448497709245717,
+          "fresh_territories": 0,
+          "mode": "degraded_no_fresh_territory"
+        },
+        {
+          "threshold_pct": 25,
+          "timestamp": "2022-10-30T17:55:43-03:00",
+          "forecast_a_pct": 51.70570767301107,
+          "baseline_a_pct": 48.74233408045688,
+          "error_pp": 0.803302555838914,
+          "baseline_error_pp": -2.1600710367152773,
+          "fresh_territories": 0,
+          "mode": "degraded_no_fresh_territory"
+        },
+        {
+          "threshold_pct": 30,
+          "timestamp": "2022-10-30T18:02:24-03:00",
+          "forecast_a_pct": 51.56851859919966,
+          "baseline_a_pct": 48.94445582645756,
+          "error_pp": 0.6661134820275083,
+          "baseline_error_pp": -1.9579492907145946,
+          "fresh_territories": 0,
+          "mode": "degraded_no_fresh_territory"
+        },
+        {
+          "threshold_pct": 35,
+          "timestamp": "2022-10-30T18:09:33-03:00",
+          "forecast_a_pct": 51.45937891404233,
+          "baseline_a_pct": 49.168747944299554,
+          "error_pp": 0.5569737968701749,
+          "baseline_error_pp": -1.7336571728726047,
+          "fresh_territories": 0,
+          "mode": "degraded_no_fresh_territory"
+        },
+        {
+          "threshold_pct": 40,
+          "timestamp": "2022-10-30T18:15:59-03:00",
+          "forecast_a_pct": 51.36020672807844,
+          "baseline_a_pct": 49.36085188420486,
+          "error_pp": 0.45780161090628324,
+          "baseline_error_pp": -1.541553232967291,
+          "fresh_territories": 0,
+          "mode": "degraded_no_fresh_territory"
+        },
+        {
+          "threshold_pct": 45,
+          "timestamp": "2022-10-30T18:21:43-03:00",
+          "forecast_a_pct": 51.25610776550802,
+          "baseline_a_pct": 49.50023356484555,
+          "error_pp": 0.35370264833586296,
+          "baseline_error_pp": -1.4021715523266032,
+          "fresh_territories": 0,
+          "mode": "degraded_no_fresh_territory"
+        },
+        {
+          "threshold_pct": 50,
+          "timestamp": "2022-10-30T18:26:53-03:00",
+          "forecast_a_pct": 51.19157594816872,
+          "baseline_a_pct": 49.69146360734597,
+          "error_pp": 0.2891708309965657,
+          "baseline_error_pp": -1.2109415098261855,
+          "fresh_territories": 0,
+          "mode": "degraded_no_fresh_territory"
+        },
+        {
+          "threshold_pct": 55,
+          "timestamp": "2022-10-30T18:31:29-03:00",
+          "forecast_a_pct": 51.09649599828244,
+          "baseline_a_pct": 49.789959441990305,
+          "error_pp": 0.19409088111028705,
+          "baseline_error_pp": -1.1124456751818501,
+          "fresh_territories": 0,
+          "mode": "degraded_no_fresh_territory"
+        },
+        {
+          "threshold_pct": 60,
+          "timestamp": "2022-10-30T18:36:47-03:00",
+          "forecast_a_pct": 50.9952677668793,
+          "baseline_a_pct": 49.86754567007328,
+          "error_pp": 0.0928626497071483,
+          "baseline_error_pp": -1.0348594470988792,
+          "fresh_territories": 0,
+          "mode": "degraded_no_fresh_territory"
+        },
+        {
+          "threshold_pct": 65,
+          "timestamp": "2022-10-30T18:41:23-03:00",
+          "forecast_a_pct": 50.915655720585164,
+          "baseline_a_pct": 49.96238082997762,
+          "error_pp": 0.013250603413006434,
+          "baseline_error_pp": -0.9400242871945408,
+          "fresh_territories": 0,
+          "mode": "degraded_no_fresh_territory"
+        },
+        {
+          "threshold_pct": 70,
+          "timestamp": "2022-10-30T18:46:46-03:00",
+          "forecast_a_pct": 50.837083534746256,
+          "baseline_a_pct": 50.04568750613198,
+          "error_pp": -0.06532158242590347,
+          "baseline_error_pp": -0.8567176110401697,
+          "fresh_territories": 0,
+          "mode": "degraded_no_fresh_territory"
+        },
+        {
+          "threshold_pct": 75,
+          "timestamp": "2022-10-30T18:51:36-03:00",
+          "forecast_a_pct": 50.800186781702,
+          "baseline_a_pct": 50.169236597415036,
+          "error_pp": -0.10221833547015002,
+          "baseline_error_pp": -0.7331685197571214,
+          "fresh_territories": 0,
+          "mode": "degraded_no_fresh_territory"
+        },
+        {
+          "threshold_pct": 80,
+          "timestamp": "2022-10-30T18:56:49-03:00",
+          "forecast_a_pct": 50.771164203471265,
+          "baseline_a_pct": 50.2912035163791,
+          "error_pp": -0.13124091370089186,
+          "baseline_error_pp": -0.6112016007930543,
+          "fresh_territories": 0,
+          "mode": "degraded_no_fresh_territory"
+        },
+        {
+          "threshold_pct": 85,
+          "timestamp": "2022-10-30T19:02:13-03:00",
+          "forecast_a_pct": 50.76076734676672,
+          "baseline_a_pct": 50.420289003069676,
+          "error_pp": -0.1416377704054339,
+          "baseline_error_pp": -0.4821161141024821,
+          "fresh_territories": 0,
+          "mode": "degraded_no_fresh_territory"
+        },
+        {
+          "threshold_pct": 90,
+          "timestamp": "2022-10-30T19:09:26-03:00",
+          "forecast_a_pct": 50.749405281079305,
+          "baseline_a_pct": 50.53343221506862,
+          "error_pp": -0.15299983609284862,
+          "baseline_error_pp": -0.36897290210353706,
+          "fresh_territories": 0,
+          "mode": "degraded_no_fresh_territory"
+        },
+        {
+          "threshold_pct": 95,
+          "timestamp": "2022-10-30T19:23:45-03:00",
+          "forecast_a_pct": 50.76123590134009,
+          "baseline_a_pct": 50.65955817186162,
+          "error_pp": -0.14116921583205988,
+          "baseline_error_pp": -0.24284694531053752,
+          "fresh_territories": 0,
+          "mode": "degraded_no_fresh_territory"
+        }
+      ]
+    },
+    "atraso_30min": {
+      "mae_pp": 0.4768932452648813,
+      "max_abs_error_pp": 1.49239143948513,
+      "bias_pp": 0.399568229062009,
+      "baseline_mae_pp": 1.4975301436535053,
+      "improved_checkpoints": 19,
+      "checkpoints": [
+        {
+          "threshold_pct": 5,
+          "timestamp": "2022-10-30T17:25:47-03:00",
+          "forecast_a_pct": 52.39479655665728,
+          "baseline_a_pct": 46.7149215697828,
+          "error_pp": 1.49239143948513,
+          "baseline_error_pp": -4.187483547389354,
+          "fresh_territories": 0,
+          "mode": "degraded_no_fresh_territory"
+        },
+        {
+          "threshold_pct": 10,
+          "timestamp": "2022-10-30T17:33:41-03:00",
+          "forecast_a_pct": 52.22202406915635,
+          "baseline_a_pct": 47.99061081998592,
+          "error_pp": 1.3196189519841917,
+          "baseline_error_pp": -2.911794297186238,
+          "fresh_territories": 0,
+          "mode": "degraded_no_fresh_territory"
+        },
+        {
+          "threshold_pct": 15,
+          "timestamp": "2022-10-30T17:41:50-03:00",
+          "forecast_a_pct": 52.046710520362296,
+          "baseline_a_pct": 48.385804839581596,
+          "error_pp": 1.1443054031901378,
+          "baseline_error_pp": -2.516600277590564,
+          "fresh_territories": 0,
+          "mode": "degraded_no_fresh_territory"
+        },
+        {
+          "threshold_pct": 20,
+          "timestamp": "2022-10-30T17:49:00-03:00",
+          "forecast_a_pct": 51.845204269412406,
+          "baseline_a_pct": 48.45390740792644,
+          "error_pp": 0.9427991522402479,
+          "baseline_error_pp": -2.448497709245717,
+          "fresh_territories": 0,
+          "mode": "degraded_no_fresh_territory"
+        },
+        {
+          "threshold_pct": 25,
+          "timestamp": "2022-10-30T17:55:43-03:00",
+          "forecast_a_pct": 51.70570767301107,
+          "baseline_a_pct": 48.74233408045688,
+          "error_pp": 0.803302555838914,
+          "baseline_error_pp": -2.1600710367152773,
+          "fresh_territories": 0,
+          "mode": "degraded_no_fresh_territory"
+        },
+        {
+          "threshold_pct": 30,
+          "timestamp": "2022-10-30T18:02:24-03:00",
+          "forecast_a_pct": 51.56851859919966,
+          "baseline_a_pct": 48.94445582645756,
+          "error_pp": 0.6661134820275083,
+          "baseline_error_pp": -1.9579492907145946,
+          "fresh_territories": 0,
+          "mode": "degraded_no_fresh_territory"
+        },
+        {
+          "threshold_pct": 35,
+          "timestamp": "2022-10-30T18:09:33-03:00",
+          "forecast_a_pct": 51.45937891404233,
+          "baseline_a_pct": 49.168747944299554,
+          "error_pp": 0.5569737968701749,
+          "baseline_error_pp": -1.7336571728726047,
+          "fresh_territories": 0,
+          "mode": "degraded_no_fresh_territory"
+        },
+        {
+          "threshold_pct": 40,
+          "timestamp": "2022-10-30T18:15:59-03:00",
+          "forecast_a_pct": 51.36020672807844,
+          "baseline_a_pct": 49.36085188420486,
+          "error_pp": 0.45780161090628324,
+          "baseline_error_pp": -1.541553232967291,
+          "fresh_territories": 0,
+          "mode": "degraded_no_fresh_territory"
+        },
+        {
+          "threshold_pct": 45,
+          "timestamp": "2022-10-30T18:21:43-03:00",
+          "forecast_a_pct": 51.25610776550802,
+          "baseline_a_pct": 49.50023356484555,
+          "error_pp": 0.35370264833586296,
+          "baseline_error_pp": -1.4021715523266032,
+          "fresh_territories": 0,
+          "mode": "degraded_no_fresh_territory"
+        },
+        {
+          "threshold_pct": 50,
+          "timestamp": "2022-10-30T18:26:53-03:00",
+          "forecast_a_pct": 51.19157594816872,
+          "baseline_a_pct": 49.69146360734597,
+          "error_pp": 0.2891708309965657,
+          "baseline_error_pp": -1.2109415098261855,
+          "fresh_territories": 0,
+          "mode": "degraded_no_fresh_territory"
+        },
+        {
+          "threshold_pct": 55,
+          "timestamp": "2022-10-30T18:31:29-03:00",
+          "forecast_a_pct": 51.09649599828244,
+          "baseline_a_pct": 49.789959441990305,
+          "error_pp": 0.19409088111028705,
+          "baseline_error_pp": -1.1124456751818501,
+          "fresh_territories": 0,
+          "mode": "degraded_no_fresh_territory"
+        },
+        {
+          "threshold_pct": 60,
+          "timestamp": "2022-10-30T18:36:47-03:00",
+          "forecast_a_pct": 50.9952677668793,
+          "baseline_a_pct": 49.86754567007328,
+          "error_pp": 0.0928626497071483,
+          "baseline_error_pp": -1.0348594470988792,
+          "fresh_territories": 0,
+          "mode": "degraded_no_fresh_territory"
+        },
+        {
+          "threshold_pct": 65,
+          "timestamp": "2022-10-30T18:41:23-03:00",
+          "forecast_a_pct": 50.915655720585164,
+          "baseline_a_pct": 49.96238082997762,
+          "error_pp": 0.013250603413006434,
+          "baseline_error_pp": -0.9400242871945408,
+          "fresh_territories": 0,
+          "mode": "degraded_no_fresh_territory"
+        },
+        {
+          "threshold_pct": 70,
+          "timestamp": "2022-10-30T18:46:46-03:00",
+          "forecast_a_pct": 50.837083534746256,
+          "baseline_a_pct": 50.04568750613198,
+          "error_pp": -0.06532158242590347,
+          "baseline_error_pp": -0.8567176110401697,
+          "fresh_territories": 0,
+          "mode": "degraded_no_fresh_territory"
+        },
+        {
+          "threshold_pct": 75,
+          "timestamp": "2022-10-30T18:51:36-03:00",
+          "forecast_a_pct": 50.800186781702,
+          "baseline_a_pct": 50.169236597415036,
+          "error_pp": -0.10221833547015002,
+          "baseline_error_pp": -0.7331685197571214,
+          "fresh_territories": 0,
+          "mode": "degraded_no_fresh_territory"
+        },
+        {
+          "threshold_pct": 80,
+          "timestamp": "2022-10-30T18:56:49-03:00",
+          "forecast_a_pct": 50.771164203471265,
+          "baseline_a_pct": 50.2912035163791,
+          "error_pp": -0.13124091370089186,
+          "baseline_error_pp": -0.6112016007930543,
+          "fresh_territories": 0,
+          "mode": "degraded_no_fresh_territory"
+        },
+        {
+          "threshold_pct": 85,
+          "timestamp": "2022-10-30T19:02:13-03:00",
+          "forecast_a_pct": 50.76076734676672,
+          "baseline_a_pct": 50.420289003069676,
+          "error_pp": -0.1416377704054339,
+          "baseline_error_pp": -0.4821161141024821,
+          "fresh_territories": 0,
+          "mode": "degraded_no_fresh_territory"
+        },
+        {
+          "threshold_pct": 90,
+          "timestamp": "2022-10-30T19:09:26-03:00",
+          "forecast_a_pct": 50.749405281079305,
+          "baseline_a_pct": 50.53343221506862,
+          "error_pp": -0.15299983609284862,
+          "baseline_error_pp": -0.36897290210353706,
+          "fresh_territories": 0,
+          "mode": "degraded_no_fresh_territory"
+        },
+        {
+          "threshold_pct": 95,
+          "timestamp": "2022-10-30T19:23:45-03:00",
+          "forecast_a_pct": 50.76123590134009,
+          "baseline_a_pct": 50.65955817186162,
+          "error_pp": -0.14116921583205988,
+          "baseline_error_pp": -0.24284694531053752,
+          "fresh_territories": 0,
+          "mode": "degraded_no_fresh_territory"
+        }
+      ]
+    },
+    "sem_SP": {
+      "mae_pp": 0.8226778851218445,
+      "max_abs_error_pp": 1.0609907967617405,
+      "bias_pp": -0.8226778851218445,
+      "baseline_mae_pp": 1.4975301436535053,
+      "improved_checkpoints": 18,
+      "checkpoints": [
+        {
+          "threshold_pct": 5,
+          "timestamp": "2022-10-30T17:25:47-03:00",
+          "forecast_a_pct": 49.93098511842785,
+          "baseline_a_pct": 46.7149215697828,
+          "error_pp": -0.9714199987443106,
+          "baseline_error_pp": -4.187483547389354,
+          "fresh_territories": 27,
+          "mode": "territorial"
+        },
+        {
+          "threshold_pct": 10,
+          "timestamp": "2022-10-30T17:33:41-03:00",
+          "forecast_a_pct": 49.96211290366407,
+          "baseline_a_pct": 47.99061081998592,
+          "error_pp": -0.9402922135080816,
+          "baseline_error_pp": -2.911794297186238,
+          "fresh_territories": 27,
+          "mode": "territorial"
+        },
+        {
+          "threshold_pct": 15,
+          "timestamp": "2022-10-30T17:41:50-03:00",
+          "forecast_a_pct": 50.03425344194737,
+          "baseline_a_pct": 48.385804839581596,
+          "error_pp": -0.868151675224782,
+          "baseline_error_pp": -2.516600277590564,
+          "fresh_territories": 27,
+          "mode": "territorial"
+        },
+        {
+          "threshold_pct": 20,
+          "timestamp": "2022-10-30T17:49:00-03:00",
+          "forecast_a_pct": 49.90826023208378,
+          "baseline_a_pct": 48.45390740792644,
+          "error_pp": -0.9941448850883772,
+          "baseline_error_pp": -2.448497709245717,
+          "fresh_territories": 27,
+          "mode": "territorial"
+        },
+        {
+          "threshold_pct": 25,
+          "timestamp": "2022-10-30T17:55:43-03:00",
+          "forecast_a_pct": 49.903079180130106,
+          "baseline_a_pct": 48.74233408045688,
+          "error_pp": -0.9993259370420504,
+          "baseline_error_pp": -2.1600710367152773,
+          "fresh_territories": 27,
+          "mode": "territorial"
+        },
+        {
+          "threshold_pct": 30,
+          "timestamp": "2022-10-30T18:02:24-03:00",
+          "forecast_a_pct": 49.841414320410415,
+          "baseline_a_pct": 48.94445582645756,
+          "error_pp": -1.0609907967617405,
+          "baseline_error_pp": -1.9579492907145946,
+          "fresh_territories": 27,
+          "mode": "territorial"
+        },
+        {
+          "threshold_pct": 35,
+          "timestamp": "2022-10-30T18:09:33-03:00",
+          "forecast_a_pct": 49.8424122726853,
+          "baseline_a_pct": 49.168747944299554,
+          "error_pp": -1.0599928444868567,
+          "baseline_error_pp": -1.7336571728726047,
+          "fresh_territories": 27,
+          "mode": "territorial"
+        },
+        {
+          "threshold_pct": 40,
+          "timestamp": "2022-10-30T18:15:59-03:00",
+          "forecast_a_pct": 49.853653260027095,
+          "baseline_a_pct": 49.36085188420486,
+          "error_pp": -1.0487518571450638,
+          "baseline_error_pp": -1.541553232967291,
+          "fresh_territories": 27,
+          "mode": "territorial"
+        },
+        {
+          "threshold_pct": 45,
+          "timestamp": "2022-10-30T18:21:43-03:00",
+          "forecast_a_pct": 49.89145271968201,
+          "baseline_a_pct": 49.50023356484555,
+          "error_pp": -1.0109523974901502,
+          "baseline_error_pp": -1.4021715523266032,
+          "fresh_territories": 27,
+          "mode": "territorial"
+        },
+        {
+          "threshold_pct": 50,
+          "timestamp": "2022-10-30T18:26:53-03:00",
+          "forecast_a_pct": 49.95015156206814,
+          "baseline_a_pct": 49.69146360734597,
+          "error_pp": -0.9522535551040157,
+          "baseline_error_pp": -1.2109415098261855,
+          "fresh_territories": 27,
+          "mode": "territorial"
+        },
+        {
+          "threshold_pct": 55,
+          "timestamp": "2022-10-30T18:31:29-03:00",
+          "forecast_a_pct": 49.98622695182188,
+          "baseline_a_pct": 49.789959441990305,
+          "error_pp": -0.9161781653502787,
+          "baseline_error_pp": -1.1124456751818501,
+          "fresh_territories": 27,
+          "mode": "territorial"
+        },
+        {
+          "threshold_pct": 60,
+          "timestamp": "2022-10-30T18:36:47-03:00",
+          "forecast_a_pct": 50.02059853001962,
+          "baseline_a_pct": 49.86754567007328,
+          "error_pp": -0.8818065871525338,
+          "baseline_error_pp": -1.0348594470988792,
+          "fresh_territories": 27,
+          "mode": "territorial"
+        },
+        {
+          "threshold_pct": 65,
+          "timestamp": "2022-10-30T18:41:23-03:00",
+          "forecast_a_pct": 50.06954369046812,
+          "baseline_a_pct": 49.96238082997762,
+          "error_pp": -0.8328614267040346,
+          "baseline_error_pp": -0.9400242871945408,
+          "fresh_territories": 27,
+          "mode": "territorial"
+        },
+        {
+          "threshold_pct": 70,
+          "timestamp": "2022-10-30T18:46:46-03:00",
+          "forecast_a_pct": 50.1295914459997,
+          "baseline_a_pct": 50.04568750613198,
+          "error_pp": -0.7728136711724565,
+          "baseline_error_pp": -0.8567176110401697,
+          "fresh_territories": 27,
+          "mode": "territorial"
+        },
+        {
+          "threshold_pct": 75,
+          "timestamp": "2022-10-30T18:51:36-03:00",
+          "forecast_a_pct": 50.225342648175044,
+          "baseline_a_pct": 50.169236597415036,
+          "error_pp": -0.6770624689971139,
+          "baseline_error_pp": -0.7331685197571214,
+          "fresh_territories": 27,
+          "mode": "territorial"
+        },
+        {
+          "threshold_pct": 80,
+          "timestamp": "2022-10-30T18:56:49-03:00",
+          "forecast_a_pct": 50.33184445476779,
+          "baseline_a_pct": 50.2912035163791,
+          "error_pp": -0.5705606624043624,
+          "baseline_error_pp": -0.6112016007930543,
+          "fresh_territories": 27,
+          "mode": "territorial"
+        },
+        {
+          "threshold_pct": 85,
+          "timestamp": "2022-10-30T19:02:13-03:00",
+          "forecast_a_pct": 50.43800291113843,
+          "baseline_a_pct": 50.420289003069676,
+          "error_pp": -0.4644022060337205,
+          "baseline_error_pp": -0.4821161141024821,
+          "fresh_territories": 27,
+          "mode": "territorial"
+        },
+        {
+          "threshold_pct": 90,
+          "timestamp": "2022-10-30T19:09:26-03:00",
+          "forecast_a_pct": 50.53663103070117,
+          "baseline_a_pct": 50.53343221506862,
+          "error_pp": -0.3657740864709824,
+          "baseline_error_pp": -0.36897290210353706,
+          "fresh_territories": 24,
+          "mode": "territorial"
+        },
+        {
+          "threshold_pct": 95,
+          "timestamp": "2022-10-30T19:23:45-03:00",
+          "forecast_a_pct": 50.65926073473802,
+          "baseline_a_pct": 50.65955817186162,
+          "error_pp": -0.24314438243413505,
+          "baseline_error_pp": -0.24284694531053752,
+          "fresh_territories": 24,
+          "mode": "territorial"
+        }
+      ]
+    },
+    "sem_SP_MG_RJ": {
+      "mae_pp": 0.8557771449138691,
+      "max_abs_error_pp": 1.0935473812344831,
+      "bias_pp": -0.8557771449138691,
+      "baseline_mae_pp": 1.4975301436535053,
+      "improved_checkpoints": 17,
+      "checkpoints": [
+        {
+          "threshold_pct": 5,
+          "timestamp": "2022-10-30T17:25:47-03:00",
+          "forecast_a_pct": 49.85834305533983,
+          "baseline_a_pct": 46.7149215697828,
+          "error_pp": -1.0440620618323238,
+          "baseline_error_pp": -4.187483547389354,
+          "fresh_territories": 25,
+          "mode": "territorial"
+        },
+        {
+          "threshold_pct": 10,
+          "timestamp": "2022-10-30T17:33:41-03:00",
+          "forecast_a_pct": 49.890681889527315,
+          "baseline_a_pct": 47.99061081998592,
+          "error_pp": -1.0117232276448396,
+          "baseline_error_pp": -2.911794297186238,
+          "fresh_territories": 25,
+          "mode": "territorial"
+        },
+        {
+          "threshold_pct": 15,
+          "timestamp": "2022-10-30T17:41:50-03:00",
+          "forecast_a_pct": 49.98076175210093,
+          "baseline_a_pct": 48.385804839581596,
+          "error_pp": -0.921643365071223,
+          "baseline_error_pp": -2.516600277590564,
+          "fresh_territories": 25,
+          "mode": "territorial"
+        },
+        {
+          "threshold_pct": 20,
+          "timestamp": "2022-10-30T17:49:00-03:00",
+          "forecast_a_pct": 49.851284728063696,
+          "baseline_a_pct": 48.45390740792644,
+          "error_pp": -1.051120389108462,
+          "baseline_error_pp": -2.448497709245717,
+          "fresh_territories": 25,
+          "mode": "territorial"
+        },
+        {
+          "threshold_pct": 25,
+          "timestamp": "2022-10-30T17:55:43-03:00",
+          "forecast_a_pct": 49.85070331833791,
+          "baseline_a_pct": 48.74233408045688,
+          "error_pp": -1.051701798834248,
+          "baseline_error_pp": -2.1600710367152773,
+          "fresh_territories": 25,
+          "mode": "territorial"
+        },
+        {
+          "threshold_pct": 30,
+          "timestamp": "2022-10-30T18:02:24-03:00",
+          "forecast_a_pct": 49.80885773593767,
+          "baseline_a_pct": 48.94445582645756,
+          "error_pp": -1.0935473812344831,
+          "baseline_error_pp": -1.9579492907145946,
+          "fresh_territories": 25,
+          "mode": "territorial"
+        },
+        {
+          "threshold_pct": 35,
+          "timestamp": "2022-10-30T18:09:33-03:00",
+          "forecast_a_pct": 49.811723444025255,
+          "baseline_a_pct": 49.168747944299554,
+          "error_pp": -1.0906816731468982,
+          "baseline_error_pp": -1.7336571728726047,
+          "fresh_territories": 25,
+          "mode": "territorial"
+        },
+        {
+          "threshold_pct": 40,
+          "timestamp": "2022-10-30T18:15:59-03:00",
+          "forecast_a_pct": 49.83135738430987,
+          "baseline_a_pct": 49.36085188420486,
+          "error_pp": -1.0710477328622847,
+          "baseline_error_pp": -1.541553232967291,
+          "fresh_territories": 25,
+          "mode": "territorial"
+        },
+        {
+          "threshold_pct": 45,
+          "timestamp": "2022-10-30T18:21:43-03:00",
+          "forecast_a_pct": 49.86286001074816,
+          "baseline_a_pct": 49.50023356484555,
+          "error_pp": -1.0395451064240002,
+          "baseline_error_pp": -1.4021715523266032,
+          "fresh_territories": 25,
+          "mode": "territorial"
+        },
+        {
+          "threshold_pct": 50,
+          "timestamp": "2022-10-30T18:26:53-03:00",
+          "forecast_a_pct": 49.91733361651009,
+          "baseline_a_pct": 49.69146360734597,
+          "error_pp": -0.9850715006620658,
+          "baseline_error_pp": -1.2109415098261855,
+          "fresh_territories": 25,
+          "mode": "territorial"
+        },
+        {
+          "threshold_pct": 55,
+          "timestamp": "2022-10-30T18:31:29-03:00",
+          "forecast_a_pct": 49.95510039724594,
+          "baseline_a_pct": 49.789959441990305,
+          "error_pp": -0.9473047199262119,
+          "baseline_error_pp": -1.1124456751818501,
+          "fresh_territories": 25,
+          "mode": "territorial"
+        },
+        {
+          "threshold_pct": 60,
+          "timestamp": "2022-10-30T18:36:47-03:00",
+          "forecast_a_pct": 49.98888967660782,
+          "baseline_a_pct": 49.86754567007328,
+          "error_pp": -0.9135154405643386,
+          "baseline_error_pp": -1.0348594470988792,
+          "fresh_territories": 25,
+          "mode": "territorial"
+        },
+        {
+          "threshold_pct": 65,
+          "timestamp": "2022-10-30T18:41:23-03:00",
+          "forecast_a_pct": 50.03936860753593,
+          "baseline_a_pct": 49.96238082997762,
+          "error_pp": -0.863036509636228,
+          "baseline_error_pp": -0.9400242871945408,
+          "fresh_territories": 25,
+          "mode": "territorial"
+        },
+        {
+          "threshold_pct": 70,
+          "timestamp": "2022-10-30T18:46:46-03:00",
+          "forecast_a_pct": 50.10821621846272,
+          "baseline_a_pct": 50.04568750613198,
+          "error_pp": -0.7941888987094359,
+          "baseline_error_pp": -0.8567176110401697,
+          "fresh_territories": 25,
+          "mode": "territorial"
+        },
+        {
+          "threshold_pct": 75,
+          "timestamp": "2022-10-30T18:51:36-03:00",
+          "forecast_a_pct": 50.2076696654387,
+          "baseline_a_pct": 50.169236597415036,
+          "error_pp": -0.6947354517334525,
+          "baseline_error_pp": -0.7331685197571214,
+          "fresh_territories": 25,
+          "mode": "territorial"
+        },
+        {
+          "threshold_pct": 80,
+          "timestamp": "2022-10-30T18:56:49-03:00",
+          "forecast_a_pct": 50.313515548497215,
+          "baseline_a_pct": 50.2912035163791,
+          "error_pp": -0.588889568674944,
+          "baseline_error_pp": -0.6112016007930543,
+          "fresh_territories": 25,
+          "mode": "territorial"
+        },
+        {
+          "threshold_pct": 85,
+          "timestamp": "2022-10-30T19:02:13-03:00",
+          "forecast_a_pct": 50.42595808021972,
+          "baseline_a_pct": 50.420289003069676,
+          "error_pp": -0.47644703695243207,
+          "baseline_error_pp": -0.4821161141024821,
+          "fresh_territories": 25,
+          "mode": "territorial"
+        },
+        {
+          "threshold_pct": 90,
+          "timestamp": "2022-10-30T19:09:26-03:00",
+          "forecast_a_pct": 50.527685786809315,
+          "baseline_a_pct": 50.53343221506862,
+          "error_pp": -0.3747193303628382,
+          "baseline_error_pp": -0.36897290210353706,
+          "fresh_territories": 22,
+          "mode": "territorial"
+        },
+        {
+          "threshold_pct": 95,
+          "timestamp": "2022-10-30T19:23:45-03:00",
+          "forecast_a_pct": 50.65562055718935,
+          "baseline_a_pct": 50.65955817186162,
+          "error_pp": -0.24678455998280446,
+          "baseline_error_pp": -0.24284694531053752,
+          "fresh_territories": 22,
+          "mode": "territorial"
+        }
+      ]
+    },
+    "sem_Nordeste": {
+      "mae_pp": 0.9222801556211309,
+      "max_abs_error_pp": 1.3615782545985833,
+      "bias_pp": -0.9222801556211309,
+      "baseline_mae_pp": 1.4975301436535053,
+      "improved_checkpoints": 19,
+      "checkpoints": [
+        {
+          "threshold_pct": 5,
+          "timestamp": "2022-10-30T17:25:47-03:00",
+          "forecast_a_pct": 49.814549185863015,
+          "baseline_a_pct": 46.7149215697828,
+          "error_pp": -1.0878559313091396,
+          "baseline_error_pp": -4.187483547389354,
+          "fresh_territories": 19,
+          "mode": "territorial"
+        },
+        {
+          "threshold_pct": 10,
+          "timestamp": "2022-10-30T17:33:41-03:00",
+          "forecast_a_pct": 49.66763010789525,
+          "baseline_a_pct": 47.99061081998592,
+          "error_pp": -1.234775009276906,
+          "baseline_error_pp": -2.911794297186238,
+          "fresh_territories": 19,
+          "mode": "territorial"
+        },
+        {
+          "threshold_pct": 15,
+          "timestamp": "2022-10-30T17:41:50-03:00",
+          "forecast_a_pct": 49.668017604889776,
+          "baseline_a_pct": 48.385804839581596,
+          "error_pp": -1.234387512282381,
+          "baseline_error_pp": -2.516600277590564,
+          "fresh_territories": 19,
+          "mode": "territorial"
+        },
+        {
+          "threshold_pct": 20,
+          "timestamp": "2022-10-30T17:49:00-03:00",
+          "forecast_a_pct": 49.540826862573574,
+          "baseline_a_pct": 48.45390740792644,
+          "error_pp": -1.3615782545985833,
+          "baseline_error_pp": -2.448497709245717,
+          "fresh_territories": 19,
+          "mode": "territorial"
+        },
+        {
+          "threshold_pct": 25,
+          "timestamp": "2022-10-30T17:55:43-03:00",
+          "forecast_a_pct": 49.61323452810729,
+          "baseline_a_pct": 48.74233408045688,
+          "error_pp": -1.2891705890648641,
+          "baseline_error_pp": -2.1600710367152773,
+          "fresh_territories": 19,
+          "mode": "territorial"
+        },
+        {
+          "threshold_pct": 30,
+          "timestamp": "2022-10-30T18:02:24-03:00",
+          "forecast_a_pct": 49.56321063968233,
+          "baseline_a_pct": 48.94445582645756,
+          "error_pp": -1.3391944774898246,
+          "baseline_error_pp": -1.9579492907145946,
+          "fresh_territories": 19,
+          "mode": "territorial"
+        },
+        {
+          "threshold_pct": 35,
+          "timestamp": "2022-10-30T18:09:33-03:00",
+          "forecast_a_pct": 49.63887183367144,
+          "baseline_a_pct": 49.168747944299554,
+          "error_pp": -1.2635332835007174,
+          "baseline_error_pp": -1.7336571728726047,
+          "fresh_territories": 19,
+          "mode": "territorial"
+        },
+        {
+          "threshold_pct": 40,
+          "timestamp": "2022-10-30T18:15:59-03:00",
+          "forecast_a_pct": 49.68897091652721,
+          "baseline_a_pct": 49.36085188420486,
+          "error_pp": -1.2134342006449472,
+          "baseline_error_pp": -1.541553232967291,
+          "fresh_territories": 19,
+          "mode": "territorial"
+        },
+        {
+          "threshold_pct": 45,
+          "timestamp": "2022-10-30T18:21:43-03:00",
+          "forecast_a_pct": 49.80396676892761,
+          "baseline_a_pct": 49.50023356484555,
+          "error_pp": -1.098438348244546,
+          "baseline_error_pp": -1.4021715523266032,
+          "fresh_territories": 19,
+          "mode": "territorial"
+        },
+        {
+          "threshold_pct": 50,
+          "timestamp": "2022-10-30T18:26:53-03:00",
+          "forecast_a_pct": 49.92824600969348,
+          "baseline_a_pct": 49.69146360734597,
+          "error_pp": -0.9741591074786726,
+          "baseline_error_pp": -1.2109415098261855,
+          "fresh_territories": 19,
+          "mode": "territorial"
+        },
+        {
+          "threshold_pct": 55,
+          "timestamp": "2022-10-30T18:31:29-03:00",
+          "forecast_a_pct": 50.0097372505806,
+          "baseline_a_pct": 49.789959441990305,
+          "error_pp": -0.8926678665915566,
+          "baseline_error_pp": -1.1124456751818501,
+          "fresh_territories": 19,
+          "mode": "territorial"
+        },
+        {
+          "threshold_pct": 60,
+          "timestamp": "2022-10-30T18:36:47-03:00",
+          "forecast_a_pct": 50.05540413507372,
+          "baseline_a_pct": 49.86754567007328,
+          "error_pp": -0.8470009820984337,
+          "baseline_error_pp": -1.0348594470988792,
+          "fresh_territories": 19,
+          "mode": "territorial"
+        },
+        {
+          "threshold_pct": 65,
+          "timestamp": "2022-10-30T18:41:23-03:00",
+          "forecast_a_pct": 50.12114086182604,
+          "baseline_a_pct": 49.96238082997762,
+          "error_pp": -0.7812642553461147,
+          "baseline_error_pp": -0.9400242871945408,
+          "fresh_territories": 19,
+          "mode": "territorial"
+        },
+        {
+          "threshold_pct": 70,
+          "timestamp": "2022-10-30T18:46:46-03:00",
+          "forecast_a_pct": 50.172626572349934,
+          "baseline_a_pct": 50.04568750613198,
+          "error_pp": -0.7297785448222238,
+          "baseline_error_pp": -0.8567176110401697,
+          "fresh_territories": 19,
+          "mode": "territorial"
+        },
+        {
+          "threshold_pct": 75,
+          "timestamp": "2022-10-30T18:51:36-03:00",
+          "forecast_a_pct": 50.26688252233016,
+          "baseline_a_pct": 50.169236597415036,
+          "error_pp": -0.6355225948419974,
+          "baseline_error_pp": -0.7331685197571214,
+          "fresh_territories": 19,
+          "mode": "territorial"
+        },
+        {
+          "threshold_pct": 80,
+          "timestamp": "2022-10-30T18:56:49-03:00",
+          "forecast_a_pct": 50.36829193083958,
+          "baseline_a_pct": 50.2912035163791,
+          "error_pp": -0.5341131863325743,
+          "baseline_error_pp": -0.6112016007930543,
+          "fresh_territories": 19,
+          "mode": "territorial"
+        },
+        {
+          "threshold_pct": 85,
+          "timestamp": "2022-10-30T19:02:13-03:00",
+          "forecast_a_pct": 50.470033155098335,
+          "baseline_a_pct": 50.420289003069676,
+          "error_pp": -0.43237196207381867,
+          "baseline_error_pp": -0.4821161141024821,
+          "fresh_territories": 19,
+          "mode": "territorial"
+        },
+        {
+          "threshold_pct": 90,
+          "timestamp": "2022-10-30T19:09:26-03:00",
+          "forecast_a_pct": 50.5597552186937,
+          "baseline_a_pct": 50.53343221506862,
+          "error_pp": -0.3426498984784532,
+          "baseline_error_pp": -0.36897290210353706,
+          "fresh_territories": 16,
+          "mode": "territorial"
+        },
+        {
+          "threshold_pct": 95,
+          "timestamp": "2022-10-30T19:23:45-03:00",
+          "forecast_a_pct": 50.670978164846424,
+          "baseline_a_pct": 50.65955817186162,
+          "error_pp": -0.23142695232573063,
+          "baseline_error_pp": -0.24284694531053752,
+          "fresh_territories": 16,
+          "mode": "territorial"
+        }
+      ]
+    }
+  },
+  "limitations": [
+    "Reconstrucao por votos finais e primeira totalizacao; nao captura original de parciais UF.",
+    "Igualdade nacional em todos os snapshots nao prova igualdade UF em todos os instantes: compensacoes entre UFs sao possiveis.",
+    "Disponibilidade simultanea a totalizacao e hipotese de cenario, nao fato observado de publicacao.",
+    "Primeiro turno UF usa versao retrospectiva; comparacao nacional nao autentica sua versao disponivel na data assumida.",
+    "Idade UF usa ultima mudanca reconstruida; nao recupera republicacoes sem alteracao ou cache real do coletor.",
+    "Atrasos e exclusoes mudam disponibilidade UF; votos BR continuam os oficiais, sem simular nova ordem nacional.",
+    "Os 19 marcos sao dependentes; nao inferir probabilidade de acerto ou certificacao integral."
+  ]
+}
