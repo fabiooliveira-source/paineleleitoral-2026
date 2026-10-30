@@ -1,0 +1,19 @@
+{
+  "status": "STRESS_TEST_EXPERIMENTAL",
+  "checkpoint_count": 19,
+  "mae_pp": {
+    "baseline_error_pp": 1.2891482813368371,
+    "original_error_pp": 0.8271003880609769,
+    "strict_60s_error_pp": 0.8405939190781486,
+    "lenient_600s_error_pp": 0.8267134687916208,
+    "uniform_territory_error_pp": 0.9629414718287388,
+    "conservative_swing_error_pp": 1.3685475925683237,
+    "no_swing_error_pp": 2.0035291487809364
+  },
+  "notes": [
+    "Comparações contrafactuais internas ao mesmo pleito, não validação externa.",
+    "Nenhuma variável de segundo turno final é usada no preditor; final só no alvo.",
+    "Testes de cobertura e ordem de chegada por UF ainda pendentes.",
+    "O nome uniform_territory altera pesos territoriais, não ordem da apuração."
+  ]
+}
