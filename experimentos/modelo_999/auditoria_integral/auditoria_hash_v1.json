@@ -1,0 +1,169 @@
+{
+  "commit": "e18be95e5dafbcd93bfbdbecfe1a8f9116b21161",
+  "manifest_sha256": "422c6020e9ef66aaab090c5fbbd1cf99aa0cbc9ee999f96865fe40a462beda07",
+  "matching_files": [],
+  "files": [
+    {
+      "path": "experimentos/modelo_999/auditar_integracao_candidatos.py",
+      "sha256": "2e142736fb692f252c8384aa04a76d6ec1d33aa1a8ef71844dcdbfb98587a9a6",
+      "git_blob_sha": "f9042b8c2390f345d9d67db3de2fcb5ff2ed266d",
+      "blob_verified": true
+    },
+    {
+      "path": "experimentos/modelo_999/auditar_modelo_restantes.py",
+      "sha256": "4281acee554d04b42d5ade5ee39ad565faeb4eba41d91c6c8ec43fa96927681e",
+      "git_blob_sha": "43e1b740bbaaeb5ccdfffb681e3cd3faea2e04b5",
+      "blob_verified": true
+    },
+    {
+      "path": "experimentos/modelo_999/auditar_redistribuicao_aptos.py",
+      "sha256": "d7c6f1bd73b20db1147414d1d1b7ee06b661d06347b02c1f1af5efd843b90660",
+      "git_blob_sha": "db0a93bdfb30cd204a563b635dd81fd9f698073a",
+      "blob_verified": true
+    },
+    {
+      "path": "experimentos/modelo_999/auditar_sincronismo_uf.py",
+      "sha256": "cb7a1167983814a503d141fff5444bcc313718210998b675e403c76249cfc5f5",
+      "git_blob_sha": "ddb6d038c3962f47ca24377eb62c7ec4170c526e",
+      "blob_verified": true
+    },
+    {
+      "path": "experimentos/modelo_999/auditar_staleness_uf.py",
+      "sha256": "ac5f64feb869e1abc6d745122326b6a035f753dadff3dd15675f2327ccbf413d",
+      "git_blob_sha": "6fcb546825d06f98a435f8a28b7dbac351e06cde",
+      "blob_verified": true
+    },
+    {
+      "path": "experimentos/modelo_999/auditoria_integral/replay_baseline_2022.py",
+      "sha256": "4a285a02ed1b1650b796b419ec697c781f607ea22c780d09ed6a4d8bd492c14c",
+      "git_blob_sha": "c83abdde70852306bae014b7d06f9db49a19cc55",
+      "blob_verified": true
+    },
+    {
+      "path": "experimentos/modelo_999/backtest_baseline_nacional.py",
+      "sha256": "97c0f36990d8f1171e4299a8155f256e915590415b02b2acc98c47d6163f0176",
+      "git_blob_sha": "a32d984f89ae94c26e95ead3644dfe9cc2e72b6a",
+      "blob_verified": true
+    },
+    {
+      "path": "experimentos/modelo_999/backtest_nowcast_uf.py",
+      "sha256": "16e12c77ca665a41634203c220159a5b5a9d16cb5ce59ab71cd113d16deb4158",
+      "git_blob_sha": "707da47ddae3f5749f087a88738c428bd1445d6f",
+      "blob_verified": true
+    },
+    {
+      "path": "experimentos/modelo_999/backtest_primeiro_turno_uf.py",
+      "sha256": "a2b1ee31784e7710d62aa7a7ebce5915747ce8accd15accefac7b52ddcc3b0b8",
+      "git_blob_sha": "38ec0a03826ba5978015290b20242c019aa6e9ce",
+      "blob_verified": true
+    },
+    {
+      "path": "experimentos/modelo_999/backtest_restantes_uf.py",
+      "sha256": "ec6cf8ce59429907b29f194e78763560e4ab925905262994b686dffa2c74d0e9",
+      "git_blob_sha": "424f7df5fce8df1b733d20a85ff59bcd4f2fb1f9",
+      "blob_verified": true
+    },
+    {
+      "path": "experimentos/modelo_999/baseline_territorial.py",
+      "sha256": "496a0788e4b3b65e3ed8a89468591b23e8d592cb1ce4a9fd1bc6a9f6eca1539a",
+      "git_blob_sha": "529a36b77c9fee51b7e9a7b608fe2c759df63ee3",
+      "blob_verified": true
+    },
+    {
+      "path": "experimentos/modelo_999/certificar_fase2.py",
+      "sha256": "c3faf99479ae221648a7ecce7a5d62d2ef08013da1fdea629fedb6a5c88c5362",
+      "git_blob_sha": "c7e7b2feac984fda003b02a82aab9dfe1c0f8c8b",
+      "blob_verified": true
+    },
+    {
+      "path": "experimentos/modelo_999/comparar_modelos_fase2.py",
+      "sha256": "ec4896ec2e3d16b175bc036c784da431f4ed635a51f243097e1c069148fbf2d8",
+      "git_blob_sha": "311c196af5dc99ef021e6691c65afd8bd8a8ff35",
+      "blob_verified": true
+    },
+    {
+      "path": "experimentos/modelo_999/cruzar_tte_aptos.py",
+      "sha256": "38967cf10f1a14952a4375d9dc6bf348298a65cb43b500b66f13f68ed4a29083",
+      "git_blob_sha": "3a12bdfb19e22241d68ce59cdd3cd7978a8f07cb",
+      "blob_verified": true
+    },
+    {
+      "path": "experimentos/modelo_999/diagnosticar_base_integral_secoes.py",
+      "sha256": "e35465040a3c8e9f23f1fcee1113c5f65014675671a91e1223f3b0b76a5775f2",
+      "git_blob_sha": "cb2ec265b1df345028bcfc9007c380c99451e004",
+      "blob_verified": true
+    },
+    {
+      "path": "experimentos/modelo_999/diagnosticar_perdas_finalistas.py",
+      "sha256": "c14bbedd155d2acad8ae7f74c3c6f7ea335951381ec5d05490d07efa1bacc310",
+      "git_blob_sha": "ab6f5875765f95bd4348df79e19200ecdd0b4c2e",
+      "blob_verified": true
+    },
+    {
+      "path": "experimentos/modelo_999/diagnosticar_primeiro_turno.py",
+      "sha256": "609f9600c3aa766c7df8633faffc9e23cbcfe6bdcc175d3ac330a32541080e61",
+      "git_blob_sha": "ffcf4b5a64781d161974b7ec3eb3b269c353c924",
+      "blob_verified": true
+    },
+    {
+      "path": "experimentos/modelo_999/fluxos_comparecimento_abstencao.py",
+      "sha256": "82003a71813b591c4515ee5a411268b47694698c7455b92022965904630c756c",
+      "git_blob_sha": "38b601f3ac6f508a97b2f107983d227942e5ff53",
+      "blob_verified": true
+    },
+    {
+      "path": "experimentos/modelo_999/inventariar_tte_oficial.py",
+      "sha256": "af52ee788c695bed86c98bfcf53cf6e6534de40561242e3a5906ff9ba424a941",
+      "git_blob_sha": "8158322887f5ffd5373fd87ada96ba309b42f3d1",
+      "blob_verified": true
+    },
+    {
+      "path": "experimentos/modelo_999/investigar_aptos_divergentes.py",
+      "sha256": "595804af24d92a8b8865333dbcd3d1bb99b15a92ac373fe200ba2d343aa6dc72",
+      "git_blob_sha": "b9a2e1a577f00409c9c599ef01b533272718a7f1",
+      "blob_verified": true
+    },
+    {
+      "path": "experimentos/modelo_999/matriz_transferencias_categorias.py",
+      "sha256": "3688440ae1d144fb6c8d9686711ee43874e0ca79b9908e22f18e4f16122232ee",
+      "git_blob_sha": "98076bd00b3b1ab2fadaaa07ccb6273d3bec1f74",
+      "blob_verified": true
+    },
+    {
+      "path": "experimentos/modelo_999/portao_qualidade_nowcast.py",
+      "sha256": "5db72dbce1fe6c4d30e65352ef3f3621558e598c9cc45b5d49f20b14a4b6f647",
+      "git_blob_sha": "cbf4e242cef564ffc19d0dcfbf4ea3d183aa84b4",
+      "blob_verified": true
+    },
+    {
+      "path": "experimentos/modelo_999/reconciliar_hierarquia_secoes.py",
+      "sha256": "0c607e50bf55a2af80dc9a2d69473cb49a784a58fb1523544579af3521252661",
+      "git_blob_sha": "55f2474f1b2151c347670a70d73e5d445160a443",
+      "blob_verified": true
+    },
+    {
+      "path": "experimentos/modelo_999/stress_disponibilidade_uf_fase2.py",
+      "sha256": "d3cf639224a9df82675eeec6ca6542005575eb4425a8d65bc03afc83ec58580e",
+      "git_blob_sha": "c83896c1104d4956aee39e748fb7e7e4ba7169f6",
+      "blob_verified": true
+    },
+    {
+      "path": "experimentos/modelo_999/stress_primeiro_turno_uf.py",
+      "sha256": "fa544ed7724e26a369f81f5a9349db6e06f3fd37c21752f8f0b6c3b27c9b172f",
+      "git_blob_sha": "54b6ad014658a0a3b1af1b022ff708b48a3bec82",
+      "blob_verified": true
+    },
+    {
+      "path": "experimentos/modelo_999/testar_transferencias_secoes.py",
+      "sha256": "d2ef2bbd32f263d1fba4677c6c144ece82891dd7ee3d532c6212af7fdf99c1c8",
+      "git_blob_sha": "7809347c05e6f17f588c0b5339c1c24598705e45",
+      "blob_verified": true
+    },
+    {
+      "path": "experimentos/modelo_999/triagem_voto_em_transito.py",
+      "sha256": "0a83e8ded8a0d8b7c5e7e99a82a89986eaf784e9fbc042bd78e1a57f88719c2d",
+      "git_blob_sha": "c0e9795a1b0cef62371dbd7947eb5467dddeda90",
+      "blob_verified": true
+    }
+  ]
+}
