@@ -1,0 +1,56 @@
+{
+  "version": "v6-three-city-locked-2026-10-31",
+  "branch": "experimento/modelo-territorial-999",
+  "cutoff_commit": "d067cb2b56fad1d04f87f2cb22ffda47f663869c",
+  "status": "FROZEN_CODE_AND_EXISTING_DATA_NOT_EXTERNAL_CERTIFICATION",
+  "v6_coverage_threshold": 0.2,
+  "original_benchmark_criteria": "protocolo_externo_v41_2024.json",
+  "existing_cases": [
+    "Fortaleza 2024",
+    "Pelotas 2024",
+    "Natal 2024"
+  ],
+  "files": [
+    {
+      "path": "experimentos/modelo_999/auditoria_integral/preditor_v6_guardado.py",
+      "git_blob_sha1": "844dcfcfc4e02269046a3b9b148b09939efbe955"
+    },
+    {
+      "path": "experimentos/modelo_999/auditoria_integral/preditor_causal_v4.py",
+      "git_blob_sha1": "6b05104eac67f1535ae6fd5122669879a7605f96"
+    },
+    {
+      "path": "experimentos/modelo_999/auditoria_integral/preditor_v4_guardado.py",
+      "git_blob_sha1": "d0acf86ced042ff66c4a76c04faef947f42e014d"
+    },
+    {
+      "path": "experimentos/modelo_999/auditoria_integral/avaliar_gate_3_cidades_v6.py",
+      "git_blob_sha1": "97494cc6690f65c0b1e2f6608869d9836a97a94c"
+    },
+    {
+      "path": "experimentos/modelo_999/auditoria_integral/avaliar_externos_v41_2024.py",
+      "git_blob_sha1": "f7da0db7bb649f7059b0d0e59c6e3c5c646963f0"
+    },
+    {
+      "path": "experimentos/modelo_999/auditoria_integral/externos2024/13897/entradas_pareadas_v4_2024.json",
+      "git_blob_sha1": "0bed1b751e8b2d935e365c2e9bbc71bde4a6c19e"
+    },
+    {
+      "path": "experimentos/modelo_999/auditoria_integral/externos2024/87912/entradas_pareadas_v4_2024.json",
+      "git_blob_sha1": "3dfd2dfbe8491499cdea18a47fad783ff808ae48"
+    },
+    {
+      "path": "experimentos/modelo_999/auditoria_integral/externos2024/17612/entradas_pareadas_v4_2024.json",
+      "git_blob_sha1": "4433d6eb03002c7f30a22f57c161efd42e5525ee"
+    },
+    {
+      "path": "experimentos/modelo_999/auditoria_integral/protocolo_externo_v41_2024.json",
+      "git_blob_sha1": "075e95aafb7893950e1faac0aa1dba0658be424f"
+    }
+  ],
+  "notes": [
+    "Git blob SHA-1 values enable exact file content comparison via git hash-object; not SHA-256 proof of TSE original source.",
+    "All three outcomes and checkpoints were available to developers before V6. Passing existing criteria is historical development, not independently blinded validation.",
+    "Prohibit changing model, inputs, criteria or frozen manifest to force passes; select new holdout cases separately before evaluation."
+  ]
+}
