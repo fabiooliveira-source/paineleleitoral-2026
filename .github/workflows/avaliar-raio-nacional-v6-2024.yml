@@ -1,0 +1,64 @@
+name: V6 - validar 15 estados - modelo congelado
+on:
+  push:
+    branches: [experimento/modelo-territorial-999]
+    paths:
+      - 'experimentos/modelo_999/auditoria_integral/congelamento_raio_nacional_v6_2024.json'
+  workflow_dispatch:
+permissions:
+  actions: read
+  contents: read
+jobs:
+  reproducao-aritmetica-e-predicao:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Verify original V6 and previously frozen source-code hash
+        run: python experimentos/modelo_999/auditoria_integral/verificar_congelamento_v6.py
+      - name: Download all original 15 data-only artifacts, no replacement
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          target=experimentos/modelo_999/auditoria_integral/raio_nacional_v6_2024
+          mkdir -p "$target"
+          for uf in AM PA RO TO BA PB SE PE GO MT MS MG RJ SP PR; do
+            gh run download 41250338824 --repo fabiooliveira-source/paineleleitoral-2026 --name "raio-nacional-2024-$uf" --dir "$target"
+          done
+      - name: Independently compare V6 arithmetic against exact fractions
+        run: python experimentos/modelo_999/auditoria_integral/verificar_fracoes_raio_nacional_v6_2024.py
+      - name: Apply original V6 20 percent formula to expanded geographic holdout
+        run: python experimentos/modelo_999/auditoria_integral/avaliar_raio_nacional_v6_2024.py
+      - name: Preserve 1500 checkpoints, model errors, and arithmetic evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: V6-15-estados-1500-checkpoints
+          retention-days: 30
+          path: |
+            experimentos/modelo_999/auditoria_integral/raio_nacional_v6_2024/resultado_raio_nacional_v6_2024.json
+            experimentos/modelo_999/auditoria_integral/raio_nacional_v6_2024/resultado_fracoes_raio_nacional_v6.json
+          if-no-files-found: warn
+  scientific-gate:
+    needs: reproducao-aritmetica-e-predicao
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: V6-15-estados-1500-checkpoints
+          path: evidence
+      - name: Fail-closed when any selected new city misses frozen preregistered criterion
+        run: |
+          python - <<'PY'
+          import json,pathlib
+          d=json.loads(pathlib.Path("evidence/resultado_raio_nacional_v6_2024.json").read_text())
+          print("V6 external geographical holdout:",d["cities_passed"],"/",d["cities_total"],flush=True)
+          for c in d["cases"]:
+              print(c["region"],c["uf"],c["name"],"PASS" if c["gate_passed"] else "FAIL",c["failed"],flush=True)
+          assert d["cities_total"]==15 and d["cities_passed"]==15,"V6 SCIENTIFIC GATE FAILED: do not retrain using holdout cities or call this certified"
+          assert d["integral_certification"] is False
+          print("Historical challenge passed, still NOT independent prospective certification.",flush=True)
+          PY
