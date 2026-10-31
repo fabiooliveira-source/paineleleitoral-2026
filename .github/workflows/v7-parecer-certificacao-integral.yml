@@ -1,0 +1,71 @@
+name: V7 - parecer formal certificacao integral - fail closed
+on:
+  push:
+    branches: [experimento/modelo-territorial-999]
+    paths:
+      - '.github/workflows/v7-parecer-certificacao-integral.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+jobs:
+  parecer-reproduzivel:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Wait for original V7 frozen holdout test run to complete
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          for i in $(seq 1 120); do
+            state=$(gh api repos/fabiooliveira-source/paineleleitoral-2026/actions/runs/41253079566 --jq .status)
+            if [ "$state" = "completed" ]; then exit 0; fi
+            sleep 20
+          done
+          echo "Frozen V7 2020 evaluation did not complete in time"
+          exit 1
+      - name: Download all original 18 preregistered input manifests
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          dest=experimentos/modelo_999/auditoria_integral/raio_temporal_v7_2020
+          mkdir -p "$dest"
+          for uf in SE PA RR MT CE GO PB AL AM RS RO PE AC RJ MA PI ES BA; do
+            gh run download 41252574828 --repo fabiooliveira-source/paineleleitoral-2026 --name "v7-holdout-2020-input-$uf" --dir "$dest"
+          done
+      - name: Download all original 2020 holdout scores without substituting cases
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh run download 41253079566 --repo fabiooliveira-source/paineleleitoral-2026 --name v7-holdout-temporal-2020-resultados --dir experimentos/modelo_999/auditoria_integral/raio_temporal_v7_2020
+      - name: Calculate defensible 10-point certification checklist, no fabricated probability
+        run: python experimentos/modelo_999/auditoria_integral/emitir_parecer_certificacao_v7.py
+      - name: Save evidence regardless of scientific verdict
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: parecer-certificacao-integral-v7
+          path: experimentos/modelo_999/auditoria_integral/raio_temporal_v7_2020/parecer_certificacao_integral_v7.json
+          if-no-files-found: warn
+  certificado-exige-100-pct:
+    needs: parecer-reproduzivel
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: parecer-certificacao-integral-v7
+          path: evidence
+      - name: Forbid '100 percent certified' until ten independent gates are actually evidenced
+        run: |
+          python - <<'PY'
+          import json,pathlib
+          r=json.loads(pathlib.Path('evidence/parecer_certificacao_integral_v7.json').read_text())
+          print('Certification prerequisites:',r['engineering_and_science_checklist_passed'],'/',r['checklist_total'],flush=True)
+          for gate in r['gates']:
+              print(gate['code'],'PASS' if gate['passed'] else 'BLOCKED',gate['reason'],flush=True)
+          assert r['is_integral_certification'] is True, 'NOT CERTIFIED: do not claim 100% until independently validated'
+          PY
