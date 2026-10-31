@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#102236">
+<meta name="description" content="Laboratório V7 experimental com auditoria histórica, critérios de segurança e estimativas condicionais para entradas pareadas. Não certificado.">
+<title>Modelo V7 • Auditoria e laboratório experimental</title>
+<style>
+:root{color-scheme:dark;--bg:#091421;--card:#172b3d;--border:#456078;--text:#f0f5fa;--sub:#c1d2e2;--accent:#8de5cd;--danger:#ffd18b}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:16px/1.55 system-ui,Segoe UI,sans-serif}
+main{max-width:1060px;margin:auto;padding:18px 16px 60px}nav{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:20px}
+a{color:var(--accent)}nav a{padding:9px;border:1px solid var(--border);border-radius:9px;text-decoration:none}
+h1{font-size:clamp(26px,4vw,36px);line-height:1.15;margin:6px 0 12px}h2{font-size:22px;margin:0 0 12px}
+p{color:var(--sub)}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(205px,1fr));gap:12px;margin:20px 0}
+.card{background:var(--card);border:1px solid var(--border);border-radius:13px;padding:18px;margin:15px 0}
+.kpi{font-size:29px;font-weight:800;margin:4px 0}.caption{font-size:13px;color:var(--sub)}
+.tag{border-radius:7px;background:#543d14;color:#ffe6ad;display:inline-block;padding:5px 9px;font-weight:700}
+.warning{border-left:5px solid #ffcf72;background:#392f22;color:#fce7bd;padding:12px 16px;border-radius:6px}
+button,input[type=file]{font:inherit;color:inherit}button{padding:11px 14px;background:#215e58;border:1px solid #7bd4bd;border-radius:9px;cursor:pointer}
+button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #e8be62;outline-offset:3px}
+button:hover{background:#2f756e}.actions{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+input[type=file]{max-width:100%;border:1px solid var(--border);border-radius:8px;padding:10px;background:#102437}
+#v7Result{white-space:pre-wrap;overflow-wrap:anywhere;background:#071723;color:#e4f1f7;border:1px solid #425971;padding:17px;border-radius:9px;min-height:70px}
+.tablewrap{overflow-x:auto}table{border-collapse:collapse;width:100%;min-width:580px}th,td{text-align:left;padding:12px;border-bottom:1px solid #456078}th{background:#1b354a}
+small{color:var(--sub)}.fine{font-size:14px}strong{color:#fff}
+@media(max-width:620px){main{padding:13px 10px 45px}h2{font-size:19px}.card{padding:13px}}
+</style>
+</head>
+<body>
+<main>
+<nav aria-label="Navegação"><a href="acompanhar.html">← Acompanhar</a><a href="index.html">Apuração ao vivo</a><a href="previsao.html">Outros modelos</a></nav>
+<header>
+<span class="tag">EXPERIMENTAL • NÃO CERTIFICADO</span>
+<h1>V7 — auditoria e estimador territorial</h1>
+<p>Modelo com separação entre <strong>volume esperado de votos válidos</strong> e <strong>proporção A/B</strong> nas áreas ainda não apuradas. Dados de primeiro e segundo turnos precisam estar pareados por seção e organizados por zona.</p>
+</header>
+<div class="warning" role="note"><strong>Atenção:</strong> o histórico de 2020 aprovou 18 de 18 municípios no protocolo retrospectivo, mas isso NÃO representa 100% de acerto futuro. O motor V7 não substitui a apuração oficial de 2026, não gera probabilidades calibradas de vitória e não está conectado automaticamente ao fluxo municipal ao vivo.</div>
+<section class="grid" aria-label="Resumo de validação">
+<div class="card"><div class="caption">Protocolo histórico 2020</div><div class="kpi">18 / 18</div><small>Critérios predefinidos; eleições conhecidas retrospectivamente.</small></div>
+<div class="card"><div class="caption">Checkpoints históricos 2020</div><div class="kpi">342 / 342</div><small>Lideranças corretas nesse conjunto; pontos correlacionados.</small></div>
+<div class="card"><div class="caption">Desenvolvimento 2024</div><div class="kpi">7 / 15</div><small>Critérios parciais de desenvolvimento; não é teste externo da V7.</small></div>
+<div class="card"><div class="caption">Checklist integral demonstrado</div><div class="kpi">4 / 10</div><small>Faltam evidências prospectivas, calibração e revisão independente.</small></div>
+</section>
+<section class="card">
+<h2>Estado da integração no painel 2026</h2>
+<p id="v7Integration" role="status"><strong>V7 aguardando entradas compatíveis.</strong> O painel oficial utiliza atualmente resultados agregados municipais EA20, insuficientes para identificar quais seções do 1º turno correspondem às já apuradas no 2º. Por isso, a V7 não publica uma projeção nacional a partir desse feed.</p>
+<p>O cálculo antigo, identificado como <strong>estimativa ponderada municipal</strong> no monitor, continua separado da V7. Nenhuma previsão do laboratório é marcada como voto oficial.</p>
+</section>
+<section class="card" aria-labelledby="labTitle">
+<h2 id="labTitle">Executar um checkpoint com V7 no navegador</h2>
+<p>Teste o algoritmo com um arquivo JSON que contenha <code>current</code>, <code>reference</code> e <code>ledger</code>, com horários ISO e fuso, votos agregados reconciliados e pares de seções do 1º/2º turno. Arquivos são lidos <strong>somente no seu dispositivo</strong>; nada é enviado a um servidor.</p>
+<div class="actions">
+<button id="runSynthetic" type="button">Testar exemplo sintético</button>
+<label for="v7File">JSON de checkpoint (máx. 5 MB)</label>
+<input id="v7File" type="file" accept=".json,application/json">
+<button id="clearV7" type="button">Limpar resultado</button>
+</div>
+<p class="fine">O exemplo é inteiramente fictício e serve apenas para conferência da implementação JavaScript. Dados sem metadados ou inconsistentes produzem <strong>ABSTAIN</strong> (projeção bloqueada). Não são permitidos votos futuros nem redução silenciosa de contagens.</p>
+<div id="v7Result" role="status" aria-live="polite">Aguardando um checkpoint JSON com seções pareadas. Nenhuma projeção gerada.</div>
+</section>
+<section class="card">
+<h2>Provas e limites da auditoria</h2>
+<div class="tablewrap"><table><thead><tr><th>Componente</th><th>Estado</th><th>Limitação</th></tr></thead><tbody>
+<tr><td>Integridade dos arquivos TSE</td><td>Verificada no histórico</td><td>Não autentica o instante de divulgação pública</td></tr>
+<tr><td>Reprodução aritmética 2020</td><td>1.769 cálculos conferidos</td><td>Conformidade matemática, não predição futura</td></tr>
+<tr><td>Congelamento da fórmula V7</td><td>Concluído</td><td>Git blob f5701acc…</td></tr>
+<tr><td>Calibração da chance de vitória</td><td>Não demonstrada</td><td>Nenhuma probabilidade liberada</td></tr>
+<tr><td>Auditoria verdadeiramente externa</td><td>Pendente</td><td>Revisão de terceiro não realizada</td></tr>
+<tr><td>Snapshots públicos prospectivos</td><td>Pendentes</td><td>Horário interno de totalização ≠ publicação verificada</td></tr>
+</tbody></table></div>
+<p class="fine">Documentos do trabalho: <a target="_blank" rel="noopener noreferrer" href="https://github.com/fabiooliveira-source/paineleleitoral-2026/blob/experimento/modelo-territorial-999/experimentos/modelo_999/auditoria_integral/PARECER_CERTIFICACAO_V7_HOLDOUT_2020_18_CIDADES.md">Relatório V7 (2020)</a> · <a target="_blank" rel="noopener noreferrer" href="https://github.com/fabiooliveira-source/paineleleitoral-2026/actions/runs/41253079566">Teste histórico 18/18</a> · <a target="_blank" rel="noopener noreferrer" href="https://github.com/fabiooliveira-source/paineleleitoral-2026/actions/runs/41253315254">Auditoria Decimal</a> · <a target="_blank" rel="noopener noreferrer" href="https://github.com/fabiooliveira-source/paineleleitoral-2026/actions/runs/41253114992">Certificação integral bloqueada</a>.</p>
+</section>
+<footer class="fine">Painel eleitoral independente, sem vínculo com o TSE. A exatidão de uma previsão não é uma probabilidade de vitória. Não há certificação integral da V7.</footer>
+</main>
+<script src="v7-engine.js"></script>
+<script src="validacao-v7-ui.js"></script>
+</body>
+</html>
