@@ -1,0 +1,298 @@
+{
+  "status": "FROZEN_PRE_V7_2020_HOLDOUT_SCORE",
+  "data_only_run_id": 41252574828,
+  "protocol_sha256": "eaaf5df63ab43fa280023312cb975be86ee068999f3a4f0938988cf73a138ef0",
+  "model_git_blob_sha1": "f5701acc902a3d420030737196fcbf6b8dcb0a1e",
+  "total_cases": 18,
+  "states": {
+    "SE": {
+      "city": "Aracaju",
+      "region": "Nordeste",
+      "tse_code": "31054",
+      "input_sha256": "a02f85090570ced355f3bae3b1d3167cd2db5c4eba4b0fdfd5367a32a8811c21",
+      "manifest_sha256": "806268d03e2f222bd369371ebb947f990fc73daff81cfbe2daf08129b756116d",
+      "source_sha256": {
+        "detalhe_votacao_secao_2020.zip": "10a50a467763dce73d44eee9023ffeeb3ebe6279756edb6b437203eb2bc71a30",
+        "votacao_secao_2020_SE.zip": "f5324a1b99d9274442e6c792b3d4f38e3d30ce9c2db33b29441074fe534cb5ec"
+      },
+      "candidate_a": "12",
+      "candidate_b": "23",
+      "zones": 3,
+      "sections": 1041,
+      "checkpoints": 100
+    },
+    "PA": {
+      "city": "Belém",
+      "region": "Norte",
+      "tse_code": "04278",
+      "input_sha256": "e10370a181ae7b4aa1637f479f023173428f59ffb76e6af0eb0726204a6356d3",
+      "manifest_sha256": "801c9459fcceac17a0bda195294bb8af7a0ab12b8f4e3550a239b607605f98e8",
+      "source_sha256": {
+        "detalhe_votacao_secao_2020.zip": "10a50a467763dce73d44eee9023ffeeb3ebe6279756edb6b437203eb2bc71a30",
+        "votacao_secao_2020_PA.zip": "a288aaa281a2a8af599d0c408811d9ba13ff4fcef8395ce3352b92b9a6bf44d6"
+      },
+      "candidate_a": "50",
+      "candidate_b": "51",
+      "zones": 10,
+      "sections": 2562,
+      "checkpoints": 100
+    },
+    "RR": {
+      "city": "Boa Vista",
+      "region": "Norte",
+      "tse_code": "03018",
+      "input_sha256": "147078895f748ae33ffceb53b7ae7c5b5f4c10328e80a4a4a886e690322324ab",
+      "manifest_sha256": "7ff45240b1864247bd53547a889e32dfa18ce90559b532b8043c5e64cbde103c",
+      "source_sha256": {
+        "detalhe_votacao_secao_2020.zip": "10a50a467763dce73d44eee9023ffeeb3ebe6279756edb6b437203eb2bc71a30",
+        "votacao_secao_2020_RR.zip": "6f46cb276bef8efebdc646d8fdadc25e1af92df7a814682e239bd90138bb6a66"
+      },
+      "candidate_a": "15",
+      "candidate_b": "77",
+      "zones": 2,
+      "sections": 657,
+      "checkpoints": 100
+    },
+    "MT": {
+      "city": "Cuiabá",
+      "region": "Centro-Oeste",
+      "tse_code": "90670",
+      "input_sha256": "c287f8dd762a7792f92c6d489d0f5a2d9ef289c9b775378273e7ee298ee317d1",
+      "manifest_sha256": "a36cb2507e72cb961ddb80f1d35889688d0ad242b2473c3a96ee65dc2616ca42",
+      "source_sha256": {
+        "detalhe_votacao_secao_2020.zip": "10a50a467763dce73d44eee9023ffeeb3ebe6279756edb6b437203eb2bc71a30",
+        "votacao_secao_2020_MT.zip": "c6d8415317693b970a72a252cf7071d2312efd8e7bf5fccc895304e045115d94"
+      },
+      "candidate_a": "15",
+      "candidate_b": "19",
+      "zones": 4,
+      "sections": 1109,
+      "checkpoints": 100
+    },
+    "CE": {
+      "city": "Fortaleza",
+      "region": "Nordeste",
+      "tse_code": "13897",
+      "input_sha256": "4ebcda78d112dd45cdd5e533cff0906ab6d9bdd02414c012a097c56829a04c26",
+      "manifest_sha256": "f70937cb352cf40bc41b7e597d4139485d14deec55c38e7c9c6bd4246c5311cb",
+      "source_sha256": {
+        "detalhe_votacao_secao_2020.zip": "10a50a467763dce73d44eee9023ffeeb3ebe6279756edb6b437203eb2bc71a30",
+        "votacao_secao_2020_CE.zip": "9fe68d704aa69f6fc289d97e12459635a34e43e0b728a61bc723bfbeea035173"
+      },
+      "candidate_a": "12",
+      "candidate_b": "90",
+      "zones": 17,
+      "sections": 4573,
+      "checkpoints": 100
+    },
+    "GO": {
+      "city": "Goiânia",
+      "region": "Centro-Oeste",
+      "tse_code": "93734",
+      "input_sha256": "86934b770ff55766e682e0487c21185a7f93b958c533a1a0429889118b13afed",
+      "manifest_sha256": "ea57fba2aac5930979e23bdfecf6be5498e72647701087119db70f65ea48dad3",
+      "source_sha256": {
+        "detalhe_votacao_secao_2020.zip": "10a50a467763dce73d44eee9023ffeeb3ebe6279756edb6b437203eb2bc71a30",
+        "votacao_secao_2020_GO.zip": "1916401af4ae569d335245855c2902d75b5d9ac356f0b0e477d091b0d7c5de45"
+      },
+      "candidate_a": "15",
+      "candidate_b": "55",
+      "zones": 9,
+      "sections": 2667,
+      "checkpoints": 100
+    },
+    "PB": {
+      "city": "João Pessoa",
+      "region": "Nordeste",
+      "tse_code": "20516",
+      "input_sha256": "e7e21e0bdbdb18e86942a9787558eb19f0d413cac1302375e4e668bec0e2d78a",
+      "manifest_sha256": "a4b8cb849601f85f4f0419e55c6588ba2602ef0429a3170082708f18319f63da",
+      "source_sha256": {
+        "detalhe_votacao_secao_2020.zip": "10a50a467763dce73d44eee9023ffeeb3ebe6279756edb6b437203eb2bc71a30",
+        "votacao_secao_2020_PB.zip": "f2ee18275c812ce42a43aa7c685848f6dfaa0b667475ce81d700a0b3ee32e4a5"
+      },
+      "candidate_a": "11",
+      "candidate_b": "15",
+      "zones": 5,
+      "sections": 1226,
+      "checkpoints": 100
+    },
+    "AL": {
+      "city": "Maceió",
+      "region": "Nordeste",
+      "tse_code": "27855",
+      "input_sha256": "7f2216ea969acda2baa922e2ca18e2552444a5a16ff6ef293df7bda1a1f54b29",
+      "manifest_sha256": "32d4091b7e1f1f3cca1b6ca408cb574b72277dc2fee056c3eeae603f881314f9",
+      "source_sha256": {
+        "detalhe_votacao_secao_2020.zip": "10a50a467763dce73d44eee9023ffeeb3ebe6279756edb6b437203eb2bc71a30",
+        "votacao_secao_2020_AL.zip": "8458a14d39bf6fc18cffd0f9a40b0e134c3a082a441030b25b0f248fe2400a14"
+      },
+      "candidate_a": "15",
+      "candidate_b": "40",
+      "zones": 5,
+      "sections": 1418,
+      "checkpoints": 100
+    },
+    "AM": {
+      "city": "Manaus",
+      "region": "Norte",
+      "tse_code": "02550",
+      "input_sha256": "3c2ce864cae94be1bd596b65ac5d8d02fa12847734b23d89065fa4ebe2e3d74a",
+      "manifest_sha256": "ee69677d41cde9a7f72a3f690a8ac41d2dc782a37f8805424a51f5c7f5de4de8",
+      "source_sha256": {
+        "detalhe_votacao_secao_2020.zip": "10a50a467763dce73d44eee9023ffeeb3ebe6279756edb6b437203eb2bc71a30",
+        "votacao_secao_2020_AM.zip": "537f6afc236e13afec805d85f2cd83ef0e57a1a48b13d61704fa9cc06ccb65e4"
+      },
+      "candidate_a": "19",
+      "candidate_b": "70",
+      "zones": 13,
+      "sections": 3371,
+      "checkpoints": 100
+    },
+    "RS": {
+      "city": "Porto Alegre",
+      "region": "Sul",
+      "tse_code": "88013",
+      "input_sha256": "956cc91954100fcb0c10987460772f99935ad3558c2b1627026f6953322a9a14",
+      "manifest_sha256": "230a9600bcca33488506f0b11063da3d7d60f8bd333aec972ce1c378f7ff9a8e",
+      "source_sha256": {
+        "detalhe_votacao_secao_2020.zip": "10a50a467763dce73d44eee9023ffeeb3ebe6279756edb6b437203eb2bc71a30",
+        "votacao_secao_2020_RS.zip": "170ab923830e8fc445e95dbad643c51dde3b36ca849f62e8e26f8de08119e26f"
+      },
+      "candidate_a": "15",
+      "candidate_b": "65",
+      "zones": 10,
+      "sections": 2629,
+      "checkpoints": 100
+    },
+    "RO": {
+      "city": "Porto Velho",
+      "region": "Norte",
+      "tse_code": "00035",
+      "input_sha256": "3dffe90e222484b500aed0f17fb43c1ee7c13f13289203fd17dcc563f1896207",
+      "manifest_sha256": "ab3aab6fac1fc510f767b4f7d4cb0454970830c6a37daf63880cde81b288f9b9",
+      "source_sha256": {
+        "detalhe_votacao_secao_2020.zip": "10a50a467763dce73d44eee9023ffeeb3ebe6279756edb6b437203eb2bc71a30",
+        "votacao_secao_2020_RO.zip": "e1bdfe458b81b65e260fde46584e62838e4255b3c8c0bf6943ac839c4ca1e9cc"
+      },
+      "candidate_a": "11",
+      "candidate_b": "45",
+      "zones": 4,
+      "sections": 842,
+      "checkpoints": 100
+    },
+    "PE": {
+      "city": "Recife",
+      "region": "Nordeste",
+      "tse_code": "25313",
+      "input_sha256": "23e8bcb9f8a6186933fb6123cb2ee23207b6d9a29c011d457fb30046539bd787",
+      "manifest_sha256": "b6716201aa1b36f3eaf61a0754488afcb026f9b6b663db115f2397b6c987f230",
+      "source_sha256": {
+        "detalhe_votacao_secao_2020.zip": "10a50a467763dce73d44eee9023ffeeb3ebe6279756edb6b437203eb2bc71a30",
+        "votacao_secao_2020_PE.zip": "5762dfa5cdf76843e53470eaea635e1486564837018a14dbf2278c2bae079311"
+      },
+      "candidate_a": "13",
+      "candidate_b": "40",
+      "zones": 11,
+      "sections": 2863,
+      "checkpoints": 100
+    },
+    "AC": {
+      "city": "Rio Branco",
+      "region": "Norte",
+      "tse_code": "01392",
+      "input_sha256": "5a811db79aef56de3a08492eaa315fdaa904dc473883a830bff8e7e39b01af83",
+      "manifest_sha256": "211afd8596604d10bb3ad50f6c5e6fde338afbee9766bc3debad5c5dec426d7f",
+      "source_sha256": {
+        "detalhe_votacao_secao_2020.zip": "10a50a467763dce73d44eee9023ffeeb3ebe6279756edb6b437203eb2bc71a30",
+        "votacao_secao_2020_AC.zip": "8509bae9d42ec824f24e1d275aa74d5be0f1f5d12b6f0adcb1fcb0fd5d14d9b8"
+      },
+      "candidate_a": "11",
+      "candidate_b": "40",
+      "zones": 2,
+      "sections": 707,
+      "checkpoints": 100
+    },
+    "RJ": {
+      "city": "Rio de Janeiro",
+      "region": "Sudeste",
+      "tse_code": "60011",
+      "input_sha256": "eae5ec277d816d2257e16d6150c53edc63e5aad2c69253cdf6e3c93197e529a2",
+      "manifest_sha256": "3da82c6c7157deff62412ed856c6bdefdeae55ca3a8110dc3fb06d22b10ac3ed",
+      "source_sha256": {
+        "detalhe_votacao_secao_2020.zip": "10a50a467763dce73d44eee9023ffeeb3ebe6279756edb6b437203eb2bc71a30",
+        "votacao_secao_2020_RJ.zip": "96c8236b37e91034feef36f69f7b58bfcae1a8dd56b9f8679226844a1daf68cd"
+      },
+      "candidate_a": "10",
+      "candidate_b": "25",
+      "zones": 49,
+      "sections": 11467,
+      "checkpoints": 100
+    },
+    "MA": {
+      "city": "São Luís",
+      "region": "Nordeste",
+      "tse_code": "09210",
+      "input_sha256": "5629ba7c0436381c91630abb995d2e7746cf550a509bd210a9a84ace356f847f",
+      "manifest_sha256": "9ea7e11e72080a00f189540d98ba3f52757dd652667c62ab183d37ecb0360d43",
+      "source_sha256": {
+        "detalhe_votacao_secao_2020.zip": "10a50a467763dce73d44eee9023ffeeb3ebe6279756edb6b437203eb2bc71a30",
+        "votacao_secao_2020_MA.zip": "179b2b1541c7d8cbb3e5a5e50957d44e693e1dde18c927811874a029edd140c6"
+      },
+      "candidate_a": "10",
+      "candidate_b": "19",
+      "zones": 6,
+      "sections": 1826,
+      "checkpoints": 100
+    },
+    "PI": {
+      "city": "Teresina",
+      "region": "Nordeste",
+      "tse_code": "12190",
+      "input_sha256": "b91273d6ba9ad321b29d2ebc913e24744e50314f2f226a86c1b44ec3b19459b1",
+      "manifest_sha256": "fc2831dc028e9e7ed6aabaab21b6e94d3c65be7355aaae8bcf7d6586de530cce",
+      "source_sha256": {
+        "detalhe_votacao_secao_2020.zip": "10a50a467763dce73d44eee9023ffeeb3ebe6279756edb6b437203eb2bc71a30",
+        "votacao_secao_2020_PI.zip": "fc7a3033351afebad28c49b8325ff470c65d8dcbb7409b856481d92f83f0b329"
+      },
+      "candidate_a": "15",
+      "candidate_b": "45",
+      "zones": 5,
+      "sections": 1501,
+      "checkpoints": 100
+    },
+    "ES": {
+      "city": "Vitória",
+      "region": "Sudeste",
+      "tse_code": "57053",
+      "input_sha256": "0f0257a91841deefab187af2850973f93b0fd8abaabfbbd3ba2305cea39735cd",
+      "manifest_sha256": "429ae0bcb079a310d190c7d5c38d31617d5b501e0dbb660f933400f2d7d88b20",
+      "source_sha256": {
+        "detalhe_votacao_secao_2020.zip": "10a50a467763dce73d44eee9023ffeeb3ebe6279756edb6b437203eb2bc71a30",
+        "votacao_secao_2020_ES.zip": "37f24a39afa9bcc522eb79ff4dc1156fb8b5cd2817d03984635458bc2555770a"
+      },
+      "candidate_a": "10",
+      "candidate_b": "13",
+      "zones": 2,
+      "sections": 638,
+      "checkpoints": 100
+    },
+    "BA": {
+      "city": "Feira de Santana",
+      "region": "Nordeste",
+      "tse_code": "35157",
+      "input_sha256": "aabea7cd12490ffb88d12af5fc903e4cb0ec7cac82433603eea175afd19013fe",
+      "manifest_sha256": "047e510daebcb4d988e2ca3190c14fccbcf1f5f3add72b6387ca79471a7d3c9e",
+      "source_sha256": {
+        "detalhe_votacao_secao_2020.zip": "10a50a467763dce73d44eee9023ffeeb3ebe6279756edb6b437203eb2bc71a30",
+        "votacao_secao_2020_BA.zip": "8dde52f34311d2a9591c3cae9e6942520d0fdc7572f64a29384c6aa42400e31d"
+      },
+      "candidate_a": "13",
+      "candidate_b": "15",
+      "zones": 4,
+      "sections": 881,
+      "checkpoints": 100
+    }
+  },
+  "warning": "Neither model scoring nor winner accuracy was executed in this data-only stage."
+}
