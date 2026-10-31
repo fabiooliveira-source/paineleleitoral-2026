@@ -1,0 +1,38 @@
+name: V6 - sintese independente das falhas em 15 UFs
+on:
+  push:
+    branches: [experimento/modelo-territorial-999]
+    paths:
+      - '.github/workflows/sintese-forense-v6-15-ufs.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+jobs:
+  cross-validate-evidence:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Verify frozen model unchanged
+        run: python experimentos/modelo_999/auditoria_integral/verificar_congelamento_v6.py
+      - name: Download historic forensic, time and original validation evidence
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          dest=experimentos/modelo_999/auditoria_integral/raio_nacional_v6_2024
+          mkdir -p "$dest"
+          gh run download 41251657346 --repo fabiooliveira-source/paineleleitoral-2026 --name "v6-investigacao-profunda-15-cidades" --dir "$dest"
+          gh run download 41251666010 --repo fabiooliveira-source/paineleleitoral-2026 --name "v6-15-ufs-fonte-temporal" --dir "$dest"
+          gh run download 41251355639 --repo fabiooliveira-source/paineleleitoral-2026 --name "V6-15-estados-1500-checkpoints" --dir "$dest"
+      - name: Synthesize all 15 cities preserving the failed validation decision
+        run: python experimentos/modelo_999/auditoria_integral/sintetizar_hipoteses_v6_15_ufs.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: sintese-hipoteses-v6-15-ufs
+          path: experimentos/modelo_999/auditoria_integral/raio_nacional_v6_2024/sintese_forense_v6_15_cidades.json
+          if-no-files-found: warn
