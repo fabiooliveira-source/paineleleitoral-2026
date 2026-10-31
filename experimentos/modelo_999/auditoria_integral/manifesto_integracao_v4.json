@@ -1,0 +1,25 @@
+{
+  "integration_version": "v4-panel-1",
+  "predictor_unchanged": true,
+  "predictor_sha256": "8bc095931517c5971a4e957851b4b8bcdf62352c10435df7a3ab1dd0f25bd1cf",
+  "tests_passed": 9,
+  "production_deployed": false,
+  "files": [
+    {
+      "name": "executar_v4.py",
+      "sha256": "62d25d83dc18366e94f2918dcb10f71630179c51cb8a96a6fa167a93f280bbcf"
+    },
+    {
+      "name": "test_integracao_v4.py",
+      "sha256": "af6dd3ae5ca632535702ded913b1129a19cb3b2f0fbc7df6a28c045eac1faaf5"
+    },
+    {
+      "name": "USAR_V4.md",
+      "sha256": "37cc570d9a1c5c9aa05c86a71a9e7bd8f3f94cb643ca118e20e71d16e5d02a23"
+    },
+    {
+      "name": "saida_v4_exemplo_2020_5.json",
+      "sha256": "a5aa14d16797f582c0a7ac95bfb5b14c0e062195becc51233c2649201bf55578"
+    }
+  ]
+}
