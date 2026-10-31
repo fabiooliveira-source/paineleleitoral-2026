@@ -50,7 +50,10 @@ jobs:
           for name in ("acompanhar.html","index.html","validacao-v7.html"):
               raw=pathlib.Path(name).read_text(encoding="utf-8")
               p=Parse();p.feed(raw)
-              assert "validacao-v7.html" in p.links, name+" does not link lab"
+              if name != "validacao-v7.html":
+                  assert "validacao-v7.html" in p.links, name+" does not link lab"
+              else:
+                  assert "index.html" in p.links and "acompanhar.html" in p.links, "lab navigation incomplete"
               assert len(p.ids)==len(set(p.ids)), name+" duplicate ids"
               print(name,"HTML parsed, unique ids and navigation",flush=True)
           lab=pathlib.Path("validacao-v7.html").read_text()
