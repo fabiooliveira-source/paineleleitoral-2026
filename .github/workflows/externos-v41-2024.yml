@@ -1,0 +1,73 @@
+name: Validacao externa V4.1 2024
+on:
+  workflow_dispatch:
+  push:
+    branches: [experimento/modelo-territorial-999]
+    paths: [.github/workflows/externos-v41-2024.yml]
+permissions:
+  contents: read
+jobs:
+  reproducao-tecnica:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    defaults:
+      run:
+        working-directory: experimentos/modelo_999/auditoria_integral
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verificar manifesto
+        run: |
+          python - <<'PY'
+          import json,pathlib,hashlib
+          for f in json.loads(pathlib.Path('manifesto_externos_v41_2024.json').read_text())['files']:
+              assert hashlib.sha256(pathlib.Path(f['name']).read_bytes()).hexdigest()==f['sha256'],f['name']
+          PY
+      - name: Testes
+        run: python -m unittest discover -p 'test_*.py' -v
+      - name: Obter fontes fixadas
+        run: python obter_fontes_2024_v41.py
+      - name: Reconstruir entradas
+        run: |
+          python preparar_caso_externo_2024.py 13897
+          python preparar_caso_externo_2024.py 87912
+          python preparar_caso_externo_2024.py 17612
+      - name: Confirmar equivalencia byte a byte
+        run: |
+          python - <<'PY'
+          import json,pathlib,hashlib
+          for f in json.loads(pathlib.Path('manifesto_externos_v41_2024.json').read_text())['files']:
+              if 'entradas_pareadas' in f['name']:
+                  assert hashlib.sha256(pathlib.Path(f['name']).read_bytes()).hexdigest()==f['sha256'],f['name']
+          PY
+      - name: Avaliar sem reajuste
+        run: |
+          python avaliar_externos_v41_2024.py
+          python verificar_externos_2024_fracoes.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: externos-v41-2024
+          path: |
+            experimentos/modelo_999/auditoria_integral/resumo_externo_v41_2024.json
+            experimentos/modelo_999/auditoria_integral/verificacao_externos2024_fracoes.json
+            experimentos/modelo_999/auditoria_integral/externos2024/
+  gate-cientifico:
+    needs: reproducao-tecnica
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: externos-v41-2024
+          path: validacao-externa
+      - name: Exigir todos os criterios previamente fixados
+        run: |
+          python - <<'PY'
+          import pathlib,json
+          d=json.loads(pathlib.Path('validacao-externa/resumo_externo_v41_2024.json').read_text())
+          for c in d['cases']:
+              print(c['name'],c['status'],[k for k,v in c.get('criteria',{}).items() if not v])
+          assert d['evaluated_cases']==3 and d['accepted_cases']==3,'V4.1 NAO PROMOVIDA: criterio externo reprovado; nao reajustar usando estes casos'
+          PY
