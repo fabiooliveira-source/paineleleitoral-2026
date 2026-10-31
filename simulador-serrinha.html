@@ -1,0 +1,27 @@
+<!doctype html><html lang="pt-BR"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Simulação presidencial · Serrinha–BA</title>
+<style>body{margin:0;background:#eef3f7;color:#152b3c;font:16px system-ui}main{max-width:920px;margin:auto;padding:24px}a{color:#075985}header,.panel{background:white;border-radius:16px;padding:24px;margin-bottom:18px}h1{margin:8px 0}p{line-height:1.6}.grid{display:grid;grid-template-columns:1fr 1fr;gap:20px}label{display:block;margin-bottom:20px}input{width:100%;accent-color:#036985}output{font-weight:bold}.result{font-size:30px}small{display:block;line-height:1.6;color:#4b6172}button{padding:12px;border:0;border-radius:8px;cursor:pointer;background:#075985;color:white}table{width:100%;border-collapse:collapse}td,th{text-align:left;padding:12px 4px;border-bottom:1px solid #ddd}@media(max-width:600px){.grid{grid-template-columns:1fr}main{padding:12px}header,.panel{padding:18px}}</style>
+<main><header><a href="simulador.html">← Voltar para federal</a><h1>Serrinha–BA</h1><p>Simulação presidencial · Cenário hipotético com base municipal do primeiro turno disponível no repositório.</p><small>Não é pesquisa nem previsão certificada. A identificação municipal é UF BA + código TSE 39098. A fonte do repositório ainda não foi autenticada independentemente nesta implementação.</small></header>
+<section class="panel grid"><div><h2>Hipóteses</h2>
+<label>Demais candidatos → Lula: <output id="transferOut"></output><input id="transfer" type="range" min="0" max="100" value="50" step="1"><small>O restante é transferido para Flávio.</small></label>
+<label>Migração líquida: <output id="migrationOut"></output><input id="migration" type="range" min="-10" max="10" value="0" step="0.5"><small>Positivo: Lula → Flávio. Negativo: Flávio → Lula. Incide sobre os votos originais do candidato de origem.</small></label>
+<label>Variação relativa da abstenção: <output id="abstOut"></output><input id="abst" type="range" min="-50" max="50" value="0"><small>0% mantém a taxa do primeiro turno. A participação adicional mantém a composição dos votos do cenário.</small></label>
+<label>Variação relativa de brancos/nulos: <output id="invalidOut"></output><input id="invalid" type="range" min="-50" max="50" value="0"><small>Aplica-se às taxas sobre comparecimento do primeiro turno.</small></label><button id="reset">Restaurar cenário 50/50</button></div>
+<div aria-live="polite"><h2>Resultado do cenário</h2><p class="result" id="lula"></p><p class="result" id="flavio"></p><p id="margin"></p><p id="counts"></p><small id="check"></small></div></section>
+<section class="panel"><h2>Base usada no cálculo</h2><table><thead><tr><th>Medida · primeiro turno</th><th>Quantidade</th></tr></thead><tbody><tr><td>Eleitorado</td><td>63.689</td></tr><tr><td>Comparecimento</td><td>52.079</td></tr><tr><td>Abstenções</td><td>11.610</td></tr><tr><td>Lula</td><td>35.445</td></tr><tr><td>Flávio</td><td>11.134</td></tr><tr><td>Demais candidatos</td><td>2.485</td></tr><tr><td>Brancos / nulos</td><td>819 / 2.196</td></tr></tbody></table><p>Os controles começam com transferência 50/50, migração zero e taxas de abstenção, brancos e nulos iguais às da base. Todos os totais são municipais; não há rateio dos números estaduais.</p><small>Fonte: dados/2026/comparacao_municipios.csv, branch experimental. O segundo turno não entra no cálculo. Mudanças de participação usam uma hipótese proporcional, sem evidência individual de transferência de eleitores. Não há probabilidade de vitória calculada.</small></section></main>
+<script>
+const BASE={electorate:63689,attendance:52079,abstentions:11610,lula:35445,flavio:11134,others:2485,blank:819,nul:2196};
+function simulate(p){
+ const attendance=Math.round(BASE.electorate-BASE.abstentions*(1+p.abst/100));
+ const blank=Math.round(attendance*BASE.blank/BASE.attendance*(1+p.invalid/100));
+ const nul=Math.round(attendance*BASE.nul/BASE.attendance*(1+p.invalid/100));
+ const valid=attendance-blank-nul;
+ const moved=p.migration>=0?BASE.lula*p.migration/100:BASE.flavio*p.migration/100;
+ const weightL=BASE.lula+BASE.others*p.transfer/100-moved;
+ const weightF=BASE.flavio+BASE.others*(1-p.transfer/100)+moved;
+ const lula=Math.round(valid*weightL/(weightL+weightF));const flavio=valid-lula;
+ return {attendance,blank,nul,valid,lula,flavio,abstentions:BASE.electorate-attendance};
+}
+const ids=['transfer','migration','abst','invalid'];const $=id=>document.getElementById(id);const fmt=n=>n.toLocaleString('pt-BR');
+function render(){const p=Object.fromEntries(ids.map(id=>[id,Number($(id).value)]));for(const id of ids)$(id+'Out').textContent=p[id].toLocaleString('pt-BR')+'%';const r=simulate(p);$('lula').textContent='Lula · '+(100*r.lula/r.valid).toFixed(2).replace('.',',')+'% · '+fmt(r.lula);$('flavio').textContent='Flávio · '+(100*r.flavio/r.valid).toFixed(2).replace('.',',')+'% · '+fmt(r.flavio);$('margin').textContent='Diferença: '+fmt(Math.abs(r.lula-r.flavio))+' votos';$('counts').textContent='Comparecimento '+fmt(r.attendance)+' · Abstenções '+fmt(r.abstentions)+' · Brancos '+fmt(r.blank)+' · Nulos '+fmt(r.nul);$('check').textContent='Conciliação: '+fmt(r.lula+r.flavio+r.blank+r.nul+r.abstentions)+' = '+fmt(BASE.electorate)+' eleitores. Percentuais calculados sobre votos válidos.';}
+ids.forEach(id=>$(id).addEventListener('input',render));$('reset').onclick=()=>{ids.forEach(id=>$(id).value=id==='transfer'?50:0);render()};render();
+</script></html>
