@@ -1,0 +1,80 @@
+name: V6 holdout 2024 - cinco cidades - 100 checkpoints
+on:
+  push:
+    branches: [experimento/modelo-territorial-999]
+    paths:
+      - '.github/workflows/holdout-v6-2024-checkpoints.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  reproducao-e-avaliacao:
+    runs-on: ubuntu-latest
+    timeout-minutes: 85
+    defaults:
+      run:
+        working-directory: experimentos/modelo_999/auditoria_integral
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Verify frozen V6 source, benchmark and predefined holdout selection
+        run: |
+          python verificar_congelamento_v6.py
+          test "$(git hash-object protocolo_holdout_v6_2024_v1.json)" = "f6af5461842a1427c51a002a4ce35c5109aa87d6"
+          python - <<'PY'
+          import json
+          p=json.load(open('protocolo_holdout_v6_2024_v1.json'))
+          assert p['status']=='PREREGISTERED_BEFORE_NEW_CITY_MODEL_EXECUTION'
+          assert p['no_after_the_fact_tuning']
+          assert len(p['external_cases'])==5
+          assert p['v6_cover_threshold']==0.20
+          print('PRE-REGISTERED HOLDOUT FIXED', flush=True)
+          PY
+      - name: Download official TSE 2024 sources with frozen SHA-256 pins
+        run: |
+          python - <<'PY'
+          from concurrent.futures import ThreadPoolExecutor
+          from obter_fontes_2024_v41 import download
+          names=['detalhe_votacao_secao_2024.zip','votacao_secao_2024_RS.zip','votacao_secao_2024_CE.zip']
+          with ThreadPoolExecutor(max_workers=3) as pool:
+              records=list(pool.map(download,names))
+          print('official archives, SHA-256 and CRC verified:',len(records), flush=True)
+          PY
+      - name: Reconstruct 100 deterministic section-level checkpoints for five cities
+        run: python preparar_holdout_v6_2024.py
+      - name: Validate complete reconstruction versus official TRE aggregate results
+        run: python verificar_totais_tre_holdout_v6.py
+      - name: Execute frozen V6 on entirely new municipalities, all checkpoints
+        run: python avaliar_holdout_v6_2024.py
+      - name: Preserve all outputs even if validation fails
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: holdout-v6-2024-cidades-5
+          retention-days: 30
+          path: |
+            experimentos/modelo_999/auditoria_integral/holdout_v6_2024/
+          if-no-files-found: warn
+  gate-de-desempenho:
+    needs: reproducao-e-avaliacao
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: holdout-v6-2024-cidades-5
+          path: evidence
+      - name: Require 5/5 preregistered cities to pass every 5%-95% checkpoint criterion
+        run: |
+          python - <<'PY'
+          import json, pathlib
+          path=pathlib.Path('evidence/resultado_holdout_v6_2024.json')
+          r=json.loads(path.read_text())
+          print("Case count:",r["evaluated_cases"],"Passed:",r["passed_cases"], flush=True)
+          for c in r["cases"]:
+              print(c["name"],"passed",c["gate_passed"],"failed",c["failed_criteria"],flush=True)
+          assert r["evaluated_cases"]==5 and r["passed_cases"]==5, "V6 HOLDOUT GATE FAILED: do not tune against these cases or claim certification"
+          assert r["integral_certification"] is False
+          print("PASS historical holdout gate only: NOT independent prospective certification",flush=True)
+          PY
