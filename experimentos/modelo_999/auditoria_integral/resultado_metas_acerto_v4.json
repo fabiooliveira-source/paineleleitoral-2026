@@ -1,0 +1,90 @@
+{
+  "policy_version": "v4-accuracy-policy-1",
+  "model_unchanged": true,
+  "targets_evaluated_pct": [
+    99,
+    98,
+    97,
+    96,
+    95
+  ],
+  "floor_pct": 95,
+  "selected_supported_target_pct": null,
+  "eligible_external_presidential_elections": 0,
+  "eligible_successes": 0,
+  "eligible_lower_bound_pct": null,
+  "descriptive_cases_correct": 3,
+  "descriptive_cases_total": 3,
+  "descriptive_accuracy_is_not_certification": true,
+  "cases": [
+    {
+      "contest_id": "2018-presidente",
+      "year": 2018,
+      "correct_winner_at_5_pct": true,
+      "scope": "development_reconstructed_presidential",
+      "development": true,
+      "comparable_to_target_population": true,
+      "eligible_independent_external": false
+    },
+    {
+      "contest_id": "2022-presidente",
+      "year": 2022,
+      "correct_winner_at_5_pct": true,
+      "scope": "development_reconstructed_presidential",
+      "development": true,
+      "comparable_to_target_population": true,
+      "eligible_independent_external": false
+    },
+    {
+      "contest_id": "2020-prefeito-71072",
+      "year": 2020,
+      "correct_winner_at_5_pct": true,
+      "scope": "external_reconstructed_municipal_test",
+      "development": false,
+      "comparable_to_target_population": false,
+      "eligible_independent_external": false
+    }
+  ],
+  "stages": [
+    {
+      "target_pct": 99,
+      "supported_by_eligible_evidence": false,
+      "minimum_fixed_sample_if_zero_failures": 299,
+      "status": "NOT_DEMONSTRATED"
+    },
+    {
+      "target_pct": 98,
+      "supported_by_eligible_evidence": false,
+      "minimum_fixed_sample_if_zero_failures": 149,
+      "status": "NOT_DEMONSTRATED"
+    },
+    {
+      "target_pct": 97,
+      "supported_by_eligible_evidence": false,
+      "minimum_fixed_sample_if_zero_failures": 99,
+      "status": "NOT_DEMONSTRATED"
+    },
+    {
+      "target_pct": 96,
+      "supported_by_eligible_evidence": false,
+      "minimum_fixed_sample_if_zero_failures": 74,
+      "status": "NOT_DEMONSTRATED"
+    },
+    {
+      "target_pct": 95,
+      "supported_by_eligible_evidence": false,
+      "minimum_fixed_sample_if_zero_failures": 59,
+      "status": "NOT_DEMONSTRATED"
+    }
+  ],
+  "decision": "TARGET_NOT_DEMONSTRATED_AT_OR_ABOVE_95",
+  "integral_certification_granted": false,
+  "limitations": [
+    "Confidence level95 is distinct from accuracy targets99..95.",
+    "2018 and2022 were used for development; municipal2020 is not an external national-presidential validation.",
+    "Binomial inference assumes comparable independent representative trials and a fixed sampling/testing plan.",
+    "Zero-failure sample counts are optimistic planning values, not a guarantee or permission to reuse the same election.",
+    "Lowering the target does not resolve source availability, operational integration or independent-review requirements."
+  ],
+  "method_source": "https://www.itl.nist.gov/div898/software/dataplot/refman2/auxillar/exacbici.htm"
+}
