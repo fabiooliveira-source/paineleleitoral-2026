@@ -1,0 +1,36 @@
+name: Integracao experimental V4
+on:
+  push:
+    branches: ['experimento/modelo-territorial-999']
+    paths: ['.github/workflows/integracao-v4.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  contrato-v4:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Conferir hashes da integracao
+        run: |
+          python - <<'PYCODE'
+          import pathlib,json,hashlib
+          root=pathlib.Path('experimentos/modelo_999/auditoria_integral')
+          manifest=json.loads((root/'manifesto_integracao_v4.json').read_text())
+          for item in manifest['files']:
+              assert hashlib.sha256((root/item['name']).read_bytes()).hexdigest()==item['sha256'],item['name']
+          assert hashlib.sha256((root/'preditor_causal_v4.py').read_bytes()).hexdigest()==manifest['predictor_sha256']
+          PYCODE
+      - name: Testar contrato JSON e falhas de integracao
+        run: python -m unittest discover -s experimentos/modelo_999/auditoria_integral -p test_integracao_v4.py -v
+      - name: Executar exemplo qualificado
+        run: |
+          python experimentos/modelo_999/auditoria_integral/executar_v4.py --input experimentos/modelo_999/auditoria_integral/entradas_pareadas_v4_2020.json --checkpoint 5 --output /tmp/saida-v4.json
+      - uses: actions/upload-artifact@v4
+        with:
+          name: saida-integracao-v4
+          path: /tmp/saida-v4.json
