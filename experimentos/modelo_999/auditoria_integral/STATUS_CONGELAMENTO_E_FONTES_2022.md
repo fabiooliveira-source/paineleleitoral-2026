@@ -1,3 +1,13 @@
+# Atualização: stress ampliado e camada V4.1
+
+A camada V4.1 preserva a fórmula V4 e acrescenta proteção para metadados e revisões. Após reparo, foram aprovados74 testes,1.710 controles e36 cenários artificiais na execução [41152022365](https://github.com/fabiooliveira-source/paineleleitoral-2026/actions/runs/41152022365).
+
+Leia o [relatório de stress](RELATORIO_STRESS_V41.md):677/684 projeções artificiais indicaram o vencedor correto (98,98% descritivos), mas o erro máximo em2018 foi7,78pp. Não há certificado de98% de acerto geral. As sementes e marcos são correlacionados e as duas eleições são desenvolvimento. Main preservada.
+
+---
+
+## Histórico anterior
+
 # Atualização: V4 passou na qualificação técnica dos replays
 
 A V4 pareada foi congelada antes do teste externo de São Paulo2020, passou nos critérios numéricos e foi reproduzida no GitHub Actions. Ambos os jobs da execução [41148598344](https://github.com/fabiooliveira-source/paineleleitoral-2026/actions/runs/41148598344) concluíram com sucesso, inclusive reconstrução byte a byte a partir dos ZIPs oficiais.
