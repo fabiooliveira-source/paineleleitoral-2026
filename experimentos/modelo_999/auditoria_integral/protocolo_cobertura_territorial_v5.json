@@ -1,0 +1,39 @@
+{
+  "version": "v5-experimental",
+  "status": "PRE_REGISTERED_NOT_VALIDATED",
+  "parent": "v4.1",
+  "date": "2026-10-31",
+  "objective": "Mitigate extrapolation in zones without observed second-round votes without using final election results.",
+  "rules": {
+    "input": "Same synchronized and matched 1T/2T ledger contract as v4.1.",
+    "zero_sample_zone": "When a zone has no paired first-round denominator for either candidate, use a conservative common multiplier: sum of observed second-round A+B votes divided by sum of paired first-round A+B votes, applied equally to A and B in that zone.",
+    "nonzero_zone": "Preserve original V4 local candidate-specific multipliers; candidate-specific zero denominators fall back to global as V4.",
+    "physical_bounds": "Preserve original V4 deterministic vote-cap scaling and abstention contracts.",
+    "prediction": "Compute candidate A share after adding predicted unseen votes. Never access final result during prediction."
+  },
+  "development_cases": [
+    "Pelotas 2024",
+    "Natal 2024"
+  ],
+  "evaluation": {
+    "development_cases_are_not_external": true,
+    "compare": [
+      "v4.1",
+      "v5-experimental",
+      "raw_observed_share"
+    ],
+    "metrics": [
+      "MAE_pp",
+      "max_absolute_error_pp",
+      "bias_pp",
+      "winner_accuracy",
+      "abstention_rate"
+    ],
+    "external_gate": "Do not promote without a newly selected independent test set frozen before its results are opened; require MAE and max no worse than baseline in each case and no wrong winner call at 5%."
+  },
+  "limitations": [
+    "2024 development cases already known; no independent proof.",
+    "Retrospective first-totalization data are not authenticated public snapshots.",
+    "This protocol does not claim certification."
+  ]
+}
