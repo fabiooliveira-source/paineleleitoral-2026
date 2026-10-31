@@ -1,0 +1,29 @@
+name: V6 - auditar tempo e disponibilidade oficial das 15 cidades
+on:
+  push:
+    branches: [experimento/modelo-territorial-999]
+    paths:
+      - '.github/workflows/auditar-relogio-v6-2024.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  auditoria-temporal:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Re-check fixed model and protocol, no tuning
+        run: python experimentos/modelo_999/auditoria_integral/verificar_congelamento_v6.py
+      - name: Verify archived TSE detail and compare first / last publication clocks
+        run: python experimentos/modelo_999/auditoria_integral/auditar_relogio_disponibilidade_v6_2024.py
+      - name: Preserve time-provenance findings even if anomalous
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: v6-15-ufs-fonte-temporal
+          path: experimentos/modelo_999/auditoria_integral/raio_nacional_v6_2024/relogio_auditoria_15_ufs.json
+          if-no-files-found: warn
