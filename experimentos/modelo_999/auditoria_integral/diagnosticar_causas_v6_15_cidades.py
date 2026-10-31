@@ -15,7 +15,7 @@ ROOT=pathlib.Path(__file__).resolve().parent
 DATA=ROOT/"raio_nacional_v6_2024"
 LOCK=ROOT/"congelamento_raio_nacional_v6_2024.json"
 ORIGINAL=DATA/"resultado_raio_nacional_v6_2024.json"
-CHECKPOINTS={1,2,3,4,5,6,7,8,9,10,15,20,25,30,35,40,50,60,70,75,80,90,95,98,99}
+CHECKPOINTS=set(range(5,100,5)) | {1,2,3,4,6,7,8,9,98,99}
 PRIMARY=set(range(5,100,5))
 SEED=20261031
 
@@ -92,7 +92,6 @@ def decompose(frame, ref, final, target, code):
     v4=100*(a+un4[0])/(curvalid+sum(un4))
     pred_valid=curvalid+sum(unseen)
     actual_valid=final_valid
-    true_unseen_a=end if False else final["current"]["votes_a"]-a
     mix_a=unseen[0]/sum(unseen) if sum(unseen) else None
     oracle_with_actual_remaining=(100*(a+actual_remaining*mix_a)/(curvalid+actual_remaining)
                                    if mix_a is not None and actual_valid else None)
