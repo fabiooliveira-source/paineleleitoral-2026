@@ -34,7 +34,7 @@ function rejected(changer, label) {
 }
 const base = V7.predict(fixture());
 check(base.status === 'ESTIMATED', 'valid synthetic fixture estimated');
-check(Math.abs(base.estimate_a - 0.43004116433754974) < 1e-12, 'matches independent Python 48-digit-style reference calculation');
+check(Math.abs(base.estimate_a - 0.4375381151273609) < 1e-12, 'matches independently calculated Python reference including remaining-electorate cap');
 check(base.provisional_leader === 'b', 'provisional leader B');
 check(base.winner_call === null, 'no unearned definitive call');
 check(base.probability === null && !base.is_certified, 'no confidence fabrication');
