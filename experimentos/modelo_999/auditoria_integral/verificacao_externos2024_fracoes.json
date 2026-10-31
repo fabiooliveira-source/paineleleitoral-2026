@@ -1,0 +1,21 @@
+{
+  "method": "independent exact rational projection, deterministic bounds and conditional calls",
+  "cases": [
+    {
+      "municipality": "13897",
+      "points": 19,
+      "max_difference_pp": 1.4210854715202004e-14
+    },
+    {
+      "municipality": "87912",
+      "points": 19,
+      "max_difference_pp": 1.4210854715202004e-14
+    },
+    {
+      "municipality": "17612",
+      "points": 19,
+      "max_difference_pp": 7.105427357601002e-15
+    }
+  ],
+  "passed": true
+}
