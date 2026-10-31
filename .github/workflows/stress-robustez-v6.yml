@@ -1,0 +1,22 @@
+name: Stress robustez V6
+on:
+  push:
+    branches: [experimento/modelo-territorial-999]
+    paths:
+      - 'experimentos/modelo_999/auditoria_integral/stress_robustez_v6.py'
+      - '.github/workflows/stress-robustez-v6.yml'
+  workflow_dispatch:
+jobs:
+  stress:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Run deterministic stress
+        run: python experimentos/modelo_999/auditoria_integral/stress_robustez_v6.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: v6-stress-results
+          path: experimentos/modelo_999/auditoria_integral/resultado_stress_robustez_v6.json
