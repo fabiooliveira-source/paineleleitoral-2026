@@ -1,0 +1,381 @@
+{
+  "version": "v41",
+  "protocol_commit": "feeae17ed7a4a6777c923c5c321945bd330896c0",
+  "safety": {
+    "checks": 1710,
+    "passed": 1710,
+    "failed": 0,
+    "failures": [],
+    "latency_p95_seconds": 0.0010905589997491916
+  },
+  "synthetic_order": {
+    "scenarios": 36,
+    "passed": 36,
+    "failed": 0,
+    "results": [
+      {
+        "year": 2018,
+        "scenario": "random_0",
+        "estimates": 19,
+        "mae_pp": 0.14641442235361435,
+        "max_abs_error_pp": 1.143548586211407,
+        "baseline_mae_pp": 1.0369659576027739,
+        "baseline_max_pp": 3.8532143498932525,
+        "passed": true
+      },
+      {
+        "year": 2018,
+        "scenario": "random_1",
+        "estimates": 19,
+        "mae_pp": 0.04183449411854428,
+        "max_abs_error_pp": 0.17190639298813037,
+        "baseline_mae_pp": 1.5457464276557142,
+        "baseline_max_pp": 5.155846700708033,
+        "passed": true
+      },
+      {
+        "year": 2018,
+        "scenario": "random_2",
+        "estimates": 19,
+        "mae_pp": 0.06754276778749174,
+        "max_abs_error_pp": 0.4870646761738373,
+        "baseline_mae_pp": 1.5806194942790233,
+        "baseline_max_pp": 7.2118062602695545,
+        "passed": true
+      },
+      {
+        "year": 2018,
+        "scenario": "random_3",
+        "estimates": 19,
+        "mae_pp": 0.12726837009407496,
+        "max_abs_error_pp": 0.8626875256079303,
+        "baseline_mae_pp": 0.6793886078451313,
+        "baseline_max_pp": 1.6365313617189403,
+        "passed": true
+      },
+      {
+        "year": 2018,
+        "scenario": "random_4",
+        "estimates": 19,
+        "mae_pp": 0.08494521656594267,
+        "max_abs_error_pp": 0.4653177978846901,
+        "baseline_mae_pp": 0.935645613359504,
+        "baseline_max_pp": 5.53483259853026,
+        "passed": true
+      },
+      {
+        "year": 2018,
+        "scenario": "random_5",
+        "estimates": 19,
+        "mae_pp": 0.0734487923730446,
+        "max_abs_error_pp": 0.3406757653864112,
+        "baseline_mae_pp": 1.4327978791562102,
+        "baseline_max_pp": 5.262609978913469,
+        "passed": true
+      },
+      {
+        "year": 2018,
+        "scenario": "random_6",
+        "estimates": 19,
+        "mae_pp": 0.10626549084527157,
+        "max_abs_error_pp": 0.7349949496986197,
+        "baseline_mae_pp": 0.8739839424483486,
+        "baseline_max_pp": 4.519929066464945,
+        "passed": true
+      },
+      {
+        "year": 2018,
+        "scenario": "random_7",
+        "estimates": 19,
+        "mae_pp": 0.08629069068376746,
+        "max_abs_error_pp": 0.42064705611906117,
+        "baseline_mae_pp": 1.5115174704937249,
+        "baseline_max_pp": 4.344836069795294,
+        "passed": true
+      },
+      {
+        "year": 2018,
+        "scenario": "random_8",
+        "estimates": 19,
+        "mae_pp": 0.08081129366769389,
+        "max_abs_error_pp": 0.5453642777453915,
+        "baseline_mae_pp": 1.064748820943373,
+        "baseline_max_pp": 3.3929776696461635,
+        "passed": true
+      },
+      {
+        "year": 2018,
+        "scenario": "random_9",
+        "estimates": 19,
+        "mae_pp": 0.14042824156183842,
+        "max_abs_error_pp": 1.1943764975317683,
+        "baseline_mae_pp": 1.7173454328973965,
+        "baseline_max_pp": 11.638420908858137,
+        "passed": true
+      },
+      {
+        "year": 2018,
+        "scenario": "uf_ascending",
+        "estimates": 19,
+        "mae_pp": 1.0946545702304542,
+        "max_abs_error_pp": 4.056222328638837,
+        "baseline_mae_pp": 8.588911248080585,
+        "baseline_max_pp": 21.856183461696133,
+        "passed": true
+      },
+      {
+        "year": 2018,
+        "scenario": "uf_descending",
+        "estimates": 19,
+        "mae_pp": 1.8356183319656245,
+        "max_abs_error_pp": 3.7361556280579187,
+        "baseline_mae_pp": 7.549284470025188,
+        "baseline_max_pp": 12.181663375833535,
+        "passed": true
+      },
+      {
+        "year": 2018,
+        "scenario": "northeast_first",
+        "estimates": 19,
+        "mae_pp": 0.7717848354951037,
+        "max_abs_error_pp": 1.9047056782883542,
+        "baseline_mae_pp": 11.675639432158905,
+        "baseline_max_pp": 24.35257659055602,
+        "passed": true
+      },
+      {
+        "year": 2018,
+        "scenario": "northeast_last",
+        "estimates": 19,
+        "mae_pp": 1.7404294635922064,
+        "max_abs_error_pp": 2.858203559994327,
+        "baseline_mae_pp": 8.374979001767706,
+        "baseline_max_pp": 10.10819606544423,
+        "passed": true
+      },
+      {
+        "year": 2018,
+        "scenario": "first_round_a_low_first",
+        "estimates": 19,
+        "mae_pp": 4.001882040306478,
+        "max_abs_error_pp": 7.775514091305991,
+        "baseline_mae_pp": 11.735738813815056,
+        "baseline_max_pp": 19.237295514070546,
+        "passed": true
+      },
+      {
+        "year": 2018,
+        "scenario": "first_round_a_high_first",
+        "estimates": 19,
+        "mae_pp": 2.1288430211861757,
+        "max_abs_error_pp": 5.569904301569273,
+        "baseline_mae_pp": 15.263792929835413,
+        "baseline_max_pp": 32.91987634518199,
+        "passed": true
+      },
+      {
+        "year": 2018,
+        "scenario": "historical_cohort_order",
+        "estimates": 19,
+        "mae_pp": 0.7367316688624795,
+        "max_abs_error_pp": 1.27674232550411,
+        "baseline_mae_pp": 1.5564626338071084,
+        "baseline_max_pp": 4.868475046781262,
+        "passed": true
+      },
+      {
+        "year": 2018,
+        "scenario": "reversed_cohort_order",
+        "estimates": 19,
+        "mae_pp": 0.7956179030589617,
+        "max_abs_error_pp": 1.8629617761389439,
+        "baseline_mae_pp": 1.2274400530994367,
+        "baseline_max_pp": 3.0162864944943966,
+        "passed": true
+      },
+      {
+        "year": 2022,
+        "scenario": "random_0",
+        "estimates": 19,
+        "mae_pp": 0.015940225115832075,
+        "max_abs_error_pp": 0.09865114623741622,
+        "baseline_mae_pp": 0.7051792858009971,
+        "baseline_max_pp": 4.165627159465224,
+        "passed": true
+      },
+      {
+        "year": 2022,
+        "scenario": "random_1",
+        "estimates": 19,
+        "mae_pp": 0.013235023893682099,
+        "max_abs_error_pp": 0.08417121939169325,
+        "baseline_mae_pp": 0.34233033406879343,
+        "baseline_max_pp": 3.4868673464578617,
+        "passed": true
+      },
+      {
+        "year": 2022,
+        "scenario": "random_2",
+        "estimates": 19,
+        "mae_pp": 0.01623283211391777,
+        "max_abs_error_pp": 0.06192248366716502,
+        "baseline_mae_pp": 1.234034377432704,
+        "baseline_max_pp": 7.854817366360834,
+        "passed": true
+      },
+      {
+        "year": 2022,
+        "scenario": "random_3",
+        "estimates": 19,
+        "mae_pp": 0.019018277754203734,
+        "max_abs_error_pp": 0.14823280523014182,
+        "baseline_mae_pp": 0.4178520043802916,
+        "baseline_max_pp": 1.1738807343593949,
+        "passed": true
+      },
+      {
+        "year": 2022,
+        "scenario": "random_4",
+        "estimates": 19,
+        "mae_pp": 0.024167784110969804,
+        "max_abs_error_pp": 0.19595763242121755,
+        "baseline_mae_pp": 0.386998702523765,
+        "baseline_max_pp": 2.375599207859697,
+        "passed": true
+      },
+      {
+        "year": 2022,
+        "scenario": "random_5",
+        "estimates": 19,
+        "mae_pp": 0.01188289802343797,
+        "max_abs_error_pp": 0.06434186467083602,
+        "baseline_mae_pp": 0.6134810327767581,
+        "baseline_max_pp": 2.5960845183844117,
+        "passed": true
+      },
+      {
+        "year": 2022,
+        "scenario": "random_6",
+        "estimates": 19,
+        "mae_pp": 0.01614202412906043,
+        "max_abs_error_pp": 0.2142185392915219,
+        "baseline_mae_pp": 0.4693059685425952,
+        "baseline_max_pp": 2.6629797284569157,
+        "passed": true
+      },
+      {
+        "year": 2022,
+        "scenario": "random_7",
+        "estimates": 19,
+        "mae_pp": 0.014301631228434624,
+        "max_abs_error_pp": 0.04545816581738027,
+        "baseline_mae_pp": 0.6198994083575157,
+        "baseline_max_pp": 2.20771117222725,
+        "passed": true
+      },
+      {
+        "year": 2022,
+        "scenario": "random_8",
+        "estimates": 19,
+        "mae_pp": 0.021994430759484256,
+        "max_abs_error_pp": 0.07140007852602936,
+        "baseline_mae_pp": 0.622852824514878,
+        "baseline_max_pp": 1.479970793141605,
+        "passed": true
+      },
+      {
+        "year": 2022,
+        "scenario": "random_9",
+        "estimates": 19,
+        "mae_pp": 0.018661705650750048,
+        "max_abs_error_pp": 0.1899377051120088,
+        "baseline_mae_pp": 0.463216802440897,
+        "baseline_max_pp": 2.522376899172052,
+        "passed": true
+      },
+      {
+        "year": 2022,
+        "scenario": "uf_ascending",
+        "estimates": 19,
+        "mae_pp": 0.16159678405956943,
+        "max_abs_error_pp": 0.343544872918089,
+        "baseline_mae_pp": 5.624499778283386,
+        "baseline_max_pp": 15.225252754063156,
+        "passed": true
+      },
+      {
+        "year": 2022,
+        "scenario": "uf_descending",
+        "estimates": 19,
+        "mae_pp": 0.22561135352359618,
+        "max_abs_error_pp": 0.482775314830608,
+        "baseline_mae_pp": 4.333597371516228,
+        "baseline_max_pp": 6.860427092387356,
+        "passed": true
+      },
+      {
+        "year": 2022,
+        "scenario": "northeast_first",
+        "estimates": 19,
+        "mae_pp": 0.15089424939273888,
+        "max_abs_error_pp": 0.39788852826917465,
+        "baseline_mae_pp": 8.667155799897904,
+        "baseline_max_pp": 18.979385751507937,
+        "passed": true
+      },
+      {
+        "year": 2022,
+        "scenario": "northeast_last",
+        "estimates": 19,
+        "mae_pp": 0.21403845650307396,
+        "max_abs_error_pp": 0.42054659781405324,
+        "baseline_mae_pp": 6.675552500402666,
+        "baseline_max_pp": 8.482571927678627,
+        "passed": true
+      },
+      {
+        "year": 2022,
+        "scenario": "first_round_a_low_first",
+        "estimates": 19,
+        "mae_pp": 0.3091873911738748,
+        "max_abs_error_pp": 0.5004849156013402,
+        "baseline_mae_pp": 9.872418139128342,
+        "baseline_max_pp": 20.932740066700728,
+        "passed": true
+      },
+      {
+        "year": 2022,
+        "scenario": "first_round_a_high_first",
+        "estimates": 19,
+        "mae_pp": 0.2712344750436971,
+        "max_abs_error_pp": 0.6016998470015911,
+        "baseline_mae_pp": 11.560362373866399,
+        "baseline_max_pp": 25.28103080262466,
+        "passed": true
+      },
+      {
+        "year": 2022,
+        "scenario": "historical_cohort_order",
+        "estimates": 19,
+        "mae_pp": 0.0991279281785364,
+        "max_abs_error_pp": 0.22227032782637934,
+        "baseline_mae_pp": 1.4572478795972181,
+        "baseline_max_pp": 4.187483547389354,
+        "passed": true
+      },
+      {
+        "year": 2022,
+        "scenario": "reversed_cohort_order",
+        "estimates": 19,
+        "mae_pp": 0.07999037339292882,
+        "max_abs_error_pp": 0.19314912669091688,
+        "baseline_mae_pp": 1.2522736661746372,
+        "baseline_max_pp": 2.477484903929361,
+        "passed": true
+      }
+    ],
+    "scope": "Artificial reordering of cohort blocks, not authentic alternate totalization. Checkpoints use covered first-round two-finalist vote mass, not section count. Counted electorate is synthetic valid observed votes;R is conservative."
+  },
+  "decision": "ACCEPTED_WITHIN_DECLARED_STRESS_SCOPE",
+  "probabilistic_certification": false
+}
