@@ -1,0 +1,26 @@
+name: V6 - benchmark retrospectivo tres cidades
+on:
+  push:
+    branches: [experimento/modelo-territorial-999]
+    paths:
+      - 'experimentos/modelo_999/auditoria_integral/avaliar_gate_3_cidades_v6.py'
+      - '.github/workflows/gate-3-cidades-v6.yml'
+  workflow_dispatch:
+jobs:
+  historical-benchmark:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Run historical municipal development benchmark
+        run: python experimentos/modelo_999/auditoria_integral/avaliar_gate_3_cidades_v6.py
+      - name: Publish results (even when failing)
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: v6-three-cities-benchmark
+          path: experimentos/modelo_999/auditoria_integral/resultado_gate_3_cidades_v6.json
+          if-no-files-found: warn
