@@ -4,6 +4,7 @@ on:
     branches: [experimento/modelo-territorial-999]
     paths:
       - 'experimentos/modelo_999/auditoria_integral/congelamento_raio_nacional_v6_2024.json'
+      - 'experimentos/modelo_999/auditoria_integral/verificar_fracoes_raio_nacional_v6_2024.py'
   workflow_dispatch:
 permissions:
   actions: read
