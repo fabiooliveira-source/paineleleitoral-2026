@@ -1,0 +1,148 @@
+{
+  "state": "QUALIFICADO_NO_ESCOPO_REPLAY_PAREADO",
+  "certificacao_integral_concedida": false,
+  "model": "audit-v4-paired-ratio",
+  "reviewed_scope": "Predictor byte identity, deterministic bounds, synchronized matched-ledger replays, numerical external municipal2020 test, programmed stress checks.",
+  "generated_at_utc": "2026-10-31T00:08:35.765701+00:00",
+  "reproduction_environment": "local",
+  "github_run_id": null,
+  "github_commit": null,
+  "files_verified": 28,
+  "unit_tests_exit_code": 0,
+  "stress_checks_passed": 285,
+  "fraction_checks": {
+    "2018": {
+      "year": 2018,
+      "points_recomputed": 19,
+      "max_difference_pp": 1.4210854715202004e-14,
+      "method": "Fraction rational arithmetic, separate implementation, no predictor imported. Does not authenticate the retrospective availability assumptions."
+    },
+    "2022": {
+      "year": 2022,
+      "points_recomputed": 19,
+      "max_difference_pp": 1.4210854715202004e-14,
+      "method": "Fraction rational arithmetic, separate implementation, no predictor imported. Does not authenticate the retrospective availability assumptions."
+    },
+    "2020": {
+      "year": 2020,
+      "points_recomputed": 19,
+      "max_difference_pp": 1.4210854715202004e-14,
+      "method": "Fraction rational arithmetic, separate implementation, no predictor imported. Does not authenticate the retrospective availability assumptions."
+    }
+  },
+  "results": {
+    "2018": {
+      "model": "audit-v4-paired-ratio",
+      "year": 2018,
+      "role": "development_reconstructed_presidential",
+      "predictor_freeze_commit": "04ea90abb8c535f8ee17eeb26fa781b246e03e88",
+      "source_inputs_sha256": "ff44e3c435b1713777369e824e94fb139659625c579765815578afc6286ec92a",
+      "parameters_fitted": false,
+      "model_metrics": {
+        "mae_pp": 0.7385354414975885,
+        "max_abs_error_pp": 1.2759617914975319,
+        "bias_pp": 0.7385354414975885
+      },
+      "baseline_metrics": {
+        "mae_pp": 1.5819453006799649,
+        "max_abs_error_pp": 4.988950941589765,
+        "bias_pp": -1.5819453006799649
+      },
+      "estimates_available": 19,
+      "criteria": {
+        "all_19_estimates_available": true,
+        "lower_mae_than_baseline": true,
+        "maximum_not_worse_than_baseline": true,
+        "conditional_bounds_cover_all_targets": true,
+        "no_wrong_conditional_call": true,
+        "all_95_stress_checks_passed": true
+      },
+      "all_numerical_criteria_passed": true,
+      "stress_checks_passed": 95,
+      "first_conditional_call_pct": 95,
+      "conditional_calls": 1,
+      "certification_integral": false,
+      "scope_limit": "Bounds are deterministic conditional on no future revision and valid electorate upper bound. Pairing and availability are reconstructed, not authenticated live public snapshots. External municipal case does not certify national operational transfer."
+    },
+    "2022": {
+      "model": "audit-v4-paired-ratio",
+      "year": 2022,
+      "role": "development_reconstructed_presidential",
+      "predictor_freeze_commit": "04ea90abb8c535f8ee17eeb26fa781b246e03e88",
+      "source_inputs_sha256": "3d32270c7eb9f28e2bd9fcb055167cec92d26340203b037f7aa8f2dc3d780e9b",
+      "parameters_fitted": false,
+      "model_metrics": {
+        "mae_pp": 0.09920194284425844,
+        "max_abs_error_pp": 0.22227032782637934,
+        "bias_pp": 0.09920194284425844
+      },
+      "baseline_metrics": {
+        "mae_pp": 1.4975301436535053,
+        "max_abs_error_pp": 4.187483547389354,
+        "bias_pp": -1.4975301436535053
+      },
+      "estimates_available": 19,
+      "criteria": {
+        "all_19_estimates_available": true,
+        "lower_mae_than_baseline": true,
+        "maximum_not_worse_than_baseline": true,
+        "conditional_bounds_cover_all_targets": true,
+        "no_wrong_conditional_call": true,
+        "all_95_stress_checks_passed": true
+      },
+      "all_numerical_criteria_passed": true,
+      "stress_checks_passed": 95,
+      "first_conditional_call_pct": null,
+      "conditional_calls": 0,
+      "certification_integral": false,
+      "scope_limit": "Bounds are deterministic conditional on no future revision and valid electorate upper bound. Pairing and availability are reconstructed, not authenticated live public snapshots. External municipal case does not certify national operational transfer."
+    },
+    "2020": {
+      "model": "audit-v4-paired-ratio",
+      "year": 2020,
+      "role": "external_reconstructed_municipal_test",
+      "predictor_freeze_commit": "04ea90abb8c535f8ee17eeb26fa781b246e03e88",
+      "source_inputs_sha256": "41f9ecfbcb37e3e4f211437f65fb280477fccf968af6be30ece9f3327840f9d6",
+      "parameters_fitted": false,
+      "model_metrics": {
+        "mae_pp": 0.37620007750294754,
+        "max_abs_error_pp": 0.763486309721173,
+        "bias_pp": -0.37620007750294754
+      },
+      "baseline_metrics": {
+        "mae_pp": 0.6083244480179225,
+        "max_abs_error_pp": 0.8531966991860929,
+        "bias_pp": -0.6083244480179225
+      },
+      "estimates_available": 19,
+      "criteria": {
+        "all_19_estimates_available": true,
+        "lower_mae_than_baseline": true,
+        "maximum_not_worse_than_baseline": true,
+        "conditional_bounds_cover_all_targets": true,
+        "no_wrong_conditional_call": true,
+        "all_95_stress_checks_passed": true
+      },
+      "all_numerical_criteria_passed": true,
+      "stress_checks_passed": 95,
+      "first_conditional_call_pct": 90,
+      "conditional_calls": 2,
+      "certification_integral": false,
+      "scope_limit": "Bounds are deterministic conditional on no future revision and valid electorate upper bound. Pairing and availability are reconstructed, not authenticated live public snapshots. External municipal case does not certify national operational transfer."
+    }
+  },
+  "unresolved_integral_requirements": {
+    "authenticated_contemporary_public_snapshots": false,
+    "authenticated_first_round_reference_asof_prediction": false,
+    "authenticated_electorate_asof_prediction": false,
+    "production_matched_section_feed_integrated": false,
+    "probabilities_calibrated_across_independent_elections": false,
+    "independent_expert_review_replicated": false
+  },
+  "limits": [
+    "Municipal external test is not national presidential operational certification.",
+    "Deterministic bounds are conditional on no future count revision and valid remaining-electorate upper bound.",
+    "Same-author tests and CI reproduction are not independent expert review.",
+    "2018 and2022 are development;2020 becomes examined after this test."
+  ]
+}
