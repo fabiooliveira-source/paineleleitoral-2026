@@ -1,0 +1,20 @@
+{
+  "block_degrees": 0.5,
+  "split": "SHA256(latitude_cell:longitude_cell)%5:0 test,1 tuning,2..4 train; same cell never split",
+  "models": [
+    "UF regularized baseline",
+    "IDW power2 log-ratio coefficients",
+    "local ordinary kriging log-ratio coefficients"
+  ],
+  "neighbors": [
+    8,
+    16
+  ],
+  "variogram": "spherical, fitted using training blocks only; standardized coefficient residual field across origins/destinations",
+  "selection": "lowest tuning weighted MAE; held-out test reported once, not selected",
+  "alpha_origin": 1000,
+  "global_EM_iterations": 600,
+  "local_EM_iterations": 250,
+  "coefficient_coordinate": "five additive log-ratios to sixth destination, clipping p>=1e-8 before transform",
+  "locations": "first-turn geographical file, no fabricated geocoding; unmapped and exterior use UF fallback"
+}
