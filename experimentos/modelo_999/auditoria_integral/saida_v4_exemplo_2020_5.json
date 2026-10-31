@@ -1,0 +1,47 @@
+{
+  "schema_version": "v4-panel-1",
+  "model": "audit-v4-paired-ratio",
+  "model_sha256": "8bc095931517c5971a4e957851b4b8bcdf62352c10435df7a3ab1dd0f25bd1cf",
+  "source_document_sha256": "41f9ecfbcb37e3e4f211437f65fb280477fccf968af6be30ece9f3327840f9d6",
+  "mode": "experimental_replay",
+  "operational_approved": false,
+  "certification_integral": false,
+  "timestamp": "2020-11-29T17:40:05-03:00",
+  "checkpoint_pct": 5,
+  "contest": {
+    "year": 2020,
+    "candidate_a_id": "50",
+    "candidate_b_id": "45",
+    "municipality_tse": "71072"
+  },
+  "status": "ESTIMATED",
+  "reason": null,
+  "observed": {
+    "votes_a": 187673,
+    "votes_b": 280811,
+    "share_a_pct": 40.05963917657807,
+    "electorate_total": 8986687,
+    "electorate_counted": 785595,
+    "remaining_electorate": 8201092
+  },
+  "projection": {
+    "share_a_pct": 39.88719484009685,
+    "share_b_pct": 60.11280515990315,
+    "probability_a": null,
+    "probability_b": null
+  },
+  "conditional_bounds": {
+    "lower_a_pct": 2.1647310087598286,
+    "upper_a_pct": 96.76096039760192,
+    "kind": "deterministic_not_confidence_interval",
+    "conditional_winner": null,
+    "assumptions": [
+      "Observed counts will not be revised in a way that invalidates the inequality.",
+      "Remaining electorate is a true upper bound on additional valid votes."
+    ]
+  },
+  "provenance": {
+    "availability_is_assumed": true,
+    "source_authenticity_verified_by_adapter": false
+  }
+}
