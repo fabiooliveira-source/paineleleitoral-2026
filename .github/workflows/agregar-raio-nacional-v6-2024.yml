@@ -1,0 +1,49 @@
+name: V6 - congelar dados de 15 estados antes de avaliar
+on:
+  push:
+    branches: [experimento/modelo-territorial-999]
+    paths:
+      - '.github/workflows/agregar-raio-nacional-v6-2024.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+jobs:
+  freeze-inputs:
+    runs-on: ubuntu-latest
+    timeout-minutes: 70
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Wait for original data-only preparation run, no model scoring
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          for i in $(seq 1 150); do
+            status=$(gh api repos/fabiooliveira-source/paineleleitoral-2026/actions/runs/41250338824 --jq .status)
+            if [ "$status" = "completed" ]; then
+              echo "Data-only preparation completed; inspect all 15 artifact manifests"
+              break
+            fi
+            sleep 20
+          done
+          test "$(gh api repos/fabiooliveira-source/paineleleitoral-2026/actions/runs/41250338824 --jq .conclusion)" = "success"
+      - name: Download each original TSE city replay without modifying data
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p experimentos/modelo_999/auditoria_integral/raio_nacional_v6_2024
+          for uf in AM PA RO TO BA PB SE PE GO MT MS MG RJ SP PR; do
+            gh run download 41250338824 --repo fabiooliveira-source/paineleleitoral-2026 --name "raio-nacional-2024-$uf" --dir experimentos/modelo_999/auditoria_integral/raio_nacional_v6_2024
+          done
+      - name: Calculate all source and checkpoint input hashes; never call predictor
+        run: python experimentos/modelo_999/auditoria_integral/agregar_manifestos_raio_nacional_v6_2024.py
+      - name: Publish immutable proposed freeze for separate commit
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: v6-proposta-congelamento-15-ufs
+          path: experimentos/modelo_999/auditoria_integral/raio_nacional_v6_2024/proposed_frozen_manifest.json
+          if-no-files-found: warn
