@@ -1,0 +1,47 @@
+name: V6 holdout - auditoria aritmetica independente
+on:
+  push:
+    branches: [experimento/modelo-territorial-999]
+    paths:
+      - '.github/workflows/holdout-v6-fracoes-independentes.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+jobs:
+  fraction-validation:
+    runs-on: ubuntu-latest
+    timeout-minutes: 95
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Wait for historical municipal holdout evidence from frozen run
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p experimentos/modelo_999/auditoria_integral/holdout_v6_2024
+          for i in $(seq 1 240); do
+            if gh run download 41249875043 --repo fabiooliveira-source/paineleleitoral-2026 --name holdout-v6-2024-cidades-5 --dir experimentos/modelo_999/auditoria_integral/holdout_v6_2024; then
+              echo "Evidence bundle retrieved from original frozen experimental run"
+              exit 0
+            fi
+            status=$(gh api repos/fabiooliveira-source/paineleleitoral-2026/actions/runs/41249875043 --jq .status || echo unavailable)
+            if [ "$status" = "completed" ]; then
+              echo "Original workflow completed without accessible data: block arithmetic audit"
+              exit 1
+            fi
+            sleep 20
+          done
+          echo "Timed out waiting for frozen data; cannot certify"
+          exit 1
+      - name: Validate all 500 checkpoints with independent exact fractions
+        run: python experimentos/modelo_999/auditoria_integral/verificar_fracoes_holdout_v6.py
+      - name: Archive arithmetic evidence even on mismatch
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: holdout-v6-fracoes-independentes
+          path: experimentos/modelo_999/auditoria_integral/holdout_v6_2024/verificacao_fracoes_v6_holdout.json
+          if-no-files-found: warn
