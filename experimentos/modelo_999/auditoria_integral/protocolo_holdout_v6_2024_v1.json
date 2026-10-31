@@ -1,0 +1,156 @@
+{
+  "protocol_version": "v6-holdout-municipal-2024-v1",
+  "frozen_on": "2026-10-31",
+  "status": "PREREGISTERED_BEFORE_NEW_CITY_MODEL_EXECUTION",
+  "branch": "experimento/modelo-territorial-999",
+  "main_modification_forbidden": true,
+  "base_model": "preditor_v6_guardado.py",
+  "base_model_git_blob_sha1": "844dcfcfc4e02269046a3b9b148b09939efbe955",
+  "reference_model": "preditor_v4_guardado.py",
+  "reference_model_git_blob_sha1": "d0acf86ced042ff66c4a76c04faef947f42e014d",
+  "v6_cover_threshold": 0.2,
+  "model_parameters_frozen": true,
+  "external_cases": [
+    {
+      "code": "85898",
+      "name": "Canoas",
+      "uf": "RS",
+      "candidate_a": "22",
+      "candidate_b": "55",
+      "purpose": "municipal 2nd round not in V6 development"
+    },
+    {
+      "code": "85995",
+      "name": "Caxias do Sul",
+      "uf": "RS",
+      "candidate_a": "45",
+      "candidate_b": "22",
+      "purpose": "municipal 2nd round not in V6 development"
+    },
+    {
+      "code": "88013",
+      "name": "Porto Alegre",
+      "uf": "RS",
+      "candidate_a": "15",
+      "candidate_b": "13",
+      "purpose": "municipal 2nd round not in V6 development"
+    },
+    {
+      "code": "88412",
+      "name": "Santa Maria",
+      "uf": "RS",
+      "candidate_a": "45",
+      "candidate_b": "13",
+      "purpose": "municipal 2nd round not in V6 development"
+    },
+    {
+      "code": "13730",
+      "name": "Caucaia",
+      "uf": "CE",
+      "candidate_a": "55",
+      "candidate_b": "13",
+      "purpose": "municipal 2nd round not in V6 development"
+    }
+  ],
+  "exclusion_of_previously_analyzed": [
+    "13897 Fortaleza CE",
+    "87912 Pelotas RS",
+    "17612 Natal RN",
+    "presidential 2018",
+    "presidential 2022",
+    "Sao Paulo 2020"
+  ],
+  "data_origin": "TSE official 2024 detail_by_section and section_vote datasets; two rounds and section keys",
+  "source_archives": {
+    "detalhe_votacao_secao_2024.zip": "ae879eb09d1ceca9ca05c1b9759a7646800b4efe57ca3d5d7f33f91287bcca3e",
+    "votacao_secao_2024_RS.zip": "a0fb26360917e32c7d18f806e3b6f3b8ac97378ce3127e1fecb6a2bfe0581a05",
+    "votacao_secao_2024_CE.zip": "14f96957ca6eff35b327665f781c5a839f7b3de7a98c02a9526ed911d320a08e"
+  },
+  "data_checks": [
+    "verify_zip_sha256_before_analysis",
+    "verify_member_csv_and_zip_crc",
+    "all_used_1T_and_2T_sections_keyed_by_UF_city_zone_section",
+    "no_duplicate_candidates_per_section",
+    "2T candidate_votes_plus_blank_plus_null_equal_sections",
+    "sum_2T_votes_not_above_registered",
+    "missing_2T_first_round_keys_block_case",
+    "missing_timestamp_or_negative_available_at_block_case",
+    "all_scopes_complete",
+    "no_prediction_reads_result_before_point"
+  ],
+  "checkpoint_grid": {
+    "diagnostic": "every integer 1 through 100 percent of SECOND TURN sections first totalized",
+    "primary": [
+      5,
+      10,
+      15,
+      20,
+      25,
+      30,
+      35,
+      40,
+      45,
+      50,
+      55,
+      60,
+      65,
+      70,
+      75,
+      80,
+      85,
+      90,
+      95
+    ],
+    "special": [
+      1,
+      2,
+      3,
+      4,
+      97,
+      98,
+      99,
+      100
+    ],
+    "ordering": "first internal recorded 2T totalization timestamp reaching each percentage; no future sections included",
+    "ties": "all first section totalization events with same timestamp are observed simultaneously",
+    "availability": "assumed availability_at=internal timestamp, not contemporaneously captured public availability"
+  },
+  "primary_case_criteria": {
+    "all_19_estimates": true,
+    "mae_not_worse_than_observed_share": true,
+    "maximum_not_worse_than_observed_share": true,
+    "mae_at_most_pp": 1,
+    "p95_abs_at_most_pp": 2,
+    "max_abs_at_most_pp": 3,
+    "winner_correct_at_5pct": true,
+    "no_wrong_deterministic_winner_call": true,
+    "conditional_physical_bounds_cover_truth": true,
+    "coverage_uncertainty_reported": true,
+    "source_integrity_passed": true
+  },
+  "holdout_decision": "Require 5 of 5 cases meet all primary criteria; any missing source/case remains BLOCKED and counts as failure, do not replace cases.",
+  "secondary_diagnostics": [
+    "per_integer_percent_error",
+    "time_to_first_correct_provisional_winner",
+    "wrong_winner_count",
+    "longest_consecutive_wrong_streak",
+    "early_1_to_4_percent",
+    "5_to_25",
+    "30_to_70",
+    "75_to_95",
+    "97_to_99",
+    "delta_vs_V4",
+    "delta_vs_raw_observed",
+    "sensitivity_to_delayed_zones",
+    "conditional_prediction_vs_actual"
+  ],
+  "no_after_the_fact_tuning": true,
+  "interpretation_limits": [
+    "New municipalities unused in V6 development provide external historical holdout only, not blinded prospective independent certification.",
+    "Public outcomes for these elections were already knowable before selection; choice of cases can bias generalization.",
+    "Checkpoints reconstructed from final section votes and first-totalization clocks, not authenticated public incremental snapshots.",
+    "Data and model owner are the same; independence of review is not established.",
+    "19 checkpoint metrics per municipality are correlated; independent statistical unit is election.",
+    "No 99.9% accuracy/probability certification is implied."
+  ]
+}
