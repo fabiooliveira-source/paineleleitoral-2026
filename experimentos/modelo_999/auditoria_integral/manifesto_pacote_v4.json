@@ -1,0 +1,148 @@
+{
+  "package": "v4-qualificacao-escopo-replay",
+  "created_at_utc": "2026-10-31T00:08:31.128587+00:00",
+  "files": [
+    {
+      "name": "preditor_causal_v2.py",
+      "sha256": "97ae308bb8356a32d902c10190708e39f067f1f3e3a5dcdc8737097d73a345a6",
+      "bytes": 3966
+    },
+    {
+      "name": "preditor_causal_v3.py",
+      "sha256": "30e942e8d992017deed95f5fbd60988b70c5f0332c055463fc8e9a40ad0ae91d",
+      "bytes": 4053
+    },
+    {
+      "name": "preditor_causal_v4.py",
+      "sha256": "8bc095931517c5971a4e957851b4b8bcdf62352c10435df7a3ab1dd0f25bd1cf",
+      "bytes": 5189
+    },
+    {
+      "name": "test_preditor_causal_v2.py",
+      "sha256": "c29b3d8c8bc81ab38f81baee9f0ba6f8625a3b330ad440afd6d4dc489c659354",
+      "bytes": 2697
+    },
+    {
+      "name": "test_preditor_causal_v3.py",
+      "sha256": "fda62e04179139aee88ba5cb4508707d782381a80a5d47ec98fbadcb58528d9c",
+      "bytes": 3677
+    },
+    {
+      "name": "test_preditor_causal_v4.py",
+      "sha256": "96621f152193cc5e4e1abf3bac159fcffe71d48019850b39b1f8ebf6d86c42d5",
+      "bytes": 3427
+    },
+    {
+      "name": "congelamento_v4.json",
+      "sha256": "a7816f5df9e32ea1eea7d585c0aee9c27f072f9e8437afa1140cc6510684aab8",
+      "bytes": 2012
+    },
+    {
+      "name": "construir_entradas_pareadas_v4.py",
+      "sha256": "375ba9f5f7b616f54cc2b7685510ac5ac6d32774bd027eb6d55bfdcd64a31e1b",
+      "bytes": 7780
+    },
+    {
+      "name": "avaliar_v4_pareado.py",
+      "sha256": "cce66f9603c33f31a32a4a47364012906f69b43ffc66213682835d9fd4aea576",
+      "bytes": 4515
+    },
+    {
+      "name": "verificar_v4_fracoes.py",
+      "sha256": "d83148e25b6af5994b10b8565c6b23e29ff9ca564361b2cd3099ad22ba337f86",
+      "bytes": 1979
+    },
+    {
+      "name": "qualificar_pacote_v4.py",
+      "sha256": "94e56c73af8d33d9811fbe5706318b47e8374dceac087cf0e2186521392e6ba4",
+      "bytes": 2876
+    },
+    {
+      "name": "obter_microdados_2020_v4.py",
+      "sha256": "d656318c2fc6e9699d081ca2410dbb8e8fc36ac31e11d4598ddba7caba6d2d4e",
+      "bytes": 1829
+    },
+    {
+      "name": "PROVA_LIMITES_V4.md",
+      "sha256": "fd3805ba91ec750a59647ea081fa592d76c8729190c7d3f31c70b0a0ab59dffa",
+      "bytes": 2468
+    },
+    {
+      "name": "manifesto_microdados_2022.json",
+      "sha256": "6c44c1b0c99c3bef0943cddd69ca4627a0d5217bf30dcea422e05f5fdd8dae17",
+      "bytes": 4956
+    },
+    {
+      "name": "manifesto2018.json",
+      "sha256": "8c7e42ea8fc2f8ac30e5d14f18d4e5af50e5a720bb2942f33ca58d153d7dfb78",
+      "bytes": 5016
+    },
+    {
+      "name": "manifesto2020.json",
+      "sha256": "bc91743f260b5cca69a5eb185704c8b81587b818db198f9e0a1e8cd802ac2461",
+      "bytes": 3599
+    },
+    {
+      "name": "entradas_pareadas_v4_2018.json",
+      "sha256": "ff44e3c435b1713777369e824e94fb139659625c579765815578afc6286ec92a",
+      "bytes": 102618
+    },
+    {
+      "name": "diagnostico_pareamento_v4_2018.json",
+      "sha256": "7d3cb43e93f219dc26386106295c59ea99fe27b6ab3e97023ef09683f4a4f80f",
+      "bytes": 2426
+    },
+    {
+      "name": "resultado_v4_2018.json",
+      "sha256": "7a33c5b82acf62dbb56731bfbad53f4184e912ccefd4e6f45b76e121fa589ef6",
+      "bytes": 11082
+    },
+    {
+      "name": "verificacao_fracoes_v4_2018.json",
+      "sha256": "a54f0edfaecd8b8ebb78aa8e3790ee9f13ddf86bc058717ccfce19091009ce85",
+      "bytes": 252
+    },
+    {
+      "name": "entradas_pareadas_v4_2022.json",
+      "sha256": "3d32270c7eb9f28e2bd9fcb055167cec92d26340203b037f7aa8f2dc3d780e9b",
+      "bytes": 104251
+    },
+    {
+      "name": "diagnostico_pareamento_v4_2022.json",
+      "sha256": "8844281d8ccf7ce49412878e34eea53a014b12f97dbca3da96aed7e6e93d490a",
+      "bytes": 709
+    },
+    {
+      "name": "resultado_v4_2022.json",
+      "sha256": "459e81be42fc611ff7561c29b5c15a689d57dc559888125262da432351414aa6",
+      "bytes": 11109
+    },
+    {
+      "name": "verificacao_fracoes_v4_2022.json",
+      "sha256": "a1550d1e51dc6700c39ca475282e2ce12fd325d1f896609746cd26128b914973",
+      "bytes": 252
+    },
+    {
+      "name": "entradas_pareadas_v4_2020.json",
+      "sha256": "41f9ecfbcb37e3e4f211437f65fb280477fccf968af6be30ece9f3327840f9d6",
+      "bytes": 204246
+    },
+    {
+      "name": "diagnostico_pareamento_v4_2020.json",
+      "sha256": "c82888bdfdc27fcc3690f83bd89a63844c9c61a774d2cd1ad2c91bef94a526e1",
+      "bytes": 674
+    },
+    {
+      "name": "resultado_v4_2020.json",
+      "sha256": "832e38c2a24d5b43b83d581622543fe92171e5f3a05cd8c7ed793e04b1d77808",
+      "bytes": 11113
+    },
+    {
+      "name": "verificacao_fracoes_v4_2020.json",
+      "sha256": "37d792144532aa6da94bc9677a6fb5b336cf212519a21e410120ac96ad3fb500",
+      "bytes": 252
+    }
+  ],
+  "not_a_signature": "Checksums locais fixam identidade e reproducao. Nao sao assinatura ou certificacao institucional.",
+  "external_predictor_freeze_commit": "04ea90abb8c535f8ee17eeb26fa781b246e03e88"
+}
