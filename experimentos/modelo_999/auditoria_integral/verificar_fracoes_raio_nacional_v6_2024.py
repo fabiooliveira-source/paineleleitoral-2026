@@ -23,7 +23,7 @@ def run():
         d=json.loads(file.read_text())
         comparisons=0;closed=0;abstentions=0;max_error=0.
         for x in d["checkpoints"]:
-            p=predict_v6_guardado if False else predict_v6_guarded(x["current"],d["reference"],x["ledger"])
+            p=predict_v6_guarded(x["current"],d["reference"],x["ledger"])
             if p["status"]=="CLOSED":
                 closed+=1
                 if x["threshold_pct"]!=100 or abs(p["estimate_a"]-d["target_a"])>1e-12:
