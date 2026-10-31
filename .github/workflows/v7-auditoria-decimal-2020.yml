@@ -1,0 +1,45 @@
+name: V7 2020 - auditoria Decimal independente da formula
+on:
+  push:
+    branches: [experimento/modelo-territorial-999]
+    paths:
+      - '.github/workflows/v7-auditoria-decimal-2020.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+jobs:
+  independent-numeric:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Verify frozen model against preregistered SHA
+        run: |
+          python - <<'PY'
+          import json,subprocess,pathlib
+          root=pathlib.Path('experimentos/modelo_999/auditoria_integral')
+          p=json.loads((root/'protocolo_v7_holdout_temporal_2020_v1.json').read_text())
+          blob=subprocess.check_output(['git','hash-object',str(root/p['model_path'])],text=True).strip()
+          assert blob==p['model_git_blob_sha1']
+          PY
+      - name: Retrieve all 18 originally frozen case inputs
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          dest=experimentos/modelo_999/auditoria_integral/raio_temporal_v7_2020
+          mkdir -p "$dest"
+          for uf in SE PA RR MT CE GO PB AL AM RS RO PE AC RJ MA PI ES BA; do
+            gh run download 41252574828 --repo fabiooliveira-source/paineleleitoral-2026 --name "v7-holdout-2020-input-$uf" --dir "$dest"
+          done
+      - name: Reimplement and compare all V7 numeric calculations with 48-digit Decimal
+        run: python experimentos/modelo_999/auditoria_integral/auditar_decimal_independente_v7_2020.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: V7-2020-decimal-auditoria
+          path: experimentos/modelo_999/auditoria_integral/raio_temporal_v7_2020/resultado_auditoria_decimal_v7_2020.json
+          if-no-files-found: warn
