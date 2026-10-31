@@ -22,7 +22,7 @@ import zipfile
 ROOT=pathlib.Path(__file__).resolve().parent
 DATA=ROOT/"microdados2020"
 OUT=ROOT/"raio_temporal_v7_2020"
-PROTOCOL=ROOT/"protocolo_raio_temporal_v7_2020_v1.json"
+PROTOCOL=ROOT/"protocolo_v7_holdout_temporal_2020_v1.json"
 TZ=dt.timezone(dt.timedelta(hours=-3))
 
 def normalized(name):
