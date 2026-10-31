@@ -1,0 +1,42 @@
+{
+  "version": "stress-v4-ampliado-1",
+  "model_frozen": true,
+  "acceptance": {
+    "safety": "100% dos controles de informacao futura conhecida, ordem de chegada, ledger completo, sincronismo, contagens e referencia devem respeitar contrato; erro ou abstencao e aceitavel sob entrada invalida, sem projecao residual.",
+    "reference": "Nos tres replays validos, 19 estimativas disponiveis, MAE e maximo nao superiores ao baseline observado.",
+    "synthetic_ordering": "Em cada cenario de ordem artificial de blocos2018/2022, MAE e maximo nao superiores ao baseline; publicar falhas, sem selecionar somente sementes favoraveis.",
+    "bounds": "Nenhum alvo fora dos limites sob as hipoteses sinteticas verificadas e nenhuma indicacao matematica errada.",
+    "availability": "Publicar separadamente cobertura das estimativas; nao tratar abstencao como errozero nem como garantia de disponibilidade.",
+    "repair_policy": "Falha reproduzivel de contrato sera corrigida em nova versao, preservando preditor congelado. Mudancas motivadas por desempenho invalidam qualificacao externa anterior para a versao nova."
+  },
+  "stress_types": [
+    "atrasos1/5/15/30min",
+    "perda1/10/50/100pctestratos",
+    "duplicatas",
+    "conflitos",
+    "datasfuturas",
+    "referenciafutura",
+    "contagensnegativas/fracionarias/booleanas",
+    "eleitoradoinvalido",
+    "divergenciadototal",
+    "referenciaobservadainflada",
+    "revisoesdecrescentes",
+    "permutacoesaleatorias",
+    "composicaoUFconcentrada",
+    "ordenacaoporperfilhistorico"
+  ],
+  "ordering_data": "Blocos das 19 coortes historicas ja salvas + bloco final porUF, preservando totais1T/2T; simulacao explicita, nao alteracao do replay oficial. Eleitorado contado sintetico iguala votos validos observados para produzir limiteR conservador.",
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "no_probability_certification": true
+}
