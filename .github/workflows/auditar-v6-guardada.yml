@@ -1,0 +1,27 @@
+name: V6 guardada - auditoria adversarial
+on:
+  push:
+    branches: [experimento/modelo-territorial-999]
+    paths:
+      - 'experimentos/modelo_999/auditoria_integral/preditor_v6_guardado.py'
+      - 'experimentos/modelo_999/auditoria_integral/auditar_v6_guardada.py'
+      - '.github/workflows/auditar-v6-guardada.yml'
+  workflow_dispatch:
+jobs:
+  structural-stress:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Run regression and adversarial validations
+        run: python experimentos/modelo_999/auditoria_integral/auditar_v6_guardada.py
+      - name: Publish audit record regardless of gate
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: v6-guardada-auditoria
+          path: experimentos/modelo_999/auditoria_integral/resultado_auditoria_v6_guardada.json
+          if-no-files-found: warn
