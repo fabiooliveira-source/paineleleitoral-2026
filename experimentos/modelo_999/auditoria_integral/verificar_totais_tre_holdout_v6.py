@@ -35,7 +35,7 @@ def run():
                             "reference_url":SOURCES[code],
                             "expected_official":expected,
                             "reconstructed":final,"match":ok})
-        print(json.dumps({"municipality":code,"crosscheck_match":ok},flush=True))
+        print(json.dumps({"municipality":code,"crosscheck_match":ok}),flush=True)
     result={"status":"INDEPENDENT_AGGREGATE_RECONCILIATION",
             "cases":comparisons,"all_match":all(x["match"] for x in comparisons),
             "not_independent_model_certification":True}
