@@ -1,0 +1,47 @@
+name: V7 2020 - congelar 18 arquivos de holdout antes de pontuar
+on:
+  push:
+    branches: [experimento/modelo-territorial-999]
+    paths:
+      - '.github/workflows/v7-congelar-insumos-2020.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+jobs:
+  freeze-historical-data-only:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Wait for all preregistered 2020 source reconstructions, fail closed
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          for i in $(seq 1 180); do
+            state=$(gh api repos/fabiooliveira-source/paineleleitoral-2026/actions/runs/41252574828 --jq .status)
+            if [ "$state" = "completed" ]; then break; fi
+            sleep 20
+          done
+          test "$(gh api repos/fabiooliveira-source/paineleleitoral-2026/actions/runs/41252574828 --jq .conclusion)" = "success"
+      - name: Download all original 18 state artifacts; never substitute failed cities
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          dest=experimentos/modelo_999/auditoria_integral/raio_temporal_v7_2020
+          mkdir -p "$dest"
+          for uf in SE PA RR MT CE GO PB AL AM RS RO PE AC RJ MA PI ES BA; do
+            gh run download 41252574828 --repo fabiooliveira-source/paineleleitoral-2026 --name "v7-holdout-2020-input-$uf" --dir "$dest"
+          done
+      - name: Verify TSE files and calculate 18 case hash lock WITHOUT computing forecasts
+        run: python experimentos/modelo_999/auditoria_integral/agregar_v7_insumos_2020.py
+      - name: Save proposed SHA-256 lock for separate commit before first scoring
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: v7-proposta-congelamento-2020-18-casos
+          path: experimentos/modelo_999/auditoria_integral/raio_temporal_v7_2020/proposed_hash_lock_before_scoring.json
+          if-no-files-found: warn
