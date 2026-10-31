@@ -1,0 +1,48 @@
+name: V7 holdout temporal 2020 - preparar 18 estados sem previsoes
+on:
+  push:
+    branches: [experimento/modelo-territorial-999]
+    paths:
+      - '.github/workflows/v7-preparar-holdout-temporal-2020.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  preparar-fontes-2020:
+    runs-on: ubuntu-latest
+    timeout-minutes: 55
+    strategy:
+      fail-fast: false
+      max-parallel: 8
+      matrix:
+        uf: [SE, PA, RR, MT, CE, GO, PB, AL, AM, RS, RO, PE, AC, RJ, MA, PI, ES, BA]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Verify frozen V7 code SHA and preregistration from repository
+        run: |
+          python - <<'PY'
+          import subprocess,json,pathlib
+          root=pathlib.Path('experimentos/modelo_999/auditoria_integral')
+          p=json.loads((root/'protocolo_v7_holdout_temporal_2020_v1.json').read_text())
+          assert p['status']=='PREREGISTERED_BEFORE_2020_V7_CASE_SCORING'
+          assert len(p['cases'])==18
+          assert p['model_parameter_tuning_prohibited']
+          sha=subprocess.check_output(['git','hash-object',str(root/p['model_path'])],text=True).strip()
+          assert sha==p['model_git_blob_sha1'], 'V7 model modified AFTER holdout preregistration'
+          print('V7 model SHA frozen and 2020 roster verified',flush=True)
+          PY
+      - name: Rebuild 100 historically reconstructed TSE checkpoints, no model imported
+        run: python experimentos/modelo_999/auditoria_integral/preparar_holdout_temporal_v7_2020.py --uf ${{ matrix.uf }}
+      - name: Preserve result and source hashes even if reconstruction fails
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: v7-holdout-2020-input-${{ matrix.uf }}
+          retention-days: 30
+          path: |
+            experimentos/modelo_999/auditoria_integral/raio_temporal_v7_2020/${{ matrix.uf }}_manifest.json
+            experimentos/modelo_999/auditoria_integral/raio_temporal_v7_2020/${{ matrix.uf }}_checkpoints_1_100.json
+          if-no-files-found: warn
