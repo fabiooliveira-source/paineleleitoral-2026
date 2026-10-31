@@ -1,0 +1,16 @@
+{
+  "metric": "frequencia_descritiva_do_vencedor_na_projecao_pontual_em_ordens_artificiais",
+  "correct": 677,
+  "points": 684,
+  "observed_accuracy_pct": 98.9766081871345,
+  "highest_integer_target_observed_pct": 98,
+  "statistically_certified_target_pct": null,
+  "development_years": [
+    2018,
+    2022
+  ],
+  "independent_new_validation": false,
+  "warning": "684 pontos e36 cenarios sao derivados de duas eleicoes de desenvolvimento; nao sao684 eleicoes independentes. Frequencia observada nao e probabilidade calibrada.",
+  "conditional_calls_synthetic": 0,
+  "distinct_development_elections": 2
+}
