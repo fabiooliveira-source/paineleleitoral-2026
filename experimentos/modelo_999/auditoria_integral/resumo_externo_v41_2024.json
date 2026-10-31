@@ -1,0 +1,132 @@
+{
+  "protocol_commit": "537cc770f07855a3bef0a5febe3ac719dcb427dd",
+  "model_unchanged": true,
+  "cases": [
+    {
+      "municipality": "13897",
+      "name": "Fortaleza",
+      "year": 2024,
+      "status": "ACCEPTED_IN_PREDEFINED_BENCHMARK",
+      "role": "external_reconstructed_municipal_challenge_case",
+      "input_sha256": "499bff5844eb667f6b94495ed4b4ddfc1edec81b48498205b24dc209cd44b4b0",
+      "target_a_pct": 50.38123633416536,
+      "metrics": {
+        "mae_pp": 0.11549679629662778,
+        "p95_abs_error_pp": 0.39516395355557277,
+        "max_abs_error_pp": 0.4373747369318115,
+        "bias_pp": -0.1070961178824834
+      },
+      "baseline": {
+        "mae_pp": 0.17484668282249574,
+        "p95_abs_error_pp": 0.5829706681281389,
+        "max_abs_error_pp": 1.2307122483731392
+      },
+      "criteria": {
+        "all19_estimates": true,
+        "mae_not_worse_than_baseline": true,
+        "maximum_not_worse_than_baseline": true,
+        "mae_at_most1pp": true,
+        "p95_at_most2pp": true,
+        "maximum_at_most3pp": true,
+        "winner_correct_at5": true,
+        "no_wrong_conditional_call": true,
+        "bounds_cover_all": true,
+        "all95_fault_checks": true
+      },
+      "winner_correct_points": 17,
+      "fault_checks_passed": 95,
+      "model_adjusted_after_2024": false,
+      "probabilistic_certificate": false,
+      "limitations": [
+        "Public historical outcomes were known when choosing challenging cases; not a random representative sample.",
+        "Final section votes and internal first-totalization clocks are retrospective, not authenticated public snapshots.",
+        "Municipal cases do not constitute external national-presidential validation."
+      ]
+    },
+    {
+      "municipality": "87912",
+      "name": "Pelotas",
+      "year": 2024,
+      "status": "NOT_ACCEPTED_ALL_CRITERIA",
+      "role": "external_reconstructed_municipal_challenge_case",
+      "input_sha256": "d829c9690755fe6be7470b721fb3ff73eb1c6557aad3e5e61a29739f7e5c378c",
+      "target_a_pct": 50.36249146150358,
+      "metrics": {
+        "mae_pp": 0.32650974346483413,
+        "p95_abs_error_pp": 0.6204686955098817,
+        "max_abs_error_pp": 0.7571713936099567,
+        "bias_pp": -0.32650974346483413
+      },
+      "baseline": {
+        "mae_pp": 2.5817574109095465,
+        "p95_abs_error_pp": 3.908404975662343,
+        "max_abs_error_pp": 4.37981942793948
+      },
+      "criteria": {
+        "all19_estimates": true,
+        "mae_not_worse_than_baseline": true,
+        "maximum_not_worse_than_baseline": true,
+        "mae_at_most1pp": true,
+        "p95_at_most2pp": true,
+        "maximum_at_most3pp": true,
+        "winner_correct_at5": false,
+        "no_wrong_conditional_call": true,
+        "bounds_cover_all": true,
+        "all95_fault_checks": true
+      },
+      "winner_correct_points": 11,
+      "fault_checks_passed": 95,
+      "model_adjusted_after_2024": false,
+      "probabilistic_certificate": false,
+      "limitations": [
+        "Public historical outcomes were known when choosing challenging cases; not a random representative sample.",
+        "Final section votes and internal first-totalization clocks are retrospective, not authenticated public snapshots.",
+        "Municipal cases do not constitute external national-presidential validation."
+      ]
+    },
+    {
+      "municipality": "17612",
+      "name": "Natal",
+      "year": 2024,
+      "status": "NOT_ACCEPTED_ALL_CRITERIA",
+      "role": "external_reconstructed_municipal_challenge_case",
+      "input_sha256": "771ad8a3e7517aa03fc66e7aef6a4f67548a54ad26ef7d1e293987d0a1e0d63a",
+      "target_a_pct": 44.66331158744951,
+      "metrics": {
+        "mae_pp": 0.26725961599427994,
+        "p95_abs_error_pp": 0.7182574885260689,
+        "max_abs_error_pp": 1.2303564671696632,
+        "bias_pp": -0.11587290282710713
+      },
+      "baseline": {
+        "mae_pp": 0.25757432626151655,
+        "p95_abs_error_pp": 0.640362583161541,
+        "max_abs_error_pp": 0.9227955037226954
+      },
+      "criteria": {
+        "all19_estimates": true,
+        "mae_not_worse_than_baseline": false,
+        "maximum_not_worse_than_baseline": false,
+        "mae_at_most1pp": true,
+        "p95_at_most2pp": true,
+        "maximum_at_most3pp": true,
+        "winner_correct_at5": true,
+        "no_wrong_conditional_call": true,
+        "bounds_cover_all": true,
+        "all95_fault_checks": true
+      },
+      "winner_correct_points": 19,
+      "fault_checks_passed": 95,
+      "model_adjusted_after_2024": false,
+      "probabilistic_certificate": false,
+      "limitations": [
+        "Public historical outcomes were known when choosing challenging cases; not a random representative sample.",
+        "Final section votes and internal first-totalization clocks are retrospective, not authenticated public snapshots.",
+        "Municipal cases do not constitute external national-presidential validation."
+      ]
+    }
+  ],
+  "accepted_cases": 1,
+  "evaluated_cases": 3,
+  "decision": "BENCHMARK_COMPLETED_NO_AUTOMATIC_INTEGRAL_CERTIFICATION"
+}
