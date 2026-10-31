@@ -26,8 +26,20 @@ def run():
             p=predict_v6_guarded(x["current"],d["reference"],x["ledger"])
             if p["status"]=="CLOSED":
                 closed+=1
-                if x["threshold_pct"]!=100 or abs(p["estimate_a"]-d["target_a"])>1e-12:
-                    raise RuntimeError("invalid complete point "+uf)
+                # Elections can be CLOSED before 100% of sections: the remaining
+                # sections may have zero registered electorate/votes. The closure
+                # contract is remaining eligible voters == 0, NOT section count.
+                eligible_remaining=(x["current"]["electorate_total"]-
+                                    x["current"]["electorate_counted"])
+                if eligible_remaining!=0 or abs(p["estimate_a"]-d["target_a"])>1e-12:
+                    raise RuntimeError("invalid complete point "+uf+
+                        " threshold="+str(x["threshold_pct"])+
+                        " remaining="+str(eligible_remaining)+
+                        " predicted="+str(p["estimate_a"])+
+                        " target="+str(d["target_a"]))
+                if x["threshold_pct"]!=100:
+                    print(json.dumps({"early_closed_with_zero_electorate":uf,
+                                      "checkpoint":x["threshold_pct"]}),flush=True)
                 continue
             if p["estimate_a"] is None:
                 abstentions+=1
