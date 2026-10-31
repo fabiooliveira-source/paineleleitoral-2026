@@ -5,6 +5,8 @@ The criteria were originally registered for V4.1 (pre-V6), but V6 was devised
 while the 2024 data/outcomes were already known.
 """
 import hashlib
+import copy
+from datetime import datetime,timedelta
 import json
 import pathlib
 from avaliar_externos_v41_2024 import criteria_for, quantile
@@ -21,6 +23,7 @@ def run():
         target=d["target_a"]
         points=[]
         previous=None
+        stress_checks=0
         for frame in d["checkpoints"]:
             curr=frame["current"]
             p=predict_v6_guarded(curr,d["reference"],frame["ledger"],previous)
@@ -43,6 +46,28 @@ def run():
                 "coverage_first_valid":p.get("coverage_first_valid"),
                 "model_vs_v4_pp":100*(estimate-p["comparison_v4_estimate_a"]) if estimate is not None else None,
             })
+            # Five independently executed V6 guard fault injections/checkpoint.
+            broken=[]
+            f=copy.deepcopy(frame);f["ledger"]=f["ledger"][1:]
+            broken.append(("missing_scope",f))
+            f=copy.deepcopy(frame)
+            late=(datetime.fromisoformat(curr["timestamp"])+timedelta(days=1)).isoformat()
+            f["ledger"][0]["timestamp"]=late;f["ledger"][0]["available_at"]=late
+            broken.append(("future_scope",f))
+            f=copy.deepcopy(frame)
+            stale=(datetime.fromisoformat(curr["timestamp"])-timedelta(minutes=5)).isoformat()
+            f["ledger"][0]["timestamp"]=stale;f["ledger"][0]["available_at"]=stale
+            broken.append(("stale_scope",f))
+            f=copy.deepcopy(frame);other=copy.deepcopy(f["ledger"][0])
+            other["votes_a"]+=1;f["ledger"].append(other)
+            broken.append(("conflicting_duplicate",f))
+            f=copy.deepcopy(frame);f["current"]["votes_a"]+=1
+            broken.append(("aggregate_mismatch",f))
+            for label,bad in broken:
+                b=predict_v6_guarded(bad["current"],d["reference"],bad["ledger"])
+                if b["estimate_a"] is not None or b["status"]!="ABSTAIN":
+                    raise AssertionError("fail-open "+name+" "+str(curr["timestamp"])+" "+label)
+                stress_checks+=1
             if p["status"] in ("ESTIMATED","CLOSED"):
                 previous=curr
         errors=[x["error_pp"] for x in points if x["error_pp"] is not None]
@@ -58,15 +83,12 @@ def run():
             "p95_abs_error_pp":quantile([abs(x) for x in base]),
             "max_abs_error_pp":max(map(abs,base)),
         }
-        criteria=criteria_for(metrics,baseline,points,len(errors),95)
-        # Audited external V4.1 had 95 fault checks per municipality, but
-        # that historical number must NOT be asserted as a new V6 test run.
-        # The 95 here is an explicit compatibility input to the old criteria.
-        # An independent V6 adversarial CI is separately required below.
+        criteria=criteria_for(metrics,baseline,points,len(errors),stress_checks)
+        # All 95 fault checks were executed against V6 in this run.
         cases.append({
             "name":name,"municipality":code,"target_a_pct":100*target,
             "input_sha256":hashlib.sha256(path.read_bytes()).hexdigest(),
-            "criteria":criteria,
+            "criteria":criteria,"v6_fault_checks_executed":stress_checks,
             "accepted_existing_benchmark":all(criteria.values()),
             "metrics_v6":metrics,
             "observed_baseline":baseline,
@@ -88,7 +110,7 @@ def run():
         "scientific_external_certification":False,
         "notes":[
           "The V6 was modified after its developers saw these cities, making this a development benchmark.",
-          "The 95 original V4.1 fault checks are reused only as a fixed benchmark criterion; new V6 checks are independently in the adversarial workflow.",
+          "Five V6 fault injections were executed at each of the 19 checkpoints per municipality (95 per city).",
           "An actual formal external certification requires holdout cities and authentic data availability timelines.",
           "Every municipal checkpoint is correlated with checkpoints from the same election.",
           "A winner estimate at a checkpoint is NOT a probabilistic election call."
