@@ -1,0 +1,45 @@
+name: V7 experimental - 15 cidades e invariantes adversariais
+on:
+  push:
+    branches: [experimento/modelo-territorial-999]
+    paths:
+      - '.github/workflows/v7-auditar-invariantes.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+jobs:
+  contract-invariants:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Confirm V7 code already frozen
+        run: |
+          python - <<'PY'
+          import pathlib,subprocess,json
+          root=pathlib.Path('experimentos/modelo_999/auditoria_integral')
+          p=json.loads((root/'protocolo_v7_holdout_temporal_2020_v1.json').read_text())
+          assert subprocess.check_output(['git','hash-object',str(root/p['model_path'])],text=True).strip()==p['model_git_blob_sha1']
+          PY
+      - name: Download exact original 15-city development replays
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          dest=experimentos/modelo_999/auditoria_integral/raio_nacional_v6_2024
+          mkdir -p "$dest"
+          for uf in AM PA RO TO BA PB SE PE GO MT MS MG RJ SP PR; do
+            gh run download 41250338824 --repo fabiooliveira-source/paineleleitoral-2026 --name "raio-nacional-2024-$uf" --dir "$dest"
+          done
+      - name: Execute fail-closed mutations
+        run: python experimentos/modelo_999/auditoria_integral/auditar_invariantes_v7_15_cidades.py
+      - name: Retain evidence on pass or failure
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: V7-invariantes-adversariais
+          path: experimentos/modelo_999/auditoria_integral/raio_nacional_v6_2024/auditoria_invariantes_v7.json
+          if-no-files-found: warn
