@@ -1,0 +1,29 @@
+name: V6 - painel seguro nas tres cidades
+on:
+  push:
+    branches: [experimento/modelo-territorial-999]
+    paths:
+      - 'experimentos/modelo_999/auditoria_integral/preditor_v6_painel_seguro.py'
+      - 'experimentos/modelo_999/auditoria_integral/avaliar_painel_seguro_v6_tres_cidades.py'
+      - '.github/workflows/painel-seguro-v6-3-cidades.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  release-policy-check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Check estimate coverage and conditional winner calls
+        run: python experimentos/modelo_999/auditoria_integral/avaliar_painel_seguro_v6_tres_cidades.py
+      - name: Archive entire per-checkpoint record
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: painel-seguro-v6
+          path: experimentos/modelo_999/auditoria_integral/resultado_painel_seguro_v6.json
+          if-no-files-found: warn
