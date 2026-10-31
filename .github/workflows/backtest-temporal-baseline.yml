@@ -1,0 +1,24 @@
+name: Backtest temporal independente - baseline
+on:
+  workflow_dispatch:
+  push:
+    branches: [experimento/modelo-territorial-999]
+    paths:
+      - 'scripts/backtest_temporal_baseline.py'
+      - '.github/workflows/backtest-temporal-baseline.yml'
+permissions:
+  contents: read
+jobs:
+  baseline:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validar sintaxe Python
+        run: python3 -m py_compile scripts/backtest_temporal_baseline.py
+      - name: Executar baseline temporal sem vazamento
+        run: python3 scripts/backtest_temporal_baseline.py
+      - name: Publicar relatório como artefato
+        uses: actions/upload-artifact@v4
+        with:
+          name: backtest-temporal-baseline
+          path: dados/2026/backtest/backtest_temporal_baseline.json
