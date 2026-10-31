@@ -1,0 +1,50 @@
+name: Stress ampliado V4.1
+on:
+  push:
+    branches: ['experimento/modelo-territorial-999']
+    paths: ['.github/workflows/stress-ampliado-v41.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  stress-regressao:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Executar testes unitarios e integracao
+        run: python -m unittest discover -s experimentos/modelo_999/auditoria_integral -p 'test_*.py' -v
+      - name: Reproduzir controles e ordens artificiais
+        run: |
+          python experimentos/modelo_999/auditoria_integral/stress_ampliado_v4.py v4 > /tmp/stress-v4.log
+          python experimentos/modelo_999/auditoria_integral/stress_ampliado_v4.py v41 > /tmp/stress-v41.log
+      - name: Conferir criterios sem reduzir regua
+        run: |
+          python - <<'PYCODE'
+          import pathlib,json,hashlib
+          root=pathlib.Path('experimentos/modelo_999/auditoria_integral')
+          manifest=json.loads((root/'congelamento_guard_v41.json').read_text())
+          for item in manifest['files']:
+              assert hashlib.sha256((root/item['name']).read_bytes()).hexdigest()==item['sha256']
+          assert hashlib.sha256((root/'preditor_causal_v4.py').read_bytes()).hexdigest()==manifest['core_sha256_unchanged']
+          old=json.loads((root/'stress_ampliado_v4.json').read_text())
+          new=json.loads((root/'stress_ampliado_v41.json').read_text())
+          assert old['safety']['failed']==114
+          assert new['safety']['checks']==1710 and new['safety']['failed']==0
+          assert new['synthetic_order']['scenarios']==36 and new['synthetic_order']['failed']==0
+          assert new['decision']=='ACCEPTED_WITHIN_DECLARED_STRESS_SCOPE'
+          print('V4.1: 1710 controles e36 cenarios aprovados no escopo; sem certificado probabilistico')
+          PYCODE
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: stress-ampliado-v41
+          path: |
+            experimentos/modelo_999/auditoria_integral/stress_ampliado_v4.json
+            experimentos/modelo_999/auditoria_integral/stress_ampliado_v41.json
+            experimentos/modelo_999/auditoria_integral/stress_detalhes_v41.json
+            /tmp/stress-v4.log
+            /tmp/stress-v41.log
