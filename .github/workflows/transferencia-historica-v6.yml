@@ -1,0 +1,22 @@
+name: Transferencia historica V6 2020 2022
+on:
+  push:
+    branches: [experimento/modelo-territorial-999]
+    paths:
+      - 'experimentos/modelo_999/auditoria_integral/avaliar_transferencia_v6_2018_2022_2020.py'
+      - '.github/workflows/transferencia-historica-v6.yml'
+  workflow_dispatch:
+jobs:
+  transfer:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Historical transfer check
+        run: python experimentos/modelo_999/auditoria_integral/avaliar_transferencia_v6_2018_2022_2020.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: transferencia-v6-historico
+          path: experimentos/modelo_999/auditoria_integral/resultado_transferencia_v6_historico.json
