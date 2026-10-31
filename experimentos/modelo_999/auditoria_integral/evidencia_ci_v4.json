@@ -1,0 +1,59 @@
+{
+  "run": {
+    "id": 41148598344,
+    "head_sha": "e5adfaadb08ee19f8e5f71932693fbfb499b5e26",
+    "status": "completed",
+    "conclusion": "success",
+    "created_at": "2026-10-31T00:09:27Z",
+    "updated_at": "2026-10-31T00:10:23Z",
+    "html_url": "https://github.com/fabiooliveira-source/paineleleitoral-2026/actions/runs/41148598344"
+  },
+  "jobs": [
+    {
+      "id": 124379462859,
+      "name": "replay-pinned",
+      "status": "completed",
+      "conclusion": "success",
+      "checks": [
+        "37 unit tests",
+        "28 pinned files",
+        "3 replay evaluations",
+        "285 stress checks",
+        "3 exact-fraction recomputations"
+      ],
+      "scope_result": "QUALIFICADO_NO_ESCOPO_REPLAY_PAREADO",
+      "integral_certificate": false
+    },
+    {
+      "id": 124379462572,
+      "name": "full-source-2020",
+      "status": "completed",
+      "conclusion": "success",
+      "checks": {
+        "job_id": 124379462572,
+        "source_hash_checked": true,
+        "input_byte_reproduction_message": true,
+        "source2020_count": true,
+        "metrics_seen": true,
+        "fraction_check_seen": true
+      }
+    }
+  ],
+  "artifacts": [
+    {
+      "id": 13022500221,
+      "name": "qualificacao-v4-escopo",
+      "digest_sha256": "c1ea672fc1335a033e979d2bc45c8509b1b6b1eba5dc5ab344f06972fd0dc466"
+    },
+    {
+      "id": 13021204333,
+      "name": "fontes2020-v4-reproducao",
+      "digest_sha256": "ea395b96c83d86bc314ed4ee06eb126fcf98b6c575f0a55edff0c70f55421f2d"
+    }
+  ],
+  "observations": [
+    "Evidence retrieved from GitHub connector after completion.",
+    "Independent execution environment is not independent expert review.",
+    "Artifact expiration follows GitHub retention policy; pinned code and input references remain in repository."
+  ]
+}
