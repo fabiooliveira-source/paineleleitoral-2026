@@ -4,6 +4,8 @@ on:
     branches: [experimento/modelo-territorial-999]
     paths:
       - '.github/workflows/investigar-causas-v6-15-cidades.yml'
+      - 'experimentos/modelo_999/auditoria_integral/diagnosticar_causas_v6_15_cidades.py'
+      - 'experimentos/modelo_999/auditoria_integral/estressar_zonas_v6_15_cidades.py'
   workflow_dispatch:
 permissions:
   contents: read
