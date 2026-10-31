@@ -1,0 +1,91 @@
+{
+  "protocol_commit": "537cc770f07855a3bef0a5febe3ac719dcb427dd",
+  "model_retuned": false,
+  "files": [
+    {
+      "name": "obter_fontes_2024_v41.py",
+      "sha256": "192998db529c3b7cafdefbe2c6c4889a9255c633f16c492edd98686af70343ab",
+      "bytes": 1754
+    },
+    {
+      "name": "preparar_caso_externo_2024.py",
+      "sha256": "67e7597a03deb69bd7dbb257276819549fdeca2ba7a3bc5377f57a0b36d87363",
+      "bytes": 8125
+    },
+    {
+      "name": "avaliar_externos_v41_2024.py",
+      "sha256": "04dd98053459c15c6e4c99ec1e1bb6aa1d1259d25c3a705bf3ca5579bc2d99a2",
+      "bytes": 6188
+    },
+    {
+      "name": "verificar_externos_2024_fracoes.py",
+      "sha256": "6260ac0027cb6f2a225eb0f181729bbed0e394e8d849ae42d815cdf8ea653ce6",
+      "bytes": 1955
+    },
+    {
+      "name": "test_externos_v41_2024.py",
+      "sha256": "f6a19d2f7ff4b1181314f81313a90f01ab0e42d953c9d81375dcb7eb5c1c6ec9",
+      "bytes": 1684
+    },
+    {
+      "name": "preditor_causal_v4.py",
+      "sha256": "8bc095931517c5971a4e957851b4b8bcdf62352c10435df7a3ab1dd0f25bd1cf",
+      "bytes": 5189
+    },
+    {
+      "name": "preditor_v4_guardado.py",
+      "sha256": "099481a8e0b0efd7378fd5649d7a703f686101e903c08e11c15dae07c8f8cc95",
+      "bytes": 2651
+    },
+    {
+      "name": "congelamento_guard_v41.json",
+      "sha256": "6bf8afae3331383b2eb4c6d948cd464adef674352ae213d5f5c18b7984b52fb0",
+      "bytes": 1205
+    },
+    {
+      "name": "externos2024/13897/diagnostico_pareamento_v4_2024.json",
+      "sha256": "88a27494416f8ede32d51ce4818798fe2ba72212b89eb33b85168907a2bc7be7",
+      "bytes": 664
+    },
+    {
+      "name": "externos2024/13897/entradas_pareadas_v4_2024.json",
+      "sha256": "499bff5844eb667f6b94495ed4b4ddfc1edec81b48498205b24dc209cd44b4b0",
+      "bytes": 63084
+    },
+    {
+      "name": "externos2024/13897/resultado_externo_v41_2024.json",
+      "sha256": "d0d4376ea54816250ad229a5c8828b24b6de8131b70ab905cb921a33a827a927",
+      "bytes": 11596
+    },
+    {
+      "name": "externos2024/17612/diagnostico_pareamento_v4_2024.json",
+      "sha256": "a1b4337f4ece778bc0c03fd8a43af5ba28ba6b7c946cfb3725a1efdeddf846a3",
+      "bytes": 659
+    },
+    {
+      "name": "externos2024/17612/entradas_pareadas_v4_2024.json",
+      "sha256": "771ad8a3e7517aa03fc66e7aef6a4f67548a54ad26ef7d1e293987d0a1e0d63a",
+      "bytes": 21644
+    },
+    {
+      "name": "externos2024/17612/resultado_externo_v41_2024.json",
+      "sha256": "5458abde4a3e595291b37b78e715fb3ed81dd0c547a9fe00de175074c9275e13",
+      "bytes": 11557
+    },
+    {
+      "name": "externos2024/87912/diagnostico_pareamento_v4_2024.json",
+      "sha256": "1ec096afd601be983a77c0653a0e96250ccf83256dcdad58500e41291c0a0bc4",
+      "bytes": 651
+    },
+    {
+      "name": "externos2024/87912/entradas_pareadas_v4_2024.json",
+      "sha256": "d829c9690755fe6be7470b721fb3ff73eb1c6557aad3e5e61a29739f7e5c378c",
+      "bytes": 14786
+    },
+    {
+      "name": "externos2024/87912/resultado_externo_v41_2024.json",
+      "sha256": "c1c219c57afeb2978da264bc4cc667f39b4c852946000b35a60280b52ff43d46",
+      "bytes": 11534
+    }
+  ]
+}
