@@ -55,6 +55,6 @@ def predict_for_panel(current,reference,ledger,previous=None):
             "single_zone_unidentifiable":invalid,
             "single_zone_variants_tested":len(values)+invalid,
             "v4_v6_estimated_leaders_disagree":leader!=
-                ("a" if p["comparison_v4_estimate_a"]>0.5 else
-                 "b" if p["comparison_v4_estimate_a"]<0.5 else None),
+                ("a" if p.get("comparison_v4_estimate_a", estimate)>0.5 else
+                 "b" if p.get("comparison_v4_estimate_a", estimate)<0.5 else None),
             "probability":None}
