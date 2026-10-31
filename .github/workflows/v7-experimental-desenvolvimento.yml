@@ -1,0 +1,39 @@
+name: V7 experimental - benchmark desenvolvimento nao certificado
+on:
+  push:
+    branches: [experimento/modelo-territorial-999]
+    paths:
+      - '.github/workflows/v7-experimental-desenvolvimento.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+jobs:
+  comparar-v7-com-v6-v4:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Verify historical V6 input files remain frozen
+        run: python experimentos/modelo_999/auditoria_integral/verificar_congelamento_v6.py
+      - name: Download frozen complete 15-state inputs from original data-only run
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          dest=experimentos/modelo_999/auditoria_integral/raio_nacional_v6_2024
+          mkdir -p "$dest"
+          for uf in AM PA RO TO BA PB SE PE GO MT MS MG RJ SP PR; do
+            gh run download 41250338824 --repo fabiooliveira-source/paineleleitoral-2026 --name "raio-nacional-2024-$uf" --dir "$dest"
+          done
+      - name: Reproduce candidate V7 and all 19+100 checkpoints without tuning
+        run: python experimentos/modelo_999/auditoria_integral/avaliar_v7_desenvolvimento_15_cidades.py
+      - name: Preserve negative findings
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: v7-desenvolvimento-15-cidades
+          path: experimentos/modelo_999/auditoria_integral/raio_nacional_v6_2024/resultado_v7_desenvolvimento_15_cidades.json
+          if-no-files-found: warn
