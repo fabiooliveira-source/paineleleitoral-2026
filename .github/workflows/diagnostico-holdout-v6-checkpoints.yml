@@ -1,0 +1,34 @@
+name: V6 holdout - diagnostico granular de checkpoints
+on:
+  push:
+    branches: [experimento/modelo-territorial-999]
+    paths:
+      - '.github/workflows/diagnostico-holdout-v6-checkpoints.yml'
+  workflow_dispatch:
+permissions:
+  actions: read
+  contents: read
+jobs:
+  checkpoint-failure-analysis:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Retrieve original historical holdout evidence without re-fitting
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p experimentos/modelo_999/auditoria_integral/holdout_v6_2024
+          gh run download 41249875043 --repo fabiooliveira-source/paineleleitoral-2026 --name holdout-v6-2024-cidades-5 --dir experimentos/modelo_999/auditoria_integral/holdout_v6_2024
+      - name: Diagnose 1%-100% threshold errors and zone sensitivity
+        run: python experimentos/modelo_999/auditoria_integral/diagnosticar_holdout_v6_2024.py
+      - name: Publish diagnostic artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: v6-holdout-diagnostico-granular
+          path: experimentos/modelo_999/auditoria_integral/holdout_v6_2024/diagnostico_holdout_v6_2024.json
+          if-no-files-found: warn
