@@ -37,3 +37,15 @@ Os pontos representam observações temporais correlacionadas **de uma única ap
 
 ## Decisão
 **Reprovado para certificação integral nesta etapa, por insuficiência de evidências**, não por comprovação de falha do algoritmo principal.
+
+## Adendo de auditoria cruzada — evidências anteriores localizadas
+
+**Achado material:** já existem testes substanciais do preditor territorial V4/V4.1 em `experimentos/modelo_999/auditoria_integral/`. O baseline nacional recém-executado **não substitui** esses ensaios e não deve ser tratado como primeiro teste do algoritmo territorial.
+
+- `RELATORIO_QUALIFICACAO_V4.md`: V4 reproduzida em 2018/2022 (desenvolvimento) e São Paulo municipal 2020 (teste externo), com ganhos de MAE, mas não em todos os checkpoints. O relatório distingue qualificação do preditor de certificação do painel.
+- `RELATORIO_STRESS_V41.md`: camada de proteção V4.1, 1.710/1.710 controles e 36/36 cenários artificiais aceitos segundo critérios pré-registrados; isso não garante acerto eleitoral geral.
+- `RELATORIO_EXTERNO_V41_2024.md`: **gate externo REPROVADO**, somente Fortaleza cumpriu critérios; Pelotas errou o vencedor a 5%; Natal teve MAE e máximo piores que baseline. O documento recomenda expressamente **não promover**.
+- A implementação da V4.1 **não é a que está no painel principal**, segundo o relatório histórico.
+
+### Decisão vinculante
+A reprovação externa V4.1 prevalece sobre qualquer interpretação otimista dos testes artificiais. **Não promover V4.1 para main; não afirmar certificação integral ou precisão 99,9%.** Para a próxima iteração, diagnosticar causas de Pelotas/Natal, fixar novo protocolo e congelar versão ANTES de novos casos independentes. Preservar integralmente resultados negativos.
