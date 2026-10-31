@@ -1,0 +1,178 @@
+[
+  {
+    "name": "detalhe_votacao_secao_2024.zip",
+    "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/detalhe_votacao_secao/detalhe_votacao_secao_2024.zip",
+    "sha256": "ae879eb09d1ceca9ca05c1b9759a7646800b4efe57ca3d5d7f33f91287bcca3e",
+    "bytes": 87340998,
+    "crc_ok": true,
+    "members": [
+      {
+        "name": "detalhe_votacao_secao_2024_ES.csv",
+        "bytes": 6933137
+      },
+      {
+        "name": "detalhe_votacao_secao_2024_MA.csv",
+        "bytes": 12370092
+      },
+      {
+        "name": "detalhe_votacao_secao_2024_GO.csv",
+        "bytes": 12776000
+      },
+      {
+        "name": "detalhe_votacao_secao_2024_BRASIL.csv",
+        "bytes": 375835433
+      },
+      {
+        "name": "detalhe_votacao_secao_2024_CE.csv",
+        "bytes": 18397408
+      },
+      {
+        "name": "detalhe_votacao_secao_2024_RN.csv",
+        "bytes": 6085578
+      },
+      {
+        "name": "detalhe_votacao_secao_2024_MG.csv",
+        "bytes": 38626381
+      },
+      {
+        "name": "detalhe_votacao_secao_2024_AL.csv",
+        "bytes": 4990951
+      },
+      {
+        "name": "detalhe_votacao_secao_2024_AC.csv",
+        "bytes": 1493031
+      },
+      {
+        "name": "detalhe_votacao_secao_2024_AP.csv",
+        "bytes": 1312498
+      },
+      {
+        "name": "detalhe_votacao_secao_2024_AM.csv",
+        "bytes": 6823445
+      },
+      {
+        "name": "detalhe_votacao_secao_2024_BA.csv",
+        "bytes": 25766299
+      },
+      {
+        "name": "detalhe_votacao_secao_2024_RR.csv",
+        "bytes": 982853
+      },
+      {
+        "name": "detalhe_votacao_secao_2024_RS.csv",
+        "bytes": 21768043
+      },
+      {
+        "name": "detalhe_votacao_secao_2024_SC.csv",
+        "bytes": 12078615
+      },
+      {
+        "name": "detalhe_votacao_secao_2024_MS.csv",
+        "bytes": 5723087
+      },
+      {
+        "name": "detalhe_votacao_secao_2024_MT.csv",
+        "bytes": 6171145
+      },
+      {
+        "name": "detalhe_votacao_secao_2024_PA.csv",
+        "bytes": 15098545
+      },
+      {
+        "name": "detalhe_votacao_secao_2024_PB.csv",
+        "bytes": 8484683
+      },
+      {
+        "name": "detalhe_votacao_secao_2024_PE.csv",
+        "bytes": 15438556
+      },
+      {
+        "name": "detalhe_votacao_secao_2024_PI.csv",
+        "bytes": 6585510
+      },
+      {
+        "name": "detalhe_votacao_secao_2024_RJ.csv",
+        "bytes": 27005410
+      },
+      {
+        "name": "detalhe_votacao_secao_2024_PR.csv",
+        "bytes": 21641387
+      },
+      {
+        "name": "detalhe_votacao_secao_2024_RO.csv",
+        "bytes": 3481159
+      },
+      {
+        "name": "detalhe_votacao_secao_2024_SP.csv",
+        "bytes": 87971331
+      },
+      {
+        "name": "detalhe_votacao_secao_2024_SE.csv",
+        "bytes": 4604530
+      },
+      {
+        "name": "detalhe_votacao_secao_2024_TO.csv",
+        "bytes": 3240909
+      },
+      {
+        "name": "leiame.pdf",
+        "bytes": 123650
+      }
+    ],
+    "checked_at_utc": "2026-10-31T03:16:27.613660+00:00"
+  },
+  {
+    "name": "votacao_secao_2024_CE.zip",
+    "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/votacao_secao/votacao_secao_2024_CE.zip",
+    "sha256": "14f96957ca6eff35b327665f781c5a839f7b3de7a98c02a9526ed911d320a08e",
+    "bytes": 69472729,
+    "crc_ok": true,
+    "members": [
+      {
+        "name": "votacao_secao_2024_CE.csv",
+        "bytes": 441028951
+      },
+      {
+        "name": "leiame.pdf",
+        "bytes": 192420
+      }
+    ],
+    "checked_at_utc": "2026-10-31T03:15:00.539995+00:00"
+  },
+  {
+    "name": "votacao_secao_2024_RS.zip",
+    "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/votacao_secao/votacao_secao_2024_RS.zip",
+    "sha256": "a0fb26360917e32c7d18f806e3b6f3b8ac97378ce3127e1fecb6a2bfe0581a05",
+    "bytes": 96137953,
+    "crc_ok": true,
+    "members": [
+      {
+        "name": "votacao_secao_2024_RS.csv",
+        "bytes": 562350003
+      },
+      {
+        "name": "leiame.pdf",
+        "bytes": 192420
+      }
+    ],
+    "checked_at_utc": "2026-10-31T03:15:01.377459+00:00"
+  },
+  {
+    "name": "votacao_secao_2024_RN.zip",
+    "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/votacao_secao/votacao_secao_2024_RN.zip",
+    "sha256": "b95f8d1c40ef6e4ac3fd077988f67b80cc4c75b74c0c306aec150cf03d086f63",
+    "bytes": 21615095,
+    "crc_ok": true,
+    "members": [
+      {
+        "name": "votacao_secao_2024_RN.csv",
+        "bytes": 139947942
+      },
+      {
+        "name": "leiame.pdf",
+        "bytes": 192420
+      }
+    ],
+    "checked_at_utc": "2026-10-31T03:14:58.238229+00:00"
+  }
+]
