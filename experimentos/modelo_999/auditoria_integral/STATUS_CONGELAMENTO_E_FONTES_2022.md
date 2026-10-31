@@ -1,3 +1,13 @@
+# Atualização: V4 passou na qualificação técnica dos replays
+
+A V4 pareada foi congelada antes do teste externo de São Paulo2020, passou nos critérios numéricos e foi reproduzida no GitHub Actions. Ambos os jobs da execução [41148598344](https://github.com/fabiooliveira-source/paineleleitoral-2026/actions/runs/41148598344) concluíram com sucesso, inclusive reconstrução byte a byte a partir dos ZIPs oficiais.
+
+Leia o [relatório de qualificação V4](RELATORIO_QUALIFICACAO_V4.md). Escopo: modelo V4, ledger pareado e replays condicionais; 37 testes unitários e 285 verificações de estresse. Não há certificação integral do painel nem probabilidade calibrada. A página atual utiliza outro modelo e a V4 não foi implantada. Main e versões anteriores preservadas.
+
+---
+
+## Histórico da investigação
+
 # Atualização: v3 reprovada no teste externo de 2018
 
 A v3 foi desenvolvida em 2022, congelada e testada em 2018 sem reajustes. Falhou em três dos quatro critérios externos; não foi promovida. A v2 e a main foram preservadas.
