@@ -1,0 +1,49 @@
+{
+  "version": "externo-v41-2024-1",
+  "base_commit": "4d0ebea0e6a027de2b155cbf81b801c55ecd3988",
+  "model": "V4.1 protegida sobre V4 congelada",
+  "model_retuning_allowed": false,
+  "cases": [
+    {
+      "name": "Fortaleza",
+      "uf": "CE",
+      "municipality_tse": "13897",
+      "candidate_a": "13",
+      "candidate_b": "22",
+      "selection_reason": "Disputa apertada conhecida publicamente."
+    },
+    {
+      "name": "Pelotas",
+      "uf": "RS",
+      "municipality_tse": "87912",
+      "candidate_a": "13",
+      "candidate_b": "22",
+      "selection_reason": "Disputa apertada em outra regiao."
+    },
+    {
+      "name": "Natal",
+      "uf": "RN",
+      "municipality_tse": "17612",
+      "candidate_a": "13",
+      "candidate_b": "44",
+      "selection_reason": "Controle regional com margem mais ampla."
+    }
+  ],
+  "selection_policy": "Tres casos fixados antes de qualquer projecao2024. Nao substituir casos reprovados ou bloqueados por outros favoraveis. Resultados finais historicos sao publicos; nao e teste completamente cego.",
+  "window": "2024-10-27 e 2024-10-28, horarioBrasilia. Manter horarios originais e registrar tardios sem antecipa-los.",
+  "checkpoint_policy": "Primeiro segundo da reconstrucao que alcanca cada marco5..95% do numero de secoes do primeiro turno. Priorizar curva oficial se disponivel, sem ajustar relogio.",
+  "data_policy": "Cruzar chaveUF/municipio/zona/secao. Bloquear se houver secao2T sem referencia1T ou votos sem horario; conferir nominais/brancos/nulos e duplicatas. Cadastro e disponibilidade retrospectivos serao declarados.",
+  "criteria_per_case": {
+    "all_19_estimates": true,
+    "mae_not_worse_than_observed_baseline": true,
+    "maximum_not_worse_than_observed_baseline": true,
+    "mae_ceiling_pp": 1,
+    "p95_absolute_error_ceiling_pp": 2,
+    "maximum_absolute_error_ceiling_pp": 3,
+    "winner_correct_at_5pct": true,
+    "no_wrong_conditional_call": true
+  },
+  "criteria_note": "Tolerancias de engenharia propostas nesta etapa, fixadas antes dos testes; nao sao norma institucional nem certificacao de probabilidade.",
+  "scope": "Novos testes municipais fora do desenvolvimento2024, estratos por zona. Nao validar automaticamente probabilidade presidencial nacional.",
+  "decision_policy": "Publicar todos os criterios por caso, inclusive falhas e bloqueios; nao reajustar apos observar resultados. Main preservada."
+}
