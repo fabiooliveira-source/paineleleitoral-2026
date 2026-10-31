@@ -97,3 +97,7 @@ A V4.1 atende aos critérios de stress publicados para segurança e comparação
 Para uma aceitação absoluta mais exigente, por exemplo máximo de1pp em toda ordem adversarial, esta bateria NÃO demonstra aprovação: o próprio contraexemplo2018 tem7,78pp. Os requisitos quantitativos devem ser estabelecidos antes de outro ciclo; não se deve renomear esse extremo como erro aceitável sem decisão explícita sobre o uso.
 
 A certificação integral continua dependendo de dados contemporâneos autenticados, integração operacional, avaliação externa comparável e revisão independente. Os resultados e contraexemplos desta rodada foram preservados para essa avaliação.
+
+## Reprodução CI concluída
+
+A execução [41152022365](https://github.com/fabiooliveira-source/paineleleitoral-2026/actions/runs/41152022365), commit61613eebe3259406308ead30b77c7b140400b327, concluiu com SUCESSO. O job stress-regressao reproduziu74 testes, a comparação antes/depois, os1.710 controles e os36 cenários. Hashes da camada e identidade do núcleo V4 foram confrontados. Evidência em evidencia_ci_stress_v41.json. Isso não altera as limitações quantitativas ou probabilísticas descritas acima.
