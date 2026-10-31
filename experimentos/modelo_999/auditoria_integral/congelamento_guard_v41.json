@@ -1,0 +1,30 @@
+{
+  "version": "v4.1-guard-1",
+  "frozen_at_utc": "2026-10-31T00:44:25.412346+00:00",
+  "core_sha256_unchanged": "8bc095931517c5971a4e957851b4b8bcdf62352c10435df7a3ab1dd0f25bd1cf",
+  "files": [
+    {
+      "name": "preditor_v4_guardado.py",
+      "sha256": "099481a8e0b0efd7378fd5649d7a703f686101e903c08e11c15dae07c8f8cc95"
+    },
+    {
+      "name": "executar_v41.py",
+      "sha256": "1cd7837fa1e895640f8f9a7a0510a57f502a906fbbce6cca66f91272bd3cdfab"
+    },
+    {
+      "name": "test_guard_v4.py",
+      "sha256": "899b9c554e8c063afbf373e3fe74a8a1ab8e6a8cd78b96f87129399df87e44a6"
+    },
+    {
+      "name": "test_execucao_v41.py",
+      "sha256": "2288a5e277d8f4415988a661c01a46b3501053e973de04f1316b7e37dfa6a9d4"
+    }
+  ],
+  "statistical_parameters_changed": false,
+  "changes": [
+    "Separar generated_at opcional do cutoff e recepcao; rejeitar geracao posterior a recepcao.",
+    "Comparar agregado anterior para detectar revisao, atraso e mudanca cadastral.",
+    "Retirar estimativa e chamada anteriores em revisao detectada; preservar estado anterior ate novo snapshot valido."
+  ],
+  "scope": "Protecao adicional ao contrato V4; nao novo teste externo numerico nem probabilidade calibrada."
+}
