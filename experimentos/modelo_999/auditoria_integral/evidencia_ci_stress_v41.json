@@ -1,0 +1,9 @@
+{
+  "run_id": 41152022365,
+  "job_id": 124390481736,
+  "status": "completed",
+  "conclusion": "success",
+  "unit_tests_74_confirmed": true,
+  "stress_acceptance_message_confirmed": true,
+  "scope": "Reproducao CI da bateria ampliada, nao certificado de probabilidade."
+}
