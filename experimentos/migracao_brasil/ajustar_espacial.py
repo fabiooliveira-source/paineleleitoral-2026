@@ -100,7 +100,29 @@ for uf in src.UFS:
   mm=mask&(ci==block);p=ufp[uf] if selected==0 else bank.get(uf+':'+str(block),ufp[uf]);f+=x[mm].sum(axis=0)[:,None]*p
  flows+=f;byuf.append({'uf':uf,'sections':int(sum(mask)),'mapped_sections':int(sum(mask&mapped)),'origin':x[mask].sum(axis=0).tolist(),'flow':f.tolist(),'observed_second':y[mask].sum(axis=0).tolist()})
 assert np.max(abs(flows.sum(axis=1)-x.sum(axis=0)))<1e-5
+
+# Additional outputs only: unchanged protocol and fitting; test remains unselected.
+model_flows=[]
+for model_index,bank_i in enumerate(ratebanks):
+ total=np.zeros((K,J))
+ for uf in src.UFS:
+  mask=ufs==uf
+  for block in sorted(set(ci[mask])):
+   mm=mask&(ci==block);pr=ufp[uf] if model_index==0 else bank_i.get(uf+':'+str(block),ufp[uf]);total+=x[mm].sum(axis=0)[:,None]*pr
+ model_flows.append(total.tolist())
+for rec in byuf:
+ uf=rec['uf'];mask=ufs==uf;hist={c:[{'urnas':[0]*20,'votos_origem':[0]*20} for _ in range(2)] for c in src.CODES}
+ for block in sorted(set(ci[mask])):
+  mm=mask&(ci==block);pr=ufp[uf] if selected==0 else bank.get(uf+':'+str(block),ufp[uf])
+  for i,c in enumerate(src.CODES):
+   nonzero=x[mm,i]>0;ns=int(sum(nonzero));nv=int(sum(x[mm,i]))
+   for j in [0,1]:
+    bin_index=min(19,max(0,int(np.floor(pr[i,j]*20+1e-10))));hist[c][j]['urnas'][bin_index]+=ns;hist[c][j]['votos_origem'][bin_index]+=nv
+ for i,c in enumerate(src.CODES):
+  for j in [0,1]:assert sum(hist[c][j]['votos_origem'])==round(rec['origin'][i])
+ rec['histograms']=hist
+
 # Synthetic check of ordinary kriging: unit sum and constant reproduction.
 C=np.array([[1,.3],[.3,1]]);A=np.block([[C,np.ones((2,1))],[np.ones((1,2)),np.zeros((1,1))]]);sol=np.linalg.solve(A,[.5,.4,1]);assert abs(sol[:2].sum()-1)<1e-12 and abs(sol[:2]@np.array([7.,7.])-7)<1e-12
-out={'protocol':protocol,'source_reference':'repository derivatives, commit104b8adbecbee2261b9b4883eb46ef6352996dd4; no independent official authentication in this phase','counts':{'sections':len(x),'geocoded':int(sum(mapped)),'unmapped_including_exterior':int(sum(~mapped)),'train':int(sum(train)),'tuning':int(sum(tune)),'test':int(sum(test)),'geographical_cells':len(unique)},'codes':src.CODES,'origins':src.ORIGINS,'destinations':src.DEST,'global_fit_diagnostic':gd,'UF_fit_diagnostics':diag,'models':results,'selected_index':selected,'selected':results[selected],'variograms':variograms,'national_origin':x.sum(axis=0).tolist(),'national_fitted_flow':flows.tolist(),'national_observed_second':y.sum(axis=0).tolist(),'by_uf':byuf,'tests':{'ordinary_weights_unit_sum':True,'ordinary_constant_reproduction':True,'simplex_rates':True,'origin_margin_conservation':True},'limitations':['Ordinary kriging of latent log-ratio coefficients estimated by ecological regression, not measured individual migration.','Variogram uses standardized pooled coefficient fields and an isotropic spherical approximation per UF; no demonstration of full stationarity or anisotropy.','Block centroids are averages of first-turn voting-site coordinates; model uses 0.5 degree blocks, not point kriging of every section.','Chord distances in km on Earth sphere; grid cells vary in physical size with latitude.','Spatial split has no buffer; adjacent train and test cells can be close. This is geographic holdout, not proof of independence.','Kriging variance is conditional on fitted variogram; it omits uncertainty in latent ecological coefficients and is not migration accuracy.','Missing coordinates and exterior use training-only regional fallback and are not part of spatial test.','No candidate-specific transfer ground truth; predictive error of final totals does not validate migration origin.','No proven global maximum or comprehensive enumeration: finite iterative fits with convergence diagnostics.','No forced reconciliation of destination totals; residuals are reported.']}
+out={'protocol':protocol,'source_reference':'repository derivatives, commit104b8adbecbee2261b9b4883eb46ef6352996dd4; no independent official authentication in this phase','counts':{'sections':len(x),'geocoded':int(sum(mapped)),'unmapped_including_exterior':int(sum(~mapped)),'train':int(sum(train)),'tuning':int(sum(tune)),'test':int(sum(test)),'geographical_cells':len(unique)},'codes':src.CODES,'origins':src.ORIGINS,'destinations':src.DEST,'global_fit_diagnostic':gd,'UF_fit_diagnostics':diag,'models':results,'national_flows_all_models':model_flows,'selected_index':selected,'selected':results[selected],'variograms':variograms,'national_origin':x.sum(axis=0).tolist(),'national_fitted_flow':flows.tolist(),'national_observed_second':y.sum(axis=0).tolist(),'by_uf':byuf,'tests':{'ordinary_weights_unit_sum':True,'ordinary_constant_reproduction':True,'simplex_rates':True,'origin_margin_conservation':True},'limitations':['Ordinary kriging of latent log-ratio coefficients estimated by ecological regression, not measured individual migration.','Variogram uses standardized pooled coefficient fields and an isotropic spherical approximation per UF; no demonstration of full stationarity or anisotropy.','Block centroids are averages of first-turn voting-site coordinates; model uses 0.5 degree blocks, not point kriging of every section.','Chord distances in km on Earth sphere; grid cells vary in physical size with latitude.','Spatial split has no buffer; adjacent train and test cells can be close. This is geographic holdout, not proof of independence.','Kriging variance is conditional on fitted variogram; it omits uncertainty in latent ecological coefficients and is not migration accuracy.','Missing coordinates and exterior use training-only regional fallback and are not part of spatial test.','No candidate-specific transfer ground truth; predictive error of final totals does not validate migration origin.','No proven global maximum or comprehensive enumeration: finite iterative fits with convergence diagnostics.','No forced reconciliation of destination totals; residuals are reported.']}
 (P/'inferencia-espacial-resultado.json').write_text(json.dumps(out,ensure_ascii=False,indent=2)+'\n');print('COMPLETE',out['counts'],out['selected'],flush=True)
