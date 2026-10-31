@@ -25,7 +25,7 @@ jobs:
         run: |
           dest=experimentos/modelo_999/auditoria_integral/raio_nacional_v6_2024
           mkdir -p "$dest"
-          gh run download 41251657346 --repo fabiooliveira-source/paineleleitoral-2026 --name "v6-investigacao-profunda-15-cidades" --dir "$dest"
+          gh run download 41251800731 --repo fabiooliveira-source/paineleleitoral-2026 --name "v6-investigacao-profunda-15-cidades" --dir "$dest"
           gh run download 41251666010 --repo fabiooliveira-source/paineleleitoral-2026 --name "v6-15-ufs-fonte-temporal" --dir "$dest"
           gh run download 41251355639 --repo fabiooliveira-source/paineleleitoral-2026 --name "V6-15-estados-1500-checkpoints" --dir "$dest"
       - name: Synthesize all 15 cities preserving the failed validation decision
