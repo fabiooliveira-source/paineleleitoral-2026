@@ -59,5 +59,5 @@ jobs:
           lab=pathlib.Path("validacao-v7.html").read_text()
           assert "NÃO CERTIFICADO" in lab and "4 / 10" in lab
           assert "v7-engine.js" in lab and "validacao-v7-ui.js" in lab
-          assert "Não" in pathlib.Path("acompanhar.html").read_text()
+          assert "não foi certificada" in pathlib.Path("acompanhar.html").read_text(encoding="utf-8").lower()
           PY
