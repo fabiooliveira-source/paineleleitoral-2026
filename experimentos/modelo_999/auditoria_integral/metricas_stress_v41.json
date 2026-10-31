@@ -1,0 +1,26 @@
+{
+  "2018": {
+    "scenarios": 18,
+    "largest_scenario_mae_pp": 4.001882040306478,
+    "largest_absolute_error_pp": 7.775514091305991,
+    "p95_abs_error_pp_all_correlated_points": 3.296645287010755,
+    "largest_baseline_mae_pp": 15.263792929835413,
+    "largest_baseline_absolute_error_pp": 32.91987634518199,
+    "point_winner_wrong_count": 7,
+    "synthetic_points_count": 342,
+    "wrong_conditional_calls": 0,
+    "conditional_calls_count": 0
+  },
+  "2022": {
+    "scenarios": 18,
+    "largest_scenario_mae_pp": 0.3091873911738748,
+    "largest_absolute_error_pp": 0.6016998470015911,
+    "p95_abs_error_pp_all_correlated_points": 0.37518773866924365,
+    "largest_baseline_mae_pp": 11.560362373866399,
+    "largest_baseline_absolute_error_pp": 25.28103080262466,
+    "point_winner_wrong_count": 0,
+    "synthetic_points_count": 342,
+    "wrong_conditional_calls": 0,
+    "conditional_calls_count": 0
+  }
+}
