@@ -1,0 +1,31 @@
+name: V6 congelada - tres cidades e fontes
+on:
+  push:
+    branches: [experimento/modelo-territorial-999]
+    paths:
+      - 'experimentos/modelo_999/auditoria_integral/congelamento_v6_3_cidades.json'
+      - 'experimentos/modelo_999/auditoria_integral/verificar_congelamento_v6.py'
+      - '.github/workflows/gate-congelado-3-cidades-v6.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify-freeze-and-development-benchmark:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Reject any change to frozen model or data
+        run: python experimentos/modelo_999/auditoria_integral/verificar_congelamento_v6.py
+      - name: Execute all original three-city benchmark gates
+        run: python experimentos/modelo_999/auditoria_integral/avaliar_gate_3_cidades_v6.py
+      - name: Archive comprehensive per-checkpoint result
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: v6-freeze-and-three-cities
+          path: experimentos/modelo_999/auditoria_integral/resultado_gate_3_cidades_v6.json
+          if-no-files-found: warn
