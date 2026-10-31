@@ -1,0 +1,309 @@
+{
+  "status": "FROZEN_PRE_SCORING",
+  "protocol_sha256": "d02681d41dea99ac34019248e07e05b88d134cf8a3adc6e2d4b0efd68714b38a",
+  "data_preparation_run_id": 41250338824,
+  "cities": 15,
+  "states": {
+    "AM": {
+      "city": "Manaus",
+      "region": "Norte",
+      "tse_code": "02550",
+      "input_sha256": "9660c6c5557c7b8028e6e8f4d26747f43069f006c5d995f4e752b8ff76264fd7",
+      "manifest_sha256": "601b44c12f30d955fc134eb09980d89ea0f18515e8a221f49ca3ed8c30fb09a8",
+      "source_sha256": {
+        "detalhe_votacao_secao_2024.zip": "ae879eb09d1ceca9ca05c1b9759a7646800b4efe57ca3d5d7f33f91287bcca3e",
+        "votacao_secao_2024_AM.zip": "45b546fd26560ad06b3dbd3816ea4d67dd3cdc2e20136da9e2fb546813920ecd"
+      },
+      "original_source_bytes": {
+        "detalhe_votacao_secao_2024.zip": 87340998,
+        "votacao_secao_2024_AM.zip": 34098974
+      },
+      "candidate_a": "22",
+      "candidate_b": "70",
+      "sections": 3921,
+      "zones": 13,
+      "checkpoints": 100
+    },
+    "PA": {
+      "city": "Belém",
+      "region": "Norte",
+      "tse_code": "04278",
+      "input_sha256": "c3cf5c656cc9062de57fc7c8ccd38af953e1947ca169d1c03f68253ec3052829",
+      "manifest_sha256": "a2a24f9e1da934eb430db9cae47c5e5557335c3ac80135a63351b44fafd3b315",
+      "source_sha256": {
+        "detalhe_votacao_secao_2024.zip": "ae879eb09d1ceca9ca05c1b9759a7646800b4efe57ca3d5d7f33f91287bcca3e",
+        "votacao_secao_2024_PA.zip": "71aa2546098a7b2a4d856121ec941d37ca50ac1204dae869067718df8574fcf1"
+      },
+      "original_source_bytes": {
+        "detalhe_votacao_secao_2024.zip": 87340998,
+        "votacao_secao_2024_PA.zip": 71540526
+      },
+      "candidate_a": "15",
+      "candidate_b": "22",
+      "sections": 2823,
+      "zones": 10,
+      "checkpoints": 100
+    },
+    "RO": {
+      "city": "Porto Velho",
+      "region": "Norte",
+      "tse_code": "00035",
+      "input_sha256": "d622655c27767b2c6096c4a57e9b62cf0d0d4540eccd5891a59301f621e5ba8c",
+      "manifest_sha256": "6c2315664bac7d87210f623e517231dcf1390aa897017526461ed098ae30e464",
+      "source_sha256": {
+        "detalhe_votacao_secao_2024.zip": "ae879eb09d1ceca9ca05c1b9759a7646800b4efe57ca3d5d7f33f91287bcca3e",
+        "votacao_secao_2024_RO.zip": "f1af7e441bff8552b45d043b4c5bee6636015e1aab6c95c26ef319e868dc8525"
+      },
+      "original_source_bytes": {
+        "detalhe_votacao_secao_2024.zip": 87340998,
+        "votacao_secao_2024_RO.zip": 12721764
+      },
+      "candidate_a": "20",
+      "candidate_b": "44",
+      "sections": 1181,
+      "zones": 4,
+      "checkpoints": 100
+    },
+    "TO": {
+      "city": "Palmas",
+      "region": "Norte",
+      "tse_code": "73440",
+      "input_sha256": "756ae47dbdd772a262c49f5ac6ee231315670d4be706a8d4abe3bfd0f449f9f4",
+      "manifest_sha256": "e8262b5ced3e8eb2785ed43d6ab458dacc070b6401d8c00bbce666d5ec50a0a6",
+      "source_sha256": {
+        "detalhe_votacao_secao_2024.zip": "ae879eb09d1ceca9ca05c1b9759a7646800b4efe57ca3d5d7f33f91287bcca3e",
+        "votacao_secao_2024_TO.zip": "d3fbf5c927a189d53f2f7ef7cb6df52c60b83598cad34ba49f43487d01888cf9"
+      },
+      "original_source_bytes": {
+        "detalhe_votacao_secao_2024.zip": 87340998,
+        "votacao_secao_2024_TO.zip": 10175412
+      },
+      "candidate_a": "20",
+      "candidate_b": "22",
+      "sections": 629,
+      "zones": 1,
+      "checkpoints": 100
+    },
+    "BA": {
+      "city": "Camaçari",
+      "region": "Nordeste",
+      "tse_code": "34134",
+      "input_sha256": "a61322bd723b7e6ccc1cf53325c661f322b10fb48660c04b0c036043b7dc1166",
+      "manifest_sha256": "ad5f3abf8bc7eaa37f830ac73f556d9bbc0fbe9dab424fe6db114256724b8a58",
+      "source_sha256": {
+        "detalhe_votacao_secao_2024.zip": "ae879eb09d1ceca9ca05c1b9759a7646800b4efe57ca3d5d7f33f91287bcca3e",
+        "votacao_secao_2024_BA.zip": "b07bf43421801da5efda39810332e221ac5e8c3dd8ece87f93ada98a27c4b00e"
+      },
+      "original_source_bytes": {
+        "detalhe_votacao_secao_2024.zip": 87340998,
+        "votacao_secao_2024_BA.zip": 113970784
+      },
+      "candidate_a": "13",
+      "candidate_b": "44",
+      "sections": 540,
+      "zones": 2,
+      "checkpoints": 100
+    },
+    "PB": {
+      "city": "João Pessoa",
+      "region": "Nordeste",
+      "tse_code": "20516",
+      "input_sha256": "fc3d2ac850b00a7825442d0a48ab818260c64ce8c019fab3b47273007edac3e2",
+      "manifest_sha256": "24f379d5be704266b92def100416a611c32bf973dd00d962247b05c9fded17ef",
+      "source_sha256": {
+        "detalhe_votacao_secao_2024.zip": "ae879eb09d1ceca9ca05c1b9759a7646800b4efe57ca3d5d7f33f91287bcca3e",
+        "votacao_secao_2024_PB.zip": "73d07922a5c4fb2bebd31625fa44977c14800f8a4b65da7cdc3a731d309ea500"
+      },
+      "original_source_bytes": {
+        "detalhe_votacao_secao_2024.zip": 87340998,
+        "votacao_secao_2024_PB.zip": 28111942
+      },
+      "candidate_a": "11",
+      "candidate_b": "22",
+      "sections": 1625,
+      "zones": 5,
+      "checkpoints": 100
+    },
+    "SE": {
+      "city": "Aracaju",
+      "region": "Nordeste",
+      "tse_code": "31054",
+      "input_sha256": "44c344df80065eb14c038ff59b438c5474a5bc0fdbb5255b0b559b1617f477bc",
+      "manifest_sha256": "e99c4492aae042016fa5c3191f97bb6ddcbd8c40d3a706aab04b1560ea771a1e",
+      "source_sha256": {
+        "detalhe_votacao_secao_2024.zip": "ae879eb09d1ceca9ca05c1b9759a7646800b4efe57ca3d5d7f33f91287bcca3e",
+        "votacao_secao_2024_SE.zip": "3debad0acb3472cb027e12e6dd9eb82dbff4617b495827eff8723ef1cbe1e73b"
+      },
+      "original_source_bytes": {
+        "detalhe_votacao_secao_2024.zip": 87340998,
+        "votacao_secao_2024_SE.zip": 15590530
+      },
+      "candidate_a": "12",
+      "candidate_b": "22",
+      "sections": 1313,
+      "zones": 3,
+      "checkpoints": 100
+    },
+    "PE": {
+      "city": "Olinda",
+      "region": "Nordeste",
+      "tse_code": "24910",
+      "input_sha256": "58edb161284fc8fff28b2574e12a31850e3de2018f4d8e4832a6f8277c37eb46",
+      "manifest_sha256": "9421634888be8178f7febc33670fa02e3e75a49d93e8ef5920d0b1d9dde0d4a3",
+      "source_sha256": {
+        "detalhe_votacao_secao_2024.zip": "ae879eb09d1ceca9ca05c1b9759a7646800b4efe57ca3d5d7f33f91287bcca3e",
+        "votacao_secao_2024_PE.zip": "49c4a506fb91fc54d96ce1d8d8b1aa8db78c5db6a064c64728ae9e798e7ad3bf"
+      },
+      "original_source_bytes": {
+        "detalhe_votacao_secao_2024.zip": 87340998,
+        "votacao_secao_2024_PE.zip": 66662914
+      },
+      "candidate_a": "13",
+      "candidate_b": "55",
+      "sections": 880,
+      "zones": 3,
+      "checkpoints": 100
+    },
+    "GO": {
+      "city": "Goiânia",
+      "region": "Centro-Oeste",
+      "tse_code": "93734",
+      "input_sha256": "295faf3211dea7fec359221bfb75ec5101fec99b19a4ac7347f558228f1966cb",
+      "manifest_sha256": "9106803741ba09202682c222432d1f9cfdbea9e991b44b02dbc958b101286703",
+      "source_sha256": {
+        "detalhe_votacao_secao_2024.zip": "ae879eb09d1ceca9ca05c1b9759a7646800b4efe57ca3d5d7f33f91287bcca3e",
+        "votacao_secao_2024_GO.zip": "dbdb7833151748427dc1f6fde70dda4e112ceebc355e3deb580bafb17bdf3eef"
+      },
+      "original_source_bytes": {
+        "detalhe_votacao_secao_2024.zip": 87340998,
+        "votacao_secao_2024_GO.zip": 64433552
+      },
+      "candidate_a": "22",
+      "candidate_b": "44",
+      "sections": 2966,
+      "zones": 9,
+      "checkpoints": 100
+    },
+    "MT": {
+      "city": "Cuiabá",
+      "region": "Centro-Oeste",
+      "tse_code": "90670",
+      "input_sha256": "839f86ebe3b0261ff6f4a8e03644870cc66059554e5c6835205ec0bbeb4a3eb8",
+      "manifest_sha256": "d48ae03b3aafd2a82a11415724cc262397c98a5953330d437e823eccd8a60727",
+      "source_sha256": {
+        "detalhe_votacao_secao_2024.zip": "ae879eb09d1ceca9ca05c1b9759a7646800b4efe57ca3d5d7f33f91287bcca3e",
+        "votacao_secao_2024_MT.zip": "474ad880b866ca4f996ae48c9a6c8dd2b9e6618913d6cf7503d940d4a226b381"
+      },
+      "original_source_bytes": {
+        "detalhe_votacao_secao_2024.zip": 87340998,
+        "votacao_secao_2024_MT.zip": 26098926
+      },
+      "candidate_a": "13",
+      "candidate_b": "22",
+      "sections": 1274,
+      "zones": 4,
+      "checkpoints": 100
+    },
+    "MS": {
+      "city": "Campo Grande",
+      "region": "Centro-Oeste",
+      "tse_code": "90514",
+      "input_sha256": "ee182dc185d8d7cc2e38fec97e9f0e9f2f229257791171d5484309df9440ab39",
+      "manifest_sha256": "a487a4533ea6d208cd2387167d22cb795e24b5801234d309bea4f508f59998d7",
+      "source_sha256": {
+        "detalhe_votacao_secao_2024.zip": "ae879eb09d1ceca9ca05c1b9759a7646800b4efe57ca3d5d7f33f91287bcca3e",
+        "votacao_secao_2024_MS.zip": "39fb2b1f86cd81c91c1471a0e41e6100545a8fd53a948b0b15a03ba61cf61ef2"
+      },
+      "original_source_bytes": {
+        "detalhe_votacao_secao_2024.zip": 87340998,
+        "votacao_secao_2024_MS.zip": 23255717
+      },
+      "candidate_a": "11",
+      "candidate_b": "44",
+      "sections": 2168,
+      "zones": 6,
+      "checkpoints": 100
+    },
+    "MG": {
+      "city": "Belo Horizonte",
+      "region": "Sudeste",
+      "tse_code": "41238",
+      "input_sha256": "ace39e97608c4d744e47552b7762df133433f58e6ee4608318864a3ea3c34740",
+      "manifest_sha256": "d569d50e52ceb88178b0cd19f2b180494ae7bb246a9bd93efa85abb66a455bfb",
+      "source_sha256": {
+        "detalhe_votacao_secao_2024.zip": "ae879eb09d1ceca9ca05c1b9759a7646800b4efe57ca3d5d7f33f91287bcca3e",
+        "votacao_secao_2024_MG.zip": "895b8b93ec633d0aff6c734150f3fc12f27b388710f308b03ad51b92b8c6859d"
+      },
+      "original_source_bytes": {
+        "detalhe_votacao_secao_2024.zip": 87340998,
+        "votacao_secao_2024_MG.zip": 201389374
+      },
+      "candidate_a": "22",
+      "candidate_b": "55",
+      "sections": 4764,
+      "zones": 18,
+      "checkpoints": 100
+    },
+    "RJ": {
+      "city": "Niterói",
+      "region": "Sudeste",
+      "tse_code": "58653",
+      "input_sha256": "e5aa414bd30642540a4cb85b96022e49089a6ad7e3c58af3dcb319ec3ec5dc0b",
+      "manifest_sha256": "0295ecf04c649664d993b2d55be195727c24bc694821543ab6318c57959f73c0",
+      "source_sha256": {
+        "detalhe_votacao_secao_2024.zip": "ae879eb09d1ceca9ca05c1b9759a7646800b4efe57ca3d5d7f33f91287bcca3e",
+        "votacao_secao_2024_RJ.zip": "ac990be96d9919769da039bb029c1a0ed7e28c29d6414bbb361a9b1a682efd9b"
+      },
+      "original_source_bytes": {
+        "detalhe_votacao_secao_2024.zip": 87340998,
+        "votacao_secao_2024_RJ.zip": 156876228
+      },
+      "candidate_a": "12",
+      "candidate_b": "22",
+      "sections": 1305,
+      "zones": 4,
+      "checkpoints": 100
+    },
+    "SP": {
+      "city": "São Paulo",
+      "region": "Sudeste",
+      "tse_code": "71072",
+      "input_sha256": "367b521e6d1c6b638fcaa41de4e608a62aa0df65c13d0ec3f041135d408485f8",
+      "manifest_sha256": "81de0f190ce31b631bc0c210f084dae2b01579d8dea2db9d665b1f66100bc0bc",
+      "source_sha256": {
+        "detalhe_votacao_secao_2024.zip": "ae879eb09d1ceca9ca05c1b9759a7646800b4efe57ca3d5d7f33f91287bcca3e",
+        "votacao_secao_2024_SP.zip": "c3a1d45149e576a20403822c392f5d8e50efb0888a86d3c6e36cdbb26fb2dcca"
+      },
+      "original_source_bytes": {
+        "detalhe_votacao_secao_2024.zip": 87340998,
+        "votacao_secao_2024_SP.zip": 475818561
+      },
+      "candidate_a": "15",
+      "candidate_b": "50",
+      "sections": 26513,
+      "zones": 57,
+      "checkpoints": 100
+    },
+    "PR": {
+      "city": "Curitiba",
+      "region": "Sul",
+      "tse_code": "75353",
+      "input_sha256": "c3b44e1c7c7586f83bd72874bc301ccb80fcb1fbad772a8ef301868a3e5487fc",
+      "manifest_sha256": "80f7c182ec0f5715fbe52cac82eb2000877be429f385de41119c4c22a7e9c2e6",
+      "source_sha256": {
+        "detalhe_votacao_secao_2024.zip": "ae879eb09d1ceca9ca05c1b9759a7646800b4efe57ca3d5d7f33f91287bcca3e",
+        "votacao_secao_2024_PR.zip": "f8838e1a79a8b02730da1408ca20c6615a651e22f559ffaa9b9012b48329659d"
+      },
+      "original_source_bytes": {
+        "detalhe_votacao_secao_2024.zip": 87340998,
+        "votacao_secao_2024_PR.zip": 110085227
+      },
+      "candidate_a": "35",
+      "candidate_b": "55",
+      "sections": 4022,
+      "zones": 10,
+      "checkpoints": 100
+    }
+  },
+  "warning": "Retrospective historical section snapshots, not observed public real-time data."
+}
