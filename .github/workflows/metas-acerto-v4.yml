@@ -1,0 +1,25 @@
+name: Metas de acerto V4 99 a 95
+on:
+  push:
+    branches: ['experimento/modelo-territorial-999']
+    paths: ['.github/workflows/metas-acerto-v4.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  avaliar-metas:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Testar limites binomiais e exclusoes
+        run: python -m unittest discover -s experimentos/modelo_999/auditoria_integral -p test_metas_acerto_v4.py -v
+      - name: Avaliar metas sem reajustar preditor
+        run: python experimentos/modelo_999/auditoria_integral/avaliar_taxa_acerto_v4.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: metas-acerto-v4
+          path: experimentos/modelo_999/auditoria_integral/resultado_metas_acerto_v4.json
