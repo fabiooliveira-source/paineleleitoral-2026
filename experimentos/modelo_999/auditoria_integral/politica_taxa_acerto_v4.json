@@ -1,0 +1,17 @@
+{
+  "version": "v4-accuracy-policy-1",
+  "targets_descending_pct": [99, 98, 97, 96, 95],
+  "floor_pct": 95,
+  "success_definition": "Vencedor corretamente identificado pela estimativa pontual no primeiro marco de 5% das secoes apuradas; empate ou abstencao conta como insucesso.",
+  "target_population": "segundo_turno_presidencial_nacional",
+  "unit": "eleicao_independente_comparavel",
+  "exclude_development_elections": [2018, 2022],
+  "statistical_confidence_pct": 95,
+  "confidence_is_not_accuracy": true,
+  "method": "Limite inferior binomial exato unilateral (Clopper-Pearson).",
+  "sampling_requirement": "Eleicoes externas comparaveis, independentes e representativas, com tamanho/amostragem de teste previamente definidos. Replays e checkpoints correlacionados nao sao novas eleicoes.",
+  "acceptance": "Selecionar a maior meta da sequencia sustentada pelo limite inferior e pelos requisitos de dados/escopo. Se nenhuma passar, manter piso95 como objetivo nao demonstrado, sem conceder certificacao.",
+  "model_parameters_changed": false,
+  "probabilities_calibrated": false,
+  "integral_certification_automatically_granted": false
+}
