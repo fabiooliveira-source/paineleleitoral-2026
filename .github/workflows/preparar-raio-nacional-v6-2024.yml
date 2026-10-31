@@ -1,0 +1,37 @@
+name: V6 - ampliar raio nacional - preparar 15 estados
+on:
+  push:
+    branches: [experimento/modelo-territorial-999]
+    paths:
+      - '.github/workflows/preparar-raio-nacional-v6-2024.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  preparar-dados-sem-predicao:
+    runs-on: ubuntu-latest
+    timeout-minutes: 55
+    strategy:
+      fail-fast: false
+      max-parallel: 6
+      matrix:
+        uf: [AM, PA, RO, TO, BA, PB, SE, PE, GO, MT, MS, MG, RJ, SP, PR]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Verify historical V6 source is still frozen
+        run: python experimentos/modelo_999/auditoria_integral/verificar_congelamento_v6.py
+      - name: Download official 2024 TSE archives and reconstruct deterministic checkpoints
+        run: python experimentos/modelo_999/auditoria_integral/preparar_raio_nacional_v6_2024.py --uf ${{ matrix.uf }}
+      - name: Keep data manifest and exact inputs even if case is blocked
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: raio-nacional-2024-${{ matrix.uf }}
+          retention-days: 30
+          path: |
+            experimentos/modelo_999/auditoria_integral/raio_nacional_v6_2024/${{ matrix.uf }}_manifest.json
+            experimentos/modelo_999/auditoria_integral/raio_nacional_v6_2024/${{ matrix.uf }}_checkpoints_1_100.json
+          if-no-files-found: warn
