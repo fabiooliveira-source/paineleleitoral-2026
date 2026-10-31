@@ -1,3 +1,11 @@
+# Atualização: validação externa municipal 2024 — NÃO PROMOVER
+
+A V4.1 congelada satisfez todos os critérios em apenas 1 de 3 casos previamente fixados: Fortaleza passou; Pelotas errou vencedor no checkpoint de 5%; Natal teve MAE e erro máximo maiores que o baseline. As 57 projeções foram recalculadas independentemente com frações exatas e 285 controles de falha passaram. Os sete novos testes passaram localmente. Não houve reajuste nem alteração da main. Estes casos não certificam probabilidade presidencial. Veja RELATORIO_EXTERNO_V41_2024.md e resumo_externo_v41_2024.json.
+
+Reprodução automática iniciada: https://github.com/fabiooliveira-source/paineleleitoral-2026/actions/runs/41163900121 . O gate científico exige os três casos e deve reprovar, separadamente da execução técnica. Conclusão do CI ainda pendente nesta atualização.
+
+---
+
 # Atualização: stress ampliado e camada V4.1
 
 A camada V4.1 preserva a fórmula V4 e acrescenta proteção para metadados e revisões. Após reparo, foram aprovados74 testes,1.710 controles e36 cenários artificiais na execução [41152022365](https://github.com/fabiooliveira-source/paineleleitoral-2026/actions/runs/41152022365).
