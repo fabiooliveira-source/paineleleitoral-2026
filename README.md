@@ -38,3 +38,16 @@ Documentação: https://www.tse.jus.br/eleicoes/informacoes-tecnicas-sobre-a-div
 ## Comparação oficial dos turnos — 28/10/2026
 
 comparativo.html utiliza a base oficial TSE conferida em dados/2026: 5.757 localidades (5.571 brasileiras e 186 no exterior), 499.248 seções. Filtros por região, UF, município, perda de votos, maior comparecimento e zeros. Seções são carregadas por UF sob demanda em JSON gzip (DecompressionStream em navegadores modernos). Valores ausentes permanecem indisponíveis. A base é uma cópia datada, sem atualização automática. Votos de Lula e Flávio e comparecimento reconciliados entre municípios e seções; 85 registros seção/turno segregados. Ver dados/2026/LEIA-ME.md, validacao.json e downloads.json para critérios, datas, URLs e SHA-256. Simulador e monitor ao vivo mantêm seus respectivos modos.
+
+
+## V7 experimental no painel — validação e acesso seguro
+
+A página `acompanhar.html` oferece acesso ao laboratório `validacao-v7.html`, que apresenta o histórico de avaliação V7 e permite calcular um checkpoint **apenas com entradas JSON pareadas e fornecidas explicitamente pelo usuário**. O motor JavaScript está em `v7-engine.js`; os testes em `tests/v7-engine.cjs`.
+
+- A versão V7 apresentada é **experimental e não certificada** para prever 2026. O protocolo histórico de 2020 passou em 18/18 municípios, mas o diagnóstico de 2024 usado no desenvolvimento não demonstrou superioridade uniforme; o checklist integral de certificação permanece incompleto (4/10 requisitos demonstrados em 31/10/2026).
+- `index.html` mantém separadamente o **monitor oficial TSE** e a **estimativa ponderada municipal atual**. Essa estimativa **não foi substituída pela V7**. A fonte EA20 de resultados municipais em tempo real não identifica as seções individuais já contadas no segundo turno, portanto falta o pareamento das seções do primeiro turno exigido pela V7. Inferir esse pareamento com percentuais agregados seria mudar a fórmula e invalidar a validação histórica.
+- Nenhum checkpoint JSON enviado no laboratório é tratado automaticamente como apuração oficial. O processamento é local no navegador; não envia conteúdo para servidor. Entradas incoerentes, informação futura, duplicações ou faltas de zona produzem `ABSTAIN` e limpam a projeção anterior.
+- A V7 expõe `estimate_a` e limites **físicos**, mas `probability=null`: não há chance de vitória calibrada. `winner_call` só é permitido quando a diferença observada é superior ao eleitorado ainda não contabilizado, sem revisões futuras. A fonte pública e seu horário precisam de auditoria adicional.
+- Para executar V7 automaticamente no monitor, criar previamente um alimentador verificável com `current` (agregado e eleitorado por corte), `reference` (votos 1º turno A/B por zona), `ledger` (2º turno observado e referência pareada **das mesmas seções**) e horários com fuso `generated_at <= available_at <= timestamp` por registro. Depois validar o adaptador contra os dados oficiais e um conjunto externo ainda não utilizado; não usar diretamente a agregação municipal.
+
+**Execução dos testes:** `node tests/v7-engine.cjs`. O CI roda também verificação de sintaxe e navegação HTML. Os relatórios científicos originais continuam na branch isolada `experimento/modelo-territorial-999`.
