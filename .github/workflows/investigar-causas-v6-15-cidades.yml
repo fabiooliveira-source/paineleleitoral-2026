@@ -1,0 +1,45 @@
+name: V6 - investigar profundamente causas de falha 15 cidades
+on:
+  push:
+    branches: [experimento/modelo-territorial-999]
+    paths:
+      - '.github/workflows/investigar-causas-v6-15-cidades.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+jobs:
+  diagnosticos-forenses:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Verify V6 and historical benchmarks remain frozen
+        run: python experimentos/modelo_999/auditoria_integral/verificar_congelamento_v6.py
+      - name: Retrieve unmodified historic TSE source artifacts and V6 final score
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          dest=experimentos/modelo_999/auditoria_integral/raio_nacional_v6_2024
+          mkdir -p "$dest"
+          for uf in AM PA RO TO BA PB SE PE GO MT MS MG RJ SP PR; do
+            gh run download 41250338824 --repo fabiooliveira-source/paineleleitoral-2026 --name "raio-nacional-2024-$uf" --dir "$dest"
+          done
+          gh run download 41251355639 --repo fabiooliveira-source/paineleleitoral-2026 --name "V6-15-estados-1500-checkpoints" --dir "$dest"
+      - name: Compare zone-level predicted vs eventual votes, cap, election-time bias
+        run: python experimentos/modelo_999/auditoria_integral/diagnosticar_causas_v6_15_cidades.py
+      - name: Stress by removing individual and multiple observed zones
+        run: python experimentos/modelo_999/auditoria_integral/estressar_zonas_v6_15_cidades.py
+      - name: Preserve detailed cause and stress decomposition
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: v6-investigacao-profunda-15-cidades
+          retention-days: 30
+          path: |
+            experimentos/modelo_999/auditoria_integral/raio_nacional_v6_2024/diagnostico_causas_v6_15_cidades.json
+            experimentos/modelo_999/auditoria_integral/raio_nacional_v6_2024/stress_zonas_v6_15_cidades.json
+          if-no-files-found: warn
