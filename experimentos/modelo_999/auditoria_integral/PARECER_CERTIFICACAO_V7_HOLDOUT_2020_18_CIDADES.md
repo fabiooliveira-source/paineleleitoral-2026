@@ -105,3 +105,26 @@ de conhecer o resultado para forçar a aprovação. `main` intacta.
 isolada. Oferecer pacote de hashes, relatórios e testes para revisão
 de terceiros. Para o próximo ciclo, armazenar assinadamente os
 snapshots públicos durante a apuração, com relógio UTC e as revisões.
+
+## Adendo — segunda implementação aritmética independente
+
+Nova execução GitHub Actions:
+https://github.com/fabiooliveira-source/paineleleitoral-2026/actions/runs/41253315254
+
+Foi reproduzida a fórmula V7 em Python `decimal.Decimal` com precisão
+48 dígitos, separadamente dos cálculos `float` da V7 original,
+sem alterações no código congelado:
+
+- **1.769 checkpoints preditivos** conferidos entre duas implementações;
+- **31 checkpoints de encerramento** verificados separadamente;
+- **zero divergências aritméticas acima de 10^-9 pp**;
+- **zero abstenções não explicadas** e **zero falhas do gate**.
+
+O êxito reforça a **reprodutibilidade matemática** e NÃO comprova
+calibração futura, disponibilidade de parciais públicas ou revisão
+por uma instituição externa.
+
+**Cautela com amostra de margens:** entre os 18 municípios selecionados,
+o menor diferencial final entre os dois finalistas foi aproximadamente
+**2,294 pp (Cuiabá)**. A capacidade de acertar casos com diferença
+inferior a 1 pp permanece não avaliada nesse conjunto de 2020.
