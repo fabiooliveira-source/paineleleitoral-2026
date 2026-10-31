@@ -1,0 +1,149 @@
+{
+  "version": "V6-national-radius-holdout-2024-v1",
+  "registered_at": "2026-10-31",
+  "status": "PREREGISTERED_NEVER_SCORED",
+  "selection_source": "https://www.tse.jus.br/comunicacao/noticias/2024/Outubro/15-capitais-terao-2o-turno-na-disputa-pelo-cargo-de-prefeito",
+  "objective": "Expand external historical test geographic radius from 2 states to 15 NEW UFs across five regions, excluding all previously examined municipalities",
+  "cities": [
+    {
+      "name": "Manaus",
+      "uf": "AM",
+      "region": "Norte"
+    },
+    {
+      "name": "Belém",
+      "uf": "PA",
+      "region": "Norte"
+    },
+    {
+      "name": "Porto Velho",
+      "uf": "RO",
+      "region": "Norte"
+    },
+    {
+      "name": "Palmas",
+      "uf": "TO",
+      "region": "Norte"
+    },
+    {
+      "name": "Camaçari",
+      "uf": "BA",
+      "region": "Nordeste"
+    },
+    {
+      "name": "João Pessoa",
+      "uf": "PB",
+      "region": "Nordeste"
+    },
+    {
+      "name": "Aracaju",
+      "uf": "SE",
+      "region": "Nordeste"
+    },
+    {
+      "name": "Olinda",
+      "uf": "PE",
+      "region": "Nordeste"
+    },
+    {
+      "name": "Goiânia",
+      "uf": "GO",
+      "region": "Centro-Oeste"
+    },
+    {
+      "name": "Cuiabá",
+      "uf": "MT",
+      "region": "Centro-Oeste"
+    },
+    {
+      "name": "Campo Grande",
+      "uf": "MS",
+      "region": "Centro-Oeste"
+    },
+    {
+      "name": "Belo Horizonte",
+      "uf": "MG",
+      "region": "Sudeste"
+    },
+    {
+      "name": "Niterói",
+      "uf": "RJ",
+      "region": "Sudeste"
+    },
+    {
+      "name": "São Paulo",
+      "uf": "SP",
+      "region": "Sudeste"
+    },
+    {
+      "name": "Curitiba",
+      "uf": "PR",
+      "region": "Sul"
+    }
+  ],
+  "previously_tested": [
+    "Fortaleza/CE",
+    "Pelotas/RS",
+    "Natal/RN",
+    "Canoas/RS",
+    "Caxias do Sul/RS",
+    "Porto Alegre/RS",
+    "Santa Maria/RS",
+    "Caucaia/CE",
+    "São Paulo/SP 2020",
+    "Presidential 2018",
+    "Presidential 2022"
+  ],
+  "v6_model_blob_sha1": "844dcfcfc4e02269046a3b9b148b09939efbe955",
+  "v4_model_blob_sha1": "d0acf86ced042ff66c4a76c04faef947f42e014d",
+  "code_lock_file": "congelamento_v6_3_cidades.json",
+  "v6_coverage_limit": 0.2,
+  "algorithm_retraining_allowed": false,
+  "municipal_code_discovery": "exact UF and normalized official NM_MUNICIPIO string, no vote totals or outcome based selection",
+  "second_round_candidate_order": "two distinct official second-round candidate numbers, ordered numerically, NOT sorted by vote totals",
+  "checkpoint_grid": {
+    "detail": "1%..100% of sections first totalized by internal TSE time",
+    "primary": [
+      5,
+      10,
+      15,
+      20,
+      25,
+      30,
+      35,
+      40,
+      45,
+      50,
+      55,
+      60,
+      65,
+      70,
+      75,
+      80,
+      85,
+      90,
+      95
+    ],
+    "tie": "all section events with identical timestamp are jointly observed"
+  },
+  "primary_rules": {
+    "all_19_estimates": true,
+    "mae_not_worse_than_raw_observed": true,
+    "max_abs_not_worse_than_raw_observed": true,
+    "mae_pp_at_most": 1,
+    "p95_pp_at_most": 2,
+    "max_pp_at_most": 3,
+    "winner_correct_at5": true,
+    "no_false_conditional_call": true,
+    "physical_bounds_contain_truth": true
+  },
+  "holdout_gate": "all 15 municipalities must meet all rules; blocked source/city is failure, no replacement",
+  "source_policy": "Download official TSE ZIPs, record SHA256 and CRC and per-city reconstructed input SHA256 in data-only phase; freeze generated manifest before scoring; never rely on newer 2026 geocoordinates for 2024",
+  "evaluation_status": "not evaluated",
+  "limitations": [
+    "Retrospectively reconstructed first-totalization times are not authenticated public snapshots",
+    "City roster known historically to developer, and selection not random: not prospective blind validation",
+    "Votes at multiple checkpoints are correlated within election",
+    "No distance-based search is used by V6; radius here means geographic coverage of external holdout"
+  ]
+}
