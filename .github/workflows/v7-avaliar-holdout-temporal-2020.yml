@@ -1,0 +1,60 @@
+name: V7 2020 - avaliacao temporal 18 cidades - gate cientifico
+on:
+  push:
+    branches: [experimento/modelo-territorial-999]
+    paths:
+      - 'experimentos/modelo_999/auditoria_integral/congelamento_v7_holdout_temporal_2020.json'
+  workflow_dispatch:
+permissions:
+  contents: read
+  actions: read
+jobs:
+  reproducao-e-comparacao:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Reject model or data changes after protocol freeze
+        run: python experimentos/modelo_999/auditoria_integral/verificar_congelamento_v6.py
+      - name: Retrieve 18 original 2020 cases without substitution
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          dest=experimentos/modelo_999/auditoria_integral/raio_temporal_v7_2020
+          mkdir -p "$dest"
+          for uf in SE PA RR MT CE GO PB AL AM RS RO PE AC RJ MA PI ES BA; do
+            gh run download 41252574828 --repo fabiooliveira-source/paineleleitoral-2026 --name "v7-holdout-2020-input-$uf" --dir "$dest"
+          done
+      - name: Evaluate 100 checkpoints per election, strict frozen gate and baselines
+        run: python experimentos/modelo_999/auditoria_integral/avaliar_v7_holdout_temporal_2020.py
+      - name: Preserve all successes and failures
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: v7-holdout-temporal-2020-resultados
+          retention-days: 30
+          path: experimentos/modelo_999/auditoria_integral/raio_temporal_v7_2020/resultado_v7_holdout_temporal_2020.json
+          if-no-files-found: warn
+  criterio-cientifico:
+    needs: reproducao-e-comparacao
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          name: v7-holdout-temporal-2020-resultados
+          path: evidence
+      - name: Require 18 out of 18 preregistered 2020 cases, no 100% claim without evidence
+        run: |
+          python - <<'PY'
+          import pathlib,json
+          r=json.loads(pathlib.Path('evidence/resultado_v7_holdout_temporal_2020.json').read_text())
+          print("V7 temporal holdout passed",r["cases_passed"],"/",r["cases_total"],flush=True)
+          for c in r["cases"]:
+              print(c["uf"],c["city"],"PASS" if c["passed_all"] else "FAIL",c["failed_criteria"],flush=True)
+          assert r["cases_total"]==18 and r["cases_passed"]==18, "V7 scientific gate FAILED: do not call certified or tune on this holdout"
+          assert not r["integral_certification"]
+          print("Historical checks PASSED, still NOT prospective independent certification",flush=True)
+          PY
