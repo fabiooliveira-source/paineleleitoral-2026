@@ -1,0 +1,161 @@
+{
+  "version": "V7-2020-temporal-holdout-v1",
+  "year": 2020,
+  "registered_on": "2026-10-31",
+  "status": "PREREGISTERED_BEFORE_2020_V7_CASE_SCORING",
+  "model_path": "preditor_v7_experimental.py",
+  "model_git_blob_sha1": "f5701acc902a3d420030737196fcbf6b8dcb0a1e",
+  "baseline_v4_sha1": "d0acf86ced042ff66c4a76c04faef947f42e014d",
+  "baseline_v6_sha1": "844dcfcfc4e02269046a3b9b148b09939efbe955",
+  "model_parameter_tuning_prohibited": true,
+  "case_selection": "All 2020 second-round state capitals excluding Sao Paulo SP (already used in prior V4 validation), plus Feira de Santana BA. Fixed before scoring; no replacement after failures.",
+  "case_selection_source": "https://www12.senado.leg.br/noticias/materias/2020/11/26/segundo-turno-em-57-cidades-mobiliza-38-milhoes-de-eleitores-no-domingo",
+  "official_tse_list_source": "https://www.tse.jus.br/comunicacao/noticias/arquivos/informacoes-e-dados-estatisticos-sobre-as-eleicoes-2020-1o-e-2o-turnos/@@display-file/file/TSE-dados-estatisticos-eleicoes-2020-2-turno.pdf",
+  "cases": [
+    {
+      "city": "Aracaju",
+      "uf": "SE",
+      "region": "Nordeste"
+    },
+    {
+      "city": "Belém",
+      "uf": "PA",
+      "region": "Norte"
+    },
+    {
+      "city": "Boa Vista",
+      "uf": "RR",
+      "region": "Norte"
+    },
+    {
+      "city": "Cuiabá",
+      "uf": "MT",
+      "region": "Centro-Oeste"
+    },
+    {
+      "city": "Fortaleza",
+      "uf": "CE",
+      "region": "Nordeste"
+    },
+    {
+      "city": "Goiânia",
+      "uf": "GO",
+      "region": "Centro-Oeste"
+    },
+    {
+      "city": "João Pessoa",
+      "uf": "PB",
+      "region": "Nordeste"
+    },
+    {
+      "city": "Maceió",
+      "uf": "AL",
+      "region": "Nordeste"
+    },
+    {
+      "city": "Manaus",
+      "uf": "AM",
+      "region": "Norte"
+    },
+    {
+      "city": "Porto Alegre",
+      "uf": "RS",
+      "region": "Sul"
+    },
+    {
+      "city": "Porto Velho",
+      "uf": "RO",
+      "region": "Norte"
+    },
+    {
+      "city": "Recife",
+      "uf": "PE",
+      "region": "Nordeste"
+    },
+    {
+      "city": "Rio Branco",
+      "uf": "AC",
+      "region": "Norte"
+    },
+    {
+      "city": "Rio de Janeiro",
+      "uf": "RJ",
+      "region": "Sudeste"
+    },
+    {
+      "city": "São Luís",
+      "uf": "MA",
+      "region": "Nordeste"
+    },
+    {
+      "city": "Teresina",
+      "uf": "PI",
+      "region": "Nordeste"
+    },
+    {
+      "city": "Vitória",
+      "uf": "ES",
+      "region": "Sudeste"
+    },
+    {
+      "city": "Feira de Santana",
+      "uf": "BA",
+      "region": "Nordeste"
+    }
+  ],
+  "not_in_holdout": [
+    "São Paulo SP 2020"
+  ],
+  "known_tse_detail_zip_sha256": "10a50a467763dce73d44eee9023ffeeb3ebe6279756edb6b437203eb2bc71a30",
+  "source_file_names": {
+    "details": "detalhe_votacao_secao_2020.zip",
+    "votes": "votacao_secao_2020_{UF}.zip"
+  },
+  "candidate_ordering": "numeric ascending second-turn candidate ballot number; never by result magnitude",
+  "grid": {
+    "diagnostic_all_integer_percentages": "1..100",
+    "primary": [
+      5,
+      10,
+      15,
+      20,
+      25,
+      30,
+      35,
+      40,
+      45,
+      50,
+      55,
+      60,
+      65,
+      70,
+      75,
+      80,
+      85,
+      90,
+      95
+    ],
+    "clock": "first internal TSE partial totalization; ties processed simultaneously"
+  },
+  "primary_case_criteria": {
+    "all_19_estimates": true,
+    "mae_less_than_or_equal_to_observed": true,
+    "max_error_less_than_or_equal_to_observed": true,
+    "mae_at_most_1pp": true,
+    "p95_at_most_2pp": true,
+    "max_at_most_3pp": true,
+    "provisional_winner_correct_at_5": true,
+    "no_false_mathematical_winner_call": true,
+    "physical_bounds_cover_final": true
+  },
+  "required_passed_cases": 18,
+  "block_missing_or_invalid_election": true,
+  "report_failures_even_if_model_software_passes": true,
+  "limitations": [
+    "Retrospective first totalization timestamps are not authenticated public snapshots",
+    "Code and evaluator share ownership; requires independent auditor",
+    "Some geographic cities also present in previously examined 2024 elections, but 2020 elections were not used in V7 fitting",
+    "Historical TSE finals are public knowledge; preregistration mitigates but does not eliminate selection bias",
+    "No 100% winner probability or guaranteed correct forecasting is implied"
+  ]
+}
