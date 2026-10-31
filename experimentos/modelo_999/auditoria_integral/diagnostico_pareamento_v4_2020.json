@@ -1,0 +1,29 @@
+{
+  "year": 2020,
+  "counts": {
+    "detail_2": 22399,
+    "detail_1": 22399,
+    "votes_1": 253743,
+    "votes_2": 89534
+  },
+  "first_sections": 22399,
+  "second_sections": 22399,
+  "scopes": 58,
+  "final_votes": [
+    2168109,
+    3169121,
+    273216,
+    607062
+  ],
+  "electorate_total_retrospective": 8986687,
+  "missing_pairs": [],
+  "missing_times": [],
+  "date_counts": {
+    "29/11/2020": 22399
+  },
+  "late_events": [],
+  "assumptions": [
+    "References1T and registered electorate2T are retrospective; contemporaneous versions not authenticated.",
+    "Ledger availability_at equals internal totalization cutoff by replay hypothesis, not public capture."
+  ]
+}
