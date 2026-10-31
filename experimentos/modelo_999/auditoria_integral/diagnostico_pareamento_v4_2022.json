@@ -1,0 +1,30 @@
+{
+  "year": 2022,
+  "counts": {
+    "detail_1": 472075,
+    "detail_2": 472075,
+    "votes_1": 3529844,
+    "votes_2": 1850892
+  },
+  "first_sections": 472075,
+  "second_sections": 472075,
+  "scopes": 28,
+  "final_votes": [
+    60345999,
+    58206354,
+    1769678,
+    3930765
+  ],
+  "electorate_total_retrospective": 156454011,
+  "missing_pairs": [],
+  "missing_times": [],
+  "date_counts": {
+    "30/10/2022": 472074,
+    "31/10/2022": 1
+  },
+  "late_events": [],
+  "assumptions": [
+    "References1T and registered electorate2T are retrospective; contemporaneous versions not authenticated.",
+    "Ledger availability_at equals internal totalization cutoff by replay hypothesis, not public capture."
+  ]
+}
