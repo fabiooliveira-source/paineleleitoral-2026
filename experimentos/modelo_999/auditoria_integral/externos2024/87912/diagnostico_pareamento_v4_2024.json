@@ -1,0 +1,29 @@
+{
+  "year": 2024,
+  "counts": {
+    "detail_1": 753,
+    "detail_2": 753,
+    "votes_1": 5452,
+    "votes_2": 2995
+  },
+  "first_sections": 753,
+  "second_sections": 753,
+  "scopes": 3,
+  "final_votes": [
+    87737,
+    86474,
+    4947,
+    5542
+  ],
+  "electorate_total_retrospective": 248631,
+  "missing_pairs": [],
+  "missing_times": [],
+  "date_counts": {
+    "27/10/2024": 753
+  },
+  "late_events": [],
+  "assumptions": [
+    "References1T and registered electorate2T are retrospective; contemporaneous versions not authenticated.",
+    "Ledger availability_at equals internal totalization cutoff by replay hypothesis, not public capture."
+  ]
+}
