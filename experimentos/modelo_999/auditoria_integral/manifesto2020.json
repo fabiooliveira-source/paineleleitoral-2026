@@ -1,0 +1,144 @@
+[
+  {
+    "name": "detalhe_votacao_secao_2020.zip",
+    "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/detalhe_votacao_secao/detalhe_votacao_secao_2020.zip",
+    "sha256": "10a50a467763dce73d44eee9023ffeeb3ebe6279756edb6b437203eb2bc71a30",
+    "bytes": 88177739,
+    "zip_crc_ok": true,
+    "members": [
+      {
+        "name": "detalhe_votacao_secao_2020_PR.csv",
+        "bytes": 15212615
+      },
+      {
+        "name": "detalhe_votacao_secao_2020_AM.csv",
+        "bytes": 5743965
+      },
+      {
+        "name": "detalhe_votacao_secao_2020_AC.csv",
+        "bytes": 1449801
+      },
+      {
+        "name": "detalhe_votacao_secao_2020_RO.csv",
+        "bytes": 2596150
+      },
+      {
+        "name": "detalhe_votacao_secao_2020_RR.csv",
+        "bytes": 1013215
+      },
+      {
+        "name": "detalhe_votacao_secao_2020_SC.csv",
+        "bytes": 10572714
+      },
+      {
+        "name": "detalhe_votacao_secao_2020_AL.csv",
+        "bytes": 4515043
+      },
+      {
+        "name": "detalhe_votacao_secao_2020_PI.csv",
+        "bytes": 6214350
+      },
+      {
+        "name": "detalhe_votacao_secao_2020_RS.csv",
+        "bytes": 18728928
+      },
+      {
+        "name": "detalhe_votacao_secao_2020_SE.csv",
+        "bytes": 3696533
+      },
+      {
+        "name": "detalhe_votacao_secao_2020_SP.csv",
+        "bytes": 72890907
+      },
+      {
+        "name": "detalhe_votacao_secao_2020_TO.csv",
+        "bytes": 2429207
+      },
+      {
+        "name": "detalhe_votacao_secao_2020_BA.csv",
+        "bytes": 20327079
+      },
+      {
+        "name": "detalhe_votacao_secao_2020_AP.csv",
+        "bytes": 1203431
+      },
+      {
+        "name": "detalhe_votacao_secao_2020_BRASIL.csv",
+        "bytes": 318898277
+      },
+      {
+        "name": "detalhe_votacao_secao_2020_CE.csv",
+        "bytes": 14960569
+      },
+      {
+        "name": "detalhe_votacao_secao_2020_MA.csv",
+        "bytes": 10393785
+      },
+      {
+        "name": "detalhe_votacao_secao_2020_ES.csv",
+        "bytes": 6130277
+      },
+      {
+        "name": "detalhe_votacao_secao_2020_GO.csv",
+        "bytes": 10427577
+      },
+      {
+        "name": "detalhe_votacao_secao_2020_MG.csv",
+        "bytes": 32910855
+      },
+      {
+        "name": "detalhe_votacao_secao_2020_MS.csv",
+        "bytes": 4295845
+      },
+      {
+        "name": "detalhe_votacao_secao_2020_MT.csv",
+        "bytes": 5162627
+      },
+      {
+        "name": "detalhe_votacao_secao_2020_PA.csv",
+        "bytes": 13466598
+      },
+      {
+        "name": "detalhe_votacao_secao_2020_PB.csv",
+        "bytes": 6586105
+      },
+      {
+        "name": "detalhe_votacao_secao_2020_RJ.csv",
+        "bytes": 28696723
+      },
+      {
+        "name": "detalhe_votacao_secao_2020_PE.csv",
+        "bytes": 14566963
+      },
+      {
+        "name": "detalhe_votacao_secao_2020_RN.csv",
+        "bytes": 4721565
+      },
+      {
+        "name": "leiame.pdf",
+        "bytes": 123650
+      }
+    ],
+    "headers": {},
+    "retrieved_at_utc": "2026-10-31T00:06:09.511402+00:00"
+  },
+  {
+    "name": "votacao_secao_2020_SP.zip",
+    "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/votacao_secao/votacao_secao_2020_SP.zip",
+    "sha256": "79dbc252f6d6187f351ceaf1bbf2a0d3fba5043a90df1e2af9c4e8bae7244fc8",
+    "bytes": 526974460,
+    "zip_crc_ok": true,
+    "members": [
+      {
+        "name": "votacao_secao_2020_SP.csv",
+        "bytes": 2688090367
+      },
+      {
+        "name": "leiame.pdf",
+        "bytes": 192420
+      }
+    ],
+    "headers": {},
+    "retrieved_at_utc": "2026-10-31T00:06:19.524687+00:00"
+  }
+]
