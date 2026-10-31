@@ -1,0 +1,16 @@
+{
+  "files": [
+    {
+      "name": "blocos_stress_v4_2018.json",
+      "sha256": "f5559e4ddfc6f8361de431fe18a2e36e87f8726770223da04f32cac801df8af3",
+      "reference_inputs": "entradas_pareadas_v4_2018.json",
+      "reference_sha256": "ff44e3c435b1713777369e824e94fb139659625c579765815578afc6286ec92a"
+    },
+    {
+      "name": "blocos_stress_v4_2022.json",
+      "sha256": "1ac2e8e8f749af51e3a1bc4628c7d5d75e6a38dfa2f1bdf92d43eb7f6308c3f2",
+      "reference_inputs": "entradas_pareadas_v4_2022.json",
+      "reference_sha256": "3d32270c7eb9f28e2bd9fcb055167cec92d26340203b037f7aa8f2dc3d780e9b"
+    }
+  ]
+}
