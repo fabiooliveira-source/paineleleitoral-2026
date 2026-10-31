@@ -1,0 +1,63 @@
+name: Qualificacao v4 pareada - escopo e limites
+on:
+  push:
+    branches: ['experimento/modelo-territorial-999']
+    paths: ['.github/workflows/qualificacao-v4.yml']
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  replay-pinned:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Verificar pacote congelado e reproduzir os tres replays
+        run: python experimentos/modelo_999/auditoria_integral/qualificar_pacote_v4.py
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: qualificacao-v4-escopo
+          path: |
+            experimentos/modelo_999/auditoria_integral/qualificacao_v4_escopo.json
+            experimentos/modelo_999/auditoria_integral/resultado_v4_*.json
+            experimentos/modelo_999/auditoria_integral/verificacao_fracoes_v4_*.json
+  full-source-2020:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Baixar fontes TSE2020 com SHA256 fixado
+        run: python experimentos/modelo_999/auditoria_integral/obter_microdados_2020_v4.py
+      - name: Reconstruir coortes por secao e conferir fontes
+        run: python experimentos/modelo_999/auditoria_integral/construir_entradas_pareadas_v4.py 2020
+      - name: Confrontar entradas reconstruidas com pacote congelado
+        run: |
+          python - <<'PYCODE'
+          import pathlib,json,hashlib
+          root=pathlib.Path('experimentos/modelo_999/auditoria_integral')
+          manifest=json.loads((root/'manifesto_pacote_v4.json').read_text())
+          expected=next(x['sha256'] for x in manifest['files'] if x['name']=='entradas_pareadas_v4_2020.json')
+          assert hashlib.sha256((root/'entradas_pareadas_v4_2020.json').read_bytes()).hexdigest()==expected
+          print('Entradas2020 reproduzidas byte a byte das fontes oficiais')
+          PYCODE
+      - name: Reproduzir teste externo sem reajustar modelo
+        run: |
+          python experimentos/modelo_999/auditoria_integral/avaliar_v4_pareado.py 2020
+          python experimentos/modelo_999/auditoria_integral/verificar_v4_fracoes.py 2020
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: fontes2020-v4-reproducao
+          path: |
+            experimentos/modelo_999/auditoria_integral/diagnostico_pareamento_v4_2020.json
+            experimentos/modelo_999/auditoria_integral/entradas_pareadas_v4_2020.json
+            experimentos/modelo_999/auditoria_integral/resultado_v4_2020.json
+            experimentos/modelo_999/auditoria_integral/verificacao_fracoes_v4_2020.json
+            experimentos/modelo_999/auditoria_integral/microdados2020/manifesto2020.json
