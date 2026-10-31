@@ -1,0 +1,153 @@
+{
+  "year": 2018,
+  "counts": {
+    "detail_1": 454490,
+    "detail_2": 454490,
+    "votes_2": 1795786,
+    "votes_1": 4820874
+  },
+  "first_sections": 454490,
+  "second_sections": 454490,
+  "scopes": 28,
+  "final_votes": [
+    47040906,
+    57797847,
+    2486593,
+    8608105
+  ],
+  "electorate_total_retrospective": 147306294,
+  "missing_pairs": [],
+  "missing_times": [],
+  "date_counts": {
+    "28/10/2018": 454430,
+    "29/10/2018": 12,
+    "27/10/2018": 40,
+    "25/02/2019": 8
+  },
+  "late_events": [
+    {
+      "key": [
+        "RS",
+        "87939",
+        "35",
+        "24"
+      ],
+      "timestamp": "25/02/2019 18:10:21",
+      "votes": [
+        91,
+        56,
+        11,
+        13
+      ]
+    },
+    {
+      "key": [
+        "RS",
+        "88790",
+        "80",
+        "54"
+      ],
+      "timestamp": "25/02/2019 18:10:21",
+      "votes": [
+        90,
+        79,
+        5,
+        10
+      ]
+    },
+    {
+      "key": [
+        "RS",
+        "88790",
+        "80",
+        "41"
+      ],
+      "timestamp": "25/02/2019 18:10:21",
+      "votes": [
+        118,
+        88,
+        5,
+        6
+      ]
+    },
+    {
+      "key": [
+        "RS",
+        "88790",
+        "80",
+        "117"
+      ],
+      "timestamp": "25/02/2019 18:10:21",
+      "votes": [
+        125,
+        145,
+        3,
+        8
+      ]
+    },
+    {
+      "key": [
+        "RS",
+        "88790",
+        "80",
+        "45"
+      ],
+      "timestamp": "25/02/2019 18:10:21",
+      "votes": [
+        137,
+        145,
+        9,
+        14
+      ]
+    },
+    {
+      "key": [
+        "RS",
+        "88790",
+        "80",
+        "85"
+      ],
+      "timestamp": "25/02/2019 18:10:21",
+      "votes": [
+        69,
+        94,
+        5,
+        11
+      ]
+    },
+    {
+      "key": [
+        "RS",
+        "88790",
+        "80",
+        "70"
+      ],
+      "timestamp": "25/02/2019 18:10:21",
+      "votes": [
+        74,
+        152,
+        6,
+        10
+      ]
+    },
+    {
+      "key": [
+        "RS",
+        "88790",
+        "80",
+        "46"
+      ],
+      "timestamp": "25/02/2019 18:10:21",
+      "votes": [
+        95,
+        154,
+        4,
+        10
+      ]
+    }
+  ],
+  "assumptions": [
+    "References1T and registered electorate2T are retrospective; contemporaneous versions not authenticated.",
+    "Ledger availability_at equals internal totalization cutoff by replay hypothesis, not public capture."
+  ]
+}
