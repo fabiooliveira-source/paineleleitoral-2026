@@ -1,0 +1,22 @@
+name: Avaliar cobertura V6 experimental
+on:
+  push:
+    branches: [experimento/modelo-territorial-999]
+    paths:
+      - 'experimentos/modelo_999/auditoria_integral/avaliar_cobertura_v6.py'
+      - '.github/workflows/avaliar-cobertura-v6.yml'
+  workflow_dispatch:
+jobs:
+  evaluate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Compare frozen development cases
+        run: python experimentos/modelo_999/auditoria_integral/avaliar_cobertura_v6.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: resultado-v6-desenvolvimento
+          path: experimentos/modelo_999/auditoria_integral/resultado_cobertura_v6_desenvolvimento.json
