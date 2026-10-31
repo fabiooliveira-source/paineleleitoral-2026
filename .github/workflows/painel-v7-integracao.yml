@@ -1,0 +1,60 @@
+name: Painel V7 experimental - segurança, navegação e cálculo
+on:
+  push:
+    branches: [feature/painel-v7-seguro-2026]
+    paths:
+      - 'v7-engine.js'
+      - 'validacao-v7-ui.js'
+      - 'validacao-v7.html'
+      - 'acompanhar.html'
+      - 'index.html'
+      - 'tests/v7-engine.cjs'
+      - '.github/workflows/painel-v7-integracao.yml'
+  pull_request:
+    paths:
+      - 'v7-engine.js'
+      - 'validacao-v7-ui.js'
+      - 'validacao-v7.html'
+      - 'acompanhar.html'
+      - 'index.html'
+      - 'tests/v7-engine.cjs'
+permissions:
+  contents: read
+jobs:
+  testar-motor-e-interface:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate browser scripts syntax
+        run: |
+          node --check v7-engine.js
+          node --check validacao-v7-ui.js
+          node --check tests/v7-engine.cjs
+      - name: Test experimental V7 arithmetic, fail-closed and live-monitor separation
+        run: node tests/v7-engine.cjs
+      - name: HTML accessibility and conservative source labeling
+        run: |
+          python - <<'PY'
+          import pathlib
+          from html.parser import HTMLParser
+          class Parse(HTMLParser):
+              def __init__(self): super().__init__(); self.links=[];self.ids=[]
+              def handle_starttag(self, tag, attrs):
+                  attrs=dict(attrs)
+                  if tag=="a":self.links.append(attrs.get("href"))
+                  if "id" in attrs:self.ids.append(attrs["id"])
+          for name in ("acompanhar.html","index.html","validacao-v7.html"):
+              raw=pathlib.Path(name).read_text(encoding="utf-8")
+              p=Parse();p.feed(raw)
+              assert "validacao-v7.html" in p.links, name+" does not link lab"
+              assert len(p.ids)==len(set(p.ids)), name+" duplicate ids"
+              print(name,"HTML parsed, unique ids and navigation",flush=True)
+          lab=pathlib.Path("validacao-v7.html").read_text()
+          assert "NÃO CERTIFICADO" in lab and "4 / 10" in lab
+          assert "v7-engine.js" in lab and "validacao-v7-ui.js" in lab
+          assert "Não" in pathlib.Path("acompanhar.html").read_text()
+          PY
