@@ -1,0 +1,22 @@
+name: Sensibilidade V6 sem calibracao
+on:
+  push:
+    branches: [experimento/modelo-territorial-999]
+    paths:
+      - 'experimentos/modelo_999/auditoria_integral/avaliar_cobertura_v6_sensibilidade.py'
+      - '.github/workflows/sensibilidade-cobertura-v6.yml'
+  workflow_dispatch:
+jobs:
+  robustness:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Run robustness sweep
+        run: python experimentos/modelo_999/auditoria_integral/avaliar_cobertura_v6_sensibilidade.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: v6-robustness
+          path: experimentos/modelo_999/auditoria_integral/resultado_v6_sensibilidade.json
