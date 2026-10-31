@@ -17,8 +17,8 @@ const fixture = () => ({
     '02':{votes_a:350,votes_b:650,available_at:'2026-10-01T00:00:00-03:00'}
   },
   ledger:[
-    {scope:'01',timestamp:'2026-10-31T19:58:00-03:00',available_at:'2026-10-31T19:59:00-03:00',votes_a:170,votes_b:150,matched_first_a:100,matched_first_b:100},
-    {scope:'02',timestamp:'2026-10-31T19:58:00-03:00',available_at:'2026-10-31T19:59:00-03:00',votes_a:0,votes_b:0,matched_first_a:0,matched_first_b:0}
+    {scope:'01',timestamp:'2026-10-31T19:59:00-03:00',available_at:'2026-10-31T19:59:00-03:00',votes_a:170,votes_b:150,matched_first_a:100,matched_first_b:100},
+    {scope:'02',timestamp:'2026-10-31T19:59:00-03:00',available_at:'2026-10-31T19:59:00-03:00',votes_a:0,votes_b:0,matched_first_a:0,matched_first_b:0}
   ]
 });
 let assertions = 0;
