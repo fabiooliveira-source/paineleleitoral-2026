@@ -1,0 +1,11 @@
+AC matched 1925
+AL matched 6361
+AM matched 6910
+AP matched 1547
+Traceback (most recent call last):
+  File "/home/runner/work/paineleleitoral-2026/paineleleitoral-2026/scripts/reprocessar-mae-indicadores.py", line 17, in <module>
+    g=json.loads(gzip.decompress(base64.b64decode(json.loads(path.read_text())["parte"])))
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/hostedtoolcache/Python/3.11.17/x64/lib/python3.11/gzip.py", line 608, in decompress
+    raise EOFError("Compressed file ended before the end-of-stream "
+EOFError: Compressed file ended before the end-of-stream marker was reached
