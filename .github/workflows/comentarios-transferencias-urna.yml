@@ -1,0 +1,19 @@
+name: Validar comentarios transferencias
+on:
+  push:
+    branches: [feature/comentarios-transferencias-urna]
+  pull_request:
+    paths:
+      - 'comportamento-rateios.js'
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node --check comportamento-rateios.js
+      - run: node tests/limites-por-urna.cjs
