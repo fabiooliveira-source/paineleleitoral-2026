@@ -1,0 +1,21 @@
+name: Validar cenarios de transferencias e negociacao
+on:
+  push:
+    branches: [feature/transferencias-negociacao-2026]
+  pull_request:
+    paths:
+      - 'transferencias-negociacao*'
+      - 'tests/transferencias-negociacao.cjs'
+permissions:
+  contents: read
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node tests/transferencias-negociacao.cjs
+      - run: node tests/negociacao-eleitoral.cjs
+      - run: node tests/teoria-jogos.cjs
