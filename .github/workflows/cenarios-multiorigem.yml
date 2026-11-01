@@ -1,0 +1,22 @@
+name: Cenarios multiorigem - testes
+on:
+  push:
+    branches: [feature/multiorigem-incerteza-transferencias]
+  pull_request:
+    paths:
+      - 'probabilidade-transferencias*'
+      - 'tests/probabilidade-transferencias.cjs'
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node --check probabilidade-transferencias.js
+      - run: node --check probabilidade-transferencias-ui.js
+      - run: node tests/probabilidade-transferencias.cjs
+      - run: node tests/transferencias-negociacao.cjs
