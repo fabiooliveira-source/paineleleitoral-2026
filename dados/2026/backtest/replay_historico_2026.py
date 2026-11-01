@@ -36,8 +36,9 @@ def main():
     with CSV.open(newline="",encoding="utf-8-sig") as fp:
         for row in csv.DictReader(fp):
             scope=row["scope"]
-            if scope not in ("BR","UF"):continue
-            uf="BR" if scope=="BR" else row["uf"]
+            if scope != "BR" and (len(scope)!=2 or not scope.isalpha() or row["uf"]!=scope):
+                raise ValueError("invalid UF scope: "+scope)
+            uf=scope
             if not uf:raise ValueError("missing UF")
             at=parse(row["timestamp"])
             values={k:int(row[k]) for k in FIELDS}
