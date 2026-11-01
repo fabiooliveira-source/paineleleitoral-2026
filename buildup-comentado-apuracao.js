@@ -27,7 +27,7 @@
    const departures=Object.entries(g.matrix[candidate]||{}).filter(([d])=>d!==candidate).reduce((s,[,n])=>s+n,0);
    const arrivals=Object.entries(g.matrix).filter(([o])=>o!==candidate).reduce((s,[,d])=>s+(d[candidate]||0),0);
    const delta=first+arrivals-departures-second;
-   html+='<h3>'+esc(candidate)+': '+fmt(first)+' votos no 1º turno → '+fmt(second)+' no 2º turno</h3><p>Composição estimada: '+fmt(first)+' votos de origem + '+fmt(arrivals)+' entradas − '+fmt(departures)+' saídas = '+fmt(second)+' votos. Permanência estimada: '+fmt(retained)+'. Diferença contábil: '+fmt(delta)+' votos.</p><details><summary>Ver contribuições estimadas para '+esc(candidate)+'</summary><ul>'+rows.join('')+'</ul></details>';
+   html+='<h3>'+esc(candidate)+': '+fmt(first)+' votos no 1º turno → '+fmt(second)+' no 2º turno</h3><p>Composição estimada: '+fmt(first)+' votos de origem + '+fmt(arrivals)+' entradas − '+fmt(departures)+' saídas = '+fmt(second)+' votos. Permanência estimada: '+fmt(retained)+'. Diferença contábil: '+fmt(delta)+' votos.</p><p><strong>Confiança estatística das transferências: não calculável com os dados e a validação atuais (meta: ≥95%).</strong> Não é possível atribuir um percentual numérico defensável somente a partir dos totais por urna.</p><details><summary>Ver contribuições estimadas para '+esc(candidate)+'</summary><ul>'+rows.join('')+'</ul><p><strong>Confiança por origem: não demonstrada (meta: ≥95%).</strong></p></details>';
   }
   html+='<p><strong>Certeza estatística de cada transferência: não demonstrada.</strong> O modelo determinístico não sustenta uma afirmação de 95% de confiança. Brancos e nulos permanecem agregados; ajuste cadastral não equivale a mudança de voto.</p>';
   host.innerHTML=html;
