@@ -1,0 +1,45 @@
+name: Auditar pareamento temporal 2026 para V7
+on:
+  push:
+    branches: [experimento/reconstrucao-secoes-2026]
+    paths:
+      - 'dados/2026/backtest/auditar_pareamento_temporal_2026.py'
+      - '.github/workflows/auditar-pareamento-2026.yml'
+permissions:
+  contents: write
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Inspect all historical section archives and timing fields
+        run: python dados/2026/backtest/auditar_pareamento_temporal_2026.py
+      - name: Validate no future-leakage assumptions
+        run: |
+          python - <<'PY'
+          import json
+          p='dados/2026/backtest/auditoria_pareamento_temporal_2026.json'
+          d=json.load(open(p))
+          assert d['section_archives_count']==28
+          assert d['source_rows']==4892
+          assert d['v7_replay_permitted'] is False
+          assert d['temporal_join_key_verified'] is False
+          print('PASS: all 28 section archives inspected, no fake temporal join',flush=True)
+          PY
+      - name: Commit feasibility report to experiment branch
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add dados/2026/backtest/auditoria_pareamento_temporal_2026.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Auditoria: campos e lacunas do pareamento temporal das secoes 2026'
+            git push origin HEAD:experimento/reconstrucao-secoes-2026
+          fi
+      - uses: actions/upload-artifact@v4
+        with:
+          name: auditoria-pareamento-temporal-2026
+          path: dados/2026/backtest/auditoria_pareamento_temporal_2026.json
