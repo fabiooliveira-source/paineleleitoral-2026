@@ -44,6 +44,8 @@ def main():
         timestamps=collections.Counter();walk(obj,timestamps)
         item={"file":file.name,"bytes":file.stat().st_size,
           "root_type":type(obj).__name__,"root_keys":list(obj)[:12] if isinstance(obj,dict) else [],
+          "declared_columns":obj.get("colunas",[]) if isinstance(obj,dict) else [],
+          "row_count":len(obj.get("linhas",[])) if isinstance(obj,dict) else None,
           "fields":sorted(keys)[:200],
           "temporal_field_occurrences":dict(timestamps)}
         result["section_archives"].append(item)
@@ -53,7 +55,7 @@ def main():
     result["raw_snapshot_fields"]=sorted(keys)[:200]
     result["source_has_section_id"]=any("secao" in x.lower() or "seção" in x.lower() for x in source_fields if x not in ("secoes_contabilizadas",))
     result["section_archives_count"]=len(result["section_archives"])
-    result["timestamp_field_candidates"]={x["file"]:x["temporal_field_occurrences"] for x in result["section_archives"] if x["temporal_field_occurrences"]}
+    result["timestamp_field_candidates"]={x["file"]:{"fields":x["temporal_field_occurrences"],"declared_columns":[c for c in x["declared_columns"] if any(w in str(c).lower() for w in ("timestamp","horario","horário","recebimento","tot","data","dt_","hora"))]} for x in result["section_archives"] if x["temporal_field_occurrences"] or any(w in str(c).lower() for c in x["declared_columns"] for w in ("timestamp","horario","horário","recebimento","tot","data","dt_","hora"))}
     result["missing_critical_information"]=[
       "Timestamp of public availability for each second-round section, tied to its unique UF/municipio/zona/secao key",
       "First-round reference votes from exactly the same counted sections at each checkpoint",
