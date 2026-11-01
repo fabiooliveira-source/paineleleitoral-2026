@@ -1,0 +1,21 @@
+name: Limites por urna 2026
+on:
+  push:
+    branches: [feature/limites-por-urna-2026]
+  pull_request:
+    paths:
+      - 'limites-por-urna.js'
+      - 'tests/limites-por-urna.cjs'
+      - 'transferencias.html'
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - run: node --check limites-por-urna.js
+      - run: node tests/limites-por-urna.cjs
