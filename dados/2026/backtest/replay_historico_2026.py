@@ -45,8 +45,8 @@ def main():
             if min(values.values())<0 or values["votos_13"]+values["votos_22"]+values["brancos"]+values["nulos"]>values["comparecimento"]:
                 raise ValueError("invalid votes at "+uf)
             grouped[uf].append((at,row["timestamp"],values))
-    if "BR" not in grouped or len(grouped)!=28:
-        raise ValueError("BR + 27 states required; got "+str(len(grouped)))
+    if "BR" not in grouped or "ZZ" not in grouped or len(grouped)!=29:
+        raise ValueError("BR + 27 UFs + exterior ZZ required; got "+str(len(grouped)))
     final_national=validity["national_final"]
     if grouped["BR"][-1][2]["votos_13"]!=final_national[-2] or grouped["BR"][-1][2]["votos_22"]!=final_national[-1]:
         raise ValueError("national final mismatch")
