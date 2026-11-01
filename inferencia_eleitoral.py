@@ -167,7 +167,7 @@ def fit_territory(X,Y,N,clusters,origin_names,B=100):
     return {'status':'exploratory_assumption_dependent','n':len(X),'electors':int(total),'municipal_clusters':len(ids),'origins':names,'destinations':['Lula','Flávio','Brancos','Nulos','Abstenção'],'rates':P.tolist(),'bootstrap95_lower':lo.tolist() if lo is not None else None,'bootstrap95_upper':hi.tolist() if hi is not None else None,'alienation_rate':alien.tolist(),'alienation_bootstrap95':alien_ci.T.tolist() if alien_ci is not None else None,'bootstrap_success':len(samples),'bootstrap_failed':fails,'condition_number_gram':condition,'rank':int(np.linalg.matrix_rank(G)),'parameters_origins':len(names),'ridge_sensitivity_max_pp':float(100*np.max(abs(ridgeP-P))),'weighted_rmse_proportions':np.sqrt(np.average(error**2,axis=0,weights=N)).tolist(),'aggregate_expected_minus_observed':(pred.sum(axis=0)-Y.sum(axis=0)).tolist(),'abstention_effects_expected':effects,'warning':'Taxas médias modeladas, não fluxos individuais observados; intervalos bootstrap condicionais ao modelo. Sem calibração causal ou garantia contra viés ecológico.'}
 
 def main():
-    ap=argparse.ArgumentParser();ap.add_argument('--base',required=True);ap.add_argument('--candidates',required=True);ap.add_argument('--out',required=True);ap.add_argument('--bootstrap',type=int,default=100);ap.add_argument('--states',action='store_true');args=ap.parse_args()
+    ap=argparse.ArgumentParser();ap.add_argument('--base',required=True);ap.add_argument('--candidates',required=True);ap.add_argument('--out',required=True);ap.add_argument('--bootstrap',type=int,default=100);ap.add_argument('--states',action='store_true');ap.add_argument('--municipalities',action='store_true',help='Ajustar municípios separadamente; bootstrap municipal indisponível com um único cluster');args=ap.parse_args()
     out=Path(args.out);out.mkdir(parents=True,exist_ok=True)
     d,cols,names,join=load_existing(args.base,args.candidates);good,X,Y,audit,excluded=prepare(d,cols);N=good.aptos_1t.to_numpy(np.int64)
     origins=['Lula','Flávio']+[names.get(c[5:],c[5:])+' ['+c[5:]+']' for c in cols]+['Brancos','Nulos','Abstenção'];lo,hi=bounds(X,Y,N)
@@ -180,11 +180,12 @@ def main():
             b[f'{r}_{target}_min']=lo[:,r,c];b[f'{r}_{target}_max']=hi[:,r,c]
     b.to_csv(out/'limites_por_secao.csv.gz',sep=';',index=False,compression='gzip')
     result={'method':'Regressão ecológica multivariada restrita, WLS + bootstrap de municípios','seed':SEED,'audit':audit,'origins':origins,'destinations':['Lula','Flávio','Brancos','Nulos','Abstenção'],'territories':{}}
-    targets=['BR']+(sorted(good.uf.unique()) if args.states else [])
+    targets=['BR']+(sorted(good.uf.unique()) if args.states else [])+(['MUN:'+uf+':'+code for uf,code in good[['uf','codigo_municipio_tse']].drop_duplicates().itertuples(index=False,name=None)] if args.municipalities else [])
     for territory in targets:
-        sel=np.ones(len(good),bool) if territory=='BR' else good.uf.eq(territory).to_numpy()
+        sel=(np.ones(len(good),bool) if territory=='BR' else ((good.uf.eq(territory.split(':')[1]) & good.codigo_municipio_tse.eq(territory.split(':')[2])).to_numpy() if territory.startswith('MUN:') else good.uf.eq(territory).to_numpy()))
         print('Ajustando',territory,int(sel.sum()),flush=True)
-        fit=fit_territory(X[sel],Y[sel],N[sel],(good.uf+':'+good.codigo_municipio_tse).to_numpy()[sel],origins,args.bootstrap)
+        fit=fit_territory(X[sel],Y[sel],N[sel],(good.uf+':'+good.codigo_municipio_tse).to_numpy()[sel],origins,0 if territory.startswith('MUN:') else args.bootstrap)
+        if territory.startswith('MUN:'):fit['municipal_warning']='Ajuste ecológico de um único município: sem bootstrap de municípios; identificabilidade e extrapolação frágeis. Não interpretar como transferências individuais nem atribuir confiança de 95%.'
         fit['bounds_min']=lo[sel].sum(axis=0).tolist();fit['bounds_max']=hi[sel].sum(axis=0).tolist();fit['origin_totals']=X[sel].sum(axis=0).tolist();fit['destination_totals']=Y[sel].sum(axis=0).tolist()
         fit['grouped_bounds']={}
         for group,indices in [('Eliminados',list(range(2,len(origins)-3))),('Brancos + nulos + abstenção',list(range(len(origins)-3,len(origins))))]:
