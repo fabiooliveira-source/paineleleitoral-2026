@@ -15,11 +15,12 @@ jobs:
         with:
           python-version: '3.11'
       - run: pip install numpy scipy
-      - run: python scripts/reprocessar-mae-indicadores.py
+      - run: python scripts/reprocessar-mae-indicadores.py > dados/2026/reprocessamento-log.txt 2>&1 || true
       - name: Publicar diagnóstico na branch experimental
         run: |
           git config user.name github-actions
           git config user.email github-actions@users.noreply.github.com
-          git add dados/2026/reprocessamento-mae-indicadores.json
+          git add dados/2026/reprocessamento-log.txt
+          if test -f dados/2026/reprocessamento-mae-indicadores.json; then git add dados/2026/reprocessamento-mae-indicadores.json; fi
           git commit -m "Registrar MAE reprocessado por indicador" || exit 0
           git push
