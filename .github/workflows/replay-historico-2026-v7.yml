@@ -7,7 +7,7 @@ on:
       - 'dados/2026/backtest/replay_historico_2026.py'
   workflow_dispatch:
 permissions:
-  contents: read
+  contents: write
 jobs:
   replay-historico:
     runs-on: ubuntu-latest
@@ -32,6 +32,15 @@ jobs:
           assert r['scopes'][0]['uf']=='BR'
           print('PASS: 29 scopes, 580 requested checkpoints, V7 abstention on unpaired data',flush=True)
           PY
+      - name: Publish reproducible JSON historical replay to experimental branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add dados/2026/backtest/replay_2026_resultado.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Dados historicos: replay 2026 29 recortes, V7 bloqueada sem ledger pareado"
+            git push origin HEAD:feature/historico-2026-replay-v7
+          fi
       - uses: actions/upload-artifact@v4
         with:
           name: replay-historico-2026-BR-27-UFs
