@@ -1,0 +1,49 @@
+name: Teoria dos jogos e negociacao - testes
+on:
+  push:
+    branches: [feature/teoria-jogos-apuracao]
+    paths:
+      - '.github/workflows/teoria-jogos-negociacao.yml'
+      - 'teoria-jogos.js'
+      - 'teoria-jogos-ui.js'
+      - 'negociacao-eleitoral.js'
+      - 'negociacao-eleitoral-ui.js'
+      - 'tests/teoria-jogos.cjs'
+      - 'tests/negociacao-eleitoral.cjs'
+  pull_request:
+    paths:
+      - 'teoria-jogos.js'
+      - 'negociacao-eleitoral.js'
+      - 'tests/teoria-jogos.cjs'
+      - 'tests/negociacao-eleitoral.cjs'
+permissions:
+  contents: read
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check JavaScript syntax
+        run: |
+          node --check teoria-jogos.js
+          node --check teoria-jogos-ui.js
+          node --check negociacao-eleitoral.js
+          node --check negociacao-eleitoral-ui.js
+      - name: Run neutral minimax and bargaining tests
+        run: |
+          node tests/teoria-jogos.cjs
+          node tests/negociacao-eleitoral.cjs
+      - name: Check panel links and labels
+        run: |
+          python - <<'PY'
+          import pathlib
+          pages={p:pathlib.Path(p).read_text(encoding='utf-8') for p in ('teoria-jogos.html','negociacao-eleitoral.html','acompanhar.html')}
+          assert 'negociacao-eleitoral.html' in pages['teoria-jogos.html']
+          assert 'teoria-jogos.html' in pages['negociacao-eleitoral.html']
+          assert all(link in pages['acompanhar.html'] for link in ('negociacao-eleitoral.html','teoria-jogos.html'))
+          print('PASS: panel links and neutral labs')
+          PY
