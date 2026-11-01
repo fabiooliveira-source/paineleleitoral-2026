@@ -1,0 +1,36 @@
+{
+  "method": "NOVO benchmark IDW2 8 vizinhos por UF, sem regressao ecologica; nao reproduz MAE 1.54 p.p. publicado",
+  "split": "blocos de 0.5 graus; SHA256(latcell:loncell)%5; teste 0, ajuste 1, treino 2-4",
+  "train_sections": 264848,
+  "test_sections": 109237,
+  "excluded_no_geo_or_quality": null,
+  "indicators": {
+    "Lula": {
+      "mae_pp": 6.911839,
+      "weighted_mae_pp": 6.856301,
+      "mae_votos_por_secao": 21.9644
+    },
+    "Flavio Bolsonaro": {
+      "mae_pp": 7.639657,
+      "weighted_mae_pp": 7.644268,
+      "mae_votos_por_secao": 24.4887
+    },
+    "Brancos": {
+      "mae_pp": 0.494277,
+      "weighted_mae_pp": 0.485514,
+      "mae_votos_por_secao": 1.5554
+    },
+    "Nulos": {
+      "mae_pp": 0.741542,
+      "weighted_mae_pp": 0.728281,
+      "mae_votos_por_secao": 2.3331
+    },
+    "Abstencoes": {
+      "mae_pp": 4.178883,
+      "weighted_mae_pp": 4.119894,
+      "mae_votos_por_secao": 13.1982
+    }
+  },
+  "global_finalists_weighted_mae_pp": 7.250285,
+  "caveat": "Nao mede erros de transferencia individual; vizinhos com mesmo local podem correlacionar; geocodificacao e origem de dados ainda exigem auditoria independente."
+}
