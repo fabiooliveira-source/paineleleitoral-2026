@@ -1,0 +1,206 @@
+{
+  "sections": 499205,
+  "ufs": 28,
+  "all_five_national_models_reproduced_atol_1e8": true,
+  "max_probability_sum_error": 6.661338147750939e-16,
+  "files": [
+    {
+      "path": "dados/2026/transferencias-modelos-AC.json",
+      "sections": 2270,
+      "blocks": 53,
+      "sha256": "bfbe503388f9e4cc00e55467aeff60363acfe6dcfac335b6e404b12285137689",
+      "bytes": 198708
+    },
+    {
+      "path": "dados/2026/transferencias-modelos-AL.json",
+      "sections": 7101,
+      "blocks": 16,
+      "sha256": "e0e3520205c4360a9547c9897d0f6b811822ea4f7556cfe6ad77758eb6a9581b",
+      "bytes": 91232
+    },
+    {
+      "path": "dados/2026/transferencias-modelos-AM.json",
+      "sections": 8157,
+      "blocks": 197,
+      "sha256": "03c723f7510f9d226027e1efa69edcaf7b2d7e31b02ae35375eacc2dc728e7ae",
+      "bytes": 726592
+    },
+    {
+      "path": "dados/2026/transferencias-modelos-AP.json",
+      "sections": 1914,
+      "blocks": 27,
+      "sha256": "1c698afaa6cf2457b5d6709c030da5564e5cc317aa5b564141d17460029fce87",
+      "bytes": 99260
+    },
+    {
+      "path": "dados/2026/transferencias-modelos-BA.json",
+      "sections": 35476,
+      "blocks": 217,
+      "sha256": "971b87f346bc2c157ad01d4920ef9abe84999b68b253dfdf34e3d189d5d5155b",
+      "bytes": 1020956
+    },
+    {
+      "path": "dados/2026/transferencias-modelos-CE.json",
+      "sections": 23765,
+      "blocks": 67,
+      "sha256": "6a018bc9cc3f078fdb8a877195c8e3226dbb6ac5aa841bb0b43f4b2337ad19a6",
+      "bytes": 367380
+    },
+    {
+      "path": "dados/2026/transferencias-modelos-DF.json",
+      "sections": 6969,
+      "blocks": 6,
+      "sha256": "8ec860917608ea2aaee226b5cbc82bea2b7081abfb06904ebf49ef57b24abf2a",
+      "bytes": 26592
+    },
+    {
+      "path": "dados/2026/transferencias-modelos-ES.json",
+      "sections": 9844,
+      "blocks": 29,
+      "sha256": "001a8f6976604b6e47053ac5489fde99e232c9d3accbca424f007b51656656dd",
+      "bytes": 145636
+    },
+    {
+      "path": "dados/2026/transferencias-modelos-GO.json",
+      "sections": 15686,
+      "blocks": 126,
+      "sha256": "e175875b5ce4f4902b565db4f8f09dec064daada04085ba0f7339fd677fce9c5",
+      "bytes": 569056
+    },
+    {
+      "path": "dados/2026/transferencias-modelos-MA.json",
+      "sections": 18093,
+      "blocks": 131,
+      "sha256": "de60f9d42af5e43b9561857881826cc2481a84de88cdf9bdfa121cbd937d5921",
+      "bytes": 578760
+    },
+    {
+      "path": "dados/2026/transferencias-modelos-MG.json",
+      "sections": 52062,
+      "blocks": 254,
+      "sha256": "8a4523adf1dfb4e10e9a206b4c024af2646d98f215790f1b4af21db299df6912",
+      "bytes": 1222488
+    },
+    {
+      "path": "dados/2026/transferencias-modelos-MS.json",
+      "sections": 7106,
+      "blocks": 88,
+      "sha256": "ea575a7ee95b7f8197236f2d9802f0fb18430f8f74459751029dcb3722095e89",
+      "bytes": 381864
+    },
+    {
+      "path": "dados/2026/transferencias-modelos-MT.json",
+      "sections": 8287,
+      "blocks": 225,
+      "sha256": "8915d3a326896c93ecc558c450f5080d8bef1078329007297b051b1f6b89a0a3",
+      "bytes": 878968
+    },
+    {
+      "path": "dados/2026/transferencias-modelos-PA.json",
+      "sections": 20827,
+      "blocks": 268,
+      "sha256": "2de92231521f6d4e5ef1c7b8bdd36b27bcdbf6e69f217d5d03e63380fd802c19",
+      "bytes": 1131552
+    },
+    {
+      "path": "dados/2026/transferencias-modelos-PB.json",
+      "sections": 10712,
+      "blocks": 35,
+      "sha256": "d5ce842d82cf0c3f7e43f1cd319739659ab7f9f130a28b4396f2474787682f5b",
+      "bytes": 181252
+    },
+    {
+      "path": "dados/2026/transferencias-modelos-PE.json",
+      "sections": 21418,
+      "blocks": 55,
+      "sha256": "edacd850e22a4e86ea934491d9ae3bb587243f32634d221a679a258d40c13e7c",
+      "bytes": 292256
+    },
+    {
+      "path": "dados/2026/transferencias-modelos-PI.json",
+      "sections": 10225,
+      "blocks": 105,
+      "sha256": "3c14aa3810f1fc58d11b2b5d5f9a7a981b937ca08326ad30ca0110038e0f2f6e",
+      "bytes": 462656
+    },
+    {
+      "path": "dados/2026/transferencias-modelos-PR.json",
+      "sections": 27142,
+      "blocks": 90,
+      "sha256": "ed24ad86ab224ffd11d631ce84ed0c01b193b5e927bd5a38b1b825c4b262da0a",
+      "bytes": 465012
+    },
+    {
+      "path": "dados/2026/transferencias-modelos-RJ.json",
+      "sections": 37675,
+      "blocks": 31,
+      "sha256": "3ab0f1c52671e23317f1d9cb1413c80838588fb4d885754ec11b7325689a5f78",
+      "bytes": 245952
+    },
+    {
+      "path": "dados/2026/transferencias-modelos-RN.json",
+      "sections": 8115,
+      "blocks": 28,
+      "sha256": "1ca1b55dc8e79b9fb967c64545103c8f2c635c47958fb164c519f30bbd38aab9",
+      "bytes": 146428
+    },
+    {
+      "path": "dados/2026/transferencias-modelos-RO.json",
+      "sections": 4698,
+      "blocks": 72,
+      "sha256": "7b7f0e44cfe60dedd9822d3231c097ca4cb2042b37c58966fba3af8686e45a24",
+      "bytes": 301676
+    },
+    {
+      "path": "dados/2026/transferencias-modelos-RR.json",
+      "sections": 1519,
+      "blocks": 45,
+      "sha256": "d94868d5bed986ee15f101c553fefe087d074f0062f8d230712c69901c328494",
+      "bytes": 163372
+    },
+    {
+      "path": "dados/2026/transferencias-modelos-RS.json",
+      "sections": 27547,
+      "blocks": 127,
+      "sha256": "596738c511f977679dccc831027df9789c547ad14c41928e5d43a143fed27b95",
+      "bytes": 624224
+    },
+    {
+      "path": "dados/2026/transferencias-modelos-SC.json",
+      "sections": 17326,
+      "blocks": 53,
+      "sha256": "2da784492a38eab6231be6a043813b0f0b727bf4cce8d57191b53749091268f4",
+      "bytes": 279164
+    },
+    {
+      "path": "dados/2026/transferencias-modelos-SE.json",
+      "sections": 5923,
+      "blocks": 16,
+      "sha256": "89dc8130c4c7ada650b6eb5fcd0bd3d10de73dc9d86addd1dc9b494e55f31335",
+      "bytes": 45248
+    },
+    {
+      "path": "dados/2026/transferencias-modelos-SP.json",
+      "sections": 103656,
+      "blocks": 113,
+      "sha256": "70a437a2d4032a87631f993b4f33d57752976cb14838ebf9626db4d814cb2b10",
+      "bytes": 795224
+    },
+    {
+      "path": "dados/2026/transferencias-modelos-TO.json",
+      "sections": 4384,
+      "blocks": 101,
+      "sha256": "2e67ad11cceb00daa75fdbf4ed8b6bca6bdeff0ceb20ea0a5fe282f85a7653f7",
+      "bytes": 418656
+    },
+    {
+      "path": "dados/2026/transferencias-modelos-ZZ.json",
+      "sections": 1308,
+      "blocks": 1,
+      "sha256": "df1368045ab3819f18e1a1105540a929df59fbc1eb2f246e6ede3ebaa74106ac",
+      "bytes": 8084
+    }
+  ],
+  "metric": "desvio absoluto medio entre modelos, pp; nao e erro real de transferencia",
+  "source_authentication": "repository derivatives, no new independent TSE authentication"
+}

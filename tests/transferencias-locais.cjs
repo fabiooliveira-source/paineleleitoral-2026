@@ -1,0 +1,20 @@
+const fs=require('fs'),vm=require('vm'),assert=require('assert'),path=require('path');
+const code=fs.readFileSync(path.join(__dirname,'..','consulta-urna.js'),'utf8');
+const methods=code.slice(code.indexOf('const localModelCache='),code.indexOf('function renderTransferBounds(){'));
+const nodes={urnaTable:{after(){}}};const boxes=[];
+const p=Array.from({length:17},()=>[.2,.3,.1,.1,.2,.1]);
+const pack={codes:['13','22',...Array.from({length:11},(_,i)=>String(30+i))],origins:Array.from({length:17},(_,i)=>'Origem '+i),selected_index:1,coefficients:{'4':Array.from({length:5},()=>p)},sectionMap:new Map([['1:2:3',[4,'test']]])};
+const r={brancos_1t:5,nulos_1t:5,abstencoes_1t:10,aptos_1t:100,aptos_2t:100,lula_2t:40,flavio_2t:35,brancos_2t:5,nulos_2t:5,abstencoes_2t:15};
+const cats=pack.codes.map((num,i)=>({num,'1t':i===0?40:i===1?30:i===2?10:0}));
+const ctx=vm.createContext({console,Map,Math,Number,Array,Uint8Array,Response,Blob,DecompressionStream,atob,token:1,current:{r,cats},$:id=>nodes[id],document:{createElement(){const b={};boxes.push(b);return b;}},esc:String,f:x=>Math.round(x).toLocaleString('pt-BR'),fetch:()=>{throw Error('Unexpected network')}});
+vm.runInContext(methods,ctx);ctx.pack=pack;
+vm.runInContext("localModelCache.set('BA',Promise.resolve(pack))",ctx);
+(async()=>{
+ await vm.runInContext("renderLocalModels('BA','1:2:3',1)",ctx);
+ assert(boxes[0].innerHTML.includes('30,000%'));assert(boxes[0].innerHTML.includes('Sem votos/eleitores de origem'));
+ assert(boxes[0].innerHTML.includes('Não')===false);assert(boxes[0].innerHTML.includes('conjunto de teste espacial reservado'));
+ await vm.runInContext("renderLocalModels('BA','missing',1)",ctx);assert(boxes[1].textContent.includes('excluída'));
+ const stats=vm.runInContext('summarizeLocal([10,20,30,40,50])',ctx);assert.strictEqual(stats.mean,30);assert.strictEqual(stats.mad,12);
+ ctx.token=2;await vm.runInContext("renderLocalModels('BA','1:2:3',1)",ctx);assert(!boxes[2].innerHTML);
+ console.log('PASS: rendering, zero origins, missing section, stale request, independent MAD calculation.');
+})().catch(e=>{console.error(e);process.exitCode=1});
