@@ -41,9 +41,9 @@ jobs:
         run: |
           python - <<'PY'
           import pathlib
-          for path in ('teoria-jogos.html','negociacao-eleitoral.html','acompanhar.html'):
-              text=pathlib.Path(path).read_text(encoding='utf-8')
-              assert 'negociacao-eleitoral.html' in text
-              assert 'teoria-jogos.html' in text
+          pages={p:pathlib.Path(p).read_text(encoding='utf-8') for p in ('teoria-jogos.html','negociacao-eleitoral.html','acompanhar.html')}
+          assert 'negociacao-eleitoral.html' in pages['teoria-jogos.html']
+          assert 'teoria-jogos.html' in pages['negociacao-eleitoral.html']
+          assert all(link in pages['acompanhar.html'] for link in ('negociacao-eleitoral.html','teoria-jogos.html'))
           print('PASS: panel links and neutral labs')
           PY
