@@ -4,6 +4,7 @@ on:
     branches: [feature/historico-2026-replay-v7]
     paths:
       - '.github/workflows/replay-historico-2026-v7.yml'
+      - 'dados/2026/backtest/replay_historico_2026.py'
   workflow_dispatch:
 permissions:
   contents: read
