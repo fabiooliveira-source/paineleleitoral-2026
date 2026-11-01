@@ -1,0 +1,658 @@
+{
+  "status": "AUDITED",
+  "source": "2026 GitHub archive",
+  "source_csv_sha256": "872d0340c00d710495e6e1c4ba076d98b2dae75af1b12e7a70f004efe5a18b0a",
+  "source_fields": [
+    "brancos",
+    "comparecimento",
+    "eleitores_secoes_contabilizadas",
+    "municipio_tse",
+    "nulos",
+    "scope",
+    "secoes_contabilizadas",
+    "timestamp",
+    "uf",
+    "votos_13",
+    "votos_22"
+  ],
+  "source_rows": 4892,
+  "scopes": [
+    "AC",
+    "AL",
+    "AM",
+    "AP",
+    "BA",
+    "BR",
+    "CE",
+    "DF",
+    "ES",
+    "GO",
+    "MA",
+    "MG",
+    "MS",
+    "MT",
+    "PA",
+    "PB",
+    "PE",
+    "PI",
+    "PR",
+    "RJ",
+    "RN",
+    "RO",
+    "RR",
+    "RS",
+    "SC",
+    "SE",
+    "SP",
+    "TO",
+    "ZZ"
+  ],
+  "section_archives": [
+    {
+      "file": "secoes-AC.json.gz",
+      "bytes": 75914,
+      "root_type": "dict",
+      "root_keys": [
+        "colunas",
+        "linhas"
+      ],
+      "fields": [
+        "colunas",
+        "linhas"
+      ],
+      "temporal_field_occurrences": {}
+    },
+    {
+      "file": "secoes-AL.json.gz",
+      "bytes": 234200,
+      "root_type": "dict",
+      "root_keys": [
+        "colunas",
+        "linhas"
+      ],
+      "fields": [
+        "colunas",
+        "linhas"
+      ],
+      "temporal_field_occurrences": {}
+    },
+    {
+      "file": "secoes-AM.json.gz",
+      "bytes": 267246,
+      "root_type": "dict",
+      "root_keys": [
+        "colunas",
+        "linhas"
+      ],
+      "fields": [
+        "colunas",
+        "linhas"
+      ],
+      "temporal_field_occurrences": {}
+    },
+    {
+      "file": "secoes-AP.json.gz",
+      "bytes": 63874,
+      "root_type": "dict",
+      "root_keys": [
+        "colunas",
+        "linhas"
+      ],
+      "fields": [
+        "colunas",
+        "linhas"
+      ],
+      "temporal_field_occurrences": {}
+    },
+    {
+      "file": "secoes-BA.json.gz",
+      "bytes": 1165773,
+      "root_type": "dict",
+      "root_keys": [
+        "colunas",
+        "linhas"
+      ],
+      "fields": [
+        "colunas",
+        "linhas"
+      ],
+      "temporal_field_occurrences": {}
+    },
+    {
+      "file": "secoes-CE.json.gz",
+      "bytes": 771359,
+      "root_type": "dict",
+      "root_keys": [
+        "colunas",
+        "linhas"
+      ],
+      "fields": [
+        "colunas",
+        "linhas"
+      ],
+      "temporal_field_occurrences": {}
+    },
+    {
+      "file": "secoes-DF.json.gz",
+      "bytes": 220207,
+      "root_type": "dict",
+      "root_keys": [
+        "colunas",
+        "linhas"
+      ],
+      "fields": [
+        "colunas",
+        "linhas"
+      ],
+      "temporal_field_occurrences": {}
+    },
+    {
+      "file": "secoes-ES.json.gz",
+      "bytes": 318083,
+      "root_type": "dict",
+      "root_keys": [
+        "colunas",
+        "linhas"
+      ],
+      "fields": [
+        "colunas",
+        "linhas"
+      ],
+      "temporal_field_occurrences": {}
+    },
+    {
+      "file": "secoes-GO.json.gz",
+      "bytes": 508161,
+      "root_type": "dict",
+      "root_keys": [
+        "colunas",
+        "linhas"
+      ],
+      "fields": [
+        "colunas",
+        "linhas"
+      ],
+      "temporal_field_occurrences": {}
+    },
+    {
+      "file": "secoes-MA.json.gz",
+      "bytes": 586360,
+      "root_type": "dict",
+      "root_keys": [
+        "colunas",
+        "linhas"
+      ],
+      "fields": [
+        "colunas",
+        "linhas"
+      ],
+      "temporal_field_occurrences": {}
+    },
+    {
+      "file": "secoes-MG.json.gz",
+      "bytes": 1704792,
+      "root_type": "dict",
+      "root_keys": [
+        "colunas",
+        "linhas"
+      ],
+      "fields": [
+        "colunas",
+        "linhas"
+      ],
+      "temporal_field_occurrences": {}
+    },
+    {
+      "file": "secoes-MS.json.gz",
+      "bytes": 225640,
+      "root_type": "dict",
+      "root_keys": [
+        "colunas",
+        "linhas"
+      ],
+      "fields": [
+        "colunas",
+        "linhas"
+      ],
+      "temporal_field_occurrences": {}
+    },
+    {
+      "file": "secoes-MT.json.gz",
+      "bytes": 266177,
+      "root_type": "dict",
+      "root_keys": [
+        "colunas",
+        "linhas"
+      ],
+      "fields": [
+        "colunas",
+        "linhas"
+      ],
+      "temporal_field_occurrences": {}
+    },
+    {
+      "file": "secoes-PA.json.gz",
+      "bytes": 678497,
+      "root_type": "dict",
+      "root_keys": [
+        "colunas",
+        "linhas"
+      ],
+      "fields": [
+        "colunas",
+        "linhas"
+      ],
+      "temporal_field_occurrences": {}
+    },
+    {
+      "file": "secoes-PB.json.gz",
+      "bytes": 345545,
+      "root_type": "dict",
+      "root_keys": [
+        "colunas",
+        "linhas"
+      ],
+      "fields": [
+        "colunas",
+        "linhas"
+      ],
+      "temporal_field_occurrences": {}
+    },
+    {
+      "file": "secoes-PE.json.gz",
+      "bytes": 692516,
+      "root_type": "dict",
+      "root_keys": [
+        "colunas",
+        "linhas"
+      ],
+      "fields": [
+        "colunas",
+        "linhas"
+      ],
+      "temporal_field_occurrences": {}
+    },
+    {
+      "file": "secoes-PI.json.gz",
+      "bytes": 325513,
+      "root_type": "dict",
+      "root_keys": [
+        "colunas",
+        "linhas"
+      ],
+      "fields": [
+        "colunas",
+        "linhas"
+      ],
+      "temporal_field_occurrences": {}
+    },
+    {
+      "file": "secoes-PR.json.gz",
+      "bytes": 872222,
+      "root_type": "dict",
+      "root_keys": [
+        "colunas",
+        "linhas"
+      ],
+      "fields": [
+        "colunas",
+        "linhas"
+      ],
+      "temporal_field_occurrences": {}
+    },
+    {
+      "file": "secoes-RJ.json.gz",
+      "bytes": 1222627,
+      "root_type": "dict",
+      "root_keys": [
+        "colunas",
+        "linhas"
+      ],
+      "fields": [
+        "colunas",
+        "linhas"
+      ],
+      "temporal_field_occurrences": {}
+    },
+    {
+      "file": "secoes-RN.json.gz",
+      "bytes": 265566,
+      "root_type": "dict",
+      "root_keys": [
+        "colunas",
+        "linhas"
+      ],
+      "fields": [
+        "colunas",
+        "linhas"
+      ],
+      "temporal_field_occurrences": {}
+    },
+    {
+      "file": "secoes-RO.json.gz",
+      "bytes": 142940,
+      "root_type": "dict",
+      "root_keys": [
+        "colunas",
+        "linhas"
+      ],
+      "fields": [
+        "colunas",
+        "linhas"
+      ],
+      "temporal_field_occurrences": {}
+    },
+    {
+      "file": "secoes-RR.json.gz",
+      "bytes": 48532,
+      "root_type": "dict",
+      "root_keys": [
+        "colunas",
+        "linhas"
+      ],
+      "fields": [
+        "colunas",
+        "linhas"
+      ],
+      "temporal_field_occurrences": {}
+    },
+    {
+      "file": "secoes-RS.json.gz",
+      "bytes": 907480,
+      "root_type": "dict",
+      "root_keys": [
+        "colunas",
+        "linhas"
+      ],
+      "fields": [
+        "colunas",
+        "linhas"
+      ],
+      "temporal_field_occurrences": {}
+    },
+    {
+      "file": "secoes-SC.json.gz",
+      "bytes": 556135,
+      "root_type": "dict",
+      "root_keys": [
+        "colunas",
+        "linhas"
+      ],
+      "fields": [
+        "colunas",
+        "linhas"
+      ],
+      "temporal_field_occurrences": {}
+    },
+    {
+      "file": "secoes-SE.json.gz",
+      "bytes": 191697,
+      "root_type": "dict",
+      "root_keys": [
+        "colunas",
+        "linhas"
+      ],
+      "fields": [
+        "colunas",
+        "linhas"
+      ],
+      "temporal_field_occurrences": {}
+    },
+    {
+      "file": "secoes-SP.json.gz",
+      "bytes": 3356126,
+      "root_type": "dict",
+      "root_keys": [
+        "colunas",
+        "linhas"
+      ],
+      "fields": [
+        "colunas",
+        "linhas"
+      ],
+      "temporal_field_occurrences": {}
+    },
+    {
+      "file": "secoes-TO.json.gz",
+      "bytes": 139319,
+      "root_type": "dict",
+      "root_keys": [
+        "colunas",
+        "linhas"
+      ],
+      "fields": [
+        "colunas",
+        "linhas"
+      ],
+      "temporal_field_occurrences": {}
+    },
+    {
+      "file": "secoes-ZZ.json.gz",
+      "bytes": 46735,
+      "root_type": "dict",
+      "root_keys": [
+        "colunas",
+        "linhas"
+      ],
+      "fields": [
+        "colunas",
+        "linhas"
+      ],
+      "temporal_field_occurrences": {}
+    }
+  ],
+  "raw_snapshot_fields": [
+    "30007",
+    "30058",
+    "30660",
+    "30678",
+    "30694",
+    "30716",
+    "30732",
+    "30759",
+    "30775",
+    "30791",
+    "30813",
+    "30830",
+    "30856",
+    "30872",
+    "30899",
+    "30910",
+    "30937",
+    "30953",
+    "30970",
+    "30996",
+    "33014",
+    "33030",
+    "33057",
+    "33065",
+    "33073",
+    "33090",
+    "33111",
+    "33138",
+    "33154",
+    "33170",
+    "33197",
+    "33219",
+    "33235",
+    "33251",
+    "33260",
+    "33278",
+    "33294",
+    "33316",
+    "33332",
+    "33359",
+    "33375",
+    "33383",
+    "33391",
+    "33405",
+    "33413",
+    "33430",
+    "33456",
+    "33472",
+    "33499",
+    "33510",
+    "33529",
+    "33537",
+    "33553",
+    "33570",
+    "33596",
+    "33618",
+    "33634",
+    "33650",
+    "33677",
+    "33693",
+    "33715",
+    "33731",
+    "33758",
+    "33774",
+    "33782",
+    "33790",
+    "33804",
+    "33812",
+    "33839",
+    "33855",
+    "33871",
+    "33898",
+    "33910",
+    "33936",
+    "33952",
+    "33960",
+    "33979",
+    "33995",
+    "34010",
+    "34029",
+    "34037",
+    "34053",
+    "34070",
+    "34096",
+    "34118",
+    "34134",
+    "34150",
+    "34177",
+    "34193",
+    "34215",
+    "34231",
+    "34258",
+    "34274",
+    "34290",
+    "34312",
+    "34339",
+    "34355",
+    "34363",
+    "34371",
+    "34398",
+    "34410",
+    "34436",
+    "34452",
+    "34479",
+    "34495",
+    "34509",
+    "34517",
+    "34533",
+    "34550",
+    "34576",
+    "34592",
+    "34614",
+    "34630",
+    "34657",
+    "34673",
+    "34690",
+    "34711",
+    "34738",
+    "34754",
+    "34770",
+    "34797",
+    "34819",
+    "34835",
+    "34851",
+    "34878",
+    "34894",
+    "34916",
+    "34932",
+    "34959",
+    "34975",
+    "34991",
+    "35017",
+    "35033",
+    "35050",
+    "35076",
+    "35092",
+    "35114",
+    "35130",
+    "35149",
+    "35157",
+    "35173",
+    "35190",
+    "35211",
+    "35238",
+    "35254",
+    "35270",
+    "35297",
+    "35319",
+    "35335",
+    "35351",
+    "35378",
+    "35394",
+    "35416",
+    "35432",
+    "35459",
+    "35475",
+    "35491",
+    "35513",
+    "35530",
+    "35556",
+    "35572",
+    "35599",
+    "35610",
+    "35637",
+    "35653",
+    "35670",
+    "35696",
+    "35700",
+    "35718",
+    "35734",
+    "35750",
+    "35777",
+    "35793",
+    "35815",
+    "35831",
+    "35858",
+    "35874",
+    "35890",
+    "35912",
+    "35939",
+    "35947",
+    "35955",
+    "35971",
+    "35998",
+    "36013",
+    "36030",
+    "36056",
+    "36072",
+    "36080",
+    "36099",
+    "36110",
+    "36137",
+    "36153",
+    "36170",
+    "36196",
+    "36218",
+    "36234",
+    "36250",
+    "36277",
+    "36293"
+  ],
+  "temporal_join_key_verified": false,
+  "v7_replay_permitted": false,
+  "warning": "Historical aggregate snapshots do not identify exactly which sections were counted at each timestamp. Final section totals cannot be treated as if known at earlier checkpoints.",
+  "source_has_section_id": false,
+  "section_archives_count": 28,
+  "timestamp_field_candidates": {},
+  "missing_critical_information": [
+    "Timestamp of public availability for each second-round section, tied to its unique UF/municipio/zona/secao key",
+    "First-round reference votes from exactly the same counted sections at each checkpoint",
+    "Reconciliation between per-section arrival sequence and every archived national/UF/municipal snapshot",
+    "Evidence that no future section-level totals were used in earlier checkpoints"
+  ]
+}
