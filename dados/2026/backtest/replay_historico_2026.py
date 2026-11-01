@@ -51,7 +51,7 @@ def main():
     if grouped["BR"][-1][2]["votos_13"]!=final_national[-2] or grouped["BR"][-1][2]["votos_22"]!=final_national[-1]:
         raise ValueError("national final mismatch")
     results=[]
-    for uf,items in sorted(grouped.items()):
+    for uf,items in sorted(grouped.items(),key=lambda item:(item[0]!='BR',item[0])):
         items.sort(key=lambda r:r[0])
         if len({r[1] for r in items})!=len(items):
             raise ValueError("duplicate timestamps in "+uf)
