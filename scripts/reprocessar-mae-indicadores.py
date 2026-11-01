@@ -13,8 +13,10 @@ for uf in ufs:
  obj=json.load(gzip.open(p,"rt"));columns=obj["colunas"]
  idx={c:i for i,c in enumerate(columns)}
  geo={}
- for path in sorted(root.glob(f"locais-geograficos-{uf}-*.json")):
-  g=json.loads(gzip.decompress(base64.b64decode(json.loads(path.read_text())["parte"])))
+ paths=sorted(root.glob(f"locais-geograficos-{uf}-*.json"))
+ if not paths:continue
+ compressed=b"".join(base64.b64decode(json.loads(path.read_text())["parte"]) for path in paths)
+ for g in [json.loads(gzip.decompress(compressed))]:
   metadata=g["metadata"]
   for mun,places in g["turns"].get("1",{}).items():
    for metaidx,sections in places:
