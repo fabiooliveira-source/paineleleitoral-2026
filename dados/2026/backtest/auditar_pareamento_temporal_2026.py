@@ -4,7 +4,7 @@ No retrospective assignment of final per-section vote totals to historical
 municipal aggregates is allowed. Produce a machine-readable feasibility audit.
 """
 import csv,gzip,json,hashlib,pathlib,collections,datetime
-ROOT=pathlib.Path(__file__).resolve().parents[2]
+ROOT=pathlib.Path(__file__).resolve().parents[3]
 BACK=ROOT/"dados/2026/backtest"
 OUT=BACK/"auditoria_pareamento_temporal_2026.json"
 def fields_in(o,seen,limit=3000):
