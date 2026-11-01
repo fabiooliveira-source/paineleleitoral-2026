@@ -1,0 +1,48 @@
+name: Replay historico presidencial 2026 - V7 gating
+on:
+  push:
+    branches: [feature/historico-2026-replay-v7]
+    paths:
+      - '.github/workflows/replay-historico-2026-v7.yml'
+      - 'dados/2026/backtest/replay_historico_2026.py'
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  replay-historico:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Reproduce archived national and 27 UF snapshots with strict V7 eligibility
+        run: python dados/2026/backtest/replay_historico_2026.py
+      - name: Verify all 28 scopes and forbid invented V7 forecasts
+        run: |
+          python - <<'PY'
+          import json,pathlib
+          r=json.loads(pathlib.Path('dados/2026/backtest/replay_2026_resultado.json').read_text())
+          assert r['national_and_ufs']==29
+          assert r['checkpoints_requested']==580
+          assert r['v7_primary_checkpoints_evaluated']==0
+          assert all(s['v7_evaluated_checkpoints']==0 for s in r['scopes'])
+          assert all(c['v7_estimate_13'] is None for s in r['scopes'] for c in s['checkpoints'] if 'v7_estimate_13' in c)
+          assert r['scopes'][0]['uf']=='BR'
+          print('PASS: 29 scopes, 580 requested checkpoints, V7 abstention on unpaired data',flush=True)
+          PY
+      - name: Publish reproducible JSON historical replay to experimental branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add dados/2026/backtest/replay_2026_resultado.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Dados historicos: replay 2026 29 recortes, V7 bloqueada sem ledger pareado"
+            git push origin HEAD:feature/historico-2026-replay-v7
+          fi
+      - uses: actions/upload-artifact@v4
+        with:
+          name: replay-historico-2026-BR-27-UFs
+          path: dados/2026/backtest/replay_2026_resultado.json
+          if-no-files-found: error
