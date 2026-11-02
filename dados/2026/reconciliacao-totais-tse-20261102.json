@@ -1,0 +1,47 @@
+{
+  "checked_at": "2026-11-02",
+  "source": "Arquivos oficiais TSE baixados diretamente em 02/11/2026; membros federais BR, cargo 1, ambos os turnos; agregação UF + município TSE, incluindo exterior.",
+  "result": "zero_divergencias",
+  "territories": 5757,
+  "comparisons": 92112,
+  "files": [
+    {
+      "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/votacao_candidato_munzona/votacao_candidato_munzona_2026.zip",
+      "member": "votacao_candidato_munzona_2026_BR.csv",
+      "sha256_csv": "c6c3bb1648b6afec7e4f81eb249f759fa91876b2ea662d02af6cb16f24e61799",
+      "territories": 5757,
+      "comparisons": 23028,
+      "mismatches": []
+    },
+    {
+      "url": "https://cdn.tse.jus.br/estatistica/sead/odsele/detalhe_votacao_munzona/detalhe_votacao_munzona_2026.zip",
+      "member": "detalhe_votacao_munzona_2026_BR.csv",
+      "sha256_csv": "f01842ecd3e0703e6646048a51c9ef0d08ad5fc9813a92beb503956f8ea5c15f",
+      "territories": 5757,
+      "comparisons": 69084,
+      "mismatches": []
+    }
+  ],
+  "national_live": [
+    {
+      "turn": 1,
+      "generated_at": "05/10/2026 12:51:47",
+      "url": "https://resultados.tse.jus.br/oficial/ele2026/6257/dados/br/br-c0001-e006257-u.json",
+      "candidate_votes": {
+        "22": 56104503,
+        "13": 53879538
+      },
+      "matches_municipal_aggregate": true
+    },
+    {
+      "turn": 2,
+      "generated_at": "25/10/2026 23:27:02",
+      "url": "https://resultados.tse.jus.br/oficial/ele2026/6258/dados/br/br-c0001-e006258-u.json",
+      "candidate_votes": {
+        "22": 59826041,
+        "13": 64256232
+      },
+      "matches_municipal_aggregate": true
+    }
+  ]
+}
