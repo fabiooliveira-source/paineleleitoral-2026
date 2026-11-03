@@ -1,0 +1,159 @@
+name: Validacao eleitoral
+on:
+  push:
+    branches: [melhorias-validacao-eleitoral-2026]
+  pull_request:
+jobs:
+  testes:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Instalar dependencias
+        run: python -m pip install "numpy==1.26.4" "pandas==2.2.3" "scipy==1.14.1"
+      - name: Validar sintaxe
+        run: python -m compileall -q validar_modelo.py inferencia_eleitoral.py previsao_territorial.py
+      - name: Verificar limite de certificacao da previsao
+        run: python gate_certificacao_previsao.py
+      - name: Inventariar snapshots historicos disponiveis
+        run: python inventariar_snapshots_2026.py
+      - name: Preservar inventario de snapshots
+        uses: actions/upload-artifact@v4
+        with:
+          name: inventario-snapshots-2026
+          path: inventario_snapshots_2026.json
+          retention-days: 90
+      - name: Decodificar pacote historico compactado
+        run: python inspecionar_pacote_historico.py
+      - name: Arquivar inspecao do pacote historico
+        uses: actions/upload-artifact@v4
+        with:
+          name: inspecao-pacote-historico
+          path: inspecao_pacote_historico.json
+          retention-days: 90
+      - name: Testes automatizados
+        run: python -m unittest discover -p "test_*.py" -v
+  arquivar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    strategy:
+      fail-fast: false
+      matrix:
+        arquivo:
+          - votacao_candidato_munzona_2026.zip
+          - detalhe_votacao_munzona_2026.zip
+          - detalhe_votacao_secao_2026.zip
+          - votacao_secao_2026_BR.zip
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Baixar e preservar versao recebida com proveniencia
+        env:
+          ZIP_NAME: ${{ matrix.arquivo }}
+        run: |
+          python - <<'PY'
+          import hashlib,json,os,pathlib,urllib.request,datetime
+          name=os.environ['ZIP_NAME']
+          manifest=json.loads(pathlib.Path('dados/2026/downloads.json').read_text(encoding='utf-8-sig'))
+          item=next(x for x in manifest if x['url'].split('/')[-1]==name)
+          out=pathlib.Path('originais_tse');out.mkdir(exist_ok=True)
+          target=out/name
+          req=urllib.request.Request(item['url'],headers={'User-Agent':'Mozilla/5.0 (auditoria-publica-tse)'})
+          with urllib.request.urlopen(req,timeout=120) as src,target.open('wb') as dst:
+              h=hashlib.sha256();n=0
+              headers=dict(src.headers.items())
+              while True:
+                  block=src.read(4*1024*1024)
+                  if not block:break
+                  dst.write(block);h.update(block);n+=len(block)
+          unchanged=n==int(item['bytes']) and h.hexdigest().lower()==item['sha256'].lower()
+          metadata={'arquivo':name,'url':item['url'],'download_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'bytes_atual':n,'sha256_atual':h.hexdigest(),'bytes_anterior':item['bytes'],'sha256_anterior':item['sha256'],'identico_ao_anterior':unchanged,'etag_atual':headers.get('ETag'),'last_modified_atual':headers.get('Last-Modified'),'content_length_atual':headers.get('Content-Length')}
+          (out/(name+'.comparacao.json')).write_text(json.dumps(metadata,ensure_ascii=False,indent=2))
+          print(json.dumps(metadata,ensure_ascii=False))
+          PY
+      - name: Verificar estrutura e CRC
+        env:
+          ZIP_NAME: ${{ matrix.arquivo }}
+        run: |
+          python - <<'PY'
+          import os,json,pathlib,zipfile
+          name=os.environ['ZIP_NAME']
+          item=next(x for x in json.loads(pathlib.Path('dados/2026/downloads.json').read_text(encoding='utf-8-sig')) if x['url'].split('/')[-1]==name)
+          with zipfile.ZipFile(pathlib.Path('originais_tse')/name) as z:
+              missing={m['nome'] for m in item['membros']}-set(z.namelist())
+              print('Membros antigos ausentes na nova versao:',sorted(missing))
+              bad=z.testzip()
+              if bad:raise RuntimeError('CRC inválido: '+bad)
+          print('ZIP e CRC aprovados:',name)
+          PY
+      - name: Inspecionar esquema de dados TSE
+        env:
+          ZIP_NAME: ${{ matrix.arquivo }}
+        run: python inspecionar_tse_2026.py "originais_tse/$ZIP_NAME"
+      - name: Arquivar esquema para processamento
+        uses: actions/upload-artifact@v4
+        with:
+          name: esquema-${{ matrix.arquivo }}
+          path: resultados_inspecao/
+          retention-days: 90
+      - name: Agregar votos presidenciais por UF e turno
+        if: matrix.arquivo == 'votacao_candidato_munzona_2026.zip'
+        env:
+          ZIP_NAME: ${{ matrix.arquivo }}
+        run: python agregar_votos_tse_2026.py "originais_tse/$ZIP_NAME"
+      - name: Arquivar totais por UF e turno
+        if: matrix.arquivo == 'votacao_candidato_munzona_2026.zip'
+        uses: actions/upload-artifact@v4
+        with:
+          name: totais-presidenciais-2026
+          path: resultados_agregados/
+          retention-days: 90
+      - name: Auditar votos por municipio e zona
+        if: matrix.arquivo == 'votacao_candidato_munzona_2026.zip'
+        env:
+          ZIP_NAME: ${{ matrix.arquivo }}
+        run: python comparar_munzona_tse_2026.py "originais_tse/$ZIP_NAME"
+      - name: Preservar auditoria municipal e zonal
+        if: matrix.arquivo == 'votacao_candidato_munzona_2026.zip'
+        uses: actions/upload-artifact@v4
+        with:
+          name: auditoria-munzona-2026
+          path: resultados_agregados/comparacao_munzona_2026.json
+          retention-days: 90
+      - name: Comparar municipios entre publicacoes 28 e 29 de outubro
+        if: matrix.arquivo == 'votacao_candidato_munzona_2026.zip'
+        env:
+          ZIP_NAME: ${{ matrix.arquivo }}
+        run: python comparar_publicacoes_municipais_2026.py "originais_tse/$ZIP_NAME"
+      - name: Arquivar diferencas municipais entre versoes
+        if: matrix.arquivo == 'votacao_candidato_munzona_2026.zip'
+        uses: actions/upload-artifact@v4
+        with:
+          name: divergencias-28out-vs-29out
+          path: resultados_comparacao/
+          retention-days: 90
+      - name: Comparar indicadores municipais de 28 e 29 outubro
+        if: matrix.arquivo == 'detalhe_votacao_munzona_2026.zip'
+        env:
+          ZIP_NAME: ${{ matrix.arquivo }}
+        run: python comparar_indicadores_municipais_2026.py "originais_tse/$ZIP_NAME"
+      - name: Preservar divergencias de indicadores municipais
+        if: matrix.arquivo == 'detalhe_votacao_munzona_2026.zip'
+        uses: actions/upload-artifact@v4
+        with:
+          name: diferencas-indicadores-municipais
+          path: resultados_metricas/
+          retention-days: 90
+      - name: Arquivar ZIP verificado no GitHub Actions
+        uses: actions/upload-artifact@v4
+        with:
+          name: tse-2026-${{ matrix.arquivo }}
+          path: originais_tse/${{ matrix.arquivo }}
+          if-no-files-found: error
+          retention-days: 90
+          compression-level: 0
