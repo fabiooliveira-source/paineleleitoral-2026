@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "painel-eleitoral": {
+      "command": "node",
+      "args": ["agentes/mcp-server.cjs"]
+    }
+  }
+}

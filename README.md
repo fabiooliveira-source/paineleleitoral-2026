@@ -51,3 +51,7 @@ A página `acompanhar.html` oferece acesso ao laboratório `validacao-v7.html`, 
 - Para executar V7 automaticamente no monitor, criar previamente um alimentador verificável com `current` (agregado e eleitorado por corte), `reference` (votos 1º turno A/B por zona), `ledger` (2º turno observado e referência pareada **das mesmas seções**) e horários com fuso `generated_at <= available_at <= timestamp` por registro. Depois validar o adaptador contra os dados oficiais e um conjunto externo ainda não utilizado; não usar diretamente a agregação municipal.
 
 **Execução dos testes:** `node tests/v7-engine.cjs`. O CI roda também verificação de sintaxe e navegação HTML. Os relatórios científicos originais continuam na branch isolada `experimento/modelo-territorial-999`.
+
+## Agentes de IA (MCP) — fase 1
+
+`agentes/` expõe os motores puros do painel (teoria dos jogos, negociação, transferências, limites, rateio, V7 e totais oficiais conferidos) como ferramentas MCP para agentes de IA, com envelope auditável, ABSTAIN preservado e validador de saída que bloqueia probabilidade de vitória e números sem origem. Ver `agentes/README.md`. Testes: `node tests/agentes-mcp.cjs`.
