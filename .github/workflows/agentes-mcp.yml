@@ -1,0 +1,36 @@
+name: Agentes MCP - contrato das ferramentas
+on:
+  push:
+    paths:
+      - '.github/workflows/agentes-mcp.yml'
+      - 'agentes/**'
+      - 'tests/agentes-mcp.cjs'
+      - 'teoria-jogos.js'
+      - 'negociacao-eleitoral.js'
+      - 'transferencias-negociacao.js'
+      - 'probabilidade-transferencias.js'
+      - 'limites-por-urna.js'
+      - 'rateio-core.js'
+      - 'v7-engine.js'
+      - 'dados/2026/municipios.json.gz'
+  pull_request:
+    paths:
+      - 'agentes/**'
+      - 'tests/agentes-mcp.cjs'
+      - '*.js'
+      - 'dados/2026/municipios.json.gz'
+permissions:
+  contents: read
+jobs:
+  tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Check syntax
+        run: for f in agentes/*.cjs; do node --check "$f"; done
+      - name: Tool contracts, output validator and MCP protocol
+        run: node tests/agentes-mcp.cjs
